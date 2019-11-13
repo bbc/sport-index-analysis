@@ -1,0 +1,2380 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/vocab/participation/schema#> .
+@prefix ns2: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/0922d42a-1c6c-42f7-8cdc-95396c83a1f7#id> a provenance:Dataset ;
+    rdfs:label "Formula1: Drivers" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/formula1/formula1-drivers.ttl" ;
+    provenance:changeReason "SWD-990: Lando Norris surname first name swapped" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-09-06T15:08:18+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "92"^^xsd:int .
+
+<http://www.bbc.co.uk/things/00357c09-ffbb-4798-9a05-db2fbc163232#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Marc Gene in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/97c2db66-7e23-46e6-be47-17bf182a1cd3#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/0041e209-2497-42d3-8bf0-9c4406e18128#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kevin Magnussen in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/187ba184-34cd-43dc-bc4a-b4abcf1eb254#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/03604f8e-62de-4d27-82ea-8a890be49246#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sebastian Vettel in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f6fbfc7a-f208-4aba-baa2-f9a401f8c8c1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/0384a562-4adf-457c-af48-0cc9d7c0f2fd#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniil Kvyat in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/3942939c-14fa-4768-b3c8-3d2bef605073#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/059717ca-6d7e-40cf-84dc-ad944ef2c12e#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pastor Maldonado in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/b4622107-496d-4526-b9c5-14726524849f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> .
+
+<http://www.bbc.co.uk/things/07ad4af8-39e4-4b9e-a191-f17638cfe3f3#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pastor Maldonado in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/b4622107-496d-4526-b9c5-14726524849f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> .
+
+<http://www.bbc.co.uk/things/097ccd93-f01b-4a3a-9e1f-e25564602fe6#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Adrian Sutil in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/99801014-d624-47c4-92fa-1c71071da6b3#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/0aab5e98-920f-4e3d-900d-9e2c788898cf#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lewis Hamilton in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/ed138786-46c0-430f-9493-214d3c02c429#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/0ca4f79a-5cc9-4228-b97e-328e6050aad6#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniel Ricciardo in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/6a8198a3-5b08-467a-9c94-967f36901e6a#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/0d607929-6780-48d4-b2d3-e7db8cfd9f7d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Max Verstappen in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/8bfd65f3-1a07-49af-9849-cc2e8f221377#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/0fc5bbdd-0cc9-4c26-9606-d24375055e64#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergey Sirotkin in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cc062052-aa44-490e-a1fc-1d8d5b635bc7#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/10a745c5-fbc8-4a7e-82f2-fd64f8c9d583#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pierre Gasly in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/1f272b3b-b870-40c2-b952-d3c4a3f99846#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/11a60477-cdba-41a4-8bab-15d2ba1090be#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergio Perez in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/62a67aeb-521b-4fb1-8c07-74a2f3f11b55#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5f439972-914b-44bd-87ae-223bb2dc0d4c#id> .
+
+<http://www.bbc.co.uk/things/11f99a31-c8f7-45f0-ad1a-4828c98c01e8#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Max Chilton in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/dd013bdb-862e-47db-9e60-bbeb29ab2565#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> .
+
+<http://www.bbc.co.uk/things/13c78ad7-c734-489d-bf96-46101e153ac7#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Esteban Gutierrez in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0b66c0e7-0b57-4ffa-9ec2-c8e0e4412ab2#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/14d8876e-ff13-4782-a7e5-e1e3d6a8abf0#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniel Juncadella in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/e43e7e28-adc1-4569-9608-3662f0b13ad8#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/16a9f44d-affe-4577-9eb6-ccecbcd24431#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Charles Leclerc in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/4722876e-1ede-4eb8-8062-56e630e534c9#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/16c623d9-b567-4b3e-96fd-2f091e8c9645#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nicolas Latifi in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/3068a617-5180-407f-815b-fd0672b04006#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/1742da2e-9fe5-4f01-98c6-93d365465102#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pascal Wehrlein in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f2073f7b-58a4-4c05-aa21-07f9576c23ba#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/17ab781f-900d-464d-98cd-bfe55135c22f#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sebastian Vettel in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f6fbfc7a-f208-4aba-baa2-f9a401f8c8c1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/17fc6595-d8a3-40e3-8e31-b401ea849149#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Romain Grosjean in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/d5229b35-3980-4d52-acbb-853d95e1e505#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/18abc0e6-0408-426d-b79e-3cd70b4fd8c0#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lance Stroll in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0a9c80fc-46d3-4dd6-b1d9-db188ea081e7#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5f439972-914b-44bd-87ae-223bb2dc0d4c#id> .
+
+<http://www.bbc.co.uk/things/193a3b25-9ec6-6fea-82f1-74135b366140#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lance Stroll in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0a9c80fc-46d3-4dd6-b1d9-db188ea081e7#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/19d12732-da0a-4b93-8920-ffaadb4a88ac#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Marcus Ericsson in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/6d2fa17f-c415-4985-a112-01f57f8b6ef6#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> .
+
+<http://www.bbc.co.uk/things/1a844e3f-d9ec-4196-bef9-b442ac22c36d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Esteban Ocon in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/2e1ce168-4e29-4f1b-8df3-30301b72028e#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> .
+
+<http://www.bbc.co.uk/things/1a93a9b6-0e33-428b-8ad6-98e16f1ac519#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nico Hulkenburg in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0f8cc9ac-0afa-423c-b484-611c17503825#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/1ad56a33-3db4-4b73-9b0c-b8a6f38d0263#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Adderly Fong in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/a3dfb8bf-c01b-43f6-a976-32a2fa6552ed#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/1caed411-8484-97bf-395f-88762f4e78e0#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nico Hulkenburg in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0f8cc9ac-0afa-423c-b484-611c17503825#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/1e179196-4a72-4358-8ce3-f6a4c757f00d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pascal Wehrlein in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f2073f7b-58a4-4c05-aa21-07f9576c23ba#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> .
+
+<http://www.bbc.co.uk/things/1ef27821-aaa2-4db6-a9f0-fc0be18e69fc#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Felipe Massa in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cda28b5c-486a-4b7f-91df-17c43115d7ba#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/1f356088-85ac-4510-a65b-fba550a569b2#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pascal Wehrlein in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f2073f7b-58a4-4c05-aa21-07f9576c23ba#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/225dde07-6e3d-482f-b316-b7f67eec10f8#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergey Sirotkin in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cc062052-aa44-490e-a1fc-1d8d5b635bc7#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/22be554e-a451-4e8d-8653-511a9bd85b70#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Antonio Giovinazzi in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/a0ed4f8b-dfae-4a3f-8a6e-22669736df7e#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/23a71de3-b6d2-4620-befd-8e3b8c49874e#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Alexander Albon in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/9ac52124-fb69-4840-9a99-481c7e09b522#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/25233484-f3e5-41f6-a65c-db874a791638#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pierre Gasly in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/1f272b3b-b870-40c2-b952-d3c4a3f99846#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/261cc719-bf69-f8dc-7a7c-9692f3b8a1f6#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Max Verstappen in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/8bfd65f3-1a07-49af-9849-cc2e8f221377#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/265a32e7-63e4-4721-813b-84441b7e44dc#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lando Norris in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0ae398dd-6c2b-431f-a362-48c3a9ce9d6f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/26a48a1f-3680-46b4-bd62-1e827ca1adb3#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniil Kvyat in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/3942939c-14fa-4768-b3c8-3d2bef605073#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/27abfc7d-33ff-4b16-b912-845385e494f1#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nico Hulkenburg in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0f8cc9ac-0afa-423c-b484-611c17503825#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/28b22077-d6c3-4a30-bafa-e3ed762ae473#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Fernando Alonso in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f63149e9-c577-40b4-bd88-1efac54228db#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/29b8232d-876d-4927-9298-6d98ddeb0521#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Alexander Rossi in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/a99b07bf-b2ba-4d0b-b3a0-6907ab1b8a7c#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> .
+
+<http://www.bbc.co.uk/things/29db2a10-f6fc-4c7d-99f6-cd824e737eb8#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Susie Wolff in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/7b823626-8703-48e5-88c1-a952b62ec9b2#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/29ecb3c5-2c8e-08ec-2b72-b6714a375f20#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Paul Di Resta in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/7e2d2598-c7f4-40cd-86e2-2439885ecc16#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/2c50f7d3-2230-41f3-980a-0a7dee45c18b#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Rio Haryanto in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/4f7eed6d-6add-4f29-af41-25f4126cc7b2#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> .
+
+<http://www.bbc.co.uk/things/2d3965ad-9039-4d4d-be48-47048c375279#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Valtteri Bottas in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/807d07de-523e-445a-9186-15826666e75f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/3165f116-3bc5-4a68-a01e-0853e361fc3e#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Fernando Alonso in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f63149e9-c577-40b4-bd88-1efac54228db#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/319066a6-b798-47fd-8e65-4501ce6aecbd#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Stoffel Vandoorne in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/300b1e2a-99a7-4994-9e60-33b67d7a9915#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/31a35d66-f614-4b83-857b-762bc42937a4#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Esteban Ocon in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/2e1ce168-4e29-4f1b-8df3-30301b72028e#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/33a2e9af-1eb0-4bfb-b182-51a9713730a7#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Max Verstappen in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/8bfd65f3-1a07-49af-9849-cc2e8f221377#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/37875654-863a-42e3-a59a-2b30428133f6#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kimi Raikkonen in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/5a6828cb-1a28-48e0-92bc-af8cdf1e64f1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/37d4e9b9-6198-47c5-9326-08577800d284#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kimi Raikkonen in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/5a6828cb-1a28-48e0-92bc-af8cdf1e64f1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/3adca2d9-38fd-469c-a4ec-a177f5ff41d9#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniel Ricciardo in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/6a8198a3-5b08-467a-9c94-967f36901e6a#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/3b2696b2-c99a-41f0-9767-47c0e9e1fed7#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniil Kvyat in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/3942939c-14fa-4768-b3c8-3d2bef605073#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/3c27da1c-7a1b-4d25-a506-b2ab12d3927c#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for George Russell in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/8b2bda6e-96f0-4f2e-ae32-5268f0ae3f64#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/3d32f6c8-9c55-49ca-a20c-5a6a402bbf60#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for George Russell in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/8b2bda6e-96f0-4f2e-ae32-5268f0ae3f64#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/3fd612c5-2baf-4145-8e9c-72c3f04d05f8#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Max Verstappen in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/8bfd65f3-1a07-49af-9849-cc2e8f221377#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/3fdd8de2-bcf1-42ee-a76b-ea9c27e1a368#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Marcus Ericsson in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/6d2fa17f-c415-4985-a112-01f57f8b6ef6#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/4200f404-1d9e-4d5c-9ba3-df07111d903d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jolyon Palmer in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/9bcdf9fa-40d6-440b-8a3e-8753948e7967#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/421eef5b-a350-49ac-94d6-6398e60b9f0f#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sean Galael in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/bea408d7-9730-4e16-9a0a-be2730e44285#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/42866cb1-9c4e-4b18-a859-c63097d090c6#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pierre Gasly in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/1f272b3b-b870-40c2-b952-d3c4a3f99846#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/447c0e69-6621-9988-20f2-0b0d12370a13#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Esteban Ocon in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/2e1ce168-4e29-4f1b-8df3-30301b72028e#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/448828f0-c565-432d-9cc3-71e5558774c9#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergio Perez in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/62a67aeb-521b-4fb1-8c07-74a2f3f11b55#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/04ae3848-56c9-4485-9419-289c70e47ed4#id> .
+
+<http://www.bbc.co.uk/things/448ddcbf-8fb5-490e-acbd-dd560b015f6b#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Roberto Merhi in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f55f0458-e7ac-456f-b156-63b6fea582a3#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> .
+
+<http://www.bbc.co.uk/things/46c8ad7f-bb3f-40a3-9dcd-2304d62eba01#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kevin Magnussen in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/187ba184-34cd-43dc-bc4a-b4abcf1eb254#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/47cf56ee-3193-4cc6-ba12-931ce4ca71ea#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nico Rosberg in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/58f4e9f4-d42c-453d-b53d-af5079f45b87#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/4966930d-a01f-457b-b57b-30822df2b2fd#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Carlos Sainz Jr in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/28946865-1663-4154-98f8-74c387b1e2bb#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/4aac9f26-31b2-4288-b9bf-f8f0a4b035f0#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lewis Hamilton in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/ed138786-46c0-430f-9493-214d3c02c429#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/4ad0e1f1-2df0-435b-af55-504c243103ba#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sebastian Vettel in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f6fbfc7a-f208-4aba-baa2-f9a401f8c8c1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/4bf6d709-4f8f-4467-b522-457f144cbba9#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Valtteri Bottas in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/807d07de-523e-445a-9186-15826666e75f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/4c9e6e4b-bf85-534c-f289-3ebd65f8d284#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Romain Grosjean in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/d5229b35-3980-4d52-acbb-853d95e1e505#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/4e2405dd-e89c-4261-94f5-58fafa2a849e#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Adrian Sutil in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/99801014-d624-47c4-92fa-1c71071da6b3#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/4ee58f67-15f4-4520-93ef-1cf32bf81ea3#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniel Ricciardo in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/6a8198a3-5b08-467a-9c94-967f36901e6a#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/4ef7cfa5-2627-4beb-9c36-5085c4da3ba5#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lance Stroll in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0a9c80fc-46d3-4dd6-b1d9-db188ea081e7#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/4fcb5fd5-a30a-4b1c-b833-9d522dc34fd3#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sebastien Buemi in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/68dfb7a6-a4ef-4ae1-a0b5-9700d06097ae#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/4fe8afd9-d262-4dd1-a87b-24b3a8ec290f#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniel Ricciardo in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/6a8198a3-5b08-467a-9c94-967f36901e6a#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/507947e5-1791-4b6e-b1ea-4eba8bd5f091#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Andre Lotterer in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/e2e4a5a5-5730-4fda-b2da-f051a8ab7de7#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> .
+
+<http://www.bbc.co.uk/things/50965896-b8b6-4d75-8216-33be73505e6d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Felipe Massa in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cda28b5c-486a-4b7f-91df-17c43115d7ba#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/51d78e75-6758-478c-b318-930cfebcf76e#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniel Ricciardo in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/6a8198a3-5b08-467a-9c94-967f36901e6a#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/530b16ef-34ca-403b-9156-0592c9958cbd#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Raffaele Marciello in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/213878a7-4321-4f17-bae1-8bc25787a8cc#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/54a3d2e1-2a2f-46f7-8ae2-3d054a776c6c#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jules Bianchi in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cafe9b89-391c-496f-8944-a41f2c0c9d69#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> .
+
+<http://www.bbc.co.uk/things/5542b993-7150-4374-a928-1d423828c972#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Alexander Rossi in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/a99b07bf-b2ba-4d0b-b3a0-6907ab1b8a7c#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> .
+
+<http://www.bbc.co.uk/things/55631237-72fa-46b1-a80c-b358580a14d9#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Alexander Rossi in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/a99b07bf-b2ba-4d0b-b3a0-6907ab1b8a7c#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> .
+
+<http://www.bbc.co.uk/things/55966480-f683-7818-5981-a9af97f0e439#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Stoffel Vandoorne in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/300b1e2a-99a7-4994-9e60-33b67d7a9915#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/571befbd-0e64-4c06-bb6d-a9ef01a1015c#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergio Perez in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/62a67aeb-521b-4fb1-8c07-74a2f3f11b55#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/58bc58b1-57bb-4058-88d8-6490c5afc417#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sebastian Vettel in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f6fbfc7a-f208-4aba-baa2-f9a401f8c8c1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/59bf72a8-74c6-7e0f-4c78-a1afd1909675#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kevin Magnussen in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/187ba184-34cd-43dc-bc4a-b4abcf1eb254#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/59d8cbfa-d4f3-40fb-9b15-96ebe8156ed2#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kevin Magnussen in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/187ba184-34cd-43dc-bc4a-b4abcf1eb254#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/5ade7249-029b-4759-9eca-9625d8d74d35#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sebastian Vettel in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f6fbfc7a-f208-4aba-baa2-f9a401f8c8c1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/5aeb4950-0e45-45f4-8e61-e137ebf22f16#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Esteban Ocon in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/2e1ce168-4e29-4f1b-8df3-30301b72028e#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> .
+
+<http://www.bbc.co.uk/things/5c0cf359-2e80-6c91-e440-4d66924185b0#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Carlos Sainz Jr in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/28946865-1663-4154-98f8-74c387b1e2bb#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/5d5d0a8e-7775-8c5d-5fe9-1bb9c02b1c17#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pascal Wehrlein in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f2073f7b-58a4-4c05-aa21-07f9576c23ba#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/5d7a54f9-a969-4c55-bc29-6d6b39269f78#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jack Aitken in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/786eadbd-d515-4bd4-8416-c4ece74fe011#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/5dcaa26f-77a0-4d84-98fd-260aae1c2242#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Felipe Massa in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cda28b5c-486a-4b7f-91df-17c43115d7ba#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/5dd36f08-c509-05b4-441f-6d3671ef0544#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jenson Button in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/7fab5837-871d-466c-801f-6fe0d72692b4#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/5e36581a-1574-4da1-811a-1677dc1ec1ff#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jules Bianchi in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cafe9b89-391c-496f-8944-a41f2c0c9d69#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> .
+
+<http://www.bbc.co.uk/things/5fa2b8ea-d111-4fc8-bdfb-4def25183029#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Alexander Rossi in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/3972ac3a-c26c-42ca-8bba-8f0ef9a515c9#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> .
+
+<http://www.bbc.co.uk/things/60213f23-ca34-4705-a82e-24e8cdb820c8#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kamui Kobayashi in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f8eb3c1a-4989-49ac-9d0b-68fea1ce4625#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> .
+
+<http://www.bbc.co.uk/things/60cb316f-8edc-4574-967c-0da37586cb53#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Andre Lotterer in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/e2e4a5a5-5730-4fda-b2da-f051a8ab7de7#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> .
+
+<http://www.bbc.co.uk/things/63235a4e-c1eb-4380-9491-9c1828ed2a94#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jean-Eric Vergne in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/80ca6123-4840-453c-b601-1a43f629553d#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/634c289b-53d3-4674-914f-8dd3bdba9259#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Carlos Sainz Jr in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/28946865-1663-4154-98f8-74c387b1e2bb#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/64791856-4ecf-dc41-b15d-fca6c2db4fcb#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kimi Raikkonen in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/5a6828cb-1a28-48e0-92bc-af8cdf1e64f1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/64ccfdb4-9ea4-4a8a-bacc-c547d075eece#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Felipe Nasr in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/608f9a6e-297a-4bf8-8dbd-4b063a293a58#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/64d2f669-2508-78ae-a9a6-216e28f2a76b#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Felipe Massa in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cda28b5c-486a-4b7f-91df-17c43115d7ba#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/6511ba6f-f6e5-47ff-bdad-a273f1ea82d6#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Charles Leclerc in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/4722876e-1ede-4eb8-8062-56e630e534c9#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/65eab185-f2b6-4ac4-8f22-6faf17162c78#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Romain Grosjean in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/d5229b35-3980-4d52-acbb-853d95e1e505#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> .
+
+<http://www.bbc.co.uk/things/67a62195-b912-40e8-8f99-90b4221c3fb0#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Giedo van der Garde in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/05c11fcf-e477-4c19-8e52-74bb5a206ee6#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/67be782b-aae5-44e4-b862-54be3769ad8c#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Esteban Gutierrez in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0b66c0e7-0b57-4ffa-9ec2-c8e0e4412ab2#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/692f5b79-5fcc-4a99-b0ac-1eed1272bfac#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Max Chilton in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/dd013bdb-862e-47db-9e60-bbeb29ab2565#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id>,
+        <http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> .
+
+<http://www.bbc.co.uk/things/69cd15bf-e066-40af-8439-06d25cc47b8a#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Esteban Ocon in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/2e1ce168-4e29-4f1b-8df3-30301b72028e#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> .
+
+<http://www.bbc.co.uk/things/71a9e3aa-7ff3-4868-9c1f-6a479cadbbfd#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Valtteri Bottas in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/807d07de-523e-445a-9186-15826666e75f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/729ebf8d-915f-40c3-8ee1-fcfc43d96f8f#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergey Sirotkin in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cc062052-aa44-490e-a1fc-1d8d5b635bc7#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/74ba1492-17a4-431a-7f07-04fd1f009f7a#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Valtteri Bottas in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/807d07de-523e-445a-9186-15826666e75f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/77a1bb81-fae3-4690-8665-59a5635de15c#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Valtteri Bottas in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/807d07de-523e-445a-9186-15826666e75f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/78730d70-d21c-4a16-8f60-5bda6b617192#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lewis Hamilton in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/ed138786-46c0-430f-9493-214d3c02c429#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/7a69139f-4f5f-47c1-bf46-a0124c6bc233#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Charles Pic in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/7a8d6bf8-eaa5-4f9a-b71a-e8b072c9c4d1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> .
+
+<http://www.bbc.co.uk/things/7abf7ef9-a9f6-4be5-a2da-0fc0df163150#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergio Perez in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/62a67aeb-521b-4fb1-8c07-74a2f3f11b55#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/7d25a901-2cbc-4da8-976d-da9c24ec5461#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jenson Button in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/7fab5837-871d-466c-801f-6fe0d72692b4#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/7e613539-8d8b-4731-8e80-175a46a5566a#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Davide Rigon in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/5e6641b7-8376-433d-9e4f-4a1dcbe067c6#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/807848c8-4f7a-4383-9a27-0caa68672c50#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniil Kvyat in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/3942939c-14fa-4768-b3c8-3d2bef605073#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/85639970-4c97-4c30-b3c8-979a52a8d9fb#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Brendon Hartley in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/bc910add-a276-4c3e-9799-d9cc3343184f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/85ca4f97-1cba-4ce0-aea5-dc00e8c3f430#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nicholas Latifi in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/3068a617-5180-407f-815b-fd0672b04006#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/04ae3848-56c9-4485-9419-289c70e47ed4#id> .
+
+<http://www.bbc.co.uk/things/8662d704-3145-449b-9db3-d3dce7645124#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kevin Magnussen in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/187ba184-34cd-43dc-bc4a-b4abcf1eb254#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/87488dfb-955d-4bc3-947d-ac78fb122a5e#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergey Sirotkin in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cc062052-aa44-490e-a1fc-1d8d5b635bc7#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/87a92ad1-3939-9e86-ff69-b2973527b4ca#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergio Perez in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/62a67aeb-521b-4fb1-8c07-74a2f3f11b55#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/88a696bb-7ee3-4af1-b341-a20f47bab127#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Robert Kubica in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/984f0292-7bb9-4973-a74a-6ccd590d598b#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/8a3a1ce5-c0ef-4cca-8fe1-53aa597bacb8#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sebastien Buemi in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/68dfb7a6-a4ef-4ae1-a0b5-9700d06097ae#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/8a8ceca4-d86a-49d4-b424-f2179c25874f#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jean-Eric Vergne in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/80ca6123-4840-453c-b601-1a43f629553d#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/8abd7662-36b2-4aa7-8b56-30d98273edb6#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Romain Grosjean in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/d5229b35-3980-4d52-acbb-853d95e1e505#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/8b196fae-55b2-493e-85f2-c6f797554f8d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nico Hulkenburg in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0f8cc9ac-0afa-423c-b484-611c17503825#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/8b32302f-0f19-a0e1-4d73-b9781a84a4dc#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jolyon Palmer in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/9bcdf9fa-40d6-440b-8a3e-8753948e7967#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/90524bba-7e6d-4c81-a8a2-159db764ce9a#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Max Verstappen in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/8bfd65f3-1a07-49af-9849-cc2e8f221377#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/9060e60f-142c-4c10-ae47-69df6f61e717#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sebastien Buemi in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/68dfb7a6-a4ef-4ae1-a0b5-9700d06097ae#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/916f107f-c0db-4984-b604-1de19fdb69ba#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nicholas Latifi in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/3068a617-5180-407f-815b-fd0672b04006#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/93281d91-1952-4038-b69d-54a501a090fa#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Tatiana Calderon in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/ff6ea6a6-790d-406e-acd2-ae64df036118#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/991af8ac-11d8-4a9f-8a51-a7d5d2d11acb#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kevin Magnussen in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/187ba184-34cd-43dc-bc4a-b4abcf1eb254#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/9a3ee9a7-67a3-46f6-853e-e07e1b43a034#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lewis Hamilton in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/ed138786-46c0-430f-9493-214d3c02c429#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/9a4eb3fb-e887-49d2-a27f-b9c0cb047dfd#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Valtteri Bottas in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/807d07de-523e-445a-9186-15826666e75f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/a0045426-15bc-423d-b0e9-889ab96a1d6a#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kimi Raikkonen in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/5a6828cb-1a28-48e0-92bc-af8cdf1e64f1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/a02dc79b-70f6-4ecf-a658-95cad863f80b#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Davide Rigon in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/5e6641b7-8376-433d-9e4f-4a1dcbe067c6#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/a26554cd-5f88-47cf-8bad-495fc90902e4#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nico Rosberg in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/58f4e9f4-d42c-453d-b53d-af5079f45b87#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/a6660a50-53c8-4574-9af1-6b8a6b41f603#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Stoffel Vandoorne in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/300b1e2a-99a7-4994-9e60-33b67d7a9915#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/a6c466fa-16f2-4e6d-8170-e9ac9da9c0d0#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Adderly Fong in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/a3dfb8bf-c01b-43f6-a976-32a2fa6552ed#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/a98d765b-8584-40d6-a7a6-a73799d5aee4#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergio Perez in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/62a67aeb-521b-4fb1-8c07-74a2f3f11b55#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/ab6881e1-5a2f-4c9f-9ab8-3a2894f32d61#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Marcus Ericsson in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/6d2fa17f-c415-4985-a112-01f57f8b6ef6#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/abd9b499-58f5-44ba-bb99-7db8ef35fcdd#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pedro De la Rosa in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/b1e2b9ba-6d98-4df6-8c8d-dac2578947e1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/acc0e4c8-1b02-47a5-b8b0-1a3f299b4fd7#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kimi Raikkonen in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/5a6828cb-1a28-48e0-92bc-af8cdf1e64f1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/adcff4c4-e835-4b32-b665-bc6b2edead93#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Robin Frijns in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/110cee45-2327-4cd6-9754-95773d60e0eb#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> .
+
+<http://www.bbc.co.uk/things/af919e43-1ceb-4294-ab88-6e07f3373e6f#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Romain Grosjean in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/d5229b35-3980-4d52-acbb-853d95e1e505#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/b0e8b594-716e-45e6-98cf-ea5fefa15a67#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Antonio Felix da Costa in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cf99d72a-2185-4b94-b072-1bdb7050d7e1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/b1a047a2-b7b2-4cf8-aaee-d91f70aeb1ec#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Esteban Gutierrez in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0b66c0e7-0b57-4ffa-9ec2-c8e0e4412ab2#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/b20d988a-208d-4307-826c-860b10a5df9a#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Fernando Alonso in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f63149e9-c577-40b4-bd88-1efac54228db#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/b3837c32-6c15-40e5-ade5-2c7ddfbdeb8c#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Paul di Resta in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/7e2d2598-c7f4-40cd-86e2-2439885ecc16#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/bae7654d-c854-4cac-a1ef-3b5036a8326a#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for George Russell in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/8b2bda6e-96f0-4f2e-ae32-5268f0ae3f64#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/bd3ba6ad-3795-45cb-bb80-fc1319bec3d2#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Robert Kubica in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/984f0292-7bb9-4973-a74a-6ccd590d598b#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/bdc41c3c-895e-4e28-b45b-a828024439eb#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Kimi Raikkonen in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/5a6828cb-1a28-48e0-92bc-af8cdf1e64f1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/be36a987-e824-490a-9752-42e2b5bb12cc#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pedro De la Rosa in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/b1e2b9ba-6d98-4df6-8c8d-dac2578947e1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/bf0e0369-1fae-43c3-878a-0159ddc77dee#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Charles Pic in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/7a8d6bf8-eaa5-4f9a-b71a-e8b072c9c4d1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> .
+
+<http://www.bbc.co.uk/things/bfe1d3cb-e0f8-4918-8f60-2f322bfc0c9d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Brendon Hartley in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/bc910add-a276-4c3e-9799-d9cc3343184f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/bffb2fe2-6563-4fba-b26f-7caf2317f2da#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Antonio Giovinazzi in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/a0ed4f8b-dfae-4a3f-8a6e-22669736df7e#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/c41650ff-1337-4cfd-afd8-d8d1bd2f8c6d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Alfonso Celis in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/083a9487-da64-4cdd-8a10-090152a2c380#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/c845bc2f-fd57-4a80-a41f-9f4a17a2a4d2#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Carlos Sainz Jnr in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/28946865-1663-4154-98f8-74c387b1e2bb#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/ce6c7434-4a05-333c-e7b9-0d66b50d90e9#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sebastian Vettel in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f6fbfc7a-f208-4aba-baa2-f9a401f8c8c1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/cfb2eb33-de00-46e4-9427-0dedfcab4fc3#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lando Norris in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0ae398dd-6c2b-431f-a362-48c3a9ce9d6f#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/cfd0c0ee-b868-4b4f-b89d-200c13a49054#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Antonio Giovinazzi in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/a0ed4f8b-dfae-4a3f-8a6e-22669736df7e#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/d02c187c-cf16-41af-9518-31fcd252728f#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Carlos Sainz Jr in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/28946865-1663-4154-98f8-74c387b1e2bb#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/d19e941f-c7ae-fd0e-9ceb-ef6fae6c824e#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Fernando Alonso in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f63149e9-c577-40b4-bd88-1efac54228db#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/d4f8a6ad-32eb-4314-9e44-d4ecbd89eed2#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Stoffel Vandoorne in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/300b1e2a-99a7-4994-9e60-33b67d7a9915#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/d86a0d0d-43ab-4273-86eb-b4b3ff3558c1#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Artem Markelov in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/1bf0856b-c8ce-4ef9-949e-5b1ebedc0c99#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> .
+
+<http://www.bbc.co.uk/things/da3e87af-5dd8-4e68-9288-a26bf0d4ae5d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Felipe Nasr in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/608f9a6e-297a-4bf8-8dbd-4b063a293a58#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/dbc204a9-ef89-44aa-a84a-dbde03a52009#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Will Stevens in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cc9be749-f431-4e4b-9601-cad9357f616a#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id>,
+        <http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> .
+
+<http://www.bbc.co.uk/things/dd152251-1b45-48c3-b463-593b0a40a097#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "LYN"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1315> ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Alex Lynn"@en-gb ;
+    core:shortLabel "Lynn"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> ;
+    ns3:familyName "Lynn"@en-gb ;
+    ns3:firstName "Alex"@en-gb .
+
+<http://www.bbc.co.uk/things/de9fbf00-b07f-411e-8873-578782cf5a77#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniel Juncadella in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/e43e7e28-adc1-4569-9608-3662f0b13ad8#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/df0a1ab6-c48e-4a3d-b6d8-76fad72aca95#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jenson Button in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/7fab5837-871d-466c-801f-6fe0d72692b4#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/df674b3a-69ae-4727-86e6-6f92361a82bf#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Susie Wolff in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/7b823626-8703-48e5-88c1-a952b62ec9b2#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> .
+
+<http://www.bbc.co.uk/things/dfde649f-1322-4989-a1d1-9c97cb46f4bb#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jolyon Palmer in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/9bcdf9fa-40d6-440b-8a3e-8753948e7967#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> .
+
+<http://www.bbc.co.uk/things/e30ec859-311a-4202-8b7d-eb832752a9d5#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pierre Gasly in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/1f272b3b-b870-40c2-b952-d3c4a3f99846#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/e396ee28-60a9-4f71-8f99-415d31ef4213#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Sergio Sette Carama in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/42dc0626-e63a-4980-996b-29e1dda55929#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/e41e7460-fede-4045-b3cf-434ffcff48df#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Pietro Fittipaldi in 2019"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/fdce8ab8-603a-448c-8662-f6cf11ab5b11#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/e708051c-b4bb-4480-bdf7-8e33aa4a02bc#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Fabio Leimar in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/ab51a3dd-ca94-4352-8f5a-9377bc06dba0#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> .
+
+<http://www.bbc.co.uk/things/e72b7c61-b0fb-4812-ba45-f6646f804199#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniil Kvyat in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/3942939c-14fa-4768-b3c8-3d2bef605073#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/e7e1db2c-5d0b-4981-84bf-fc0d1fcb05c5#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Giedo van der Garde in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/05c11fcf-e477-4c19-8e52-74bb5a206ee6#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/e8986018-c4f1-45de-afc2-30e11e34c541#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Robin Frijns in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/110cee45-2327-4cd6-9754-95773d60e0eb#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> .
+
+<http://www.bbc.co.uk/things/ecb70948-5289-4593-a3e1-4203effe4462#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nico Hulkenberg in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0f8cc9ac-0afa-423c-b484-611c17503825#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/edce03e5-5c08-4f86-bfea-9b6ddad312ef#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lewis Hamilton in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/ed138786-46c0-430f-9493-214d3c02c429#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/ee26c4a7-c546-af3e-5ace-0240939889f4#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniil Kvyat in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/3942939c-14fa-4768-b3c8-3d2bef605073#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/efa2110d-4f2b-4114-4d36-2ef4f031b21d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Lewis Hamilton in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/ed138786-46c0-430f-9493-214d3c02c429#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> .
+
+<http://www.bbc.co.uk/things/f26bb08f-1e0b-9a0f-e896-7072d488ec61#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Daniel Ricciardo in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/6a8198a3-5b08-467a-9c94-967f36901e6a#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/f2d881e5-aa26-4f6b-8d81-7a3b4b0966f2#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Stoffel Vandoorne in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/300b1e2a-99a7-4994-9e60-33b67d7a9915#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/f2e5eb95-fe64-450b-b197-696de2593f34#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Esteban Ocon in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/2e1ce168-4e29-4f1b-8df3-30301b72028e#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/04ae3848-56c9-4485-9419-289c70e47ed4#id> .
+
+<http://www.bbc.co.uk/things/f415de58-fdba-5731-6424-639a2718d452#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Marcus Ericsson in 2017"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/6d2fa17f-c415-4985-a112-01f57f8b6ef6#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> .
+
+<http://www.bbc.co.uk/things/f6267079-3c56-41b8-81c9-c4eeddcc387a#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Nico Hulkenberg in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/0f8cc9ac-0afa-423c-b484-611c17503825#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> .
+
+<http://www.bbc.co.uk/things/f635e876-4ed3-440f-bfbd-30d5f489f88d#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Jenson Button in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/7fab5837-871d-466c-801f-6fe0d72692b4#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/f6836050-a1bf-41ac-999e-df89b9c281b7#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Fernando Alonso in 2018"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/f63149e9-c577-40b4-bd88-1efac54228db#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> .
+
+<http://www.bbc.co.uk/things/f794d8f8-e12e-49fc-bb35-1399ffc9f745#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Charles Leclerc in 2016"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/4722876e-1ede-4eb8-8062-56e630e534c9#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> .
+
+<http://www.bbc.co.uk/things/f84e7cc6-e435-478b-96e5-6c5d91dbb1d3#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Marc Gene in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/97c2db66-7e23-46e6-be47-17bf182a1cd3#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> .
+
+<http://www.bbc.co.uk/things/f9e268c7-fb84-4acd-85a8-f782e3a1d40a#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Antonio Felix da Costa in 2014"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/cf99d72a-2185-4b94-b072-1bdb7050d7e1#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> .
+
+<http://www.bbc.co.uk/things/fd70988c-6626-4456-b3d9-4694b664efc7#id> a sport:CompetitiveSportingRole ;
+    rdfs:label "Competitive role for Max Verstappen in 2015"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    ns1:holder <http://www.bbc.co.uk/things/8bfd65f3-1a07-49af-9849-cc2e8f221377#id> ;
+    ns1:role_at <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> .
+
+<http://www.bbc.co.uk/things/083a9487-da64-4cdd-8a10-090152a2c380#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/3064adec-2d3b-4b27-9c49-5d56a6a01dfd#id> ;
+    sal:videCode "CEL"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1440> ;
+    core:dateOfBirth "1996-09-18"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Alfonso Celis"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Alfonso_Celis,_Jr.> ;
+    core:shortLabel "Celis"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> ;
+    ns3:familyName "Celis"@en-gb ;
+    ns3:firstName "Alfonso"@en-gb .
+
+<http://www.bbc.co.uk/things/1bf0856b-c8ce-4ef9-949e-5b1ebedc0c99#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/df8e7c5a-3201-4bba-831a-112d2eab6465#id> ;
+    sal:videCode "MAR"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1642> ;
+    core:dateOfBirth "1994-09-10"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Artem Markelov"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Artem_Markelov> ;
+    core:shortLabel "Markelov"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> ;
+    ns3:familyName "Markelov"@en-gb ;
+    ns3:firstName "Artem"@en-gb .
+
+<http://www.bbc.co.uk/things/213878a7-4321-4f17-bae1-8bc25787a8cc#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/0b439cd3-e9ec-47a7-a382-000c563fa737#id> ;
+    sal:videCode "MAR"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1294> ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Raffaele Marciello"@en-gb ;
+    core:shortLabel "Marciello"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> ;
+    ns3:familyName "Marciello"@en-gb ;
+    ns3:firstName "Raffaele"@en-gb .
+
+<http://www.bbc.co.uk/things/3972ac3a-c26c-42ca-8bba-8f0ef9a515c9#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "KIN"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1494> ;
+    core:dateOfBirth "1994-02-26"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Jordan King"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Jordan_King> ;
+    core:shortLabel "King"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> ;
+    ns3:familyName "King"@en-gb ;
+    ns3:firstName "Jordan"@en-gb .
+
+<http://www.bbc.co.uk/things/42dc0626-e63a-4980-996b-29e1dda55929#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/adc21f99-8209-4372-a570-70e346114c22#id> ;
+    sal:videCode "SET"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1699> ;
+    core:dateOfBirth "1998-05-23"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Sérgio Sette Câmara"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sérgio_Sette_Câmara> ;
+    core:shortLabel "Sette Câmara"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> ;
+    ns3:familyName "Sette Câmara"@en-gb ;
+    ns3:firstName "Sérgio"@en-gb .
+
+<http://www.bbc.co.uk/things/4f7eed6d-6add-4f29-af41-25f4126cc7b2#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/116b1968-2767-49e2-ba49-0ee61fc27814#id> ;
+    sal:videCode "HAR"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1439> ;
+    core:dateOfBirth "1993-01-22"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Rio Haryanto"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Rio_Haryanto> ;
+    core:shortLabel "Haryanto"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> ;
+    ns3:familyName "Haryanto"@en-gb ;
+    ns3:firstName "Rio"@en-gb .
+
+<http://www.bbc.co.uk/things/786eadbd-d515-4bd4-8416-c4ece74fe011#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "AIT"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1700> ;
+    core:dateOfBirth "1995-09-23"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Jack Aitken"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Jack_Aitken> ;
+    core:shortLabel "Aitken"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> ;
+    ns3:familyName "Aitken"@en-gb ;
+    ns3:firstName "Jack"@en-gb .
+
+<http://www.bbc.co.uk/things/9ac52124-fb69-4840-9a99-481c7e09b522#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/f1648937-ee42-4203-b7b9-9af8fc9e481d#id> ;
+    sal:videCode "ALB"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1674> ;
+    core:dateOfBirth "1996-03-23"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Alexander Albon"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Alexander_Albon> ;
+    core:shortLabel "Albon"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> ;
+    ns3:familyName "Albon"@en-gb ;
+    ns3:firstName "Alexander"@en-gb .
+
+<http://www.bbc.co.uk/things/ab51a3dd-ca94-4352-8f5a-9377bc06dba0#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/012b505f-b279-43da-bd2e-952966781be9#id> ;
+    sal:videCode "LEI"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1350> ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Fabio Leimar"@en-gb ;
+    core:shortLabel "Leimar"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> ;
+    ns3:familyName "Leimar"@en-gb ;
+    ns3:firstName "Fabio"@en-gb .
+
+<http://www.bbc.co.uk/things/bea408d7-9730-4e16-9a0a-be2730e44285#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/116b1968-2767-49e2-ba49-0ee61fc27814#id> ;
+    sal:videCode "GEL"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1561> ;
+    core:dateOfBirth "1996-11-01"^^xsd:date ;
+    core:disambiguationHint "Formula One racing driver"@en-gb ;
+    core:preferredLabel "Sean Gelael"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sean_Gelael> ;
+    core:shortLabel "Gelael"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> ;
+    ns3:familyName "Gelael"@en-gb ;
+    ns3:firstName "Sean"@en-gb .
+
+<http://www.bbc.co.uk/things/cc9be749-f431-4e4b-9601-cad9357f616a#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "STE"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1289> ;
+    core:dateOfBirth "1991-06-28"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Will Stevens"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Will_Stevens> ;
+    core:shortLabel "Stevens"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id>,
+        <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id>,
+        <http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> ;
+    ns3:familyName "Stevens"@en-gb ;
+    ns3:firstName "Will"@en-gb .
+
+<http://www.bbc.co.uk/things/f55f0458-e7ac-456f-b156-63b6fea582a3#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/fe881d09-b26d-48b1-80c4-427edc1bbdb6#id> ;
+    sal:videCode "MER"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1283> ;
+    core:dateOfBirth "1991-03-22"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Roberto Merhi"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Roberto_Merhi> ;
+    core:shortLabel "Merhi"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id>,
+        <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> ;
+    ns3:familyName "Merhi"@en-gb ;
+    ns3:firstName "Roberto"@en-gb .
+
+<http://www.bbc.co.uk/things/f8eb3c1a-4989-49ac-9d0b-68fea1ce4625#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/3f53c272-5b8f-4a4f-99de-a857d6726c5b#id> ;
+    sal:videCode "KOB"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP702> ;
+    core:dateOfBirth "1986-09-13"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Kamui Kobayashi"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Kamui_Kobayashi> ;
+    core:shortLabel "Kobayashi"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> ;
+    ns3:familyName "Kobayashi"@en-gb ;
+    ns3:firstName "Kamui"@en-gb .
+
+<http://www.bbc.co.uk/things/fdce8ab8-603a-448c-8662-f6cf11ab5b11#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/6c32df61-7ede-4498-9427-346107509f0a#id> ;
+    sal:videCode "FIT"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1698> ;
+    core:dateOfBirth "1996-06-25"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Pietro Fittipaldi"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Pietro_Fittipaldi> ;
+    core:shortLabel "Fittipaldi"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> ;
+    ns3:familyName "Fittipaldi"@en-gb ;
+    ns3:firstName "Pietro"@en-gb .
+
+<http://www.bbc.co.uk/things/ff6ea6a6-790d-406e-acd2-ae64df036118#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/89c79985-2e58-4740-921a-9a05ec76405a#id> ;
+    sal:videCode "CAL"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1697> ;
+    core:dateOfBirth "1993-03-10"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Tatiana Calderon"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Tatiana_Calderon> ;
+    core:shortLabel "Calderon"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> ;
+    ns3:familyName "Calderon"@en-gb ;
+    ns3:firstName "Tatiana"@en-gb .
+
+<urn:sports-data:PMRP1013> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1014> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1060> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1068> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1113> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1140> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1155> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1156> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1207> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1222> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1223> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1224> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1225> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1226> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1232> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1233> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1234> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP127> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1283> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1285> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1288> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1289> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1291> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1292> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1293> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1294> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP130> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1314> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1315> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP135> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1350> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP140> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP141> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1439> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1440> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1441> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1443> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP146> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1484> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1494> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1496> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1530> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1561> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1570> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1579> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1642> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1674> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1697> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1698> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1699> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP1700> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP355> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP356> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP441> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP459> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP503> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP510> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP514> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP550> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP556> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP702> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP860> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP891> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP921> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP930> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP931> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP932> a cms:Sports-DataLocator .
+
+<urn:sports-data:PMRP987> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/05c11fcf-e477-4c19-8e52-74bb5a206ee6#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/7d8dffb3-7027-4a12-b29d-a03e584a8bdf#id> ;
+    sal:videCode "GAR"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP556> ;
+    core:dateOfBirth "1985-04-25"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Giedo van der Garde"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Giedo_van_der_Garde> ;
+    core:shortLabel "van der Garde"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> ;
+    ns3:familyName "van der Garde"@en-gb ;
+    ns3:firstName "Giedo"@en-gb .
+
+<http://www.bbc.co.uk/things/0ae398dd-6c2b-431f-a362-48c3a9ce9d6f#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "NOR"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1579> ;
+    core:dateOfBirth "1999-11-13"^^xsd:date ;
+    core:disambiguationHint "Formula One racing driver"@en-gb ;
+    core:preferredLabel "Lando Norris"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Lando_Norris> ;
+    core:shortLabel "Norris"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> ;
+    ns3:familyName "Norris"@en-gb ;
+    ns3:firstName "Lando"@en-gb .
+
+<http://www.bbc.co.uk/things/110cee45-2327-4cd6-9754-95773d60e0eb#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/7d8dffb3-7027-4a12-b29d-a03e584a8bdf#id> ;
+    sal:videCode "FRI"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1155> ;
+    core:dateOfBirth "1991-08-07"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Robin Frijns"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Robin_Frijns> ;
+    core:shortLabel "Frijns"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> ;
+    ns3:familyName "Frijns"@en-gb ;
+    ns3:firstName "Robin"@en-gb .
+
+<http://www.bbc.co.uk/things/58f4e9f4-d42c-453d-b53d-af5079f45b87#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/d9a95037-4df7-4a97-8061-c4b5760b69f3#id> ;
+    sal:videCode "ROS"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP355> ;
+    core:dateOfBirth "1985-06-27"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Nico Rosberg"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Nico_Rosberg> ;
+    core:shortLabel "Rosberg"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> ;
+    ns3:familyName "Rosberg"@en-gb ;
+    ns3:firstName "Nico"@en-gb .
+
+<http://www.bbc.co.uk/things/5e6641b7-8376-433d-9e4f-4a1dcbe067c6#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/0b439cd3-e9ec-47a7-a382-000c563fa737#id> ;
+    sal:videCode "RIG"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1232> ;
+    core:dateOfBirth "1986-08-26"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Davide Rigon"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Davide_Rigon> ;
+    core:shortLabel "Rigon"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> ;
+    ns3:familyName "Rigon"@en-gb ;
+    ns3:firstName "Davide"@en-gb .
+
+<http://www.bbc.co.uk/things/608f9a6e-297a-4bf8-8dbd-4b063a293a58#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/adc21f99-8209-4372-a570-70e346114c22#id> ;
+    sal:videCode "NAS"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1234> ;
+    core:dateOfBirth "1992-08-21"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Felipe Nasr"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Felipe_Nasr> ;
+    core:shortLabel "Nasr"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id>,
+        <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> ;
+    ns3:familyName "Nasr"@en-gb ;
+    ns3:firstName "Felipe"@en-gb .
+
+<http://www.bbc.co.uk/things/7a8d6bf8-eaa5-4f9a-b71a-e8b072c9c4d1#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/b6ee5ea7-4f56-40a3-b674-c83479fd2545#id> ;
+    sal:videCode "PIC"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1068> ;
+    core:dateOfBirth "1990-02-15"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Charles Pic"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Charles_Pic> ;
+    core:shortLabel "Pic"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> ;
+    ns3:familyName "Pic"@en-gb ;
+    ns3:firstName "Charles"@en-gb .
+
+<http://www.bbc.co.uk/things/7b823626-8703-48e5-88c1-a952b62ec9b2#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "WOL"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1156> ;
+    core:dateOfBirth "1982-12-06"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Susie Wolff"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Susie_Wolff> ;
+    core:shortLabel "Wolff"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> ;
+    ns3:familyName "Wolff"@en-gb ;
+    ns3:firstName "Susie"@en-gb .
+
+<http://www.bbc.co.uk/things/7e2d2598-c7f4-40cd-86e2-2439885ecc16#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "DIR"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP921> ;
+    core:dateOfBirth "1986-04-16"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Paul di Resta"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Paul_di_Resta> ;
+    core:shortLabel "di Resta"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> ;
+    ns3:familyName "di Resta"@en-gb ;
+    ns3:firstName "Paul"@en-gb .
+
+<http://www.bbc.co.uk/things/80ca6123-4840-453c-b601-1a43f629553d#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/b6ee5ea7-4f56-40a3-b674-c83479fd2545#id> ;
+    sal:videCode "VER"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1060> ;
+    core:dateOfBirth "1990-04-25"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Jean-Eric Vergne"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Jean-Eric_Vergne> ;
+    core:shortLabel "Vergne"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> ;
+    ns3:familyName "Vergne"@en-gb ;
+    ns3:firstName "Jean-Eric"@en-gb .
+
+<http://www.bbc.co.uk/things/97c2db66-7e23-46e6-be47-17bf182a1cd3#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/fe881d09-b26d-48b1-80c4-427edc1bbdb6#id> ;
+    sal:videCode "GEN"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP130> ;
+    core:dateOfBirth "1974-03-29"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Marc Gene"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Marc_Gené> ;
+    core:shortLabel "Gene"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> ;
+    ns3:familyName "Gene"@en-gb ;
+    ns3:firstName "Marc"@en-gb .
+
+<http://www.bbc.co.uk/things/984f0292-7bb9-4973-a74a-6ccd590d598b#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/90730136-b19d-4cf2-9d1a-701e5891ce92#id> ;
+    sal:videCode "KUB"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP356> ;
+    core:dateOfBirth "1984-12-07"^^xsd:date ;
+    core:disambiguationHint "Formula One racing driver"@en-gb ;
+    core:preferredLabel "Robert Kubica"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Robert_Kubica> ;
+    core:shortLabel "Kubica"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> ;
+    ns3:familyName "Kubica"@en-gb ;
+    ns3:firstName "Robert"@en-gb .
+
+<http://www.bbc.co.uk/things/99801014-d624-47c4-92fa-1c71071da6b3#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/d9a95037-4df7-4a97-8061-c4b5760b69f3#id> ;
+    sal:videCode "SUT"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP441> ;
+    core:dateOfBirth "1983-01-11"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Adrian Sutil"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Adrian_Sutil> ;
+    core:shortLabel "Sutil"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> ;
+    ns3:familyName "Sutil"@en-gb ;
+    ns3:firstName "Adrian"@en-gb .
+
+<http://www.bbc.co.uk/things/a3dfb8bf-c01b-43f6-a976-32a2fa6552ed#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/be908ad5-c6f1-40f5-b380-007a13c7a122#id> ;
+    sal:videCode "FON"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1292> ;
+    core:dateOfBirth "1990-03-02"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Adderly Fong"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Adderly_Fong> ;
+    core:shortLabel "Fong"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> ;
+    ns3:familyName "Fong"@en-gb ;
+    ns3:firstName "Adderly"@en-gb .
+
+<http://www.bbc.co.uk/things/b1e2b9ba-6d98-4df6-8c8d-dac2578947e1#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/fe881d09-b26d-48b1-80c4-427edc1bbdb6#id> ;
+    sal:videCode "DLR"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP127> ;
+    core:dateOfBirth "1971-02-24"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Pedro De la Rosa"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Pedro_de_la_Rosa> ;
+    core:shortLabel "De la Rosa"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> ;
+    ns3:familyName "De la Rosa"@en-gb ;
+    ns3:firstName "Pedro"@en-gb .
+
+<http://www.bbc.co.uk/things/b4622107-496d-4526-b9c5-14726524849f#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/0e812021-ff68-4c66-b9c8-84389092cbae#id> ;
+    sal:videCode "MAL"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP987> ;
+    core:dateOfBirth "1985-03-09"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Pastor Maldonado"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Pastor_Maldonado> ;
+    core:shortLabel "Maldonado"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> ;
+    ns3:familyName "Maldonado"@en-gb ;
+    ns3:firstName "Pastor"@en-gb .
+
+<http://www.bbc.co.uk/things/bc910add-a276-4c3e-9799-d9cc3343184f#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/ecb56ea7-7816-42b1-b1bc-a7e167503a27#id> ;
+    sal:videCode "HAR"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP930> ;
+    core:dateOfBirth "1989-11-10"^^xsd:date ;
+    core:disambiguationHint "Formula One racing driver"@en-gb ;
+    core:preferredLabel "Brendon Hartley"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Brendon_Hartley> ;
+    core:shortLabel "Hartley"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> ;
+    ns3:familyName "Hartley"@en-gb ;
+    ns3:firstName "Brendon"@en-gb .
+
+<http://www.bbc.co.uk/things/cafe9b89-391c-496f-8944-a41f2c0c9d69#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/b6ee5ea7-4f56-40a3-b674-c83479fd2545#id> ;
+    sal:videCode "BIA"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1013> ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Jules Bianchi"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Jules_Bianchi> ;
+    core:shortLabel "Bianchi"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> ;
+    ns3:familyName "Bianchi"@en-gb ;
+    ns3:firstName "Jules"@en-gb .
+
+<http://www.bbc.co.uk/things/cf99d72a-2185-4b94-b072-1bdb7050d7e1#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/b01dc349-d1a1-4917-bf1e-575ddcfe4d4d#id> ;
+    sal:videCode "COS"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1224> ;
+    core:dateOfBirth "1991-08-31"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Antonio Felix da Costa"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/António_Félix_da_Costa> ;
+    core:shortLabel "Felix da Costa"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> ;
+    ns3:familyName "Felix da Costa"@en-gb ;
+    ns3:firstName "Antonio"@en-gb .
+
+<http://www.bbc.co.uk/things/dd013bdb-862e-47db-9e60-bbeb29ab2565#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "CHI"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1140> ;
+    core:dateOfBirth "1991-04-21"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Max Chilton"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Max_Chilton> ;
+    core:shortLabel "Chilton"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id>,
+        <http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> ;
+    ns3:familyName "Chilton"@en-gb ;
+    ns3:firstName "Max"@en-gb .
+
+<http://www.bbc.co.uk/things/e2e4a5a5-5730-4fda-b2da-f051a8ab7de7#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/d9a95037-4df7-4a97-8061-c4b5760b69f3#id> ;
+    sal:videCode "LOT"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP860> ;
+    core:dateOfBirth "1981-11-19"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Andre Lotterer"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/André_Lotterer> ;
+    core:shortLabel "Lotterer"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> ;
+    ns3:familyName "Lotterer"@en-gb ;
+    ns3:firstName "Andre"@en-gb .
+
+<http://www.bbc.co.uk/things/e43e7e28-adc1-4569-9608-3662f0b13ad8#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/fe881d09-b26d-48b1-80c4-427edc1bbdb6#id> ;
+    sal:videCode "JUN"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1233> ;
+    core:dateOfBirth "1991-05-07"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Daniel Juncadella"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Daniel_Juncadella> ;
+    core:shortLabel "Juncadella"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> ;
+    ns3:familyName "Juncadella"@en-gb ;
+    ns3:firstName "Daniel"@en-gb .
+
+<http://www.bbc.co.uk/things/0a9c80fc-46d3-4dd6-b1d9-db188ea081e7#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/1bc6d8c1-32d1-4275-9173-69eaa0bd25c2#id> ;
+    sal:videCode "STR"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1496> ;
+    core:dateOfBirth "1998-10-29"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Lance Stroll"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Lance_Stroll> ;
+    core:shortLabel "Stroll"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> ;
+    ns3:familyName "Stroll"@en-gb ;
+    ns3:firstName "Lance"@en-gb .
+
+<http://www.bbc.co.uk/things/0b66c0e7-0b57-4ffa-9ec2-c8e0e4412ab2#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/3064adec-2d3b-4b27-9c49-5d56a6a01dfd#id> ;
+    sal:videCode "GUT"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1014> ;
+    core:dateOfBirth "1991-08-05"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Esteban Gutierrez"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Esteban_Gutierrez> ;
+    core:shortLabel "Gutierrez"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id>,
+        <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id>,
+        <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> ;
+    ns3:familyName "Gutierrez"@en-gb ;
+    ns3:firstName "Esteban"@en-gb .
+
+<http://www.bbc.co.uk/things/3068a617-5180-407f-815b-fd0672b04006#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/1bc6d8c1-32d1-4275-9173-69eaa0bd25c2#id> ;
+    sal:videCode "LAT"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1443> ;
+    core:dateOfBirth "1995-06-29"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Nicholas Latifi"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Nicholas_Latifi> ;
+    core:shortLabel "Latifi"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> ;
+    ns3:familyName "Latifi"@en-gb ;
+    ns3:firstName "Nicholas"@en-gb .
+
+<http://www.bbc.co.uk/things/4722876e-1ede-4eb8-8062-56e630e534c9#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/000a2a50-fd64-4b77-895b-999d7dfa3e55#id> ;
+    sal:videCode "LEC"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1484> ;
+    core:dateOfBirth "1997-10-16"^^xsd:date ;
+    core:disambiguationHint "Formula One racing driver"@en-gb ;
+    core:preferredLabel "Charles Leclerc"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Charles_Leclerc_(racing_driver)> ;
+    core:shortLabel "Leclerc"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> ;
+    ns3:familyName "Leclerc"@en-gb ;
+    ns3:firstName "Charles"@en-gb .
+
+<http://www.bbc.co.uk/things/68dfb7a6-a4ef-4ae1-a0b5-9700d06097ae#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/012b505f-b279-43da-bd2e-952966781be9#id> ;
+    sal:videCode "BUE"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP510> ;
+    core:dateOfBirth "1988-10-31"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Sebastien Buemi"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sébastien_Buemi> ;
+    core:shortLabel "Buemi"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> ;
+    ns3:familyName "Buemi"@en-gb ;
+    ns3:firstName "Sebastien"@en-gb .
+
+<http://www.bbc.co.uk/things/8b2bda6e-96f0-4f2e-ae32-5268f0ae3f64#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "RUS"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1570> ;
+    core:dateOfBirth "1998-02-15"^^xsd:date ;
+    core:disambiguationHint "Formula One racing driver"@en-gb ;
+    core:preferredLabel "George Russell"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/George_Russell_(racing_driver)> ;
+    core:shortLabel "Russell"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id>,
+        <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> ;
+    ns3:familyName "Russell"@en-gb ;
+    ns3:firstName "George"@en-gb .
+
+<http://www.bbc.co.uk/things/9bcdf9fa-40d6-440b-8a3e-8753948e7967#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "PAL"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1314> ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Jolyon Palmer"@en-gb ;
+    core:shortLabel "Palmer"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id>,
+        <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> ;
+    ns3:familyName "Palmer"@en-gb ;
+    ns3:firstName "Jolyon"@en-gb .
+
+<http://www.bbc.co.uk/things/a0ed4f8b-dfae-4a3f-8a6e-22669736df7e#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/0b439cd3-e9ec-47a7-a382-000c563fa737#id> ;
+    sal:videCode "GIO"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1530> ;
+    core:dateOfBirth "1993-12-14"^^xsd:date ;
+    core:disambiguationHint "Formula One racing driver"@en-gb ;
+    core:preferredLabel "Antonio Giovinazzi"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Antonio_Giovinazzi> ;
+    core:shortLabel "Giovinazzi"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id>,
+        <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> ;
+    ns3:familyName "Giovinazzi"@en-gb ;
+    ns3:firstName "Antonio"@en-gb .
+
+<http://www.bbc.co.uk/things/a99b07bf-b2ba-4d0b-b3a0-6907ab1b8a7c#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/6c32df61-7ede-4498-9427-346107509f0a#id> ;
+    sal:videCode "RSI"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1113> ;
+    core:dateOfBirth "1991-09-25"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Alexander Rossi"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Alexander_Rossi_(racing_driver)> ;
+    core:shortLabel "Rossi"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id>,
+        <http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> ;
+    ns3:familyName "Rossi"@en-gb ;
+    ns3:firstName "Alexander"@en-gb .
+
+<http://www.bbc.co.uk/things/1f272b3b-b870-40c2-b952-d3c4a3f99846#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/b6ee5ea7-4f56-40a3-b674-c83479fd2545#id> ;
+    sal:videCode "GAS"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1441> ;
+    core:dateOfBirth "1996-02-07"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Pierre Gasly"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Pierre_Gasly> ;
+    core:shortLabel "Gasly"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> ;
+    ns3:familyName "Gasly"@en-gb ;
+    ns3:firstName "Pierre"@en-gb .
+
+<http://www.bbc.co.uk/things/6d2fa17f-c415-4985-a112-01f57f8b6ef6#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/019195cb-a977-4197-a49f-580f15417039#id> ;
+    sal:videCode "ERI"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1222> ;
+    core:dateOfBirth "1990-09-02"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Marcus Ericsson"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Marcus_Ericsson> ;
+    core:shortLabel "Ericsson"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id>,
+        <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> ;
+    ns3:familyName "Ericsson"@en-gb ;
+    ns3:firstName "Marcus"@en-gb .
+
+<http://www.bbc.co.uk/things/7fab5837-871d-466c-801f-6fe0d72692b4#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "BUT"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP135> ;
+    core:dateOfBirth "1980-01-19"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Jenson Button"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Jenson_Button> ;
+    core:shortLabel "Button"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> ;
+    ns3:familyName "Button"@en-gb ;
+    ns3:firstName "Jenson"@en-gb .
+
+<http://www.bbc.co.uk/things/cc062052-aa44-490e-a1fc-1d8d5b635bc7#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/df8e7c5a-3201-4bba-831a-112d2eab6465#id> ;
+    sal:videCode "SIR"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1226> ;
+    core:dateOfBirth "1995-08-27"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Sergey Sirotkin"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sergey_Sirotkin_(racing_driver)> ;
+    core:shortLabel "Sirotkin"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> ;
+    ns3:familyName "Sirotkin"@en-gb ;
+    ns3:firstName "Sergey"@en-gb .
+
+<http://www.bbc.co.uk/things/cda28b5c-486a-4b7f-91df-17c43115d7ba#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/adc21f99-8209-4372-a570-70e346114c22#id> ;
+    sal:videCode "MAS"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP146> ;
+    core:dateOfBirth "1981-04-25"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Felipe Massa"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Felipe_Massa> ;
+    core:shortLabel "Massa"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> ;
+    ns3:familyName "Massa"@en-gb ;
+    ns3:firstName "Felipe"@en-gb .
+
+<http://www.bbc.co.uk/things/f2073f7b-58a4-4c05-aa21-07f9576c23ba#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/d9a95037-4df7-4a97-8061-c4b5760b69f3#id> ;
+    sal:videCode "WEH"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1285> ;
+    core:dateOfBirth "1994-10-18"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Pascal Wehrlein"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Pascal_Wehrlein> ;
+    core:shortLabel "Wehrlein"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id>,
+        <http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id>,
+        <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> ;
+    ns3:familyName "Wehrlein"@en-gb ;
+    ns3:firstName "Pascal"@en-gb .
+
+<http://www.bbc.co.uk/things/28946865-1663-4154-98f8-74c387b1e2bb#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/fe881d09-b26d-48b1-80c4-427edc1bbdb6#id> ;
+    sal:videCode "SAI"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1293> ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Carlos Sainz Jnr"@en-gb ;
+    core:shortLabel "Sainz Jnr"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> ;
+    ns3:familyName "Sainz Jnr"@en-gb ;
+    ns3:firstName "Carlos"@en-gb .
+
+<http://www.bbc.co.uk/things/300b1e2a-99a7-4994-9e60-33b67d7a9915#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/8efbaa0c-1756-465a-aa58-a6cfbdaaae87#id> ;
+    sal:videCode "VAN"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1225> ;
+    core:dateOfBirth "1992-03-26"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Stoffel Vandoorne"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Stoffel_Vandoorne> ;
+    core:shortLabel "Vandoorne"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> ;
+    ns3:familyName "Vandoorne"@en-gb ;
+    ns3:firstName "Stoffel"@en-gb .
+
+<http://www.bbc.co.uk/things/d5229b35-3980-4d52-acbb-853d95e1e505#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/b6ee5ea7-4f56-40a3-b674-c83479fd2545#id> ;
+    sal:videCode "GRO"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP891> ;
+    core:dateOfBirth "1976-04-17"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Romain Grosjean"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Romain_Grosjean> ;
+    core:shortLabel "Grosjean"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id>,
+        <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> ;
+    ns3:familyName "Grosjean"@en-gb ;
+    ns3:firstName "Romain"@en-gb .
+
+<http://www.bbc.co.uk/things/f63149e9-c577-40b4-bd88-1efac54228db#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/fe881d09-b26d-48b1-80c4-427edc1bbdb6#id> ;
+    sal:videCode "ALO"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP140> ;
+    core:dateOfBirth "1981-07-29"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Fernando Alonso"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Fernando_Alonso> ;
+    core:shortLabel "Alonso"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id>,
+        <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> ;
+    ns3:familyName "Alonso"@en-gb ;
+    ns3:firstName "Fernando"@en-gb .
+
+<http://www.bbc.co.uk/things/0f8cc9ac-0afa-423c-b484-611c17503825#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/d9a95037-4df7-4a97-8061-c4b5760b69f3#id> ;
+    sal:videCode "HUL"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP514> ;
+    core:dateOfBirth "1987-08-19"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Nico Hulkenberg"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Nico_Hulkenberg> ;
+    core:shortLabel "Hulkenberg"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id>,
+        <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> ;
+    ns3:familyName "Hulkenberg"@en-gb ;
+    ns3:firstName "Nico"@en-gb .
+
+<http://www.bbc.co.uk/things/187ba184-34cd-43dc-bc4a-b4abcf1eb254#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/6b1f042d-11b0-41b5-b439-6d6a0629aee8#id> ;
+    sal:videCode "MAG"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1223> ;
+    core:dateOfBirth "1992-10-05"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Kevin Magnussen"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Kevin_Magnussen> ;
+    core:shortLabel "Magnussen"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id>,
+        <http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id>,
+        <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> ;
+    ns3:familyName "Magnussen"@en-gb ;
+    ns3:firstName "Kevin"@en-gb .
+
+<http://www.bbc.co.uk/things/2e1ce168-4e29-4f1b-8df3-30301b72028e#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/b6ee5ea7-4f56-40a3-b674-c83479fd2545#id> ;
+    sal:videCode "OCO"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1291> ;
+    core:dateOfBirth "1996-09-18"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Esteban Ocon"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Esteban_Ocon> ;
+    core:shortLabel "Ocon"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/04ae3848-56c9-4485-9419-289c70e47ed4#id>,
+        <http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id>,
+        <http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> ;
+    ns3:familyName "Ocon"@en-gb ;
+    ns3:firstName "Esteban"@en-gb .
+
+<http://www.bbc.co.uk/things/3942939c-14fa-4768-b3c8-3d2bef605073#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/df8e7c5a-3201-4bba-831a-112d2eab6465#id> ;
+    sal:videCode "KVY"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1207> ;
+    core:dateOfBirth "1994-04-25"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Daniil Kvyat"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Daniil_Kvyat> ;
+    core:shortLabel "Kvyat"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> ;
+    ns3:familyName "Kvyat"@en-gb ;
+    ns3:firstName "Daniil"@en-gb .
+
+<http://www.bbc.co.uk/things/5a6828cb-1a28-48e0-92bc-af8cdf1e64f1#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/ce027e29-29ea-4a6d-ad4d-539454ef7b19#id> ;
+    sal:videCode "RAI"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP141> ;
+    core:dateOfBirth "1979-10-17"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Kimi Raikkonen"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Kimi_Raikonnen> ;
+    core:shortLabel "Raikkonen"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> ;
+    ns3:familyName "Raikkonen"@en-gb ;
+    ns3:firstName "Kimi"@en-gb .
+
+<http://www.bbc.co.uk/things/62a67aeb-521b-4fb1-8c07-74a2f3f11b55#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/3064adec-2d3b-4b27-9c49-5d56a6a01dfd#id> ;
+    sal:videCode "PER"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP503> ;
+    core:dateOfBirth "1990-01-26"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Sergio Perez"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sergio_Perez> ;
+    core:shortLabel "Perez"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/04ae3848-56c9-4485-9419-289c70e47ed4#id>,
+        <http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> ;
+    ns3:familyName "Perez"@en-gb ;
+    ns3:firstName "Sergio"@en-gb .
+
+<http://www.bbc.co.uk/things/6a8198a3-5b08-467a-9c94-967f36901e6a#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/38ec4561-b8d5-4fd2-b8bf-ec18f0588f17#id> ;
+    sal:videCode "RIC"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP931> ;
+    core:dateOfBirth "1989-07-01"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Daniel Ricciardo"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Daniel_Ricciardo> ;
+    core:shortLabel "Ricciardo"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> ;
+    ns3:familyName "Ricciardo"@en-gb ;
+    ns3:firstName "Daniel"@en-gb .
+
+<http://www.bbc.co.uk/things/807d07de-523e-445a-9186-15826666e75f#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/ce027e29-29ea-4a6d-ad4d-539454ef7b19#id> ;
+    sal:videCode "BOT"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP932> ;
+    core:dateOfBirth "1989-08-28"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Valtteri Bottas"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Valtteri_Bottas> ;
+    core:shortLabel "Bottas"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id>,
+        <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> ;
+    ns3:familyName "Bottas"@en-gb ;
+    ns3:firstName "Valtteri"@en-gb .
+
+<http://www.bbc.co.uk/things/8bfd65f3-1a07-49af-9849-cc2e8f221377#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/7d8dffb3-7027-4a12-b29d-a03e584a8bdf#id> ;
+    sal:videCode "VPN"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP1288> ;
+    core:dateOfBirth "1997-09-30"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Max Verstappen"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Max_Verstappen> ;
+    core:shortLabel "Verstappen"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id>,
+        <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> ;
+    ns3:familyName "Verstappen"@en-gb ;
+    ns3:firstName "Max"@en-gb .
+
+<http://www.bbc.co.uk/things/ed138786-46c0-430f-9493-214d3c02c429#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> ;
+    sal:videCode "HAM"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP550> ;
+    core:dateOfBirth "1991-05-07"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Lewis Hamilton"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Lewis_Hamilton> ;
+    core:shortLabel "Hamilton"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> ;
+    ns3:familyName "Hamilton"@en-gb ;
+    ns3:firstName "Lewis"@en-gb .
+
+<http://www.bbc.co.uk/things/f6fbfc7a-f208-4aba-baa2-f9a401f8c8c1#id> a sport:Person,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:nationality <http://www.bbc.co.uk/things/d9a95037-4df7-4a97-8061-c4b5760b69f3#id> ;
+    sal:videCode "VET"^^xsd:string ;
+    cms:locator <urn:sports-data:PMRP459> ;
+    core:dateOfBirth "1987-07-03"^^xsd:date ;
+    core:disambiguationHint "Motor Racing Driver"@en-gb ;
+    core:preferredLabel "Sebastian Vettel"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sebastian_Vettel> ;
+    core:shortLabel "Vettel"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:hasCompetedFor <http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id>,
+        <http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> ;
+    ns3:familyName "Vettel"@en-gb ;
+    ns3:firstName "Sebastian"@en-gb .
+

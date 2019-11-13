@@ -1,0 +1,246 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/acd5739f-1578-40f8-b667-acf671ac0f95#id> a provenance:Dataset ;
+    rdfs:label "American Football: International NFL 2018 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/american-football/nfl-2018-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4780 create 2018 NFL season." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-09-17T08:19:28+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/7ab406a0-8e01-48f7-8e2c-2fc4117e994f#id> sport:hasStage <http://www.bbc.co.uk/things/323796c5-dd05-4016-938b-3452122ff58f#id>,
+        <http://www.bbc.co.uk/things/c7e7267e-9ec2-475e-9f6f-7a592d92fca1#id> .
+
+<http://www.bbc.co.uk/things/15be5df0-e4ca-4f93-a8cc-48ce3aec455f#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 2 of NFL"@en-gb ;
+    sal:name "Super Bowl"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S2R7352> ;
+    core:preferredLabel "Super Bowl"@en-gb ;
+    core:shortLabel "Super Bowl"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/323796c5-dd05-4016-938b-3452122ff58f#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of NFL"@en-gb ;
+    sal:name "Regular Season"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S1> ;
+    core:preferredLabel "Regular Season"@en-gb ;
+    core:shortLabel "Regular Season"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/17b55bf8-a717-4993-919a-57b555932934#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/758019b1-2108-4ced-896d-94b6c976d0df#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/6190ea86-2e13-416a-a00a-5ef97299bc09#id>,
+        <http://www.bbc.co.uk/things/a85f5953-c9c5-4b3a-a047-3729034c4511#id>,
+        <http://www.bbc.co.uk/things/b0b74675-f349-4b52-9f2b-3cb9d06f28dc#id>,
+        <http://www.bbc.co.uk/things/d99a4e45-6824-4855-845c-d8dc2b27a5ae#id>,
+        <http://www.bbc.co.uk/things/e4290295-da5c-407b-8bc9-0e5e50861590#id>,
+        <http://www.bbc.co.uk/things/e71f7029-ef6f-463c-9bc4-8b072d5fc940#id>,
+        <http://www.bbc.co.uk/things/ea5317e4-1115-4ed8-b58c-be81b0ffedd6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/f2840a32-ba14-40ba-8b16-db001cd651a4#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/42e193e6-7725-4a4d-90cd-c9bf6e97ce9e#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of NFL"@en-gb ;
+    sal:name "AFC Wild Card"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S2R7308> ;
+    core:preferredLabel "AFC Wild Card"@en-gb ;
+    core:shortLabel "AFC Wild Card"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/qualifying> .
+
+<http://www.bbc.co.uk/things/6190ea86-2e13-416a-a00a-5ef97299bc09#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of NFL"@en-gb ;
+    sal:name "NFC North"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S1R11095> ;
+    core:preferredLabel "NFC North"@en-gb ;
+    core:shortLabel "NFC North"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/758019b1-2108-4ced-896d-94b6c976d0df#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of NFL"@en-gb ;
+    sal:name "National Football League"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S1R7233> ;
+    core:preferredLabel "National Football League"@en-gb ;
+    core:shortLabel "National Football League"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/7a8bd98b-bdb5-4413-923b-d5dada0de959#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 2 of NFL"@en-gb ;
+    sal:name "AFC Championship"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S2R11703> ;
+    core:preferredLabel "AFC Championship"@en-gb ;
+    core:shortLabel "AFC Championship"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/8d49dd86-9401-4a08-974e-fb51d4284d90#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of NFL"@en-gb ;
+    sal:name "NFC Divisional Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S2R13021> ;
+    core:preferredLabel "NFC Divisional Play-offs"@en-gb ;
+    core:shortLabel "NFC Divisional Play-offs"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/a3b90659-4141-493d-b832-9633d86ae164#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of NFL"@en-gb ;
+    sal:name "AFC Divisional Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S2R7320> ;
+    core:preferredLabel "AFC Divisional Play-offs"@en-gb ;
+    core:shortLabel "AFC Divisional Play-offs"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/a85f5953-c9c5-4b3a-a047-3729034c4511#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of NFL"@en-gb ;
+    sal:name "NFC East"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S1R7193> ;
+    core:preferredLabel "NFC East"@en-gb ;
+    core:shortLabel "NFC East"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/b0b74675-f349-4b52-9f2b-3cb9d06f28dc#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of NFL"@en-gb ;
+    sal:name "NFC South"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S1R11096> ;
+    core:preferredLabel "NFC South"@en-gb ;
+    core:shortLabel "NFC South"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/c7e7267e-9ec2-475e-9f6f-7a592d92fca1#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 2 of NFL"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S2> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/17b55bf8-a717-4993-919a-57b555932934#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/42e193e6-7725-4a4d-90cd-c9bf6e97ce9e#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/7a8bd98b-bdb5-4413-923b-d5dada0de959#id>,
+        <http://www.bbc.co.uk/things/8d49dd86-9401-4a08-974e-fb51d4284d90#id>,
+        <http://www.bbc.co.uk/things/a3b90659-4141-493d-b832-9633d86ae164#id>,
+        <http://www.bbc.co.uk/things/d7e1846c-aedb-4563-bf3d-a185185905b3#id>,
+        <http://www.bbc.co.uk/things/de7bbad7-ecd9-41f7-bd94-43e0951f5a92#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/15be5df0-e4ca-4f93-a8cc-48ce3aec455f#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d7e1846c-aedb-4563-bf3d-a185185905b3#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 2 of NFL"@en-gb ;
+    sal:name "NFC Championship"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S2R11702> ;
+    core:preferredLabel "NFC Championship"@en-gb ;
+    core:shortLabel "NFC Championship"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/d99a4e45-6824-4855-845c-d8dc2b27a5ae#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of NFL"@en-gb ;
+    sal:name "AFC West"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S1R7196> ;
+    core:preferredLabel "AFC West"@en-gb ;
+    core:shortLabel "AFC West"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/de7bbad7-ecd9-41f7-bd94-43e0951f5a92#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of NFL"@en-gb ;
+    sal:name "NFC Wild Card"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S2R11827> ;
+    core:preferredLabel "NFC Wild Card"@en-gb ;
+    core:shortLabel "NFC Wild Card"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/qualifying> .
+
+<http://www.bbc.co.uk/things/e4290295-da5c-407b-8bc9-0e5e50861590#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of NFL"@en-gb ;
+    sal:name "AFC North"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S1R11093> ;
+    core:preferredLabel "AFC North"@en-gb ;
+    core:shortLabel "AFC North"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/e71f7029-ef6f-463c-9bc4-8b072d5fc940#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of NFL"@en-gb ;
+    sal:name "AFC East"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S1R7197> ;
+    core:preferredLabel "AFC East"@en-gb ;
+    core:shortLabel "AFC East"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ea5317e4-1115-4ed8-b58c-be81b0ffedd6#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of NFL"@en-gb ;
+    sal:name "AFC South"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S1R11094> ;
+    core:preferredLabel "AFC South"@en-gb ;
+    core:shortLabel "AFC South"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/f2840a32-ba14-40ba-8b16-db001cd651a4#id> a sport:Round ;
+    rdfs:label "Round 9 of Stage 1 of NFL"@en-gb ;
+    sal:name "NFC West"@en-gb ;
+    cms:locator <urn:sports-data:CAFB12018S1R7191> ;
+    core:preferredLabel "NFC West"@en-gb ;
+    core:shortLabel "NFC West"@en-gb ;
+    sport:roundNumber "9"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CAFB12018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S1R11093> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S1R11094> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S1R11095> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S1R11096> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S1R7191> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S1R7193> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S1R7196> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S1R7197> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S1R7233> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S2R11702> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S2R11703> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S2R11827> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S2R13021> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S2R7308> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S2R7320> a cms:Sports-DataLocator .
+
+<urn:sports-data:CAFB12018S2R7352> a cms:Sports-DataLocator .
+

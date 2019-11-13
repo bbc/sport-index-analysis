@@ -1,0 +1,788 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/dc377d76-dc7d-4702-9c73-97dde9b678e8#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: Seasons" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-union/rugby-union-seasons.ttl" ;
+    provenance:changeReason "SWD-1035;3: Model Rugby 2019/20 seasons" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-10-02T13:37:13+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "42"^^xsd:int .
+
+<http://www.bbc.co.uk/things/06e3e9bc-326b-424f-b297-7d556dba6bbd#id> a sport:Competition ;
+    rdfs:label "Rugby Union British & Irish Cup 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/a34454ce-ff64-41cb-954d-ec7e092143c4#id> ;
+    sal:name "British & Irish Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/c1ea0bb0-5729-4b2f-89d6-08d01f388e10#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c1ea0bb0-5729-4b2f-89d6-08d01f388e10#id> .
+
+<http://www.bbc.co.uk/things/06eeb3ea-9cd0-4b69-b8c7-02afedb93b86#id> a sport:Competition ;
+    rdfs:label "Super Rugby 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0f37a7d1-e0d7-4557-9206-207f4587f843#id> ;
+    sal:name "Super Rugby"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/93fd6cd2-7c8a-4e1c-b7bd-6b50c961a0d1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/93fd6cd2-7c8a-4e1c-b7bd-6b50c961a0d1#id> .
+
+<http://www.bbc.co.uk/things/0d77bf6e-9f69-45ca-9556-965d02d1dc8f#id> a sport:Competition ;
+    rdfs:label "Rugby Union Women's World Cup 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/00af152f-3737-48ca-98ed-ff9851092686#id> ;
+    sal:name "World Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8e9a589f-555d-44b6-b97a-d6b69183e75a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8e9a589f-555d-44b6-b97a-d6b69183e75a#id> .
+
+<http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id> a sport:Competition ;
+    rdfs:label "Rugby Union Heineken Cup 2011/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/522103c1-a538-4f11-9b3d-527e849f14ea#id> ;
+    sal:name "Heineken Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> .
+
+<http://www.bbc.co.uk/things/190ebae0-a116-4746-ac66-cf627e9a2ec4#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh Premiership 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/90f40358-dcab-4658-aba5-30ccb859534b#id> ;
+    sal:name "Welsh Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/760e6752-e5c3-45cd-a993-9aef5e923c9c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/760e6752-e5c3-45cd-a993-9aef5e923c9c#id> .
+
+<http://www.bbc.co.uk/things/2297cb4a-cda8-48f6-9563-c2395c1c01af#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh Premiership 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8edfe757-7133-4a60-94fa-996702cc8214#id> ;
+    sal:name "Welsh Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/760e6752-e5c3-45cd-a993-9aef5e923c9c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/760e6752-e5c3-45cd-a993-9aef5e923c9c#id> .
+
+<http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id> a sport:Competition ;
+    rdfs:label "Rugby Union Pro14 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/307c48dc-9968-4ad1-8e45-fc5fbc82ff4c#id> ;
+    sal:name "Guinness Pro14"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> .
+
+<http://www.bbc.co.uk/things/32b74fe6-2404-40ff-96fc-42e0b573e481#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Challenge Cup 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/c5a6d26d-b41d-4fa9-9c05-742cd4f69e35#id> ;
+    sal:name "Amlin Challenge Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> .
+
+<http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id> a sport:Competition ;
+    rdfs:label "English Premiership 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f4139aed-6fed-4345-8ef2-ea9f0e97dae1#id> ;
+    sal:name "Gallagher Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> .
+
+<http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id> a sport:Competition ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/91bbf17a-ee74-4d8e-ab1f-de4ec8a7d63e#id> ;
+    sal:name "Anglo-Welsh Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> .
+
+<http://www.bbc.co.uk/things/3d2d1263-bbf8-4cf1-bb60-faf7dab63977#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh 1WC 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0432fab4-37a4-4d94-8118-12d9edd91082#id> ;
+    sal:name "Welsh 1WC"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/efdc4575-f9a5-4466-a6ac-9f7efbb94ebd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/efdc4575-f9a5-4466-a6ac-9f7efbb94ebd#id> .
+
+<http://www.bbc.co.uk/things/3ea908b8-b4cc-402b-ada0-ba3f28349e64#id> a sport:Competition ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/92ddd6bc-30cb-4753-9c15-9219f319f03c#id> ;
+    sal:name "Anglo-Welsh Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> .
+
+<http://www.bbc.co.uk/things/3f12b778-76cf-439c-9b9c-4690970f9ae7#id> a sport:Competition ;
+    rdfs:label "Irish Division 1 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/a4799b3f-8709-4be4-9c16-5aff51cf98e4#id> ;
+    sal:name "Irish Division 1"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/d1c40343-bf77-42be-a6b2-6df6779a9b1b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d1c40343-bf77-42be-a6b2-6df6779a9b1b#id> .
+
+<http://www.bbc.co.uk/things/3fce5c4c-40af-4090-be5c-b515e6657577#id> a sport:Competition ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/26058544-d85e-4c5f-aaf5-07855d9911de#id> ;
+    sal:name "The LV= Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> .
+
+<http://www.bbc.co.uk/things/42c547ab-2dc4-44e8-971a-d30f6895ac84#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh 1EC 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ca263023-7080-487f-9853-ce66f5a694f8#id> ;
+    sal:name "Welsh 1EC"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/38d5fc45-9831-4500-a5a1-3a573dbb4676#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/38d5fc45-9831-4500-a5a1-3a573dbb4676#id> .
+
+<http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ef567515-8bd9-45a4-b142-a160628d8715#id> ;
+    sal:name "European Rugby Champions Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> .
+
+<http://www.bbc.co.uk/things/4b086e2c-90a2-4a94-bc56-a9b805e43492#id> a sport:Competition ;
+    rdfs:label "Rugby Union British & Irish Cup 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0ee644c8-7c3c-443c-97e1-6a6cc4d6156c#id> ;
+    sal:name "British & Irish Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/c1ea0bb0-5729-4b2f-89d6-08d01f388e10#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c1ea0bb0-5729-4b2f-89d6-08d01f388e10#id> .
+
+<http://www.bbc.co.uk/things/4b9bdc5e-50bc-4ddd-94de-0edb9964f26a#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh 1WC 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0de28a5b-7bb7-4157-a126-65f37208f292#id> ;
+    sal:name "Welsh 1WC"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/efdc4575-f9a5-4466-a6ac-9f7efbb94ebd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/efdc4575-f9a5-4466-a6ac-9f7efbb94ebd#id> .
+
+<http://www.bbc.co.uk/things/4e70f21a-9a50-4258-b62b-9e212a5dfa6f#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Challenge Cup 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/93dc9b6f-3dac-46ef-8cd5-9991f792792c#id> ;
+    sal:name "European Rugby Challenge Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> .
+
+<http://www.bbc.co.uk/things/533a28ed-a2a7-43ee-b0c9-8daf9e84dfd2#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh 1EC 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4a7f8ab4-8b6c-41a1-b195-ce4f2444b76d#id> ;
+    sal:name "Welsh 1EC"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/38d5fc45-9831-4500-a5a1-3a573dbb4676#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/38d5fc45-9831-4500-a5a1-3a573dbb4676#id> .
+
+<http://www.bbc.co.uk/things/55100529-3327-47b2-8add-cb518c6e3ff1#id> a sport:Competition ;
+    rdfs:label "Irish Division 1 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/56fe308a-774c-4c85-9e4a-d6fc9b2f2635#id> ;
+    sal:name "Irish Division 1"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/d1c40343-bf77-42be-a6b2-6df6779a9b1b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d1c40343-bf77-42be-a6b2-6df6779a9b1b#id> .
+
+<http://www.bbc.co.uk/things/5c0e2941-cb2b-4876-8e99-6632291e174d#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh 1EC 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0ef8c2c7-d00a-4cd4-8d4b-8732bcb64475#id> ;
+    sal:name "Welsh 1EC"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/38d5fc45-9831-4500-a5a1-3a573dbb4676#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/38d5fc45-9831-4500-a5a1-3a573dbb4676#id> .
+
+<http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id> a sport:Competition ;
+    rdfs:label "English Premiership 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2a5baae5-2626-496d-a3ef-06e2c5b49990#id> ;
+    sal:name "Aviva Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> .
+
+<http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id> a sport:Competition ;
+    rdfs:label "Rugby Union Pro12 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b8db7f29-1224-4f37-855e-e744294bc0ed#id> ;
+    sal:name "Guinness Pro12"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> .
+
+<http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Challenge Cup 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/1bb9dccc-a2f1-4c01-8cca-14788531bd5e#id> ;
+    sal:name "European Rugby Challenge Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> .
+
+<http://www.bbc.co.uk/things/6b1c2b03-8005-4d3c-b6b3-ebf283055118#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Challenge Cup 2011/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ff2d5a94-e1c5-4dae-85cd-5270642dbe2b#id> ;
+    sal:name "Amlin Challenge Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> .
+
+<http://www.bbc.co.uk/things/6c60ec5a-7850-4f5d-a7d0-d654b5f664da#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh Premiership 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b0083bc3-73d5-4b9a-a03a-402983354852#id> ;
+    sal:name "Welsh Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/760e6752-e5c3-45cd-a993-9aef5e923c9c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/760e6752-e5c3-45cd-a993-9aef5e923c9c#id> .
+
+<http://www.bbc.co.uk/things/6e358ef4-a96a-483b-b533-9e5359b978f4#id> a sport:Competition ;
+    rdfs:label "Rugby Union Championship Cup 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/00bd2150-2661-447a-8774-e69f26b37a81#id> ;
+    sal:name "Championship Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/d4228ffa-bd0c-490f-82ac-9c2af29e7e6f#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d4228ffa-bd0c-490f-82ac-9c2af29e7e6f#id> .
+
+<http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id> a sport:Competition ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/81c6f772-99b9-4ba6-80c2-a0ae10f86383#id> ;
+    sal:name "The LV= Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> .
+
+<http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id> a sport:Competition ;
+    rdfs:label "English Premiership 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/a7e31008-5e36-4095-bee1-2b83fb76a913#id> ;
+    sal:name "Gallagher Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> .
+
+<http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/1cd77cdf-1c71-4c65-8c8d-e3c964670a37#id> ;
+    sal:name "European Rugby Champions Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> .
+
+<http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id> a sport:Competition ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2011/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2f15848b-b824-44a8-ba81-4cf178300efd#id> ;
+    sal:name "The LV= Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> .
+
+<http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id> a sport:Competition ;
+    rdfs:label "Rugby Union Pro12 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/821367d1-73e2-422d-acaa-8a12e311e25e#id> ;
+    sal:name "Guinness Pro12"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> .
+
+<http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Challenge Cup 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b527d636-dd7f-4b0f-b3b6-3438dee072c0#id> ;
+    sal:name "European Rugby Challenge Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> .
+
+<http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id> a sport:Competition ;
+    rdfs:label "English Premiership 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4c265aaf-be39-45dd-ab31-48a243dd0acf#id> ;
+    sal:name "Aviva Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> .
+
+<http://www.bbc.co.uk/things/85d746f4-86aa-4876-a0bf-017688158257#id> a sport:Competition ;
+    rdfs:label "Rugby Union World Cup 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/483216f1-c059-4ad5-a5c1-ca4f1a033a8f#id> ;
+    sal:name "World Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/ef55ff8e-8d36-4473-9f11-3ba9fa9ac787#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ef55ff8e-8d36-4473-9f11-3ba9fa9ac787#id> .
+
+<http://www.bbc.co.uk/things/8948fb79-740b-4fab-a4db-b5ff430b30cc#id> a sport:Competition ;
+    rdfs:label "Rugby Union Championship Cup 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2a7db976-5711-4cef-b355-34de88fd81f6#id> ;
+    sal:name "Championship Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/d4228ffa-bd0c-490f-82ac-9c2af29e7e6f#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d4228ffa-bd0c-490f-82ac-9c2af29e7e6f#id> .
+
+<http://www.bbc.co.uk/things/8abdf495-2a24-437f-8183-473351c3d491#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh 1WC 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/d3e683fc-241d-48c5-92b6-6f0e3f7fd8fb#id> ;
+    sal:name "Welsh 1WC"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/efdc4575-f9a5-4466-a6ac-9f7efbb94ebd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/efdc4575-f9a5-4466-a6ac-9f7efbb94ebd#id> .
+
+<http://www.bbc.co.uk/things/9a28cf0d-c429-4bac-8727-94f47b04873d#id> a sport:Competition ;
+    rdfs:label "Super Rugby 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ce26d245-9e71-440a-8b85-4e9805c7f425#id> ;
+    sal:name "Super Rugby"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/93fd6cd2-7c8a-4e1c-b7bd-6b50c961a0d1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/93fd6cd2-7c8a-4e1c-b7bd-6b50c961a0d1#id> .
+
+<http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id> a sport:Competition ;
+    rdfs:label "English Premiership 2011/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/74766d49-33df-4d2a-ac0a-f6c07074e473#id> ;
+    sal:name "Aviva Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> .
+
+<http://www.bbc.co.uk/things/a2572850-5b40-4f41-a3b9-96e5917f507a#id> a sport:Competition ;
+    rdfs:label "Rugby Union Premiership Rugby Cup 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ad023f1e-38a9-42dd-ba6c-5f15e46d00f0#id> ;
+    sal:name "English Premiership Rugby Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/7ad2a016-ed5b-4a4d-8e97-788a1c88d8e9#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7ad2a016-ed5b-4a4d-8e97-788a1c88d8e9#id> .
+
+<http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id> a sport:Competition ;
+    rdfs:label "Rugby Union Pro12 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/85b6f6a2-2595-4cdd-8d9e-ac7bd80798ff#id> ;
+    sal:name "Guinness Pro12"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> .
+
+<http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id> a sport:Competition ;
+    rdfs:label "Rugby Union Pro12 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/886d7bba-ec72-4097-9bd9-6799435d0eb6#id> ;
+    sal:name "Guinness Pro12"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> .
+
+<http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id> a sport:Competition ;
+    rdfs:label "English Premiership 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/97e54fb6-8d2c-4347-8f58-b24ff28eff79#id> ;
+    sal:name "Aviva Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> .
+
+<http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/92235065-b1f3-4794-824e-3f3750ef0c7a#id> ;
+    sal:name "European Rugby Champions Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> .
+
+<http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/90d9b915-6eb7-4c27-96fc-71d2757c0071#id> ;
+    sal:name "European Rugby Champions Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> .
+
+<http://www.bbc.co.uk/things/ca48e053-a6be-4c59-a5f0-df249aa70ccc#id> a sport:Competition ;
+    rdfs:label "Rugby Union World Cup 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/691e1a19-308e-4d89-ae93-ae80ec5b476a#id> ;
+    sal:name "World Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/ef55ff8e-8d36-4473-9f11-3ba9fa9ac787#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ef55ff8e-8d36-4473-9f11-3ba9fa9ac787#id> .
+
+<http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id> a sport:Competition ;
+    rdfs:label "English Premiership 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b9daabaa-cf79-4144-84db-10c258e05533#id> ;
+    sal:name "Aviva Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> .
+
+<http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Challenge Cup 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0053924c-32d7-4eb4-89c2-00b6f0e7f045#id> ;
+    sal:name "European Rugby Challenge Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> .
+
+<http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/babe0487-0654-4f64-831f-00c9e69aeae8#id> ;
+    sal:name "European Rugby Champions Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> .
+
+<http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id> a sport:Competition ;
+    rdfs:label "Rugby Union Pro12 2011/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/a3a84a68-39cd-4b70-af20-e5174a6c343b#id> ;
+    sal:name "RaboDirect Pro12"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> .
+
+<http://www.bbc.co.uk/things/d3f67a6d-5b3b-4533-8e79-782cae852c74#id> a sport:Competition ;
+    rdfs:label "Irish Division 1 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5c2340a1-bfad-4655-8448-89ad1f434fd1#id> ;
+    sal:name "Irish Division 1"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/d1c40343-bf77-42be-a6b2-6df6779a9b1b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d1c40343-bf77-42be-a6b2-6df6779a9b1b#id> .
+
+<http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id> a sport:Competition ;
+    rdfs:label "Rugby Union Pro14 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ca12f045-5a0c-4e97-b8aa-2cdfac003ea7#id> ;
+    sal:name "Guinness Pro14"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> .
+
+<http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Challenge Cup 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/6506e6b4-a568-4fa2-bf03-09d97bf053e4#id> ;
+    sal:name "European Rugby Challenge Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> .
+
+<http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Challenge Cup 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/79bf276a-a125-4458-9817-1bb1fc8b87ac#id> ;
+    sal:name "European Rugby Challenge Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> .
+
+<http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id> a sport:Competition ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/a1ea687b-d1c7-4556-b27e-9a6fb677be81#id> ;
+    sal:name "The LV= Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> .
+
+<http://www.bbc.co.uk/things/e1f64e7e-46ff-4448-942e-9580747c5055#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh Premiership 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/20662f71-fbf7-47b6-9178-6e28e8bf3117#id> ;
+    sal:name "Welsh Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/760e6752-e5c3-45cd-a993-9aef5e923c9c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/760e6752-e5c3-45cd-a993-9aef5e923c9c#id> .
+
+<http://www.bbc.co.uk/things/e3789837-c248-4cee-929b-8c5765a8a3f5#id> a sport:Competition ;
+    rdfs:label "Rugby Union British & Irish Cup 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e93d7462-a8fa-45ec-8244-9ebd68376f96#id> ;
+    sal:name "British & Irish Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/c1ea0bb0-5729-4b2f-89d6-08d01f388e10#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c1ea0bb0-5729-4b2f-89d6-08d01f388e10#id> .
+
+<http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id> a sport:Competition ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/cd285097-1a5e-47a8-bfb5-1991f7ff76bd#id> ;
+    sal:name "European Rugby Champions Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> .
+
+<http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> a sport:Competition ;
+    rdfs:label "Rugby Union Pro14 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/d12f1cc4-36da-4679-949d-d4287811d605#id> ;
+    sal:name "Guinness Pro14"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> .
+
+<http://www.bbc.co.uk/things/f6e0fe7c-e6ef-4b40-ae67-be14cb587092#id> a sport:Competition ;
+    rdfs:label "Rugby Union Heineken Cup 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/078e61a1-325e-4707-816a-0c4b98963ff7#id> ;
+    sal:name "Heineken Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> .
+
+<http://www.bbc.co.uk/things/f8ffac75-6e15-4065-9639-c677b4fe0c29#id> a sport:Competition ;
+    rdfs:label "Rugby Union Welsh Division One 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4153ee03-702c-4271-b48e-977155e72e94#id> ;
+    sal:name "Welsh Div 1"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/4b464052-1eae-402b-a39f-fc1e19324f3b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/4b464052-1eae-402b-a39f-fc1e19324f3b#id> .
+
+<http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> a sport:Competition ;
+    rdfs:label "English Premiership 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/bee74ad9-20a6-4fe5-ab59-a281b5953bb9#id> ;
+    sal:name "Aviva Premiership"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> .
+
+<http://www.bbc.co.uk/things/0053924c-32d7-4eb4-89c2-00b6f0e7f045#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Challenge Cup 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/00af152f-3737-48ca-98ed-ff9851092686#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Women's World Cup 2017 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2017-07-01"^^xsd:date ;
+    ns2:hasEnd "2021-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/00bd2150-2661-447a-8774-e69f26b37a81#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Championship Cup 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2019-08-01"^^xsd:date ;
+    ns2:hasEnd "2020-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/0432fab4-37a4-4d94-8118-12d9edd91082#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh 1WC 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/078e61a1-325e-4707-816a-0c4b98963ff7#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Heineken Cup 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-08-01"^^xsd:date ;
+    ns2:hasEnd "2014-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/0de28a5b-7bb7-4157-a126-65f37208f292#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh 1WC 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/0ee644c8-7c3c-443c-97e1-6a6cc4d6156c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union British & Irish Cup 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/0ef8c2c7-d00a-4cd4-8d4b-8732bcb64475#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh 1EC 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/0f37a7d1-e0d7-4557-9206-207f4587f843#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Super Rugby 2016 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-01-01"^^xsd:date ;
+    ns2:hasEnd "2016-08-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1bb9dccc-a2f1-4c01-8cca-14788531bd5e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Challenge Cup 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2019-08-01"^^xsd:date ;
+    ns2:hasEnd "2020-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1cd77cdf-1c71-4c65-8c8d-e3c964670a37#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/20662f71-fbf7-47b6-9178-6e28e8bf3117#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh Premiership 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2018-08-01"^^xsd:date ;
+    ns2:hasEnd "2019-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/26058544-d85e-4c5f-aaf5-07855d9911de#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-08-01"^^xsd:date ;
+    ns2:hasEnd "2014-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2a5baae5-2626-496d-a3ef-06e2c5b49990#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "English Premiership 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2a7db976-5711-4cef-b355-34de88fd81f6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Championship Cup 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2018-08-01"^^xsd:date ;
+    ns2:hasEnd "2019-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2f15848b-b824-44a8-ba81-4cf178300efd#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2011-06-17"^^xsd:date ;
+    ns2:hasEnd "2013-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/307c48dc-9968-4ad1-8e45-fc5fbc82ff4c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Pro14 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2017-08-01"^^xsd:date ;
+    ns2:hasEnd "2018-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4153ee03-702c-4271-b48e-977155e72e94#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh Division 1 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2018-08-01"^^xsd:date ;
+    ns2:hasEnd "2019-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/483216f1-c059-4ad5-a5c1-ca4f1a033a8f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union World Cup 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-02-01"^^xsd:date ;
+    ns2:hasEnd "2019-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4a7f8ab4-8b6c-41a1-b195-ce4f2444b76d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh 1EC 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4c265aaf-be39-45dd-ab31-48a243dd0acf#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "English Premiership 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/522103c1-a538-4f11-9b3d-527e849f14ea#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Heineken Cup 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2011-06-17"^^xsd:date ;
+    ns2:hasEnd "2013-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/56fe308a-774c-4c85-9e4a-d6fc9b2f2635#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Irish Division 1 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5c2340a1-bfad-4655-8448-89ad1f434fd1#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Irish Division 1 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6506e6b4-a568-4fa2-bf03-09d97bf053e4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Challenge Cup 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2018-08-01"^^xsd:date ;
+    ns2:hasEnd "2019-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/691e1a19-308e-4d89-ae93-ae80ec5b476a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union World Cup 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2019-02-01"^^xsd:date ;
+    ns2:hasEnd "2023-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/74766d49-33df-4d2a-ac0a-f6c07074e473#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "English Premiership 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2011-06-17"^^xsd:date ;
+    ns2:hasEnd "2013-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/79bf276a-a125-4458-9817-1bb1fc8b87ac#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Challenge Cup 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/81c6f772-99b9-4ba6-80c2-a0ae10f86383#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2016-07-06"^^xsd:date .
+
+<http://www.bbc.co.uk/things/821367d1-73e2-422d-acaa-8a12e311e25e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Pro12 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/85b6f6a2-2595-4cdd-8d9e-ac7bd80798ff#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Pro12 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/886d7bba-ec72-4097-9bd9-6799435d0eb6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Pro12 2014/14 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-08-01"^^xsd:date ;
+    ns2:hasEnd "2014-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8edfe757-7133-4a60-94fa-996702cc8214#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh Premiership 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2019-08-01"^^xsd:date ;
+    ns2:hasEnd "2020-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/90d9b915-6eb7-4c27-96fc-71d2757c0071#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2018-08-01"^^xsd:date ;
+    ns2:hasEnd "2019-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/90f40358-dcab-4658-aba5-30ccb859534b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh Premiership 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2017-08-01"^^xsd:date ;
+    ns2:hasEnd "2018-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/91bbf17a-ee74-4d8e-ab1f-de4ec8a7d63e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2017-08-01"^^xsd:date ;
+    ns2:hasEnd "2018-07-06"^^xsd:date .
+
+<http://www.bbc.co.uk/things/92235065-b1f3-4794-824e-3f3750ef0c7a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2017-08-01"^^xsd:date ;
+    ns2:hasEnd "2018-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/92ddd6bc-30cb-4753-9c15-9219f319f03c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-06"^^xsd:date .
+
+<http://www.bbc.co.uk/things/93dc9b6f-3dac-46ef-8cd5-9991f792792c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Challenge Cup 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/97e54fb6-8d2c-4347-8f58-b24ff28eff79#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "English Premiership 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-08-01"^^xsd:date ;
+    ns2:hasEnd "2014-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a1ea687b-d1c7-4556-b27e-9a6fb677be81#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Anglo Welsh Cup 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a34454ce-ff64-41cb-954d-ec7e092143c4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union British & Irish Cup 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a3a84a68-39cd-4b70-af20-e5174a6c343b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Pro12 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2011-06-17"^^xsd:date ;
+    ns2:hasEnd "2013-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a4799b3f-8709-4be4-9c16-5aff51cf98e4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Irish Division 1 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a7e31008-5e36-4095-bee1-2b83fb76a913#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "English Premiership 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2018-08-01"^^xsd:date ;
+    ns2:hasEnd "2019-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ad023f1e-38a9-42dd-ba6c-5f15e46d00f0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Premiership Rugby Cup 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2018-08-01"^^xsd:date ;
+    ns2:hasEnd "2019-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b0083bc3-73d5-4b9a-a03a-402983354852#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh Premiership 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b527d636-dd7f-4b0f-b3b6-3438dee072c0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Challenge Cup 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2017-08-01"^^xsd:date ;
+    ns2:hasEnd "2018-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b8db7f29-1224-4f37-855e-e744294bc0ed#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Pro12 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b9daabaa-cf79-4144-84db-10c258e05533#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "English Premiership 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/babe0487-0654-4f64-831f-00c9e69aeae8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/bee74ad9-20a6-4fe5-ab59-a281b5953bb9#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "English Premiership 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2017-08-01"^^xsd:date ;
+    ns2:hasEnd "2018-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c5a6d26d-b41d-4fa9-9c05-742cd4f69e35#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Challenge Cup 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-08-01"^^xsd:date ;
+    ns2:hasEnd "2014-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ca12f045-5a0c-4e97-b8aa-2cdfac003ea7#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Pro14 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2019-08-01"^^xsd:date ;
+    ns2:hasEnd "2020-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ca263023-7080-487f-9853-ce66f5a694f8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh 1EC 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cd285097-1a5e-47a8-bfb5-1991f7ff76bd#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2019-08-01"^^xsd:date ;
+    ns2:hasEnd "2020-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ce26d245-9e71-440a-8b85-4e9805c7f425#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Super Rugby 2017 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2017-01-01"^^xsd:date ;
+    ns2:hasEnd "2017-08-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d12f1cc4-36da-4679-949d-d4287811d605#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Pro14 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2018-08-01"^^xsd:date ;
+    ns2:hasEnd "2019-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d3e683fc-241d-48c5-92b6-6f0e3f7fd8fb#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union Welsh 1WC 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e93d7462-a8fa-45ec-8244-9ebd68376f96#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union British & Irish Cup 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ef567515-8bd9-45a4-b142-a160628d8715#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Rugby Champions Cup 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f4139aed-6fed-4345-8ef2-ea9f0e97dae1#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "English Premiership 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2019-08-01"^^xsd:date ;
+    ns2:hasEnd "2020-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ff2d5a94-e1c5-4dae-85cd-5270642dbe2b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby Union European Challenge Cup 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2011-06-17"^^xsd:date ;
+    ns2:hasEnd "2013-07-31"^^xsd:date .
+

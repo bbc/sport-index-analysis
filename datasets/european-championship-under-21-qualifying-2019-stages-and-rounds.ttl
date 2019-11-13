@@ -1,0 +1,168 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/29fcaac0-7aaf-4389-bd4c-3aad7b2fb5c8#id> a provenance:Dataset ;
+    rdfs:label "Football: European Championship 2019 Under-21 Qualifying Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-championship-under-21-qualifying-2019-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3952: Model 2019 UEFA Under-21 Championship qualifying" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-12-19T12:13:56+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/a519563d-fb7d-4aff-97db-6a18e4b68bee#id> sport:firstStage <http://www.bbc.co.uk/things/151db2f9-768c-4d22-96ac-721e338c95ad#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/1ff18350-04df-4a5b-aac6-ffa74670e3ca#id> .
+
+<http://www.bbc.co.uk/things/151db2f9-768c-4d22-96ac-721e338c95ad#id> a sport:Competition ;
+    rdfs:label "Stage 1 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S1> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/4ecc61f0-a9bc-460a-bda7-679ecd18d6b1#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/34b15844-02f6-4abe-b56a-0dfbf143f4e2#id>,
+        <http://www.bbc.co.uk/things/3e037eb5-27bb-454f-a212-12e66175eebe#id>,
+        <http://www.bbc.co.uk/things/4d91eebd-66c8-442e-bb4b-66841d8c89f9#id>,
+        <http://www.bbc.co.uk/things/c5b642a2-e899-46e4-8bee-14c386fb09b3#id>,
+        <http://www.bbc.co.uk/things/ddf177a4-0a5d-4003-a641-bd1b23c93d13#id>,
+        <http://www.bbc.co.uk/things/dfef54dc-0f98-45d9-9aa2-fb72e995a896#id>,
+        <http://www.bbc.co.uk/things/e6142c7e-035c-47f5-b719-b9767e699279#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/56c672ae-7b9f-4a18-a3d4-3d57a7dd9155#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/1ff18350-04df-4a5b-aac6-ffa74670e3ca#id> a sport:Competition ;
+    rdfs:label "Stage 2 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S2> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/dfb6a37a-180f-4883-b70c-0e7af132e7a9#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/34b15844-02f6-4abe-b56a-0dfbf143f4e2#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    sal:name "Group 7"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S1R7> ;
+    core:preferredLabel "Group 7"@en-gb ;
+    core:shortLabel "Group 7"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/3e037eb5-27bb-454f-a212-12e66175eebe#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    sal:name "Group 6"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S1R6> ;
+    core:preferredLabel "Group 6"@en-gb ;
+    core:shortLabel "Group 6"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/4d91eebd-66c8-442e-bb4b-66841d8c89f9#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    sal:name "Group 5"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S1R5> ;
+    core:preferredLabel "Group 5"@en-gb ;
+    core:shortLabel "Group 5"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/4ecc61f0-a9bc-460a-bda7-679ecd18d6b1#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    sal:name "Group 1"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S1R1> ;
+    core:preferredLabel "Group 1"@en-gb ;
+    core:shortLabel "Group 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/56c672ae-7b9f-4a18-a3d4-3d57a7dd9155#id> a sport:Round ;
+    rdfs:label "Round 9 of Stage 1 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    sal:name "Group 9"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S1R9> ;
+    core:preferredLabel "Group 9"@en-gb ;
+    core:shortLabel "Group 9"@en-gb ;
+    sport:roundNumber "9"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/c5b642a2-e899-46e4-8bee-14c386fb09b3#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    sal:name "Group 4"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S1R4> ;
+    core:preferredLabel "Group 4"@en-gb ;
+    core:shortLabel "Group 4"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ddf177a4-0a5d-4003-a641-bd1b23c93d13#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    sal:name "Group 3"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S1R3> ;
+    core:preferredLabel "Group 3"@en-gb ;
+    core:shortLabel "Group 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/dfb6a37a-180f-4883-b70c-0e7af132e7a9#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    sal:name "Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S2R1> ;
+    core:preferredLabel "Play-off"@en-gb ;
+    core:shortLabel "Play-off"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/dfef54dc-0f98-45d9-9aa2-fb72e995a896#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    sal:name "Group 2"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S1R2> ;
+    core:preferredLabel "Group 2"@en-gb ;
+    core:shortLabel "Group 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/e6142c7e-035c-47f5-b719-b9767e699279#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of European Championship 2019 Under-21 Qualifying"@en-gb ;
+    sal:name "Group 8"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5112017S1R8> ;
+    core:preferredLabel "Group 8"@en-gb ;
+    core:shortLabel "Group 8"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CFBB5112017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S1R9> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5112017S2R1> a cms:Sports-DataLocator .
+

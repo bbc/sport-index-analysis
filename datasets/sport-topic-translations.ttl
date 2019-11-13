@@ -1,0 +1,895 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/d4046e5b-518a-420e-8b8b-435e8a5efdad#id> a provenance:Dataset ;
+    rdfs:label "Translated Sport concepts for World Service migration" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/label-translations/sport-topic-translations.ttl" ;
+    provenance:changeReason "Add Welsh RWC translation" ;
+    provenance:product bbc:News ;
+    provenance:provided "2019-09-06T13:33:26+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:jim.johnson-rollings@bbc.co.uk> ;
+    provenance:version "47"^^xsd:int .
+
+<http://www.bbc.co.uk/things/02fb02ee-9e6b-46c3-92e1-db372543facd#id> core:label "Gimnasia"@es .
+
+<http://www.bbc.co.uk/things/03bc2e07-f0ba-4238-9342-15df338d9759#id> core:label "Bélgica"@es,
+        "Belgique (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/04034025-ab84-4bad-a496-d14fc6df2ded#id> core:label "Arabia Saudita"@es .
+
+<http://www.bbc.co.uk/things/057ba885-0cae-4f0d-9f73-2079489387ad#id> core:label "Copa Sudamericana"@es .
+
+<http://www.bbc.co.uk/things/0690666f-509a-44d4-9505-75d58b99f664#id> core:label "Uruguay"@es .
+
+<http://www.bbc.co.uk/things/079a365b-0602-42f8-83d5-9db03c6b16c7#id> core:label "Сочи 2014"@ru .
+
+<http://www.bbc.co.uk/things/08449ec0-069c-45ff-a3ac-0c3efccd4ec3#id> core:label "Dreigiau"@cy .
+
+<http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> core:label "Carreras de Caballos"@es .
+
+<http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> core:label "Tenis"@cy,
+        "Tenis"@es,
+        "تنیس"@fa,
+        "Tennis"@fr,
+        "ટૅનિસ"@gu,
+        "टेनिस"@hi,
+        "Tenis"@id,
+        "テニス"@ja,
+        "테니스"@ko,
+        "टेनिस"@mr,
+        "ਟੈਨਿਸ"@pa,
+        "ټېنېس"@ps,
+        "Теннис"@ru,
+        "тенис"@sr-cyrl,
+        "Tenis"@sr-latn,
+        "Tenisi"@sw,
+        "டென்னிஸ்"@ta,
+        "టెన్నిస్"@te,
+        "ٹینس"@ur,
+        "网球"@zh-hans,
+        "网球"@zh-hant .
+
+<http://www.bbc.co.uk/things/0d205538-c52e-41c7-a4a1-50efd6c1da59#id> core:label "ኦሊምፒክ"@am,
+        "الألعاب الأولمبية"@ar,
+        "Olimpiada"@az,
+        "অলিম্পিকস্"@bn,
+        "Olimpiadas"@es,
+        "المپیک"@fa,
+        "Jeux Olympiques"@fr,
+        "ઓલમ્પિક્સ"@gu,
+        "Olympics"@ha,
+        "ओलंपिक"@hi,
+        "Olimpiade"@id,
+        "Olympics"@ig,
+        "オリンピック"@ja,
+        "올림픽"@ko,
+        "Олимпиада"@ky,
+        "ऑलिम्पक"@mr,
+        "အိုလံပစ်"@my,
+        "ओलिम्पिक्स"@ne,
+        "Olompiikii"@om,
+        "ਓਲੰਪਿਕ"@pa,
+        "Olympics"@pcm,
+        "اولمپیک"@ps,
+        "Olimpíada"@pt-br,
+        "Олимпийские Игры"@ru,
+        "Olempiki"@rw,
+        "ඔලිම්පික්"@si,
+        "Olimbikada"@so,
+        "Олимпијске игре"@sr-cyrl,
+        "Olimpijske igre"@sr-latn,
+        "Olimpiki"@sw,
+        "ஒலிம்பிக்ஸ்"@ta,
+        "ఒలింపిక్స్"@te,
+        "โอลิมปิก"@th,
+        "ኦሎምፒክ"@ti,
+        "Olimpiyatlar"@tr,
+        "Олімпіада"@uk,
+        "اولمپکس"@ur,
+        "Олимпиада"@uz-cyrl,
+        "Olympics"@vi,
+        "Ere Idaraya Olympic"@yo,
+        "奥运会"@zh-hans,
+        "奧運會"@zh-hant .
+
+<http://www.bbc.co.uk/things/126190f0-5bd7-7346-a739-39a80c01ae23#id> core:label "Lucha"@es,
+        "کشتی"@fa,
+        "કુસ્તી"@gu,
+        "कुश्ती"@hi,
+        "कुस्ती"@mr,
+        "ਪਹਲਵਾਨੀ"@pa,
+        "மல்யுத்தம்"@ta,
+        "రెజ్లింగ్"@te .
+
+<http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> core:label "فورمولا 1"@ar,
+        "Formula 1"@az,
+        "ফর্মূলা ওয়ান"@bn,
+        "Fórmula 1"@es,
+        "ફોર્મ્યૂલા 1"@gu,
+        "Gasar tseren formula 1"@ha,
+        "फ़ॉर्मूला वन"@hi,
+        "Formula 1"@id,
+        "Formula 1"@ig,
+        "フォーミュラ・ワン（F1）"@ja,
+        "F1"@ko,
+        "Формула-1"@ky,
+        "फॉर्म्युला 1"@mr,
+        "ဖော်မြူလာ ဝမ်း"@my,
+        "ਫ਼ਾਰਮੂਲਾ ਵਨ"@pa,
+        "Formula 1"@pcm,
+        "د موټر ځغلولو لوبه"@ps,
+        "Fórmula 1"@pt-br,
+        "СФормула 1"@ru,
+        "Формула-1"@ru,
+        "ෆෝමියුලා වන්"@si,
+        "Формула 1"@sr-cyrl,
+        "Formula 1"@sr-latn,
+        "Formula 1"@sw,
+        "ஃபார்முலா ஒன்"@ta,
+        "ఫార్మూలా 1"@te,
+        "รถสูตร 1"@th,
+        "Formula 1"@tr,
+        "فارمولا ون ریسنگ"@ur,
+        "Формула 1"@uz-cyrl,
+        "Công thức 1"@vi,
+        "Ilana Akọkọ"@yo,
+        "一级方程（F1）"@zh-hans,
+        "一級方程（F1）"@zh-hant .
+
+<http://www.bbc.co.uk/things/14fbe932-e796-48fb-b858-0f0b6f0fd723#id> core:label "Tîm rygbi'r gynghrair Cymru"@cy .
+
+<http://www.bbc.co.uk/things/1869157e-8fbc-4689-b2b6-ebc6b2900d5a#id> core:label "Scarlets"@cy .
+
+<http://www.bbc.co.uk/things/1abbf54b-53a3-4a01-b0a8-c3dd60b431f7#id> core:label "Senegal"@es,
+        "Sénégal (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/1c9c5c77-4d89-414a-a5df-1f9f1a28d630#id> core:label "ريال مدريد "@ar,
+        "Real Madrid"@ha,
+        "Real Madrid"@ig,
+        "Real Madrid"@pcm,
+        "Real Madrid"@tr,
+        "Real Madrid"@yo .
+
+<http://www.bbc.co.uk/things/1d2e1514-faa8-425d-8481-a1cc4da6cc24#id> core:label "أولمبياد ريو"@ar,
+        "Rio 2016"@az,
+        "Río 2016"@es,
+        "JO Rio 2016"@fr,
+        "ओलंपिक 2016"@hi,
+        "Olimpiade Brasil"@id,
+        "Rio 2016"@pt-br,
+        "Олимпиада в Рио 2016"@ru,
+        "Rio 2016"@rw,
+        "රියෝ 2016"@si,
+        "Olimpiki"@sw,
+        "ஒலிம்பிக்"@ta,
+        "2016 Olimpiyatları"@tr,
+        "ریو اولمپکس 2016"@ur .
+
+<http://www.bbc.co.uk/things/1dae0d8b-f96e-474e-b6bd-057a96fa771a#id> core:label "Colombia"@es .
+
+<http://www.bbc.co.uk/things/1e069d7e-8dbd-43db-87a0-137e4009fb17#id> core:label "Fútbol americano"@es .
+
+<http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> core:label "دوري أبطال أوروبا"@ar,
+        "Liga de Campeones"@es .
+
+<http://www.bbc.co.uk/things/206c16b5-5a86-4498-9fbb-33c25c6fef02#id> core:label "Galatasaray"@tr .
+
+<http://www.bbc.co.uk/things/20ff4730-bad5-46e1-8b06-c20b5b16ff01#id> core:label "Gleision"@cy .
+
+<http://www.bbc.co.uk/things/21c45f67-36da-874e-ab36-02650add8311#id> core:label "Bádminton"@es,
+        "Badminton"@id .
+
+<http://www.bbc.co.uk/things/2218be1a-1465-46d2-84bf-99eeee38fa4a#id> core:label "Juegos Paralímpicos Río 2016"@es,
+        "Paralimpíada Rio 2016"@pt-br .
+
+<http://www.bbc.co.uk/things/25d343d4-ee0a-4ebf-86b7-8ca6dc6e17aa#id> core:label "Eliminatorias Sudas Rusia 2018"@es .
+
+<http://www.bbc.co.uk/things/2688d5c1-aa00-4abb-8b3c-345d83ce3538#id> core:label "Suiza"@es .
+
+<http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id> core:label "ቅርጫት ኳስ"@am,
+        "Baloncesto"@es,
+        "بسکتبال"@fa,
+        "Basket ball"@fr,
+        "Kubbaa kaachoo"@om,
+        "Кошарка"@sr-cyrl,
+        "Košarka"@sr-latn,
+        "Vikapu"@sw,
+        "ኩዕሶ መርበብ"@ti .
+
+<http://www.bbc.co.uk/things/280cfc54-a128-417c-a74e-b663a7f2f61f#id> core:label "Alemania"@es,
+        "Allemagne (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/28a3cb5b-a2ea-4283-b58e-d72dc48d6034#id> core:label "پاکستانی کرکٹ ٹیم"@ur .
+
+<http://www.bbc.co.uk/things/2acacd19-6609-1840-9c2b-b0820c50d281#id> core:label "تشيلسي"@ar,
+        "Chelsea"@ha,
+        "Chelsea"@ig,
+        "Chelsea"@pcm,
+        "Chelsea"@sw,
+        "Chelsea"@yo .
+
+<http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> core:label "الدوري الأوروبي"@ar,
+        "Liga Europa"@es .
+
+<http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> core:label "Rygbi'r Gynghrair"@cy,
+        "Rugby"@es .
+
+<http://www.bbc.co.uk/things/30698980-2831-41b6-9649-f770e40f4750#id> core:label "કબડ્ડી"@gu,
+        "कबड्डी"@hi,
+        "कबड्डी"@mr,
+        "கபடி"@ta,
+        "కబడ్డీ"@te .
+
+<http://www.bbc.co.uk/things/338af54c-76ea-49dc-ab1d-cf6e3baca684#id> core:label "Irán"@es .
+
+<http://www.bbc.co.uk/things/388b5f68-acbe-4643-9e6c-7f734b5d016d#id> core:label "Fútbol femenino"@es,
+        "Женски фудбал"@sr-cyrl,
+        "Ženski fudbal"@sr-latn .
+
+<http://www.bbc.co.uk/things/3a344289-8095-4073-990e-46ba9ec66377#id> core:label "સનરાઇઝર્સ હૈદરાબાદ"@gu,
+        "सनराइज़र्स हैदराबाद"@hi,
+        "सनरायझर्स हैदराबाद"@mr,
+        "ਸਨਰਾਈਜ਼ਰਜ਼ ਹੈਦਰਾਬਾਦ"@pa,
+        "சன்ரைசர்ஸ் ஹைதராபாத்"@ta,
+        "సన్ రైజర్స్ హైదరాబాద్"@te .
+
+<http://www.bbc.co.uk/things/3ac8c344-8b15-4324-b772-5e3d52a704fc#id> core:label "Suecia"@es .
+
+<http://www.bbc.co.uk/things/3d119357-390d-458a-b33c-3910532977fd#id> core:label "Polania"@es .
+
+<http://www.bbc.co.uk/things/3d5e63ec-1f4f-c24c-86ad-fd5d54e014f6#id> core:label "Balonmano"@es,
+        "Handball"@fr .
+
+<http://www.bbc.co.uk/things/4036b936-03df-4e56-b9b1-de65bcfc3373#id> core:label "ચેન્નઈ સુપર કિંગ્સ"@gu,
+        "चेन्नई सुपरकिंग्स"@hi,
+        "चेन्नई सुपर किंग्स"@mr,
+        "ਚੇਨਈ ਸੁਪਰਕਿੰਗਜ਼"@pa,
+        "சென்னை சூப்பர் கிங்ஸ்"@ta,
+        "చెన్నై సూపర్ కింగ్స్"@te .
+
+<http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id> core:label "ስፖርት"@am,
+        "رياضة"@ar,
+        "İdman"@az,
+        "খেলা-ধুলা"@bn,
+        "Chwaraeon"@cy,
+        "Deportes"@es,
+        "ورزش"@fa,
+        "Le sport"@fr,
+        "સ્પોર્ટ્સ"@gu,
+        "Wasanni"@ha,
+        "खेल"@hi,
+        "Olahraga"@id,
+        "Egwuruegwu"@ig,
+        "スポーツ"@ja,
+        "陸上競技"@ja,
+        "스포츠"@ko,
+        "Спорт"@ky,
+        "क्रिडा"@mr,
+        "အားကစား"@my,
+        "खेलुकद"@ne,
+        "Ispoortii"@om,
+        "ਖੇਡ"@pa,
+        "Sport"@pcm,
+        "لوبې"@ps,
+        "Esporte"@pt-br,
+        "Спорт"@ru,
+        "ක්රීඩා"@si,
+        "Ciyaaraha"@so,
+        "Спорт"@sr-cyrl,
+        "Sport"@sr-latn,
+        "Michezo"@sw,
+        "விளையாட்டு"@ta,
+        "క్రీడలు"@te,
+        "กีฬา"@th,
+        "ስፖርት"@ti,
+        "Spor"@tr,
+        "Спорт"@uk,
+        "کھیل"@ur,
+        "Спорт"@uz-cyrl,
+        "Thể thao"@vi,
+        "Ere Idaraya"@yo,
+        "体育"@zh-hans,
+        "體育"@zh-hant .
+
+<http://www.bbc.co.uk/things/41f9bc1e-b474-4e7f-b127-24ab338c5768#id> core:label "Tîm rygbi Cymru"@cy .
+
+<http://www.bbc.co.uk/things/452019a5-f0f2-0c47-aa11-42fdcf2ae16b#id> core:label "Remo"@es .
+
+<http://www.bbc.co.uk/things/48d4a402-acac-4130-aace-5e5ccbe6df8a#id> core:label "Y Llewod"@cy .
+
+<http://www.bbc.co.uk/things/48e56743-a961-42f7-9e7e-066f19e40c71#id> core:label "Japón"@es,
+        "日本サッカー代表"@ja .
+
+<http://www.bbc.co.uk/things/4bdbf21d-d1ad-7147-ab08-612cd0dc20b4#id> core:label "Manchester City"@ha,
+        "Manchester City"@ig,
+        "Manchester City"@pcm,
+        "Manchester City"@yo .
+
+<http://www.bbc.co.uk/things/4d62f2ca-861b-4db6-bc36-e2e537031718#id> core:label "Béisbol"@es .
+
+<http://www.bbc.co.uk/things/4f045458-b81c-48a3-8459-bf5abf7c6b6b#id> core:label "Tîm pêl-droed Cymru"@cy .
+
+<http://www.bbc.co.uk/things/50e8aed7-1ce9-4784-962f-e61fea038990#id> core:label "Portugal"@es .
+
+<http://www.bbc.co.uk/things/50ff6cc4-129e-428a-b936-39618e33f9e6#id> core:label "Corea del Sur"@es .
+
+<http://www.bbc.co.uk/things/51bc6665-92bc-4926-8689-969dc76a9d34#id> core:label "Francia"@es,
+        "France (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/53accf6c-631b-9140-852a-109fab88d3f8#id> core:label "Pentatlón moderno"@es .
+
+<http://www.bbc.co.uk/things/55794b4a-e4d5-44e6-af1a-47eea3027e2a#id> core:label "Egipto"@es,
+        "Égypte (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> core:label "Hockey sobre hielo"@es,
+        "Хоккей"@ru .
+
+<http://www.bbc.co.uk/things/59b6624c-3ba5-480f-9eb6-1cdbda2c4284#id> core:label "Automovilismo"@es,
+        "Motor Sporları"@tr .
+
+<http://www.bbc.co.uk/things/5a9bba82-5f5e-f343-9df7-48fc6d6a008e#id> core:label "Esgrima"@es .
+
+<http://www.bbc.co.uk/things/5b95d205-6cff-4cf1-8fc9-475b29e17511#id> core:label "Squash"@es,
+        "سکواش"@ur .
+
+<http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id> core:label "ፕሪሚየር ሊግ"@am,
+        "الدوري الانجليزي الممتاز"@ar,
+        "Premyer Liqa"@az,
+        "প্রিমিয়ার লিগ"@bn,
+        "Liga Premier"@es,
+        "Première ligue"@fr,
+        "પ્રિમિયર લીગ"@gu,
+        "Gasar Firimiya"@ha,
+        "प्रीमियर लीग"@hi,
+        "Liga primer"@id,
+        "Premier League"@ig,
+        "英プレミアリーグ"@ja,
+        "프리미어리그"@ko,
+        "Премьер-лига"@ky,
+        "प्रीमिअर लीग"@mr,
+        "ပရီးမီးယားလိဂ်"@my,
+        "‌प्रिमियर लिग"@ne,
+        "Priimeer Liigii"@om,
+        "ਪ੍ਰੀਮੀਅਰ ਲੀਗ"@pa,
+        "Premier League"@pcm,
+        "غوره ليگ"@ps,
+        "Премьер-лига"@ru,
+        "Irushanwa ry'umupira w'amaguru mu Bwongereza"@rw,
+        "ප්‍රීමියර් ලීග්"@si,
+        "Premier League"@so,
+        "Премијер лига"@sr-cyrl,
+        "Premijer liga"@sr-latn,
+        "EDP"@sw,
+        "பிரீமியர் லீக்"@ta,
+        "ప్రీమియర్ లీగ్"@te,
+        "ፕሪሚየር ሊግ"@ti,
+        "Premier Lig"@tr,
+        "پریمیئر لیگ فٹبال"@ur,
+        "Олий Лига"@uz-cyrl,
+        "Premier League"@vi,
+        "Idije Liigi"@yo,
+        "英超联赛"@zh-hans,
+        "英超聯賽"@zh-hant .
+
+<http://www.bbc.co.uk/things/5ec63a0c-4a74-43d4-926c-c75789c078c1#id> core:label "انڈین کرکٹ ٹیم"@ur .
+
+<http://www.bbc.co.uk/things/611ecd3d-8b08-48d5-aee9-d01e7620d2a4#id> core:label "Inglaterra"@es,
+        "Angleterre (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/6247858b-4d10-486f-a3d1-a5ac50788a90#id> core:label "Serbia"@es,
+        "Србија"@sr-cyrl,
+        "Srbija"@sr-latn .
+
+<http://www.bbc.co.uk/things/646e45c3-4889-1346-92a2-773da1483fc1#id> core:label "Clwb Pêl-droed Casnewydd"@cy .
+
+<http://www.bbc.co.uk/things/65058c8d-de38-435a-b90f-7c4b5c52d01a#id> core:label "Costa Rica"@es .
+
+<http://www.bbc.co.uk/things/654f550c-0c2d-2341-a8f5-66e3a9ba28ba#id> core:label "Judo"@es .
+
+<http://www.bbc.co.uk/things/69cbc5e2-b228-a143-8085-860c053f44f7#id> core:label "Taekwondo"@es .
+
+<http://www.bbc.co.uk/things/6b04e406-c181-204b-a2dd-bc20142b9e6a#id> core:label "Levantamiento de pesas"@es .
+
+<http://www.bbc.co.uk/things/6b71918f-e3a3-4dff-ad36-c3d737605d43#id> core:label "Copa Libertadores"@es .
+
+<http://www.bbc.co.uk/things/6b74866b-9c75-44d0-8cea-db97165ac181#id> core:label "દિલ્હી ડેરડેવિલ્સ"@gu,
+        "डेल्ही डेयरडेविल्स"@hi,
+        "दिल्ली डेअरडेव्हिल्स"@mr,
+        "ਦਿੱਲੀ ਡੇਅਰਡੇਵਿਲਜ਼"@pa,
+        "டெல்லி டேர்டெவில்ஸ்"@ta,
+        "దిల్లీ డేర్ డెవిల్స్"@te .
+
+<http://www.bbc.co.uk/things/6e97a67c-ca6a-4482-9570-0b41aa30c086#id> core:label "Chris Coleman"@cy .
+
+<http://www.bbc.co.uk/things/6f93127a-159a-45d6-a9d0-97d09b38dd66#id> core:label "يوفنتوس"@ar,
+        "Juventus"@ha,
+        "Juventus"@ig,
+        "Juventus"@pcm,
+        "Juventus"@tr,
+        "Juventus"@yo .
+
+<http://www.bbc.co.uk/things/77e5f32b-a1d8-45c3-a2c8-aabaf286537d#id> core:label "افغان کرېکټ لوبډله"@ps .
+
+<http://www.bbc.co.uk/things/7a230020-66f2-4b36-8e3d-6b8cbbddf913#id> core:label "বিশ্বকাপ"@bn,
+        "વર્લ્ડ કપ"@gu,
+        "आईसीसी विश्व कप"@hi,
+        "वर्ल्ड कप"@hi,
+        "クリケット・ワールドカップ"@ja,
+        "크리켓 월드컵"@ko,
+        "ICC वर्ल्ड कप"@mr,
+        "आईसीसी विश्वकप"@ne,
+        "ਵਿਸ਼ਵ ਕੱਪ"@pa,
+        "د کرېکټ نړېواله اتلولي"@ps,
+        "ක්‍රිකට් ලෝක කුසලානය"@si,
+        "உலகக் கோப்பை"@ta,
+        "ஐசிசி உலக கோப்பை"@ta,
+        "ప్రపంచ కప్"@te,
+        "کرکٹ ورلڈ کپ"@ur .
+
+<http://www.bbc.co.uk/things/7e4ba3a7-909a-473f-b332-95b5ed42c213#id> core:label "Seiclo"@cy,
+        "Ciclismo"@es,
+        "Balap sepeda"@id,
+        "Mbio za Baiskeli"@sw .
+
+<http://www.bbc.co.uk/things/7e517328-5306-49a4-addb-37a94a2be3bb#id> core:label "Canotaje"@es .
+
+<http://www.bbc.co.uk/things/7f66e5fb-f7b1-4b84-a592-80a851950fa4#id> core:label "اتليتكو مدريد"@ar .
+
+<http://www.bbc.co.uk/things/82b6a339-073b-482b-868b-607fe4abaa05#id> core:label "કોમનવેલ્થ ગેમ્સ 2018 "@gu,
+        "कॉमनवेल्थ गेम्स 2018"@hi,
+        "कॉमनवेल्थ गेम्स 2018"@mr,
+        "ਕਾਮਨਵੈਲਥ ਗੇਮਜ਼ 2018"@pa,
+        "காமன்வெல்த் போட்டிகள் 2018"@ta,
+        "కామన్‌వెల్త్ గేమ్స్ 2018"@te .
+
+<http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id> core:label "Eurocopa 2016"@es,
+        "Euro 2016"@fr,
+        "Euro 2016"@pt-br,
+        "Евро 2016"@ru,
+        "Euro 2016"@sw,
+        "Euro 2016"@tr,
+        "euro2016"@vi .
+
+<http://www.bbc.co.uk/things/8545dbc3-560f-fd49-8ebe-f0e325253ae9#id> core:label "Clwb Pêl-droed Wrecsam"@cy .
+
+<http://www.bbc.co.uk/things/85f043fe-1346-470c-96dd-d6ed1c0e47a9#id> core:label "AC Milan"@tr .
+
+<http://www.bbc.co.uk/things/869e0ec9-af00-4f2b-82b6-b760d69a4492#id> core:label "Dardos"@es .
+
+<http://www.bbc.co.uk/things/8819a847-defb-4b7f-a8f9-842a50ac9668#id> core:label "የ2018 የፊፋ ዓለም ዋንጫ"@am,
+        "Waancaa Addunyaa FIFA 2018"@om,
+        "ЧМ 2018"@ru,
+        "ฟุตบอลโลก 2018"@th,
+        "ዋንጫ ዓለም 2018"@ti,
+        "Чемпіонат світу ФІФА 2018"@uk .
+
+<http://www.bbc.co.uk/things/89353f27-827c-45dc-90f9-33c2077247ab#id> core:label "Партизан Београд"@sr-cyrl,
+        "Partizan Beograd"@sr-latn .
+
+<http://www.bbc.co.uk/things/8df31a76-4c22-5b40-9f0d-78b34dfb26fa#id> core:label "ليفربول"@ar,
+        "Liverpool F.C."@ha,
+        "Liverpool F.C."@ig,
+        "Liverpool F.C."@pcm,
+        "Liverpool F.C."@yo .
+
+<http://www.bbc.co.uk/things/8eaae83a-62d2-4829-ae7e-f1ff4f826680#id> core:label "રૉયલ ચેલેન્જર્સ બૅંગલોર"@gu,
+        "रॉयल चैलेंजर्स बैंगलौर"@hi,
+        "रॉयल चॅलेंजर्स बंगळुरू"@mr,
+        "ਰਾਇਲ ਚੈਲੇਂਜਰਜ਼ ਬੈਂਗਲੌਰ"@pa,
+        "ராயல் சேலஞ்சர்ஸ் பெங்களூர்"@ta,
+        "రాయల్ చాలెంజర్స్ బెంగళూర్"@te .
+
+<http://www.bbc.co.uk/things/903ef380-bdae-4a45-9a8b-5e5a270a7d6c#id> core:label "أولمبياد لندن"@ar,
+        "Olimpiya 2012"@az,
+        "Juegos de Londres 2012"@es,
+        "JO Londres 2012"@fr,
+        "London 2012"@ha,
+        "लंदन ओलंपिक 2012"@hi,
+        "Olimpiade"@id,
+        "Olimpíada 2012"@pt-br,
+        "لندن اولمپکس سنہ دو ہزار بارہ"@ur,
+        "Olympics 2012"@vi .
+
+<http://www.bbc.co.uk/things/905ed4c9-8719-4775-a1a5-e52cb80aac19#id> core:label "આઇસીસી વર્લ્ડ ટ્વેન્ટી 20"@gu,
+        "वर्ल्ड टी20"@hi,
+        "आइसीसी वल्ड टी20"@mr,
+        "ਆਈ.ਸੀ.ਸੀ. ਵਿਸ਼ਵ ਵੀਹ20"@pa,
+        "ஐசிசி உலக கோப்பை 20 20"@ta,
+        "ఐసీసీ వరల్డ్ టీ 20"@te .
+
+<http://www.bbc.co.uk/things/90d9a818-850b-b64f-9474-79e15a0355b8#id> core:label "Manchester United"@ha,
+        "Manchester United"@ig,
+        "Manchester United"@pcm,
+        "Manchester United"@tr,
+        "Manchester United"@yo .
+
+<http://www.bbc.co.uk/things/921a13d0-6fc6-6740-af87-8af4655ec20f#id> core:label "የቡጢ ፍልሚያ"@am,
+        "Bocsio"@cy,
+        "Boxeo"@es,
+        "بوکس"@fa,
+        "Boxe"@fr,
+        "બૉક્સિંગ"@gu,
+        "बॉक्सिंग"@hi,
+        "Tinju"@id,
+        "बॉक्सिंग"@mr,
+        "Bunyaa"@om,
+        "ਮੁੱਕੇਬਾਜੀ"@pa,
+        "Ndondi"@sw,
+        "குத்துச்சண்டை"@ta,
+        "బాక్సింగ్"@te,
+        "ጉስጢ"@ti,
+        "Бокс"@uz-cyrl .
+
+<http://www.bbc.co.uk/things/9261e493-1c36-42a5-ad78-76629c3b412c#id> core:label "Fenerbahçe"@tr .
+
+<http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> core:label "የአፍሪካ ዋንጫ"@am,
+        "كأس الأمم الإفريقية"@ar,
+        "Coupe d'Afrique des nations"@fr,
+        "Gasar Cin Kofin Kasashen Afirka"@ha,
+        "Iko Mba Afrịka"@ig,
+        "Waancaa Biyyoota Afriikaa"@om,
+        "Africa Cup of Nations"@pcm,
+        "Igikombe ca Afrika"@rw,
+        "Koobka Qaramada Afrika"@so,
+        "Kombe la Mataifa ya Afrika"@sw,
+        "ዋንጫ ኣፍሪቃ"@ti,
+        "Ife ẹ̀yẹ àwọn oríllèdè nílẹ̀ Afrika"@yo .
+
+<http://www.bbc.co.uk/things/931bc5b4-1859-4572-8001-a4d322057ae0#id> core:label "Perú"@es .
+
+<http://www.bbc.co.uk/things/96a45a0e-876a-4b31-b9bc-25a9eb365dc3#id> core:label "Brasil"@es,
+        "Brésil (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/98105d9f-b1db-0547-b8c7-581abf30c7e9#id> core:label "Clwb Pêl-droed Abertawe"@cy .
+
+<http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> core:label "Liga de fútbol de España"@es,
+        "Spanish La Liga"@pcm .
+
+<http://www.bbc.co.uk/things/9a53bd9f-90f6-4838-9810-9467992de26b#id> core:label "Islandia"@es .
+
+<http://www.bbc.co.uk/things/9d794c09-c573-4a97-9a0e-9518888f19ed#id> core:label "آسٹریلوی کرکٹ ٹیم"@ur .
+
+<http://www.bbc.co.uk/things/a1bf24e8-88ee-4865-9469-aa71c050c414#id> core:label "Panamá"@es .
+
+<http://www.bbc.co.uk/things/a5695e6f-2e4c-1b42-9b11-af0862edbb2a#id> core:label "Natación"@es .
+
+<http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id> core:label "برشلونة"@ar,
+        "Barcelona"@ha,
+        "Barcelona"@ig,
+        "Barcelona"@pcm,
+        "Barcelona"@tr,
+        "Barcelona"@yo .
+
+<http://www.bbc.co.uk/things/a80d80f4-c47e-4417-b1c7-de1af76a03a7#id> core:label "Rusia"@es,
+        "Russie (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/a922e938-91e3-40a0-adba-097983a7d38e#id> core:label "Deportes paralímpicos"@es .
+
+<http://www.bbc.co.uk/things/abb65521-4d89-4881-aa11-d763bf3ff92d#id> core:label "CONCACAF Champions League"@es .
+
+<http://www.bbc.co.uk/things/adcfac1c-752f-4ee8-89d5-77491322f0c4#id> core:label "રાજસ્થાન રૉયલ્સ"@gu,
+        "राजस्थान रॉयल्स"@hi,
+        "राजस्थान रॉयल्स"@mr,
+        "ਰਾਜਸਥਾਨ ਰਾਇਲਜ਼"@pa,
+        "ராஜஸ்தான் ராயல்ஸ்"@ta,
+        "రాజస్థాన్ రాయల్స్"@te .
+
+<http://www.bbc.co.uk/things/aef9ea59-2f89-4760-a31c-5c319c53d166#id> core:label "Nigeria"@es,
+        "Nigéria (équipe nationale de football)"@fr,
+        "Otu egwu bọọlụ Naịjirịa"@ig,
+        "Ikọ Agbabọọlu Orilẹede Naijiria"@yo .
+
+<http://www.bbc.co.uk/things/b3a086df-ab42-2b44-be8b-76b600bfcdce#id> core:label "አትሌቲክስ"@am,
+        "الساحة والميدان"@ar,
+        "Atletika"@az,
+        "অ্যাথলেটিকস্"@bn,
+        "Athletau"@cy,
+        "Atletismo"@es,
+        "دومیدانی"@fa,
+        "Athlétisme"@fr,
+        "એથલેટિક્સ"@gu,
+        "Wasannin motsa jiki"@ha,
+        "एथलेटिक्स"@hi,
+        "Atletik"@id,
+        "陸上競技"@ja,
+        "육상"@ko,
+        "Жеңил атлетика"@ky,
+        "अॅथलेटिक्स"@mr,
+        "ပြေးခုန်ပစ်"@my,
+        "खेलकुद"@ne,
+        "Atileetiksii"@om,
+        "ਖੇਡਾਂ"@pa,
+        "Athletics"@pcm,
+        "ورزش"@ps,
+        "Atletismo"@pt-br,
+        "Атлетика"@ru,
+        "Imikino ngororangingo"@rw,
+        "මලල ක්‍රීඩා"@si,
+        "Ciyaaraha Fudud"@so,
+        "Атлетика"@sr-cyrl,
+        "Atletika"@sr-latn,
+        "Riadha"@sw,
+        "தடகளம்"@ta,
+        "అథ్లెటిక్స్"@te,
+        "กรีฑา"@th,
+        "ኣትሌቲክስ"@ti,
+        "Atletizm"@tr,
+        "Атлетика"@uk,
+        "ایتھلیٹکس"@ur,
+        "Атлетика"@uz-cyrl,
+        "Điền kinh"@vi,
+        "竞技"@zh-hans,
+        "競技"@zh-hant .
+
+<http://www.bbc.co.uk/things/b719bd8e-1c21-425b-ad3c-f9e501cf4ccb#id> core:label "Црвена звезда Београд"@sr-cyrl,
+        "Crvena zvezda Beograd"@sr-latn .
+
+<http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> core:label "Rygbi"@cy,
+        "Rugby"@es,
+        "ラグビー"@ja,
+        "رګبي"@ps,
+        "Raga"@sw .
+
+<http://www.bbc.co.uk/things/b84fd4d8-b7b5-5b45-9f7a-d701c9f3907f#id> core:label "Equitación"@es .
+
+<http://www.bbc.co.uk/things/b9a58a01-0c74-8b47-972f-68f922ebd90a#id> core:label "Tiro con arco"@es .
+
+<http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id> core:label "España"@es,
+        "Espagne (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/b9d79493-931c-4265-b558-6a7e283d33f6#id> core:label "Marruecos"@es,
+        "Maroc (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> core:label "እግር ኳስ"@am,
+        "كرة"@ar,
+        "Futbol"@az,
+        "ফুটবল"@bn,
+        "Pêl-droed"@cy,
+        "Fútbol"@es,
+        "فوتبال"@fa,
+        "Football"@fr,
+        "ફૂટબોલ"@gu,
+        "Kwallon kafa"@ha,
+        "फ़ुटबॉल"@hi,
+        "Sepakbola"@id,
+        "Bọọlụ"@ig,
+        "サッカー"@ja,
+        "축구"@ko,
+        "Футбол"@ky,
+        "फुटबॉल"@mr,
+        "ဘောလုံး"@my,
+        "फुटबल"@ne,
+        "Kubbaa miilaa"@om,
+        "ਫੁਟਬਾਲ"@pa,
+        "Football"@pcm,
+        "فوټبال"@ps,
+        "Futebol"@pt-br,
+        "Футбол"@ru,
+        "Umupira w'amaguru"@rw,
+        "පාපන්දු"@si,
+        "Kubadda cagta"@so,
+        "Фудбал"@sr-cyrl,
+        "Fudbal"@sr-latn,
+        "Kandanda"@sw,
+        "கால்பந்து"@ta,
+        "ఫుట్‌బాల్"@te,
+        "ฟุตบอล"@th,
+        "ኩዕሶ እግሪ"@ti,
+        "Futbol"@tr,
+        "Футбол"@uk,
+        "فٹبال"@ur,
+        "Футбол"@uz-cyrl,
+        "Bóng đá"@vi,
+        "Ere Bọọlu"@yo,
+        "足球"@zh-hans,
+        "足球"@zh-hant .
+
+<http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> core:label "ক্রিকেট"@bn,
+        "Criced"@cy,
+        "Criquet"@es,
+        "ક્રિકેટ"@gu,
+        "क्रिकेट"@hi,
+        "クリケット"@ja,
+        "크리켓"@ko,
+        "क्रिकेट"@mr,
+        "क्रिकेट"@ne,
+        "ਕ੍ਰਿਕਟ"@pa,
+        "کرېکټ"@ps,
+        "ක්රිකට්"@si,
+        "கிரிக்கெட்"@ta,
+        "క్రికెట్"@te,
+        "کرکٹ"@ur .
+
+<http://www.bbc.co.uk/things/bda66fef-14c9-4bf2-8680-13757e30769d#id> core:label "Pencampwriaeth y Chwe Gwlad"@cy .
+
+<http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> core:label "Wimbledon"@id,
+        "Вимблдон"@sr-cyrl,
+        "Vimbldon"@sr-latn .
+
+<http://www.bbc.co.uk/things/beb68026-a8d4-4e93-a7da-69236e988e18#id> core:label "Australia"@es .
+
+<http://www.bbc.co.uk/things/bef8a4b5-1ad1-4347-b665-edf581ab7350#id> core:label "Clwb Pêl-droed Caerdydd"@cy .
+
+<http://www.bbc.co.uk/things/c2849b16-b4f1-4ef7-9baa-437937470d71#id> core:label "Copa América"@es .
+
+<http://www.bbc.co.uk/things/c297c13f-ce09-499c-ae5f-a660cfb4e13f#id> core:label "México"@es .
+
+<http://www.bbc.co.uk/things/c4285a9a-9865-2343-af3a-8653f7b70734#id> core:label "ارسنال"@ar,
+        "Arsenal"@ha,
+        "Arsenal"@ig,
+        "Arsenal"@pcm,
+        "Arsenal"@tr,
+        "Arsenal"@yo .
+
+<http://www.bbc.co.uk/things/c5ba74e2-39cb-424f-be8b-a719cc8bba82#id> core:label "Beşiktaş"@tr .
+
+<http://www.bbc.co.uk/things/c5d39deb-46b8-1e4e-ba2c-5c6e2436b92d#id> core:label "Triatlón"@es .
+
+<http://www.bbc.co.uk/things/c6e2a7ac-2d13-8640-9f98-41f749d94a6e#id> core:label "Voleibol"@es,
+        "والیبال"@fa,
+        "Voliboli"@sw .
+
+<http://www.bbc.co.uk/things/cc2373e0-829a-4263-b94c-06d92c34b101#id> core:label "મુંબઈ ઇન્ડિયન્સ"@gu,
+        "मुंबई इंडियंस"@hi,
+        "मुंबई इंडियन्स"@mr,
+        "ੁੰਬਈ ਇੰਡੀਅਨਜ਼"@pa,
+        "மும்பை இந்தியன்ஸ்"@ta,
+        "ముంబయ్ ఇండియన్స్"@te .
+
+<http://www.bbc.co.uk/things/cd988a73-6c41-4690-b785-c8d3abc2d13c#id> core:label "انگلش کرکٹ ٹیم"@ur .
+
+<http://www.bbc.co.uk/things/ce88dce3-fe00-4344-aedd-84ff5ff42cd7#id> core:label "Deportes de invierno"@es .
+
+<http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> core:label "Liga de fútbol de Alemania"@es .
+
+<http://www.bbc.co.uk/things/d4a190a5-aeec-4499-b27b-579b96ff20a7#id> core:label "કોલકાતા નાઇટ રાઇડર્સ"@gu,
+        "कोलकाता नाइट राइडर्स"@hi,
+        "कोलकाता नाईट रायडर्स"@mr,
+        "ਕੋਲਕਾਤਾ ਨਾਈਟ ਰਾਈਡਰਜ਼"@pa,
+        "கொல்கத்தா நைட் ரைடர்ஸ்"@ta,
+        "కోలకతా నైట్ రైడర్స్"@te .
+
+<http://www.bbc.co.uk/things/d65c5dce-f5e4-4340-931b-16ca1848d092#id> core:label "Vela"@es .
+
+<http://www.bbc.co.uk/things/d801141d-b1ca-4ef7-80fd-208c00dbae7a#id> core:label "بايرن ميونيخ"@ar,
+        "Bayern Munich"@ha,
+        "Bayern Munich"@ig,
+        "Bayern Munich"@pcm,
+        "Bayern Münih"@tr,
+        "Bayern Munich"@yo .
+
+<http://www.bbc.co.uk/things/d9d6cc4d-79f1-ab49-9c9e-c98d166b99fe#id> core:label "Clavados"@es .
+
+<http://www.bbc.co.uk/things/da152cb0-5edd-4d9a-824a-c32e4ebd923b#id> core:label "باريس سان جيرمان"@ar,
+        "Paris Saint Germain"@ha,
+        "Paris Saint Germain"@ig,
+        "Paris Saint Germain"@pcm,
+        "Paris Saint Germain"@yo .
+
+<http://www.bbc.co.uk/things/da7ff3fd-eb71-4cf8-abb1-a8d025e9e135#id> core:label "Argentina"@es,
+        "Argentine (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> core:label "Liga de fútbol de Italia"@es .
+
+<http://www.bbc.co.uk/things/de6801f6-6d87-4cf7-bc33-5f494858df59#id> core:label "કિંગ્સ XI પંજાબ"@gu,
+        "किंग्स इलेवन पंजाब"@hi,
+        "किंग्स XI पंजाब"@mr,
+        "ਕਿੰਗਜ਼ XI ਪੰਜਾਬ"@pa,
+        "கிங்ஸ் லெவன் பஞ்சாப்"@ta,
+        "కింగ్స్ లెవెన్ పంజాబ్"@te .
+
+<http://www.bbc.co.uk/things/de6a07ff-47ff-4551-9b71-7494a71aceac#id> core:label "የዓለም እግር ኳስ ዋንጫ"@am,
+        "كرة القدم"@ar,
+        "Dünya Kuboku"@az,
+        "Cwpan y Byd Pêl-droed"@cy,
+        "Copa del Mundo"@es,
+        "جام جهانی فوتبال برزیل ۲۰۱۴"@fa,
+        "Coupe du monde de football"@fr,
+        "વિશ્વ કપ"@gu,
+        "Kofin Duniya"@ha,
+        "विश्व कप"@hi,
+        "Piala Dunia"@id,
+        "Iko mba ụwa"@ig,
+        "ワールドカップ"@ja,
+        "월드컵"@ko,
+        "Дүйнөлүк чемпионат"@ky,
+        "विश्वचषक"@mr,
+        "ကမ္ဘာ့ဖလား"@my,
+        "वर्ल्ड कप"@ne,
+        "Kubbaa Miilaa Adduunyaa"@om,
+        "ਵਿਸ਼ਵ ਕੱਪ"@pa,
+        "World Cup"@pcm,
+        "نړیوال جام"@ps,
+        "Copa do Mundo"@pt-br,
+        "Igikombe cy'Isi"@rw,
+        "ලෝක කුසලානය"@si,
+        "Koobka Adduunka"@so,
+        "Светско првенство"@sr-cyrl,
+        "Svetsko prvenstvo"@sr-latn,
+        "Kombe la Dunia"@sw,
+        "உலகக்கோப்பை"@ta,
+        "ప్రపంచ కప్"@te,
+        "ฟุตบอลโลก"@th,
+        "ፅዋዕ/ዋንጫ ዓለም"@ti,
+        "Dünya Kupası"@tr,
+        "Чемпіонат світу"@uk,
+        "فٹبال ورلڈ کپ"@ur,
+        "Жаҳон Кубоги"@uz-cyrl,
+        "World Cup"@vi,
+        "Ife Ẹyẹ Agbaye"@yo,
+        "世界杯"@zh-hans,
+        "世界盃"@zh-hant .
+
+<http://www.bbc.co.uk/things/de911da7-c074-454b-a2ec-e7133750f37b#id> core:label "Undeb Rygbi Cymru"@cy .
+
+<http://www.bbc.co.uk/things/df508d43-f60e-4e7e-8f5e-57556ff13813#id> core:label "Gareth Bale"@cy .
+
+<http://www.bbc.co.uk/things/e02ad728-a9b5-4d71-9c8e-1631d8d5f383#id> core:label "Piala Eropa 2012"@id,
+        "Євро-2012"@uk,
+        "Giải Euro 2012"@vi .
+
+<http://www.bbc.co.uk/things/e4d61a41-dba2-7849-a725-d8b445ec3cbc#id> core:label "Polo acuático"@es .
+
+<http://www.bbc.co.uk/things/e681e822-b849-0243-b698-1b9afe3f3858#id> core:label "Hockey"@es,
+        "હોકી"@gu,
+        "हॉकी"@hi,
+        "हॉकी"@mr,
+        "ਹਾਕੀ"@pa,
+        "ஹாக்கி"@ta,
+        "హాకీ"@te,
+        "ہاکی"@ur .
+
+<http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> core:label "Golff"@cy,
+        "Golf"@es,
+        "Gofu"@sw .
+
+<http://www.bbc.co.uk/things/eceae071-5f37-0848-acd2-f21e3b2de8ca#id> core:label "Tiro"@es .
+
+<http://www.bbc.co.uk/things/ef55ff8e-8d36-4473-9f11-3ba9fa9ac787#id> core:label "Cwpan Rygbi'r Byd"@cy,
+        "ラグビーW杯"@ja .
+
+<http://www.bbc.co.uk/things/f032f98f-c256-4c2f-8bdc-d2fadf20a65a#id> core:label "Croacia"@es .
+
+<http://www.bbc.co.uk/things/f102a51c-1276-4d55-901a-575d63ca263c#id> core:label "Snwcer"@cy,
+        "Snooker"@es,
+        "台球"@zh-hans,
+        "台球"@zh-hant .
+
+<http://www.bbc.co.uk/things/f21d1a82-e919-b24f-b3fb-8f2f46372f40#id> core:label "Tenis de mesa"@es .
+
+<http://www.bbc.co.uk/things/f475527c-74ba-4005-aee2-c529ab8300b4#id> core:label "Y Gweilch"@cy .
+
+<http://www.bbc.co.uk/things/f4f02418-1c5e-4be0-86ef-91ccd27d8aaf#id> core:label "Moto GP"@id .
+
+<http://www.bbc.co.uk/things/f76d29fd-ea7c-4880-9b25-cb98acce6185#id> core:label "بروسيا دورتموند"@ar,
+        "Borussia Dortmund"@ha,
+        "Borussia Dortmund"@ig,
+        "Borussia Dortmund"@pcm,
+        "Borussia Dortmund"@yo .
+
+<http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> core:label "Liga de fútbol de Francia"@es .
+
+<http://www.bbc.co.uk/things/fb5da161-43c1-4cfc-a24a-9b1d2aa62886#id> core:label "Túnez"@es,
+        "Tunisie (équipe nationale de football)"@fr .
+
+<http://www.bbc.co.uk/things/ff55aea0-83d7-834c-afc0-d21045f561e9#id> core:label "Leicester City"@sw .
+
+<http://www.bbc.co.uk/things/ff9bb350-0bed-4966-9997-704f830d93c5#id> core:label "Dinamarca"@es .
+

@@ -1,0 +1,160 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/c9a0d185-5772-42ec-aa7d-585cd0e3a880#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: Pro14 2018/19 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-union/rugby-union-2018-pro-14-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4642: Pro14 2018/19 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-08-07T15:42:57+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> sport:firstStage <http://www.bbc.co.uk/things/a6d90953-7f3b-477f-9d29-edd55dfd18a0#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/55d5e7f8-ecdb-4c1b-914c-676c19def80c#id>,
+        <http://www.bbc.co.uk/things/c60d80db-0895-4f68-8675-d5b34b88b71d#id>,
+        <http://www.bbc.co.uk/things/fb99e19c-0171-4e3e-8e93-1db75529b31d#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/cc25647f-b9df-4c3c-a0f4-583e2cc72386#id> .
+
+<http://www.bbc.co.uk/things/5d3895b6-3613-4fd1-b6e6-0078f31df63d#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Pro14"@en-gb ;
+    sal:name "Champions Cup Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S2R1> ;
+    core:preferredLabel "Champions Cup Play-off"@en-gb ;
+    core:shortLabel "Champions Cup Play-off"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/82ddf073-ea95-40ca-9e47-f0c70b0c26e6#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 4 of Pro14"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S4R1> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/ad8eee62-18e9-43df-8714-ee2281c8a3f6#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Pro14"@en-gb ;
+    sal:name "Conference A"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S1R2> ;
+    core:preferredLabel "Conference A"@en-gb ;
+    core:shortLabel "Conference A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/dca30d26-e89f-4e53-a6ee-e6098948c7aa#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 5 of Pro14"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S5R1> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/e31d37d1-d662-4b7a-9732-ba6f0380bbf5#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Pro14"@en-gb ;
+    sal:name "Conference B"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S1R3> ;
+    core:preferredLabel "Conference B"@en-gb ;
+    core:shortLabel "Conference B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/eac1dd8c-a912-46b3-9527-73fb7296b26d#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 3 of Pro14"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S3R1> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<urn:sports-data:CRUB1432018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1432018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1432018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1432018S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1432018S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1432018S3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1432018S3R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1432018S4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1432018S4R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1432018S5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1432018S5R1> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/a6d90953-7f3b-477f-9d29-edd55dfd18a0#id> a sport:LeagueCompetition ;
+    sal:name "Stage 1 of Pro14"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S1> ;
+    core:preferredLabel "Pro14 Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/ad8eee62-18e9-43df-8714-ee2281c8a3f6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/e31d37d1-d662-4b7a-9732-ba6f0380bbf5#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/fb99e19c-0171-4e3e-8e93-1db75529b31d#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/cc25647f-b9df-4c3c-a0f4-583e2cc72386#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 5 of Pro14"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S5> ;
+    core:preferredLabel "Pro14 Final"@en-gb ;
+    core:shortLabel "Pro14 Final"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/dca30d26-e89f-4e53-a6ee-e6098948c7aa#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/55d5e7f8-ecdb-4c1b-914c-676c19def80c#id> ;
+    sport:stageNumber "5"^^xsd:int .
+
+<http://www.bbc.co.uk/things/55d5e7f8-ecdb-4c1b-914c-676c19def80c#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 4 of Pro14"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S4> ;
+    core:preferredLabel "Pro14 Semi-final"@en-gb ;
+    core:shortLabel "Pro14 Semi-final"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/82ddf073-ea95-40ca-9e47-f0c70b0c26e6#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/cc25647f-b9df-4c3c-a0f4-583e2cc72386#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/c60d80db-0895-4f68-8675-d5b34b88b71d#id> ;
+    sport:stageNumber "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/c60d80db-0895-4f68-8675-d5b34b88b71d#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 3 of Pro14"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S3> ;
+    core:preferredLabel "Pro14 Quarter-final"@en-gb ;
+    core:shortLabel "Pro14 Quarter-final"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/eac1dd8c-a912-46b3-9527-73fb7296b26d#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/55d5e7f8-ecdb-4c1b-914c-676c19def80c#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/fb99e19c-0171-4e3e-8e93-1db75529b31d#id> ;
+    sport:stageNumber "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/fb99e19c-0171-4e3e-8e93-1db75529b31d#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Pro14"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1432018S2> ;
+    core:preferredLabel "Pro14 Champions Cup Play-offs"@en-gb ;
+    core:shortLabel "Champions Cup Play-offs"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/5d3895b6-3613-4fd1-b6e6-0078f31df63d#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/c60d80db-0895-4f68-8675-d5b34b88b71d#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/a6d90953-7f3b-477f-9d29-edd55dfd18a0#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

@@ -1,0 +1,132 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/cf05bbec-b913-4079-b4af-a0859bd25b3e#id> a provenance:Dataset ;
+    rdfs:label "Football: Women's Super League Cup 2018/19 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/womens-super-league-cup-2018-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4674: Use correct format for FA WSL Cup 2018/19" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-08-08T13:39:56+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/45cad080-bd25-46f2-b890-ea05814d9c33#id> sport:firstStage <http://www.bbc.co.uk/things/a44706df-3791-45a0-91df-ba77ff05a29a#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/4af126e8-6127-43d0-adf1-ea4cf3164151#id> .
+
+<http://www.bbc.co.uk/things/1361482b-c101-4799-ad60-f4f69bf67012#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Women's Super League Cup"@en-gb ;
+    sal:name "Quarter-finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6042018S2R1> ;
+    core:preferredLabel "Quarter-finals"@en-gb ;
+    core:shortLabel "Quarter-finals"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/1b36561c-334e-4af6-bae3-7e5c69abd96e#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Women's Super League Cup"@en-gb ;
+    sal:name "Group One South"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6042018S1R2> ;
+    core:preferredLabel "Group One South"@en-gb ;
+    core:shortLabel "Group One South"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/3068077b-469a-42de-8cdc-e3a368b3c407#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Women's Super League Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6042018S2R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/a2829462-ebca-4738-94d0-956171c8239e#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Women's Super League Cup"@en-gb ;
+    sal:name "Group Two North"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6042018S1R3> ;
+    core:preferredLabel "Group Two North"@en-gb ;
+    core:shortLabel "Group Two North"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ce84fb20-7db9-4fb0-b383-21cd357c02cd#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Women's Super League Cup"@en-gb ;
+    sal:name "Group One North"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6042018S1R1> ;
+    core:preferredLabel "Group One North"@en-gb ;
+    core:shortLabel "Group One North"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/dc910984-bfce-454c-b82f-7fb5c1dc00ba#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Women's Super League Cup"@en-gb ;
+    sal:name "Semi-finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6042018S2R2> ;
+    core:preferredLabel "Semi-finals"@en-gb ;
+    core:shortLabel "Semi-finals"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/ee0d1ba5-3e52-4acb-aa50-a5859b8dec22#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Women's Super League Cup"@en-gb ;
+    sal:name "Group Two South"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6042018S1R4> ;
+    core:preferredLabel "Group Two South"@en-gb ;
+    core:shortLabel "Group Two South"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CFBB6042018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6042018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6042018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6042018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6042018S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6042018S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6042018S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6042018S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6042018S2R3> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/4af126e8-6127-43d0-adf1-ea4cf3164151#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Women's Super League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6042018S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/1361482b-c101-4799-ad60-f4f69bf67012#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/dc910984-bfce-454c-b82f-7fb5c1dc00ba#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/3068077b-469a-42de-8cdc-e3a368b3c407#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/a44706df-3791-45a0-91df-ba77ff05a29a#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/a44706df-3791-45a0-91df-ba77ff05a29a#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Women's Super League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6042018S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/ce84fb20-7db9-4fb0-b383-21cd357c02cd#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/1b36561c-334e-4af6-bae3-7e5c69abd96e#id>,
+        <http://www.bbc.co.uk/things/a2829462-ebca-4738-94d0-956171c8239e#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/ee0d1ba5-3e52-4acb-aa50-a5859b8dec22#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/4af126e8-6127-43d0-adf1-ea4cf3164151#id> ;
+    sport:stageNumber 1 .
+

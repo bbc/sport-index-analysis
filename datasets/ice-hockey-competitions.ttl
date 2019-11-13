@@ -1,0 +1,65 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/1cec9e47-9ea1-47f1-800f-292aee28e881#id> a provenance:Dataset ;
+    rdfs:label "Ice Hockey: Competitions" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/ice-hockey/ice-hockey-competitions.ttl" ;
+    provenance:changeReason "SLS-1798: Updated locator prefix to be CIHB; Added Elite League, Elite League Challenge Cup and NHL recurring competitions" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-04-12T09:57:10+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:eleni.mikroyannidi@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/2722dad3-cb7e-4e9b-a727-d63f35fa9375#id> a sport:RecurringCompetition ;
+    sal:name "NHL"@en-gb ;
+    cms:locator <urn:sports-data:CIHB11060> ;
+    core:disambiguationHint "Ice hockey competition"@en-gb ;
+    core:preferredLabel "NHL"@en-gb ;
+    core:shortLabel "NHL"@en-gb ;
+    core:slug "nhl"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> .
+
+<http://www.bbc.co.uk/things/9b05692c-2f6f-49f1-b456-953bff275dc8#id> a sport:RecurringCompetition ;
+    sal:name "Elite League Challenge Cup"@en-gb ;
+    cms:locator <urn:sports-data:CIHB13756> ;
+    core:disambiguationHint "Ice hockey competition"@en-gb ;
+    core:preferredLabel "Elite League Challenge Cup"@en-gb ;
+    core:shortLabel "Elite League Challenge Cup"@en-gb ;
+    core:slug "elite-league-challenge-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> .
+
+<http://www.bbc.co.uk/things/ec7a5450-144b-4e30-b1a4-768c3c09a226#id> a sport:RecurringCompetition ;
+    sal:name "Elite League"@en-gb ;
+    cms:locator <urn:sports-data:CIHB10513> ;
+    core:disambiguationHint "Ice hockey competition"@en-gb ;
+    core:preferredLabel "Elite League"@en-gb ;
+    core:shortLabel "Elite League"@en-gb ;
+    core:slug "elite-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> .
+
+<urn:sports-data:CIHB10513> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB11060> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB13756> a cms:Sports-DataLocator .
+

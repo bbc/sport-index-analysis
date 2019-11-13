@@ -1,0 +1,190 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/7cad421b-3e1c-454e-a1c5-79f7e2866518#id> a provenance:Dataset ;
+    rdfs:label "Football: Scottish League Cup 2016/17 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/scottish-league-cup-2016-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-2601;8: Model CFBB177 Scottish League Cup 2016/17 stages and rounds (new format, drop region from label)" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-07-27T13:13:18+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "8"^^xsd:int .
+
+<http://www.bbc.co.uk/things/c4c334a1-37bf-4a56-9e32-66eb1d997f97#id> sport:firstStage <http://www.bbc.co.uk/things/cfdc6478-6c30-46e3-86d4-f78acff07717#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/4f54ad36-2815-4cff-938d-d333db33a52f#id> .
+
+<http://www.bbc.co.uk/things/18c611aa-7eea-4945-b3d7-85896026d852#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Scottish League Cup"@en-gb ;
+    sal:name "Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S1R5> ;
+    core:preferredLabel "Group E"@en-gb ;
+    core:shortLabel "Group E"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/270ff4bf-a56b-4747-9bfb-e041f8c73bd8#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Scottish League Cup"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/3dc21d6e-f2db-4ae6-a8e5-ccfaa39ffcdc#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Scottish League Cup"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/4f54ad36-2815-4cff-938d-d333db33a52f#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Scottish League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/dd0b7825-46a3-4b24-ace6-6bf1497a7821#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/4ff6453c-6eef-4b7e-8e36-1fa6f124e186#id>,
+        <http://www.bbc.co.uk/things/5bb8a845-1197-4124-bb14-6a130a466ac0#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/a40335eb-fbd7-469d-ba02-1fa44afc53ac#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/4ff6453c-6eef-4b7e-8e36-1fa6f124e186#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Scottish League Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S2R3> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/5b03c544-e1eb-40de-995e-86c44eda4a5d#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Scottish League Cup"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/5bb8a845-1197-4124-bb14-6a130a466ac0#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Scottish League Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S2R2> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/7ffe64e3-73ac-4647-bcfb-4bf9c6bfa90b#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Scottish League Cup"@en-gb ;
+    sal:name "Group G"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S1R7> ;
+    core:preferredLabel "Group G"@en-gb ;
+    core:shortLabel "Group G"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/a40335eb-fbd7-469d-ba02-1fa44afc53ac#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Scottish League Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S2R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/b5509489-45b9-4638-b53a-03b7f286ed7b#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of Scottish League Cup"@en-gb ;
+    sal:name "Group H"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S1R8> ;
+    core:preferredLabel "Group H"@en-gb ;
+    core:shortLabel "Group H"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/c87e06c1-0845-439b-ac51-01a249cc9a8d#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Scottish League Cup"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/cfdc6478-6c30-46e3-86d4-f78acff07717#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Scottish League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/18c611aa-7eea-4945-b3d7-85896026d852#id>,
+        <http://www.bbc.co.uk/things/270ff4bf-a56b-4747-9bfb-e041f8c73bd8#id>,
+        <http://www.bbc.co.uk/things/3dc21d6e-f2db-4ae6-a8e5-ccfaa39ffcdc#id>,
+        <http://www.bbc.co.uk/things/5b03c544-e1eb-40de-995e-86c44eda4a5d#id>,
+        <http://www.bbc.co.uk/things/7ffe64e3-73ac-4647-bcfb-4bf9c6bfa90b#id>,
+        <http://www.bbc.co.uk/things/c87e06c1-0845-439b-ac51-01a249cc9a8d#id>,
+        <http://www.bbc.co.uk/things/df7e6dff-e0b9-4014-9bf0-5220f0ab82f6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/b5509489-45b9-4638-b53a-03b7f286ed7b#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/dd0b7825-46a3-4b24-ace6-6bf1497a7821#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Scottish League Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S2R1> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-16> .
+
+<http://www.bbc.co.uk/things/df7e6dff-e0b9-4014-9bf0-5220f0ab82f6#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Scottish League Cup"@en-gb ;
+    sal:name "Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772016S1R6> ;
+    core:preferredLabel "Group F"@en-gb ;
+    core:shortLabel "Group F"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CFBB1772016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772016S2R4> a cms:Sports-DataLocator .
+

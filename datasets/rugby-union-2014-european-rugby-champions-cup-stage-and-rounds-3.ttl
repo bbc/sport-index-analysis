@@ -1,0 +1,184 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/145ae6b3-d90e-402e-85ac-926bb4311120#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: European Rugby Champions Cup 2014 Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/rugby-union/rugby-union-2014-european-rugby-champions-cup-stage-and-rounds-3.ttl" ;
+    provenance:changeReason "SPORTSDATA-5558 corrected locator for stage 1" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-01-14T11:51:34+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Jonathan.Balls@bbc.co.uk> ;
+    provenance:version "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id> sport:firstStage <http://www.bbc.co.uk/things/776d2b74-52e4-435d-9e6e-1d8a82a7fc5e#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/39855227-2bfe-4e4f-8e7a-f3714645e54c#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/e6a64ecd-40eb-42e2-9781-d7bd521a7bf3#id> .
+
+<http://www.bbc.co.uk/things/08ba9ddf-2292-420e-8183-993b53fb6ab5#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of European Rugby Champions Cup"@en-gb ;
+    sal:name "Pool 4"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S2R4> ;
+    core:preferredLabel "Pool 4"@en-gb ;
+    core:shortLabel "Pool 4"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/1736a152-a285-429d-9686-a788d9ddc7d1#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 2 of European Rugby Champions Cup"@en-gb ;
+    sal:name "Pool 5"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S2R5> ;
+    core:preferredLabel "Pool 5"@en-gb ;
+    core:shortLabel "Pool 5"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/1773204f-a953-46e0-9b45-bbf3860fea42#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of European Rugby Champions Cup"@en-gb ;
+    sal:name "Qualifier Second Leg"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S1R2> ;
+    core:preferredLabel "Qualifier Second Leg"@en-gb ;
+    core:shortLabel "Qualifier Second Leg"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/299c986e-27b1-4d2d-b14b-3b5aec87e6e6#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of European Rugby Champions Cup"@en-gb ;
+    sal:name "Qualifier First Leg"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S1R1> ;
+    core:preferredLabel "Qualifier First Leg"@en-gb ;
+    core:shortLabel "Qualifier First Leg"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/65c95d8d-63e7-45a0-a604-e2c1975fec38#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of European Rugby Champions Cup"@en-gb ;
+    sal:name "Pool 2"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S2R2> ;
+    core:preferredLabel "Pool 2"@en-gb ;
+    core:shortLabel "Pool 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/68e85ae2-6892-4ea2-90c4-e4d045619d93#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of European Rugby Champions Cup"@en-gb ;
+    sal:name "Pool 3"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S2R3> ;
+    core:preferredLabel "Pool 3"@en-gb ;
+    core:shortLabel "Pool 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/74b3e022-161d-44d7-99f0-aa4f398a2568#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of European Rugby Champions Cup"@en-gb ;
+    sal:name "Pool 1"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S2R1> ;
+    core:preferredLabel "Pool 1"@en-gb ;
+    core:shortLabel "Pool 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ce45f552-05e0-4a80-9607-5ce90dc33612#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 3 of European Rugby Champions Cup"@en-gb ;
+    sal:name "Quarter Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S3R1> ;
+    core:preferredLabel "Quarter Final"@en-gb ;
+    core:shortLabel "Quarter Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/e22b35f6-dedc-4e56-a3a0-26a08c9b5ce2#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 3 of European Rugby Champions Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S3R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/fd99163e-6edd-425f-878b-59660e824287#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 3 of European Rugby Champions Cup"@en-gb ;
+    sal:name "Semi Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S3R2> ;
+    core:preferredLabel "Semi Final"@en-gb ;
+    core:shortLabel "Semi Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<urn:sports-data:CRUB3102014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S2R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S3R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S3R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3102014S3R3> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/776d2b74-52e4-435d-9e6e-1d8a82a7fc5e#id> a sport:LeagueCompetition ;
+    sal:name "Stage 1 of European Rugby Champions Cup"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S1> ;
+    core:preferredLabel "European Rugby Champions Cup Qualifiers"@en-gb ;
+    core:shortLabel "Qualifiers"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/299c986e-27b1-4d2d-b14b-3b5aec87e6e6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/1773204f-a953-46e0-9b45-bbf3860fea42#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/39855227-2bfe-4e4f-8e7a-f3714645e54c#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/e6a64ecd-40eb-42e2-9781-d7bd521a7bf3#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 3 of European Rugby Champions Cup"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S3> ;
+    core:preferredLabel "European Rugby Champions Cup Knockout Stage"@en-gb ;
+    core:shortLabel "Knockout Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/ce45f552-05e0-4a80-9607-5ce90dc33612#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/fd99163e-6edd-425f-878b-59660e824287#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/e22b35f6-dedc-4e56-a3a0-26a08c9b5ce2#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/39855227-2bfe-4e4f-8e7a-f3714645e54c#id> ;
+    sport:stageNumber "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/39855227-2bfe-4e4f-8e7a-f3714645e54c#id> a sport:LeagueCompetition ;
+    sal:name "Stage 2 of European Rugby Champions Cup"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3102014S2> ;
+    core:preferredLabel "European Rugby Champions Cup Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/74b3e022-161d-44d7-99f0-aa4f398a2568#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/08ba9ddf-2292-420e-8183-993b53fb6ab5#id>,
+        <http://www.bbc.co.uk/things/65c95d8d-63e7-45a0-a604-e2c1975fec38#id>,
+        <http://www.bbc.co.uk/things/68e85ae2-6892-4ea2-90c4-e4d045619d93#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/1736a152-a285-429d-9686-a788d9ddc7d1#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/e6a64ecd-40eb-42e2-9781-d7bd521a7bf3#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/776d2b74-52e4-435d-9e6e-1d8a82a7fc5e#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

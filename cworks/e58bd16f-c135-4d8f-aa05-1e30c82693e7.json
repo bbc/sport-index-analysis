@@ -1,0 +1,975 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/8faf225e-efdb-4123-a66a-16ee95a876fc#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-09-20T13:44:18+00:00",
+      "dateModified": "2019-09-20T13:44:18+00:00",
+      "description": "Barcelona\u0027s Ansu Fati is granted Spanish citizenship paving they way for him to play for them at international level, though he remains eligible for Guinea-Bissau and Portugal.",
+      "shortTitle": "Fati granted Spanish citizenship",
+      "title": "Ansu Fati: Barcelona forward granted Spanish citizenship",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:c4ba2b79-c0e1-9248-b1c4-eadcb79d1192",
+        "urn:bbc:cps:asset:49773149"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e05a00e2-7c37-4af9-a7d8-0202dd1f00f8#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "African Football",
+          "preferredLabel": "African Football",
+          "shortLabel": "African Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/african"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e58bd16f-c135-4d8f-aa05-1e30c82693e7#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Guinea-Bissau",
+          "preferredLabel": "Guinea-Bissau",
+          "shortLabel": "Guinea-Bissau",
+          "slug": "guinea-bissau",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/teams/guinea-bissau",
+          "sameAs": "http://dbpedia.org/resource/Guinea-Bissau_national_football_team"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "http://www.bbc.co.uk/things/50e8aed7-1ce9-4784-962f-e61fea038990#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "Organisation"
+          ],
+          "label": "Portugal",
+          "preferredLabel": "Portugal",
+          "shortLabel": "Portugal",
+          "slug": "portugal",
+          "sameAs": [
+            "http://dbpedia.org/resource/Portugal_national_football_team",
+            "http://rdf.freebase.com/ns/m.02rqxc",
+            "http://www.wikidata.org/entity/Q267245"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49773149",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/17FC1/production/_108814289_fati_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Ansu Fati",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/ddfb2e1e-94eb-492a-9da5-a028bb67a8ff#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-07-02T18:02:04+00:00",
+      "dateModified": "2019-07-02T18:02:04+00:00",
+      "description": "Ghana reach the last 16 of the Africa Cup of Nations and knock out Guinea-Bissau with a 2-0 win in Suez.",
+      "shortTitle": "Ghana beat Guinea-Bissau to reach last 16",
+      "title": "Africa Cup of Nations 2019: Ghana beat Guinea-Bissau to reach last 16",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:63f9b2c8-468d-4670-bb7f-7aa146ca18db",
+        "urn:bbc:cps:asset:48753626"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1e9a1407-3a98-4940-b782-5abd89ebcce4#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Ghana",
+          "preferredLabel": "Ghana",
+          "shortLabel": "Ghana",
+          "slug": "ghana",
+          "sameAs": [
+            "http://dbpedia.org/resource/Ghana_national_football_team",
+            "http://rdf.freebase.com/ns/m.03_qrp",
+            "http://www.wikidata.org/entity/Q172014"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Africa Cup of Nations",
+          "preferredLabel": "Africa Cup of Nations",
+          "shortLabel": "Africa Cup of Nations",
+          "slug": "africa-cup-of-nations",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.cafonline.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e05a00e2-7c37-4af9-a7d8-0202dd1f00f8#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "African Football",
+          "preferredLabel": "African Football",
+          "shortLabel": "African Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/african"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e58bd16f-c135-4d8f-aa05-1e30c82693e7#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Guinea-Bissau",
+          "preferredLabel": "Guinea-Bissau",
+          "shortLabel": "Guinea-Bissau",
+          "slug": "guinea-bissau",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/teams/guinea-bissau",
+          "sameAs": "http://dbpedia.org/resource/Guinea-Bissau_national_football_team"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48753626",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/15F73/production/_107717998_ghana.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Ghana",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/b61a39d4-521c-4f6d-94c7-2a2c01907500#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-06-30T04:51:02+00:00",
+      "dateModified": "2019-06-30T04:51:02+00:00",
+      "description": "Benin keep their chances of qualifying for the Africa Cup of Nations last 16 alive with a goalless draw against Guinea-Bissau.",
+      "shortTitle": "Benin held by Guinea-Bissau at Afcon",
+      "title": "Africa Cup of Nations: Benin keep last-16 chances alive with draw against Guinea-Bissau",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:73b7c77a-da60-44f0-a772-a707eb846984",
+        "urn:bbc:cps:asset:48728085"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/ae29ce6f-ccb5-46e1-9213-73febdb68e59#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Thing"
+          ],
+          "label": "Benin",
+          "preferredLabel": "Benin",
+          "shortLabel": "Benin",
+          "slug": "benin",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/teams/benin",
+          "sameAs": "http://dbpedia.org/resource/Benin_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e58bd16f-c135-4d8f-aa05-1e30c82693e7#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Guinea-Bissau",
+          "preferredLabel": "Guinea-Bissau",
+          "shortLabel": "Guinea-Bissau",
+          "slug": "guinea-bissau",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/teams/guinea-bissau",
+          "sameAs": "http://dbpedia.org/resource/Guinea-Bissau_national_football_team"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48728085",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/16C8C/production/_107642339_gettyimages-1152835446.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Steve Mounie, Juary Soares",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/557f19a6-351a-4cbf-8af0-bef776235341#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-06-25T18:58:45+00:00",
+      "dateModified": "2019-06-25T18:58:45+00:00",
+      "description": "Cameroon begin the defence of their Africa Cup of Nations crown with victory over Guinea-Bissau in Group F.",
+      "shortTitle": "Cameroon too strong for Guinea-Bissau",
+      "title": "Africa Cup of Nations: Holders Cameroon too strong for Guinea-Bissau",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:66562724-ab1d-4f0d-ba57-55beff72e331",
+        "urn:bbc:cps:asset:48671493"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Africa Cup of Nations",
+          "preferredLabel": "Africa Cup of Nations",
+          "shortLabel": "Africa Cup of Nations",
+          "slug": "africa-cup-of-nations",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.cafonline.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e58bd16f-c135-4d8f-aa05-1e30c82693e7#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Guinea-Bissau",
+          "preferredLabel": "Guinea-Bissau",
+          "shortLabel": "Guinea-Bissau",
+          "slug": "guinea-bissau",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/teams/guinea-bissau",
+          "sameAs": "http://dbpedia.org/resource/Guinea-Bissau_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f14e9a9a-69e4-4737-9b50-d2030e08aa40#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Cameroon",
+          "preferredLabel": "Cameroon",
+          "shortLabel": "Cameroon",
+          "slug": "cameroon",
+          "sameAs": [
+            "http://dbpedia.org/resource/Cameroon_national_football_team",
+            "http://rdf.freebase.com/ns/m.03yl2t",
+            "http://www.wikidata.org/entity/Q175309"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48671493",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/3325/production/_107539031_gettyimages-1151876353.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Yaya Banana, Eric Maxim Choupo-Moting, Cameroon",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/7786c9c9-b23b-4230-aee5-592800343a77#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-06-24T05:48:28+00:00",
+      "dateModified": "2019-06-24T05:48:28+00:00",
+      "description": "Ex-Liverpool youth player Toni Silva questions his future in the game despite heading to a second Africa Cup of Nations with Guinea-Bissau.",
+      "shortTitle": "Guinea-Bissau\u0027s Silva has career doubts",
+      "title": "Afcon 2019: Ex-Liverpool player Toni Silva of Guinea-Bissau questions future",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:268f8298-4baf-6f40-9af4-fe2eae53c51d",
+        "urn:bbc:cps:asset:48611319"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Africa Cup of Nations",
+          "preferredLabel": "Africa Cup of Nations",
+          "shortLabel": "Africa Cup of Nations",
+          "slug": "africa-cup-of-nations",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.cafonline.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e05a00e2-7c37-4af9-a7d8-0202dd1f00f8#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "African Football",
+          "preferredLabel": "African Football",
+          "shortLabel": "African Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/african"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e58bd16f-c135-4d8f-aa05-1e30c82693e7#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Guinea-Bissau",
+          "preferredLabel": "Guinea-Bissau",
+          "shortLabel": "Guinea-Bissau",
+          "slug": "guinea-bissau",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/teams/guinea-bissau",
+          "sameAs": "http://dbpedia.org/resource/Guinea-Bissau_national_football_team"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48611319",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/01E7/production/_107378400_631878048.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Guinea-Bissau\u0027s Toni Silva",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/814e9c71-4636-4ae5-a5a0-c5e85ed52c39#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-06-03T14:11:47+00:00",
+      "dateModified": "2019-06-03T14:11:47+00:00",
+      "description": "Fulham defender Marcelo Djalo is named in Guinea-Bissau\u0027s provisional 29-man squad for this month\u0027s Africa Cup of Nations in Egypt.",
+      "shortTitle": "Fulham\u0027s Djalo named in Guinea-Bissau squad",
+      "title": "Africa Cup of Nations: Guinea-Bissau unveil provisional squad",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:39536a37-aae3-f048-adc5-2e8d2d72bd12",
+        "urn:bbc:cps:asset:48502233"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Africa Cup of Nations",
+          "preferredLabel": "Africa Cup of Nations",
+          "shortLabel": "Africa Cup of Nations",
+          "slug": "africa-cup-of-nations",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.cafonline.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e05a00e2-7c37-4af9-a7d8-0202dd1f00f8#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "African Football",
+          "preferredLabel": "African Football",
+          "shortLabel": "African Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/african"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e58bd16f-c135-4d8f-aa05-1e30c82693e7#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Guinea-Bissau",
+          "preferredLabel": "Guinea-Bissau",
+          "shortLabel": "Guinea-Bissau",
+          "slug": "guinea-bissau",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/teams/guinea-bissau",
+          "sameAs": "http://dbpedia.org/resource/Guinea-Bissau_national_football_team"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48502233",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/46E7/production/_107215181_marcelo_djalo.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Marcelo Djalo",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "Organisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "dcterms:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "mentions": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/mentions",
+      "@type": "@id"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "shortTitle": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/shortTitle"
+    },
+    "skos:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:Competition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Competition"
+    },
+    "sport:CompetitiveSportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"
+    },
+    "sport:RecurringCompetition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"
+    },
+    "sport:SportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"
+    },
+    "sport:SportsDiscipline": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentCategory": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentCategory",
+      "@type": "@id"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

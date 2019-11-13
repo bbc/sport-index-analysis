@@ -1,0 +1,80 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/96f72adc-84ee-4d71-bb80-9f02b896c660#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2015 The Qualifiers Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/rugby-league/rugby-league-2015-the-qualifiers-stages-and-rounds-2.ttl" ;
+    provenance:changeReason "SLS-650: Rugby League rename 'Super 8s' round in Super League and The Qualifiers competitions" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-07-31T08:24:21+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/df22ba02-055c-4759-8b92-dd8c74d4a042#id> sport:firstStage <http://www.bbc.co.uk/things/a5a319f1-f588-4021-aef9-61f845f514a8#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/e44d71ad-bba8-4cd0-bfc3-060e3caa845c#id> .
+
+<http://www.bbc.co.uk/things/a5a319f1-f588-4021-aef9-61f845f514a8#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of The Qualifiers 2015"@en-gb ;
+    sal:name "Stage 1 of The Qualifiers 2015"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1132015S1> ;
+    core:preferredLabel "The Qualifiers"@en-gb ;
+    core:shortLabel "The Qualifiers"@en-gb ;
+    core:slug "the-qualifiers"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/fc60f7c7-2730-4a93-92b0-d4a7ecb34489#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/a80ca25d-444d-4d22-8128-c8d9a1d772a6#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of The Qualifiers 2015"@en-gb ;
+    sal:name "Million Pound Game"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1132015S2R1> ;
+    core:preferredLabel "Million Pound Game"@en-gb ;
+    core:shortLabel "Million Pound Game"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/e44d71ad-bba8-4cd0-bfc3-060e3caa845c#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of The Qualifiers 2015"@en-gb ;
+    sal:name "Stage 2 of The Qualifiers 2015"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1132015S2> ;
+    core:preferredLabel "The Qualifiers"@en-gb ;
+    core:shortLabel "The Qualifiers"@en-gb ;
+    core:slug "the-qualifiers"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/a80ca25d-444d-4d22-8128-c8d9a1d772a6#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/fc60f7c7-2730-4a93-92b0-d4a7ecb34489#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of The Qualifiers 2015"@en-gb ;
+    sal:name "Super 8s"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1132015S1R1> ;
+    core:preferredLabel "Super 8s"@en-gb ;
+    core:shortLabel "Super 8s"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CRLB1132015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1132015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1132015S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1132015S2R1> a cms:Sports-DataLocator .
+

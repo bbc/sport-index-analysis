@@ -1,0 +1,236 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/c097cb4c-1939-4dc6-9fb2-a5cccc5585ae#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-06-24T23:28:11+00:00",
+      "dateModified": "2019-06-24T23:28:11+00:00",
+      "description": "Hace 26 años Martinica se llevó la mayor goleada en la historia de la Copa Oro ante México. Pero este año, la selección le metió dos goles a los mexicanos y ganó ante Cuba, un papel sorprendente para una selección no reconocida por la FIFA (y que pidió dinero en internet para jugar el torneo).",
+      "title": "Martinica, la revelación de la Copa Oro que no está afiliada a la FIFA",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+      "locator": [
+        "urn:asset:6bd791c5-01bf-ed47-87b2-6e3376716830",
+        "urn:bbc:cps:asset:48751891"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/abb65521-4d89-4881-aa11-d763bf3ff92d#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition"
+          ],
+          "label": "CONCACAF Champions League",
+          "preferredLabel": "CONCACAF Champions League",
+          "shortLabel": "CONCACAF Champions League",
+          "slug": "concacaf-champions-league",
+          "sameAs": "http://dbpedia.org/resource/CONCACAF_Champions_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/concacaf-champions-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/mundo/deportes-48751891",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/2F5A/production/_107522121_9e12297f-940a-4530-832c-6608fc721e31.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Kevin Fortune",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "skos:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:Competition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Competition"
+    },
+    "sport:RecurringCompetition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"
+    },
+    "sport:SportsDiscipline": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentCategory": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentCategory",
+      "@type": "@id"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

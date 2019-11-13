@@ -1,0 +1,110 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/0f21b8ec-db92-4bc2-8eae-5bffaa7acd19#id> a provenance:Dataset ;
+    rdfs:label "Northern Irish League Cup 2018 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/northern-irish-league-cup-2018-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4414: NI & Irish Cups 2018/19 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-05-29T14:12:09+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/3d507c9d-cf07-41df-98e2-c0db8fdc4fd8#id> sport:hasStage <http://www.bbc.co.uk/things/4e74fc59-6fff-4842-a5f3-23f052db6978#id> .
+
+<http://www.bbc.co.uk/things/20b39a06-0b1a-438d-9e42-29493379cc15#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Northern Irish League Cup"@en-gb ;
+    sal:name "Round 1 of Northern Irish League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4012018S1R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/2f09b018-93b9-4f1f-82bd-f91a9997e1dc#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Northern Irish League Cup"@en-gb ;
+    sal:name "Northern Irish League Cup Quarter Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4012018S1R4> ;
+    core:preferredLabel "Quarter Finals"@en-gb ;
+    core:shortLabel "Quarter Finals"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/3e9377ad-f949-4bd2-a220-fc87f1cfaade#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Northern Irish League Cup"@en-gb ;
+    sal:name "Round 3 of Northern Irish League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4012018S1R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/4e74fc59-6fff-4842-a5f3-23f052db6978#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Northern Irish League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4012018S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/20b39a06-0b1a-438d-9e42-29493379cc15#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/2f09b018-93b9-4f1f-82bd-f91a9997e1dc#id>,
+        <http://www.bbc.co.uk/things/3e9377ad-f949-4bd2-a220-fc87f1cfaade#id>,
+        <http://www.bbc.co.uk/things/9aeec9e5-2439-40fd-ace6-2a8262e104fd#id>,
+        <http://www.bbc.co.uk/things/d740b0a4-1e8c-4c24-8e87-0a89be7892d9#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/cc9ebab5-cd3b-4554-b9fe-ad2a13656654#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/9aeec9e5-2439-40fd-ace6-2a8262e104fd#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Northern Irish League Cup"@en-gb ;
+    sal:name "Round 2 of Northern Irish League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4012018S1R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/cc9ebab5-cd3b-4554-b9fe-ad2a13656654#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Northern Irish League Cup"@en-gb ;
+    sal:name "Northern Irish League Cup Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4012018S1R6> ;
+    core:preferredLabel "Finals"@en-gb ;
+    core:shortLabel "Finals"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/d740b0a4-1e8c-4c24-8e87-0a89be7892d9#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Northern Irish League Cup"@en-gb ;
+    sal:name "Northern Irish League Cup Semi Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4012018S1R5> ;
+    core:preferredLabel "Semi Finals"@en-gb ;
+    core:shortLabel "Semi Finals"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<urn:sports-data:CFBB4012018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4012018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4012018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4012018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4012018S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4012018S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4012018S1R6> a cms:Sports-DataLocator .
+

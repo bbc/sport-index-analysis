@@ -1,0 +1,62 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/a85a984e-f364-4602-bc84-def427c2103a#id> a provenance:Dataset ;
+    rdfs:label "Football: Scottish League One Play-offs 2018/19 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/scottish-league-one-2018-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4415: Model Scottish League One Play-Offs 2018/19 stages and rounds." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-05-29T11:45:43+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/50a01065-0635-4a2c-990a-d41dfdd16def#id> sport:firstStage <http://www.bbc.co.uk/things/a8c28427-901f-4d68-bbec-6989de8c631a#id> .
+
+<http://www.bbc.co.uk/things/3d2d3f95-d211-41d3-b66f-8a9374fc26ce#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Scottish League One"@en-gb ;
+    sal:name "Play-off Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4992018S1R1> ;
+    core:preferredLabel "Play-off Semi-final"@en-gb ;
+    core:shortLabel "Play-off Semi-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/83564c8f-8d06-4bce-8c79-5a09bd5f238e#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Scottish League One"@en-gb ;
+    sal:name "Play-off Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4992018S1R2> ;
+    core:preferredLabel "Play-off Final"@en-gb ;
+    core:shortLabel "Play-off Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/a8c28427-901f-4d68-bbec-6989de8c631a#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Scottish League One"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4992018S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/3d2d3f95-d211-41d3-b66f-8a9374fc26ce#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/83564c8f-8d06-4bce-8c79-5a09bd5f238e#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<urn:sports-data:CFBB4992018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4992018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4992018S1R2> a cms:Sports-DataLocator .
+

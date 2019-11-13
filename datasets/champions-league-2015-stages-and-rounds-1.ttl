@@ -1,0 +1,259 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/796c3d73-cd8c-4d42-bdf8-3568bfa2c3a6#id> a provenance:Dataset ;
+    rdfs:label "Football: Champions League 2015 Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/football/champions-league-2015-stages-and-rounds-1.ttl" ;
+    provenance:changeReason "SLS-340: Champions League 2015 Stages and Rounds, initial definition" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-06-30T09:13:31+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/8aa4c3e1-e3e4-46f0-beb8-d33fbc458cd1#id> sport:firstStage <http://www.bbc.co.uk/things/5e9bf8f2-fddb-4b8c-b0eb-39d9892b4f6c#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/33c3ea99-02cc-45e1-8f8d-de06ca57addd#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/626ecde9-c3e9-4d9f-ab62-0f048cb0b857#id> .
+
+<http://www.bbc.co.uk/things/05c14b58-295e-43cd-8c60-194ac3518308#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 2 of UEFA Champions Group Stage"@en-gb ;
+    sal:name "Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S1R6> ;
+    core:preferredLabel "Group F"@en-gb ;
+    core:shortLabel "Group F"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/3668b83d-62f1-46a9-88e3-778f357a062a#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 3 of UEFA Champions Knockout Stage"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S2R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/3c99e331-ebb6-4ad7-bc5a-1b6fd6b2e962#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 2 of UEFA Champions Group Stage"@en-gb ;
+    sal:name "Group G"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S1R7> ;
+    core:preferredLabel "Group G"@en-gb ;
+    core:shortLabel "Group G"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/53facffd-425b-4dee-b8d3-ded3ce6b7a29#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of UEFA Champions League Qualifying"@en-gb ;
+    sal:name "Qualifying - Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB2322015S1R2> ;
+    core:preferredLabel "Qualifying - Second Round"@en-gb ;
+    core:shortLabel "Qualifying - Second Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/54c464e0-dd4e-429f-84c4-d649df907b6a#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 2 of UEFA Champions Group Stage"@en-gb ;
+    sal:name "Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S1R5> ;
+    core:preferredLabel "Group E"@en-gb ;
+    core:shortLabel "Group E"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/57c1776d-c6d6-46c8-8538-1256fc840f32#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of UEFA Champions Group Stage"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/57f44ac6-8ff9-4be5-8cde-3b34fc875b9b#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of UEFA Champions League Qualifying"@en-gb ;
+    sal:name "Qualifying - Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB2322015S1R3> ;
+    core:preferredLabel "Qualifying - Third Round"@en-gb ;
+    core:shortLabel "Qualifying - Third Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6f3f1f5c-7f7b-497a-8c90-4d3effe619b1#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 2 of UEFA Champions Group Stage"@en-gb ;
+    sal:name "Group H"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S1R8> ;
+    core:preferredLabel "Group H"@en-gb ;
+    core:shortLabel "Group H"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/858b80d4-a451-4837-bf15-9fa1ea2c7517#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of UEFA Champions Group Stage"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/87c24bfc-c421-40fb-a61f-b1cdf7a7fddf#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of UEFA Champions Group Stage"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/8b7af0e5-309c-4184-b43b-8bf7ece08c85#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 3 of UEFA Champions Knockout Stage"@en-gb ;
+    sal:name "Semi-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S2R3> ;
+    core:preferredLabel "Semi-Finals"@en-gb ;
+    core:shortLabel "Semi-Finals"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/9aed42d5-93b7-4333-bd11-4374d290e8a2#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of UEFA Champions League Qualifying"@en-gb ;
+    sal:name "Qualifying - Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB2322015S1R4> ;
+    core:preferredLabel "Qualifying - Play-off"@en-gb ;
+    core:shortLabel "Qualifying - Play-off"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a63a800a-f5d8-4103-9acf-d08d7761de10#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of UEFA Champions League Qualifying"@en-gb ;
+    sal:name "Qualifying - First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB2322015S1R1> ;
+    core:preferredLabel "Qualifying - First Round"@en-gb ;
+    core:shortLabel "Qualifying - First Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/bd6653e1-d890-4301-a6ae-d294203aab24#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 3 of UEFA Champions Knockout Stage"@en-gb ;
+    sal:name "Round of 16"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S2R1> ;
+    core:preferredLabel "Champions League Round of 16"@en-gb ;
+    core:shortLabel "Round of 16"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ccff5cc7-7ca3-4f36-87e7-a5171ecd5182#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of UEFA Champions Group Stage"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ddc19d86-6ade-4adf-a525-2b78addebe67#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 3 of UEFA Champions Knockout Stage"@en-gb ;
+    sal:name "Quarter-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S2R2> ;
+    core:preferredLabel "Champions League Quarter-Finals"@en-gb ;
+    core:shortLabel "Quarter-Finals"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB232> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB2322015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB2322015S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB2322015S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB2322015S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB52015S2R4> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/5e9bf8f2-fddb-4b8c-b0eb-39d9892b4f6c#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of UEFA Champions League"@en-gb ;
+    sal:name "UEFA Champions League Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB232> ;
+    core:preferredLabel "Champions League Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/a63a800a-f5d8-4103-9acf-d08d7761de10#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/53facffd-425b-4dee-b8d3-ded3ce6b7a29#id>,
+        <http://www.bbc.co.uk/things/57f44ac6-8ff9-4be5-8cde-3b34fc875b9b#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/9aed42d5-93b7-4333-bd11-4374d290e8a2#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/33c3ea99-02cc-45e1-8f8d-de06ca57addd#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/626ecde9-c3e9-4d9f-ab62-0f048cb0b857#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 3 of UEFA Champions Knockout Stage"@en-gb ;
+    sal:name "UEFA Champions League Knockout Stage"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S2> ;
+    core:preferredLabel "Champions League Knockout Stage"@en-gb ;
+    core:shortLabel "Knockout Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/bd6653e1-d890-4301-a6ae-d294203aab24#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/8b7af0e5-309c-4184-b43b-8bf7ece08c85#id>,
+        <http://www.bbc.co.uk/things/ddc19d86-6ade-4adf-a525-2b78addebe67#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/3668b83d-62f1-46a9-88e3-778f357a062a#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/33c3ea99-02cc-45e1-8f8d-de06ca57addd#id> ;
+    sport:stageNumber 3 .
+
+<http://www.bbc.co.uk/things/33c3ea99-02cc-45e1-8f8d-de06ca57addd#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 2 of UEFA Champions League"@en-gb ;
+    sal:name "UEFA Champions League Group Stage"@en-gb ;
+    cms:locator <urn:sports-data:CFBB52015S1> ;
+    core:preferredLabel "Champions League Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/87c24bfc-c421-40fb-a61f-b1cdf7a7fddf#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/05c14b58-295e-43cd-8c60-194ac3518308#id>,
+        <http://www.bbc.co.uk/things/3c99e331-ebb6-4ad7-bc5a-1b6fd6b2e962#id>,
+        <http://www.bbc.co.uk/things/54c464e0-dd4e-429f-84c4-d649df907b6a#id>,
+        <http://www.bbc.co.uk/things/57c1776d-c6d6-46c8-8538-1256fc840f32#id>,
+        <http://www.bbc.co.uk/things/858b80d4-a451-4837-bf15-9fa1ea2c7517#id>,
+        <http://www.bbc.co.uk/things/ccff5cc7-7ca3-4f36-87e7-a5171ecd5182#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/6f3f1f5c-7f7b-497a-8c90-4d3effe619b1#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/626ecde9-c3e9-4d9f-ab62-0f048cb0b857#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/5e9bf8f2-fddb-4b8c-b0eb-39d9892b4f6c#id> ;
+    sport:stageNumber 2 .
+

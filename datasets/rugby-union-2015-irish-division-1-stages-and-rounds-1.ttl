@@ -1,0 +1,115 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/cc2c7085-3a07-4dff-bf73-47736bd2a711#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: 2015 Irish Division 1 Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/rugby-union/rugby-union-2015-irish-division-1-stages-and-rounds-1.ttl" ;
+    provenance:changeReason "SLS-627: Model CRUB150 Irish Division One 2015/16 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-08-05T08:36:24+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:eleni.mikroyannidi@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/55100529-3327-47b2-8add-cb518c6e3ff1#id> sport:firstStage <http://www.bbc.co.uk/things/1b7bef95-ede1-4bd3-87ad-bf93c6e16de1#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/0d3c4cbb-f4b3-435d-97d8-b36a3762b0cb#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/d1535b69-32ca-4ab7-aa10-8d36772df64b#id> .
+
+<http://www.bbc.co.uk/things/5ccb2bfb-33bf-42f6-af11-a9cb4702e437#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Irish Division 1"@en-gb ;
+    sal:name "Play-Off Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1502015S2R1> ;
+    core:preferredLabel "Play-Off Semi-Final"@en-gb ;
+    core:shortLabel "Play-Off Semi-Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/97e8cd92-d6cf-4915-8765-d2d0fe276afe#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Irish Division 1"@en-gb ;
+    sal:name "Section A"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1502015S1R1> ;
+    core:preferredLabel "Section A"@en-gb ;
+    core:shortLabel "Section A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/9ca0d7fa-b004-4060-be3d-9c37b5ecbe5d#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 3 of Irish Division 1"@en-gb ;
+    sal:name "Play-Off Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1502015S3R1> ;
+    core:preferredLabel "Play-Off Final"@en-gb ;
+    core:shortLabel "Play-Off Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/d31df894-6239-4d20-9851-82ba5b0bb6ad#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Irish Division 1"@en-gb ;
+    sal:name "Section B"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1502015S1R2> ;
+    core:preferredLabel "Section B"@en-gb ;
+    core:shortLabel "Section B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CRUB1502015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1502015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1502015S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1502015S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1502015S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1502015S3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1502015S3R1> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/1b7bef95-ede1-4bd3-87ad-bf93c6e16de1#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 'League' of 'Irish Division 1' "@en-gb ;
+    sal:name "League"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1502015S1> ;
+    core:preferredLabel "League"@en-gb ;
+    core:shortLabel "League"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/97e8cd92-d6cf-4915-8765-d2d0fe276afe#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/d31df894-6239-4d20-9851-82ba5b0bb6ad#id> ;
+    sport:nextstage <http://www.bbc.co.uk/things/0d3c4cbb-f4b3-435d-97d8-b36a3762b0cb#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d1535b69-32ca-4ab7-aa10-8d36772df64b#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 'Knockout' of 'Irish Division 1' "@en-gb ;
+    sal:name "Knockout"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1502015S3> ;
+    core:preferredLabel "Knockout"@en-gb ;
+    core:shortLabel "Knockout"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/9ca0d7fa-b004-4060-be3d-9c37b5ecbe5d#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/0d3c4cbb-f4b3-435d-97d8-b36a3762b0cb#id> ;
+    sport:stageNumber "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/0d3c4cbb-f4b3-435d-97d8-b36a3762b0cb#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 'Knockout' of 'Irish Division 1' "@en-gb ;
+    sal:name "Knockout"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1502015S2> ;
+    core:preferredLabel "Knockout"@en-gb ;
+    core:shortLabel "Knockout"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/5ccb2bfb-33bf-42f6-af11-a9cb4702e437#id> ;
+    sport:nextstage <http://www.bbc.co.uk/things/d1535b69-32ca-4ab7-aa10-8d36772df64b#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/1b7bef95-ede1-4bd3-87ad-bf93c6e16de1#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

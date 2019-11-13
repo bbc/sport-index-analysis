@@ -1,0 +1,605 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/3662c939-8df2-44f2-883b-10ff612fa1e2#id> a provenance:Dataset ;
+    rdfs:label "Football: European and International 2015 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-and-international-football-2015-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-1259; Added Copa America 2016 Stages and Rounds. SPORTSDATA-6367 SPORTSDATA-6368 SPORTSDATA-6369 SPORTSDATA-6370 update preferredLabel" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-05-19T10:24:03+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "16"^^xsd:int .
+
+<http://www.bbc.co.uk/things/129b2b86-b23a-4b7a-8f4d-a63d1e977774#id> sport:firstStage <http://www.bbc.co.uk/things/ecfcaced-4025-44c5-8296-a8840c0f5717#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/1a29d035-630f-4971-997d-426f0214e536#id> .
+
+<http://www.bbc.co.uk/things/354f092b-ca40-41df-b4c5-e25a446175aa#id> sport:firstStage <http://www.bbc.co.uk/things/b8dfab09-4149-4c29-8241-cb8860a31704#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/16c56c9d-2b8e-4e37-a779-78a659dc4ecd#id> .
+
+<http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id> sport:firstStage <http://www.bbc.co.uk/things/c6138bf8-63c2-47f7-a8a6-3b9fc9977cc5#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/b9dcdfcb-21a7-413d-9b44-8bd7b951b8fe#id> .
+
+<http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> sport:firstStage <http://www.bbc.co.uk/things/860ce026-ca3b-427e-83ca-3e594a829bf8#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/1c593d54-f20b-4d96-b416-97cb36439773#id> .
+
+<http://www.bbc.co.uk/things/6b7a7299-741d-42d4-afd5-94765fc1c655#id> sport:firstStage <http://www.bbc.co.uk/things/b809a1f1-55cc-481c-abd7-ecf667dcf6db#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/3fbc7b93-c406-41b2-b8c5-4b3f959958a6#id> .
+
+<http://www.bbc.co.uk/things/009b08da-56f7-48c5-bd68-8a72f0a4028b#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/013e58c9-03a4-4bfb-9308-46ea1805c87d#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Copa America"@en-gb ;
+    sal:name "Quarter-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282014S2R1> ;
+    core:preferredLabel "Quarter-Finals"@en-gb ;
+    core:shortLabel "Quarter-Finals"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/026dd4e9-835a-4e7e-a5b8-cdf082e78faf#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of CONCACAF Gold Cup"@en-gb ;
+    sal:name "Third Place Play Off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802015S2R3> ;
+    core:preferredLabel "Third Place Play Off"@en-gb ;
+    core:shortLabel "Third Place Play Off"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/0712fcf9-0115-43c2-8c35-c3303c39d7c8#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Copa America"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282014S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/091ef872-2a8c-4d4e-99e6-624516d72108#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 2 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S2R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/0de8dcb9-6e05-4c7b-9607-f1de91e50bc4#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Copa America"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282014S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/0fd77fb7-e7f3-4205-8140-14300bb683b6#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Copa America"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282014S2R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/1a09f238-f186-42b3-b80e-f3c5665168f3#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of UEFA European Under-21 Championship"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3522014S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/286e3743-6501-4a9d-bc16-6e948c12f6ff#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Copa America Centennial Cup 2016"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282015S2R1> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/2a91a798-9c9d-4a83-8403-7edf48160f22#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Third Place Play Off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S2R4> ;
+    core:preferredLabel "Third Place Play Off"@en-gb ;
+    core:shortLabel "Third Place Play Off"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/3685079e-0b95-4421-9e90-c24ec58d31b4#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Semi-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S2R3> ;
+    core:preferredLabel "Semi-Finals"@en-gb ;
+    core:shortLabel "Semi-Finals"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/3e5d5af5-f760-4aef-bd90-a29f81cd7900#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Copa America Centennial Cup 2016"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282015S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/4a3f3afb-525f-48ea-a1b3-06ba270690db#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/4ba4197d-d370-4419-b688-969613ad0da7#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/5f5737ce-51db-4b3f-b2d2-069e04144e42#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Copa America"@en-gb ;
+    sal:name "Third Place Play Off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282014S2R3> ;
+    core:preferredLabel "Third Place Play Off"@en-gb ;
+    core:shortLabel "Third Place Play Off"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/61406ad1-033a-41f2-9f7a-3d61908dca5b#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of CONCACAF Gold Cup"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802015S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/6bb6d385-b1cc-4897-91b8-d5c5e14098ce#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of CONCACAF Gold Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802015S2R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/6dae48b2-4f22-46a0-8546-0d1a64973bea#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Copa America Centennial Cup 2016"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282015S2R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/6f4535be-d0a6-42ef-9498-6d88f66b5bd6#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of CONCACAF Gold Cup"@en-gb ;
+    sal:name "Semi-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802015S2R2> ;
+    core:preferredLabel "Semi-Finals"@en-gb ;
+    core:shortLabel "Semi-Finals"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/76c7641e-8da7-4694-bc5c-115b6944ad38#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Copa America Centennial Cup 2016"@en-gb ;
+    sal:name "Third Place Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282015S2R3> ;
+    core:preferredLabel "Third Place Play-off"@en-gb ;
+    core:shortLabel "Third Place Play-off"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/7ec02fa1-260c-434f-8ef0-1c111f7ed6b8#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of CONCACAF Gold Cup"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802015S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/84ba11f3-2c5f-4c28-a809-2ab00f8f1447#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of UEFA European Under-21 Championship"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3522014S2R2> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/8ca3b2b3-05ee-4002-85ca-5354140280a7#id> a sport:Round ;
+    rdfs:label "Round F of Stage 1 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S1R6> ;
+    core:preferredLabel "Group F"@en-gb ;
+    core:shortLabel "Group F"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/8e03a2a6-a368-4d92-9dbc-7232ebb61fdb#id> a sport:Round ;
+    rdfs:label "Round D of Stage 1 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/9da9f928-5880-4b81-a355-f71e3bdcaf57#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Copa America Centennial Cup 2016"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282015S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/a1cf2fad-f2ec-4d84-b515-fd459b78ff35#id> a sport:Round ;
+    rdfs:label "Round E of Stage 1 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S1R5> ;
+    core:preferredLabel "Group E"@en-gb ;
+    core:shortLabel "Group E"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ac841f28-4146-445a-b0a7-4177cbbfc056#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of CONCACAF Gold Cup"@en-gb ;
+    sal:name "Quarter-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802015S2R1> ;
+    core:preferredLabel "Quarter-Finals"@en-gb ;
+    core:shortLabel "Quarter-Finals"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/c722256d-de2c-4851-bcbb-2b89e24897b1#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Copa America Centennial Cup 2016"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282015S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/c7e5d3c4-e11a-4e76-8d52-98e5b9b0d3a5#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Copa America"@en-gb ;
+    sal:name "Semi-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282014S2R2> ;
+    core:preferredLabel "Semi-Finals"@en-gb ;
+    core:shortLabel "Semi-Finals"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/c9efc12f-86b9-404b-bd8a-85e9af6a4d5c#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of UEFA European Under-21 Championship"@en-gb ;
+    sal:name "Semi-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3522014S2R1> ;
+    core:preferredLabel "Semi-Finals"@en-gb ;
+    core:shortLabel "Semi-Finals"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/cb9c5bdb-3ae9-49a9-a59c-c75948d14c74#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Copa America Centennial Cup 2016"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282015S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/cea90435-5b79-44e9-b1ea-d3e7c1551d34#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of UEFA European Under-21 Championship"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3522014S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/cfb55b28-ad97-4f16-94cc-9fd1fdad2d8b#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Copa America Centennial Cup 2016"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282015S2R2> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/e2c04b6a-6fe6-4eb4-9bcd-84861de337be#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Quarter-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S2R2> ;
+    core:preferredLabel "Quarter-Finals"@en-gb ;
+    core:shortLabel "Quarter-Finals"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/e59e7eca-9351-4994-9c5b-5c334d23e951#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of CONCACAF Gold Cup"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802015S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/e9b58457-968d-4f41-bcb8-699a60ca87f3#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Round of 16"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S2R1> ;
+    core:preferredLabel "Round of 16"@en-gb ;
+    core:shortLabel "Round of 16"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-16> .
+
+<http://www.bbc.co.uk/things/f0f1edcb-f95b-43bf-a0bd-9c0a7bbf2b94#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Copa America"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282014S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CFBB1282014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282014S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282014S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282014S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282014S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282014S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282014S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282014S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282014S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282015S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282015S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282015S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282015S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282015S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282015S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282015S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282015S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3522014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3522014S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3522014S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3522014S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3522014S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3522014S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802015S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802015S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802015S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802015S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802015S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802015S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082014S2R5> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/16c56c9d-2b8e-4e37-a779-78a659dc4ecd#id> a sport:Competition ;
+    rdfs:label "Stage 2 of Copa America Centennial Cup 2016"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282015S2> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/286e3743-6501-4a9d-bc16-6e948c12f6ff#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/76c7641e-8da7-4694-bc5c-115b6944ad38#id>,
+        <http://www.bbc.co.uk/things/cfb55b28-ad97-4f16-94cc-9fd1fdad2d8b#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/6dae48b2-4f22-46a0-8546-0d1a64973bea#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/b8dfab09-4149-4c29-8241-cb8860a31704#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/1a29d035-630f-4971-997d-426f0214e536#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Stage 2 of FIFA Women's World Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S2> ;
+    core:preferredLabel "Stage 2 of FIFA Women's World Cup"@en-gb ;
+    core:shortLabel "Knockout"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/ac841f28-4146-445a-b0a7-4177cbbfc056#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/026dd4e9-835a-4e7e-a5b8-cdf082e78faf#id>,
+        <http://www.bbc.co.uk/things/6f4535be-d0a6-42ef-9498-6d88f66b5bd6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/6bb6d385-b1cc-4897-91b8-d5c5e14098ce#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/ecfcaced-4025-44c5-8296-a8840c0f5717#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/1c593d54-f20b-4d96-b416-97cb36439773#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of UEFA European Under-21 Championship"@en-gb ;
+    sal:name "Stage 2 of UEFA European Under-21 Championship"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3522014S2> ;
+    core:preferredLabel "Stage 2 of UEFA European Under-21 Championship"@en-gb ;
+    core:shortLabel "Knockout"@en-gb ;
+    core:slug "knockout-stage"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/c9efc12f-86b9-404b-bd8a-85e9af6a4d5c#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/84ba11f3-2c5f-4c28-a809-2ab00f8f1447#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/860ce026-ca3b-427e-83ca-3e594a829bf8#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/3fbc7b93-c406-41b2-b8c5-4b3f959958a6#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Copa America"@en-gb ;
+    sal:name "Stage 2 of Copa America"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282014S2> ;
+    core:preferredLabel "Stage 2 of Copa America"@en-gb ;
+    core:shortLabel "Knockout"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/013e58c9-03a4-4bfb-9308-46ea1805c87d#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/5f5737ce-51db-4b3f-b2d2-069e04144e42#id>,
+        <http://www.bbc.co.uk/things/c7e5d3c4-e11a-4e76-8d52-98e5b9b0d3a5#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/0fd77fb7-e7f3-4205-8140-14300bb683b6#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/b809a1f1-55cc-481c-abd7-ecf667dcf6db#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/860ce026-ca3b-427e-83ca-3e594a829bf8#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of UEFA European Under-21 Championship"@en-gb ;
+    sal:name "Stage 1 of UEFA European Under-21 Championship"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3522014S1> ;
+    core:preferredLabel "Stage 1 of UEFA European Under-21 Championship"@en-gb ;
+    core:shortLabel "Group"@en-gb ;
+    core:slug "group-stage"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/cea90435-5b79-44e9-b1ea-d3e7c1551d34#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/1a09f238-f186-42b3-b80e-f3c5665168f3#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/1c593d54-f20b-4d96-b416-97cb36439773#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/b809a1f1-55cc-481c-abd7-ecf667dcf6db#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Copa America"@en-gb ;
+    sal:name "Stage 1 of Copa America"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282014S1> ;
+    core:preferredLabel "Stage 1 of Copa America"@en-gb ;
+    core:shortLabel "Group"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/0de8dcb9-6e05-4c7b-9607-f1de91e50bc4#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0712fcf9-0115-43c2-8c35-c3303c39d7c8#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/f0f1edcb-f95b-43bf-a0bd-9c0a7bbf2b94#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/3fbc7b93-c406-41b2-b8c5-4b3f959958a6#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/b8dfab09-4149-4c29-8241-cb8860a31704#id> a sport:Competition ;
+    rdfs:label "Stage 1 of Copa America Centennial Cup 2016"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282015S1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/c722256d-de2c-4851-bcbb-2b89e24897b1#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/9da9f928-5880-4b81-a355-f71e3bdcaf57#id>,
+        <http://www.bbc.co.uk/things/cb9c5bdb-3ae9-49a9-a59c-c75948d14c74#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/3e5d5af5-f760-4aef-bd90-a29f81cd7900#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/16c56c9d-2b8e-4e37-a779-78a659dc4ecd#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/b9dcdfcb-21a7-413d-9b44-8bd7b951b8fe#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Stage 2 of FIFA Women's World Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S2> ;
+    core:preferredLabel "Stage 2 of FIFA Women's World Cup"@en-gb ;
+    core:shortLabel "Knockout"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/e9b58457-968d-4f41-bcb8-699a60ca87f3#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/2a91a798-9c9d-4a83-8403-7edf48160f22#id>,
+        <http://www.bbc.co.uk/things/3685079e-0b95-4421-9e90-c24ec58d31b4#id>,
+        <http://www.bbc.co.uk/things/e2c04b6a-6fe6-4eb4-9bcd-84861de337be#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/091ef872-2a8c-4d4e-99e6-624516d72108#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/c6138bf8-63c2-47f7-a8a6-3b9fc9977cc5#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/c6138bf8-63c2-47f7-a8a6-3b9fc9977cc5#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of FIFA Women's World Cup"@en-gb ;
+    sal:name "Stage 1 of FIFA Women's World Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082014S1> ;
+    core:preferredLabel "Stage 1 of FIFA Women's World Cup"@en-gb ;
+    core:shortLabel "Group"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/4a3f3afb-525f-48ea-a1b3-06ba270690db#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/009b08da-56f7-48c5-bd68-8a72f0a4028b#id>,
+        <http://www.bbc.co.uk/things/4ba4197d-d370-4419-b688-969613ad0da7#id>,
+        <http://www.bbc.co.uk/things/8e03a2a6-a368-4d92-9dbc-7232ebb61fdb#id>,
+        <http://www.bbc.co.uk/things/a1cf2fad-f2ec-4d84-b515-fd459b78ff35#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/8ca3b2b3-05ee-4002-85ca-5354140280a7#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/b9dcdfcb-21a7-413d-9b44-8bd7b951b8fe#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/ecfcaced-4025-44c5-8296-a8840c0f5717#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of CONCACAF Gold Cup"@en-gb ;
+    sal:name "Stage 1 of CONCACAF Gold Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802015S1> ;
+    core:preferredLabel "Stage 1 of CONCACAF Gold Cup"@en-gb ;
+    core:shortLabel "Group"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/e59e7eca-9351-4994-9c5b-5c334d23e951#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/61406ad1-033a-41f2-9f7a-3d61908dca5b#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/7ec02fa1-260c-434f-8ef0-1c111f7ed6b8#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/1a29d035-630f-4971-997d-426f0214e536#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<urn:sports-data:CFBB4082014S2> a cms:Sports-DataLocator .
+

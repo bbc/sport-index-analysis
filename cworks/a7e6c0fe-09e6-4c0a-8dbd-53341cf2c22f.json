@@ -1,0 +1,3555 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/c09750c3-efc0-41b4-b097-fc40b088d207#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-08-31T11:20:51+00:00",
+      "dateModified": "2019-08-31T11:20:51+00:00",
+      "description": "Nacho Monreal leaves Arsenal to sign a two-year deal with La Liga side Real Sociedad while Mohamed Elneny joins Besiktas on a season-long loan.",
+      "shortTitle": "Monreal and Elneny leave Arsenal",
+      "title": "Arsenal: Nacho Monreal joins Real Sociedad as Mohamed Elneny agrees Besiktas loan",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:3bb1911b-651b-5648-9a82-8d681d7de1bc",
+        "urn:bbc:cps:asset:49534587"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2a8792cf-6e79-44c7-bd83-d842f6a6f2ec#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Highbury",
+          "preferredLabel": "Highbury",
+          "sameAs": "http://sws.geonames.org/2646976/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id",
+          "@type": [
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:RecurringCompetition",
+            "Thing"
+          ],
+          "label": "Turkish Super Lig",
+          "preferredLabel": "Turkish Super Lig",
+          "shortLabel": "Turkish Super Lig",
+          "slug": "turkish-super-lig",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/turkish-super-lig",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tff.org/Default.aspx?pageID\u003d449",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aa015fe5-c774-4374-9a06-2cee75bf3552#id",
+          "@type": [
+            "Thing",
+            "Theme",
+            "Event"
+          ],
+          "label": "Football transfers",
+          "preferredLabel": "Football transfers",
+          "sameAs": "http://www.wikidata.org/entity/Q622822"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c4285a9a-9865-2343-af3a-8653f7b70734#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Arsenal",
+          "preferredLabel": "Arsenal",
+          "shortLabel": "Arsenal",
+          "slug": "arsenal",
+          "sameAs": [
+            "http://dbpedia.org/resource/Arsenal_F.C.",
+            "http://rdf.freebase.com/ns/m.0xbm",
+            "http://www.wikidata.org/entity/Q9617"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.arsenal.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/arsenal",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c5ba74e2-39cb-424f-be8b-a719cc8bba82#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Besiktas",
+          "preferredLabel": "Besiktas",
+          "shortLabel": "Besiktas",
+          "slug": "besiktas",
+          "sameAs": [
+            "http://dbpedia.org/resource/Beşiktaş_J.K.",
+            "http://rdf.freebase.com/ns/m.04j3fr",
+            "http://www.wikidata.org/entity/Q172567"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49534587",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/8756/production/_108564643_monreal2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Nacho Monreal",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/66ef1ef9-f8dc-457e-8fe6-4ac39348a5c8#id",
+      "@type": [
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-08-23T14:56:09+00:00",
+      "dateModified": "2019-08-23T14:56:09+00:00",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-programmes/Clip",
+      "locator": "urn:pips:p07lghql",
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/8df31a76-4c22-5b40-9f0d-78b34dfb26fa#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent"
+          ],
+          "label": "Liverpool",
+          "preferredLabel": "Liverpool",
+          "shortLabel": "Liverpool",
+          "slug": "liverpool",
+          "sameAs": [
+            "http://dbpedia.org/resource/Liverpool_F.C.",
+            "http://rdf.freebase.com/ns/m.04ltf",
+            "http://www.wikidata.org/entity/Q1130849"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/liverpool",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.liverpoolfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/2c259c06-22e0-4691-af4e-5197d206365c#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-08-15T21:14:54+00:00",
+      "dateModified": "2019-08-15T21:14:54+00:00",
+      "description": "La Liga is getting under way with questions facing all the major contenders. BBC Sport analyses what could be one of the most interesting seasons in years.",
+      "shortTitle": "Do Barca need Neymar? Will there be a Real revival? La Liga\u0027s big questions",
+      "title": "Is Neymar coming back? Will there be a Real Madrid revival? La Liga\u0027s big questions",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:1e609234-c1b0-5c4c-8a70-d7b1c3e49e25",
+        "urn:bbc:cps:asset:49349366"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1c9c5c77-4d89-414a-a5df-1f9f1a28d630#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Madrid",
+          "preferredLabel": "Real Madrid",
+          "shortLabel": "Real Madrid",
+          "slug": "real-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Real_Madrid_C.F.",
+            "http://rdf.freebase.com/ns/m.06l22",
+            "http://www.wikidata.org/entity/Q8682"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5c1494b0-7730-4f45-be11-4ef04d3d4efc#id",
+          "@type": [
+            "Thing",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Valencia",
+          "preferredLabel": "Valencia",
+          "shortLabel": "Valencia",
+          "slug": "valencia",
+          "sameAs": [
+            "http://dbpedia.org/resource/Valencia_CF",
+            "http://rdf.freebase.com/ns/m.080_y",
+            "http://www.wikidata.org/entity/Q10333"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/valencia",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5f293f87-2335-4b8d-9915-2dd20a8900fd#id",
+          "@type": [
+            "Thing",
+            "Organisation",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Athletic Bilbao",
+          "preferredLabel": "Athletic Bilbao",
+          "shortLabel": "Ath Bilbao",
+          "slug": "athletic-bilbao",
+          "sameAs": [
+            "http://dbpedia.org/resource/Athletic_Bilbao",
+            "http://rdf.freebase.com/ns/m.0kwv2",
+            "http://www.wikidata.org/entity/Q8687"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/athletic-bilbao",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/7f66e5fb-f7b1-4b84-a592-80a851950fa4#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Atlético Madrid",
+          "preferredLabel": "Atlético Madrid",
+          "shortLabel": "Atl Madrid",
+          "slug": "atletico-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Atlético_Madrid",
+            "http://rdf.freebase.com/ns/m.0lg7v",
+            "http://www.wikidata.org/entity/Q8701"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/atletico-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a66cc19e-e179-45f7-9a9b-8632e2b8c450#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "dcterms:Agent",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Sevilla",
+          "preferredLabel": "Sevilla",
+          "shortLabel": "Sevilla",
+          "slug": "sevilla",
+          "sameAs": "http://dbpedia.org/resource/Sevilla_FC",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/sevilla",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e14e65cd-ea5b-4b41-ad23-922b64b55d05#id",
+          "@type": [
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "Organisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Betis",
+          "preferredLabel": "Real Betis",
+          "shortLabel": "Real Betis",
+          "slug": "real-betis",
+          "sameAs": "http://dbpedia.org/resource/Real_Betis",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-betis",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49349366",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/3873/production/_108315441_splitpic3.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Joao Felix, Antoine Griezmann and Eden Hazard",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/1fc11173-c112-48f8-80fd-138bed3f0236#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-07-09T19:13:39+00:00",
+      "dateModified": "2019-07-09T19:13:39+00:00",
+      "description": "Former Liverpool midfielder Xabi Alonso has returned to Real Sociedad as coach of the La Liga side\u0027s B team.",
+      "shortTitle": "Alonso starts Real Sociedad coaching role",
+      "title": "Xabi Alonso: Ex-Liverpool midfielder begins role as Real Sociedad B coach",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:b1d6bbdf-e894-9446-854d-4023e24025ac",
+        "urn:bbc:cps:asset:48930834"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48930834",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/178F/production/_107813060_tv055196037.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Xabi Alonso with Real Sociedad club president Jokin Aperribay and sports director Robert Olabe",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/5ebe033d-a1c1-4da1-b829-e1ac6503e119#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-04-20T21:35:43+00:00",
+      "dateModified": "2019-04-20T21:35:43+00:00",
+      "description": "Jordi Alba once again shows his potency in attack by scoring the winner against Real Sociedad as Barcelona close in on the Spanish title.",
+      "shortTitle": "Alba goal sends Barca nine points clear",
+      "title": "Barcelona 2-1 Real Sociedad: Catalans go nine points clear thanks to Alba strike",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:91591d47-6851-4d63-afe7-9e1fcb88e18b",
+        "urn:bbc:cps:asset:47999014"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/47999014",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/E829/production/_106533495_alba_reuters2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Barcelona\u0027s Jordi Alba",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/381f9736-638c-435c-a198-91c40cb9a91e#id",
+      "@type": [
+        "CreativeWork",
+        "LiveCoverage"
+      ],
+      "dateCreated": "2019-04-20T13:37:08+00:00",
+      "dateModified": "2019-04-20T13:37:08+00:00",
+      "description": "Barcelona host Real Sociedad in La Liga - follow live text commentary.",
+      "shortTitle": "Barca win to go nine points clear",
+      "title": "Barcelona v Real Sociedad in La Liga",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:434ceaff-c5db-4441-a208-c649eba0838e",
+        "urn:bbc:cps:asset:47935557"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/47935557",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/D7C1/production/_106533255_messi_reeuters.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Lionel Messi (right)",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/61468043-c491-4abc-87e9-346e9bd8ee84#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-03-03T21:51:03+00:00",
+      "dateModified": "2019-03-03T21:51:03+00:00",
+      "description": "On-loan Chelsea striker Alvaro Morata scores twice for Atletico Madrid in their La Liga victory at Real Sociedad.",
+      "title": "Real Sociedad 0-2 Atlético Madrid",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:7bd97c04-d351-419a-8b9b-429ed779494c",
+        "urn:bbc:cps:asset:47436273"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/7f66e5fb-f7b1-4b84-a592-80a851950fa4#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Atlético Madrid",
+          "preferredLabel": "Atlético Madrid",
+          "shortLabel": "Atl Madrid",
+          "slug": "atletico-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Atlético_Madrid",
+            "http://rdf.freebase.com/ns/m.0lg7v",
+            "http://www.wikidata.org/entity/Q8701"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/atletico-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/47436273",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/ED05/production/_105877606_morata-index.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Alvaro Morata",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/a6f100e1-6077-4708-b23e-a07a04a2a2ff#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-01-06T19:34:09+00:00",
+      "dateModified": "2019-01-06T19:34:09+00:00",
+      "description": "Real Madrid suffer a surprise defeat by Real Sociedad as the visitors end a four-match losing streak in La Liga.",
+      "shortTitle": "Sociedad shock Real Madrid at Bernabeu",
+      "title": "Real Madrid 0-2 Real Sociedad: Visitors earn surprise win at Bernabeu",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:4b4055c9-e1e4-40d7-836b-1b877e24a8ce",
+        "urn:bbc:cps:asset:46777243"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1c9c5c77-4d89-414a-a5df-1f9f1a28d630#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Madrid",
+          "preferredLabel": "Real Madrid",
+          "shortLabel": "Real Madrid",
+          "slug": "real-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Real_Madrid_C.F.",
+            "http://rdf.freebase.com/ns/m.06l22",
+            "http://www.wikidata.org/entity/Q8682"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/46777243",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/1406C/production/_105082028_willian_epa.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Willian Jose celebrates for Real Sociedad",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/aa1ec106-09b7-4478-ad59-5e7820a2a5ec#id",
+      "@type": [
+        "CreativeWork",
+        "LiveCoverage"
+      ],
+      "dateCreated": "2019-01-06T11:44:30+00:00",
+      "dateModified": "2019-01-06T11:44:30+00:00",
+      "description": "Barcelona travel to Getafe in La Liga after 10-man Real Madrid lose at home to Real Sociedad - follow live text commentary.",
+      "shortTitle": "Sunday\u0027s La Liga - Getafe v Barcelona",
+      "title": "La Liga live: Getafe v Barcelona",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:ee402655-3a87-f040-b541-ff1be8551e37",
+        "urn:bbc:cps:asset:46626751"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1c1c5511-e83b-46db-b1bf-eceaec937554#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "Organisation"
+          ],
+          "label": "Getafe",
+          "preferredLabel": "Getafe",
+          "shortLabel": "Getafe",
+          "slug": "getafe",
+          "sameAs": "http://dbpedia.org/resource/Getafe_CF",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/getafe",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/1c9c5c77-4d89-414a-a5df-1f9f1a28d630#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Madrid",
+          "preferredLabel": "Real Madrid",
+          "shortLabel": "Real Madrid",
+          "slug": "real-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Real_Madrid_C.F.",
+            "http://rdf.freebase.com/ns/m.06l22",
+            "http://www.wikidata.org/entity/Q8682"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/7f66e5fb-f7b1-4b84-a592-80a851950fa4#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Atlético Madrid",
+          "preferredLabel": "Atlético Madrid",
+          "shortLabel": "Atl Madrid",
+          "slug": "atletico-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Atlético_Madrid",
+            "http://rdf.freebase.com/ns/m.0lg7v",
+            "http://www.wikidata.org/entity/Q8701"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/atletico-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a66cc19e-e179-45f7-9a9b-8632e2b8c450#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "dcterms:Agent",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Sevilla",
+          "preferredLabel": "Sevilla",
+          "shortLabel": "Sevilla",
+          "slug": "sevilla",
+          "sameAs": "http://dbpedia.org/resource/Sevilla_FC",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/sevilla",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/46626751",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/EFE0/production/_105080416_messi_reuters2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Lionel Messi",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/08944bd0-2bd9-4b99-986b-abb70661ba5c#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2018-11-01T09:43:27+00:00",
+      "dateModified": "2018-11-01T09:43:27+00:00",
+      "description": "Real Sociedad midfielder Luca Sangalli is in hospital after suffering a mild stroke, the Spanish club have said.",
+      "shortTitle": "Real Sociedad\u0027s Sangalli suffers stroke",
+      "title": "Luca Sangalli: Real Sociedad midfielder suffers mild stroke",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:2aa3d7a4-9f1d-614a-85a4-868b6546d7b5",
+        "urn:bbc:cps:asset:46054843"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b1693f8b-d6b4-472f-8f59-d0cc55d95427#id",
+          "@type": [
+            "Thing",
+            "Theme"
+          ],
+          "label": "Strokes",
+          "preferredLabel": "Strokes",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Stroke",
+          "sameAs": [
+            "http://dbpedia.org/resource/Stroke",
+            "http://www.wikidata.org/entity/Q12202"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/46054843",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/9710/production/_104127683_luca.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Luca Sangalli",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/8d752e32-a0f8-412a-a9a8-ed91a35977d5#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2018-10-27T20:59:53+00:00",
+      "dateModified": "2018-10-27T20:59:53+00:00",
+      "description": "Atletico Madrid recover from a midweek thrashing to beat Real Sociedad and move top of the La Liga table.",
+      "shortTitle": "Atletico win to go top of La Liga",
+      "title": "Atletico Madrid 2-0 Real Sociedad: Hosts win to go top of La Liga",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:3f2975b2-765c-4eef-afa3-32f4ba5dda33",
+        "urn:bbc:cps:asset:45995243"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/7f66e5fb-f7b1-4b84-a592-80a851950fa4#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Atlético Madrid",
+          "preferredLabel": "Atlético Madrid",
+          "shortLabel": "Atl Madrid",
+          "slug": "atletico-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Atlético_Madrid",
+            "http://rdf.freebase.com/ns/m.0lg7v",
+            "http://www.wikidata.org/entity/Q8701"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/atletico-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/45995243",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/D3BE/production/_104060245_atletico_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Atletico Madrid",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/b55bf07f-5f53-4ec0-8897-1116938c7675#id",
+      "@type": [
+        "CreativeWork",
+        "LiveCoverage"
+      ],
+      "dateCreated": "2018-09-12T11:44:07+00:00",
+      "dateModified": "2018-09-12T11:44:07+00:00",
+      "description": "Real Sociedad host reigning champions Barcelona in Saturday\u0027s late La Liga fixture at Anoeta Stadium - follow live text commentary.",
+      "shortTitle": "Barcelona fight back to beat Real Sociedad",
+      "title": "Follow live text commentary of Real Sociedad v Barcelona in La Liga",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:4b232511-3d3b-4948-a316-70af204cdd8c",
+        "urn:bbc:cps:asset:45460999"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/45460999",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/4B54/production/_103348291_lionel_messi_gettyimages.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Barcelona\u0027s Lionel Messi",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/8b4b5a47-5980-4723-809d-4bd0aaa769d6#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2018-08-30T20:22:00+00:00",
+      "dateModified": "2018-08-30T20:22:00+00:00",
+      "description": "Everton striker Sandro Ramirez joins Spanish side Real Sociedad on loan for the rest of the season.",
+      "shortTitle": "Everton loan Sandro to Real Sociedad",
+      "title": "Sandro Ramirez: Everton striker joins Real Sociedad on season-long loan",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:efa3467a-b43d-674f-ad83-5c77ad71806f",
+        "urn:bbc:cps:asset:45363553"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/48287aac-b015-1d4e-9c4e-9b8abac03789#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Everton",
+          "preferredLabel": "Everton",
+          "shortLabel": "Everton",
+          "slug": "everton",
+          "sameAs": [
+            "http://dbpedia.org/resource/Everton_F.C.",
+            "http://rdf.freebase.com/ns/m.0mmd6",
+            "http://www.wikidata.org/entity/Q5794"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/everton",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.evertonfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a94244e7-f543-4717-b818-f53cfc68359d#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Liverpool",
+          "preferredLabel": "Liverpool",
+          "sameAs": "http://sws.geonames.org/2644210/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aa015fe5-c774-4374-9a06-2cee75bf3552#id",
+          "@type": [
+            "Thing",
+            "Theme",
+            "Event"
+          ],
+          "label": "Football transfers",
+          "preferredLabel": "Football transfers",
+          "sameAs": "http://www.wikidata.org/entity/Q622822"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c148003d-8bf6-433c-adbd-3015400d37ca#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "San Sebastian",
+          "preferredLabel": "San Sebastian",
+          "sameAs": "http://sws.geonames.org/3110044/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/45363553",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/15C4B/production/_103236198_sandro.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Sandro Ramirez",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/533b26b7-dabc-4aa0-be82-63128769a878#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2018-05-20T22:03:54+00:00",
+      "dateModified": "2018-05-20T22:03:54+00:00",
+      "description": "Andres Iniesta ends his stellar career at Barcelona with victory over Real Sociedad in his final game.",
+      "title": "Barcelona 1-0 Real Sociedad",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:1a1591e8-552f-42b3-b1ea-cd234885bdb2",
+        "urn:bbc:cps:asset:44192075"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/44192075",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/153FB/production/_101653078_andres_iniesta_getty3.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Andres Iniesta wipes away a tear as he addresses the Barcelona fans",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/0be5a12e-bdb6-434d-b4ce-2f61355098d0#id",
+      "@type": [
+        "LiveCoverage",
+        "CreativeWork"
+      ],
+      "dateCreated": "2018-05-15T12:40:37+00:00",
+      "dateModified": "2018-05-15T12:40:37+00:00",
+      "description": "Live text coverage as Andres Iniesta makes his final appearance for Barcelona, who host Real Sociedad in La Liga while Inter Milan travel to Lazio in Serie A.",
+      "shortTitle": "Sunday\u0027s European football - Iniesta\u0027s final Barcelona game",
+      "title": "Sunday\u0027s European football live - Andres Iniesta makes final Barcelona appearance",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:cf0dcd13-948f-cf45-87c9-78b7cfb4bb4b",
+        "urn:bbc:cps:asset:44104679"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3447fd88-6593-40f8-8688-143141bd5d22#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Inter Milan",
+          "preferredLabel": "Inter Milan",
+          "shortLabel": "Inter Milan",
+          "slug": "inter-milan",
+          "sameAs": [
+            "http://dbpedia.org/resource/Inter_Milan",
+            "http://rdf.freebase.com/ns/m.03x6m",
+            "http://www.wikidata.org/entity/Q631"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/inter-milan",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/756a1eb5-f8bf-486d-b65d-fc74390b7288#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Lazio",
+          "preferredLabel": "Lazio",
+          "shortLabel": "Lazio",
+          "slug": "lazio",
+          "sameAs": [
+            "http://dbpedia.org/resource/S.S._Lazio",
+            "http://rdf.freebase.com/ns/m.075q_",
+            "http://www.wikidata.org/entity/Q2609"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lazio",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "Thing"
+          ],
+          "label": "Italian Serie A",
+          "preferredLabel": "Italian Serie A",
+          "shortLabel": "Italian Serie A",
+          "slug": "italian-serie-a",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/italian-serie-a",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.legaseriea.it/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/44104679",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/F75D/production/_101652336_iniesta_afp.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Andres Iniesta",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/1430404b-91c8-4fb3-979e-1684d4fe19f3#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2018-05-12T16:41:51+00:00",
+      "dateModified": "2018-05-12T16:41:51+00:00",
+      "description": "Real Sociedad wear shirts with the face of retiring club legend Xabi Prieto as their crest as they beat Leganes.",
+      "title": "Real Sociedad 3-2 Leganes",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:1e5b8f87-abd7-4146-ac57-e21c6cdd9588",
+        "urn:bbc:cps:asset:44095990"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2de4dcd0-95df-49f8-8aa8-e6ae96446024#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Leganés",
+          "preferredLabel": "Leganés",
+          "shortLabel": "Leganés",
+          "slug": "leganes",
+          "sameAs": "http://dbpedia.org/resource/CD_Leganés",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/leganes",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/44095990",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/14FBB/production/_101274958_rs.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Real Sociedad",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/67413508-bd3c-4346-ba95-12b0ca07f453#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2018-05-11T07:46:34+00:00",
+      "dateModified": "2018-05-11T07:46:34+00:00",
+      "description": "Real Sociedad will replace the team crest on their shirts with the face of outgoing club legend Xabi Prieto for Saturday\u0027s home game against Leganes.",
+      "shortTitle": "Club legend to appear on Real Sociedad\u0027s crest",
+      "title": "Xabi Prieto: Picture of Real Sociedad legend will replace club crest for Leganes game",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:73eb35aa-9c8c-b148-99be-a75b84fe3239",
+        "urn:bbc:cps:asset:44080209"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/44080209",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/14FBB/production/_101274958_rs.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Real Sociedad",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/f92e1e9d-0b47-47db-9638-925b000090f3#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2018-02-10T22:08:56+00:00",
+      "dateModified": "2018-02-10T22:08:56+00:00",
+      "description": "Cristiano Ronaldo scores a hat-trick as Real Madrid thrash Real Sociedad to warm up for their Champions League tie with Paris St-Germain.",
+      "title": "Real Madrid 5-2 Real Sociedad",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:547a5e27-2dc9-4eab-93d8-ee4bc8040754",
+        "urn:bbc:cps:asset:43008728"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1c9c5c77-4d89-414a-a5df-1f9f1a28d630#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Madrid",
+          "preferredLabel": "Real Madrid",
+          "shortLabel": "Real Madrid",
+          "slug": "real-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Real_Madrid_C.F.",
+            "http://rdf.freebase.com/ns/m.06l22",
+            "http://www.wikidata.org/entity/Q8682"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/43008728",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/8487/production/_99972933_ronaldo.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Cristiano Ronaldo",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/b276658a-1bff-4c6d-b66c-5acae13629ef#id",
+      "@type": [
+        "CreativeWork",
+        "LiveCoverage"
+      ],
+      "dateCreated": "2018-02-09T13:35:41+00:00",
+      "dateModified": "2018-02-09T13:35:41+00:00",
+      "description": "Follow live text and debate as Real Madrid - 19 points behind Barcelona - host Real Sociedad in La Liga.",
+      "shortTitle": "Real Madrid 5-2 Real Sociedad - Ronaldo scores hat-trick",
+      "title": "La Liga: Real Madrid v Real Sociedad",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:2713f9a3-dbc4-fe4c-8b64-6b35a2f8782e",
+        "urn:bbc:cps:asset:42973026"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1c9c5c77-4d89-414a-a5df-1f9f1a28d630#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Madrid",
+          "preferredLabel": "Real Madrid",
+          "shortLabel": "Real Madrid",
+          "slug": "real-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Real_Madrid_C.F.",
+            "http://rdf.freebase.com/ns/m.06l22",
+            "http://www.wikidata.org/entity/Q8682"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/42973026",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/0F57/production/_99972930_ronaldo.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Cristiano Ronaldo",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/754e8ae1-c613-42c1-933a-2a44af3b7fde#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2018-01-14T21:50:15+00:00",
+      "dateModified": "2018-01-14T21:50:15+00:00",
+      "description": "Luis Suarez scores twice as Barcelona battle back to beat Real Sociedad and keep their unbeaten start to the league season going.",
+      "title": "Real Sociedad 2-4 Barcelona",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:44b2aac6-439e-4f60-8ff1-7d714f091664",
+        "urn:bbc:cps:asset:42684001"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Sociedad",
+          "preferredLabel": "Real Sociedad",
+          "shortLabel": "Real Sociedad",
+          "slug": "real-sociedad",
+          "sameAs": "http://dbpedia.org/resource/Real_Sociedad",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-sociedad",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/42684001",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/14A9F/production/_99593648_barca-getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Barcelona",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "Event": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Event"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "LiveCoverage": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/LiveCoverage"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "Organisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"
+    },
+    "Place": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Place"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "VideoFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/VideoFormat"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "dcterms:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "geoname:GeoTagConcept": {
+      "@id": "http://www.geonames.org/ontology#GeoTagConcept"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "shortTitle": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/shortTitle"
+    },
+    "skos:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:Competition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Competition"
+    },
+    "sport:CompetitiveSportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"
+    },
+    "sport:RecurringCompetition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"
+    },
+    "sport:SportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"
+    },
+    "sport:SportsDiscipline": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentCategory": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentCategory",
+      "@type": "@id"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

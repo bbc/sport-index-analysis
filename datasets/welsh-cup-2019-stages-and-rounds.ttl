@@ -1,0 +1,122 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/2edd09f3-d47d-4aba-a1ef-c071f2d0a1f5#id> a provenance:Dataset ;
+    rdfs:label "Football: Welsh Cup 2019/20 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/welsh-cup-2019-stages-and-rounds.ttl" ;
+    provenance:changeReason "SWD-811: Welsh Cups stages and rounds 2019/20" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-06-05T10:25:27+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/e26337df-40ff-4ddb-91b1-7a269f217da2#id> sport:hasStage <http://www.bbc.co.uk/things/125883d0-f610-4d78-be82-ff83f517a5f1#id> .
+
+<http://www.bbc.co.uk/things/125883d0-f610-4d78-be82-ff83f517a5f1#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Welsh Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782019S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/b248c0fb-4e01-415e-992b-219ad63b76df#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/39bd7407-42cf-4a4c-b3e3-5bbdd2ab5e19#id>,
+        <http://www.bbc.co.uk/things/50e04061-b23a-4c5b-8750-0f530b0ceec5#id>,
+        <http://www.bbc.co.uk/things/5e21193f-4768-4cda-b0e0-8e71e3058660#id>,
+        <http://www.bbc.co.uk/things/754d978a-c4e8-4201-bfd0-c293f1952432#id>,
+        <http://www.bbc.co.uk/things/a4dca439-850c-4540-920c-6d9dc6f3bd3b#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/937a49af-f2f5-4e72-879c-4b53664f55af#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/39bd7407-42cf-4a4c-b3e3-5bbdd2ab5e19#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782019S1R5> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/50e04061-b23a-4c5b-8750-0f530b0ceec5#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782019S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5e21193f-4768-4cda-b0e0-8e71e3058660#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782019S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/754d978a-c4e8-4201-bfd0-c293f1952432#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782019S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/937a49af-f2f5-4e72-879c-4b53664f55af#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782019S1R7> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/a4dca439-850c-4540-920c-6d9dc6f3bd3b#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782019S1R6> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/b248c0fb-4e01-415e-992b-219ad63b76df#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782019S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB4782019S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782019S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782019S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782019S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782019S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782019S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782019S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782019S1R7> a cms:Sports-DataLocator .
+

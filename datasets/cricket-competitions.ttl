@@ -1,0 +1,844 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/a37ddcba-5fd3-4a88-a98c-a70ebbf917c2#id> a provenance:Dataset ;
+    rdfs:label "Cricket: Competitions" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/cricket/cricket-competitions.ttl" ;
+    provenance:changeReason "SWD-890: Create The Hundred/Euro T20 Slam concepts" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-07-17T12:29:23+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "18"^^xsd:int .
+
+<http://www.bbc.co.uk/things/02c68c33-5e83-4b2a-9d24-fb5831f3c115#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Ashes"@en-gb ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "The Ashes"@en-gb ;
+    core:shortLabel "Ashes"@en-gb ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/0f9d28de-a9f2-402c-9e9d-4778244cf9d3#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Australian Big Bash League"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO22> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Big Bash League"@en-gb ;
+    core:shortLabel "Aus Big Bash League"@en-gb ;
+    core:slug "australian-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Vitality Blast"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO61> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Vitality Blast"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/english-twenty20>,
+        <https://www.ecb.co.uk/t20-blast> ;
+    core:shortLabel "T20 Blast"@en-gb ;
+    core:slug "english-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/1c8a9858-d597-4f1d-9d2c-a2c1715f8459#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's One-Day Tour Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT21> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's One-Day Tour Match"@en-gb ;
+    core:shortLabel "Women's One-Day Tour Match"@en-gb ;
+    core:slug "womens-tour-one-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/1ef774c3-d63c-4040-a8aa-fb7c476f868a#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's Domestic One-Day Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT18> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's One-Day Match"@en-gb ;
+    core:shortLabel "Women's One-Day Match"@en-gb ;
+    core:slug "womens-domestic-one-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/253f82a5-0550-482e-8a98-10bdd0b10193#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Varsity Matches"@en-gb ;
+    cms:disambiguationHint "Cricket Competition"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO91> ;
+    core:preferredLabel "Varsity Matches"@en-gb ;
+    core:primaryTopicOf <http://www.lords.org/mcc/> ;
+    core:shortLabel "Varsity Matches"@en-gb ;
+    core:slug "varsity"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Royal London One-Day Cup"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO57> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Royal London One-Day Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/english-one-day>,
+        <https://www.ecb.co.uk/one-day-cup> ;
+    core:shortLabel "One-Day Cup"@en-gb ;
+    core:slug "english-one-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/35d5af9f-f296-4e4f-b5fc-9630b8485283#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's International Twenty20 Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT16> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's Twenty20 International"@en-gb ;
+    core:shortLabel "Women's Twenty20 International "@en-gb ;
+    core:slug "womens-international-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/36acf200-3f63-44c8-830f-809849ab0e54#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Australian Women's Big Bash League"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO188> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's Big Bash League"@en-gb ;
+    core:shortLabel "Aus Women's BBL"@en-gb ;
+    core:slug "australian-womens-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/3b7c7e7c-0043-4020-9042-3c88048058f5#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "ICC World Cup Warm-up"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO2182> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "ICC World Cup Warm-up"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/world-cup> ;
+    core:shortLabel "World Cup Warm-up"@en-gb ;
+    core:slug "world-cup-warm-up"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/45c0c9d5-06ca-4cf2-8a29-7d1cde62321a#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Pakistan Super League"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO163> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Pakistan Super League"@en-gb ;
+    core:shortLabel "Pakistan Super League"@en-gb ;
+    core:slug "pakistan-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/4e1a0583-4cfa-4d93-9311-7c471fc942d3#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "MCC Champion County"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO60> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "MCC Champion County"@en-gb ;
+    core:shortLabel "MCC Champion County"@en-gb ;
+    core:slug "mcc-champion-county-match"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/50c110b3-9efb-415f-9747-c54aa643cf2a#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Indian Premier League"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO4> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Indian Premier League"@en-gb ;
+    core:shortLabel "IPL"@en-gb ;
+    core:slug "indian-premier-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/519ba4a0-ca81-49bf-a21c-d788a6641593#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's International Test Match Series"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT14> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's International Test Match Series"@en-gb ;
+    core:shortLabel "Women's Test Match"@en-gb ;
+    core:slug "womens-international-test-match"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/59341889-bde0-4a41-9369-a9c33b1746e9#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Under 19 World Cup"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO155> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Under 19 World Cup"@en-gb ;
+    core:shortLabel "U19 World Cup"@en-gb ;
+    core:slug "under-19-world-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/59709ea9-a9f5-4af6-adc9-e631630e5238#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "English MCC University Matches"@en-gb ;
+    cms:disambiguationHint "Cricket Competition"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO62> ;
+    core:preferredLabel "MCC University Match"@en-gb ;
+    core:primaryTopicOf <http://www.lords.org/mcc/> ;
+    core:shortLabel "MCC University Match"@en-gb ;
+    core:slug "english-mcc-university"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/70409871-e1b9-41d2-888e-fe6c675cb6f7#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "New Zealand One-Day Cup"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO72> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "New Zealand Ford Trophy"@en-gb ;
+    core:shortLabel "NZ Ford Trophy"@en-gb ;
+    core:slug "new-zealand-one-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/733c26ea-2708-4283-93f7-7887a242853d#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "ICC Champions Trophy"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO7> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "ICC Champions Trophy"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/champions-trophy> ;
+    core:shortLabel "Champions Trophy"@en-gb ;
+    core:slug "champions-trophy"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/750b4758-2577-418d-9593-6332d9c46fd0#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "England Under 19s in India 2017"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO216> ;
+    core:disambiguationHint "Cricket competition"@en-gb ;
+    core:preferredLabel "England Under 19s in India 2017"@en-gb ;
+    core:shortLabel "England Under 19s in India 2017"@en-gb ;
+    core:slug "england-under-19s-in-india-2017"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/7a230020-66f2-4b36-8e3d-6b8cbbddf913#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "ICC World Cup"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO1> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "ICC World Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/world-cup> ;
+    core:shortLabel "World Cup"@en-gb ;
+    core:slug "world-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/7dc74ce1-92f2-46e2-b8f4-e24b0b6b3ab3#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "International Test Match Series"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT1> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "International Test Match Series"@en-gb ;
+    core:shortLabel "Test Match"@en-gb ;
+    core:slug "international-test-match"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/7e6fb8b0-e644-481e-8a47-add56969e9dc#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Asia Cup"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO10> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Asia Cup"@en-gb ;
+    core:shortLabel "Asia Cup"@en-gb ;
+    core:slug "asia-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/80c2e91a-6d12-4e84-8b7e-f6492566a2fd#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's Tour Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT20> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's Tour Match"@en-gb ;
+    core:shortLabel "Women's Tour Match"@en-gb ;
+    core:slug "womens-tour-multi-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/859b6986-5a83-41c8-ac11-2c282c634c34#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Australian One-Day Cup"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO70> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Australian One-Day Cup"@en-gb ;
+    core:shortLabel "Aus One-Day Cup"@en-gb ;
+    core:slug "australian-one-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/905ed4c9-8719-4775-a1a5-e52cb80aac19#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "World Twenty20"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO2> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "ICC World Twenty20"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/world-twenty20> ;
+    core:shortLabel "World T20"@en-gb ;
+    core:slug "world-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/9278c1e4-b74e-40b4-bea8-0bc3d7850996#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's Ashes 2015"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO80> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's Ashes 2017"@en-gb ;
+    core:shortLabel "Women's Ashes 2017"@en-gb ;
+    core:slug "womens-ashes-series"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/9909b107-9a0f-4dc7-bc9f-2583d0aa32fa#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "International Twenty20 Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT3> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Twenty20 International"@en-gb ;
+    core:shortLabel "Twenty20 International "@en-gb ;
+    core:slug "international-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/9ffeb60c-b6b1-4b46-aaf5-2c7e3349dea4#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's One Day International Series"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT15> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's One Day International Series"@en-gb ;
+    core:shortLabel "Women's One Day International"@en-gb ;
+    core:slug "womens-international-one-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/a07ec582-bbe9-4f62-be5f-5b99ccefa4b9#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Caribbean Premier League"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO25> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Caribbean Premier League"@en-gb ;
+    core:shortLabel "Caribbean Premier League"@en-gb ;
+    core:slug "caribbean-premier-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/a53b8471-2ca0-4cd5-8f6f-e99dfad6f3dc#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "One-Day Tour Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT8> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "One-Day Tour Match"@en-gb ;
+    core:shortLabel "One-Day Tour Match"@en-gb ;
+    core:slug "tour-one-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/a9ee633a-3e81-434d-831a-fc3b6a4ac796#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "ICC World Cup Qualifier"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO2137> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "ICC World Cup Qualifier"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/world-cup> ;
+    core:shortLabel "World Cup Qualifier"@en-gb ;
+    core:slug "world-cup-qualifier"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/b0ae3c2b-1ef0-46b2-be01-128b8a4aaa26#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "ICC World Cup Qualifier Warm-up"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO2136> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "ICC World Cup Qualifier Warm-up"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/world-cup> ;
+    core:shortLabel "World Cup Qualifier Warm-up"@en-gb ;
+    core:slug "world-cup-qualifier-warm-up"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/b3fb456e-2e7b-498d-95d9-f880a79b68cc#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "South Africa Twenty20"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO75> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "South Africa Twenty20 "@en-gb ;
+    core:shortLabel "SA Twenty20"@en-gb ;
+    core:slug "south-africa-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/b7e09c1f-ae70-48d4-b1ed-931c9431212a#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "New Zealand Plunket Shield"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO74> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "New Zealand Plunket Shield"@en-gb ;
+    core:shortLabel "NZ Plunket Shield"@en-gb ;
+    core:slug "new-zealand-first-class-shield"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/b84368fa-d74b-425b-bb43-2f8e0a390e6d#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's Domestic Multi-Day Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT17> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's First-Class Match"@en-gb ;
+    core:shortLabel "Women's First-Class Match"@en-gb ;
+    core:slug "womens-domestic-multi-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/b9375978-1068-4c19-ba29-42b980b80e00#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "England Lions in Sri Lanka 2017"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO223> ;
+    core:disambiguationHint "Cricket competition"@en-gb ;
+    core:preferredLabel "England Lions in Sri Lanka 2017"@en-gb ;
+    core:shortLabel "England Lions in Sri Lanka 2017"@en-gb ;
+    core:slug "england-lions-in-sri-lanka-2017"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/bca5d79e-599a-450b-ab7e-b5c20bcf9201#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's World Twenty20"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO164> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "ICC Women's World Twenty20"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/womens-world-twenty20> ;
+    core:shortLabel "Women's World T20"@en-gb ;
+    core:slug "womens-world-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup-womens> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Specsavers County Championship - Division One"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO11> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "County Championship - Division One"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/county-championship-division-one>,
+        <https://www.ecb.co.uk/county-championship> ;
+    core:shortLabel "CC Division 1"@en-gb ;
+    core:slug "county-championship-division-one"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/c293c6f3-34af-4f92-8d8e-49b027256eac#id> a sport:RecurringCompetition ;
+    sal:name "Twenty20 Tour Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT9> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Twenty20 Tour Match"@en-gb ;
+    core:shortLabel "T20 Tour Match"@en-gb ;
+    core:slug "tour-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/c6f00796-c710-4cf4-8086-0004c0a33467#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "ECB North South"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO222> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "ECB North South"@en-gb ;
+    core:shortLabel "ECB North South"@en-gb ;
+    core:slug "ecb-north-south"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/cb3ebf4f-e66a-4439-aed2-c1a9960ddcb7#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Hundred"@en-gb ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "The Hundred"@en-gb ;
+    core:shortLabel "The Hundred"@en-gb ;
+    core:slug "the-hundred"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/cc0953f6-1ea2-49ad-bcc9-00987acf33f9#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's Kia Super League"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO172> ;
+    core:disambiguationHint "Cricket competition"@en-gb ;
+    core:preferredLabel "Women's Kia Super League"@en-gb ;
+    core:shortLabel "Women's Super League"@en-gb ;
+    core:slug "womens-super-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/ce883f1d-4a96-41cb-a689-e71fdba7cbc6#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's Domestic Twenty20 Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT19> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's Twenty20 Match"@en-gb ;
+    core:shortLabel "Women's Twenty20 Match"@en-gb ;
+    core:slug "womens-domestic-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/cffb1e12-4ade-4aa0-948f-98261cbb83fb#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "ICC Women's World Cup"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO24> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "ICC Women's World Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/womens-world-cup> ;
+    core:shortLabel "Women's World Cup"@en-gb ;
+    core:slug "womens-world-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup-womens> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Specsavers County Championship - Division Two"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO12> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "County Championship - Division Two"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/county-championship-division-two>,
+        <https://www.ecb.co.uk/county-championship> ;
+    core:shortLabel "CC Division 2"@en-gb ;
+    core:slug "county-championship-division-two"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/d761cbde-6b4f-4d3e-b7f7-dbe9a9922c69#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Australian Sheffield Shield"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO71> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Australian Sheffield Shield"@en-gb ;
+    core:shortLabel "Aus Sheffield Shield"@en-gb ;
+    core:slug "australian-sheffield-shield"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/e060003d-fb7c-46f1-9797-4edbfc4945a1#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Euro T20 Slam"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO2351> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Euro T20 Slam"@en-gb ;
+    core:shortLabel "Euro T20 Slam"@en-gb ;
+    core:slug "euro-t20-slam"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/e13d4d69-40fc-44d2-8a26-29d1ecfdd64f#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Domestic Twenty20 Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT6> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Twenty20 Match"@en-gb ;
+    core:shortLabel "Twenty20 Match"@en-gb ;
+    core:slug "domestic-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/e2871085-ea79-44eb-bd19-a70fc45f972e#id> a sport:RecurringCompetition ;
+    sal:name "Women's Twenty20 Tour Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT22> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Women's Twenty20 Tour Match"@en-gb ;
+    core:shortLabel "Women's T20 Tour Match"@en-gb ;
+    core:slug "womens-tour-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/e39fcab5-c296-4cf2-9f9d-05f33ee2dae6#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "One Day International Series"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT2> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "One Day International Series"@en-gb ;
+    core:shortLabel "One Day International"@en-gb ;
+    core:slug "international-one-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/e3f49cc5-3bdb-4a32-852f-f5fe46a7ff92#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Tour Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT7> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "Tour Match"@en-gb ;
+    core:shortLabel "Tour Match"@en-gb ;
+    core:slug "tour-multi-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/e8393614-7103-4f15-804e-9aa529478a79#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Domestic First Class Multi-Day Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT4> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "First-Class Match"@en-gb ;
+    core:shortLabel "First-Class Match"@en-gb ;
+    core:slug "domestic-multi-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/ed00d0e8-b510-4fab-b644-8f1dc2848d94#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "New Zealand Twenty20"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO73> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "New Zealand Super Smash"@en-gb ;
+    core:shortLabel "NZ Super Smash"@en-gb ;
+    core:slug "new-zealand-twenty20"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/f41abb56-396e-460d-a57d-b63f7917eb7f#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Domestic One-Day Match"@en-gb ;
+    cms:locator <urn:sports-data:CCKBOT5> ;
+    core:disambiguationHint "Cricket Competition"@en-gb ;
+    core:preferredLabel "One-Day Match"@en-gb ;
+    core:shortLabel "One-Day Match"@en-gb ;
+    core:slug "domestic-one-day"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.ecb.co.uk/news/domestic/english-county-championship> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ecb.co.uk/news/domestic/natwest-t20-blast/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ecb.co.uk/news/domestic/royal-london-one-day-cup/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/cricket/champions-trophy> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/county-championship-division-one> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/county-championship-division-two> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/english-twenty20> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/womens-world-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/womens-world-twenty20> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/world-twenty20> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<urn:sports-data:CCKBO1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO10> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO11> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO12> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO155> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO163> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO164> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO172> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO188> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO2136> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO2137> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO216> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO2182> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO22> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO222> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO223> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO2351> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO24> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO25> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO57> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO60> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO61> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO62> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO70> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO71> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO72> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO73> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO74> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO75> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO80> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO91> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT14> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT15> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT16> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT17> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT18> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT19> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT20> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT21> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT22> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBOT9> a cms:Sports-DataLocator .
+
+<http://www.lords.org/mcc/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/cricket/world-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+

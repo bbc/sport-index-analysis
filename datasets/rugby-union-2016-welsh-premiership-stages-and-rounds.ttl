@@ -1,0 +1,116 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/3b0d0dd9-8646-4dfd-9ccb-a3193630f0a1#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: Welsh Premiership 2016/17 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-union/rugby-union-2016-welsh-premiership-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3317;2: Model Welsh Premiership 2016/17 play-off stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-06-20T12:21:37+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "5"^^xsd:int .
+
+<http://www.bbc.co.uk/things/6c60ec5a-7850-4f5d-a7d0-d654b5f664da#id> sport:firstStage <http://www.bbc.co.uk/things/54b58fe5-a227-4819-8e0a-c85addaf6ce2#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/9813bec1-f4fd-4251-96a0-8ac1beab5cea#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/209c197d-f838-4288-ba12-c455247d88d0#id> .
+
+<http://www.bbc.co.uk/things/3a60f460-0f9d-408e-a26a-6e292c53db54#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Welsh Premiership"@en-gb ;
+    sal:name "Tier 1"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532016S2R1> ;
+    core:preferredLabel "Tier 1"@en-gb ;
+    core:shortLabel "Tier 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/4adaf6eb-7a5b-4085-8148-011537671f06#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 3 of Welsh Premiership"@en-gb ;
+    sal:name "Tier 2 Play-off Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532016S3R8> ;
+    core:preferredLabel "Tier 2 Play-off Final"@en-gb ;
+    core:shortLabel "Tier 2 Play-off Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/7052de37-70e2-475f-9835-06c35c5c2b29#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Welsh Premiership"@en-gb ;
+    sal:name "Tier 2"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532016S2R2> ;
+    core:preferredLabel "Tier 2"@en-gb ;
+    core:shortLabel "Tier 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/f4e3b348-23f9-4d2e-be5f-019695568f9f#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 3 of Welsh Premiership"@en-gb ;
+    sal:name "Play-off Semi-finals"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532016S3R5> ;
+    core:preferredLabel "Play-off Semi-finals"@en-gb ;
+    core:shortLabel "Play-off Semi-finals"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/f9cf9443-245b-45a1-8d3a-a3a151b0c440#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 3 of Welsh Premiership"@en-gb ;
+    sal:name "Tier 1 Play-off Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532016S3R6> ;
+    core:preferredLabel "Tier 1 Play-off Final"@en-gb ;
+    core:shortLabel "Tier 1 Play-off Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<urn:sports-data:CRUB1532016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1532016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1532016S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1532016S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1532016S3R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1532016S3R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1532016S3R8> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/209c197d-f838-4288-ba12-c455247d88d0#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 'Play-offs' of 'Welsh Premiership' "@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532016S3> ;
+    sport:firstRound <http://www.bbc.co.uk/things/f4e3b348-23f9-4d2e-be5f-019695568f9f#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/f9cf9443-245b-45a1-8d3a-a3a151b0c440#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/4adaf6eb-7a5b-4085-8148-011537671f06#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/9813bec1-f4fd-4251-96a0-8ac1beab5cea#id> ;
+    sport:stageNumber "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/54b58fe5-a227-4819-8e0a-c85addaf6ce2#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 'League' of 'Welsh Premiership' "@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532016S1> ;
+    sport:nextStage <http://www.bbc.co.uk/things/9813bec1-f4fd-4251-96a0-8ac1beab5cea#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/9813bec1-f4fd-4251-96a0-8ac1beab5cea#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 'Tiers' of 'Welsh Premiership' "@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532016S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/3a60f460-0f9d-408e-a26a-6e292c53db54#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/7052de37-70e2-475f-9835-06c35c5c2b29#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/209c197d-f838-4288-ba12-c455247d88d0#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/54b58fe5-a227-4819-8e0a-c85addaf6ce2#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

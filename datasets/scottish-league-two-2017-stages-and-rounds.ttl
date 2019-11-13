@@ -1,0 +1,78 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/4626cc2c-e39c-41b3-a7b2-b30e8dfe0a09#id> a provenance:Dataset ;
+    rdfs:label "Football: Scottish League Two Play-offs 2017/18 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/scottish-league-two-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3260: Model CFBB755 Scottish League Two Play-offs stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-05-25T09:51:15+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/7d58bd03-230a-edf4-9b85-20c02be98300#id> sport:firstStage <http://www.bbc.co.uk/things/fdb8688d-3341-4279-9744-2df4b444a9c9#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/63354f42-b20a-4d4d-b259-f63a74d032c1#id> .
+
+<http://www.bbc.co.uk/things/64c06d94-7ea8-45c8-ab23-796fee24aaf2#id> a sport:Round ;
+    rdfs:label "Scottish League Two play-off Final 2016/17"@en-gb ;
+    sal:name "Play-off Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB7512017S1R1> ;
+    core:preferredLabel "Play-off Final"@en-gb ;
+    core:shortLabel "Play-off Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/be22add3-fb5f-4d04-a365-26bef6429898#id> a sport:Round ;
+    rdfs:label "Scottish League Two play-off Semi-Final 2016/17"@en-gb ;
+    sal:name "Play-off Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB7552017S1R1> ;
+    core:preferredLabel "Play-off Semi-final"@en-gb ;
+    core:shortLabel "Play-off Semi-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<urn:sports-data:CFBB751> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB7512017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB755> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB7552017S1R1> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/63354f42-b20a-4d4d-b259-f63a74d032c1#id> a sport:Competition ;
+    rdfs:label "Scottish League Two play-off Final 2016/17"@en-gb ;
+    sal:name "Scottish League Two play-off Final 2016/17"@en-gb ;
+    cms:locator <urn:sports-data:CFBB751> ;
+    core:preferredLabel "Scottish League Two play-off"@en-gb ;
+    core:shortLabel "Scottish League Two play-off"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/64c06d94-7ea8-45c8-ab23-796fee24aaf2#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/fdb8688d-3341-4279-9744-2df4b444a9c9#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/fdb8688d-3341-4279-9744-2df4b444a9c9#id> a sport:Competition ;
+    rdfs:label "Scottish League Two play-off Semi-Final 2016/17"@en-gb ;
+    sal:name "Scottish League Two play-off Semi-Final 2016/17"@en-gb ;
+    cms:locator <urn:sports-data:CFBB755> ;
+    core:preferredLabel "Scottish League Two play-off"@en-gb ;
+    core:shortLabel "Scottish League Two play-off"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/be22add3-fb5f-4d04-a365-26bef6429898#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/63354f42-b20a-4d4d-b259-f63a74d032c1#id> ;
+    sport:stageNumber "1"^^xsd:int .
+

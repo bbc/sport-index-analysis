@@ -1,0 +1,76 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/751652c7-4c9e-4448-acb6-78969c9c495e#id> a provenance:Dataset ;
+    rdfs:label "Cricket: English Domestic Twenty20 Cup 2014 Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/cricket/cricket-competition-english-twenty20-2014-stages-and-rounds-7.ttl" ;
+    provenance:changeReason "Updated SportsData IDs of North and South Groups" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-01-13T13:27:36+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Jonathan.Balls@bbc.co.uk> ;
+    provenance:version "7"^^xsd:int .
+
+<http://www.bbc.co.uk/things/af5aae83-ad7d-49b8-afe7-af1fde28fbee#id> sport:firstStage <http://www.bbc.co.uk/things/7d6d57f0-56a7-42b0-b451-f5ea752832c7#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/b1358847-8d84-47ba-8c0f-67bf29796130#id> .
+
+<http://www.bbc.co.uk/things/024c4bd6-cd11-4195-a24d-f726ee9f1bd6#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Cricket Twenty20 Cup 2014 Season"@en-gb ;
+    sal:name "North Group"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO612014S1RN> ;
+    core:preferredLabel "North Group"@en-gb ;
+    core:shortLabel "North Group"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/c837b6b7-4047-42ca-a77b-7f1797a97bbd#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Cricket Twenty20 Cup 2014 Season"@en-gb ;
+    sal:name "South Group"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO612014S1RS> ;
+    core:preferredLabel "South Group"@en-gb ;
+    core:shortLabel "South Group"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CCKBO612014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO612014S1RN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO612014S1RS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO612014S2> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/7d6d57f0-56a7-42b0-b451-f5ea752832c7#id> a sport:LeagueCompetition ;
+    sal:name "Stage 1 of Cricket Twenty20 Cup 2014 Season"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO612014S1> ;
+    core:preferredLabel "Cricket Twenty20 Cup - Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/024c4bd6-cd11-4195-a24d-f726ee9f1bd6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/c837b6b7-4047-42ca-a77b-7f1797a97bbd#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/b1358847-8d84-47ba-8c0f-67bf29796130#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/b1358847-8d84-47ba-8c0f-67bf29796130#id> a sport:KnockoutCompetition ;
+    sal:name "Stage 2 of Cricket Twenty20 Cup 2014 Season"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO612014S2> ;
+    core:preferredLabel "Cricket Twenty20 Cup - Knockout Stage"@en-gb ;
+    core:shortLabel "Knockout Stage"@en-gb ;
+    sport:prevStage <http://www.bbc.co.uk/things/7d6d57f0-56a7-42b0-b451-f5ea752832c7#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

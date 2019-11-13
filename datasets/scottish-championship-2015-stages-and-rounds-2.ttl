@@ -1,0 +1,62 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/7c61d7a0-cf2d-40d0-9626-ec0bb8b1d103#id> a provenance:Dataset ;
+    rdfs:label "Football: Scottish Championship 2015 stages and rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/football/scottish-championship-2015-stages-and-rounds-2.ttl" ;
+    provenance:changeReason "SLS-331: add Scottish Championship stages and rounds; use correct http://www.bbc.co.uk/ontologies/applicationlogic-sport/" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-06-19T07:17:21+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/df5d07cc-44d0-4a12-b391-06528207a873#id> sport:firstStage <http://www.bbc.co.uk/things/4bfa40a1-0c0e-4a2c-ac0a-a9a91c33b883#id> .
+
+<http://www.bbc.co.uk/things/2254ce06-2e72-48a2-aabd-ac50bb557c8b#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Scottish Championship"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4982015S1R1> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/4bfa40a1-0c0e-4a2c-ac0a-a9a91c33b883#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Scottish Championship"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4982015S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/2254ce06-2e72-48a2-aabd-ac50bb557c8b#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/53daaff7-7c12-4f4e-b142-771f6baac393#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/53daaff7-7c12-4f4e-b142-771f6baac393#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Scottish Championship"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4982015S1R2> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<urn:sports-data:CFBB4982015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4982015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4982015S1R2> a cms:Sports-DataLocator .
+

@@ -1,0 +1,66 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/921739f1-0f9a-483a-ac18-7a721fe9beeb#id> a provenance:Dataset ;
+    rdfs:label "Ice Hockey: Elite League Challenge Cup 2015 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/ice-hockey/elite-league-challenge-cup-2015-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-1798: Updated locator prefix to be CIHB; rename challenge cup A and B; Fix typos in labels Elite League Challenge Cup Stages and Rounds." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-04-12T09:58:10+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:eleni.mikroyannidi@bbc.co.uk> ;
+    provenance:version "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/a56318fc-5783-4a4a-aab1-3e223345548b#id> sport:firstStage <http://www.bbc.co.uk/things/ca359ec6-dbdb-448b-8394-a4dd9a3695a1#id> .
+
+<http://www.bbc.co.uk/things/5a31361e-5192-44f7-b36c-83b877be86ed#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Ice Hockey Elite League Challenge Cup A 2015"@en-gb ;
+    sal:name "Elite League Challenge Cup A"@en-gb ;
+    cms:locator <urn:sports-data:CIHB137562015S1R13756> ;
+    core:preferredLabel "Elite League Challenge Cup A"@en-gb ;
+    core:shortLabel "Elite League Challenge Cup A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/9adc378d-3c0e-48df-9b09-c2f99d796f4a#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Ice Hockey Elite League Challenge Cup B 2015"@en-gb ;
+    sal:name "Elite League Challenge Cup B"@en-gb ;
+    cms:locator <urn:sports-data:CIHB137562015S1R13757> ;
+    core:preferredLabel "Elite League Challenge Cup B"@en-gb ;
+    core:shortLabel "Elite League Challenge Cup B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ca359ec6-dbdb-448b-8394-a4dd9a3695a1#id> a sport:Competition ;
+    rdfs:label "Stage 1 of Ice Hockey Elite League Challenge Cup 2015"@en-gb ;
+    sal:name "Knockout"@en-gb ;
+    cms:locator <urn:sports-data:CIHB137562015S1> ;
+    core:preferredLabel "Knockout"@en-gb ;
+    core:shortLabel "Knockout"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/5a31361e-5192-44f7-b36c-83b877be86ed#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/9adc378d-3c0e-48df-9b09-c2f99d796f4a#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<urn:sports-data:CIHB137562015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB137562015S1R13756> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB137562015S1R13757> a cms:Sports-DataLocator .
+

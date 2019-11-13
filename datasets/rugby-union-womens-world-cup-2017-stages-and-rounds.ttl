@@ -1,0 +1,190 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/444fb374-e0a0-4fae-b7ad-2b1cc7c3b3ff#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: 2017 Women's World Cup Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-union/rugby-union-womens-world-cup-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3571: Add additional play-off rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-08-02T10:40:10+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/0d77bf6e-9f69-45ca-9556-965d02d1dc8f#id> sport:firstStage <http://www.bbc.co.uk/things/9d69e149-73c6-4b8c-a9cc-773b6dd0f6a2#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/7cdf135d-ff4d-4f76-bf51-870c975c2ff4#id> .
+
+<http://www.bbc.co.uk/things/0ed358e7-2b73-472f-b91f-6ddeded2cf51#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 2 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S2R8> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/1f99d60c-eaae-4977-a4f3-4abfbf43c137#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 2 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "9th Place Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S2R5> ;
+    core:preferredLabel "9th Place Play-off"@en-gb ;
+    core:shortLabel "9th Place Play-off"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/292a931a-bc43-4041-b282-35b95d7ef60b#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 2 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S2R7> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/60704f2c-6426-428b-acf6-74c567de3fd1#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 2 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "11th Place Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S2R6> ;
+    core:preferredLabel "11th Place Play-off"@en-gb ;
+    core:shortLabel "11th Place Play-off"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/71bbcf3a-e463-4908-af1f-680c8b1fa6c9#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "7th Place Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S2R4> ;
+    core:preferredLabel "7th Place Play-off"@en-gb ;
+    core:shortLabel "7th Place Play-off"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/741be119-7e61-4b33-b910-bd919b15e261#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "Pool B"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S1R2> ;
+    core:preferredLabel "Pool B"@en-gb ;
+    core:shortLabel "Pool B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/8c735c46-909c-4e7e-901e-34e598c4d0e2#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "Pool A"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S1R1> ;
+    core:preferredLabel "Pool A"@en-gb ;
+    core:shortLabel "Pool A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/c5c470bb-480c-4b8b-bbdc-f8aa4efb4fcc#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "5th Place Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S2R3> ;
+    core:preferredLabel "5th Place Play-off"@en-gb ;
+    core:shortLabel "5th Place Play-off"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/c685f5de-8070-4b3c-888c-37e7331982ed#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "Pool C"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S1R3> ;
+    core:preferredLabel "Pool C"@en-gb ;
+    core:shortLabel "Pool C"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/c7fb15a9-8e1c-4417-b5db-567b29471eed#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "3rd Place Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S2R2> ;
+    core:preferredLabel "3rd Place Play-off"@en-gb ;
+    core:shortLabel "3rd Place Play-off"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/f07589ed-4c67-4559-b1f3-826b196b42a4#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "Ranking Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S2R1> ;
+    core:preferredLabel "Ranking Play-off"@en-gb ;
+    core:shortLabel "Ranking Play-off"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<urn:sports-data:CRUB8712017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S2R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S2R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S2R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB8712017S2R8> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/7cdf135d-ff4d-4f76-bf51-870c975c2ff4#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "Knockout Stage"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S2> ;
+    core:preferredLabel "Knockout Stage"@en-gb ;
+    core:shortLabel "Knockout"@en-gb ;
+    core:slug "knockout-stage"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/f07589ed-4c67-4559-b1f3-826b196b42a4#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/1f99d60c-eaae-4977-a4f3-4abfbf43c137#id>,
+        <http://www.bbc.co.uk/things/292a931a-bc43-4041-b282-35b95d7ef60b#id>,
+        <http://www.bbc.co.uk/things/60704f2c-6426-428b-acf6-74c567de3fd1#id>,
+        <http://www.bbc.co.uk/things/71bbcf3a-e463-4908-af1f-680c8b1fa6c9#id>,
+        <http://www.bbc.co.uk/things/c5c470bb-480c-4b8b-bbdc-f8aa4efb4fcc#id>,
+        <http://www.bbc.co.uk/things/c7fb15a9-8e1c-4417-b5db-567b29471eed#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/0ed358e7-2b73-472f-b91f-6ddeded2cf51#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/9d69e149-73c6-4b8c-a9cc-773b6dd0f6a2#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/9d69e149-73c6-4b8c-a9cc-773b6dd0f6a2#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Rugby Union Women's World Cup 2017"@en-gb ;
+    sal:name "Pool Stage"@en-gb ;
+    cms:locator <urn:sports-data:CRUB8712017S1> ;
+    core:preferredLabel "Pool Stage"@en-gb ;
+    core:shortLabel "Group"@en-gb ;
+    core:slug "group-stage"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/8c735c46-909c-4e7e-901e-34e598c4d0e2#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/741be119-7e61-4b33-b910-bd919b15e261#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/c685f5de-8070-4b3c-888c-37e7331982ed#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/7cdf135d-ff4d-4f76-bf51-870c975c2ff4#id> ;
+    sport:stageNumber "1"^^xsd:int .
+

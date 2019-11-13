@@ -1,0 +1,1595 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/2c53d5a4-6101-4eb1-ae07-86ce538f948e#id> a provenance:Dataset ;
+    rdfs:label "Horse Racing: Domestic Competitions (Meetings)" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/horse-racing/horse-racing-domestic-competitions.ttl" ;
+    provenance:changeReason "SLS-3673: Remove core:Thing from Horse Racing Meetings" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-09-01T08:54:04+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "10"^^xsd:int .
+
+<http://www.bbc.co.uk/things/05720d47-f6cb-4069-b4e2-fb38f1017d28#id> a sport:RecurringCompetition ;
+    rdfs:label "Beverley Racecourse"@en-gb ;
+    sal:name "Beverley"@en-gb ;
+    sal:videCode "BEV"@en-gb ;
+    cms:locator <urn:sports-data:CHRBBEV> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Beverley"@en-gb ;
+    core:primaryTopicOf <http://beverley-racecourse.co.uk/> ;
+    core:shortLabel "Beverley"@en-gb ;
+    core:slug "beverley"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/068cadd6-1108-4ede-9361-07cc8e73a4bd#id> a sport:RecurringCompetition ;
+    rdfs:label "Ballinrobe Racecourse"@en-gb ;
+    sal:name "Ballinrobe"@en-gb ;
+    sal:videCode "BAL"@en-gb ;
+    cms:locator <urn:sports-data:CHRBBAL> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Ballinrobe"@en-gb ;
+    core:primaryTopicOf <http://ballinroberacecourse.ie/> ;
+    core:shortLabel "Ballinrobe"@en-gb ;
+    core:slug "ballinrobe"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/0e91167c-a92c-4123-8327-5abfcf2d01f3#id> a sport:RecurringCompetition ;
+    rdfs:label "Great Yarmouth Racecourse"@en-gb ;
+    sal:name "Great Yarmouth"@en-gb ;
+    sal:videCode "YAR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBYAR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Great Yarmouth"@en-gb ;
+    core:primaryTopicOf <http://www.greatyarmouth-racecourse.co.uk/> ;
+    core:shortLabel "Yarmouth"@en-gb ;
+    core:slug "yarmouth"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/15942f25-18ef-4ba3-bd7f-6627cf2012df#id> a sport:RecurringCompetition ;
+    rdfs:label "Epsom Downs Racecourse"@en-gb ;
+    sal:name "Epsom Downs"@en-gb ;
+    sal:videCode "EPS"@en-gb ;
+    cms:locator <urn:sports-data:CHRBEPS> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Epsom Downs"@en-gb ;
+    core:primaryTopicOf <http://epsom.thejockeyclub.co.uk/> ;
+    core:shortLabel "Epsom"@en-gb ;
+    core:slug "epsom"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/1a3dde92-8bfb-4243-bd5b-e68d72aaaae0#id> a sport:RecurringCompetition ;
+    rdfs:label "Carlisle Racecourse"@en-gb ;
+    sal:name "Carlisle"@en-gb ;
+    sal:videCode "CAR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBCAR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Carlisle"@en-gb ;
+    core:primaryTopicOf <http://carlisle.thejockeyclub.co.uk/> ;
+    core:shortLabel "Carlisle"@en-gb ;
+    core:slug "carlisle"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/1ec446fd-0ac0-4180-a2b4-51ca5063a994#id> a sport:RecurringCompetition ;
+    rdfs:label "Fairyhouse Racecourse"@en-gb ;
+    sal:name "Fairyhouse"@en-gb ;
+    sal:videCode "FAI"@en-gb ;
+    cms:locator <urn:sports-data:CHRBFAI> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Fairyhouse"@en-gb ;
+    core:primaryTopicOf <http://www.fairyhouse.ie/> ;
+    core:shortLabel "Fairyhouse"@en-gb ;
+    core:slug "fairyhouse"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/294607f3-3908-4e24-a54a-1783549b06cb#id> a sport:RecurringCompetition ;
+    rdfs:label "Thurles Racecourse"@en-gb ;
+    sal:name "Thurles"@en-gb ;
+    sal:videCode "THU"@en-gb ;
+    cms:locator <urn:sports-data:CHRBTHU> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Thurles"@en-gb ;
+    core:primaryTopicOf <http://www.thurlesraces.ie/> ;
+    core:shortLabel "Thurles"@en-gb ;
+    core:slug "thurles"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/2a8371dd-5653-423f-9d81-feeaf08445f4#id> a sport:RecurringCompetition ;
+    rdfs:label "Hereford Racecourse"@en-gb ;
+    sal:name "Hereford"@en-gb ;
+    sal:videCode "HFO"@en-gb ;
+    cms:locator <urn:sports-data:CHRBHFO> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Hereford"@en-gb ;
+    core:primaryTopicOf <http://www.hereford-racecourse.co.uk/> ;
+    core:shortLabel "Hereford"@en-gb ;
+    core:slug "hereford"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/2aabe1e4-966d-4a8e-af4c-aad93ebb2ad3#id> a sport:RecurringCompetition ;
+    rdfs:label "Redcar Racecourse"@en-gb ;
+    sal:name "Redcar"@en-gb ;
+    sal:videCode "RED"@en-gb ;
+    cms:locator <urn:sports-data:CHRBRED> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Redcar"@en-gb ;
+    core:primaryTopicOf <http://www.redcarracing.co.uk/> ;
+    core:shortLabel "Redcar"@en-gb ;
+    core:slug "redcar"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/331977aa-9f04-4a93-ad53-d95840f6db3d#id> a sport:RecurringCompetition ;
+    rdfs:label "Thirsk Racecourse"@en-gb ;
+    sal:name "Thirsk"@en-gb ;
+    sal:videCode "THR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBTHR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Thirsk"@en-gb ;
+    core:primaryTopicOf <http://www.thirskracecourse.net/> ;
+    core:shortLabel "Thirsk"@en-gb ;
+    core:slug "thirsk"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/357c1b4f-1d68-49a7-ba13-0a6118e8a46b#id> a sport:RecurringCompetition ;
+    rdfs:label "Folkestone Racecourse"@en-gb ;
+    sal:name "Folkestone"@en-gb ;
+    sal:videCode "FOL"@en-gb ;
+    cms:locator <urn:sports-data:CHRBFOL> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Folkestone"@en-gb ;
+    core:primaryTopicOf <http://www.folkestone-racecourse.co.uk/> ;
+    core:shortLabel "Folkestone"@en-gb ;
+    core:slug "folkestone"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/397527b4-1803-4fdf-b08c-d89e005de714#id> a sport:RecurringCompetition ;
+    rdfs:label "Newmarket Racecourse"@en-gb ;
+    sal:name "Newmarket"@en-gb ;
+    sal:videCode "NMK"@en-gb ;
+    cms:locator <urn:sports-data:CHRBNMK> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Newmarket"@en-gb ;
+    core:primaryTopicOf <http://newmarket.thejockeyclub.co.uk/> ;
+    core:shortLabel "Newmarket"@en-gb ;
+    core:slug "newmarket"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/3f4a925f-e516-46a0-879e-875e58a0c84c#id> a sport:RecurringCompetition ;
+    rdfs:label "Navan Racecourse"@en-gb ;
+    sal:name "Navan"@en-gb ;
+    sal:videCode "NAV"@en-gb ;
+    cms:locator <urn:sports-data:CHRBNAV> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Navan"@en-gb ;
+    core:primaryTopicOf <http://www.navanracecourse.ie/> ;
+    core:shortLabel "Navan"@en-gb ;
+    core:slug "navan"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/3fea4c1d-d477-4131-9f92-170394c58905#id> a sport:RecurringCompetition ;
+    rdfs:label "Kelso Racecourse"@en-gb ;
+    sal:name "Kelso"@en-gb ;
+    sal:videCode "KEL"@en-gb ;
+    cms:locator <urn:sports-data:CHRBKEL> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Kelso"@en-gb ;
+    core:primaryTopicOf <http://www.kelso-races.co.uk/> ;
+    core:shortLabel "Kelso"@en-gb ;
+    core:slug "kelso"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/4427affc-e247-4d77-b20a-5a28095e9148#id> a sport:RecurringCompetition ;
+    rdfs:label "Ffos Las Racecourse"@en-gb ;
+    sal:name "Ffos Las"@en-gb ;
+    sal:videCode "FFL"@en-gb ;
+    cms:locator <urn:sports-data:CHRBFFL> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Ffos Las"@en-gb ;
+    core:primaryTopicOf <http://www.ffoslasracecourse.com/> ;
+    core:shortLabel "Ffos Las"@en-gb ;
+    core:slug "ffos-las"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/45e3e67a-ac20-4f52-a5d9-7aa0bdc9f1e0#id> a sport:RecurringCompetition ;
+    rdfs:label "Ascot Racecourse"@en-gb ;
+    sal:name "Ascot"@en-gb ;
+    sal:videCode "ASC"@en-gb ;
+    cms:locator <urn:sports-data:CHRBASC> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Ascot"@en-gb ;
+    core:primaryTopicOf <http://www.ascot.co.uk/> ;
+    core:shortLabel "Ascot"@en-gb ;
+    core:slug "ascot"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/46f32b26-7b8c-4e8f-9969-60f3ff41a1ce#id> a sport:RecurringCompetition ;
+    rdfs:label "Dundalk Racecourse"@en-gb ;
+    sal:name "Dundalk"@en-gb ;
+    sal:videCode "DUN"@en-gb ;
+    cms:locator <urn:sports-data:CHRBDUN> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Dundalk"@en-gb ;
+    core:primaryTopicOf <http://dundalkstadium.com/> ;
+    core:shortLabel "Dundalk"@en-gb ;
+    core:slug "dundalk"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/4a116cec-1ec1-4191-85e2-bdaf706b40db#id> a sport:RecurringCompetition ;
+    rdfs:label "Chelmsford City Racecourse"@en-gb ;
+    sal:name "Chelmsford City"@en-gb ;
+    sal:videCode "CFC"@en-gb ;
+    cms:locator <urn:sports-data:CHRBCFC> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Chelmsford City"@en-gb ;
+    core:primaryTopicOf <http://www.chelmsfordcityracecourse.com/> ;
+    core:shortLabel "Chelmsford"@en-gb ;
+    core:slug "chelmsford-city"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/4d47a2ff-dd26-4efb-b8c0-6b3167b7c5cc#id> a sport:RecurringCompetition ;
+    rdfs:label "Bangor Racecourse"@en-gb ;
+    sal:name "Bangor"@en-gb ;
+    sal:videCode "BAN"@en-gb ;
+    cms:locator <urn:sports-data:CHRBBAN> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Bangor"@en-gb ;
+    core:primaryTopicOf <http://www.bangorondeeraces.co.uk/> ;
+    core:shortLabel "Bangor"@en-gb ;
+    core:slug "bangor"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/4d5ace6b-2913-42c9-b810-6575ca441ae6#id> a sport:RecurringCompetition ;
+    rdfs:label "Tramore Racecourse"@en-gb ;
+    sal:name "Tramore"@en-gb ;
+    sal:videCode "TRM"@en-gb ;
+    cms:locator <urn:sports-data:CHRBTRM> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Tramore"@en-gb ;
+    core:primaryTopicOf <http://www.tramore-racecourse.com/> ;
+    core:shortLabel "Tramore"@en-gb ;
+    core:slug "tramore"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/58dca464-fbbb-4e04-8124-81232aea167c#id> a sport:RecurringCompetition ;
+    rdfs:label "Chester Racecourse"@en-gb ;
+    sal:name "Chester"@en-gb ;
+    sal:videCode "CHS"@en-gb ;
+    cms:locator <urn:sports-data:CHRBCHS> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Chester"@en-gb ;
+    core:primaryTopicOf <http://www.chester-races.co.uk/> ;
+    core:shortLabel "Chester"@en-gb ;
+    core:slug "chester"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/5d01328e-a35c-4d30-beb1-eb8aba7c8be8#id> a sport:RecurringCompetition ;
+    rdfs:label "Aintree Racecourse"@en-gb ;
+    sal:name "Aintree"@en-gb ;
+    sal:videCode "AIN"@en-gb ;
+    cms:locator <urn:sports-data:CHRBAIN> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Aintree"@en-gb ;
+    core:primaryTopicOf <http://aintree.thejockeyclub.co.uk/> ;
+    core:shortLabel "Aintree"@en-gb ;
+    core:slug "aintree"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/5d111046-d5ef-416f-90f0-68706c06ebe7#id> a sport:RecurringCompetition ;
+    rdfs:label "Wincanton Racecourse"@en-gb ;
+    sal:name "Wincanton"@en-gb ;
+    sal:videCode "WCN"@en-gb ;
+    cms:locator <urn:sports-data:CHRBWCN> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Wincanton"@en-gb ;
+    core:primaryTopicOf <http://wincanton.thejockeyclub.co.uk/> ;
+    core:shortLabel "Wincanton"@en-gb ;
+    core:slug "wincanton"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/5dca402c-b225-455f-817c-1d100ce8f66b#id> a sport:RecurringCompetition ;
+    rdfs:label "Newton Abbot Racecourse"@en-gb ;
+    sal:name "Newton Abbot"@en-gb ;
+    sal:videCode "NEW"@en-gb ;
+    cms:locator <urn:sports-data:CHRBNEW> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Newton Abbot"@en-gb ;
+    core:primaryTopicOf <http://www.newtonabbotracing.com/> ;
+    core:shortLabel "Newton A't"@en-gb ;
+    core:slug "newton-abbot"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/62347524-78b1-430a-b676-1afc74a6c737#id> a sport:RecurringCompetition ;
+    rdfs:label "Curragh Racecourse"@en-gb ;
+    sal:name "Curragh"@en-gb ;
+    sal:videCode "CUR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBCUR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Curragh"@en-gb ;
+    core:primaryTopicOf <http://www.curragh.ie/> ;
+    core:shortLabel "Curragh"@en-gb ;
+    core:slug "curragh"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/66a4682b-f6af-4c33-80f2-cffbeb518b59#id> a sport:RecurringCompetition ;
+    rdfs:label "Warwick Racecourse"@en-gb ;
+    sal:name "Warwick"@en-gb ;
+    sal:videCode "WAR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBWAR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Warwick"@en-gb ;
+    core:primaryTopicOf <http://warwick.thejockeyclub.co.uk/> ;
+    core:shortLabel "Warwick"@en-gb ;
+    core:slug "warwick"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/6f61cc49-cd3c-4453-b294-37e708d4fb71#id> a sport:RecurringCompetition ;
+    rdfs:label "Listowel Racecourse"@en-gb ;
+    sal:name "Listowel"@en-gb ;
+    sal:videCode "LST"@en-gb ;
+    cms:locator <urn:sports-data:CHRBLST> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Listowel"@en-gb ;
+    core:primaryTopicOf <http://listowelraces.ie/> ;
+    core:shortLabel "Listowel"@en-gb ;
+    core:slug "listowel"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/6faad492-03d2-49a4-aed1-cce5b4cb9d7e#id> a sport:RecurringCompetition ;
+    rdfs:label "Downpatrick Racecourse"@en-gb ;
+    sal:name "Downpatrick"@en-gb ;
+    sal:videCode "DPA"@en-gb ;
+    cms:locator <urn:sports-data:CHRBDPA> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Downpatrick"@en-gb ;
+    core:primaryTopicOf <http://www.downpatrickracecourse.co.uk/> ;
+    core:shortLabel "D'npatrick"@en-gb ;
+    core:slug "downpatrick"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/702e98cd-8b6c-4bb8-906b-e280e6e0302f#id> a sport:RecurringCompetition ;
+    rdfs:label "Leicester Racecourse"@en-gb ;
+    sal:name "Leicester"@en-gb ;
+    sal:videCode "LES"@en-gb ;
+    cms:locator <urn:sports-data:CHRBLES> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Leicester"@en-gb ;
+    core:primaryTopicOf <http://www.leicester-racecourse.co.uk/> ;
+    core:shortLabel "Leicester"@en-gb ;
+    core:slug "leicester"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/7873dd1f-b1dc-4b4f-b804-04a486843b9d#id> a sport:RecurringCompetition ;
+    rdfs:label "Roscommon Racecourse"@en-gb ;
+    sal:name "Roscommon"@en-gb ;
+    sal:videCode "ROS"@en-gb ;
+    cms:locator <urn:sports-data:CHRBROS> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Roscommon"@en-gb ;
+    core:primaryTopicOf <http://www.roscommonracecourse.ie/> ;
+    core:shortLabel "Roscommon"@en-gb ;
+    core:slug "roscommon"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/78b4c683-1f1b-4a77-a4c0-7c9a5dac248e#id> a sport:RecurringCompetition ;
+    rdfs:label "York Racecourse"@en-gb ;
+    sal:name "York"@en-gb ;
+    sal:videCode "YOR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBYOR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "York"@en-gb ;
+    core:primaryTopicOf <http://www.yorkracecourse.co.uk/> ;
+    core:shortLabel "York"@en-gb ;
+    core:slug "york"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/79c63806-bc74-4b7b-a190-c705325e14bf#id> a sport:RecurringCompetition ;
+    rdfs:label "Wexford Racecourse"@en-gb ;
+    sal:name "Wexford"@en-gb ;
+    sal:videCode "WEX"@en-gb ;
+    cms:locator <urn:sports-data:CHRBWEX> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Wexford"@en-gb ;
+    core:primaryTopicOf <http://www.wexfordraces.ie/> ;
+    core:shortLabel "Wexford"@en-gb ;
+    core:slug "wexford"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/7d869026-15ba-4f78-85fd-560bd3099684#id> a sport:RecurringCompetition ;
+    rdfs:label "Ripon Racecourse"@en-gb ;
+    sal:name "Ripon"@en-gb ;
+    sal:videCode "RIP"@en-gb ;
+    cms:locator <urn:sports-data:CHRBRIP> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Ripon"@en-gb ;
+    core:primaryTopicOf <http://www.ripon-races.co.uk/> ;
+    core:shortLabel "Ripon"@en-gb ;
+    core:slug "ripon"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/7de41398-ec2c-4ab2-b83f-65f4058458fd#id> a sport:RecurringCompetition ;
+    rdfs:label "Taunton Racecourse"@en-gb ;
+    sal:name "Taunton"@en-gb ;
+    sal:videCode "TAU"@en-gb ;
+    cms:locator <urn:sports-data:CHRBTAU> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Taunton"@en-gb ;
+    core:primaryTopicOf <http://www.tauntonracecourse.co.uk/> ;
+    core:shortLabel "Taunton"@en-gb ;
+    core:slug "taunton"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/7e1dbdfd-0734-4c76-8444-d00e63692ab8#id> a sport:RecurringCompetition ;
+    rdfs:label "Hamilton Park Racecourse"@en-gb ;
+    sal:name "Hamilton Park"@en-gb ;
+    sal:videCode "HAM"@en-gb ;
+    cms:locator <urn:sports-data:CHRBHAM> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Hamilton Park"@en-gb ;
+    core:primaryTopicOf <http://hamilton-park.co.uk/> ;
+    core:shortLabel "Hamilton"@en-gb ;
+    core:slug "hamilton"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/7f4c6672-cefe-429c-bb35-3e4f88429ad4#id> a sport:RecurringCompetition ;
+    rdfs:label "Worcester Racecourse"@en-gb ;
+    sal:name "Worcester"@en-gb ;
+    sal:videCode "WOR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBWOR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Worcester"@en-gb ;
+    core:primaryTopicOf <http://www.worcester-racecourse.co.uk/> ;
+    core:shortLabel "Worcester"@en-gb ;
+    core:slug "worcester"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/81b58cb1-12dc-49ce-a5fc-ca30e06f4669#id> a sport:RecurringCompetition ;
+    rdfs:label "Hexham Racecourse"@en-gb ;
+    sal:name "Hexham"@en-gb ;
+    sal:videCode "HEX"@en-gb ;
+    cms:locator <urn:sports-data:CHRBHEX> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Hexham"@en-gb ;
+    core:primaryTopicOf <http://www.hexham-racecourse.co.uk/> ;
+    core:shortLabel "Hexham"@en-gb ;
+    core:slug "hexham"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/82f3853f-f84d-4e0a-913d-4457eb2fb3d4#id> a sport:RecurringCompetition ;
+    rdfs:label "Chepstow Racecourse"@en-gb ;
+    sal:name "Chepstow"@en-gb ;
+    sal:videCode "CHP"@en-gb ;
+    cms:locator <urn:sports-data:CHRBCHP> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Chepstow"@en-gb ;
+    core:primaryTopicOf <http://www.chepstow-racecourse.co.uk/> ;
+    core:shortLabel "Chepstow"@en-gb ;
+    core:slug "chepstow"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/83cc2c92-b526-4f80-b5a1-0c1c029f0593#id> a sport:RecurringCompetition ;
+    rdfs:label "Galway Racecourse"@en-gb ;
+    sal:name "Galway"@en-gb ;
+    sal:videCode "GAL"@en-gb ;
+    cms:locator <urn:sports-data:CHRBGAL> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Galway"@en-gb ;
+    core:primaryTopicOf <http://www.galwayraces.com/> ;
+    core:shortLabel "Galway"@en-gb ;
+    core:slug "galway"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/85b454d6-a10c-4e7f-b52b-5ccbeacaff4e#id> a sport:RecurringCompetition ;
+    rdfs:label "Cheltenham Racecourse"@en-gb ;
+    sal:name "Cheltenham"@en-gb ;
+    sal:videCode "CHE"@en-gb ;
+    cms:locator <urn:sports-data:CHRBCHE> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Cheltenham"@en-gb ;
+    core:primaryTopicOf <http://www.thefestival.co.uk/> ;
+    core:shortLabel "Cheltenham"@en-gb ;
+    core:slug "cheltenham"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/8a3ae836-9613-4c2a-8747-2a9a1fcc9113#id> a sport:RecurringCompetition ;
+    rdfs:label "Brighton Racecourse"@en-gb ;
+    sal:name "Brighton"@en-gb ;
+    sal:videCode "BGH"@en-gb ;
+    cms:locator <urn:sports-data:CHRBBGH> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Brighton"@en-gb ;
+    core:primaryTopicOf <http://www.brighton-racecourse.co.uk/> ;
+    core:shortLabel "Brighton"@en-gb ;
+    core:slug "brighton"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/8d08a52c-44bc-45f0-b192-a4a9cad13129#id> a sport:RecurringCompetition ;
+    rdfs:label "Laytown Racecourse"@en-gb ;
+    sal:name "Laytown"@en-gb ;
+    sal:videCode "LAY"@en-gb ;
+    cms:locator <urn:sports-data:CHRBLAY> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Laytown"@en-gb ;
+    core:primaryTopicOf <http://www.laytownstrandraces.ie/> ;
+    core:shortLabel "Laytown"@en-gb ;
+    core:slug "laytown"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/8ef53fab-b1f3-40c2-acd4-39a12e9284c6#id> a sport:RecurringCompetition ;
+    rdfs:label "Down Royal Racecourse"@en-gb ;
+    sal:name "Down Royal"@en-gb ;
+    sal:videCode "DRO"@en-gb ;
+    cms:locator <urn:sports-data:CHRBDRO> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Down Royal"@en-gb ;
+    core:primaryTopicOf <http://www.downroyal.com/> ;
+    core:shortLabel "Down Royal"@en-gb ;
+    core:slug "down-royal"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/90b56fc6-91f9-4876-b81a-690d2658a6aa#id> a sport:RecurringCompetition ;
+    rdfs:label "Ludlow Racecourse"@en-gb ;
+    sal:name "Ludlow"@en-gb ;
+    sal:videCode "LUD"@en-gb ;
+    cms:locator <urn:sports-data:CHRBLUD> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Ludlow"@en-gb ;
+    core:primaryTopicOf <http://www.ludlowracecourse.co.uk/> ;
+    core:shortLabel "Ludlow"@en-gb ;
+    core:slug "ludlow"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/90d5b300-a275-4097-a780-3c951d2174c4#id> a sport:RecurringCompetition ;
+    rdfs:label "Plumpton Racecourse"@en-gb ;
+    sal:name "Plumpton"@en-gb ;
+    sal:videCode "PLU"@en-gb ;
+    cms:locator <urn:sports-data:CHRBPLU> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Plumpton"@en-gb ;
+    core:primaryTopicOf <http://plumptonracecourse.co.uk/> ;
+    core:shortLabel "Plumpton"@en-gb ;
+    core:slug "plumpton"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/91c21f41-a40a-4fd9-91a3-0579953a7590#id> a sport:RecurringCompetition ;
+    rdfs:label "Fontwell Park Racecourse"@en-gb ;
+    sal:name "Fontwell Park"@en-gb ;
+    sal:videCode "FON"@en-gb ;
+    cms:locator <urn:sports-data:CHRBFON> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Fontwell Park"@en-gb ;
+    core:primaryTopicOf <http://www.fontwellpark.co.uk/> ;
+    core:shortLabel "Fontwell"@en-gb ;
+    core:slug "fontwell"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/96874568-8c58-4c07-aaf8-1de2c685edd6#id> a sport:RecurringCompetition ;
+    rdfs:label "Sedgefield Racecourse"@en-gb ;
+    sal:name "Sedgefield"@en-gb ;
+    sal:videCode "SDG"@en-gb ;
+    cms:locator <urn:sports-data:CHRBSDG> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Sedgefield"@en-gb ;
+    core:primaryTopicOf <http://www.sedgefield-racecourse.co.uk/> ;
+    core:shortLabel "Sedgefield"@en-gb ;
+    core:slug "sedgefield"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/97065704-ac48-44e8-ba7d-48997fa4e076#id> a sport:RecurringCompetition ;
+    rdfs:label "Clonmel Racecourse"@en-gb ;
+    sal:name "Clonmel"@en-gb ;
+    sal:videCode "CLO"@en-gb ;
+    cms:locator <urn:sports-data:CHRBCLO> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Clonmel"@en-gb ;
+    core:primaryTopicOf <http://www.clonmelraces.ie/> ;
+    core:shortLabel "Clonmel"@en-gb ;
+    core:slug "clonmel"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/9cd42932-e3fd-4730-8036-a0859ff8760b#id> a sport:RecurringCompetition ;
+    rdfs:label "Ayr Racecourse"@en-gb ;
+    sal:name "Ayr"@en-gb ;
+    sal:videCode "AYR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBAYR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Ayr"@en-gb ;
+    core:primaryTopicOf <http://www.ayr-racecourse.co.uk/> ;
+    core:shortLabel "Ayr"@en-gb ;
+    core:slug "ayr"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/9d588976-a229-46e2-9a95-35d5e1fb3f84#id> a sport:RecurringCompetition ;
+    rdfs:label "Stratford Racecourse"@en-gb ;
+    sal:name "Stratford"@en-gb ;
+    sal:videCode "STR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBSTR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Stratford"@en-gb ;
+    core:primaryTopicOf <http://www.stratfordracecourse.net/> ;
+    core:shortLabel "Stratford"@en-gb ;
+    core:slug "stratford"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/9f20f818-59a6-46ea-b1cc-685c11d248ed#id> a sport:RecurringCompetition ;
+    rdfs:label "Killarney Racecourse"@en-gb ;
+    sal:name "Killarney"@en-gb ;
+    sal:videCode "KIL"@en-gb ;
+    cms:locator <urn:sports-data:CHRBKIL> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Killarney"@en-gb ;
+    core:primaryTopicOf <http://killarneyraces.ie/> ;
+    core:shortLabel "Killarney"@en-gb ;
+    core:slug "killarney"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/9f5a4996-c067-4f5d-8cff-b2c8b2c5936f#id> a sport:RecurringCompetition ;
+    rdfs:label "Salisbury Racecourse"@en-gb ;
+    sal:name "Salisbury"@en-gb ;
+    sal:videCode "SAL"@en-gb ;
+    cms:locator <urn:sports-data:CHRBSAL> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Salisbury"@en-gb ;
+    core:primaryTopicOf <http://www.salisburyracecourse.co.uk/> ;
+    core:shortLabel "Salisbury"@en-gb ;
+    core:slug "salisbury"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/a0b72fef-66de-4fe1-82e5-0c3e53e7e6f1#id> a sport:RecurringCompetition ;
+    rdfs:label "Wetherby Racecourse"@en-gb ;
+    sal:name "Wetherby"@en-gb ;
+    sal:videCode "WTH"@en-gb ;
+    cms:locator <urn:sports-data:CHRBWTH> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Wetherby"@en-gb ;
+    core:primaryTopicOf <http://www.wetherbyracing.co.uk/> ;
+    core:shortLabel "Wetherby"@en-gb ;
+    core:slug "wetherby"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/ab659612-e894-4222-9df5-34604b1d72ef#id> a sport:RecurringCompetition ;
+    rdfs:label "Kilbeggan Racecourse"@en-gb ;
+    sal:name "Kilbeggan"@en-gb ;
+    sal:videCode "KLB"@en-gb ;
+    cms:locator <urn:sports-data:CHRBKLB> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Kilbeggan"@en-gb ;
+    core:primaryTopicOf <http://www.kilbegganraces.com/> ;
+    core:shortLabel "Kilbeggan"@en-gb ;
+    core:slug "kilbeggan"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/ae402d4d-2cbc-47c4-aa38-35c9ce5ea456#id> a sport:RecurringCompetition ;
+    rdfs:label "Towcester Racecourse"@en-gb ;
+    sal:name "Towcester"@en-gb ;
+    sal:videCode "TOW"@en-gb ;
+    cms:locator <urn:sports-data:CHRBTOW> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Towcester"@en-gb ;
+    core:primaryTopicOf <http://www.towcester-racecourse.co.uk/> ;
+    core:shortLabel "Towcester"@en-gb ;
+    core:slug "towcester"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/ae477969-4cf3-4ae9-b555-968b78fea1c8#id> a sport:RecurringCompetition ;
+    rdfs:label "Leopardstown Racecourse"@en-gb ;
+    sal:name "Leopardstown"@en-gb ;
+    sal:videCode "LEO"@en-gb ;
+    cms:locator <urn:sports-data:CHRBLEO> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Leopardstown"@en-gb ;
+    core:primaryTopicOf <http://www.leopardstown.com/> ;
+    core:shortLabel "Leopards'n"@en-gb ;
+    core:slug "leopardstown"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/af5e5c93-e887-4759-b02c-4c735d83fd8e#id> a sport:RecurringCompetition ;
+    rdfs:label "Exeter Racecourse"@en-gb ;
+    sal:name "Exeter"@en-gb ;
+    sal:videCode "EXE"@en-gb ;
+    cms:locator <urn:sports-data:CHRBEXE> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Exeter"@en-gb ;
+    core:primaryTopicOf <http://exeter.thejockeyclub.co.uk/> ;
+    core:shortLabel "Exeter"@en-gb ;
+    core:slug "exeter"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/b3e35e4b-d3f7-40c7-afe5-26871c2ba266#id> a sport:RecurringCompetition ;
+    rdfs:label "Pontefract Racecourse"@en-gb ;
+    sal:name "Pontefract"@en-gb ;
+    sal:videCode "PFR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBPFR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Pontefract"@en-gb ;
+    core:primaryTopicOf <http://www.pontefract-races.co.uk/> ;
+    core:shortLabel "Pontefract"@en-gb ;
+    core:slug "pontefract"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/b4b50f64-32ee-433b-9b24-52d924caa73c#id> a sport:RecurringCompetition ;
+    rdfs:label "Uttoxeter Racecourse"@en-gb ;
+    sal:name "Uttoxeter"@en-gb ;
+    sal:videCode "UTT"@en-gb ;
+    cms:locator <urn:sports-data:CHRBUTT> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Uttoxeter"@en-gb ;
+    core:primaryTopicOf <http://www.uttoxeter-racecourse.co.uk/> ;
+    core:shortLabel "Uttoxeter"@en-gb ;
+    core:slug "uttoxeter"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/b5445250-f308-467d-936e-fdc9e6bbccb5#id> a sport:RecurringCompetition ;
+    rdfs:label "Haydock Park Racecourse"@en-gb ;
+    sal:name "Haydock Park"@en-gb ;
+    sal:videCode "HDO"@en-gb ;
+    cms:locator <urn:sports-data:CHRBHDO> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Haydock Park"@en-gb ;
+    core:primaryTopicOf <http://haydock.thejockeyclub.co.uk/> ;
+    core:shortLabel "Haydock"@en-gb ;
+    core:slug "haydock"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/b769f4cf-af9b-4ec6-85f1-605ae4480e15#id> a sport:RecurringCompetition ;
+    rdfs:label "Sandown Racecourse"@en-gb ;
+    sal:name "Sandown"@en-gb ;
+    sal:videCode "SAN"@en-gb ;
+    cms:locator <urn:sports-data:CHRBSAN> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Sandown"@en-gb ;
+    core:primaryTopicOf <http://sandown.thejockeyclub.co.uk/> ;
+    core:shortLabel "Sandown"@en-gb ;
+    core:slug "sandown"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/ba5a6fc3-73ac-416e-96d9-9f5aedeb946a#id> a sport:RecurringCompetition ;
+    rdfs:label "Nottingham Racecourse"@en-gb ;
+    sal:name "Nottingham"@en-gb ;
+    sal:videCode "NTT"@en-gb ;
+    cms:locator <urn:sports-data:CHRBNTT> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Nottingham"@en-gb ;
+    core:primaryTopicOf <http://nottingham.thejockeyclub.co.uk/> ;
+    core:shortLabel "Nottingham"@en-gb ;
+    core:slug "nottingham"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/ba884e4e-e136-4af6-b04c-dbaedd25eab9#id> a sport:RecurringCompetition ;
+    rdfs:label "Tipperary Racecourse"@en-gb ;
+    sal:name "Tipperary"@en-gb ;
+    sal:videCode "TIP"@en-gb ;
+    cms:locator <urn:sports-data:CHRBTIP> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Tipperary"@en-gb ;
+    core:primaryTopicOf <http://www.tipperaryraces.ie/> ;
+    core:shortLabel "Tipperary"@en-gb ;
+    core:slug "tipperary"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/be0d289b-8f7d-489e-990f-22f5fadcd208#id> a sport:RecurringCompetition ;
+    rdfs:label "Naas Racecourse"@en-gb ;
+    sal:name "Naas"@en-gb ;
+    sal:videCode "NAA"@en-gb ;
+    cms:locator <urn:sports-data:CHRBNAA> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Naas"@en-gb ;
+    core:primaryTopicOf <http://naasracecourse.com/> ;
+    core:shortLabel "Naas"@en-gb ;
+    core:slug "naas"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/bfe7a4a6-fbec-4b97-97da-c35ea2fe3c18#id> a sport:RecurringCompetition ;
+    rdfs:label "Huntingdon Racecourse"@en-gb ;
+    sal:name "Huntingdon"@en-gb ;
+    sal:videCode "HUN"@en-gb ;
+    cms:locator <urn:sports-data:CHRBHUN> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Huntingdon"@en-gb ;
+    core:primaryTopicOf <http://huntingdon.thejockeyclub.co.uk/> ;
+    core:shortLabel "Huntingdon"@en-gb ;
+    core:slug "huntingdon"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/c7b5bc76-63ac-4317-845c-31306840f86f#id> a sport:RecurringCompetition ;
+    rdfs:label "Windsor Racecourse"@en-gb ;
+    sal:name "Windsor"@en-gb ;
+    sal:videCode "WND"@en-gb ;
+    cms:locator <urn:sports-data:CHRBWND> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Windsor"@en-gb ;
+    core:primaryTopicOf <http://www.windsor-racecourse.co.uk/> ;
+    core:shortLabel "Windsor"@en-gb ;
+    core:slug "windsor"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/c7d18972-4181-4caa-8d96-2c75ed95e8f7#id> a sport:RecurringCompetition ;
+    rdfs:label "Punchestown Racecourse"@en-gb ;
+    sal:name "Punchestown"@en-gb ;
+    sal:videCode "PUN"@en-gb ;
+    cms:locator <urn:sports-data:CHRBPUN> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Punchestown"@en-gb ;
+    core:primaryTopicOf <https://www.punchestown.com/> ;
+    core:shortLabel "Punchest'n"@en-gb ;
+    core:slug "punchestown"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/c86b05b7-b72f-4604-953f-f12c6149e07f#id> a sport:RecurringCompetition ;
+    rdfs:label "Market Rasen Racecourse"@en-gb ;
+    sal:name "Market Rasen"@en-gb ;
+    sal:videCode "MAR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBMAR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Market Rasen"@en-gb ;
+    core:primaryTopicOf <http://marketrasen.thejockeyclub.co.uk/> ;
+    core:shortLabel "Market R'n"@en-gb ;
+    core:slug "market-rasen"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/cbd4345f-2888-462f-8774-ac265dd07561#id> a sport:RecurringCompetition ;
+    rdfs:label "Fakenham Racecourse"@en-gb ;
+    sal:name "Fakenham"@en-gb ;
+    sal:videCode "FKN"@en-gb ;
+    cms:locator <urn:sports-data:CHRBFKN> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Fakenham"@en-gb ;
+    core:primaryTopicOf <http://www.fakenhamracecourse.co.uk/> ;
+    core:shortLabel "Fakenham"@en-gb ;
+    core:slug "fakenham"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/cc079357-1977-4eae-93c5-8d6024225488#id> a sport:RecurringCompetition ;
+    rdfs:label "Perth Racecourse"@en-gb ;
+    sal:name "Perth"@en-gb ;
+    sal:videCode "PER"@en-gb ;
+    cms:locator <urn:sports-data:CHRBPER> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Perth"@en-gb ;
+    core:primaryTopicOf <https://www.perth-races.co.uk/> ;
+    core:shortLabel "Perth"@en-gb ;
+    core:slug "perth"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/cdcb6cd1-4a34-4ff9-9d60-0b0446d00728#id> a sport:RecurringCompetition ;
+    rdfs:label "Catterick Racecourse"@en-gb ;
+    sal:name "Catterick"@en-gb ;
+    sal:videCode "CTT"@en-gb ;
+    cms:locator <urn:sports-data:CHRBCTT> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Catterick"@en-gb ;
+    core:primaryTopicOf <http://www.catterickbridge.co.uk/> ;
+    core:shortLabel "Catterick"@en-gb ;
+    core:slug "catterick"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/cf3cfa4f-1eec-4f44-8a6c-e491761080dc#id> a sport:RecurringCompetition ;
+    rdfs:label "Cartmel Racecourse"@en-gb ;
+    sal:name "Cartmel"@en-gb ;
+    sal:videCode "CRT"@en-gb ;
+    cms:locator <urn:sports-data:CHRBCRT> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Cartmel"@en-gb ;
+    core:primaryTopicOf <http://cartmel-racecourse.co.uk/> ;
+    core:shortLabel "Cartmel"@en-gb ;
+    core:slug "cartmel"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/cf78b242-1161-4b77-a1ba-57b6a6ecad1e#id> a sport:RecurringCompetition ;
+    rdfs:label "Southwell Racecourse"@en-gb ;
+    sal:name "Southwell"@en-gb ;
+    sal:videCode "STH"@en-gb ;
+    cms:locator <urn:sports-data:CHRBSTH> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Southwell"@en-gb ;
+    core:primaryTopicOf <http://www.southwell-racecourse.co.uk/> ;
+    core:shortLabel "Southwell"@en-gb ;
+    core:slug "southwell"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/d41fd6a1-fd54-46c5-82c5-907e5132e0f9#id> a sport:RecurringCompetition ;
+    rdfs:label "Doncaster Racecourse"@en-gb ;
+    sal:name "Doncaster"@en-gb ;
+    sal:videCode "DON"@en-gb ;
+    cms:locator <urn:sports-data:CHRBDON> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Doncaster"@en-gb ;
+    core:primaryTopicOf <http://www.doncaster-racecourse.co.uk/> ;
+    core:shortLabel "Doncaster"@en-gb ;
+    core:slug "doncaster"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/d6c89e06-7d6e-4526-9937-3794d83dffb1#id> a sport:RecurringCompetition ;
+    rdfs:label "Newcastle Racecourse"@en-gb ;
+    sal:name "Newcastle"@en-gb ;
+    sal:videCode "NCS"@en-gb ;
+    cms:locator <urn:sports-data:CHRBNCS> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Newcastle"@en-gb ;
+    core:primaryTopicOf <http://www.newcastle-racecourse.co.uk/> ;
+    core:shortLabel "Newcastle"@en-gb ;
+    core:slug "newcastle"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/d76acf3d-8a31-4211-b562-e3ba15fbe4bb#id> a sport:RecurringCompetition ;
+    rdfs:label "Newbury Racecourse"@en-gb ;
+    sal:name "Newbury"@en-gb ;
+    sal:videCode "NBU"@en-gb ;
+    cms:locator <urn:sports-data:CHRBNBU> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Newbury"@en-gb ;
+    core:primaryTopicOf <http://www.newburyracecourse.co.uk/> ;
+    core:shortLabel "Newbury"@en-gb ;
+    core:slug "newbury"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/dad07157-8089-42a8-b714-d39d7ab12885#id> a sport:RecurringCompetition ;
+    rdfs:label "Kempton Park Racecourse"@en-gb ;
+    sal:name "Kempton Park"@en-gb ;
+    sal:videCode "KMP"@en-gb ;
+    cms:locator <urn:sports-data:CHRBKMP> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Kempton Park"@en-gb ;
+    core:primaryTopicOf <http://kempton.thejockeyclub.co.uk/> ;
+    core:shortLabel "Kempton"@en-gb ;
+    core:slug "kempton"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/db799d4c-2189-46b6-874b-fbcd18e9f34d#id> a sport:RecurringCompetition ;
+    rdfs:label "Goodwood Racecourse"@en-gb ;
+    sal:name "Goodwood"@en-gb ;
+    sal:videCode "GWO"@en-gb ;
+    cms:locator <urn:sports-data:CHRBGWO> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Goodwood"@en-gb ;
+    core:primaryTopicOf <https://www.goodwood.com/> ;
+    core:shortLabel "Goodwood"@en-gb ;
+    core:slug "goodwood"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/dcd085af-5926-45e0-b099-4e15dd3c61a2#id> a sport:RecurringCompetition ;
+    rdfs:label "Lingfield Racecourse"@en-gb ;
+    sal:name "Lingfield"@en-gb ;
+    sal:videCode "LIN"@en-gb ;
+    cms:locator <urn:sports-data:CHRBLIN> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Lingfield"@en-gb ;
+    core:primaryTopicOf <http://www.lingfieldpark.co.uk/> ;
+    core:shortLabel "Lingfield"@en-gb ;
+    core:slug "lingfield"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/df4ba7e1-d57c-4c7d-a2e0-f30ab66b725a#id> a sport:RecurringCompetition ;
+    rdfs:label "Wolverhampton Racecourse"@en-gb ;
+    sal:name "Wolverhampton"@en-gb ;
+    sal:videCode "WOL"@en-gb ;
+    cms:locator <urn:sports-data:CHRBWOL> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Wolverhampton"@en-gb ;
+    core:primaryTopicOf <http://www.wolverhampton-racecourse.co.uk/> ;
+    core:shortLabel "Wolver'ton"@en-gb ;
+    core:slug "wolverhampton"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/dfbef55c-6603-428b-b3d5-0b30a99b049e#id> a sport:RecurringCompetition ;
+    rdfs:label "Cork Racecourse"@en-gb ;
+    sal:name "Cork"@en-gb ;
+    sal:videCode "COR"@en-gb ;
+    cms:locator <urn:sports-data:CHRBCOR> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Cork"@en-gb ;
+    core:primaryTopicOf <http://www.corkracecourse.ie/> ;
+    core:shortLabel "Cork"@en-gb ;
+    core:slug "cork"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/e09821c4-74b4-4935-8f10-89330ed1b754#id> a sport:RecurringCompetition ;
+    rdfs:label "Limerick Racecourse"@en-gb ;
+    sal:name "Limerick"@en-gb ;
+    sal:videCode "LIM"@en-gb ;
+    cms:locator <urn:sports-data:CHRBLIM> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Limerick"@en-gb ;
+    core:primaryTopicOf <http://www.limerickraces.ie/> ;
+    core:shortLabel "Limerick"@en-gb ;
+    core:slug "limerick"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/e18789a7-2a0c-4b28-9585-20826b33a687#id> a sport:RecurringCompetition ;
+    rdfs:label "Sligo Racecourse"@en-gb ;
+    sal:name "Sligo"@en-gb ;
+    sal:videCode "SLI"@en-gb ;
+    cms:locator <urn:sports-data:CHRBSLI> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Sligo"@en-gb ;
+    core:primaryTopicOf <http://www.countysligoraces.com/> ;
+    core:shortLabel "Sligo"@en-gb ;
+    core:slug "sligo"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/e37d3d1c-8cfe-45b0-b823-c15774187feb#id> a sport:RecurringCompetition ;
+    rdfs:label "Bellewstown Racecourse"@en-gb ;
+    sal:name "Bellewstown"@en-gb ;
+    sal:videCode "BEL"@en-gb ;
+    cms:locator <urn:sports-data:CHRBBEL> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Bellewstown"@en-gb ;
+    core:primaryTopicOf <http://www.bellewstownraces.ie/> ;
+    core:shortLabel "Bellewst'n"@en-gb ;
+    core:slug "bellewstown"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/f2200f17-e3be-4f78-b23d-9cb61ea8f450#id> a sport:RecurringCompetition ;
+    rdfs:label "Bath Racecourse"@en-gb ;
+    sal:name "Bath"@en-gb ;
+    sal:videCode "BAT"@en-gb ;
+    cms:locator <urn:sports-data:CHRBBAT> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Bath"@en-gb ;
+    core:primaryTopicOf <http://www.bath-racecourse.co.uk/> ;
+    core:shortLabel "Bath"@en-gb ;
+    core:slug "bath"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/f6d624f0-c799-4ae2-b469-9cfd117f5d99#id> a sport:RecurringCompetition ;
+    rdfs:label "Gowran Park Racecourse"@en-gb ;
+    sal:name "Gowran Park"@en-gb ;
+    sal:videCode "GOW"@en-gb ;
+    cms:locator <urn:sports-data:CHRBGOW> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Gowran Park"@en-gb ;
+    core:primaryTopicOf <http://www.gowranpark.ie/> ;
+    core:shortLabel "Gowran Pk"@en-gb ;
+    core:slug "gowran"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://www.bbc.co.uk/things/f7937d01-1766-421d-bc29-7f35bc72a06a#id> a sport:RecurringCompetition ;
+    rdfs:label "Musselburgh Racecourse"@en-gb ;
+    sal:name "Musselburgh"@en-gb ;
+    sal:videCode "MUS"@en-gb ;
+    cms:locator <urn:sports-data:CHRBMUS> ;
+    core:disambiguationHint "Horse Racing Meeting"@en-gb ;
+    core:preferredLabel "Musselburgh"@en-gb ;
+    core:primaryTopicOf <https://www.musselburgh-racecourse.co.uk/> ;
+    core:shortLabel "Musselbro'"@en-gb ;
+    core:slug "musselburgh"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> .
+
+<http://aintree.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://ballinroberacecourse.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://beverley-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://carlisle.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://cartmel-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://dundalkstadium.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://epsom.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://exeter.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://hamilton-park.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://haydock.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://huntingdon.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://kempton.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://killarneyraces.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://listowelraces.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://marketrasen.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://naasracecourse.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://newmarket.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://nottingham.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://plumptonracecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://sandown.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://warwick.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://wincanton.thejockeyclub.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ascot.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ayr-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bangorondeeraces.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bath-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bellewstownraces.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.brighton-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.catterickbridge.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.chelmsfordcityracecourse.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.chepstow-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.chester-races.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.clonmelraces.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.corkracecourse.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.countysligoraces.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.curragh.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.doncaster-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.downpatrickracecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.downroyal.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fairyhouse.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fakenhamracecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ffoslasracecourse.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.folkestone-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fontwellpark.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.galwayraces.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.gowranpark.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.greatyarmouth-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.hereford-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.hexham-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.kelso-races.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.kilbegganraces.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.laytownstrandraces.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.leicester-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.leopardstown.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.limerickraces.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.lingfieldpark.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ludlowracecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.navanracecourse.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.newburyracecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.newcastle-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.newtonabbotracing.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.pontefract-races.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.redcarracing.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ripon-races.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.roscommonracecourse.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.salisburyracecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.sedgefield-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.southwell-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.stratfordracecourse.net/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.tauntonracecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.thefestival.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.thirskracecourse.net/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.thurlesraces.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.tipperaryraces.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.towcester-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.tramore-racecourse.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.uttoxeter-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.wetherbyracing.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.wexfordraces.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.windsor-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.wolverhampton-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.worcester-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.yorkracecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<https://www.goodwood.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<https://www.musselburgh-racecourse.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<https://www.perth-races.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<https://www.punchestown.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<urn:sports-data:CHRBAIN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBASC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBAYR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBBAL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBBAN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBBAT> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBBEL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBBEV> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBBGH> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBCAR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBCFC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBCHE> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBCHP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBCHS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBCLO> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBCOR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBCRT> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBCTT> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBCUR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBDON> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBDPA> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBDRO> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBDUN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBEPS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBEXE> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBFAI> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBFFL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBFKN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBFOL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBFON> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBGAL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBGOW> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBGWO> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBHAM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBHDO> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBHEX> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBHFO> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBHUN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBKEL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBKIL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBKLB> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBKMP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBLAY> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBLEO> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBLES> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBLIM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBLIN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBLST> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBLUD> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBMAR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBMUS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBNAA> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBNAV> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBNBU> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBNCS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBNEW> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBNMK> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBNTT> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBPER> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBPFR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBPLU> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBPUN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBRED> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBRIP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBROS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBSAL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBSAN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBSDG> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBSLI> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBSTH> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBSTR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBTAU> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBTHR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBTHU> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBTIP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBTOW> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBTRM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBUTT> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBWAR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBWCN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBWEX> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBWND> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBWOL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBWOR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBWTH> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBYAR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CHRBYOR> a cms:Sports-DataLocator .
+

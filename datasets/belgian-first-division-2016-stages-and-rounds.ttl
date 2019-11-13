@@ -1,0 +1,99 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/90ee9068-1276-4078-8bb2-c7a01d6b92b8#id> a provenance:Dataset ;
+    rdfs:label "Football: Belgian Fist Division A 2016/17 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/belgian-first-division-2016-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-2865: Belgian Fist Division A 2016/17 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-09-21T07:23:14+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/29559193-ccfb-4b2a-b6e4-04f77e4ce350#id> sport:firstStage <http://www.bbc.co.uk/things/8a46a92e-63f1-4bdf-8e81-9b857a101427#id> .
+
+<http://www.bbc.co.uk/things/30a37dec-9431-4944-b8c4-b7d22b991e87#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Belgian First Division A"@en-gb ;
+    sal:name "Europa League Play-Off Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122016S2R2> ;
+    core:preferredLabel "Europa League Play-Off Group A"@en-gb ;
+    core:shortLabel "Europa League Play-Off Group A"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/4d437697-30cd-46a4-8438-d4a760f305f6#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 2 of Belgian First Division A"@en-gb ;
+    sal:name "Europa League Play-Off Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122016S2R5> ;
+    core:preferredLabel "Europa League Play-Off Final"@en-gb ;
+    core:shortLabel "Europa League Play-Off Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/4f581094-9029-4e95-adcf-d070dc0ada83#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Belgian First Division A"@en-gb ;
+    sal:name "Europa League Play-Off Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122016S2R4> ;
+    core:preferredLabel "Europa League Play-Off Semi-final"@en-gb ;
+    core:shortLabel "Europa League Play-Off Semi-final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/7c69d028-af94-4002-ad0e-d457f1374cb5#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Belgian First Division A"@en-gb ;
+    sal:name "Europa League Play-Off Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122016S2R3> ;
+    core:preferredLabel "Europa League Play-Off Group B"@en-gb ;
+    core:shortLabel "Europa League Play-Off Group B"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/8a46a92e-63f1-4bdf-8e81-9b857a101427#id> a sport:Competition ;
+    rdfs:label "Stage 2 of Belgian First Division A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122016S2> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/bb90ddb4-3902-4361-a7f4-9f32255f7426#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/30a37dec-9431-4944-b8c4-b7d22b991e87#id>,
+        <http://www.bbc.co.uk/things/4f581094-9029-4e95-adcf-d070dc0ada83#id>,
+        <http://www.bbc.co.uk/things/7c69d028-af94-4002-ad0e-d457f1374cb5#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/4d437697-30cd-46a4-8438-d4a760f305f6#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/bb90ddb4-3902-4361-a7f4-9f32255f7426#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Belgian First Division A"@en-gb ;
+    sal:name "Championship Play-Off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122016S2R1> ;
+    core:preferredLabel "Championship Play-Off"@en-gb ;
+    core:shortLabel "Championship Play-Off"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB1122016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122016S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122016S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122016S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122016S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122016S2R5> a cms:Sports-DataLocator .
+

@@ -1,0 +1,146 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/c235567e-c8dd-4572-b3bb-bbee4f563056#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2018 Challenge Cup Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-league/rugby-league-2018-challenge-cup-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4011;2: Rugby League: model Challenge Cup 2018" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-01-22T09:13:22+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/ecd07a61-4a20-4682-8dec-1f7ebe18178a#id> sport:hasStage <http://www.bbc.co.uk/things/87ec6859-1954-4409-889b-50e5063f313f#id> .
+
+<http://www.bbc.co.uk/things/0e018a2a-49e8-49f7-aa2e-5ee3fce107d7#id> a sport:Round ;
+    rdfs:label "Stage 1 Round 4 of Rugby League Challenge Cup 2018"@en-gb ;
+    sal:name "Round 4"@en-gb ;
+    cms:locator <urn:sports-data:CRLB3002018S1R4> ;
+    core:preferredLabel "Round 4"@en-gb ;
+    core:shortLabel "Round 4"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single-elimination> .
+
+<http://www.bbc.co.uk/things/218abb9d-6eea-4746-b60d-84cad01492a5#id> a sport:Round ;
+    rdfs:label "Stage 1 Round 6 of Rugby League Challenge Cup 2018"@en-gb ;
+    sal:name "Round 6"@en-gb ;
+    cms:locator <urn:sports-data:CRLB3002018S1R6> ;
+    core:preferredLabel "Round 6"@en-gb ;
+    core:shortLabel "Round 6"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-16> .
+
+<http://www.bbc.co.uk/things/3ae21aed-c934-4b01-886f-80e7ebe2c928#id> a sport:Round ;
+    rdfs:label "Stage 1 Round 8 of Rugby League Challenge Cup 2018"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB3002018S1R8> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/435c305f-e46b-420f-9ecb-1a55deae0e0c#id> a sport:Round ;
+    rdfs:label "Stage 1 Round 7 of Rugby League Challenge Cup 2018"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB3002018S1R7> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/4e173a31-9a98-4f48-9950-eac8a9d43c5f#id> a sport:Round ;
+    rdfs:label "Stage 1 Round 1 of Rugby League Challenge Cup 2018"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CRLB3002018S1R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single-elimination> .
+
+<http://www.bbc.co.uk/things/6c7a06e1-17fc-4fb8-99a4-8b35c6e72791#id> a sport:Round ;
+    rdfs:label "Stage 1 Round 9 of Rugby League Challenge Cup 2018"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB3002018S1R9> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "9"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/87ec6859-1954-4409-889b-50e5063f313f#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Rugby League Challenge Cup 2018"@en-gb ;
+    cms:locator <urn:sports-data:CRLB3002018S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/4e173a31-9a98-4f48-9950-eac8a9d43c5f#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0e018a2a-49e8-49f7-aa2e-5ee3fce107d7#id>,
+        <http://www.bbc.co.uk/things/218abb9d-6eea-4746-b60d-84cad01492a5#id>,
+        <http://www.bbc.co.uk/things/3ae21aed-c934-4b01-886f-80e7ebe2c928#id>,
+        <http://www.bbc.co.uk/things/435c305f-e46b-420f-9ecb-1a55deae0e0c#id>,
+        <http://www.bbc.co.uk/things/dc699508-36f4-4d85-af96-5bba585a441b#id>,
+        <http://www.bbc.co.uk/things/f23a5ab0-8f25-4afe-8e48-9ba299bd1165#id>,
+        <http://www.bbc.co.uk/things/ffd59cea-7fc1-4439-a3a6-27cc40793b6a#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/6c7a06e1-17fc-4fb8-99a4-8b35c6e72791#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/dc699508-36f4-4d85-af96-5bba585a441b#id> a sport:Round ;
+    rdfs:label "Stage 1 Round 3 of Rugby League Challenge Cup 2018"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CRLB3002018S1R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single-elimination> .
+
+<http://www.bbc.co.uk/things/f23a5ab0-8f25-4afe-8e48-9ba299bd1165#id> a sport:Round ;
+    rdfs:label "Stage 1 Round 5 of Rugby League Challenge Cup 2018"@en-gb ;
+    sal:name "Round 5"@en-gb ;
+    cms:locator <urn:sports-data:CRLB3002018S1R5> ;
+    core:preferredLabel "Round 5"@en-gb ;
+    core:shortLabel "Round 5"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-32> .
+
+<http://www.bbc.co.uk/things/ffd59cea-7fc1-4439-a3a6-27cc40793b6a#id> a sport:Round ;
+    rdfs:label "Stage 1 Round 2 of Rugby League Challenge Cup 2018"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CRLB3002018S1R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single-elimination> .
+
+<urn:sports-data:CRLB3002018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB3002018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB3002018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB3002018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB3002018S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB3002018S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB3002018S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB3002018S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB3002018S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB3002018S1R9> a cms:Sports-DataLocator .
+

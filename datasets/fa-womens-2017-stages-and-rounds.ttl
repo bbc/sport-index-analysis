@@ -1,0 +1,110 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/700749d9-e6cd-41f2-a9ce-f3d12aa64983#id> a provenance:Dataset ;
+    rdfs:label "Football: FA Women's Cup 2017/18 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/fa-womens-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3260: Model CFBB669 FA Women's Cup 2017/18 stages and rounds." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-05-25T09:50:27+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/16e63e0c-455e-39ec-1681-b88fa7d2d744#id> sport:firstStage <http://www.bbc.co.uk/things/e8d9c14e-3a5d-48d1-87fa-630d28feb6c4#id> .
+
+<http://www.bbc.co.uk/things/0e986f3e-8d61-49c6-b900-371447e456c4#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of FA Women's Cup"@en-gb ;
+    sal:name "Fifth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692017S1R5> ;
+    core:preferredLabel "Fifth Round"@en-gb ;
+    core:shortLabel "Fifth Round"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/29ffd6ce-6a8c-40db-b81d-b7ac53851451#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of FA Women's Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692017S1R7> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/c029c3d1-132a-4fc3-b57d-03b4267557df#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of FA Women's Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692017S1R8> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/c62633c7-ff9e-40f2-836b-dabee7b64407#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of FA Women's Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692017S1R6> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/e1c875f3-0afd-4851-9946-da842be84850#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of FA Women's Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692017S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/e8d9c14e-3a5d-48d1-87fa-630d28feb6c4#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of FA Women's Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692017S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/f5390571-a095-4879-a7d1-03620294bcb7#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0e986f3e-8d61-49c6-b900-371447e456c4#id>,
+        <http://www.bbc.co.uk/things/29ffd6ce-6a8c-40db-b81d-b7ac53851451#id>,
+        <http://www.bbc.co.uk/things/c62633c7-ff9e-40f2-836b-dabee7b64407#id>,
+        <http://www.bbc.co.uk/things/e1c875f3-0afd-4851-9946-da842be84850#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/c029c3d1-132a-4fc3-b57d-03b4267557df#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/f5390571-a095-4879-a7d1-03620294bcb7#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of FA Women's Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692017S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB6692017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692017S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692017S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692017S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692017S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692017S1R8> a cms:Sports-DataLocator .
+

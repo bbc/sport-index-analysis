@@ -1,0 +1,98 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/c707b2ab-67d3-44fe-abc1-735175b52f27#id> a provenance:Dataset ;
+    rdfs:label "Football: Scottish Challenge 2015 stages and rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/football/scottish-challenge-cup-2015-stages-and-rounds-7.ttl" ;
+    provenance:changeReason "SLS-462: fix a prefix error; Model CFBB37 Scottish Challenge Cup 2015/16 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-08-06T07:49:51+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:dong.liu@bbc.co.uk> ;
+    provenance:version "7"^^xsd:int .
+
+<http://www.bbc.co.uk/things/06adae99-9392-462a-92c5-e4cb024644e0#id> sport:hasStage <http://www.bbc.co.uk/things/e69e7c91-7025-412d-ba4b-0e04b5c6093e#id> .
+
+<http://www.bbc.co.uk/things/466451d1-6b2b-4095-9853-d78ad05fd0a3#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Scottish Challenge Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372015S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/87abc0fe-5343-4476-8d99-9248c5e03959#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Scottish Challenge Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372015S1R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/8fb71a23-52a6-4516-ac96-7b3ad5212760#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Scottish Challenge Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372015S1R4> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/c4b25e90-d761-4638-bcc9-fb34c6366749#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Scottish Challenge Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372015S1R3> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/e69e7c91-7025-412d-ba4b-0e04b5c6093e#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Scottish Challenge Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372015S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/466451d1-6b2b-4095-9853-d78ad05fd0a3#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/8fb71a23-52a6-4516-ac96-7b3ad5212760#id>,
+        <http://www.bbc.co.uk/things/c4b25e90-d761-4638-bcc9-fb34c6366749#id>,
+        <http://www.bbc.co.uk/things/f900cbdc-3b15-4f0f-babb-9311c95dc9dc#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/87abc0fe-5343-4476-8d99-9248c5e03959#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/f900cbdc-3b15-4f0f-babb-9311c95dc9dc#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Scottish Challenge Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372015S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB372015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372015S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372015S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372015S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372015S1R5> a cms:Sports-DataLocator .
+

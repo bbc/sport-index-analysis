@@ -1,0 +1,328 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/2d9215c8-f43c-4388-a064-535260a6ffb2#id> a provenance:Dataset ;
+    rdfs:label "Football: UK and Ireland Women's Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/uk-and-ireland-womens-football-teams.ttl" ;
+    provenance:changeReason "SWD-1001: Rename Everton" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-09-16T10:35:59+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "11"^^xsd:int .
+
+<http://www.bbc.co.uk/sport/football/teams/arsenal-ladies> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/birmingham-city-ladies> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/brighton-and-hove-albion-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/bristol-city-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/chelsea-ladies> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/everton-ladies> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/liverpool-ladies> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/manchester-city-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/manchester-united-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/reading-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/sunderland-ladies> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/west-ham-united-ladies> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/yeovil-town-ladies> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/things/0b2f0c46-a999-4c12-b0fa-06bb9dfba028#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Yeovil Town Ladies"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9671> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Yeovil Town Ladies"@en-gb ;
+    core:shortLabel "Yeovil Town Ladies"@en-gb ;
+    core:slug "yeovil-town-ladies"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/66019f6a-2ae1-4c2f-baf8-696b40c99bdf#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/468e5402-d118-4ede-86dc-24278ffbecf3#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Arsenal Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6272> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Arsenal Women"@en-gb ;
+    core:shortLabel "Arsenal Women"@en-gb ;
+    core:slug "arsenal-ladies"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id>,
+        <http://www.bbc.co.uk/things/66019f6a-2ae1-4c2f-baf8-696b40c99bdf#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5330f58b-bfaa-447d-8209-4080a33e3412#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Tottenham Hotspur Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6924> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Tottenham Hotspur Women"@en-gb ;
+    core:shortLabel "Tottenham Women"@en-gb ;
+    core:slug "tottenham-hotspur-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6649e4cd-e608-4386-a07b-29474e63256e#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Everton"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6277> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Everton"@en-gb ;
+    core:shortLabel "Everton"@en-gb ;
+    core:slug "everton-ladies"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id>,
+        <http://www.bbc.co.uk/things/66019f6a-2ae1-4c2f-baf8-696b40c99bdf#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6e9b8318-933f-4bc9-8ab9-9d6d907a4afd#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Reading Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9669> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Reading Women"@en-gb ;
+    core:shortLabel "Reading Women"@en-gb ;
+    core:slug "reading-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id>,
+        <http://www.bbc.co.uk/things/66019f6a-2ae1-4c2f-baf8-696b40c99bdf#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/756e0e9e-5d0c-4acf-a681-1475a227acee#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Manchester City Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9660> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Manchester City Women"@en-gb ;
+    core:shortLabel "Man City Women"@en-gb ;
+    core:slug "manchester-city-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id>,
+        <http://www.bbc.co.uk/things/66019f6a-2ae1-4c2f-baf8-696b40c99bdf#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8e7ba1de-5aeb-44ea-96cd-da7fca18f067#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Brighton & Hove Albion Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9165> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Brighton & Hove Albion Women"@en-gb ;
+    core:shortLabel "Brighton Women"@en-gb ;
+    core:slug "brighton-and-hove-albion-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8ec20806-f955-4164-b955-e93ef9eba79d#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Liverpool Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6279> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Liverpool Women"@en-gb ;
+    core:shortLabel "Liverpool Women"@en-gb ;
+    core:slug "liverpool-ladies"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id>,
+        <http://www.bbc.co.uk/things/66019f6a-2ae1-4c2f-baf8-696b40c99bdf#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/95f1ce88-80d8-4bdd-b95c-23f60f6b5918#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "West Ham United Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB636> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "West Ham United Women"@en-gb ;
+    core:shortLabel "West Ham Women"@en-gb ;
+    core:slug "west-ham-united-ladies"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9cc38e44-b4c7-45dd-a79e-60a3a0e66d9c#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sunderland Ladies"@en-gb ;
+    cms:locator <urn:sports-data:TFBB798> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Sunderland Ladies"@en-gb ;
+    core:shortLabel "Sunderland Ladies"@en-gb ;
+    core:slug "sunderland-ladies"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/66019f6a-2ae1-4c2f-baf8-696b40c99bdf#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bb3c3d59-4e0f-4c43-8cfa-30e57d9aa54e#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Birmingham City Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6273> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Birmingham City Women"@en-gb ;
+    core:shortLabel "B'ham City Women"@en-gb ;
+    core:slug "birmingham-city-ladies"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id>,
+        <http://www.bbc.co.uk/things/66019f6a-2ae1-4c2f-baf8-696b40c99bdf#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bc7eb531-933a-48e4-ba82-d3784d20118f#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Manchester United Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB14501> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Manchester United Women"@en-gb ;
+    core:shortLabel "Man Utd Women"@en-gb ;
+    core:slug "manchester-united-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d216a841-23b2-4e35-87eb-68575475d58a#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Chelsea Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6275> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Chelsea Women"@en-gb ;
+    core:shortLabel "Chelsea Women"@en-gb ;
+    core:slug "chelsea-ladies"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id>,
+        <http://www.bbc.co.uk/things/66019f6a-2ae1-4c2f-baf8-696b40c99bdf#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/fa296a14-9a7a-4a8e-b723-cb23968496c1#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bristol City Women"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6274> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Bristol City Women"@en-gb ;
+    core:shortLabel "Bristol City Women"@en-gb ;
+    core:slug "bristol-city-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/24387189-2f0c-4f17-b0bd-3371271086fd#id>,
+        <http://www.bbc.co.uk/things/66019f6a-2ae1-4c2f-baf8-696b40c99bdf#id>,
+        <http://www.bbc.co.uk/things/9023524f-7760-4219-bb5e-68437b43dca3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<urn:sports-data:TFBB14501> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6272> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6273> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6274> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6275> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6277> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6279> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB636> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6924> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB798> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9165> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9660> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9669> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9671> a cms:Sports-DataLocator .
+

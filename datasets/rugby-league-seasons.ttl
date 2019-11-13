@@ -1,0 +1,625 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns2: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/a28b3ab1-2a4c-43cf-820e-c1f16b455405#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: Seasons" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-league/rugby-league-seasons.ttl" ;
+    provenance:changeReason "SWD-323: Model Rugby League 2019 seasons" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-12-04T09:47:01+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "42"^^xsd:int .
+
+<http://www.bbc.co.uk/things/0191fba6-29a5-4df0-96de-ff471a65c804#id> a sport:Competition ;
+    rdfs:label "Rugby League Challenge Cup 2014 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/20eefd64-cd6d-4f87-8948-d1af809c5ce6#id> ;
+    sal:name "Tetley's Challenge Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> .
+
+<http://www.bbc.co.uk/things/01f67554-c074-4a6a-b465-c04efc3ebc51#id> a sport:Competition ;
+    rdfs:label "Rugby League Challenge Cup 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/432ccb55-28d8-4481-9897-5036270ed5de#id> ;
+    sal:name "Ladbrokes Challenge Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> .
+
+<http://www.bbc.co.uk/things/0292ea8d-a669-4fa9-941b-69083df37c6e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League League 1 2019 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-01-01"^^xsd:date ;
+    ns3:hasEnd "2019-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/07e7cb7a-fd1b-44c7-a3cf-bafd27ab560c#id> a sport:Competition ;
+    rdfs:label "Rugby League Super League 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/209abdcc-cdda-40f5-ad47-b37597eddc08#id> ;
+    sal:name "Betfred Super League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> .
+
+<http://www.bbc.co.uk/things/0e84b3d6-7779-4ac2-9525-90d9debbe9c2#id> a sport:Competition ;
+    rdfs:label "Rugby League Super League 2011/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ff103bd3-8ba3-4a1a-ae89-6c26b37de044#id> ;
+    sal:name "First Utility Super League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> .
+
+<http://www.bbc.co.uk/things/10a83922-24ae-44e9-9083-b3fd562c7570#id> a sport:Competition ;
+    rdfs:label "Rugby League European Cup 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/708dca56-c68f-4586-b571-c08b2becc2d0#id> ;
+    sal:name "European Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/5d39512a-4f39-42bb-bb1c-3c5c8c9fdb94#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/5d39512a-4f39-42bb-bb1c-3c5c8c9fdb94#id> .
+
+<http://www.bbc.co.uk/things/19bdd88d-c6c3-4ca5-9edb-1e07b2ef3555#id> a sport:Competition ;
+    rdfs:label "Rugby League National Rugby League (Australian) Premiership 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/12b953ec-4b26-485e-baae-f22ae3b724ff#id> ;
+    sal:name "NRL Telstra Premiership"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/29371609-8a68-4fce-b828-247e01fba3ed#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/29371609-8a68-4fce-b828-247e01fba3ed#id> .
+
+<http://www.bbc.co.uk/things/1b57833d-613a-4031-b71e-73206e8434bf#id> a sport:Competition ;
+    rdfs:label "Rugby League Super League 2014 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/fd044703-cb56-4403-a22f-1114ff2a68bb#id> ;
+    sal:name "First Utility Super League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> .
+
+<http://www.bbc.co.uk/things/1e7cf8bb-116d-47bf-8ea5-87a26cacb324#id> a sport:Competition ;
+    rdfs:label "Rugby League Championship 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/d8509021-8d5e-4460-9872-45209b5b7acd#id> ;
+    sal:name "Kingstone Press Championship"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ca4e3d49-b446-4bd2-8c46-6190d349b26b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ca4e3d49-b446-4bd2-8c46-6190d349b26b#id> .
+
+<http://www.bbc.co.uk/things/2506a1b5-0c41-4e20-9ff4-3f2fb3d68081#id> a sport:Competition ;
+    rdfs:label "Rugby League World Club Series 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/38ec4bef-2cad-4c0a-8680-40bf443d32ad#id> ;
+    sal:name "World Club Series"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/e4befd3a-68d8-419f-b4d6-5356035012a6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e4befd3a-68d8-419f-b4d6-5356035012a6#id> .
+
+<http://www.bbc.co.uk/things/316a7ec2-59b8-4bdc-9645-1a535be77f16#id> a sport:Competition ;
+    rdfs:label "Rugby League Championship Shield 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ee512696-9d74-424f-88e6-db7c38005524#id> ;
+    sal:name "Championship Shield"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/51c5082c-d5e7-4e62-8f40-b5b0734dce6c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/51c5082c-d5e7-4e62-8f40-b5b0734dce6c#id> .
+
+<http://www.bbc.co.uk/things/31b1eccf-ae84-4022-9ca2-fd7fbd891b52#id> a sport:Competition ;
+    rdfs:label "Rugby League The Qualifiers 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7f44be2c-ee5c-47a9-99a6-0c5d5fa7ca52#id> ;
+    sal:name "The Qualifiers"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2c1cb659-5e5e-4f99-bd77-84b24399f68c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2c1cb659-5e5e-4f99-bd77-84b24399f68c#id> .
+
+<http://www.bbc.co.uk/things/337a8d28-c27e-4a39-9cf3-0a7e03239b96#id> a sport:Competition ;
+    rdfs:label "Rugby League World Club Series 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f37281c3-f048-4fc1-99eb-6cb45b7b6735#id> ;
+    sal:name "World Club Series"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/e4befd3a-68d8-419f-b4d6-5356035012a6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e4befd3a-68d8-419f-b4d6-5356035012a6#id> .
+
+<http://www.bbc.co.uk/things/3890c3d2-31fe-41c8-866c-004508a77934#id> a sport:Competition ;
+    rdfs:label "Australian State of Origin (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b726dc76-7ba3-471e-a9e6-401df3d62c3c#id> ;
+    sal:name "Australian State of Origin"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/be500906-ed73-4151-b9b3-00705616f820#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/be500906-ed73-4151-b9b3-00705616f820#id> .
+
+<http://www.bbc.co.uk/things/3921f684-98fb-4bb1-90f5-6482f0ab04d0#id> a sport:Competition ;
+    rdfs:label "Rugby League National Conference Div 2 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/20b59d24-22f0-430d-a7b1-9bc117595cdd#id> ;
+    sal:name "National Conference Div 1"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/03d21def-442b-4312-9df1-eeca2098bdff#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/03d21def-442b-4312-9df1-eeca2098bdff#id> .
+
+<http://www.bbc.co.uk/things/3930e7d3-3599-4358-a7f4-376873899170#id> a sport:Competition ;
+    rdfs:label "Rugby League Championship 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/95eff911-b425-4d0d-aa29-dac56d56cb98#id> ;
+    sal:name "Kingstone Press Championship"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ca4e3d49-b446-4bd2-8c46-6190d349b26b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ca4e3d49-b446-4bd2-8c46-6190d349b26b#id> .
+
+<http://www.bbc.co.uk/things/3a9e8c8f-4879-47d9-a642-e2e2358c79ef#id> a sport:Competition ;
+    rdfs:label "Rugby Kingstone Press League 1 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f49d62ca-a9a2-477d-ae66-39590e8a9b78#id> ;
+    sal:name "Kingstone Press League 1"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ad086ea3-6356-4586-abe5-5194bfa077f8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ad086ea3-6356-4586-abe5-5194bfa077f8#id> .
+
+<http://www.bbc.co.uk/things/3af093ff-83b6-404e-8684-e503c751b4d3#id> a sport:Competition ;
+    rdfs:label "Rugby League Four Nations Championship 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ad38adea-50b8-4578-8cff-98f07dbbc382#id> ;
+    sal:name "Four Nations Championship"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/679d38ad-593c-42eb-b164-1d64baab3cf2#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/679d38ad-593c-42eb-b164-1d64baab3cf2#id> .
+
+<http://www.bbc.co.uk/things/442d0f7e-9aa6-4ffd-8cc5-83ed544f6fdb#id> a sport:Competition ;
+    rdfs:label "Rugby League National Conference Premier 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/1d31f779-29c8-4730-9ec0-fb37ac11dd32#id> ;
+    sal:name "National Conference Premier"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b0702cb7-4191-4f79-af20-46f5a8892f29#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b0702cb7-4191-4f79-af20-46f5a8892f29#id> .
+
+<http://www.bbc.co.uk/things/5113609e-a7d6-41b1-a368-28f48ce49b32#id> a sport:Competition ;
+    rdfs:label "Rugby League World Cup 2011/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f918fa83-1559-447b-934e-519bdf8e29eb#id> ;
+    sal:name "Rugby League World Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/37b00783-82e7-47e7-adbd-ff37b417d7bb#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/37b00783-82e7-47e7-adbd-ff37b417d7bb#id> .
+
+<http://www.bbc.co.uk/things/521caf97-05b4-497e-8e75-1399e425e4e3#id> a sport:Competition ;
+    rdfs:label "Women's Rugby League World Cup 2017 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/fb8ff6b3-0f4e-4734-814c-5f1c63827b19#id> ;
+    sal:name "Women's Rugby League World Cup 2017"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/bbf66c55-d042-4ca4-9b10-6f43ca10d321#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bbf66c55-d042-4ca4-9b10-6f43ca10d321#id> .
+
+<http://www.bbc.co.uk/things/52b3e58c-0e28-475e-91f4-6dce369cd83a#id> a sport:Competition ;
+    rdfs:label "Rugby League Four Nations Championship 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5dbf4803-156b-49eb-a5e3-5e8d8fec0edb#id> ;
+    sal:name "Four Nations Championship"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/679d38ad-593c-42eb-b164-1d64baab3cf2#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/679d38ad-593c-42eb-b164-1d64baab3cf2#id> .
+
+<http://www.bbc.co.uk/things/540bf07f-1457-4d83-b469-7df62f4a1a06#id> a sport:Competition ;
+    rdfs:label "Rugby League Super League 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8ccefe0a-6356-428a-aa87-fc508f2c855f#id> ;
+    sal:name "Betfred Super League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> .
+
+<http://www.bbc.co.uk/things/54607d6c-a119-49cf-8080-7bb5071ff5fb#id> a sport:Competition ;
+    rdfs:label "Rugby Kingstone Press League 1 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/fb1de901-64f3-4159-a2d0-e3533feeb815#id> ;
+    sal:name "Kingstone Press League 1"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ad086ea3-6356-4586-abe5-5194bfa077f8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ad086ea3-6356-4586-abe5-5194bfa077f8#id> .
+
+<http://www.bbc.co.uk/things/5548cf2b-c118-4378-8f69-80eb25826669#id> a sport:Competition ;
+    rdfs:label "Rugby League Super League 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f58bc75f-c318-40e5-9c2f-aef9d3c3055b#id> ;
+    sal:name "First Utility Super League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> .
+
+<http://www.bbc.co.uk/things/5700d857-1677-4c32-b0b0-c3c865f8ec35#id> a sport:Competition ;
+    rdfs:label "Rugby League League 1 Shield 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7d05e2ca-389e-4076-9f62-1b41b607a703#id> ;
+    sal:name "League 1 Shield"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1ab217ac-dbd7-43fe-bc8b-0948960d95c4#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1ab217ac-dbd7-43fe-bc8b-0948960d95c4#id> .
+
+<http://www.bbc.co.uk/things/5a062e6d-4ae6-4c7e-8552-aac9aeb4c57a#id> a sport:Competition ;
+    rdfs:label "Rugby League Challenge Cup 2011/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4b0065a4-d494-450e-8fd4-6fedcc9421e0#id> ;
+    sal:name "Tetley's Challenge Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> .
+
+<http://www.bbc.co.uk/things/5afb6c81-924c-4a0b-8ed1-00514aa6a988#id> a sport:Competition ;
+    rdfs:label "Rugby League Super League 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/673bf16b-8cf2-4df7-a0e7-879e3c440f39#id> ;
+    sal:name "First Utility Super League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> .
+
+<http://www.bbc.co.uk/things/6038c6e2-7664-4ed3-aeaf-aeef9270d9e8#id> a sport:Competition ;
+    rdfs:label "Rugby League Four Nations 2014 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2c95bbd4-2628-4b05-952e-0a63c8c6df4a#id> ;
+    sal:name "Rugby League Four Nations"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/679d38ad-593c-42eb-b164-1d64baab3cf2#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/679d38ad-593c-42eb-b164-1d64baab3cf2#id> .
+
+<http://www.bbc.co.uk/things/659a870b-546f-4140-8444-73ea093b8ca7#id> a sport:Competition ;
+    rdfs:label "Rugby League Challenge Cup 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ff299931-e39c-4c81-83dd-4a545db66b08#id> ;
+    sal:name "Ladbrokes Challenge Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> .
+
+<http://www.bbc.co.uk/things/6d03c37b-bdb7-4d30-8fa3-f3f5705eafe8#id> a sport:Competition ;
+    rdfs:label "Rugby League World Cup 2014 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/cc47e0f1-f987-429e-91d1-1c879dc4655f#id> ;
+    sal:name "Rugby League World Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/37b00783-82e7-47e7-adbd-ff37b417d7bb#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/37b00783-82e7-47e7-adbd-ff37b417d7bb#id> .
+
+<http://www.bbc.co.uk/things/745c5acd-395c-443e-8c77-3dce8a0aaae7#id> a sport:Competition ;
+    rdfs:label "Rugby League Super League 2018 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/82078cba-ac0e-45c2-a0aa-8b337d7f91ef#id> ;
+    sal:name "Betfred Super League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id> .
+
+<http://www.bbc.co.uk/things/79fef273-f5f4-48f8-9a33-39415e2d207c#id> a sport:Competition ;
+    rdfs:label "Rugby League The Qualifiers 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b01bd8fb-0820-432d-bb4b-b2cca6167fdf#id> ;
+    sal:name "The Qualifiers"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2c1cb659-5e5e-4f99-bd77-84b24399f68c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2c1cb659-5e5e-4f99-bd77-84b24399f68c#id> .
+
+<http://www.bbc.co.uk/things/7a2b6b79-d90b-4c5c-9e14-8ae45601909d#id> a sport:Competition ;
+    rdfs:label "Rugby League World Club Series 2018 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5e9d7ea6-6bc1-4a15-a9fb-82af882c49dc#id> ;
+    sal:name "Dacia World Club Series"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/e4befd3a-68d8-419f-b4d6-5356035012a6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e4befd3a-68d8-419f-b4d6-5356035012a6#id> .
+
+<http://www.bbc.co.uk/things/80bfe5f8-22b5-4c96-8b74-9beb0bc73a64#id> a sport:Competition ;
+    rdfs:label "Rugby League The Qualifiers 2018 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0d0af3e7-4f68-4738-89bb-0d4baa929430#id> ;
+    sal:name "The Qualifiers"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2c1cb659-5e5e-4f99-bd77-84b24399f68c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2c1cb659-5e5e-4f99-bd77-84b24399f68c#id> .
+
+<http://www.bbc.co.uk/things/8357c13d-6547-4822-84b3-d876f47e2017#id> a sport:Competition ;
+    rdfs:label "Rugby League World Cup 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/aadc08cc-cb3b-46f3-aaa2-d44e7f6faeab#id> ;
+    sal:name "Rugby League World Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/37b00783-82e7-47e7-adbd-ff37b417d7bb#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/37b00783-82e7-47e7-adbd-ff37b417d7bb#id> .
+
+<http://www.bbc.co.uk/things/86e7f026-8abc-401f-8a7b-a1d126dc9f0e#id> a sport:Competition ;
+    rdfs:label "Rugby League National Conference Div 1 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/c2673ab1-4fce-46d1-a204-6881415f7f1b#id> ;
+    sal:name "National Conference Div 1"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1eb04a32-b464-48a3-a5f6-146ee9408f6c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1eb04a32-b464-48a3-a5f6-146ee9408f6c#id> .
+
+<http://www.bbc.co.uk/things/a98387e8-be86-4497-abbb-6499c4e4fff5#id> a sport:Competition ;
+    rdfs:label "Rugby League Championship 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/484c4e28-dd1a-4377-8bdd-39cbbe357929#id> ;
+    sal:name "Kingstone Press Championship"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ca4e3d49-b446-4bd2-8c46-6190d349b26b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ca4e3d49-b446-4bd2-8c46-6190d349b26b#id> .
+
+<http://www.bbc.co.uk/things/aa86328d-6352-46b5-9a5f-80ecd69f0b11#id> a sport:Competition ;
+    rdfs:label "Rugby League Championship 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5dab5a33-83ed-4f4d-8d78-95a85da06361#id> ;
+    sal:name "Betfred Championship"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ca4e3d49-b446-4bd2-8c46-6190d349b26b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ca4e3d49-b446-4bd2-8c46-6190d349b26b#id> .
+
+<http://www.bbc.co.uk/things/add77b73-3643-448f-a94f-5e9fea256786#id> a sport:Competition ;
+    rdfs:label "Rugby League Challenge Cup 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5e21d9da-2db9-46fa-a121-8e1377b26734#id> ;
+    sal:name "Ladbrokes Challenge Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> .
+
+<http://www.bbc.co.uk/things/b8822e7c-392a-44c4-afa0-c2f00f3f0d13#id> a sport:Competition ;
+    rdfs:label "Rugby League Championship 2018 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0b1795fb-ff0e-40a2-ad5c-697b58f5d1e1#id> ;
+    sal:name "Betfred Championship"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ca4e3d49-b446-4bd2-8c46-6190d349b26b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ca4e3d49-b446-4bd2-8c46-6190d349b26b#id> .
+
+<http://www.bbc.co.uk/things/c180c944-1437-41c6-a33d-cbd13e1e8c89#id> a sport:Competition ;
+    rdfs:label "Rugby League Championship Cup 2013 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/397d24de-2edb-471c-a91c-67c832342c5b#id> ;
+    sal:name "Rugby League Championship Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b06c0ba7-42c4-471c-9e19-8691b9d579b4#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b06c0ba7-42c4-471c-9e19-8691b9d579b4#id> .
+
+<http://www.bbc.co.uk/things/caaa2852-ed5d-4339-94b5-2e51ca67b51b#id> a sport:Competition ;
+    rdfs:label "Rugby League League 1 2018 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/9d2b6373-db7d-4b6f-82e3-0aeb565dc4c1#id> ;
+    sal:name "Kingstone Press League 1"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ad086ea3-6356-4586-abe5-5194bfa077f8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ad086ea3-6356-4586-abe5-5194bfa077f8#id> .
+
+<http://www.bbc.co.uk/things/d561ea76-4b76-4b39-9a97-80036178541e#id> a sport:Competition ;
+    rdfs:label "Rugby League League 1 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/101a81f2-c7fe-4246-a5ba-ff59e839ae09#id> ;
+    sal:name "Betfred Press League 1"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ad086ea3-6356-4586-abe5-5194bfa077f8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ad086ea3-6356-4586-abe5-5194bfa077f8#id> .
+
+<http://www.bbc.co.uk/things/d9df39cd-3028-4656-98ce-b96fdb6c497c#id> a sport:Competition ;
+    rdfs:label "Rugby League World Club Series 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/192a2446-0112-4c4e-87ad-ffa8b4d7aea7#id> ;
+    sal:name "World Club Series"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/e4befd3a-68d8-419f-b4d6-5356035012a6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e4befd3a-68d8-419f-b4d6-5356035012a6#id> .
+
+<http://www.bbc.co.uk/things/dbb562ca-dd40-4cb2-bc22-5c22b8ed161f#id> a sport:Competition ;
+    rdfs:label "Rugby Kingstone Press League 1 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/98d6ca4d-d479-4cef-b345-cf066faf6760#id> ;
+    sal:name "Kingstone Press League 1"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ad086ea3-6356-4586-abe5-5194bfa077f8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ad086ea3-6356-4586-abe5-5194bfa077f8#id> .
+
+<http://www.bbc.co.uk/things/df22ba02-055c-4759-8b92-dd8c74d4a042#id> a sport:Competition ;
+    rdfs:label "Rugby League The Qualifiers 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/3db24715-bc8f-4811-ae71-da3434dfedf6#id> ;
+    sal:name "The Qualifiers"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2c1cb659-5e5e-4f99-bd77-84b24399f68c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2c1cb659-5e5e-4f99-bd77-84b24399f68c#id> .
+
+<http://www.bbc.co.uk/things/e90529b9-2c8c-4e1e-8faf-a2f59aede430#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Championship 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ecd07a61-4a20-4682-8dec-1f7ebe18178a#id> a sport:Competition ;
+    rdfs:label "Rugby League Challenge Cup 2018 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/12a24987-f676-4d6c-b094-1e14e8381629#id> ;
+    sal:name "Ladbrokes Challenge Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> .
+
+<http://www.bbc.co.uk/things/f709bebb-a37c-42ca-873a-6b0c81152854#id> a sport:Competition ;
+    rdfs:label "Rugby League Challenge Cup 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/a95a4514-bc7f-4310-a5ba-9ffb327fbc20#id> ;
+    sal:name "Ladbrokes Challenge Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c4fd9b4b-134f-4b30-989c-e90281d43dfc#id> .
+
+<http://www.bbc.co.uk/things/fae2bd39-4190-4802-ba44-10ca6461ff47#id> a sport:Competition ;
+    rdfs:label "Rugby League Australian State of Origin 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/1c791bb7-ed03-4150-8012-1f8a572ce79c#id> ;
+    sal:name "Australian State of Origin"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/be500906-ed73-4151-b9b3-00705616f820#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/be500906-ed73-4151-b9b3-00705616f820#id> .
+
+<http://www.bbc.co.uk/things/0b1795fb-ff0e-40a2-ad5c-697b58f5d1e1#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Championship 2018 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-01-01"^^xsd:date ;
+    ns3:hasEnd "2018-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/0d0af3e7-4f68-4738-89bb-0d4baa929430#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League The Qualifiers 2018 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-01-01"^^xsd:date ;
+    ns3:hasEnd "2018-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/12a24987-f676-4d6c-b094-1e14e8381629#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Challenge Cup 2018 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-01-01"^^xsd:date ;
+    ns3:hasEnd "2018-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/12b953ec-4b26-485e-baae-f22ae3b724ff#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League National Rugby League (Australian) Premiership 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/192a2446-0112-4c4e-87ad-ffa8b4d7aea7#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League World Club Series 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1c791bb7-ed03-4150-8012-1f8a572ce79c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Australian State of Origin 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1d31f779-29c8-4730-9ec0-fb37ac11dd32#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League National Conference Premier 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/209abdcc-cdda-40f5-ad47-b37597eddc08#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Super League 2019 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-01-01"^^xsd:date ;
+    ns3:hasEnd "2019-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/20b59d24-22f0-430d-a7b1-9bc117595cdd#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League National Conference Division Two 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/20eefd64-cd6d-4f87-8948-d1af809c5ce6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Challenge Cup 2014 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2c95bbd4-2628-4b05-952e-0a63c8c6df4a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Four Nations 2014 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-09-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/38ec4bef-2cad-4c0a-8680-40bf443d32ad#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League World Club Series 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-01-01"^^xsd:date ;
+    ns3:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/397d24de-2edb-471c-a91c-67c832342c5b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Championship Cup 2013 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-09-01"^^xsd:date ;
+    ns3:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3db24715-bc8f-4811-ae71-da3434dfedf6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League The Qualifiers 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/432ccb55-28d8-4481-9897-5036270ed5de#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Challenge Cup 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-01-01"^^xsd:date ;
+    ns3:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/484c4e28-dd1a-4377-8bdd-39cbbe357929#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Championship 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4b0065a4-d494-450e-8fd4-6fedcc9421e0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Challenge Cup 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-06-17"^^xsd:date ;
+    ns3:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5dab5a33-83ed-4f4d-8d78-95a85da06361#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Championship 2019 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-01-01"^^xsd:date ;
+    ns3:hasEnd "2019-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5dbf4803-156b-49eb-a5e3-5e8d8fec0edb#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Four Nations Championship 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5e21d9da-2db9-46fa-a121-8e1377b26734#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Challenge Cup 2019 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-01-01"^^xsd:date ;
+    ns3:hasEnd "2019-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5e9d7ea6-6bc1-4a15-a9fb-82af882c49dc#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League World Club Series 2018 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-01-01"^^xsd:date ;
+    ns3:hasEnd "2018-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/673bf16b-8cf2-4df7-a0e7-879e3c440f39#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Super League 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-01-01"^^xsd:date ;
+    ns3:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/708dca56-c68f-4586-b571-c08b2becc2d0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League European Cup 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7d05e2ca-389e-4076-9f62-1b41b607a703#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Championship League 1 Shield 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-01-01"^^xsd:date ;
+    ns3:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7f44be2c-ee5c-47a9-99a6-0c5d5fa7ca52#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League The Qualifiers 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-01-01"^^xsd:date ;
+    ns3:hasEnd "2017-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/82078cba-ac0e-45c2-a0aa-8b337d7f91ef#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Super League 2018 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-01-01"^^xsd:date ;
+    ns3:hasEnd "2018-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8ccefe0a-6356-428a-aa87-fc508f2c855f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Super League 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-01-01"^^xsd:date ;
+    ns3:hasEnd "2017-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/95eff911-b425-4d0d-aa29-dac56d56cb98#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Championship 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-01-01"^^xsd:date ;
+    ns3:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/98d6ca4d-d479-4cef-b345-cf066faf6760#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Kingstone Press League 1 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-01-01"^^xsd:date ;
+    ns3:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/9d2b6373-db7d-4b6f-82e3-0aeb565dc4c1#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League League 1 2018 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-01-01"^^xsd:date ;
+    ns3:hasEnd "2018-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a95a4514-bc7f-4310-a5ba-9ffb327fbc20#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Challenge Cup 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/aadc08cc-cb3b-46f3-aaa2-d44e7f6faeab#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League World Cup 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-07-19"^^xsd:date ;
+    ns3:hasEnd "2018-01-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ad38adea-50b8-4578-8cff-98f07dbbc382#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Four Nations Championship 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-01-01"^^xsd:date ;
+    ns3:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b01bd8fb-0820-432d-bb4b-b2cca6167fdf#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League The Qualifiers 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-01-01"^^xsd:date ;
+    ns3:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b726dc76-7ba3-471e-a9e6-401df3d62c3c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Australian State of Origin (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c2673ab1-4fce-46d1-a204-6881415f7f1b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League National Conference Division One 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cc47e0f1-f987-429e-91d1-1c879dc4655f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League World Cup 2014 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d8509021-8d5e-4460-9872-45209b5b7acd#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Championship 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-01-01"^^xsd:date ;
+    ns3:hasEnd "2017-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ee512696-9d74-424f-88e6-db7c38005524#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Championship Shield 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f37281c3-f048-4fc1-99eb-6cb45b7b6735#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League World Club Series 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-01-01"^^xsd:date ;
+    ns3:hasEnd "2017-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f49d62ca-a9a2-477d-ae66-39590e8a9b78#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Kingstone Press League 1 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f58bc75f-c318-40e5-9c2f-aef9d3c3055b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Super League 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f918fa83-1559-447b-934e-519bdf8e29eb#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League World Cup 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-06-17"^^xsd:date ;
+    ns3:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fb1de901-64f3-4159-a2d0-e3533feeb815#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Kingstone Press League 1 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-01-01"^^xsd:date ;
+    ns3:hasEnd "2017-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fb8ff6b3-0f4e-4734-814c-5f1c63827b19#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Rugby League World Cup 2017 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-01-01"^^xsd:date ;
+    ns3:hasEnd "2017-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fd044703-cb56-4403-a22f-1114ff2a68bb#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Super League 2014 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ff103bd3-8ba3-4a1a-ae89-6c26b37de044#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Super League 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-06-17"^^xsd:date ;
+    ns3:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ff299931-e39c-4c81-83dd-4a545db66b08#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Rugby League Challenge Cup 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-01-01"^^xsd:date ;
+    ns3:hasEnd "2017-12-31"^^xsd:date .
+

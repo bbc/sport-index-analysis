@@ -1,0 +1,115 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/d5e2c694-b82f-4794-b106-34bbd6b43555#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2015 Rugby Super League Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-league/rugby-league-2015-super-league-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-650;8+1: Rugby League rename 'Super 8s' round in Super League and The Qualifiers competitions" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-07-04T12:20:39+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "9"^^xsd:int .
+
+<http://www.bbc.co.uk/things/5548cf2b-c118-4378-8f69-80eb25826669#id> sport:firstStage <http://www.bbc.co.uk/things/1af2f206-70bb-49a5-85a4-82448d4f96db#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/e60a439d-c668-4872-86d5-4376355b5379#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/87866239-8cd2-428a-a020-373e06972fa3#id> .
+
+<http://www.bbc.co.uk/things/3df358f9-5883-4e34-b239-2e93172d171d#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Rugby Super League 2015"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002015S1R1> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel ""@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/51429776-cfde-4ff5-99f5-602117aa02a2#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Rugby Super League 2015"@en-gb ;
+    sal:name "Super 8s"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002015S2R1> ;
+    core:preferredLabel "Super 8s"@en-gb ;
+    core:shortLabel "Super 8s"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/7666a689-42fb-4650-88aa-dcadcf9c9172#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 3 of Rugby Super League 2015"@en-gb ;
+    sal:name "Grand Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002015S3R2> ;
+    core:preferredLabel "Grand Final"@en-gb ;
+    core:shortLabel "Grand Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/b1f515b9-56cb-4a05-9f14-de61918a0650#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 3 of Rugby Super League 2015"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002015S3R1> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<urn:sports-data:CRLB1002015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002015S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002015S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002015S3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002015S3R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002015S3R2> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/1af2f206-70bb-49a5-85a4-82448d4f96db#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Rugby Super League 2015"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002015S1> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel "League Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/3df358f9-5883-4e34-b239-2e93172d171d#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/e60a439d-c668-4872-86d5-4376355b5379#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/87866239-8cd2-428a-a020-373e06972fa3#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 3 of Rugby Super League 2015"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002015S3> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel "Knockout Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/b1f515b9-56cb-4a05-9f14-de61918a0650#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/7666a689-42fb-4650-88aa-dcadcf9c9172#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/e60a439d-c668-4872-86d5-4376355b5379#id> ;
+    sport:stageNumber "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/e60a439d-c668-4872-86d5-4376355b5379#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 2 of Rugby Super League 2015"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002015S2> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel ""@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/51429776-cfde-4ff5-99f5-602117aa02a2#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/87866239-8cd2-428a-a020-373e06972fa3#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/1af2f206-70bb-49a5-85a4-82448d4f96db#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

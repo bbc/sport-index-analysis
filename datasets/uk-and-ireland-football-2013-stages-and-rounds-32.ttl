@@ -1,0 +1,1197 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/44bb771c-64e7-4625-b5a5-75d9035c19d5#id> a provenance:Dataset ;
+    rdfs:label "Football: UK and Ireland 2013 Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/football/uk-and-ireland-football-2013-stages-and-rounds-32.ttl" ;
+    provenance:changeReason "Removing FA trophy" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2014-11-19T08:43:56+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:tom.grahame@bbc.co.uk> ;
+    provenance:version "32"^^xsd:int .
+
+<http://www.bbc.co.uk/things/15cb7a57-e6b6-4116-bf5f-7c9103b63710#id> sport:firstStage <http://www.bbc.co.uk/things/46de136f-3c32-4152-a68b-147f844e8bf1#id> .
+
+<http://www.bbc.co.uk/things/358e1a05-2380-40a1-a1c3-45242247ad1f#id> sport:firstStage <http://www.bbc.co.uk/things/760955d3-b830-4977-9375-e1060d09ae74#id> .
+
+<http://www.bbc.co.uk/things/41feb54c-bb0f-4879-aed7-8255cf54cb82#id> sport:firstStage <http://www.bbc.co.uk/things/1deb3162-a2d8-4735-994a-49f0e6416449#id> .
+
+<http://www.bbc.co.uk/things/568b8b9a-dc78-44b6-bbee-fe86d359609e#id> sport:hasStage <http://www.bbc.co.uk/things/b6f15b3d-0efc-4ff1-ba37-47f3148a50d9#id> .
+
+<http://www.bbc.co.uk/things/5e890324-b36a-4144-99ae-be385a894f6f#id> sport:firstStage <http://www.bbc.co.uk/things/bb0d45b0-b61b-4bce-9cc7-f6cf74972b79#id> .
+
+<http://www.bbc.co.uk/things/679d487d-7462-4946-88e4-9b9fc3ae06a2#id> sport:firstStage <http://www.bbc.co.uk/things/b9a7f66e-56f6-4160-86a4-52615e32ed89#id> .
+
+<http://www.bbc.co.uk/things/7cbb74cb-d637-46d2-b6e1-255e59759597#id> sport:hasStage <http://www.bbc.co.uk/things/d8da7bbd-1c8b-4258-829e-8e5df3fd51f1#id> .
+
+<http://www.bbc.co.uk/things/add19fa0-3653-4167-aa3f-068627b1bc0a#id> sport:firstStage <http://www.bbc.co.uk/things/1171f020-1f64-4a0b-9055-c74468999b32#id> .
+
+<http://www.bbc.co.uk/things/c3d609f6-6102-4bcc-a196-eefe76c173c9#id> sport:firstStage <http://www.bbc.co.uk/things/621238c3-5691-43a4-afc1-e850e49faba4#id> .
+
+<http://www.bbc.co.uk/things/d52e107e-bef4-4ab2-80c1-7b7a3c91e46d#id> sport:firstStage <http://www.bbc.co.uk/things/4745cede-35aa-4da0-8a1f-7cacb7915066#id> .
+
+<http://www.bbc.co.uk/things/dc0af661-59fb-49c5-84c4-a50eb01e133e#id> sport:hasStage <http://www.bbc.co.uk/things/891d8cd7-72bf-4968-b229-b19498d028a7#id> .
+
+<http://www.bbc.co.uk/things/ddef840a-6de5-4a9c-9548-dfc3eb1eb971#id> sport:firstStage <http://www.bbc.co.uk/things/37330058-b809-46a8-bcef-1e46f0d6ff65#id> .
+
+<http://www.bbc.co.uk/things/e63f2f6a-4a5b-4a79-b94d-27f74d151e61#id> sport:firstStage <http://www.bbc.co.uk/things/92a827db-ed79-4482-b312-22dc8e04d5db#id> .
+
+<http://www.bbc.co.uk/things/fa32d3ca-4d4e-4854-bfa1-a0f22b036374#id> sport:firstStage <http://www.bbc.co.uk/things/f05d9edb-0a4e-413e-a152-6b1fe38f8038#id> .
+
+<urn:sports-data:CFBB1232013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1232013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1242013S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1242013S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802013S1R9> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/046aaeac-f567-4f54-abf3-6f73186287e5#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Scottish Challenge Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372013S1R3> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/0840b23d-d075-48da-ba16-8ccd65503bec#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of The FA Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12013S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/0867a37f-fc5d-4f80-b4d9-55908260de77#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782013S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/0b5c9370-c701-4d92-a8d1-014f1709753f#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Scottish Championship Play-offs"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4982013S1R2> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/0c8bab69-0395-45c9-ae8a-cc28f1b19fcd#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802013S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/0e25ffcb-a0d0-41b7-9306-770f18e3d339#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432013S1R3> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/1171f020-1f64-4a0b-9055-c74468999b32#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Scottish Communities League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/97faebab-6112-4a61-9c85-f43dba7a55b7#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/179a5f00-46c4-4006-8518-9499122d180b#id>,
+        <http://www.bbc.co.uk/things/33a0d453-ac12-45d9-aec1-3585d4f7d2af#id>,
+        <http://www.bbc.co.uk/things/4ecdc04c-59b6-484e-a851-4d3883160415#id>,
+        <http://www.bbc.co.uk/things/af02e9f0-f01e-419d-8236-4b09372581e3#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/50decdff-babd-488d-8929-12b2fe446941#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/12def29a-eaec-4d8f-9609-ce9f545837b6#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of The FA Cup"@en-gb ;
+    sal:name "Sixth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12013S1R6> ;
+    core:preferredLabel "Sixth Round"@en-gb ;
+    core:shortLabel "Sixth Round"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/15aa2647-d89c-4b20-8ab6-002021d38413#id> a sport:Round ;
+    rdfs:label "Round 9 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Northern Area Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R9> ;
+    core:preferredLabel "Northern Area Final"@en-gb ;
+    core:shortLabel "Northern Area Final"@en-gb ;
+    sport:roundNumber "9"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/179a5f00-46c4-4006-8518-9499122d180b#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Scottish Communities League Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772013S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/1a135348-cb69-41bf-9b89-d7d6d5a34899#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of The FA Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12013S1R7> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/1deb3162-a2d8-4735-994a-49f0e6416449#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Irish Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/837163dd-eebc-4625-acb6-ef30046d56d4#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/65fc6c31-381a-4959-9f77-8e91a25e231e#id>,
+        <http://www.bbc.co.uk/things/7c22f154-145b-438d-b16c-65424842be43#id>,
+        <http://www.bbc.co.uk/things/933c7c20-4d24-4999-822a-8742cdb1db33#id>,
+        <http://www.bbc.co.uk/things/daafa129-20a8-43c4-a0e4-1cc0100f8f2f#id>,
+        <http://www.bbc.co.uk/things/eeb1b4b8-51ad-4602-be5e-6574ca31e212#id>,
+        <http://www.bbc.co.uk/things/f35617bc-f6fc-4b37-a2c2-56d345bf4527#id>,
+        <http://www.bbc.co.uk/things/fe423cdb-ad10-42ec-b91b-fe7c94939ed1#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/5c21e0e3-6f29-4bf6-ae19-a99c1dfb74aa#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/235e83fd-11bf-4608-bc5d-69b5f7ac1c39#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of The FA Women's Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692013S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/25e61fd9-06db-47d4-8e1a-f5501f4ef021#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Scottish Challenge Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372013S1R4> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/262e9242-00ed-4024-9f9e-583fbb4e3d8f#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of The FA Women's Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692013S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/26da8ffa-1192-4328-b718-30ca8fb46b42#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682013S1R5> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/2a9f3035-45c7-4257-bcf6-69d6eed767c8#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Northern Section First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R1> ;
+    core:preferredLabel "Northern Section First Round"@en-gb ;
+    core:shortLabel "Northern Section First Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/2fa78e73-a9a9-487f-9241-a5fdc5367aea#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22013S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/33a0d453-ac12-45d9-aec1-3585d4f7d2af#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Scottish Communities League Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772013S1R4> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/3615b460-8f38-479a-830a-5420e8956d3d#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of The FA Cup"@en-gb ;
+    sal:name "Fifth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12013S1R5> ;
+    core:preferredLabel "Fifth Round"@en-gb ;
+    core:shortLabel "Fifth Round"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/37330058-b809-46a8-bcef-1e46f0d6ff65#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Scottish Challenge Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/cd5c1a8c-af66-4ef6-9c94-82633a70cfdc#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/046aaeac-f567-4f54-abf3-6f73186287e5#id>,
+        <http://www.bbc.co.uk/things/25e61fd9-06db-47d4-8e1a-f5501f4ef021#id>,
+        <http://www.bbc.co.uk/things/530e7b0e-0773-4aa6-ad0e-cd416d0b268d#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/a0f6be1c-2adf-4c64-8f58-cdc56f98f3a8#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/3931b2ba-5781-4ed2-8261-7eaf9cfce4a9#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of The FA Women's Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692013S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/3a8dccda-bc6a-4e3e-9779-7bf5487084e2#id> a sport:Round ;
+    rdfs:label "Round 10 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Southern Area Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R10> ;
+    core:preferredLabel "Southern Area Final"@en-gb ;
+    core:shortLabel "Southern Area Final"@en-gb ;
+    sport:roundNumber "10"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/3c7a137e-e2eb-4efa-8cf9-0e8606458802#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Extra Preliminary Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682013S1R1> ;
+    core:preferredLabel "Extra Preliminary Round"@en-gb ;
+    core:shortLabel "Extra Preliminary Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/45fcd377-3bf3-4238-8b82-fc0b86163612#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782013S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/46de136f-3c32-4152-a68b-147f844e8bf1#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Welsh Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/5735045a-d913-4b7d-bd7a-ce8764c8d624#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0867a37f-fc5d-4f80-b4d9-55908260de77#id>,
+        <http://www.bbc.co.uk/things/45fcd377-3bf3-4238-8b82-fc0b86163612#id>,
+        <http://www.bbc.co.uk/things/6618f016-1568-49f4-a163-2c17a5f4dae7#id>,
+        <http://www.bbc.co.uk/things/be0c9c2f-ee71-4b54-8ade-c0e450e734c2#id>,
+        <http://www.bbc.co.uk/things/fe838c96-53ae-4361-948a-2bd277d4a913#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/6c380f11-6234-4558-b3c2-1439320a2a79#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/470f51a0-86f7-4413-bb4c-c3d8589457bc#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802013S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/4745cede-35aa-4da0-8a1f-7cacb7915066#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of FA Cup Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/3c7a137e-e2eb-4efa-8cf9-0e8606458802#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/26da8ffa-1192-4328-b718-30ca8fb46b42#id>,
+        <http://www.bbc.co.uk/things/5a9fd265-b615-49f0-9f8a-9cb21a06e770#id>,
+        <http://www.bbc.co.uk/things/8c8a6882-afcd-4648-990f-c7bae8f97191#id>,
+        <http://www.bbc.co.uk/things/e51d9b0f-93ad-4c11-8146-30a70a635bb8#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/a3715d48-ec6d-45b5-bbb4-be7ccd6b39ba#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/4c92979a-c44e-4f2c-b5cd-442f4cba697b#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of The FA Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12013S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/4dc72501-9824-491c-98cf-115db0160a4e#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432013S1R5> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/4ecdc04c-59b6-484e-a851-4d3883160415#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Scottish Communities League Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772013S1R5> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/50decdff-babd-488d-8929-12b2fe446941#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Scottish Communities League Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772013S1R6> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/530e7b0e-0773-4aa6-ad0e-cd416d0b268d#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Scottish Challenge Cup"@en-gb ;
+    sal:name "Second round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372013S1R2> ;
+    core:preferredLabel "Second round"@en-gb ;
+    core:shortLabel "Second round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5735045a-d913-4b7d-bd7a-ce8764c8d624#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782013S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5a9fd265-b615-49f0-9f8a-9cb21a06e770#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Preliminary Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682013S1R2> ;
+    core:preferredLabel "Preliminary Round"@en-gb ;
+    core:shortLabel "Preliminary Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5b03d63d-1784-4146-937d-e660921f63d7#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Northern Section Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R7> ;
+    core:preferredLabel "Northern Section Semi-Final"@en-gb ;
+    core:shortLabel "Northern Section Semi-Final"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5bb7cddc-026a-4e40-85bf-78e56053b775#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Northern Section Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R3> ;
+    core:preferredLabel "Northern Section Second Round"@en-gb ;
+    core:shortLabel "Northern Section Second Round"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5c21e0e3-6f29-4bf6-ae19-a99c1dfb74aa#id> a sport:Round ;
+    rdfs:label "Round 9 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152013S1R9> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 9 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5f0c9015-cc60-4772-9966-e748a460f15f#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of The FA Women's Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692013S1R7> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/621238c3-5691-43a4-afc1-e850e49faba4#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Welsh League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/de9b6663-70d5-4a55-b95d-157a979ec554#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0e25ffcb-a0d0-41b7-9306-770f18e3d339#id>,
+        <http://www.bbc.co.uk/things/4dc72501-9824-491c-98cf-115db0160a4e#id>,
+        <http://www.bbc.co.uk/things/6b97cbf3-0c38-4d2b-8a5e-df52067d572d#id>,
+        <http://www.bbc.co.uk/things/c4a16b9e-beda-46ff-a46c-12b982f65974#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/fe88aa89-b66e-4765-9575-fa997faeda92#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/65fc6c31-381a-4959-9f77-8e91a25e231e#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Third round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152013S1R3> ;
+    core:preferredLabel "Third round"@en-gb ;
+    core:shortLabel "Third round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6618f016-1568-49f4-a163-2c17a5f4dae7#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782013S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/672f6e80-36b0-44f2-b8f3-3b271b41080e#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802013S1R8> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6b97cbf3-0c38-4d2b-8a5e-df52067d572d#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432013S1R4> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6c380f11-6234-4558-b3c2-1439320a2a79#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782013S1R7> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6c8dce1d-8373-42f7-bcf4-1114718d56e4#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Scottish League One Play-offs"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4992013S1R1> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/749b1863-6f1a-4da4-950c-a7e9b00d2326#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22013S1R7> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/760955d3-b830-4977-9375-e1060d09ae74#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/c7bd1087-f1be-4066-a45e-c9dd9c2077c7#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/2fa78e73-a9a9-487f-9241-a5fdc5367aea#id>,
+        <http://www.bbc.co.uk/things/88d948aa-5a31-4c42-8c8f-8848d6d20f42#id>,
+        <http://www.bbc.co.uk/things/9fe356a9-75fb-475f-87b8-6a6448b1245d#id>,
+        <http://www.bbc.co.uk/things/bd8d254d-5965-4408-89cb-c1aa855f2550#id>,
+        <http://www.bbc.co.uk/things/d51c9762-b49b-4c07-842f-4896cfb3119a#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/749b1863-6f1a-4da4-950c-a7e9b00d2326#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/76cef355-4ccb-4ade-8ca7-49200acd6154#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Scottish Premiership Play-offs"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6972013S1R2> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/79ab2981-e563-4f9b-a653-4452524433d9#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of The FA Women's Cup"@en-gb ;
+    sal:name "Sixth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692013S1R6> ;
+    core:preferredLabel "Sixth Round"@en-gb ;
+    core:shortLabel "Sixth Round"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/7c22f154-145b-438d-b16c-65424842be43#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Fifth round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152013S1R5> ;
+    core:preferredLabel "Fifth round"@en-gb ;
+    core:shortLabel "Fifth round"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/837163dd-eebc-4625-acb6-ef30046d56d4#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "First round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152013S1R1> ;
+    core:preferredLabel "First round"@en-gb ;
+    core:shortLabel "First round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/88d948aa-5a31-4c42-8c8f-8848d6d20f42#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22013S1R5> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/891d8cd7-72bf-4968-b229-b19498d028a7#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Scottish League One Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB499> ;
+    sport:firstRound <http://www.bbc.co.uk/things/6c8dce1d-8373-42f7-bcf4-1114718d56e4#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/b3e9485e-5c4a-47b8-98ea-6b326883bec8#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/8c8a6882-afcd-4648-990f-c7bae8f97191#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682013S1R4> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/92a827db-ed79-4482-b312-22dc8e04d5db#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Football Trophy"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/2a9f3035-45c7-4257-bcf6-69d6eed767c8#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/15aa2647-d89c-4b20-8ab6-002021d38413#id>,
+        <http://www.bbc.co.uk/things/3a8dccda-bc6a-4e3e-9779-7bf5487084e2#id>,
+        <http://www.bbc.co.uk/things/5b03d63d-1784-4146-937d-e660921f63d7#id>,
+        <http://www.bbc.co.uk/things/5bb7cddc-026a-4e40-85bf-78e56053b775#id>,
+        <http://www.bbc.co.uk/things/a925a8c8-4a35-43b7-90a3-5dba96a8f956#id>,
+        <http://www.bbc.co.uk/things/ab67ec74-1fc6-4a84-975a-02772ba4f383#id>,
+        <http://www.bbc.co.uk/things/c72ec15e-1321-4914-9d81-682f3db3b1ab#id>,
+        <http://www.bbc.co.uk/things/ca0c06ac-d3ca-4b9a-9b73-8b00d6eca03c#id>,
+        <http://www.bbc.co.uk/things/dec143c4-a604-4492-9ef2-760146ade0b8#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/e5cc873c-e285-423b-98ab-0d7cbccc79b3#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/933c7c20-4d24-4999-822a-8742cdb1db33#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Second round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152013S1R2> ;
+    core:preferredLabel "Second round"@en-gb ;
+    core:shortLabel "Second round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/9531392b-3a99-4df9-8dd3-66afaef93d9d#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802013S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/97faebab-6112-4a61-9c85-f43dba7a55b7#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Scottish Communities League Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772013S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/9fe356a9-75fb-475f-87b8-6a6448b1245d#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22013S1R6> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a0f6be1c-2adf-4c64-8f58-cdc56f98f3a8#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Scottish Challenge Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372013S1R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a1bc4e9b-0d89-4fd7-9b54-edcf557ac07d#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of The FA Women's Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692013S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a3715d48-ec6d-45b5-bbb4-be7ccd6b39ba#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682013S1R6> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a925a8c8-4a35-43b7-90a3-5dba96a8f956#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Southern Section Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R6> ;
+    core:preferredLabel "Southern Section Quarter-Final"@en-gb ;
+    core:shortLabel "Southern Section Quarter-Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ab67ec74-1fc6-4a84-975a-02772ba4f383#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Northern Section Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R5> ;
+    core:preferredLabel "Northern Section Quarter-Final"@en-gb ;
+    core:shortLabel "Northern Section Quarter-Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/af02e9f0-f01e-419d-8236-4b09372581e3#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Scottish Communities League Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1772013S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/b0c38cc4-7047-44ed-9a04-7c3fef0a0d52#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of The FA Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12013S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/b3e9485e-5c4a-47b8-98ea-6b326883bec8#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Scottish League One Play-offs"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4992013S1R2> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/b6f15b3d-0efc-4ff1-ba37-47f3148a50d9#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Scottish Premiership Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB697> ;
+    sport:firstRound <http://www.bbc.co.uk/things/76cef355-4ccb-4ade-8ca7-49200acd6154#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/e9b2be59-6bbc-47f1-9d0a-831f3f04c42e#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/b9a7f66e-56f6-4160-86a4-52615e32ed89#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Scottish Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/0c8bab69-0395-45c9-ae8a-cc28f1b19fcd#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/470f51a0-86f7-4413-bb4c-c3d8589457bc#id>,
+        <http://www.bbc.co.uk/things/672f6e80-36b0-44f2-b8f3-3b271b41080e#id>,
+        <http://www.bbc.co.uk/things/9531392b-3a99-4df9-8dd3-66afaef93d9d#id>,
+        <http://www.bbc.co.uk/things/bcfcf664-85cd-4158-8eb4-65ff915355d3#id>,
+        <http://www.bbc.co.uk/things/dde00969-c8e3-4688-ae66-00cc83f15473#id>,
+        <http://www.bbc.co.uk/things/e931db3f-40c5-4ae8-b3f3-7250c95413f6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/eedcf3e7-d414-46a6-8357-5cbffb245aca#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/ba6880d7-d2cd-4ff7-ad04-1e894143595c#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of The FA Women's Cup"@en-gb ;
+    sal:name "Fifth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692013S1R5> ;
+    core:preferredLabel "Fifth Round"@en-gb ;
+    core:shortLabel "Fifth Round"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/bb0d45b0-b61b-4bce-9cc7-f6cf74972b79#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of The FA Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/b0c38cc4-7047-44ed-9a04-7c3fef0a0d52#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0840b23d-d075-48da-ba16-8ccd65503bec#id>,
+        <http://www.bbc.co.uk/things/12def29a-eaec-4d8f-9609-ce9f545837b6#id>,
+        <http://www.bbc.co.uk/things/1a135348-cb69-41bf-9b89-d7d6d5a34899#id>,
+        <http://www.bbc.co.uk/things/3615b460-8f38-479a-830a-5420e8956d3d#id>,
+        <http://www.bbc.co.uk/things/4c92979a-c44e-4f2c-b5cd-442f4cba697b#id>,
+        <http://www.bbc.co.uk/things/de53e32f-9d2c-4207-a12a-10430ee874fb#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/c9372bd4-d78f-4f7e-a0c6-b21550b51b8e#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/bcfcf664-85cd-4158-8eb4-65ff915355d3#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802013S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/bd8d254d-5965-4408-89cb-c1aa855f2550#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22013S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/be0c9c2f-ee71-4b54-8ade-c0e450e734c2#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782013S1R5> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/c4a16b9e-beda-46ff-a46c-12b982f65974#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432013S1R2> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/c72ec15e-1321-4914-9d81-682f3db3b1ab#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Southern Section First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R2> ;
+    core:preferredLabel "Southern Section First Round"@en-gb ;
+    core:shortLabel "Southern Section First Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/c7bd1087-f1be-4066-a45e-c9dd9c2077c7#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of League Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22013S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/c9372bd4-d78f-4f7e-a0c6-b21550b51b8e#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of The FA Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12013S1R8> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ca0c06ac-d3ca-4b9a-9b73-8b00d6eca03c#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Southern Section Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R4> ;
+    core:preferredLabel "Southern Section Second Round"@en-gb ;
+    core:shortLabel "Southern Section Second Round"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/cd5c1a8c-af66-4ef6-9c94-82633a70cfdc#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Scottish Challenge Cup"@en-gb ;
+    sal:name "First round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB372013S1R1> ;
+    core:preferredLabel "First round"@en-gb ;
+    core:shortLabel "First round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/d51c9762-b49b-4c07-842f-4896cfb3119a#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22013S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/d8da7bbd-1c8b-4258-829e-8e5df3fd51f1#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Scottish Championship Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB498> ;
+    sport:firstRound <http://www.bbc.co.uk/things/0b5c9370-c701-4d92-a8d1-014f1709753f#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/daafa129-20a8-43c4-a0e4-1cc0100f8f2f#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152013S1R7> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/dde00969-c8e3-4688-ae66-00cc83f15473#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Semi-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802013S1R7> ;
+    core:preferredLabel "Semi-Finals"@en-gb ;
+    core:shortLabel "Semi-Finals"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/de53e32f-9d2c-4207-a12a-10430ee874fb#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of The FA Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12013S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/de9b6663-70d5-4a55-b95d-157a979ec554#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Prelimary Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432013S1R1> ;
+    core:preferredLabel "Prelimary Round"@en-gb ;
+    core:shortLabel "Prelimary Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/dec143c4-a604-4492-9ef2-760146ade0b8#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Southern Section Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R8> ;
+    core:preferredLabel "Southern Section Semi-Final"@en-gb ;
+    core:shortLabel "Southern Section Semi-Final"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/e4b66210-e210-4dd8-996f-bc99b94c7d67#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of The FA Women's Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692013S1R8> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/e51d9b0f-93ad-4c11-8146-30a70a635bb8#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682013S1R3> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/e5cc873c-e285-423b-98ab-0d7cbccc79b3#id> a sport:Round ;
+    rdfs:label "Round 11 of Stage 1 of Football Trophy"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72013S1R11> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "11"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/e931db3f-40c5-4ae8-b3f3-7250c95413f6#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Quarter-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802013S1R6> ;
+    core:preferredLabel "Quarter-Finals"@en-gb ;
+    core:shortLabel "Quarter-Finals"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/e9b2be59-6bbc-47f1-9d0a-831f3f04c42e#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Scottish Premiership Play-offs"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6972013S1R3> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/eeb1b4b8-51ad-4602-be5e-6574ca31e212#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Sixth round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152013S1R6> ;
+    core:preferredLabel "Sixth round"@en-gb ;
+    core:shortLabel "Sixth round"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/eedcf3e7-d414-46a6-8357-5cbffb245aca#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Fifth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802013S1R5> ;
+    core:preferredLabel "Fifth Round"@en-gb ;
+    core:shortLabel "Fifth Round"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/f05d9edb-0a4e-413e-a152-6b1fe38f8038#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of The FA Women's Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6692013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/235e83fd-11bf-4608-bc5d-69b5f7ac1c39#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/262e9242-00ed-4024-9f9e-583fbb4e3d8f#id>,
+        <http://www.bbc.co.uk/things/3931b2ba-5781-4ed2-8261-7eaf9cfce4a9#id>,
+        <http://www.bbc.co.uk/things/5f0c9015-cc60-4772-9966-e748a460f15f#id>,
+        <http://www.bbc.co.uk/things/79ab2981-e563-4f9b-a653-4452524433d9#id>,
+        <http://www.bbc.co.uk/things/a1bc4e9b-0d89-4fd7-9b54-edcf557ac07d#id>,
+        <http://www.bbc.co.uk/things/ba6880d7-d2cd-4ff7-ad04-1e894143595c#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/e4b66210-e210-4dd8-996f-bc99b94c7d67#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/f35617bc-f6fc-4b37-a2c2-56d345bf4527#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Fourth round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152013S1R4> ;
+    core:preferredLabel "Fourth round"@en-gb ;
+    core:shortLabel "Fourth round"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/fe423cdb-ad10-42ec-b91b-fe7c94939ed1#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152013S1R8> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/fe838c96-53ae-4361-948a-2bd277d4a913#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Welsh Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4782013S1R6> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/fe88aa89-b66e-4765-9575-fa997faeda92#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432013S1R6> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB12013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12013S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12013S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1772013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22013S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152013S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152013S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152013S1R9> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4782013S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB498> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4982013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB499> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4992013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4992013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692013S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6692013S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB697> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6972013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6972013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R10> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R11> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72013S1R9> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802013S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802013S1R8> a cms:Sports-DataLocator .
+

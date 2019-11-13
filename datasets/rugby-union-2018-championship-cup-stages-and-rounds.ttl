@@ -1,0 +1,136 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/c1fbde04-52de-4e68-b6f0-4ca9b2d188b7#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: Championship Cup 2018 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-union/rugby-union-2018-championship-cup-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4642: Model CRUB358 Championship Cup 2018/19 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-08-07T15:43:06+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/8948fb79-740b-4fab-a4db-b5ff430b30cc#id> sport:firstStage <http://www.bbc.co.uk/things/94735b1e-c88f-4772-a7ae-4e2b848d7133#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/c3ad1b17-8885-4b90-beea-c2941a87aa4b#id> .
+
+<http://www.bbc.co.uk/things/5f1b6e1d-23b7-4dbc-aae3-75b602752905#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Championship Cup"@en-gb ;
+    sal:name "Group 2"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3582018S1R3> ;
+    core:preferredLabel "Group 2"@en-gb ;
+    core:shortLabel "Group 2"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/818862a9-7c71-492f-9578-d08b4377e78c#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Championship Cup"@en-gb ;
+    sal:name "Group 1"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3582018S1R2> ;
+    core:preferredLabel "Group 1"@en-gb ;
+    core:shortLabel "Group 1"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/873d7e89-5c33-43f3-8aaa-2c0a870390e6#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Championship Cup"@en-gb ;
+    sal:name "Group 3"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3582018S1R4> ;
+    core:preferredLabel "Group 3"@en-gb ;
+    core:shortLabel "Group 3"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/8d34883b-abcb-4dfe-ab37-fae2ab9fa170#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Championship Cup"@en-gb ;
+    sal:name "Semi Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3582018S2R2> ;
+    core:preferredLabel "Semi Final"@en-gb ;
+    core:shortLabel "Semi Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/97743aa3-55ec-4827-8873-41c69a181bdf#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Championship Cup"@en-gb ;
+    sal:name "Quarter Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3582018S2R1> ;
+    core:preferredLabel "Quarter Final"@en-gb ;
+    core:shortLabel "Quarter Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/cf0e5435-4008-4dc1-abe9-3381a7d03906#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Championship Cup"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3582018S1R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/d19cfc6e-6d1b-4d1c-8e35-434d6a2785d3#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Championship Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3582018S2R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<urn:sports-data:CRUB3582018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3582018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3582018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3582018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3582018S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3582018S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3582018S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3582018S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3582018S2R3> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/94735b1e-c88f-4772-a7ae-4e2b848d7133#id> a sport:LeagueCompetition ;
+    sal:name "Stage 1 of Championship Cup"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3582018S1> ;
+    core:preferredLabel "Championship Cup Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/cf0e5435-4008-4dc1-abe9-3381a7d03906#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/5f1b6e1d-23b7-4dbc-aae3-75b602752905#id>,
+        <http://www.bbc.co.uk/things/818862a9-7c71-492f-9578-d08b4377e78c#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/873d7e89-5c33-43f3-8aaa-2c0a870390e6#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/c3ad1b17-8885-4b90-beea-c2941a87aa4b#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/c3ad1b17-8885-4b90-beea-c2941a87aa4b#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Championship Cup"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3582018S2> ;
+    core:preferredLabel "Championship Cup Knockout Stage"@en-gb ;
+    core:shortLabel "Knockout Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/97743aa3-55ec-4827-8873-41c69a181bdf#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/8d34883b-abcb-4dfe-ab37-fae2ab9fa170#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/d19cfc6e-6d1b-4d1c-8e35-434d6a2785d3#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/94735b1e-c88f-4772-a7ae-4e2b848d7133#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

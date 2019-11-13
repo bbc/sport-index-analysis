@@ -1,0 +1,146 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/ed1cef18-9038-4498-9860-a3ec350e9289#id> a provenance:Dataset ;
+    rdfs:label "Football: Irish Cup 2015 stages and rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/football/irish-cup-2015-stages-and-rounds-4.ttl" ;
+    provenance:changeReason "SLS-671: Model CFBB415 Irish Cup 2015/16 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-08-06T07:49:48+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:dong.liu@bbc.co.uk> ;
+    provenance:version "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/338b72b3-8ba7-4623-b79e-a8885c4f54d2#id> sport:hasStage <http://www.bbc.co.uk/things/16d00b82-3d49-4edc-a498-fb2c21fa11a0#id> .
+
+<http://www.bbc.co.uk/things/14790f95-f7ac-4bf4-a961-8a4e62d0e6bf#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Sixth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152015S1R6> ;
+    core:preferredLabel "Sixth Round"@en-gb ;
+    core:shortLabel "Sixth Round"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/16d00b82-3d49-4edc-a498-fb2c21fa11a0#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Irish Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152015S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/a8ae5ddf-3a25-4592-a211-86122d9d3210#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/14790f95-f7ac-4bf4-a961-8a4e62d0e6bf#id>,
+        <http://www.bbc.co.uk/things/193018ee-0ba0-4ed9-a5e8-5c532007e954#id>,
+        <http://www.bbc.co.uk/things/19565532-4d56-4ec5-8a04-db049041b0f6#id>,
+        <http://www.bbc.co.uk/things/9dcd6fcf-55ed-468e-af1a-6a69369d48dd#id>,
+        <http://www.bbc.co.uk/things/d8f60bc4-77fa-4b45-a99d-9ff21f0402f1#id>,
+        <http://www.bbc.co.uk/things/f1ab560c-2d5b-4fa7-b23c-60065ff04a51#id>,
+        <http://www.bbc.co.uk/things/f52b626d-190b-4c3a-b94b-ebb664f8bb3a#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/595fd8e1-d54a-45a9-a867-9119a56cdf78#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/193018ee-0ba0-4ed9-a5e8-5c532007e954#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152015S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/19565532-4d56-4ec5-8a04-db049041b0f6#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Fifth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152015S1R5> ;
+    core:preferredLabel "Fifth Round"@en-gb ;
+    core:shortLabel "Fifth Round"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/595fd8e1-d54a-45a9-a867-9119a56cdf78#id> a sport:Round ;
+    rdfs:label "Round 9 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152015S1R9> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 9 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/9dcd6fcf-55ed-468e-af1a-6a69369d48dd#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152015S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a8ae5ddf-3a25-4592-a211-86122d9d3210#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152015S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/d8f60bc4-77fa-4b45-a99d-9ff21f0402f1#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152015S1R8> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/f1ab560c-2d5b-4fa7-b23c-60065ff04a51#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152015S1R7> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/f52b626d-190b-4c3a-b94b-ebb664f8bb3a#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Irish Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4152015S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB4152015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152015S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152015S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152015S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152015S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152015S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152015S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152015S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4152015S1R9> a cms:Sports-DataLocator .
+

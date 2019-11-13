@@ -1,0 +1,300 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/9a1ffa17-a5b6-4217-b834-79dd754d4dc3#id> a provenance:Dataset ;
+    rdfs:label "Football: English League Trophy 2016/17 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/english-league-trophy-2016-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-2605;5: Model CFBB7 English League Trophy 2016/17 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-09-07T13:32:43+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "5"^^xsd:int .
+
+<http://www.bbc.co.uk/things/e486baff-e21d-4521-8688-1d798bb02bb2#id> sport:firstStage <http://www.bbc.co.uk/things/5f13c7aa-4ffc-45d0-bf68-3e2966acc833#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/a2de2a56-9fbf-4db3-b541-a48b1b797f7c#id> .
+
+<http://www.bbc.co.uk/things/096e1496-970c-4608-839f-ad8741f50f6e#id> a sport:Round ;
+    rdfs:label "Round S1F of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Southern Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R14> ;
+    core:preferredLabel "Southern Group F"@en-gb ;
+    core:shortLabel "Southern Group F"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/21a4fc09-875a-4a8b-b1e7-f46e0229537f#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Football League Trophy"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S2R4> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/240df15e-7de4-4d12-94b8-93a6f7be12c5#id> a sport:Round ;
+    rdfs:label "Round 1NH of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Northern Group H"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R8> ;
+    core:preferredLabel "Northern Group H"@en-gb ;
+    core:shortLabel "Northern Group H"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/27be6f4e-894e-471d-b307-409fd72ea8c8#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Football League Trophy"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S2R1> ;
+    core:preferredLabel "SecondRound"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-32> .
+
+<http://www.bbc.co.uk/things/30060f6c-2925-4c6f-8ba2-4aec5ffb9992#id> a sport:Round ;
+    rdfs:label "Round 1NC of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Northern Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R3> ;
+    core:preferredLabel "Northern Group C"@en-gb ;
+    core:shortLabel "Northern Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/39e45f1a-ee96-4faf-8129-9024ab71aad7#id> a sport:Round ;
+    rdfs:label "Round 1NF of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Northern Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R6> ;
+    core:preferredLabel "Northern Group F"@en-gb ;
+    core:shortLabel "Northern Group F"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/4a9c06e0-1ef8-4935-ab35-90b5f91c2e22#id> a sport:Round ;
+    rdfs:label "Round 1NE of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Northern Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R5> ;
+    core:preferredLabel "Northern Group E"@en-gb ;
+    core:shortLabel "Northern Group E"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/4c48060f-5e50-4f80-aaeb-fc4de4995166#id> a sport:Round ;
+    rdfs:label "Round S1H of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Southern Group H"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R16> ;
+    core:preferredLabel "Southern Group H"@en-gb ;
+    core:shortLabel "Southern Group H"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/50d2b96f-7d76-4c91-bfd8-51da4598ac99#id> a sport:Round ;
+    rdfs:label "Round S1A of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Southern Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R9> ;
+    core:preferredLabel "Southern Group A"@en-gb ;
+    core:shortLabel "Southern Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/61bff53e-0d00-4fbc-865f-63109a6ba166#id> a sport:Round ;
+    rdfs:label "Round S1E of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Southern Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R13> ;
+    core:preferredLabel "Southern Group E"@en-gb ;
+    core:shortLabel "Southern Group E"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/7c1c1d00-3f52-47d5-b21f-7f2c5b0b5c03#id> a sport:Round ;
+    rdfs:label "Round S1G of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Southern Group G"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R15> ;
+    core:preferredLabel "Southern Group G"@en-gb ;
+    core:shortLabel "Southern Group G"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/7f44bf33-8b1a-42bd-a0c4-dd6cf1032f5b#id> a sport:Round ;
+    rdfs:label "Round 1NA of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Northern Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R1> ;
+    core:preferredLabel "Northern Group A"@en-gb ;
+    core:shortLabel "Northern Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/873b61fb-1921-43e2-b92d-7ea25c5a6217#id> a sport:Round ;
+    rdfs:label "Round S1D of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Southern Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R12> ;
+    core:preferredLabel "Southern Group D"@en-gb ;
+    core:shortLabel "Southern Group D"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/a1c5f40b-5322-426c-8d44-e0be4a91e765#id> a sport:Round ;
+    rdfs:label "Round 1NG of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Northern Group G"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R7> ;
+    core:preferredLabel "Northern Group G"@en-gb ;
+    core:shortLabel "Northern Group G"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/aad6eb7e-7e79-4f69-9d62-8fe19e73ff20#id> a sport:Round ;
+    rdfs:label "Round S1B of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Southern Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R10> ;
+    core:preferredLabel "Southern Group B"@en-gb ;
+    core:shortLabel "Southern Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ac622e1b-2208-4b3a-8ff7-22456ed96592#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Football League Trophy"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S2R3> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/d1518d1d-5ba1-4dc0-85a8-4a412bd4e5da#id> a sport:Round ;
+    rdfs:label "Round S1C of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Southern Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R11> ;
+    core:preferredLabel "Southern Group C"@en-gb ;
+    core:shortLabel "Southern Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/d6ac7fc3-ac58-4892-b797-f1ea031e46b7#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 2 of Football League Trophy"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S2R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/db34ab21-ca2b-40d1-a0c4-81181312d124#id> a sport:Round ;
+    rdfs:label "Round 1NB of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Northern Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R2> ;
+    core:preferredLabel "Northern Group B"@en-gb ;
+    core:shortLabel "Northern Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/e1ddb387-5241-4622-aa17-f23b3b5cc1eb#id> a sport:Round ;
+    rdfs:label "Round 1ND of Stage 1 of Football League Trophy"@en-gb ;
+    sal:name "Northern Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1R4> ;
+    core:preferredLabel "Northern Group D"@en-gb ;
+    core:shortLabel "Northern Group D"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/f18e16ea-0650-42b0-9619-b90b86bb792f#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Football League Trophy"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S2R2> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-16> .
+
+<urn:sports-data:CFBB72016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R10> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R11> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R12> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R13> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R14> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R15> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R16> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S1R9> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB72016S2R5> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/5f13c7aa-4ffc-45d0-bf68-3e2966acc833#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Football League Trophy"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/7f44bf33-8b1a-42bd-a0c4-dd6cf1032f5b#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/096e1496-970c-4608-839f-ad8741f50f6e#id>,
+        <http://www.bbc.co.uk/things/240df15e-7de4-4d12-94b8-93a6f7be12c5#id>,
+        <http://www.bbc.co.uk/things/30060f6c-2925-4c6f-8ba2-4aec5ffb9992#id>,
+        <http://www.bbc.co.uk/things/39e45f1a-ee96-4faf-8129-9024ab71aad7#id>,
+        <http://www.bbc.co.uk/things/4a9c06e0-1ef8-4935-ab35-90b5f91c2e22#id>,
+        <http://www.bbc.co.uk/things/50d2b96f-7d76-4c91-bfd8-51da4598ac99#id>,
+        <http://www.bbc.co.uk/things/61bff53e-0d00-4fbc-865f-63109a6ba166#id>,
+        <http://www.bbc.co.uk/things/7c1c1d00-3f52-47d5-b21f-7f2c5b0b5c03#id>,
+        <http://www.bbc.co.uk/things/873b61fb-1921-43e2-b92d-7ea25c5a6217#id>,
+        <http://www.bbc.co.uk/things/a1c5f40b-5322-426c-8d44-e0be4a91e765#id>,
+        <http://www.bbc.co.uk/things/aad6eb7e-7e79-4f69-9d62-8fe19e73ff20#id>,
+        <http://www.bbc.co.uk/things/d1518d1d-5ba1-4dc0-85a8-4a412bd4e5da#id>,
+        <http://www.bbc.co.uk/things/db34ab21-ca2b-40d1-a0c4-81181312d124#id>,
+        <http://www.bbc.co.uk/things/e1ddb387-5241-4622-aa17-f23b3b5cc1eb#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/4c48060f-5e50-4f80-aaeb-fc4de4995166#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/a2de2a56-9fbf-4db3-b541-a48b1b797f7c#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/a2de2a56-9fbf-4db3-b541-a48b1b797f7c#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Football League Trophy"@en-gb ;
+    cms:locator <urn:sports-data:CFBB72016S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/27be6f4e-894e-471d-b307-409fd72ea8c8#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/21a4fc09-875a-4a8b-b1e7-f46e0229537f#id>,
+        <http://www.bbc.co.uk/things/ac622e1b-2208-4b3a-8ff7-22456ed96592#id>,
+        <http://www.bbc.co.uk/things/f18e16ea-0650-42b0-9619-b90b86bb792f#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/d6ac7fc3-ac58-4892-b797-f1ea031e46b7#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/5f13c7aa-4ffc-45d0-bf68-3e2966acc833#id> ;
+    sport:stageNumber 2 .
+

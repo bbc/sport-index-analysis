@@ -1,0 +1,130 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/12163625-1bce-4802-b805-8fbc52268273#id> a provenance:Dataset ;
+    rdfs:label "Football: Women's European Championship 2017 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/womens-european-championship-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3408;2: Model UEFA Women's European Championship" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-07-03T13:53:48+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> sport:firstStage <http://www.bbc.co.uk/things/1e7eade6-4ed8-4d62-b8ba-64ae39ecb937#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/8187a0f2-e3c5-441b-9a15-07b8b3fea50a#id> .
+
+<http://www.bbc.co.uk/things/11a06b6f-47be-4f39-9df9-f29f28f0961f#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of UEFA Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6162016S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/1e7eade6-4ed8-4d62-b8ba-64ae39ecb937#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of UEFA Women's European Championship"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6162016S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/76df2afb-a0bf-4cb5-bdbd-3c329eafb29a#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/11a06b6f-47be-4f39-9df9-f29f28f0961f#id>,
+        <http://www.bbc.co.uk/things/923377ac-172e-4959-a777-16f6e3a74f88#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/fb1e897f-7978-483e-948a-0db0a465f46a#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/415a8278-728b-48a1-82e4-cc60ae01989b#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of UEFA Women's European Championship"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6162016S2R2> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/624b3a4c-2b39-4a11-a1fc-2a9ccf554431#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of UEFA Women's European Championship"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6162016S2R1> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/76df2afb-a0bf-4cb5-bdbd-3c329eafb29a#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of UEFA Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6162016S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/8187a0f2-e3c5-441b-9a15-07b8b3fea50a#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of UEFA Women's European Championship"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6162016S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/624b3a4c-2b39-4a11-a1fc-2a9ccf554431#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/415a8278-728b-48a1-82e4-cc60ae01989b#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/a0320d3b-0b58-4991-9982-2153580a2caa#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/923377ac-172e-4959-a777-16f6e3a74f88#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of UEFA Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6162016S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a0320d3b-0b58-4991-9982-2153580a2caa#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of UEFA Women's European Championship"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6162016S2R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/fb1e897f-7978-483e-948a-0db0a465f46a#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of UEFA Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6162016S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB6162016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6162016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6162016S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6162016S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6162016S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6162016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6162016S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6162016S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6162016S2R3> a cms:Sports-DataLocator .
+

@@ -1,0 +1,4138 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/c447cadc-85fc-4881-8424-6ec3d8df19e2#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-09T17:44:35+00:00",
+      "dateModified": "2019-11-09T17:44:35+00:00",
+      "description": "Matt Smith\u0027s late header sees Millwall beat south London rivals Charlton Athletic at The Den.",
+      "shortTitle": "Smith scores late winner for Millwall",
+      "title": "Millwall 2-1 Charlton: Matt Smith\u0027s late header seals win for Lions",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:1c0c01b4-bc0f-40d1-a5c6-60d79ed13b4c",
+        "urn:bbc:cps:asset:50271674"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/0fc5d0d6-3dfc-477b-a598-1c1668a9de4a#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Charlton",
+          "preferredLabel": "Charlton",
+          "sameAs": "http://sws.geonames.org/8741036/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c7068d17-1330-324a-b2c9-af3c6e0e5d7f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Charlton Athletic",
+          "preferredLabel": "Charlton Athletic",
+          "shortLabel": "Charlton",
+          "slug": "charlton-athletic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Charlton_Athletic_F.C.",
+            "http://rdf.freebase.com/ns/m.01z1r",
+            "http://www.wikidata.org/entity/Q19462"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/charlton-athletic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.cafc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50271674",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/9B4F/production/_109595793_shutterstock_editorial_10470190h.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Millwall players celebrating",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/33cbc719-4891-4d1f-9b1e-17f1dde91616#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-02T17:15:26+00:00",
+      "dateModified": "2019-11-02T17:15:26+00:00",
+      "description": "Goals from Jordan Obita and Sam Baldock give Reading victory over Millwall at the Madejski Stadium.",
+      "shortTitle": "Obita \u0026 Baldock give Reading victory",
+      "title": "Reading 2-1 Milwall: Jordan Obita \u0026 Sam Baldock give Royals victory",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:51134d73-8464-4ea1-8813-f7713ffc79a1",
+        "urn:bbc:cps:asset:50190754"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/0838f428-327a-7f41-9bf4-7758710b572b#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Reading",
+          "preferredLabel": "Reading",
+          "shortLabel": "Reading",
+          "slug": "reading",
+          "sameAs": [
+            "http://dbpedia.org/resource/Reading_F.C.",
+            "http://rdf.freebase.com/ns/m.016gp5",
+            "http://www.wikidata.org/entity/Q18729"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/reading",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.readingfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6937b397-cfb7-4ea6-af1f-59cbca7cd0f3#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Reading",
+          "preferredLabel": "Reading",
+          "sameAs": "http://sws.geonames.org/2639577/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50190754",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/FC26/production/_109505546_shutterstock_editorial_10463873z.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Reading players celebrate",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/2e8987a5-48a6-41ca-946f-9dfbc0025de7#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-30T12:18:35+00:00",
+      "dateModified": "2019-10-30T12:18:35+00:00",
+      "description": "The Football Association fine Brentford and Millwall £14,000 each over a melee in their Championship game on 19 October.",
+      "shortTitle": "Brentford and Millwall fined by FA",
+      "title": "Brentford and Millwall: FA fine clubs £14,000 each for failing to control players",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:b7b5e197-761d-1647-8398-9777bf4ada70",
+        "urn:bbc:cps:asset:50233310"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/32308873-9c53-4071-97b5-4aa7129a4bc5#id",
+          "@type": [
+            "NewsService",
+            "nsl:Attribution",
+            "Thing",
+            "Organisation"
+          ],
+          "label": "BBC London",
+          "preferredLabel": "BBC London"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aa015fe5-c774-4374-9a06-2cee75bf3552#id",
+          "@type": [
+            "Thing",
+            "Theme",
+            "Event"
+          ],
+          "label": "Football transfers",
+          "preferredLabel": "Football transfers",
+          "sameAs": "http://www.wikidata.org/entity/Q622822"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cf72a7ad-3054-8d4c-a98c-fb0ec5888922#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Brentford",
+          "preferredLabel": "Brentford",
+          "shortLabel": "Brentford",
+          "slug": "brentford",
+          "sameAs": [
+            "http://dbpedia.org/resource/Brentford_F.C.",
+            "http://rdf.freebase.com/ns/m.02b0y3",
+            "http://www.wikidata.org/entity/Q19571"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/brentford",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.brentfordfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/df23a6be-eb1a-4fdb-916c-d26f4a29d527#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Brentford",
+          "preferredLabel": "Brentford",
+          "sameAs": "http://sws.geonames.org/2654787/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50233310",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/1596/production/_109462550_bees_millwall_rex.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Brentford v Millwall",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/37c3e5b7-4084-4ac3-a6ba-c96473edf661#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-10-26T16:14:04+00:00",
+      "dateModified": "2019-10-26T16:14:04+00:00",
+      "description": "Gary Rowett celebrates his first game in charge of Millwall with a comfortable victory over former club Stoke.",
+      "shortTitle": "Rowett\u0027s Millwall sink former club Stoke",
+      "title": "Millwall 2-0 Stoke City: Gary Rowett wins first match as Lions boss against former side",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:93d81c2f-a4e2-4253-8401-7975a70d0420",
+        "urn:bbc:cps:asset:50105995"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/0107c77e-7e94-4919-8b36-74dd47922384#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Stoke-on-Trent",
+          "preferredLabel": "Stoke-on-Trent",
+          "sameAs": "http://sws.geonames.org/2636841/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ff3ad258-564a-3d46-967a-cefa4e65cfea#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Stoke City",
+          "preferredLabel": "Stoke City",
+          "shortLabel": "Stoke",
+          "slug": "stoke-city",
+          "sameAs": [
+            "http://dbpedia.org/resource/Stoke_City_F.C.",
+            "http://rdf.freebase.com/ns/m.01cwm1",
+            "http://www.wikidata.org/entity/Q18736"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/stoke-city",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.stokecityfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50105995",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/404D/production/_109416461_rowettmillwallrex.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Millwall boss Gary Rowett",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/7eb8812f-6e25-4764-8827-0bc0ed18bba5#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-10-24T16:19:27+00:00",
+      "dateModified": "2019-10-24T16:19:27+00:00",
+      "description": "New Millwall manager Gary Rowett says having the chance to speak to previous boss Neil Harris helped him decide to join the club.",
+      "shortTitle": "Millwall boss Rowett sought Harris advice",
+      "title": "Gary Rowett: New Millwall boss sought Neil Harris\u0027 advice before taking job",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:5e5e5b4d-293f-414a-b13f-cdc0f48da9e1",
+        "urn:bbc:cps:asset:50168894"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50168894",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/13D3/production/_109357050_gary_rowett2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Gary Rowett",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/a9e0f901-5aaa-4554-9fda-b230506a9ab4#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-10-22T20:59:26+00:00",
+      "dateModified": "2019-10-22T20:59:26+00:00",
+      "description": "Tom Bradshaw scores twice as Millwall claim a 2-2 draw at home against Cardiff in front of new Lions boss Gary Rowett.",
+      "shortTitle": "Bradshaw comes to Millwall\u0027s rescue",
+      "title": "Millwall 2-2 Cardiff City: Bradshaw comes to Lions\u0027 rescue",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:f75ac07b-8cbf-4f04-a477-4b58ff50f136",
+        "urn:bbc:cps:asset:50050992"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/bef8a4b5-1ad1-4347-b665-edf581ab7350#id",
+          "@type": [
+            "Thing",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Cardiff City",
+          "preferredLabel": "Cardiff City",
+          "shortLabel": "Cardiff",
+          "slug": "cardiff-city",
+          "sameAs": [
+            "http://dbpedia.org/resource/Cardiff_City_F.C.",
+            "http://rdf.freebase.com/ns/m.0dwz3t",
+            "http://www.wikidata.org/entity/Q18662"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/cardiff-city",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.cardiffcityfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ede5b66b-64b5-4cbb-b9b0-06f10550dfbd#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Cardiff",
+          "preferredLabel": "Cardiff",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Cardiff",
+          "sameAs": "http://sws.geonames.org/2653822/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50050992",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/144C7/production/_109334138_millwall_v_cardiff_cityt_11.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Millwall celebrate against Cardiff",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/43b26fcb-44da-43ec-bf90-32b7dddf4321#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-22T14:48:41+00:00",
+      "dateModified": "2019-10-22T14:48:41+00:00",
+      "description": "The Football Association charge Brentford and Millwall over a melee that broke out late in Saturday\u0027s derby.",
+      "shortTitle": "Brentford and Millwall charged by FA",
+      "title": "Brentford and Millwall: FA charge London rivals after derby melee",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:30050cad-70e1-5d4e-a1d4-ae1c0754863a",
+        "urn:bbc:cps:asset:50144151"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cf72a7ad-3054-8d4c-a98c-fb0ec5888922#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Brentford",
+          "preferredLabel": "Brentford",
+          "shortLabel": "Brentford",
+          "slug": "brentford",
+          "sameAs": [
+            "http://dbpedia.org/resource/Brentford_F.C.",
+            "http://rdf.freebase.com/ns/m.02b0y3",
+            "http://www.wikidata.org/entity/Q19571"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/brentford",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.brentfordfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/df23a6be-eb1a-4fdb-916c-d26f4a29d527#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Brentford",
+          "preferredLabel": "Brentford",
+          "sameAs": "http://sws.geonames.org/2654787/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50144151",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/2457/production/_109330390_brentfordscorelatevmillwallrex.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Brentford\u0027s late goal",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/de8fbecd-e782-48c4-b79d-8f537bbdab6e#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-21T20:20:54+00:00",
+      "dateModified": "2019-10-21T20:20:54+00:00",
+      "description": "Millwall appoint former Burton Albion, Birmingham City, Derby County and Stoke City boss Gary Rowett as their new manager.",
+      "shortTitle": "Millwall appoint Rowett as manager",
+      "title": "Gary Rowett: Millwall appoint former Stoke boss as new manager",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:a28964d9-22e6-2445-a1b3-a3d385bb6038",
+        "urn:bbc:cps:asset:50131399"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/32308873-9c53-4071-97b5-4aa7129a4bc5#id",
+          "@type": [
+            "NewsService",
+            "nsl:Attribution",
+            "Thing",
+            "Organisation"
+          ],
+          "label": "BBC London",
+          "preferredLabel": "BBC London"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ff3ad258-564a-3d46-967a-cefa4e65cfea#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Stoke City",
+          "preferredLabel": "Stoke City",
+          "shortLabel": "Stoke",
+          "slug": "stoke-city",
+          "sameAs": [
+            "http://dbpedia.org/resource/Stoke_City_F.C.",
+            "http://rdf.freebase.com/ns/m.01cwm1",
+            "http://www.wikidata.org/entity/Q18736"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/stoke-city",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.stokecityfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50131399",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/684C/production/_105100762_rowett2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": [
+            "Gary Rowett",
+            "Gary Rowett succeeds Neil Harris, who left The Den on 3 October after departure after four years in charge"
+          ],
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/39530c6f-fa1f-4b32-9ba7-889bfd5ce494#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-19T17:48:23+00:00",
+      "dateModified": "2019-10-19T17:48:23+00:00",
+      "description": "Brentford score three late goals to complete a dramatic turnaround against Millwall at Griffin Park.",
+      "shortTitle": "Brentford stun Millwall with late goals",
+      "title": "Brentford 3-2 Millwall: Bees stage stunning comeback late on",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:6220a057-f962-4dcf-bbd8-08c6cc13a942",
+        "urn:bbc:cps:asset:50024114"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cf72a7ad-3054-8d4c-a98c-fb0ec5888922#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Brentford",
+          "preferredLabel": "Brentford",
+          "shortLabel": "Brentford",
+          "slug": "brentford",
+          "sameAs": [
+            "http://dbpedia.org/resource/Brentford_F.C.",
+            "http://rdf.freebase.com/ns/m.02b0y3",
+            "http://www.wikidata.org/entity/Q19571"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/brentford",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.brentfordfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/df23a6be-eb1a-4fdb-916c-d26f4a29d527#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Brentford",
+          "preferredLabel": "Brentford",
+          "sameAs": "http://sws.geonames.org/2654787/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50024114",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/99DD/production/_109298393_shutterstock_editorial_10423701ah.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Ollie Watkins",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/487980bd-d9a3-4963-b0e5-d3c1ebe3e47c#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-18T07:36:47+00:00",
+      "dateModified": "2019-10-18T07:36:47+00:00",
+      "description": "Shrewsbury Town striker Steve Morison retires to take up an Academy coaching role with his first club Northampton Town.",
+      "shortTitle": "Shrewsbury striker Morison retires",
+      "title": "Steve Morison: Shrewsbury\u0027s ex-Millwall and Wales striker retires to join Northampton",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:cedff62d-9a42-e44f-a8ed-550b6ba4154b",
+        "urn:bbc:cps:asset:50094899"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/030b5eaf-15db-3e4e-bac9-a7789892f436#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition",
+            "Thing",
+            "sport:Competition"
+          ],
+          "label": "League One",
+          "preferredLabel": "League One",
+          "shortLabel": "League One",
+          "slug": "league-one",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/league-one",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-league-one/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/32308873-9c53-4071-97b5-4aa7129a4bc5#id",
+          "@type": [
+            "NewsService",
+            "nsl:Attribution",
+            "Thing",
+            "Organisation"
+          ],
+          "label": "BBC London",
+          "preferredLabel": "BBC London"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4f045458-b81c-48a3-8459-bf5abf7c6b6b#id",
+          "@type": [
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Wales",
+          "preferredLabel": "Wales",
+          "shortLabel": "Wales",
+          "slug": "wales",
+          "sameAs": [
+            "http://dbpedia.org/resource/Wales_national_football_team",
+            "http://rdf.freebase.com/ns/m.02s2ys",
+            "http://www.wikidata.org/entity/Q180857"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/wales",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/70a1b71e-ce69-48f1-bd3d-ae1831d4ac90#id",
+          "@type": [
+            "NewsService",
+            "Thing",
+            "Organisation"
+          ],
+          "label": "BBC Shropshire",
+          "preferredLabel": "BBC Shropshire"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9493690e-e780-4ef7-be3b-c05e2e5fd935#id",
+          "@type": [
+            "NewsService",
+            "Thing",
+            "Organisation"
+          ],
+          "label": "BBC Northamptonshire",
+          "preferredLabel": "BBC Northamptonshire"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/99bd3ab2-7110-be4f-bc12-1152d31ab75f#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Shrewsbury Town",
+          "preferredLabel": "Shrewsbury Town",
+          "shortLabel": "Shrewsbury",
+          "slug": "shrewsbury-town",
+          "sameAs": [
+            "http://dbpedia.org/resource/Shrewsbury_Town_F.C.",
+            "http://rdf.freebase.com/ns/m.02b1l_",
+            "http://www.wikidata.org/entity/Q19626"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/shrewsbury-town",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.shrewsburytown.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f7023361-5d4e-3e48-95cc-61e458eed4bb#id",
+          "@type": [
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent"
+          ],
+          "label": "Northampton Town",
+          "preferredLabel": "Northampton Town",
+          "shortLabel": "Northampton",
+          "slug": "northampton-town",
+          "sameAs": [
+            "http://dbpedia.org/resource/Northampton_Town_F.C.",
+            "http://rdf.freebase.com/ns/m.027024",
+            "http://www.wikidata.org/entity/Q48945"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/northampton-town",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.ntfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50094899",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/F490/production/_109280626_gettyimages-1162199029.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Steve Morison in action for Shrewsbury",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/33cc41be-735b-430e-9828-9187d5ec562c#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-15T12:21:29+00:00",
+      "dateModified": "2019-10-15T12:21:29+00:00",
+      "description": "Millwall are considering Adam Barrett, Gary Rowett and Wycombe boss Gareth Ainsworth to fill their managerial vacancy.",
+      "shortTitle": "Lions talk to Barrett, Rowett \u0026 Ainsworth",
+      "title": "Millwall: Adam Barrett, Gary Rowett and Gareth Ainsworth in frame for manager\u0027s job",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:9ccdb40a-19ae-764d-8cf8-6c9041ed20f9",
+        "urn:bbc:cps:asset:50057939"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/1fdac5a0-f7f0-4355-aaa0-9862167c1b73#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "High Wycombe",
+          "preferredLabel": "High Wycombe",
+          "sameAs": "http://sws.geonames.org/2646914/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/fe9a73c6-da9e-c247-934e-6b3bbfc8d93d#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Wycombe Wanderers",
+          "preferredLabel": "Wycombe Wanderers",
+          "shortLabel": "Wycombe",
+          "slug": "wycombe-wanderers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Wycombe_Wanderers_F.C.",
+            "http://rdf.freebase.com/ns/m.02b10w",
+            "http://www.wikidata.org/entity/Q48953"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/wycombe-wanderers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.wycombewanderers.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50057939",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/E98A/production/_109268795_ainsworth-2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Wycombe manager Gareth Ainsworth on the sidelines",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/e7cf85de-1ca6-4e87-80b2-88c248acbbf5#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-10-11T13:33:00+00:00",
+      "dateModified": "2019-10-11T13:33:00+00:00",
+      "description": "Millwall \"warmly welcome\" news that a land agreement which left them contemplating leaving The Den \"will be terminated\".",
+      "shortTitle": "Millwall future at The Den secured",
+      "title": "Millwall future at The Den secured by Lewisham Council announcement",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:54ebc19d-7321-4447-84e2-14a018821a84",
+        "urn:bbc:cps:asset:50015025"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50015025",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/2ABB/production/_109193901_millwall.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "The Den, home of Millwall FC",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/6e07c0c8-0624-4e3d-a8ac-bf26e3a92cfe#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-05T18:18:26+00:00",
+      "dateModified": "2019-10-05T18:18:26+00:00",
+      "description": "Adam Barrett begins life as Millwall caretaker manager with a win as the Lions beat 10-man Leeds.",
+      "shortTitle": "Millwall come through \u0027whirlwind\u0027 to upset Leeds",
+      "title": "Millwall 2-1 Leeds United: Adam Barrett picks up win in first game as caretaker Lions boss",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:b9d8c70e-f5aa-4366-969f-c79816914db5",
+        "urn:bbc:cps:asset:49861211"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/509d2079-2bf6-e44d-b791-a38bcda66529#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Leeds United",
+          "preferredLabel": "Leeds United",
+          "shortLabel": "Leeds",
+          "slug": "leeds-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Leeds_United_A.F.C.",
+            "http://rdf.freebase.com/ns/m.01xn7x1",
+            "http://www.wikidata.org/entity/Q1128631"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/leeds-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.leedsunited.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c23a7f2f-8d78-490f-9e2e-66729c0a5889#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Leeds",
+          "preferredLabel": "Leeds",
+          "sameAs": "http://sws.geonames.org/2644688/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49861211",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/9755/production/_109114783_wallace_and_bradshaw_pa.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Jed Wallace and Tom Bradshaw",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/6d8d1db4-8dc8-4a56-8ead-cfc89e2c90be#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-10-04T16:51:00+00:00",
+      "dateModified": "2019-10-04T16:51:00+00:00",
+      "description": "Neil Harris says his resignation as Millwall boss was \"the right decision at the right time\" after ending his four-year reign.",
+      "shortTitle": "\u0027Time was right to leave Millwall\u0027 - Harris",
+      "title": "Neil Harris: Millwall legend says \u0027time was right\u0027 to step down as Lions boss",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:4d80b709-5213-d441-9fd3-88b1e06180b7",
+        "urn:bbc:cps:asset:49939644"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/32308873-9c53-4071-97b5-4aa7129a4bc5#id",
+          "@type": [
+            "NewsService",
+            "nsl:Attribution",
+            "Thing",
+            "Organisation"
+          ],
+          "label": "BBC London",
+          "preferredLabel": "BBC London"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49939644",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/0500/production/_109108210_shutterstock_editorial_10214348ai.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Neil Harris.",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/f7521ef5-2926-45ab-a6f1-2d258d5fb487#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-03T17:57:03+00:00",
+      "dateModified": "2019-10-03T17:57:03+00:00",
+      "description": "Neil Harris steps down as manager of Championship club Millwall following more than four years in charge.",
+      "shortTitle": "Harris steps down as Millwall boss",
+      "title": "Neil Harris: Millwall boss steps down from Championship club",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:4b2e6c3b-5a08-5b43-a180-d69b34d686cf",
+        "urn:bbc:cps:asset:49923743"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49923743",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/BF35/production/_109094984_neilharrismillwallrex.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Neil Harris",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/e83dbdb6-8ad6-4a1e-8b55-994382526a69#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-02T22:02:54+00:00",
+      "dateModified": "2019-10-02T22:02:54+00:00",
+      "description": "Callum McManaman rescues a point in the final minutes for Luton at Kenilworth Road after Tom Bradshaw\u0027s opener for Millwall.",
+      "shortTitle": "McManaman rescues point for Hatters",
+      "title": "Luton Town 1-1 Millwall: Callum McManaman rescues point for Luton at Kenilworth Road",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:c5e30fb3-12de-416e-9e73-d821f6beb797",
+        "urn:bbc:cps:asset:49820872"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3bbd7326-6fa3-4d94-b7bc-2a6a5ec6d55a#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Luton",
+          "preferredLabel": "Luton",
+          "sameAs": "http://sws.geonames.org/2643339/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5fe62cde-d404-8045-be16-ddb66a00d393#id",
+          "@type": [
+            "dcterms:Agent",
+            "Thing",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Luton Town",
+          "preferredLabel": "Luton Town",
+          "shortLabel": "Luton",
+          "slug": "luton-town",
+          "sameAs": [
+            "http://dbpedia.org/resource/Luton_Town_F.C.",
+            "http://rdf.freebase.com/ns/m.04ngn",
+            "http://www.wikidata.org/entity/Q18520"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/luton-town",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.lutontown.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49820872",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/2DBC/production/_109080711_callummacrex4.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Callum McManaman celebrates",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/91e3ca50-b3d7-4446-a506-7d41198a5ee7#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-09-28T16:16:14+00:00",
+      "dateModified": "2019-09-28T16:16:14+00:00",
+      "description": "Huddersfield end a seven-game losing run in all competitions but have to settle for a point against 10-man Millwall.",
+      "shortTitle": "Terriers off bottom with Millwall draw",
+      "title": "Huddersfield Town 1-1 Millwall: Terriers end losing run with home draw",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:fa093dd4-45a6-4104-837c-a91333e56c22",
+        "urn:bbc:cps:asset:49778237"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/843257c2-309c-a749-9888-615bb448f887#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Huddersfield Town",
+          "preferredLabel": "Huddersfield Town",
+          "shortLabel": "Huddersfield",
+          "slug": "huddersfield-town",
+          "sameAs": [
+            "http://dbpedia.org/resource/Huddersfield_Town_F.C.",
+            "http://rdf.freebase.com/ns/m.01j95f",
+            "http://www.wikidata.org/entity/Q19473"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/huddersfield-town",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.htafc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f860b635-8731-450d-be3d-f7978f156cc9#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Huddersfield",
+          "preferredLabel": "Huddersfield",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Huddersfield",
+          "sameAs": "http://sws.geonames.org/2646458/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49778237",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/0259/production/_109010600_campbell.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Fraizer Campbell",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/5c75c4e6-8591-4f48-bf26-d6d9771b732d#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-09-21T16:26:39+00:00",
+      "dateModified": "2019-09-21T16:26:39+00:00",
+      "description": "Bartosz Bialkowski\u0027s goalkeeping howler sees Millwall slip to defeat against Queens Park Rangers at The Den.",
+      "shortTitle": "Bialkowski error gifts QPR victory",
+      "title": "Millwall 1-2 QPR: Bartosz Bialkowski makes howler as Rangers win at Lions",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:f518595e-eb02-4e57-b883-d8b4a1954fd0",
+        "urn:bbc:cps:asset:49697917"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/1c57806a-e79d-4c38-a164-d74f10800d1a#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Shepherds Bush",
+          "preferredLabel": "Shepherds Bush",
+          "sameAs": "http://sws.geonames.org/2638043/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/81f6a64f-def0-0d40-bc3a-36dab5472f64#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "Thing",
+            "Organisation",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Queens Park Rangers",
+          "preferredLabel": "Queens Park Rangers",
+          "shortLabel": "QPR",
+          "slug": "queens-park-rangers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Queens_Park_Rangers_F.C.",
+            "http://rdf.freebase.com/ns/m.0ljbg",
+            "http://www.wikidata.org/entity/Q18723"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/queens-park-rangers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.qpr.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49697917",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/A6B7/production/_108897624_shutterstock_editorial_10417110ao.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "QPR striker Nahki Wells",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/fbc7dfae-b1ee-4f46-851a-1376ed24dd16#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-09-19T16:42:47+00:00",
+      "dateModified": "2019-09-19T16:42:47+00:00",
+      "description": "The English Football League and Mind are encouraging people with mental health issues to participate in physical activity.",
+      "shortTitle": "EFL clubs\u0027 \u0027get active\u0027 message to tackle mental health",
+      "title": "Get Set to Go: How EFL clubs and Mind are tackling mental health issues",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:811c9b48-db00-f144-bca5-29c6dd11f173",
+        "urn:bbc:cps:asset:49501802"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/030b5eaf-15db-3e4e-bac9-a7789892f436#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition",
+            "Thing",
+            "sport:Competition"
+          ],
+          "label": "League One",
+          "preferredLabel": "League One",
+          "shortLabel": "League One",
+          "slug": "league-one",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/league-one",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-league-one/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/0fc5d0d6-3dfc-477b-a598-1c1668a9de4a#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Charlton",
+          "preferredLabel": "Charlton",
+          "sameAs": "http://sws.geonames.org/8741036/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/39885edd-5611-b540-ae3a-43026125bfd8#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "AFC Wimbledon",
+          "preferredLabel": "AFC Wimbledon",
+          "shortLabel": "Wimbledon",
+          "slug": "afc-wimbledon",
+          "sameAs": [
+            "http://dbpedia.org/resource/AFC_Wimbledon",
+            "http://rdf.freebase.com/ns/m.01whvs",
+            "http://www.wikidata.org/entity/Q48851"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.afcwimbledon.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/afc-wimbledon",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/83e09cb4-b697-4bdb-8475-b24279a5ba25#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Wimbledon",
+          "preferredLabel": "Wimbledon",
+          "sameAs": "http://sws.geonames.org/2633866/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c7068d17-1330-324a-b2c9-af3c6e0e5d7f#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Charlton Athletic",
+          "preferredLabel": "Charlton Athletic",
+          "shortLabel": "Charlton",
+          "slug": "charlton-athletic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Charlton_Athletic_F.C.",
+            "http://rdf.freebase.com/ns/m.01z1r",
+            "http://www.wikidata.org/entity/Q19462"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/charlton-athletic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.cafc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49501802",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/89AE/production/_108764253_mind5aside.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Two participants in Mind\u0027s Get Set To Go initiative with the EFL",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/e5e8e5c0-34a1-4a1a-8e00-419857416cc6#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-09-14T17:37:48+00:00",
+      "dateModified": "2019-09-14T17:37:48+00:00",
+      "description": "Derrick Williams and Bradley Dack score the goals as Blackburn secure a home victory over Millwall in the Championship.",
+      "shortTitle": "Blackburn earn home win over Millwall",
+      "title": "Blackburn 2-0 Millwall: Williams and Dack goals see off Lions",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:e5917417-1f9f-4091-97ad-6b5f63e50fe9",
+        "urn:bbc:cps:asset:49617719"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/164c8290-baf5-4cb5-9a19-45d1338f59c1#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "sameAs": "http://sws.geonames.org/2642487/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/34e9d74f-f917-db47-aa4a-c96ab97e301d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Blackburn Rovers",
+          "preferredLabel": "Blackburn Rovers",
+          "shortLabel": "Blackburn",
+          "slug": "blackburn-rovers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Blackburn_Rovers_F.C.",
+            "http://rdf.freebase.com/ns/m.01rly6",
+            "http://www.wikidata.org/entity/Q19446"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/blackburn-rovers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rovers.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/36092a63-f9cc-4c25-8f5a-e4d41651db27#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Blackburn",
+          "preferredLabel": "Blackburn",
+          "sameAs": "http://sws.geonames.org/2655524/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Millwall",
+          "preferredLabel": "Millwall",
+          "shortLabel": "Millwall",
+          "slug": "millwall",
+          "sameAs": [
+            "http://dbpedia.org/resource/Millwall_F.C.",
+            "http://rdf.freebase.com/ns/m.0284h6",
+            "http://www.wikidata.org/entity/Q19487"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/millwall",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.millwallfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49617719",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/1725B/production/_108811849_williams.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Derrick Williams",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "Event": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Event"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "NewsService": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/NewsService"
+    },
+    "Organisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"
+    },
+    "Place": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Place"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "dcterms:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "geoname:GeoTagConcept": {
+      "@id": "http://www.geonames.org/ontology#GeoTagConcept"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "nsl:Attribution": {
+      "@id": "http://purl.org/ontology/storyline/Attribution"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "shortTitle": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/shortTitle"
+    },
+    "skos:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:Competition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Competition"
+    },
+    "sport:CompetitiveSportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"
+    },
+    "sport:RecurringCompetition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"
+    },
+    "sport:SportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"
+    },
+    "sport:SportsDiscipline": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentCategory": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentCategory",
+      "@type": "@id"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

@@ -1,0 +1,986 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/611942cd-68f3-410e-a936-56c49d89d65a#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-13T08:05:05+00:00",
+      "dateModified": "2019-11-13T08:05:05+00:00",
+      "description": "Former Spain and Barcelona forward David Villa says he will retire at the end of the J-League season next month.",
+      "shortTitle": "Spain\u0027s top scorer Villa to retire",
+      "title": "David Villa: Spain\u0027s top scorer to retire at end of J-League season",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:fa32e861-0ca8-5f47-930c-ee3a59d46757",
+        "urn:bbc:cps:asset:50401494"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a626b35a-026a-4a02-942d-eba9975f1346#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Japanese J1 League",
+          "preferredLabel": "Japanese J1 League",
+          "shortLabel": "Japanese J1 League",
+          "slug": "japanese-j1-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/japanese-j1-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "https://www.jleague.jp/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50401494",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/9DD4/production/_109640404_villa_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "David Villa",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/2c9897f1-6dbe-4e1d-9cac-f76e6efe6278#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-08-05T09:20:12+00:00",
+      "dateModified": "2019-08-05T09:20:12+00:00",
+      "description": "Marcelo Bielsa says Leeds will \"have to adapt\" if last season\u0027s leading scorer Kemar Roofe joins Anderlecht this week.",
+      "shortTitle": "Bielsa \u0027can\u0027t be happy if Roofe leaves\u0027",
+      "title": "Marcelo Bielsa: Leeds United head coach \u0027can\u0027t be happy\u0027 if Kemar Roofe leaves club",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:614a77bf-9750-c04a-8a05-83c608ea1d57",
+        "urn:bbc:cps:asset:49229891"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/509d2079-2bf6-e44d-b791-a38bcda66529#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Leeds United",
+          "preferredLabel": "Leeds United",
+          "shortLabel": "Leeds",
+          "slug": "leeds-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Leeds_United_A.F.C.",
+            "http://rdf.freebase.com/ns/m.01xn7x1",
+            "http://www.wikidata.org/entity/Q1128631"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/leeds-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.leedsunited.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/55e38775-ad97-4248-8209-44b01381d73c#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "RSC Anderlecht",
+          "preferredLabel": "RSC Anderlecht",
+          "shortLabel": "Anderlecht",
+          "slug": "rsc-anderlecht",
+          "sameAs": [
+            "http://dbpedia.org/resource/R.S.C._Anderlecht",
+            "http://rdf.freebase.com/ns/m.013xh7",
+            "http://www.wikidata.org/entity/Q187528"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "Thing"
+          ],
+          "label": "Belgian First Division A",
+          "preferredLabel": "Belgian First Division A",
+          "shortLabel": "Belgian First Division A",
+          "slug": "belgian-pro-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/belgian-pro-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.sport.be/fr/jupilerproleague/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a626b35a-026a-4a02-942d-eba9975f1346#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Japanese J1 League",
+          "preferredLabel": "Japanese J1 League",
+          "shortLabel": "Japanese J1 League",
+          "slug": "japanese-j1-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/japanese-j1-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "https://www.jleague.jp/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aa015fe5-c774-4374-9a06-2cee75bf3552#id",
+          "@type": [
+            "Thing",
+            "Theme",
+            "Event"
+          ],
+          "label": "Football transfers",
+          "preferredLabel": "Football transfers",
+          "sameAs": "http://www.wikidata.org/entity/Q622822"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c23a7f2f-8d78-490f-9e2e-66729c0a5889#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Leeds",
+          "preferredLabel": "Leeds",
+          "sameAs": "http://sws.geonames.org/2644688/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49229891",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/141DE/production/_108189328_bielsa.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Leeds United head coach Marcelo Bielsa",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/177db81f-aff0-4a92-afe4-cd9c7e37903d#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-07-11T08:20:52+00:00",
+      "dateModified": "2019-07-11T08:20:52+00:00",
+      "description": "Yokohama FC sign 41-year-old former Celtic midfielder Shunsuke Nakamura... but he is not the oldest player at the Japanese club.",
+      "shortTitle": "Yokohama sign ex-Celtic player Nakamura",
+      "title": "Yokohama FC sign Shunsuke Nakamura, 41, to join Kazuyoshi Miura, 52",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:f1b128cd-0592-1442-b046-4ff19188c90f",
+        "urn:bbc:cps:asset:48948303"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6c3dd8ab-3f68-4894-a25c-4eebac24adfa#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Yokohama",
+          "preferredLabel": "Yokohama",
+          "sameAs": "http://sws.geonames.org/1848354/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a626b35a-026a-4a02-942d-eba9975f1346#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Japanese J1 League",
+          "preferredLabel": "Japanese J1 League",
+          "shortLabel": "Japanese J1 League",
+          "slug": "japanese-j1-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/japanese-j1-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "https://www.jleague.jp/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48948303",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/02C9/production/_107831700_nak1.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Shunsuke Nakamura",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/460fb16e-8a8f-40b9-b9ca-2ed34c82d513#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-06-14T11:53:01+00:00",
+      "dateModified": "2019-06-14T11:53:01+00:00",
+      "description": "Real Madrid sign Japanese teenager Takefusa Kubo - describing him as \"one of the most promising young players in the world\".",
+      "shortTitle": "Real Madrid sign Japanese teenager Kubo",
+      "title": "Takefusa Kubo: Real Madrid sign Japanese teenager from FC Tokyo",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:6cb206e8-eaec-f846-9b40-a0a5a1e01b6d",
+        "urn:bbc:cps:asset:48637239"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1c9c5c77-4d89-414a-a5df-1f9f1a28d630#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Madrid",
+          "preferredLabel": "Real Madrid",
+          "shortLabel": "Real Madrid",
+          "slug": "real-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Real_Madrid_C.F.",
+            "http://rdf.freebase.com/ns/m.06l22",
+            "http://www.wikidata.org/entity/Q8682"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a626b35a-026a-4a02-942d-eba9975f1346#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Japanese J1 League",
+          "preferredLabel": "Japanese J1 League",
+          "shortLabel": "Japanese J1 League",
+          "slug": "japanese-j1-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/japanese-j1-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "https://www.jleague.jp/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aa015fe5-c774-4374-9a06-2cee75bf3552#id",
+          "@type": [
+            "Thing",
+            "Theme",
+            "Event"
+          ],
+          "label": "Football transfers",
+          "preferredLabel": "Football transfers",
+          "sameAs": "http://www.wikidata.org/entity/Q622822"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48637239",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/122F7/production/_107378447_gettyimages-1149698751.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Takefusa Kubo",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/204f607c-7b1d-4a33-94e8-0ab5695d9355#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-03-09T11:09:38+00:00",
+      "dateModified": "2019-03-09T11:09:38+00:00",
+      "description": "Brazilian striker Anderson Lopes celebrates a goal for Consadole Sapporo by jumping over a barrier - only to discover a steep drop.",
+      "shortTitle": "It\u0027s higher than you think! Player discovers big drop after leaping hoardings",
+      "title": "Anderson Lopes discovers big drop after leaping hoardings in J-League game",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:aabe3972-2538-644c-b80f-5100e98fe23d",
+        "urn:bbc:cps:asset:47508257"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/8ef194c3-0934-4b3e-8bb2-65f8a68375f4#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Sapporo-shi",
+          "preferredLabel": "Sapporo-shi",
+          "sameAs": "http://sws.geonames.org/2128295/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a626b35a-026a-4a02-942d-eba9975f1346#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Japanese J1 League",
+          "preferredLabel": "Japanese J1 League",
+          "shortLabel": "Japanese J1 League",
+          "slug": "japanese-j1-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/japanese-j1-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "https://www.jleague.jp/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/47508257",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/F023/production/_105957416_p0731v6m.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Brazilian striker Anderson Lopes",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "Event": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Event"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "Organisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"
+    },
+    "Place": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Place"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "VideoFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/VideoFormat"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "dcterms:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "geoname:GeoTagConcept": {
+      "@id": "http://www.geonames.org/ontology#GeoTagConcept"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "shortTitle": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/shortTitle"
+    },
+    "skos:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:Competition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Competition"
+    },
+    "sport:CompetitiveSportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"
+    },
+    "sport:RecurringCompetition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"
+    },
+    "sport:SportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"
+    },
+    "sport:SportsDiscipline": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentCategory": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentCategory",
+      "@type": "@id"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

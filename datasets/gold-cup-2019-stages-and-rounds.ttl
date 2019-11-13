@@ -1,0 +1,138 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/b2d27367-6727-4c8b-8724-05f0fdd5b2b6#id> a provenance:Dataset ;
+    rdfs:label "Football: Gold Cup 2019 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/gold-cup-2019-stages-and-rounds.ttl" ;
+    provenance:changeReason "SWD-743: Model summer football tournaments" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-05-24T14:11:17+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> sport:firstStage <http://www.bbc.co.uk/things/61b084b1-fa5d-4fcd-aeb8-0ad63e859182#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/c1954ad2-058b-4cf4-88dc-426a7faa5de4#id> .
+
+<http://www.bbc.co.uk/things/059d83fe-55fd-4eff-b961-a129c19eaf9d#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Gold Cup 2019"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802019S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/3048b071-dbc4-458b-b130-95ef1024a1e1#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Gold Cup 2019"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802019S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/625d36ba-bbd6-487d-ae42-678398729d85#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Gold Cup 2019"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802019S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/629e0654-eb24-4c7f-9be4-fcfaecb3a803#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Gold Cup 2019"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802019S2R2> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/c51c40f0-71e8-413f-93b3-5e113bfac241#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Gold Cup 2019"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802019S2R1> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/cad72901-9e57-4647-a6c1-a33125f477f5#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Gold Cup 2019"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802019S2R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/eefd4104-79f9-41de-9f0c-5fcfbc507593#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Gold Cup 2019"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802019S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CFBB3802019S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802019S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802019S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802019S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802019S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802019S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802019S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802019S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3802019S2R3> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/61b084b1-fa5d-4fcd-aeb8-0ad63e859182#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Gold Cup 2019"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802019S1> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel ""@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/625d36ba-bbd6-487d-ae42-678398729d85#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/059d83fe-55fd-4eff-b961-a129c19eaf9d#id>,
+        <http://www.bbc.co.uk/things/3048b071-dbc4-458b-b130-95ef1024a1e1#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/eefd4104-79f9-41de-9f0c-5fcfbc507593#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/c1954ad2-058b-4cf4-88dc-426a7faa5de4#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/c1954ad2-058b-4cf4-88dc-426a7faa5de4#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Gold Cup 2019"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CFBB3802019S2> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel ""@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/c51c40f0-71e8-413f-93b3-5e113bfac241#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/629e0654-eb24-4c7f-9be4-fcfaecb3a803#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/cad72901-9e57-4647-a6c1-a33125f477f5#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/61b084b1-fa5d-4fcd-aeb8-0ad63e859182#id> ;
+    sport:stageNumber 2 .
+

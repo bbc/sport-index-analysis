@@ -1,0 +1,418 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/6b4a89d7-805f-4c2e-84db-3ec61bfddb83#id> a provenance:Dataset ;
+    rdfs:label "Football: European and International 2014 Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/football/european-and-international-football-2014-stages-and-rounds-17.ttl" ;
+    provenance:changeReason "Removed Stage 1 of Africa Cup of Nations, and renumbered stages 2 and 3" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-01-15T10:08:16+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Jonathan.Balls@bbc.co.uk> ;
+    provenance:version "17"^^xsd:int .
+
+<http://www.bbc.co.uk/things/174db547-1efa-4392-abed-a80c2452fd1c#id> sport:firstStage <http://www.bbc.co.uk/things/8217d7f3-6afe-458c-a824-0f672063f8c9#id> .
+
+<http://www.bbc.co.uk/things/17b0b5ca-9a72-43fa-bcfb-d77e100f5cf2#id> sport:firstStage <http://www.bbc.co.uk/things/088660ea-0cda-42e9-a953-aa9ef3e884c3#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/76494791-f5cf-4e12-9dec-5d8322ac8271#id> .
+
+<http://www.bbc.co.uk/things/5aa58484-635c-4589-a579-23aa75a4c973#id> sport:firstStage <http://www.bbc.co.uk/things/ded162ae-4706-4866-989f-aba1cdc999f1#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/5c852836-9e2c-4674-8fe3-b979193c5639#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/0bf2a3d7-2c35-46a0-a0b5-738f09cce322#id> .
+
+<http://www.bbc.co.uk/things/ae8c5de7-3e79-48a9-a3a9-80367e4078a2#id> sport:hasStage <http://www.bbc.co.uk/things/102a5f04-b927-423e-897e-2a81724d63a1#id> .
+
+<http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id> sport:firstStage <http://www.bbc.co.uk/things/ce34285e-d985-48ec-976a-d3ecbea47190#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/f814406b-a83f-478e-848f-921f9d029844#id> .
+
+<http://www.bbc.co.uk/things/088660ea-0cda-42e9-a953-aa9ef3e884c3#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Africa Cup of Nations"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1902014S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/deb654ff-5598-43bb-a8fe-b7bd27e834b4#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/59a98460-2b80-4828-815c-22722081ea25#id>,
+        <http://www.bbc.co.uk/things/c400faea-0791-46b2-a8c8-b7a20b21a9ce#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/f45d7443-46de-4e12-b259-9d1eefcb17c5#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/0bf2a3d7-2c35-46a0-a0b5-738f09cce322#id> a sport:Competition ;
+    rdfs:label "Stage 3 of Argentine Primera Division"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3842014S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/fcbe8605-8890-4d84-b17f-449ee319d297#id> ;
+    sport:stageNumber 3 .
+
+<http://www.bbc.co.uk/things/102a5f04-b927-423e-897e-2a81724d63a1#id> a sport:Competition ;
+    rdfs:label "Stage 2 of Belgian Pro League"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122014S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/a9efa048-4135-4d38-bd11-0648838d86e7#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/a9c91951-c643-4d77-a63b-981d0f6580a8#id>,
+        <http://www.bbc.co.uk/things/c0db15e8-370b-431f-b106-f8bc2ed9a972#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/83927742-0af9-43a4-b2ca-a8a0a0485dd3#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/1f116eec-42e7-464e-8d2e-55a53914502b#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of FIFA World Cup European Qualifying"@en-gb ;
+    sal:name "Group D "@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S1R4> ;
+    core:preferredLabel "Group D "@en-gb ;
+    core:shortLabel "Group D "@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/2b9be25f-d2b6-4f48-9211-9cc3411f8a77#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Barclays Asia Trophy"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3332014S1R2> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/5078fd68-d7f0-4ae7-b5fb-f2cd18b45402#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of FIFA World Cup European Qualifying"@en-gb ;
+    sal:name "Group C "@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S1R3> ;
+    core:preferredLabel "Group C "@en-gb ;
+    core:shortLabel "Group C "@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/59a98460-2b80-4828-815c-22722081ea25#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Africa Cup of Nations"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1902014S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/5adcdc7b-3b9f-4e94-8be2-f4acb57d3676#id> a sport:Round ;
+    rdfs:label "Round 9 of Stage 1 of FIFA World Cup European Qualifying"@en-gb ;
+    sal:name "Group I "@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S1R9> ;
+    core:preferredLabel "Group I "@en-gb ;
+    core:shortLabel "Group I "@en-gb ;
+    sport:roundNumber "9"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/5c852836-9e2c-4674-8fe3-b979193c5639#id> a sport:Competition ;
+    rdfs:label "Stage 2 of Argentine Primera Division"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5852014S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/f321a388-5954-4bd7-b9b8-1c1d77000bb8#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/615e125a-76fa-4cf3-9586-6f4771590d2e#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Argentine Primera Division"@en-gb ;
+    sal:name "Regular Season"@en-gb ;
+    cms:locator <urn:sports-data:CFBB2402014S1R1> ;
+    core:preferredLabel "Regular Season"@en-gb ;
+    core:shortLabel "Regular Season"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6205b4bf-434f-4535-a918-72609879a092#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of FIFA World Cup European Qualifying"@en-gb ;
+    sal:name "Group G "@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S1R7> ;
+    core:preferredLabel "Group G "@en-gb ;
+    core:shortLabel "Group G "@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/69cb6684-285a-4c6a-b6b3-51325c7f63c0#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Barclays Asia Trophy"@en-gb ;
+    sal:name "3rd/4th Place Play-Offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3332014S1R1> ;
+    core:preferredLabel "3rd/4th Place Play-Offs"@en-gb ;
+    core:shortLabel "3rd/4th Place Play-Offs"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/6c7d1b6c-5393-4d91-8249-7e06728318f5#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Africa Cup of Nations"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1902014S2R2> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/6dac4875-97c1-4c59-9eb5-9913ad5e0eb9#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of FIFA World Cup European Qualifying"@en-gb ;
+    sal:name "Play-Offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S2R1> ;
+    core:preferredLabel "Play-Offs"@en-gb ;
+    core:shortLabel "Play-Offs"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/76494791-f5cf-4e12-9dec-5d8322ac8271#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Africa Cup of Nations"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1902014S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/b372b2e3-2567-4d09-ac77-eee4324a4499#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/6c7d1b6c-5393-4d91-8249-7e06728318f5#id>,
+        <http://www.bbc.co.uk/things/778919b7-e4be-43d0-a151-7e8aadca78ef#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/dc164701-8901-4c65-a7a6-49a045ec239c#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/778919b7-e4be-43d0-a151-7e8aadca78ef#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Africa Cup of Nations"@en-gb ;
+    sal:name "3rd and 4th Place Play-Offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1902014S2R3> ;
+    core:preferredLabel "3rd and 4th Place Play-Offs"@en-gb ;
+    core:shortLabel "3rd and 4th Place Play-Offs"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/8217d7f3-6afe-458c-a824-0f672063f8c9#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Barclays Asia Trophy"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3332014S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/69cb6684-285a-4c6a-b6b3-51325c7f63c0#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/2b9be25f-d2b6-4f48-9211-9cc3411f8a77#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/ffe272c3-43a5-47a9-a2f1-d278c16175e3#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/83927742-0af9-43a4-b2ca-a8a0a0485dd3#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Belgian Pro League"@en-gb ;
+    sal:name "Relegation Play-Off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122014S2R4> ;
+    core:preferredLabel "Relegation Play-Off"@en-gb ;
+    core:shortLabel "Relegation Play-Off"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/a9c91951-c643-4d77-a63b-981d0f6580a8#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Belgian Pro League"@en-gb ;
+    sal:name "Europa League Play-Off Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122014S2R2> ;
+    core:preferredLabel "Europa League Play-Off Group A"@en-gb ;
+    core:shortLabel "Europa League Play-Off Group A"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/a9efa048-4135-4d38-bd11-0648838d86e7#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Belgian Pro League"@en-gb ;
+    sal:name "Championship Play-Off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122014S2R1> ;
+    core:preferredLabel "Championship Play-Off"@en-gb ;
+    core:shortLabel "Championship Play-Off"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/b372b2e3-2567-4d09-ac77-eee4324a4499#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Africa Cup of Nations"@en-gb ;
+    sal:name "Quarter Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1902014S2R1> ;
+    core:preferredLabel "Quarter Final"@en-gb ;
+    core:shortLabel "Quarter Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/c0db15e8-370b-431f-b106-f8bc2ed9a972#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Belgian Pro League"@en-gb ;
+    sal:name "Europa League Play-Off Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122014S2R3> ;
+    core:preferredLabel "Europa League Play-Off Group B"@en-gb ;
+    core:shortLabel "Europa League Play-Off Group B"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/c400faea-0791-46b2-a8c8-b7a20b21a9ce#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Africa Cup of Nations"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1902014S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ce34285e-d985-48ec-976a-d3ecbea47190#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of FIFA World Cup European Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/e90e489c-4a61-4a45-97c6-5c4761bb0ced#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/1f116eec-42e7-464e-8d2e-55a53914502b#id>,
+        <http://www.bbc.co.uk/things/5078fd68-d7f0-4ae7-b5fb-f2cd18b45402#id>,
+        <http://www.bbc.co.uk/things/6205b4bf-434f-4535-a918-72609879a092#id>,
+        <http://www.bbc.co.uk/things/d0e9e9ae-8e7c-45e5-ab1e-3f8f254052ac#id>,
+        <http://www.bbc.co.uk/things/d6640031-5859-4f4c-8275-c7d7395dbcb3#id>,
+        <http://www.bbc.co.uk/things/ea263e49-092e-40e1-9319-e30fb5eb101d#id>,
+        <http://www.bbc.co.uk/things/ec0aad4c-690d-4705-962d-3892fb3acc54#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/5adcdc7b-3b9f-4e94-8be2-f4acb57d3676#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d0e9e9ae-8e7c-45e5-ab1e-3f8f254052ac#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of FIFA World Cup European Qualifying"@en-gb ;
+    sal:name "Group E "@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S1R5> ;
+    core:preferredLabel "Group E "@en-gb ;
+    core:shortLabel "Group E "@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/d6640031-5859-4f4c-8275-c7d7395dbcb3#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of FIFA World Cup European Qualifying"@en-gb ;
+    sal:name "Group B "@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S1R2> ;
+    core:preferredLabel "Group B "@en-gb ;
+    core:shortLabel "Group B "@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/dc164701-8901-4c65-a7a6-49a045ec239c#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Africa Cup of Nations"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1902014S2R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/deb654ff-5598-43bb-a8fe-b7bd27e834b4#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Africa Cup of Nations"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1902014S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ded162ae-4706-4866-989f-aba1cdc999f1#id> a sport:Competition ;
+    rdfs:label "Stage 1 of Argentine Primera Division"@en-gb ;
+    cms:locator <urn:sports-data:CFBB2402014S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/615e125a-76fa-4cf3-9586-6f4771590d2e#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/e90e489c-4a61-4a45-97c6-5c4761bb0ced#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of FIFA World Cup European Qualifying"@en-gb ;
+    sal:name "Group A "@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S1R1> ;
+    core:preferredLabel "Group A "@en-gb ;
+    core:shortLabel "Group A "@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ea263e49-092e-40e1-9319-e30fb5eb101d#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of FIFA World Cup European Qualifying"@en-gb ;
+    sal:name "Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S1R6> ;
+    core:preferredLabel "Group F"@en-gb ;
+    core:shortLabel "Group F"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ec0aad4c-690d-4705-962d-3892fb3acc54#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of FIFA World Cup European Qualifying"@en-gb ;
+    sal:name "Group H"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S1R8> ;
+    core:preferredLabel "Group H"@en-gb ;
+    core:shortLabel "Group H"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/f321a388-5954-4bd7-b9b8-1c1d77000bb8#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Argentine Primera Division"@en-gb ;
+    sal:name "Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5852014S1R1> ;
+    core:preferredLabel "Play-off"@en-gb ;
+    core:shortLabel "Play-off"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/f45d7443-46de-4e12-b259-9d1eefcb17c5#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Africa Cup of Nations"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1902014S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/f814406b-a83f-478e-848f-921f9d029844#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of FIFA World Cup European Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112014S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/6dac4875-97c1-4c59-9eb5-9913ad5e0eb9#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/fcbe8605-8890-4d84-b17f-449ee319d297#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 3 of Argentine Primera Division"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3842014S1R1> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/ffe272c3-43a5-47a9-a2f1-d278c16175e3#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Barclays Asia Trophy"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3332014S1R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<urn:sports-data:CFBB1122014S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122014S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122014S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122014S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122014S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1902014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1902014S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1902014S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1902014S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1902014S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1902014S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1902014S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1902014S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1902014S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1902014S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB2402014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB2402014S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3332014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3332014S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3332014S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3332014S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3842014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3842014S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5852014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5852014S1R1> a cms:Sports-DataLocator .
+

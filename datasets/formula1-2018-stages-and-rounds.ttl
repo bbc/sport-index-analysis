@@ -1,0 +1,1101 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/549fbdd8-61d9-94db-b209-e8dee9a814ab#id> a provenance:Dataset ;
+    rdfs:label "Motor Racing: 2018 Formula One Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/formula1/formula1-2018-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4238;6: Model 2018 Season Grands Prix" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-05-14T11:57:43+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "6"^^xsd:int .
+
+<http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> sport:firstStage <http://www.bbc.co.uk/things/d623fa48-8f62-b0a8-b446-bf7aaa431604#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/0627b304-a7c9-ab7e-6014-a100b3e39b55#id>,
+        <http://www.bbc.co.uk/things/0a340487-f896-eb60-eeb7-bdbc2568b73c#id>,
+        <http://www.bbc.co.uk/things/2aa4a915-53c5-ad14-6ecf-e4f8e201affb#id>,
+        <http://www.bbc.co.uk/things/35afc84d-175a-8b2e-a715-70bc84773f29#id>,
+        <http://www.bbc.co.uk/things/368e62f3-6c91-5811-0012-01f3200c348a#id>,
+        <http://www.bbc.co.uk/things/40a7e016-0e13-ed98-1be9-402a1dff5905#id>,
+        <http://www.bbc.co.uk/things/55251e84-76f6-48d1-9779-b1dd9dd6cf53#id>,
+        <http://www.bbc.co.uk/things/56b62499-22f0-acb1-caa5-6809d19da2b2#id>,
+        <http://www.bbc.co.uk/things/7d311d16-caf6-716c-b422-01d3f9baa4ff#id>,
+        <http://www.bbc.co.uk/things/84728591-f3cf-9b1f-e169-7897eb97dc61#id>,
+        <http://www.bbc.co.uk/things/8ca666eb-fa58-373f-9af3-ed8cbb5155f0#id>,
+        <http://www.bbc.co.uk/things/8cd728ce-1a38-2622-e847-d0b1671940a0#id>,
+        <http://www.bbc.co.uk/things/91b06155-fb28-1e59-533c-5dc0fe31fe06#id>,
+        <http://www.bbc.co.uk/things/b1e10b13-0b04-a8ce-e045-fcef2e79379d#id>,
+        <http://www.bbc.co.uk/things/b26bdb93-bc85-763c-ff67-b435482dd2bb#id>,
+        <http://www.bbc.co.uk/things/b6538ea7-dd48-c810-3625-e25b61b94513#id>,
+        <http://www.bbc.co.uk/things/c7092a0d-21cc-dd8e-4828-35cbe287cbb9#id>,
+        <http://www.bbc.co.uk/things/d112d685-36ae-ccb8-4a27-ad7480ab60fc#id>,
+        <http://www.bbc.co.uk/things/d98ada3e-d749-adc4-bfac-09b6f742ab54#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/ac61ac78-31ae-e582-1253-95e5e0113caa#id> .
+
+<http://www.bbc.co.uk/things/032f4ec5-e6e7-74f3-a2fb-c92ce43cef02#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 18 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S18R8690> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/039d1fd7-9c40-3acc-f26d-7264f419da00#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 7 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S8RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/0627b304-a7c9-ab7e-6014-a100b3e39b55#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Azerbaijan Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Azerbaijan Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S279> ;
+    core:disambiguationHint "2018 Azerbaijan Grand Prix"@en-gb ;
+    core:preferredLabel "Azerbaijan Grand Prix"@en-gb ;
+    core:shortLabel "Azerbaijan Grand Prix"@en-gb ;
+    core:slug "azerbaijan-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/f28ffcb0-96ee-2714-5be9-cc5e558dff62#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/d19f0ce1-13af-e73a-c512-f8e312dc2709#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/4429b5eb-ab3b-2e67-a2a3-ab6e59c8d5e4#id> ;
+    sport:stageNumber "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/069c456b-266e-c5b9-ddcb-c88c82991c59#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 7 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S8R8634> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/0a340487-f896-eb60-eeb7-bdbc2568b73c#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Canadian Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Canadian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S8> ;
+    core:disambiguationHint "2018 Canadian Grand Prix"@en-gb ;
+    core:preferredLabel "Canadian Grand Prix"@en-gb ;
+    core:shortLabel "Canadian Grand Prix"@en-gb ;
+    core:slug "canadian-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/039d1fd7-9c40-3acc-f26d-7264f419da00#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/069c456b-266e-c5b9-ddcb-c88c82991c59#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/9ceef819-9df9-16e1-6ee4-ae4b17d891d2#id> ;
+    sport:stageNumber "7"^^xsd:int .
+
+<http://www.bbc.co.uk/things/1b39f066-4395-6878-a402-9194634d20b0#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 13 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S13RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/1dbce4a7-3fe1-e8ed-ed2e-5845c2c46591#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 6 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S7R8630> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/214e035f-ed34-5373-0802-cc6a04ab547e#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 10 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S1R8649> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/2728d977-1120-9fa5-e2b8-291b655d13b6#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 11 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S11R8654> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/27d5bd08-edc6-b0c3-4a7a-77910d314971#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 15 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S165R8674> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/2aa4a915-53c5-ad14-6ecf-e4f8e201affb#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Belgian Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Belgian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S13> ;
+    core:disambiguationHint "2018 Belgian Grand Prix"@en-gb ;
+    core:preferredLabel "Belgian Grand Prix"@en-gb ;
+    core:shortLabel "Belgian Grand Prix"@en-gb ;
+    core:slug "belgian-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/1b39f066-4395-6878-a402-9194634d20b0#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/a3a5c14a-1085-ee4d-f605-d3b26f54bc28#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/5f1e4a4b-d75c-9557-e52e-ee6d74f191eb#id> ;
+    sport:stageNumber "13"^^xsd:int .
+
+<http://www.bbc.co.uk/things/31eda31d-8c2a-fb19-1083-e8a7a7da6867#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S24R8610> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/32f1c9bd-4b56-e2f5-6fd7-c97f392631ae#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 16 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S247R8679> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/35afc84d-175a-8b2e-a715-70bc84773f29#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Chinese Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Chinese Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S25> ;
+    core:disambiguationHint "2018 Chinese Grand Prix"@en-gb ;
+    core:preferredLabel "Chinese Grand Prix"@en-gb ;
+    core:shortLabel "Chinese Grand Prix"@en-gb ;
+    core:slug "chinese-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/7f6b7c23-1f51-9b0d-fd87-e6574d16e044#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/4ff74b57-15c8-da6e-eadb-88e37fc1ca25#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/a8a1a104-7704-88b2-8652-293f1bedb8d3#id> ;
+    sport:stageNumber "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/368e62f3-6c91-5811-0012-01f3200c348a#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Hungarian Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Hungarian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S12> ;
+    core:disambiguationHint "2018 Hungarian Grand Prix"@en-gb ;
+    core:preferredLabel "Hungarian Grand Prix"@en-gb ;
+    core:shortLabel "Hungarian Grand Prix"@en-gb ;
+    core:slug "hungarian-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/6703d924-c576-3cfb-6546-156cd0d1fc3e#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/ee0edfd9-3b72-cbdc-a789-94476d290c0c#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/4149767d-16fe-6253-864a-9ffb547ad17d#id> ;
+    sport:stageNumber "12"^^xsd:int .
+
+<http://www.bbc.co.uk/things/3b724b6f-2603-fc9b-7416-51158efa3221#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 18 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S18RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/40a7e016-0e13-ed98-1be9-402a1dff5905#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Spanish Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Spanish Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S6> ;
+    core:disambiguationHint "2018 Spanish Grand Prix"@en-gb ;
+    core:preferredLabel "Spanish Grand Prix"@en-gb ;
+    core:shortLabel "Spanish Grand Prix"@en-gb ;
+    core:slug "spanish-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/e10a6c24-bcda-e650-9a62-fd6a9f544ed2#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/f29a5b4c-1a9f-8709-129e-f8b90d3bfadb#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/e4d3d2e7-d4b3-d0c8-ebb8-b76483d228a8#id> ;
+    sport:stageNumber "5"^^xsd:int .
+
+<http://www.bbc.co.uk/things/4149767d-16fe-6253-864a-9ffb547ad17d#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 12 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S12R8660> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/4429b5eb-ab3b-2e67-a2a3-ab6e59c8d5e4#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 4 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S279R8620> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/46755391-46f7-f331-5bd7-f28482349950#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 21 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S182R8705> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/4a9315c7-203d-261a-acc6-6cdf801b11b4#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 17 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S16R8684> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/4ff74b57-15c8-da6e-eadb-88e37fc1ca25#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 3 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S25R8614> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/500db00e-5592-bc57-2d61-02c3562bc8b1#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 6 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S7RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/507ee693-56a5-0c36-0ac5-dcf4722d6122#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 9 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S10R8644> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/5332cd54-0045-ab13-1039-852a12ab2da3#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S2R8605> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/55251e84-76f6-48d1-9779-b1dd9dd6cf53#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Italian Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Italian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S14> ;
+    core:disambiguationHint "2018 Italian Grand Prix"@en-gb ;
+    core:preferredLabel "Italian Grand Prix"@en-gb ;
+    core:shortLabel "Italian Grand Prix"@en-gb ;
+    core:slug "italian-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/c7ecba23-112a-17bb-d07b-934e193cb943#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/dbafbfc5-7985-b0f2-c16b-f5869a01dcbc#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/84ecac64-d9ec-5f5b-f882-d5c79dc39e00#id> ;
+    sport:stageNumber "14"^^xsd:int .
+
+<http://www.bbc.co.uk/things/56236ce2-0a00-b23d-f8eb-57c83a42fdfb#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 10 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S1R8650> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/56b62499-22f0-acb1-caa5-6809d19da2b2#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Japanese Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Japanese Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S16> ;
+    core:disambiguationHint "2018 Japanese Grand Prix"@en-gb ;
+    core:preferredLabel "Japanese Grand Prix"@en-gb ;
+    core:shortLabel "Japanese Grand Prix"@en-gb ;
+    core:slug "japanese-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/791b3d6a-cf1a-9e9b-4583-909e909d6b94#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/4a9315c7-203d-261a-acc6-6cdf801b11b4#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/95b4ab19-3737-99a8-f2a2-7e7f81df7339#id> ;
+    sport:stageNumber "17"^^xsd:int .
+
+<http://www.bbc.co.uk/things/5aad06d5-3308-4010-a40a-71dcf2dc347a#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 21 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S182RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/5f1e4a4b-d75c-9557-e52e-ee6d74f191eb#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 13 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S13R8665> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/6616fd2c-51f6-6716-5855-bf8f51094711#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 16 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S247RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/6703d924-c576-3cfb-6546-156cd0d1fc3e#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 12 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S12RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/6e739b44-070a-ef75-18f7-119bd8d12608#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S2R8604> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/715cc49a-775d-eb34-78e2-396106d00cd6#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 8 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S9R8639> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/78a2d2ce-c067-3d5f-afb9-5a5d6e4ecf8f#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 8 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S9R8640> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/791b3d6a-cf1a-9e9b-4583-909e909d6b94#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 17 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S16RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/7a183ac0-d0d4-afb6-3176-4c0afd18a961#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 20 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S3R8699> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/7d311d16-caf6-716c-b422-01d3f9baa4ff#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Russian Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Russian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S247> ;
+    core:disambiguationHint "2018 Russian Grand Prix"@en-gb ;
+    core:preferredLabel "Russian Grand Prix"@en-gb ;
+    core:shortLabel "Russian Grand Prix"@en-gb ;
+    core:slug "russian-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/6616fd2c-51f6-6716-5855-bf8f51094711#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/32f1c9bd-4b56-e2f5-6fd7-c97f392631ae#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/fa3c4ba3-fa5f-0c8a-e215-6d7eb4812788#id> ;
+    sport:stageNumber "16"^^xsd:int .
+
+<http://www.bbc.co.uk/things/7f6b7c23-1f51-9b0d-fd87-e6574d16e044#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 3 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S25RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/84728591-f3cf-9b1f-e169-7897eb97dc61#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Monaco Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Monaco Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S7> ;
+    core:disambiguationHint "2018 Monaco Grand Prix"@en-gb ;
+    core:preferredLabel "Monaco Grand Prix"@en-gb ;
+    core:shortLabel "Monaco Grand Prix"@en-gb ;
+    core:slug "monaco-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/500db00e-5592-bc57-2d61-02c3562bc8b1#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/91e29251-7ad9-3202-53d4-31c293dca1a7#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/1dbce4a7-3fe1-e8ed-ed2e-5845c2c46591#id> ;
+    sport:stageNumber "6"^^xsd:int .
+
+<http://www.bbc.co.uk/things/84ecac64-d9ec-5f5b-f882-d5c79dc39e00#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 14 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S14R8670> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/87d841c3-b52f-aae1-f0ea-8449a7f5ba8f#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 15 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S165RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/8ca666eb-fa58-373f-9af3-ed8cbb5155f0#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'British Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "British Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S1> ;
+    core:disambiguationHint "2018 British Grand Prix"@en-gb ;
+    core:preferredLabel "British Grand Prix"@en-gb ;
+    core:shortLabel "British Grand Prix"@en-gb ;
+    core:slug "british-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/f5c1078f-564c-1dbd-a109-d90087b96ffc#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/214e035f-ed34-5373-0802-cc6a04ab547e#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/56236ce2-0a00-b23d-f8eb-57c83a42fdfb#id> ;
+    sport:stageNumber "10"^^xsd:int .
+
+<http://www.bbc.co.uk/things/8cd728ce-1a38-2622-e847-d0b1671940a0#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Mexican Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Mexican Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S17> ;
+    core:disambiguationHint "2018 Mexican Grand Prix"@en-gb ;
+    core:preferredLabel "Mexican Grand Prix"@en-gb ;
+    core:shortLabel "Mexican Grand Prix"@en-gb ;
+    core:slug "mexican-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/d712b914-9094-cdf3-71d4-fa796bc1969a#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/da83dd58-f5ab-4da3-aedc-0e0fb0c41ab0#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/fb3a8dfa-edf2-5a3a-d603-25dbfbfaa8c4#id> ;
+    sport:stageNumber "19"^^xsd:int .
+
+<http://www.bbc.co.uk/things/91b06155-fb28-1e59-533c-5dc0fe31fe06#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'French Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "French Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S9> ;
+    core:disambiguationHint "2018 French Grand Prix"@en-gb ;
+    core:preferredLabel "French Grand Prix"@en-gb ;
+    core:shortLabel "French Grand Prix"@en-gb ;
+    core:slug "french-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/cf3219bd-06ec-af87-720a-aaa43a02867b#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/715cc49a-775d-eb34-78e2-396106d00cd6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/78a2d2ce-c067-3d5f-afb9-5a5d6e4ecf8f#id> ;
+    sport:stageNumber "8"^^xsd:int .
+
+<http://www.bbc.co.uk/things/91e29251-7ad9-3202-53d4-31c293dca1a7#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 6 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S7R8629> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/95b4ab19-3737-99a8-f2a2-7e7f81df7339#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 17 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S16R8685> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/9ceef819-9df9-16e1-6ee4-ae4b17d891d2#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 7 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S8R8635> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/a3a5c14a-1085-ee4d-f605-d3b26f54bc28#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 13 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S13R8664> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/a5f498e8-b8c2-6d3f-3517-f384914c394d#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S2RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/a8a1a104-7704-88b2-8652-293f1bedb8d3#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 3 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S25R8615> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/ac61ac78-31ae-e582-1253-95e5e0113caa#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Brazilian Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Brazilian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S3> ;
+    core:disambiguationHint "2018 Brazilian Grand Prix"@en-gb ;
+    core:preferredLabel "Brazilian Grand Prix"@en-gb ;
+    core:shortLabel "Brazilian Grand Prix"@en-gb ;
+    core:slug "brazilian-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/ac93b3ec-34c0-f279-1532-c3060e9a523d#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/7a183ac0-d0d4-afb6-3176-4c0afd18a961#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/eae8721c-8d82-04c7-ccc8-c5f041a32e7f#id> ;
+    sport:stageNumber "20"^^xsd:int .
+
+<http://www.bbc.co.uk/things/ac93b3ec-34c0-f279-1532-c3060e9a523d#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 20 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S3RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/ad32756e-deed-2e67-1bd2-7075edf270c6#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 11 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S11RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/b1e10b13-0b04-a8ce-e045-fcef2e79379d#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'United States Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "United States Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S18> ;
+    core:disambiguationHint "2018 United States Grand Prix"@en-gb ;
+    core:preferredLabel "United States Grand Prix"@en-gb ;
+    core:shortLabel "United States Grand Prix"@en-gb ;
+    core:slug "united-states-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/3b724b6f-2603-fc9b-7416-51158efa3221#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/c93ec031-d723-5788-d0ca-a1a1e4c781bd#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/032f4ec5-e6e7-74f3-a2fb-c92ce43cef02#id> ;
+    sport:stageNumber "18"^^xsd:int .
+
+<http://www.bbc.co.uk/things/b26bdb93-bc85-763c-ff67-b435482dd2bb#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Austrian Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Austrian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S10> ;
+    core:disambiguationHint "2018 Austrian Grand Prix"@en-gb ;
+    core:preferredLabel "Austrian Grand Prix"@en-gb ;
+    core:shortLabel "Austrian Grand Prix"@en-gb ;
+    core:slug "austrian-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/c915173d-033d-583d-4244-01501c1b2180#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/507ee693-56a5-0c36-0ac5-dcf4722d6122#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/d0b0e79b-59bb-4151-d307-4d110142fa02#id> ;
+    sport:stageNumber "9"^^xsd:int .
+
+<http://www.bbc.co.uk/things/b6538ea7-dd48-c810-3625-e25b61b94513#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Singapore Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Singapore Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S165> ;
+    core:disambiguationHint "2018 Singapore Grand Prix"@en-gb ;
+    core:preferredLabel "Singapore Grand Prix"@en-gb ;
+    core:shortLabel "Singapore Grand Prix"@en-gb ;
+    core:slug "singapore-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/87d841c3-b52f-aae1-f0ea-8449a7f5ba8f#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/27d5bd08-edc6-b0c3-4a7a-77910d314971#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/d25a84a5-2d9d-629d-c872-ad8fe51a3cdf#id> ;
+    sport:stageNumber "15"^^xsd:int .
+
+<http://www.bbc.co.uk/things/c7092a0d-21cc-dd8e-4828-35cbe287cbb9#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'German Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "German Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S11> ;
+    core:disambiguationHint "2018 German Grand Prix"@en-gb ;
+    core:preferredLabel "German Grand Prix"@en-gb ;
+    core:shortLabel "German Grand Prix"@en-gb ;
+    core:slug "german-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/ad32756e-deed-2e67-1bd2-7075edf270c6#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/2728d977-1120-9fa5-e2b8-291b655d13b6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/f28115cc-4d8f-001d-6999-d0e39a835697#id> ;
+    sport:stageNumber "11"^^xsd:int .
+
+<http://www.bbc.co.uk/things/c7ecba23-112a-17bb-d07b-934e193cb943#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 14 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S14RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/c915173d-033d-583d-4244-01501c1b2180#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 9 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S10RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/c93ec031-d723-5788-d0ca-a1a1e4c781bd#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 18 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S18R8689> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/cf3219bd-06ec-af87-720a-aaa43a02867b#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 8 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S9RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/d0b0e79b-59bb-4151-d307-4d110142fa02#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 9 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S10R8645> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/d112d685-36ae-ccb8-4a27-ad7480ab60fc#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Abu Dhabi Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Abu Dhabi Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S182> ;
+    core:disambiguationHint "2018 Abu Dhabi Grand Prix"@en-gb ;
+    core:preferredLabel "Abu Dhabi Grand Prix"@en-gb ;
+    core:shortLabel "Abu Dhabi Grand Prix"@en-gb ;
+    core:slug "abu-dhabi-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/5aad06d5-3308-4010-a40a-71dcf2dc347a#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/e6be2878-837e-2f36-524c-9139f7f2b95e#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/46755391-46f7-f331-5bd7-f28482349950#id> ;
+    sport:stageNumber "21"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d19f0ce1-13af-e73a-c512-f8e312dc2709#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 4 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S279R8619> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/d25a84a5-2d9d-629d-c872-ad8fe51a3cdf#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 15 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S165R8675> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/d623fa48-8f62-b0a8-b446-bf7aaa431604#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Australian Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Australian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S2> ;
+    core:disambiguationHint "2018 Australian Grand Prix"@en-gb ;
+    core:preferredLabel "Australian Grand Prix"@en-gb ;
+    core:shortLabel "Australian Grand Prix"@en-gb ;
+    core:slug "australian-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/a5f498e8-b8c2-6d3f-3517-f384914c394d#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/6e739b44-070a-ef75-18f7-119bd8d12608#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/5332cd54-0045-ab13-1039-852a12ab2da3#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d712b914-9094-cdf3-71d4-fa796bc1969a#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 19 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S17RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/d8ae1389-3c86-5439-64d6-db6ee5daec88#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S24R8609> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/d98ada3e-d749-adc4-bfac-09b6f742ab54#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Stage 'Bahrain Grand Prix' of 'Formula One'"@en-gb ;
+    sal:name "Bahrain Grand Prix"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S24> ;
+    core:disambiguationHint "2018 Bahrain Grand Prix"@en-gb ;
+    core:preferredLabel "Bahrain Grand Prix"@en-gb ;
+    core:shortLabel "Bahrain Grand Prix"@en-gb ;
+    core:slug "bahrain-grand-prix"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/f8c8beda-1ab5-7e5f-09f9-adebbce85624#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/d8ae1389-3c86-5439-64d6-db6ee5daec88#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/31eda31d-8c2a-fb19-1083-e8a7a7da6867#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/da83dd58-f5ab-4da3-aedc-0e0fb0c41ab0#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 19 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S17R8694> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/dbafbfc5-7985-b0f2-c16b-f5869a01dcbc#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 14 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S14R8669> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/e10a6c24-bcda-e650-9a62-fd6a9f544ed2#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 5 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S6RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/e4d3d2e7-d4b3-d0c8-ebb8-b76483d228a8#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 5 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S6R8625> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/e6be2878-837e-2f36-524c-9139f7f2b95e#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 21 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S182R8704> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/eae8721c-8d82-04c7-ccc8-c5f041a32e7f#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 20 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S3R8700> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/ee0edfd9-3b72-cbdc-a789-94476d290c0c#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 12 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S12R8659> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/f28115cc-4d8f-001d-6999-d0e39a835697#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 11 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S11R8655> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/f28ffcb0-96ee-2714-5be9-cc5e558dff62#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 4 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S279RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/f29a5b4c-1a9f-8709-129e-f8b90d3bfadb#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 5 of Formula One"@en-gb ;
+    sal:name "Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S6R8624> ;
+    core:preferredLabel "Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final-qualifying> .
+
+<http://www.bbc.co.uk/things/f5c1078f-564c-1dbd-a109-d90087b96ffc#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 10 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S1RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/f8c8beda-1ab5-7e5f-09f9-adebbce85624#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Formula One"@en-gb ;
+    sal:name "Practice"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S24RPRAC> ;
+    core:preferredLabel "Practice"@en-gb ;
+    core:shortLabel "Practice"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/practice> .
+
+<http://www.bbc.co.uk/things/fa3c4ba3-fa5f-0c8a-e215-6d7eb4812788#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 16 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S247R8680> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<http://www.bbc.co.uk/things/fb3a8dfa-edf2-5a3a-d603-25dbfbfaa8c4#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 19 of Formula One"@en-gb ;
+    sal:name "Race"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF12018S17R8695> ;
+    core:preferredLabel "Race"@en-gb ;
+    core:shortLabel "Race"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/race> .
+
+<urn:sports-data:CMRBF12018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S10> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S10R8644> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S10R8645> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S10RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S11> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S11R8654> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S11R8655> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S11RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S12> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S12R8659> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S12R8660> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S12RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S13> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S13R8664> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S13R8665> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S13RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S14> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S14R8669> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S14R8670> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S14RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S16> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S165> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S165R8674> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S165R8675> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S165RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S16R8684> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S16R8685> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S16RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S17> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S17R8694> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S17R8695> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S17RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S18> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S182> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S182R8704> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S182R8705> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S182RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S18R8689> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S18R8690> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S18RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S1R8649> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S1R8650> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S1RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S24> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S247> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S247R8679> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S247R8680> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S247RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S24R8609> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S24R8610> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S24RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S25> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S25R8614> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S25R8615> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S25RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S279> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S279R8619> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S279R8620> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S279RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S2R8604> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S2R8605> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S2RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S3R8699> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S3R8700> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S3RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S6R8624> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S6R8625> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S6RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S7R8629> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S7R8630> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S7RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S8R8634> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S8R8635> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S8RPRAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S9> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S9R8639> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S9R8640> a cms:Sports-DataLocator .
+
+<urn:sports-data:CMRBF12018S9RPRAC> a cms:Sports-DataLocator .
+

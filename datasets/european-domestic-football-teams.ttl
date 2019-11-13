@@ -1,0 +1,900 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/ef06663d-a0d8-41ee-bb72-2cd13667f408#id> a provenance:Dataset ;
+    rdfs:label "Football: European Domestic (non French, German, Italian, Spanish) Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-domestic-football-teams.ttl" ;
+    provenance:changeReason "SLS-4840: Create teams/competitions for World Service" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-10-10T12:32:30+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "21"^^xsd:int .
+
+<http://www.bbc.co.uk/sport/football/teams/aalborg-bk> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/ajax> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/anzhi-makhachkala> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/apoel-nicosia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/basel> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/bate-borisov> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/benfica> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/besiktas> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/cska-moscow> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/eskisehirspor> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/fc-copenhagen> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/fc-porto> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/fc-red-bull-salzburg> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/galatasaray> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/gomel> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/legia-warsaw> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/ludogorets-razgrad> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/malmo-ff> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/maribor> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/metalist-kharkiv> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/olympiakos> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/panathinaikos> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/partizan-belgrade> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/red-star-belgrade> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/rsc-anderlecht> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/rubin-kazan> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/shakhtar-donetsk> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/slovan-bratislava> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/sporting-lisbon> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/standard-liege> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/steau-bucharest> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/zenit-st-petersburg> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/things/170dbd85-61e3-4278-84b8-01c47d4bfc46#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FC Red Bull Salzburg"@en-gb ;
+    sal:videCode "SALZ"@en-gb ;
+    cms:locator <urn:sports-data:TFBB857> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "FC Red Bull Salzburg"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Red_Bull_Salzburg>,
+        <http://rdf.freebase.com/ns/m.06rk8r>,
+        <http://www.wikidata.org/entity/Q994811> ;
+    core:shortLabel "RB Salzburg"@en-gb ;
+    core:slug "fc-red-bull-salzburg"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/193417de-5b0a-4bc3-a697-93bff62d23d5#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Metalist Kharkiv"@en-gb ;
+    sal:videCode "MKHA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1951> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Metalist Kharkiv"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Metalist_Kharkiv> ;
+    core:shortLabel "Metalist Kharkiv"@en-gb ;
+    core:slug "metalist-kharkiv"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/206c16b5-5a86-4498-9fbb-33c25c6fef02#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Galatasaray"@en-gb ;
+    sal:videCode "GALA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB208> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Galatasaray"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Galatasaray_S.K._(football)>,
+        <http://rdf.freebase.com/ns/m.06zpgb2>,
+        <http://www.wikidata.org/entity/Q495299> ;
+    core:shortLabel "Galatasaray"@en-gb ;
+    core:slug "galatasaray"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3d53aaf6-50b6-40af-8f9c-ff105056a9f9#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Panathinaikos"@en-gb ;
+    sal:videCode "PANA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB264> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Panathinaikos"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Panathinaikos_F.C.>,
+        <http://rdf.freebase.com/ns/m.025rpyx>,
+        <http://www.wikidata.org/entity/Q4122219> ;
+    core:shortLabel "Panathinaikos"@en-gb ;
+    core:slug "panathinaikos"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3ee8a36a-d3d8-448c-b2d5-99ed703dcfb3#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "BATE Borisov"@en-gb ;
+    sal:videCode "BATE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2155> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "BATE Borisov"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_BATE_Borisov>,
+        <http://rdf.freebase.com/ns/m.03fn5s>,
+        <http://www.wikidata.org/entity/Q191101> ;
+    core:shortLabel "BATE Borisov"@en-gb ;
+    core:slug "bate-borisov"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/43cf5c10-1b41-4a31-90c2-5e58ef0a344f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Rubin Kazan"@en-gb ;
+    sal:videCode "RUBI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1589> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Rubin Kazan"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Rubin_Kazan>,
+        <http://rdf.freebase.com/ns/m.03mqj_>,
+        <http://www.wikidata.org/entity/Q170040> ;
+    core:shortLabel "Rubin Kazan"@en-gb ;
+    core:slug "rubin-kazan"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/45338d77-b0de-44ae-9468-6e6f06c06f03#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Aalborg BK"@en-gb ;
+    sal:videCode "AALB"@en-gb ;
+    cms:locator <urn:sports-data:TFBB401> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Aalborg BK"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Aalborg_Boldspilklub>,
+        <http://rdf.freebase.com/ns/m.03mql4>,
+        <http://www.wikidata.org/entity/Q267574> ;
+    core:shortLabel "Aalborg BK"@en-gb ;
+    core:slug "aalborg-bk"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/457d4979-d90c-4b1d-9c76-f7b8f7236d46#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ludogorets Razgrad"@en-gb ;
+    sal:videCode "LUDR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6128> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Ludogorets Razgrad"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/PFC_Ludogorets_Razgrad>,
+        <http://rdf.freebase.com/ns/m.0cmbxlk>,
+        <http://www.wikidata.org/entity/Q1339086> ;
+    core:shortLabel "Ludogorets"@en-gb ;
+    core:slug "ludogorets-razgrad"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/488a2b3e-c999-4747-9fba-6af709239157#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Standard Liege"@en-gb ;
+    sal:videCode "LIEG"@en-gb ;
+    cms:locator <urn:sports-data:TFBB373> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Standard Liege"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Standard_Liège>,
+        <http://rdf.freebase.com/ns/m.03x79y>,
+        <http://www.wikidata.org/entity/Q190561> ;
+    core:shortLabel "Standard Liege"@en-gb ;
+    core:slug "standard-liege"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4a0ddf1a-0b72-4c0d-9758-5c1f3cb54a07#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sporting Lisbon"@en-gb ;
+    sal:videCode "SPOR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB255> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Sporting Lisbon"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sporting_Clube_de_Portugal>,
+        <http://rdf.freebase.com/ns/m.03b04g>,
+        <http://www.wikidata.org/entity/Q75729> ;
+    core:shortLabel "Sporting"@en-gb ;
+    core:slug "sporting-lisbon"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4c2896c5-85e1-48e5-a6f1-07d59a5d3242#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "CSKA Moscow"@en-gb ;
+    sal:videCode "CSKA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1340> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "CSKA Moscow"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/CSKA_Moscow>,
+        <http://rdf.freebase.com/ns/m.03v4q3>,
+        <http://www.wikidata.org/entity/Q32140> ;
+    core:shortLabel "CSKA Moscow"@en-gb ;
+    core:slug "cska-moscow"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5018bb5d-fa01-4a46-9d86-8d0b62362a0a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Steaua Bucharest"@en-gb ;
+    sal:videCode "STBU"@en-gb ;
+    cms:locator <urn:sports-data:TFBB265> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Steaua Bucharest"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/CSA_Steaua_București>,
+        <http://rdf.freebase.com/ns/m.02rgxy7>,
+        <http://www.wikidata.org/entity/Q1316700> ;
+    core:shortLabel "Steaua Bucharest"@en-gb ;
+    core:slug "steau-bucharest"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/527dd690-8140-4e7c-94b9-de08251fb9fc#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Eskisehirspor"@en-gb ;
+    sal:videCode "ESKI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2901> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Eskisehirspor"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Eskişehirspor>,
+        <http://rdf.freebase.com/ns/m.07b3z_>,
+        <http://www.wikidata.org/entity/Q748445> ;
+    core:shortLabel "Eskisehirspor"@en-gb ;
+    core:slug "eskisehirspor"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/55e38775-ad97-4248-8209-44b01381d73c#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "RSC Anderlecht"@en-gb ;
+    sal:videCode "ANDL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB241> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "RSC Anderlecht"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/R.S.C._Anderlecht>,
+        <http://rdf.freebase.com/ns/m.013xh7>,
+        <http://www.wikidata.org/entity/Q187528> ;
+    core:shortLabel "Anderlecht"@en-gb ;
+    core:slug "rsc-anderlecht"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5a32dca6-5765-4175-b47e-70f1d3b5d604#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Apoel Nicosia"@en-gb ;
+    sal:videCode "APOE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB479> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Apoel Nicosia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/APOEL_FC>,
+        <http://rdf.freebase.com/ns/m.03j755>,
+        <http://www.wikidata.org/entity/Q131378> ;
+    core:shortLabel "Apoel Nicosia"@en-gb ;
+    core:slug "apoel-nicosia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5a71eff5-61a9-4e17-bc37-7ba20ad22178#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gomel"@en-gb ;
+    sal:videCode "GOME"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1461> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Gomel"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Gomel>,
+        <http://rdf.freebase.com/ns/m.03fhqm>,
+        <http://www.wikidata.org/entity/Q726285> ;
+    core:shortLabel "Gomel"@en-gb ;
+    core:slug "gomel"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5e8b1267-c6bb-4e0f-b439-87d1871b91ff#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Anzhi Makhachkala"@en-gb ;
+    sal:videCode "ANZH"@en-gb ;
+    cms:locator <urn:sports-data:TFBB3062> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Anzhi Makhachkala"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Anzhi_Makhachkala>,
+        <http://rdf.freebase.com/ns/m.0f6cl2>,
+        <http://www.wikidata.org/entity/Q19353> ;
+    core:shortLabel "Anzhi Makhachkala"@en-gb ;
+    core:slug "anzhi-makhachkala"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/61f7b28d-d7f0-471d-a79f-06e154aebc18#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "NK Maribor"@en-gb ;
+    sal:videCode "MARI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB3033> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "NK Maribor"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/NK_Maribor>,
+        <http://rdf.freebase.com/ns/m.03fms_>,
+        <http://www.wikidata.org/entity/Q210530> ;
+    core:shortLabel "NK Maribor"@en-gb ;
+    core:slug "maribor"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6317137a-82d1-4858-ae6c-c5eabd2aa82f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "JHJK Helsinki"@en-gb ;
+    sal:videCode "HJK"@en-gb ;
+    cms:locator <urn:sports-data:TFBB452> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "JHJK Helsinki"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Helsingin_Jalkapalloklubi>,
+        <http://rdf.freebase.com/ns/m.03fhq_>,
+        <http://www.wikidata.org/entity/Q208584> ;
+    core:shortLabel "JHJK Helsinki"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/67c54511-fa47-41bd-9655-4032f787fbc4#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "CFR Cluj-Napoca"@en-gb ;
+    sal:videCode "CFR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2628> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "CFR Cluj-Napoca"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/CFR_Cluj>,
+        <http://rdf.freebase.com/ns/m.077jpc>,
+        <http://www.wikidata.org/entity/Q205998> ;
+    core:shortLabel "CFR Cluj-Napoca"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6885eb33-1225-48b9-81b1-abf34b13125b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Shakhtar Donetsk"@en-gb ;
+    sal:videCode "SHKD"@en-gb ;
+    cms:locator <urn:sports-data:TFBB455> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Shakhtar Donetsk"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Shakhtar_Donetsk>,
+        <http://rdf.freebase.com/ns/m.03j722>,
+        <http://www.wikidata.org/entity/Q172969> ;
+    core:shortLabel "Shakhtar Donetsk"@en-gb ;
+    core:slug "shakhtar-donetsk"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/70d145c7-d7b2-41dd-8b87-99b3c770a0e0#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Olympiakos"@en-gb ;
+    sal:videCode "OLYP"@en-gb ;
+    cms:locator <urn:sports-data:TFBB202> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Olympiakos"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Olympiacos_F.C.>,
+        <http://rdf.freebase.com/ns/m.0hqzm6r>,
+        <http://www.wikidata.org/entity/Q19628> ;
+    core:shortLabel "Olympiakos"@en-gb ;
+    core:slug "olympiakos"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7752ae4b-2a22-45f2-b180-e3f4e0727ffc#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Club Bruges"@en-gb ;
+    sal:videCode "CLUB"@en-gb ;
+    cms:locator <urn:sports-data:TFBB413> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Club Bruges"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Club_Brugge_KV>,
+        <http://rdf.freebase.com/ns/m.02qdzd>,
+        <http://www.wikidata.org/entity/Q190916> ;
+    core:shortLabel "Club Bruges"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/82ee17ef-2f01-42d5-9581-528ca8b35b3c#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Atromitos"@en-gb ;
+    sal:videCode "ATRO"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2059> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Atromitos"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Atromitos_F.C.>,
+        <http://rdf.freebase.com/ns/m.0dt_q_>,
+        <http://www.wikidata.org/entity/Q757754> ;
+    core:shortLabel "Atromitos"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/836b2dcd-9591-4588-bde2-029ded55ae8a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Dinamo Moscow"@en-gb ;
+    sal:videCode "DINA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB472> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Dinamo Moscow"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Dynamo_Moscow>,
+        <http://rdf.freebase.com/ns/m.03v9yw>,
+        <http://www.wikidata.org/entity/Q17497> ;
+    core:shortLabel "Dinamo Moscow"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/84981890-31ea-48e9-8445-60f913683343#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Nordsjaelland"@en-gb ;
+    sal:videCode "FC N"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2592> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Nordsjaelland"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Nordsjælland>,
+        <http://rdf.freebase.com/ns/m.07nltx>,
+        <http://www.wikidata.org/entity/Q210025> ;
+    core:shortLabel "Nordsjaelland"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/89353f27-827c-45dc-90f9-33c2077247ab#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Partizan Belgrade"@en-gb ;
+    cms:locator <urn:sports-data:TFBB216> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Partizan Belgrade"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FK_Partizan> ;
+    core:shortLabel "Partizan Belgrade"@en-gb ;
+    core:slug "partizan-belgrade"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8a9aa962-12eb-4bbb-b86f-451fd31821ef#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FC Basel"@en-gb ;
+    sal:videCode "BASL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB481> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "FC Basel"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Basel>,
+        <http://rdf.freebase.com/ns/m.021mkg>,
+        <http://www.wikidata.org/entity/Q189671> ;
+    core:shortLabel "FC Basel"@en-gb ;
+    core:slug "basel"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8fd12169-4587-4fc3-b0d3-8655f7ee1626#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FC Copenhagen"@en-gb ;
+    sal:videCode "COPE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB569> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "FC Copenhagen"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/F.C._Copenhagen>,
+        <http://rdf.freebase.com/ns/m.03j70t>,
+        <http://www.wikidata.org/entity/Q188430> ;
+    core:shortLabel "FC Copenhagen"@en-gb ;
+    core:slug "fc-copenhagen"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9261e493-1c36-42a5-ad78-76629c3b412c#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Fenerbahce"@en-gb ;
+    sal:videCode "FENE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB253> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Fenerbahce"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Fenerbahçe_S.K._(football)>,
+        <http://rdf.freebase.com/ns/m.0h1g_n_>,
+        <http://www.wikidata.org/entity/Q6601875> ;
+    core:shortLabel "Fenerbahce"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ac352bef-925e-43c9-b24b-7966be9b3015#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Spartak Moscow"@en-gb ;
+    sal:videCode "SPAM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB205> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Spartak Moscow"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Spartak_Moscow>,
+        <http://rdf.freebase.com/ns/m.03qx63>,
+        <http://www.wikidata.org/entity/Q29112> ;
+    core:shortLabel "Spartak Moscow"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b719bd8e-1c21-425b-ad3c-f9e501cf4ccb#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Red Star Belgrade"@en-gb ;
+    cms:locator <urn:sports-data:TFBB214> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Red Star Belgrade"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Red_Star_Belgrade> ;
+    core:shortLabel "Red Star Belgrade"@en-gb ;
+    core:slug "red-star-belgrade"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c5ba74e2-39cb-424f-be8b-a719cc8bba82#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Besiktas"@en-gb ;
+    sal:videCode "BSKT"@en-gb ;
+    cms:locator <urn:sports-data:TFBB378> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Besiktas"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Beşiktaş_J.K.>,
+        <http://rdf.freebase.com/ns/m.04j3fr>,
+        <http://www.wikidata.org/entity/Q172567> ;
+    core:shortLabel "Besiktas"@en-gb ;
+    core:slug "besiktas"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ccbe1201-8d49-4d88-b79f-636ff810f765#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Helsingborgs"@en-gb ;
+    sal:videCode "HELS"@en-gb ;
+    cms:locator <urn:sports-data:TFBB217> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Helsingborgs"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Helsingborgs_IF>,
+        <http://rdf.freebase.com/ns/m.056jrs>,
+        <http://www.wikidata.org/entity/Q207503> ;
+    core:shortLabel "Helsingborgs"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d6835cbe-6201-4fcc-9452-9a216c30d738#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Slovan Bratislava"@en-gb ;
+    sal:videCode "SBRA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB211> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Slovan Bratislava"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/ŠK_Slovan_Bratislava>,
+        <http://rdf.freebase.com/ns/m.05ls7d>,
+        <http://www.wikidata.org/entity/Q192253> ;
+    core:shortLabel "Slovan Bratislava"@en-gb ;
+    core:slug "slovan-bratislava"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d7b30b58-9349-4686-95b6-b0c3ba668ca1#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Malmö FF"@en-gb ;
+    sal:videCode "MALM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB993> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Malmö FF"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Malmö_FF>,
+        <http://rdf.freebase.com/ns/m.033602>,
+        <http://www.wikidata.org/entity/Q204881> ;
+    core:shortLabel "Malmö FF"@en-gb ;
+    core:slug "malmo-ff"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/dcae0b28-316c-4dfb-a6a9-cb8f5e49f9fd#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Zenit St Petersburg"@en-gb ;
+    sal:videCode "ZENT"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1341> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Zenit St Petersburg"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Zenit_Saint_Petersburg>,
+        <http://rdf.freebase.com/ns/m.03m6zs>,
+        <http://www.wikidata.org/entity/Q29108> ;
+    core:shortLabel "Zenit St Petersburg"@en-gb ;
+    core:slug "zenit-st-petersburg"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/eb06524e-4f39-4bcf-be75-be162b498d6a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FC Porto"@en-gb ;
+    sal:videCode "PORT"@en-gb ;
+    cms:locator <urn:sports-data:TFBB201> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "FC Porto"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/F.C._Porto>,
+        <http://rdf.freebase.com/ns/m.0177gl>,
+        <http://www.wikidata.org/entity/Q128446> ;
+    core:shortLabel "FC Porto"@en-gb ;
+    core:slug "fc-porto"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/eb8f2a69-9b31-4be4-93e5-b85985ef5d9d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ajax"@en-gb ;
+    sal:videCode "AJAX"@en-gb ;
+    cms:locator <urn:sports-data:TFBB215> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Ajax"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/AFC_Ajax>,
+        <http://rdf.freebase.com/ns/m.0y54>,
+        <http://www.wikidata.org/entity/Q81888> ;
+    core:shortLabel "Ajax"@en-gb ;
+    core:slug "ajax"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ecab8eed-9568-4dca-b31f-340d3258a151#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sparta Prague"@en-gb ;
+    sal:videCode "SPAP"@en-gb ;
+    cms:locator <urn:sports-data:TFBB206> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Sparta Prague"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/AC_Sparta_Prague>,
+        <http://rdf.freebase.com/ns/m.03j76b>,
+        <http://www.wikidata.org/entity/Q193481> ;
+    core:shortLabel "Sparta Prague"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f1c79ee7-d511-4602-91f5-b4ffafccac5e#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Legia Warsaw"@en-gb ;
+    sal:videCode "LEGW"@en-gb ;
+    cms:locator <urn:sports-data:TFBB263> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Legia Warsaw"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Legia_Warsaw>,
+        <http://rdf.freebase.com/ns/m.032498>,
+        <http://www.wikidata.org/entity/Q193749> ;
+    core:shortLabel "Legia Warsaw"@en-gb ;
+    core:slug "legia-warsaw"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f4588e7d-319d-4f7a-805c-d1676e822f3f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Benfica"@en-gb ;
+    sal:videCode "BENF"@en-gb ;
+    cms:locator <urn:sports-data:TFBB251> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Benfica"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/S.L._Benfica>,
+        <http://rdf.freebase.com/ns/m.02rh_0>,
+        <http://www.wikidata.org/entity/Q131499> ;
+    core:shortLabel "Benfica"@en-gb ;
+    core:slug "benfica"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<urn:sports-data:TFBB1340> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1341> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1461> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1589> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1951> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB201> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB202> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB205> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2059> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB206> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB208> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB211> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB214> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB215> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2155> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB216> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB217> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB241> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB251> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB253> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB255> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2592> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2628> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB263> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB264> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB265> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2901> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB3033> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB3062> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB373> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB378> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB401> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB413> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB452> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB455> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB472> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB479> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB481> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB569> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6128> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB857> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB993> a cms:Sports-DataLocator .
+

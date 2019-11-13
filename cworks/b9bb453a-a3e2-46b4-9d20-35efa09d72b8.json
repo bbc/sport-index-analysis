@@ -1,0 +1,3583 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/611942cd-68f3-410e-a936-56c49d89d65a#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-13T08:05:05+00:00",
+      "dateModified": "2019-11-13T08:05:05+00:00",
+      "description": "Former Spain and Barcelona forward David Villa says he will retire at the end of the J-League season next month.",
+      "shortTitle": "Spain\u0027s top scorer Villa to retire",
+      "title": "David Villa: Spain\u0027s top scorer to retire at end of J-League season",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:fa32e861-0ca8-5f47-930c-ee3a59d46757",
+        "urn:bbc:cps:asset:50401494"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a626b35a-026a-4a02-942d-eba9975f1346#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Japanese J1 League",
+          "preferredLabel": "Japanese J1 League",
+          "shortLabel": "Japanese J1 League",
+          "slug": "japanese-j1-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/japanese-j1-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "https://www.jleague.jp/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50401494",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/9DD4/production/_109640404_villa_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "David Villa",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/49b08a38-7c97-4c31-979a-28f7fbf7bf16#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-11T15:26:19+00:00",
+      "dateModified": "2019-11-11T15:26:19+00:00",
+      "description": "L\u0027ailier de Wolverhampton Wanderers, Adama Traoré, se retire de la sélection espagnole suite à une blessure.",
+      "shortTitle": "Equipe d\u0027Espagne, Adama Traoré forfait pour blessure",
+      "title": "Adama Traoré, l\u0027attaquant espagnol d\u0027origine malienne, forfait pour blessure",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+      "locator": [
+        "urn:asset:2ed66414-2c0b-c341-9ff7-837e4333a2be",
+        "urn:bbc:cps:asset:50379899"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/0b0bfd5a-81b8-43fa-91fc-57f1fcd24487#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "news:Place"
+          ],
+          "label": "Europe",
+          "preferredLabel": "Europe",
+          "slug": "europe",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Europe",
+          "sameAs": [
+            "http://dbpedia.org/resource/Europe",
+            "http://www.wikidata.org/entity/Q46"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/41d18767-227c-4353-ac08-b1e560b4fbf5#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Mali",
+          "preferredLabel": "Mali",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Mali",
+          "sameAs": "http://sws.geonames.org/2453866/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9a18805c-fb88-40ba-9763-bcc121d5d55c#id",
+          "@type": [
+            "Thing",
+            "Organisation"
+          ],
+          "label": "European Union",
+          "preferredLabel": "European Union",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/European_Union",
+          "sameAs": [
+            "http://dbpedia.org/resource/European_Union",
+            "http://www.wikidata.org/entity/Q458"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/afrique/sports-50379899",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/0708/production/_109600810_gettyimages-1186355543.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Adama Traore",
+          "thumbnailType": "StandardThumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/135B0/production/_109608297_gettyimages-1186355543.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Adama Traoré",
+          "thumbnailType": "CloseUpThumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/15CC0/production/_109608298_gettyimages-1186355543.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Adama Traoré",
+          "thumbnailType": "FixedSize66Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/183D0/production/_109608299_gettyimages-1186355543.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Adama Traoré",
+          "thumbnailType": "FixedSize144Thumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/cba4da48-202e-4b67-8e74-cb5fb3913bd6#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-11T09:40:37+00:00",
+      "dateModified": "2019-11-11T09:40:37+00:00",
+      "description": "Wolverhampton Wanderers\u0027 winger Adama Traore withdraws from Spain squad with an injury.",
+      "shortTitle": "Injured Traore pulls out of Spain squad",
+      "title": "Wolves\u0027 Adama Traore forced to withdraw from Spain squad",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:06cadf3d-661d-8f45-a8c9-61a4f0944234",
+        "urn:bbc:cps:asset:50367205"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b68a1520-32bc-eb42-8dc0-ccc1018e8e8f#id",
+          "@type": [
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Thing",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Wolverhampton Wanderers",
+          "preferredLabel": "Wolverhampton Wanderers",
+          "shortLabel": "Wolves",
+          "slug": "wolverhampton-wanderers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Wolverhampton_Wanderers_F.C.",
+            "http://rdf.freebase.com/ns/m.01fwqn",
+            "http://www.wikidata.org/entity/Q19500"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/wolverhampton-wanderers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.wolves.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e05a00e2-7c37-4af9-a7d8-0202dd1f00f8#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "African Football",
+          "preferredLabel": "African Football",
+          "shortLabel": "African Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/african"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "http://www.bbc.co.uk/things/113d0cf9-8fc9-48e5-bcb2-514d7b1d2929#id",
+          "@type": [
+            "Thing",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Mali",
+          "preferredLabel": "Mali",
+          "shortLabel": "Mali",
+          "slug": "mali",
+          "sameAs": [
+            "http://dbpedia.org/resource/Mali_national_football_team",
+            "http://rdf.freebase.com/ns/m.0416f1",
+            "http://www.wikidata.org/entity/Q211733"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50367205",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/0708/production/_109600810_gettyimages-1186355543.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Adama Traore",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/2d447325-dd43-4ca6-9b61-513bf3f6d190#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-18T11:46:50+00:00",
+      "dateModified": "2019-10-18T11:46:50+00:00",
+      "description": "Le Classico entre Barcelone et le Real Madrid est reporté en raison des craintes de troubles civils liés l\u0027arrestation de neuf dirigeants séparatistes catalans .",
+      "shortTitle": "Le Classico reporté en raison de craintes d\u0027agitation",
+      "title": "Barcelone-Real Madrid: le Classico reporté en raison de craintes d\u0027agitations",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+      "locator": [
+        "urn:asset:9fabe48f-c65d-3842-be78-6d0fa72c4048",
+        "urn:bbc:cps:asset:50088517"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/afrique/sports-50088517",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/0DC8/production/_109282530_elclasico.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Les joueurs du FC Barcelone et du Real Madrid",
+          "thumbnailType": "FixedSize66Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/14260/production/_109282528_elclasico.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Les joueurs du FC Barcelone et du Real Madrid",
+          "thumbnailType": "CloseUpThumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/34D8/production/_109282531_elclasico.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Les joueurs du FC Barcelone et du Real Madrid",
+          "thumbnailType": "FixedSize144Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/D845/production/_109256355_elclasico.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": [
+            "Les joueurs du FC Barcelone et du Real Madrid",
+            "Real Madrid Barcelona\u0027yı en son Nisan 2016\u0027da yenebilmişti"
+          ],
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/0ae0181d-8b50-4068-be07-75f2c072b380#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-15T20:53:13+00:00",
+      "dateModified": "2019-10-15T20:53:13+00:00",
+      "description": "Three-time champions Spain qualify for Euro 2020 courtesy of Rodrigo\u0027s injury-time strike in a draw in Sweden.",
+      "shortTitle": "Spain qualify for Euro 2020 after draw",
+      "title": "Sweden 1-1 Spain: Robert Moreno\u0027s side qualify for Euro 2020",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:5c7a76d7-f74a-40a6-b520-9cf22cb63040",
+        "urn:bbc:cps:asset:50063558"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3ac8c344-8b15-4324-b772-5e3d52a704fc#id",
+          "@type": [
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Sweden",
+          "preferredLabel": "Sweden",
+          "shortLabel": "Sweden",
+          "slug": "sweden",
+          "primaryTopicOf": [
+            "http://svenskfotboll.se/",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/sweden",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Sweden_national_football_team",
+            "http://rdf.freebase.com/ns/m.02rytm",
+            "http://www.wikidata.org/entity/Q160826"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50063558",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/1704C/production/_109248249_rodrigo.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Rodrigo",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/efcf5a0a-0e73-40d9-9263-ea7a3ce35e1b#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-10-15T20:34:45+00:00",
+      "dateModified": "2019-10-15T20:34:45+00:00",
+      "description": "Goalkeeper David de Gea is a doubt for Manchester United\u0027s Premier League game against Liverpool on Sunday after coming off injured on Spain duty.",
+      "shortTitle": "Injured De Gea doubt for Liverpool game",
+      "title": "David de Gea: Injured keeper a doubt for Man Utd v Liverpool",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:f11b46d0-c925-6b4c-8fce-d85ccf8af15e",
+        "urn:bbc:cps:asset:50064128"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/90d9a818-850b-b64f-9474-79e15a0355b8#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Manchester United",
+          "preferredLabel": "Manchester United",
+          "shortLabel": "Man Utd",
+          "slug": "manchester-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Manchester_United_F.C.",
+            "http://rdf.freebase.com/ns/m.050fh",
+            "http://www.wikidata.org/entity/Q18656"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/manchester-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.manutd.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b7498154-88a4-43ac-8790-c3bb93d5e18f#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Manchester",
+          "preferredLabel": "Manchester",
+          "sameAs": "http://sws.geonames.org/2643123/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50064128",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/B724/production/_109248864_degea.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "David de Gea sits down injured",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/9e5196af-72bf-42d4-8d42-f0213fd83df0#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-12T21:28:02+00:00",
+      "dateModified": "2019-10-12T21:28:02+00:00",
+      "description": "Sergio Ramos becomes Europe\u0027s most capped male outfield player as Spain edge closer to Euro 2020 qualification with a 1-1 draw in Norway.",
+      "shortTitle": "Ramos breaks Spain record in Norway draw",
+      "title": "Norway 1-1 Spain: Sergio Ramos becomes Spain\u0027s record appearance maker in Norway draw",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:1e91fa0e-42ba-480b-a691-1f3105f1cd4b",
+        "urn:bbc:cps:asset:50029603"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/bcfa15f8-4ff0-4cfd-ab0d-40ded48e8f5d#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Norway",
+          "preferredLabel": "Norway",
+          "shortLabel": "Norway",
+          "slug": "norway",
+          "sameAs": "http://dbpedia.org/resource/Norway_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50029603",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/1843/production/_109211260_gettyimages-1175411460.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Spain\u0027s Sergio Ramos",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/1449fe4d-a7f1-4a96-9c8e-eb48cfd0f6ff#id",
+      "@type": [
+        "LiveCoverage",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-11T10:51:19+00:00",
+      "dateModified": "2019-10-11T10:51:19+00:00",
+      "description": "Italy beat Greece to qualify for Euro 2020 and Spain draw in Norway .",
+      "shortTitle": "Italy qualify for Euro 2020, Spain draw with Norway",
+      "title": "Euro 2020 qualifying latest: Italy \u0026 Spain among the teams in action - live text",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:8478eb1c-9ee5-4c4b-a47a-697754f07845",
+        "urn:bbc:cps:asset:49985906"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/eecba9c9-afb4-4d64-9c1f-b7e62da658bf#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "European Championship",
+          "preferredLabel": "European Championship",
+          "shortLabel": "European Championship",
+          "slug": "european-championship",
+          "sameAs": "http://dbpedia.org/resource/UEFA_European_Football_Championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/european-championship/euro-2016",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/49985906",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/E9FD/production/_109210995_gettyimages-1175417819.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Italy v Greece",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/393f22a9-6c62-4d07-87e5-1ea21951f804#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-09-20T17:40:21+00:00",
+      "dateModified": "2019-09-20T17:40:21+00:00",
+      "description": "L\u0027attaquant de Barcelone, Ansu Fati, obtient la nationalité espagnole, ce qui lui permet de jouer pour l\u0027Espagne au niveau international, même s\u0027il reste éligible pour la Guinée-Bissau et le Portugal.",
+      "shortTitle": "Fati obtient la citoyenneté espagnole",
+      "title": "Ansu Fati : l\u0027attaquant de Barcelone obtient la nationalité espagnole",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+      "locator": [
+        "urn:asset:36be2ef0-ca8f-9c49-9faa-9e6e8baf6a3a",
+        "urn:bbc:cps:asset:49773137"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/bdf69e6b-bbdf-4306-8c7f-c39ae5326a57#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Guinea-Bissau",
+          "preferredLabel": "Guinea-Bissau",
+          "sameAs": "http://sws.geonames.org/2372248/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c0adb26a-0bdb-4f42-8c12-7d41b56986de#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "slug": "spain",
+          "sameAs": "http://sws.geonames.org/2510769/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/afrique/sports-49773137",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/11FC4/production/_108886637_fati_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Ansu Fati",
+          "thumbnailType": "FixedSize66Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/146D4/production/_108886638_fati_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Ansu Fati",
+          "thumbnailType": "FixedSize144Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/17FC1/production/_108814289_fati_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Ansu Fati",
+          "thumbnailType": "StandardThumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/D1A4/production/_108886635_fati_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Ansu Fati",
+          "thumbnailType": "CloseUpThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/8faf225e-efdb-4123-a66a-16ee95a876fc#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-09-20T13:44:18+00:00",
+      "dateModified": "2019-09-20T13:44:18+00:00",
+      "description": "Barcelona\u0027s Ansu Fati is granted Spanish citizenship paving they way for him to play for them at international level, though he remains eligible for Guinea-Bissau and Portugal.",
+      "shortTitle": "Fati granted Spanish citizenship",
+      "title": "Ansu Fati: Barcelona forward granted Spanish citizenship",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:c4ba2b79-c0e1-9248-b1c4-eadcb79d1192",
+        "urn:bbc:cps:asset:49773149"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e05a00e2-7c37-4af9-a7d8-0202dd1f00f8#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "African Football",
+          "preferredLabel": "African Football",
+          "shortLabel": "African Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/african"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e58bd16f-c135-4d8f-aa05-1e30c82693e7#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Guinea-Bissau",
+          "preferredLabel": "Guinea-Bissau",
+          "shortLabel": "Guinea-Bissau",
+          "slug": "guinea-bissau",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/teams/guinea-bissau",
+          "sameAs": "http://dbpedia.org/resource/Guinea-Bissau_national_football_team"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "http://www.bbc.co.uk/things/50e8aed7-1ce9-4784-962f-e61fea038990#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "Organisation"
+          ],
+          "label": "Portugal",
+          "preferredLabel": "Portugal",
+          "shortLabel": "Portugal",
+          "slug": "portugal",
+          "sameAs": [
+            "http://dbpedia.org/resource/Portugal_national_football_team",
+            "http://rdf.freebase.com/ns/m.02rqxc",
+            "http://www.wikidata.org/entity/Q267245"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49773149",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/17FC1/production/_108814289_fati_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Ansu Fati",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/0e74965b-c468-4db9-97a2-4f1e8595a37c#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-09-09T11:33:41+00:00",
+      "dateModified": "2019-09-09T11:33:41+00:00",
+      "description": "Sergio Ramos won a record-equalling 167th cap against the Faroe Islands, but can you name the other players with the most caps for Spain?",
+      "shortTitle": "Quiz: Name Spain\u0027s most capped players",
+      "title": "Sergio Ramos: Can you name Spain\u0027s most-capped players?",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:320bacf5-4a76-224d-bd35-7014b13797db",
+        "urn:bbc:cps:asset:49632461"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1c9c5c77-4d89-414a-a5df-1f9f1a28d630#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Madrid",
+          "preferredLabel": "Real Madrid",
+          "shortLabel": "Real Madrid",
+          "slug": "real-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Real_Madrid_C.F.",
+            "http://rdf.freebase.com/ns/m.06l22",
+            "http://www.wikidata.org/entity/Q8682"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49632461",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/D0EE/production/_108668435_gettyimages-1150060709.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Sergio Ramos",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/8b43063e-4336-4399-8504-c2a819b566d5#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-09-08T20:46:20+00:00",
+      "dateModified": "2019-09-08T20:46:20+00:00",
+      "description": "Spain move closer to reaching Euro 2020 with a comfortable qualifying win over the Faroe Islands in Group F.",
+      "shortTitle": "Rodrigo \u0026 Alcacer lead Spain to win",
+      "title": "Spain 4-0 Faroe Islands: Rodrigo and Alcacer score twice each",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:2256ec29-1010-4d00-ba41-64461a131f57",
+        "urn:bbc:cps:asset:49603015"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a3fec6ab-00fc-4b8f-bbbf-607610e67841#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Thing",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain-women"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aacd7b64-abd7-47cb-a5b6-48f51c3efd0a#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Faroe Islands",
+          "preferredLabel": "Faroe Islands",
+          "shortLabel": "Faroe Islands",
+          "slug": "faroe-islands",
+          "sameAs": [
+            "http://dbpedia.org/resource/Faroe_Islands_national_football_team",
+            "http://rdf.freebase.com/ns/m.03z0x2",
+            "http://www.wikidata.org/entity/Q200688"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.fsf.fo/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49603015",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/135DE/production/_108662397_spain-indedx.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Spain celebrate",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/34654b25-cff6-4037-b1f3-0dc8bb13c5ab#id",
+      "@type": [
+        "CreativeWork",
+        "LiveCoverage"
+      ],
+      "dateCreated": "2019-09-07T18:41:23+00:00",
+      "dateModified": "2019-09-07T18:41:23+00:00",
+      "description": "Finland host Italy and Spain face Faroe Islands in Euro 2020 qualifying - follow live text coverage.",
+      "shortTitle": "Euro 2020 qualifying: Spain \u0026 Italy in action",
+      "title": "Finland v Italy \u0026 Spain v Faroe Islands in Euro 2020 qualifying action",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:c0605fb4-4be5-194e-8c55-bf5d87d5c57c",
+        "urn:bbc:cps:asset:49582366"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/8781e9b9-250e-4140-8ef2-a5797a9470e3#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing"
+          ],
+          "label": "Finland",
+          "preferredLabel": "Finland",
+          "shortLabel": "Finland",
+          "slug": "finland",
+          "sameAs": "http://dbpedia.org/resource/Finland_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aacd7b64-abd7-47cb-a5b6-48f51c3efd0a#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Faroe Islands",
+          "preferredLabel": "Faroe Islands",
+          "shortLabel": "Faroe Islands",
+          "slug": "faroe-islands",
+          "sameAs": [
+            "http://dbpedia.org/resource/Faroe_Islands_national_football_team",
+            "http://rdf.freebase.com/ns/m.03z0x2",
+            "http://www.wikidata.org/entity/Q200688"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.fsf.fo/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/49582366",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/2EF0/production/_108661021_spa_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Spain",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/bf392e33-afe0-4c1d-b387-7c2444cf0b8a#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-09-05T21:35:28+00:00",
+      "dateModified": "2019-09-05T21:35:28+00:00",
+      "description": "Spain keep up their 100% record at the top of Group F with a win in Romania.",
+      "shortTitle": "Kepa save earns 10-man Spain win",
+      "title": "Spain win in Romania thanks to fine Kepa Arrizabalaga save",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:2dd5e654-03d6-4f38-b570-2a4907db0cc3",
+        "urn:bbc:cps:asset:49574068"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/eecba9c9-afb4-4d64-9c1f-b7e62da658bf#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "European Championship",
+          "preferredLabel": "European Championship",
+          "shortLabel": "European Championship",
+          "slug": "european-championship",
+          "sameAs": "http://dbpedia.org/resource/UEFA_European_Football_Championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/european-championship/euro-2016",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f1be2537-3c14-40f1-835d-82b4f6507089#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Romania",
+          "preferredLabel": "Romania",
+          "shortLabel": "Romania",
+          "slug": "romania",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/romania",
+            {
+              "@id": "http://www.frf.ro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Romania_national_football_team",
+            "http://www.wikidata.org/entity/Q168397"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49574068",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/309B/production/_108634421_ramos.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Sergio Ramos",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/089b1e36-620f-46a0-83a1-f62f6642986a#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-09-03T14:28:16+00:00",
+      "dateModified": "2019-09-03T14:28:16+00:00",
+      "description": "Spain national team coach Robert Moreno will stand down if former boss Luis Enrique wants to return",
+      "shortTitle": "Moreno would \u0027step aside\u0027 for Enrique",
+      "title": "Spain manager Robert Moreno would \u0027step aside\u0027 for Luis Enrique",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:ab781e12-7e8f-ac40-9d56-d8c0385574f5",
+        "urn:bbc:cps:asset:49567765"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49567765",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/1430C/production/_108600728_luisenrique_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Luis Enrique",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/dc8c69c8-97f9-4c67-8c21-1c1b38f7520a#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-08-29T23:49:07+00:00",
+      "dateModified": "2019-08-29T23:49:07+00:00",
+      "description": "El exentrenador del Barcelona y de la selección de fútbol de España informó que la niña sufría de cáncer en los huesos.",
+      "title": "Luis Enrique, exentrenador de la selección de fútbol de España, anuncia la muerte de su hija de 9 años",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+      "locator": [
+        "urn:asset:ae8126d9-5c08-3641-b892-9d7a4b2a8a7a",
+        "urn:bbc:cps:asset:49519795"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c0adb26a-0bdb-4f42-8c12-7d41b56986de#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "slug": "spain",
+          "sameAs": "http://sws.geonames.org/2510769/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c4794229-7f87-43ce-ac0a-6cfcd6d3cef2#id",
+          "@type": [
+            "Thing",
+            "Theme"
+          ],
+          "label": "Health",
+          "preferredLabel": "Health",
+          "sameAs": [
+            "http://dbpedia.org/resource/Health",
+            "http://www.wikidata.org/entity/Q12147"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/mundo/deportes-49519795",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/D470/production/_108548345_gettyimages-583607248.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Luis Enrique",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/f40bc1ae-a47f-46e6-a69d-6fcd2d44a227#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-08-29T21:01:45+00:00",
+      "dateModified": "2019-08-29T21:01:45+00:00",
+      "description": "Former Spain and Barcelona manager Luis Enrique pays tribute to his daughter after she died from bone cancer aged nine.",
+      "shortTitle": "Enrique\u0027s daughter dies aged nine",
+      "title": "Luis Enrique: Former Spain and Barcelona manager\u0027s daughter dies aged nine",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:eab942de-30d6-e342-bfae-1fa0e080f23e",
+        "urn:bbc:cps:asset:49518049"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2534e17c-b9ca-44ac-a534-55f0906e78c7#id",
+          "@type": [
+            "http://xmlns.com/foaf/0.1/Person",
+            "dcterms:Agent",
+            "Person",
+            "geo:SpatialThing",
+            "http://www.w3.org/2000/10/swap/pim/contact#Person",
+            "Thing",
+            "sport:Person"
+          ],
+          "label": [
+            "NADAL Rafael-tennis-esp-1986-06-03",
+            "Rafael Nadal",
+            "Rafael Nadal"
+          ],
+          "preferredLabel": "Rafael Nadal",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Rafael_Nadal",
+            "http://www.bbc.co.uk/sport/olympics/2012/athletes/2534e17c-b9ca-44ac-a534-55f0906e78c7",
+            "http://www.facebook.com/Nadal",
+            "https://twitter.com/#!/RafaelNadal"
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Rafael_Nadal",
+            "http://rdf.freebase.com/ns/m.051q39",
+            "http://www.wikidata.org/entity/Q10132"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ce355ac3-8df5-4e7c-b66c-1689e7d48e30#id",
+          "@type": [
+            "Thing",
+            "Person"
+          ],
+          "label": "Lionel Messi",
+          "preferredLabel": "Lionel Messi"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49518049",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/D470/production/_108548345_gettyimages-583607248.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Luis Enrique",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/e4ce4823-3443-482f-8b5c-19098c6cce5a#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-08-23T18:04:29+00:00",
+      "dateModified": "2019-08-23T18:04:29+00:00",
+      "description": "Watch four of Fernando Torres\u0027 finest Premier League goals as the Spanish striker announces his retirement from football.",
+      "shortTitle": "Four fabulous Torres Premier League goals",
+      "title": "Fernando Torres: Watch four fine Premier League goals from ex-Liverpool and Chelsea striker",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:cb28c4ca-2595-fd48-a591-c09d4c97f511",
+        "urn:bbc:cps:asset:49453847"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2acacd19-6609-1840-9c2b-b0820c50d281#id",
+          "@type": [
+            "Thing",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Chelsea",
+          "preferredLabel": "Chelsea",
+          "shortLabel": "Chelsea",
+          "slug": "chelsea",
+          "sameAs": [
+            "http://dbpedia.org/resource/Chelsea_F.C.",
+            "http://rdf.freebase.com/ns/m.023fb",
+            "http://www.wikidata.org/entity/Q9616"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/chelsea",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.chelseafc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/8df31a76-4c22-5b40-9f0d-78b34dfb26fa#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent"
+          ],
+          "label": "Liverpool",
+          "preferredLabel": "Liverpool",
+          "shortLabel": "Liverpool",
+          "slug": "liverpool",
+          "sameAs": [
+            "http://dbpedia.org/resource/Liverpool_F.C.",
+            "http://rdf.freebase.com/ns/m.04ltf",
+            "http://www.wikidata.org/entity/Q1130849"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/liverpool",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.liverpoolfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/49453847",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/103D6/production/_108481566_p07lh38s.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Fernando Torres",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/a267932f-a1db-481b-89fd-2969ccccae3b#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-08-23T13:24:02+00:00",
+      "dateModified": "2019-08-23T13:24:02+00:00",
+      "description": "Spanish World Cup-winning striker Fernando Torres plays his final professional match before retirement.",
+      "shortTitle": "Torres plays final game before retiring",
+      "title": "Fernando Torres: Former Liverpool and Chelsea striker retires after final match",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:56bf1112-dcd0-8d4c-aad1-5724548ef95c",
+        "urn:bbc:cps:asset:49446602"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2acacd19-6609-1840-9c2b-b0820c50d281#id",
+          "@type": [
+            "Thing",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Chelsea",
+          "preferredLabel": "Chelsea",
+          "shortLabel": "Chelsea",
+          "slug": "chelsea",
+          "sameAs": [
+            "http://dbpedia.org/resource/Chelsea_F.C.",
+            "http://rdf.freebase.com/ns/m.023fb",
+            "http://www.wikidata.org/entity/Q9616"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/chelsea",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.chelseafc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/7f66e5fb-f7b1-4b84-a592-80a851950fa4#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Atlético Madrid",
+          "preferredLabel": "Atlético Madrid",
+          "shortLabel": "Atl Madrid",
+          "slug": "atletico-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Atlético_Madrid",
+            "http://rdf.freebase.com/ns/m.0lg7v",
+            "http://www.wikidata.org/entity/Q8701"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/atletico-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/8df31a76-4c22-5b40-9f0d-78b34dfb26fa#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent"
+          ],
+          "label": "Liverpool",
+          "preferredLabel": "Liverpool",
+          "shortLabel": "Liverpool",
+          "slug": "liverpool",
+          "sameAs": [
+            "http://dbpedia.org/resource/Liverpool_F.C.",
+            "http://rdf.freebase.com/ns/m.04ltf",
+            "http://www.wikidata.org/entity/Q1130849"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/liverpool",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.liverpoolfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49446602",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/ACAF/production/_108470244_torres_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Fernando Torres",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/f0904df7-2bd9-41f0-9f9c-1fe91cf677f2#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-07-26T16:17:51+00:00",
+      "dateModified": "2019-07-26T16:17:51+00:00",
+      "description": "L\u0027ancien attaquant de Barcelone, Patrick Kluivert, a rejoint le club espagnol dont il devient le directeur de la formation.",
+      "shortTitle": "Patrick Kluivert rejoint le Barça en tant que directeur de la formation",
+      "title": "Patrick Kluivert nommé directeur de la formation du FC Barcelone",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+      "locator": [
+        "urn:asset:a4c4e63a-b7f4-0b4e-beb7-b74b2062b64f",
+        "urn:bbc:cps:asset:49125894"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/aa200d4c-217e-4a6a-9e61-733d812cac06#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Netherlands",
+          "preferredLabel": "Netherlands",
+          "sameAs": "http://sws.geonames.org/2750405/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/afrique/sports-49125894",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/01A2/production/_108081400_50ae333f-2663-4509-9478-b13c905d29e9.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Patrick Kluivert a marqué 145 buts pour le FC Barcelone entre 1998 et 2004.",
+          "thumbnailType": "FixedSize66Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/14634/production/_108080538_50ae333f-2663-4509-9478-b13c905d29e9.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Patrick Kluivert a marqué 145 buts pour le FC Barcelone entre 1998 et 2004.",
+          "thumbnailType": "CloseUpThumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/28B2/production/_108081401_50ae333f-2663-4509-9478-b13c905d29e9.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Patrick Kluivert a marqué 145 buts pour le FC Barcelone entre 1998 et 2004.",
+          "thumbnailType": "FixedSize144Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/F814/production/_108080536_50ae333f-2663-4509-9478-b13c905d29e9.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Patrick Kluivert a marqué 145 buts pour le FC Barcelone entre 1998 et 2004.",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CloseUpThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CloseUpThumbnail"
+    },
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "FixedSize144Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/FixedSize144Thumbnail"
+    },
+    "FixedSize66Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/FixedSize66Thumbnail"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "LiveCoverage": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/LiveCoverage"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "Organisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"
+    },
+    "Person": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Person"
+    },
+    "Place": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Place"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "VideoFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/VideoFormat"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "dcterms:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "geo:SpatialThing": {
+      "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "geoname:GeoTagConcept": {
+      "@id": "http://www.geonames.org/ontology#GeoTagConcept"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "mentions": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/mentions",
+      "@type": "@id"
+    },
+    "news:Place": {
+      "@id": "http://www.bbc.co.uk/ontologies/news/Place"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "shortTitle": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/shortTitle"
+    },
+    "skos:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:Competition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Competition"
+    },
+    "sport:CompetitiveSportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"
+    },
+    "sport:Person": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Person"
+    },
+    "sport:RecurringCompetition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"
+    },
+    "sport:SportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"
+    },
+    "sport:SportsDiscipline": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentCategory": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentCategory",
+      "@type": "@id"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

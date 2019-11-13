@@ -1,0 +1,140 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/43a8791a-f140-4b56-ac5d-836c4486ca36#id> a provenance:Dataset ;
+    rdfs:label "Tennis: Seasons" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/tennis/tennis-seasons.ttl" ;
+    provenance:changeReason "SLS-4432: Model Wimbledon 2018 season" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-06-20T09:08:44+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "14"^^xsd:int .
+
+<http://www.bbc.co.uk/things/231cbf4c-97f6-4237-be31-add73f648c91#id> a sport:Competition ;
+    rdfs:label "Wimbledon 2018 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/c5975202-440c-4a80-8c0c-b560d9f83ac0#id> ;
+    sal:name "Wimbledon"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> .
+
+<http://www.bbc.co.uk/things/2477b125-49a6-43f9-ac74-3d1c96b024c9#id> a sport:Competition ;
+    rdfs:label "Wimbledon 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/c29f48d1-c9c2-499c-9e76-198801bcde8a#id> ;
+    sal:name "Wimbledon"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> .
+
+<http://www.bbc.co.uk/things/249310b6-fb05-4ac0-b07a-26e424afb54f#id> a sport:Competition ;
+    rdfs:label "Wimbledon 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5c4bfa0a-e11f-4041-b68d-121e0abe93fa#id> ;
+    sal:name "Wimbledon"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> .
+
+<http://www.bbc.co.uk/things/399b1a15-3cea-47a6-a21c-ef3cef0819fe#id> a sport:Competition ;
+    rdfs:label "ATP World Rankings 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/bac43680-8e3f-4069-83fc-3dc03ef36739#id> ;
+    sal:name "ATP World Rankings"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/672be92c-f15e-47a2-b88b-29d3eed099ae#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/672be92c-f15e-47a2-b88b-29d3eed099ae#id> .
+
+<http://www.bbc.co.uk/things/41ca434f-cfab-42c9-bc87-f4e254105b08#id> a sport:Competition ;
+    rdfs:label "ATP World Rankings 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/149b5909-1933-4e5c-8522-56a0f7fd1a63#id> ;
+    sal:name "ATP World Rankings"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/672be92c-f15e-47a2-b88b-29d3eed099ae#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/672be92c-f15e-47a2-b88b-29d3eed099ae#id> .
+
+<http://www.bbc.co.uk/things/7ac510f6-5ea0-4dd3-8753-7bfb9bbbf984#id> a sport:Competition ;
+    rdfs:label "WTA World Rankings 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f63e3281-21b6-441a-96d1-84c8e1cc7ac3#id> ;
+    sal:name "WTA World Rankings"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/bd6b883f-7b82-40fc-a39b-d6bf52be3c08#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bd6b883f-7b82-40fc-a39b-d6bf52be3c08#id> .
+
+<http://www.bbc.co.uk/things/d62c11cb-5322-4365-9412-b39c6880710c#id> a sport:Competition ;
+    rdfs:label "Wimbledon 2014 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/289b6464-20c4-48de-874b-201b8d590186#id> ;
+    sal:name "Wimbledon"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> .
+
+<http://www.bbc.co.uk/things/ebc0ae5c-de20-410c-b674-394a9b2633c2#id> a sport:Competition ;
+    rdfs:label "WTA World Rankings 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8ad288f7-d5cf-4949-99d1-5af45a000343#id> ;
+    sal:name "WTA World Rankings"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/bd6b883f-7b82-40fc-a39b-d6bf52be3c08#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bd6b883f-7b82-40fc-a39b-d6bf52be3c08#id> .
+
+<http://www.bbc.co.uk/things/efde22a3-d10b-4593-b5f7-5d3d15d664d3#id> a sport:Competition ;
+    rdfs:label "Wimbledon 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b6891d55-da00-47ce-8084-07c855397521#id> ;
+    sal:name "Wimbledon"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> .
+
+<http://www.bbc.co.uk/things/149b5909-1933-4e5c-8522-56a0f7fd1a63#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ATP World Rankings 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-21"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/289b6464-20c4-48de-874b-201b8d590186#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Wimbledon 2014 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5c4bfa0a-e11f-4041-b68d-121e0abe93fa#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Wimbledon 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8ad288f7-d5cf-4949-99d1-5af45a000343#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "WTA World Rankings 2016 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-01-21"^^xsd:date ;
+    ns2:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b6891d55-da00-47ce-8084-07c855397521#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Wimbledon 2016 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-01-01"^^xsd:date ;
+    ns2:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/bac43680-8e3f-4069-83fc-3dc03ef36739#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ATP World Rankings 2016 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-01-21"^^xsd:date ;
+    ns2:hasEnd "2016-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c29f48d1-c9c2-499c-9e76-198801bcde8a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Wimbledon 2017 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2017-01-01"^^xsd:date ;
+    ns2:hasEnd "2017-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c5975202-440c-4a80-8c0c-b560d9f83ac0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Wimbledon 2018 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2018-01-01"^^xsd:date ;
+    ns2:hasEnd "2018-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f63e3281-21b6-441a-96d1-84c8e1cc7ac3#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "WTA World Rankings 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-21"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+

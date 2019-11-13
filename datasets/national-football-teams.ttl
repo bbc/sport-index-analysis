@@ -1,0 +1,3400 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/912cc846-02f1-4f09-942f-984d737eee7a#id> a provenance:Dataset ;
+    rdfs:label "Football: National Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/national-football-teams.ttl" ;
+    provenance:changeReason "SWD-743: Model summer football tournaments" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-05-24T14:11:23+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "83"^^xsd:int .
+
+<http://www.bbc.co.uk/things/00dceb02-39fb-4fec-98e0-7ab3d00c94e7#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Turkey"@en-gb ;
+    sal:videCode "TUR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB362> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Turkey"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/turkey>,
+        <http://www.tff.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Turkey_national_football_team>,
+        <http://www.wikidata.org/entity/Q483856> ;
+    core:shortLabel "Turkey"@en-gb ;
+    core:slug "turkey"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/01eeebbe-0ac6-4110-9ea8-97053be307c6#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wales U21"^^xsd:string ;
+    cms:locator <urn:sports-data:TFBB9094> ;
+    core:disambiguationHint "National Football Team"^^xsd:string ;
+    core:preferredLabel "Wales U21"@en-gb ;
+    core:shortLabel "Wales U21"^^xsd:string ;
+    core:slug "wales-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/021d0bd4-7cca-450b-9960-2fd51cb9dff5#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Chile"@en-gb ;
+    sal:videCode "CHI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB831> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Chile"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Chile_national_football_team>,
+        <http://rdf.freebase.com/ns/m.033nzk>,
+        <http://www.wikidata.org/entity/Q172025> ;
+    core:shortLabel "Chile"@en-gb ;
+    core:slug "chile"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/03bc2e07-f0ba-4238-9342-15df338d9759#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Belgium"@en-gb ;
+    sal:videCode "BEL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB360> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Belgium"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/belgium>,
+        <http://www.belgianfootball.be/en/homepage-b> ;
+    core:sameAs <http://dbpedia.org/resource/Belgium_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0329gm>,
+        <http://www.wikidata.org/entity/Q166776> ;
+    core:shortLabel "Belgium"@en-gb ;
+    core:slug "belgium"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/04034025-ab84-4bad-a496-d14fc6df2ded#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Saudi Arabia"@en-gb ;
+    sal:videCode "KSA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1264> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Saudi Arabia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/saudi-arabia> ;
+    core:sameAs <http://dbpedia.org/resource/Saudi_Arabia_national_football_team> ;
+    core:shortLabel "Saudi Arabia"@en-gb ;
+    core:slug "saudi-arabia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0690666f-509a-44d4-9505-75d58b99f664#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Uruguay"@en-gb ;
+    sal:videCode "URU"@en-gb ;
+    cms:locator <urn:sports-data:TFBB837> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Uruguay"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/uruguay> ;
+    core:sameAs <http://dbpedia.org/resource/Uruguay_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0329r5>,
+        <http://www.wikidata.org/entity/Q134916> ;
+    core:shortLabel "Uruguay"@en-gb ;
+    core:slug "uruguay"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0892ffb2-7c2c-4f29-a1d0-3c4d7b7898e1#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Canada"@en-gb ;
+    sal:videCode "CAN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB597> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Canada"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Canada_national_football_team>,
+        <http://www.wikidata.org/entity/Q3873631> ;
+    core:shortLabel "Canada"@en-gb ;
+    core:slug "canada"^^xsd:string ;
+    provenance:created "2015-06-22T13:10:21+00:00"^^xsd:dateTime ;
+    sport:competesIn <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0e6b4d91-8f3b-4cdc-9e1c-b225ea72dd9b#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Romania U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6640> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Romania U21"@en-gb ;
+    core:shortLabel "Romania U21"@en-gb ;
+    core:slug "romania-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/102f6e2f-79b5-4841-bab3-63f184ed18d4#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Moldova"@en-gb ;
+    sal:videCode "MDA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB506> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Moldova"@en-gb ;
+    core:primaryTopicOf <http://www.fmf.md/> ;
+    core:sameAs <http://dbpedia.org/resource/Moldova_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03z0dt>,
+        <http://www.wikidata.org/entity/Q191142> ;
+    core:shortLabel "Moldova"@en-gb ;
+    core:slug "moldova"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/113d0cf9-8fc9-48e5-bcb2-514d7b1d2929#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Mali"@en-gb ;
+    sal:videCode "MAL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1218> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Mali"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Mali_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0416f1>,
+        <http://www.wikidata.org/entity/Q211733> ;
+    core:shortLabel "Mali"@en-gb ;
+    core:slug "mali"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/130164f4-708b-4c58-b845-82cd47465577#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Niger"@en-gb ;
+    sal:videCode "NIG"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1866> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Niger"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Niger_national_football_team>,
+        <http://rdf.freebase.com/ns/m.04l67m>,
+        <http://www.wikidata.org/entity/Q245153> ;
+    core:shortLabel "Niger"@en-gb ;
+    core:slug "niger"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1314bba1-65ee-4f2d-8503-23aa45b4b5ad#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Zimbabwe"@en-gb ;
+    sal:videCode "ZIM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1727> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Zimbabwe"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/zimbabwe> ;
+    core:sameAs <http://dbpedia.org/resource/Zimbabwe_national_football_team> ;
+    core:shortLabel "Zimbabwe"@en-gb ;
+    core:slug "zimbabwe"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/139a4f49-ae9b-44db-a8d8-fe73e3e5c686#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Guatemala"@en-gb ;
+    sal:videCode "GUA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1722> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Guatemala"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Guatemala_national_football_team>,
+        <http://www.wikidata.org/entity/Q270168> ;
+    core:shortLabel "Guatemala"@en-gb ;
+    core:slug "guatemala"^^xsd:string ;
+    provenance:created "2015-06-22T13:21:41+00:00"^^xsd:dateTime ;
+    sport:competesIn <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/140bcae5-be1d-4018-84bb-46ea902d1c2a#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Poland U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9090> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Poland U21"@en-gb ;
+    core:shortLabel "Poland U21"@en-gb ;
+    core:slug "poland-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/15a3ccf0-be08-48b7-8779-bc800c868a54#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Burundi"@en-gb ;
+    sal:videCode "BDI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1822> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Burundi"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/burundi> ;
+    core:sameAs <http://dbpedia.org/resource/Burundi_national_football_team> ;
+    core:shortLabel "Burundi"@en-gb ;
+    core:slug "burundi"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/189cf0d6-3b98-45d6-9e01-8957b9221d34#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "England U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB524> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "England U21"@en-gb ;
+    core:shortLabel "England U21"@en-gb ;
+    core:slug "england-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id>,
+        <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Italy"@en-gb ;
+    sal:videCode "ITA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB119> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Italy"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/italy>,
+        <http://www.figc.it/> ;
+    core:sameAs <http://dbpedia.org/resource/Italy_national_football_team>,
+        <http://rdf.freebase.com/ns/m.01_lhg>,
+        <http://www.wikidata.org/entity/Q676899> ;
+    core:shortLabel "Italy"@en-gb ;
+    core:slug "italy"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/19c7835c-7834-455c-89af-4e438ce44d81#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Guinea"@en-gb ;
+    sal:videCode "GUI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1721> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Guinea"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/guinea> ;
+    core:sameAs <http://dbpedia.org/resource/Guinea_national_football_team> ;
+    core:shortLabel "Guinea"@en-gb ;
+    core:slug "guinea"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1a59e05e-caf4-4475-920a-274ceef2e8ad#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Slovenia"@en-gb ;
+    cms:locator <urn:sports-data:TFBB365> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Slovenia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Slovenia_national_football_team> ;
+    core:shortLabel "Slovenia"@en-gb ;
+    core:slug "slovenia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1a5ced7d-e4df-402d-82cc-b50ada08ee5e#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Northern Ireland U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB7541> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Northern Ireland U21"@en-gb ;
+    core:shortLabel "Northern Ireland U21"@en-gb ;
+    core:slug "northern-ireland-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1abbf54b-53a3-4a01-b0a8-c3dd60b431f7#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Senegal"@en-gb ;
+    sal:videCode "SEN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1226> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Senegal"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/senegal> ;
+    core:sameAs <http://dbpedia.org/resource/Senegal_national_football_team> ;
+    core:shortLabel "Senegal"@en-gb ;
+    core:slug "senegal"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1c2a6788-56b4-4b51-9651-07c830c7e0b5#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Honduras"@en-gb ;
+    sal:videCode "HON"@en-gb ;
+    cms:locator <urn:sports-data:TFBB847> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Honduras"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Honduras_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03z8bw>,
+        <http://www.wikidata.org/entity/Q180187> ;
+    core:shortLabel "Honduras"@en-gb ;
+    core:slug "honduras"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1dae0d8b-f96e-474e-b6bd-057a96fa771a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Colombia"@en-gb ;
+    sal:videCode "COL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB832> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Colombia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/colombia> ;
+    core:sameAs <http://dbpedia.org/resource/Colombia_national_football_team>,
+        <http://rdf.freebase.com/ns/m.032c08>,
+        <http://www.wikidata.org/entity/Q212564> ;
+    core:shortLabel "Colombia"@en-gb ;
+    core:slug "colombia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1e9a1407-3a98-4940-b782-5abd89ebcce4#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ghana"@en-gb ;
+    sal:videCode "GHA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1219> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Ghana"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Ghana_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03_qrp>,
+        <http://www.wikidata.org/entity/Q172014> ;
+    core:shortLabel "Ghana"@en-gb ;
+    core:slug "ghana"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/22cc4560-596f-41ca-9b44-2f253b69b9c4#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "DR Congo"@en-gb ;
+    sal:videCode "COD"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1222> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "DR Congo"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/DR_Congo_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03_st3>,
+        <http://www.wikidata.org/entity/Q270080> ;
+    core:shortLabel "DR Congo"@en-gb ;
+    core:slug "dr-congo"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/23ab0da4-a85d-40e5-84f2-f0ee98013c6d#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Portugal U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2101> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Portugal U21"@en-gb ;
+    core:shortLabel "Portugal U21"@en-gb ;
+    core:slug "portugal-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2443d45d-6a85-43ad-a760-8afdc2b83317#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Burkina Faso"@en-gb ;
+    sal:videCode "BFA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1220> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Burkina Faso"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Burkina_Faso_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0452h6>,
+        <http://www.wikidata.org/entity/Q44270> ;
+    core:shortLabel "Burkina Faso"@en-gb ;
+    core:slug "burkina-faso"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2688d5c1-aa00-4abb-8b3c-345d83ce3538#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Switzerland"@en-gb ;
+    sal:videCode "SWI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB497> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Switzerland"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/switzerland> ;
+    core:sameAs <http://dbpedia.org/resource/Switzerland_national_football_team>,
+        <http://rdf.freebase.com/ns/m.032jlh>,
+        <http://www.wikidata.org/entity/Q165141> ;
+    core:shortLabel "Switzerland"@en-gb ;
+    core:slug "switzerland"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/26a06edb-3080-4853-aeb9-2c57a228837b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Austria"@en-gb ;
+    sal:videCode "AUT"@en-gb ;
+    cms:locator <urn:sports-data:TFBB515> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Austria"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/austria>,
+        <http://www.oefb.at/> ;
+    core:sameAs <http://dbpedia.org/resource/Austria_national_football_team>,
+        <http://rdf.freebase.com/ns/m.033g0y>,
+        <http://www.wikidata.org/entity/Q163534> ;
+    core:shortLabel "Austria"@en-gb ;
+    core:slug "austria"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2734989c-c101-4dad-b586-6ff44161c925#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Republic of Ireland U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB7211> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Republic of Ireland U21"@en-gb ;
+    core:shortLabel "R. of Ireland U21"@en-gb ;
+    core:slug "republic-of-ireland-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/280cfc54-a128-417c-a74e-b663a7f2f61f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Germany"@en-gb ;
+    sal:videCode "GER"@en-gb ;
+    cms:locator <urn:sports-data:TFBB357> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Germany"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/germany>,
+        <http://www.dfb.de/en/start/> ;
+    core:sameAs <http://dbpedia.org/resource/Germany_national_football_team>,
+        <http://rdf.freebase.com/ns/m.01l3wr>,
+        <http://www.wikidata.org/entity/Q43310> ;
+    core:shortLabel "Germany"@en-gb ;
+    core:slug "germany"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/282191e5-393a-4424-9ce1-05fc11613b5d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "United Arab Emirates"@en-gb ;
+    sal:videCode "UAE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1358> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "United Arab Emirates"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/united-arab-emirates> ;
+    core:sameAs <http://dbpedia.org/resource/United_Arab_Emirates_national_football_team> ;
+    core:shortLabel "UAE"@en-gb ;
+    core:slug "united-arab-emirates"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/29613983-b973-4edb-9403-1636c0d3d10e#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sweden U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB3690> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Sweden U21"@en-gb ;
+    core:shortLabel "Sweden U21"@en-gb ;
+    core:slug "sweden-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2b787a51-4b7e-4320-a5bd-38209c7b44c3#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Scotland U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB8880> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Scotland U21"@en-gb ;
+    core:shortLabel "Scotland U21"@en-gb ;
+    core:slug "scotland-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2df22694-ea99-463b-a212-459215bc237b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Armenia"@en-gb ;
+    sal:videCode "ARM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB509> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Armenia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Armenia_national_football_team> ;
+    core:shortLabel "Armenia"@en-gb ;
+    core:slug "armenia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2e6b2604-1b9e-4c6a-97a5-be989bfa46b1#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Jamaica"@en-gb ;
+    sal:videCode "JAM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1723> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Jamaica"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Jamaica_national_football_team>,
+        <http://www.wikidata.org/entity/Q235399> ;
+    core:shortLabel "Jamaica"@en-gb ;
+    core:slug "jamaica"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/32951909-9d14-45b3-a19a-61780f90c89c#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Switzerland U21"@en-gb ;
+    sal:videCode "SWIZ"@en-gb ;
+    cms:locator <urn:sports-data:TFBB4779> ;
+    core:disambiguationHint "National Football Team"^^xsd:string ;
+    core:preferredLabel "Switzerland U21"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Switzerland_national_under-21_football_team>,
+        <http://rdf.freebase.com/ns/m.02vy2tp>,
+        <http://www.wikidata.org/entity/Q678582> ;
+    core:shortLabel "Switzerland U21"@en-gb ;
+    core:slug "switzerland-u21"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/332a1140-a097-49dd-8a0c-eb7f50699fb6#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Uzbekistan"@en-gb ;
+    sal:videCode "UZB"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1359> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Uzbekistan"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/uzbekistan> ;
+    core:sameAs <http://dbpedia.org/resource/Uzbekistan_national_football_team> ;
+    core:shortLabel "Uzbekistan"@en-gb ;
+    core:slug "uzbekistan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/338af54c-76ea-49dc-ab1d-cf6e3baca684#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Iran"@en-gb ;
+    sal:videCode "IRN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1042> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Iran"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/iran> ;
+    core:sameAs <http://dbpedia.org/resource/Iran_national_football_team>,
+        <http://rdf.freebase.com/ns/m.01n_2f>,
+        <http://www.wikidata.org/entity/Q184602> ;
+    core:shortLabel "Iran"@en-gb ;
+    core:slug "iran"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/37147249-7c10-495c-a877-ae26d5464786#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Serbia U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2108> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Serbia U21"@en-gb ;
+    core:shortLabel "Serbia U21"@en-gb ;
+    core:slug "serbia-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id>,
+        <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/375ef1d5-65ab-4549-899e-195f787f9c6c#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ecuador"@en-gb ;
+    sal:videCode "ECU"@en-gb ;
+    cms:locator <urn:sports-data:TFBB830> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Ecuador"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/ecuador> ;
+    core:sameAs <http://dbpedia.org/resource/Ecuador_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03zj_3>,
+        <http://www.wikidata.org/entity/Q987584> ;
+    core:shortLabel "Ecuador"@en-gb ;
+    core:slug "ecuador"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3ac8c344-8b15-4324-b772-5e3d52a704fc#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sweden"@en-gb ;
+    sal:videCode "SWE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB361> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Sweden"@en-gb ;
+    core:primaryTopicOf <http://svenskfotboll.se/>,
+        <http://www.bbc.co.uk/sport/football/teams/sweden> ;
+    core:sameAs <http://dbpedia.org/resource/Sweden_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02rytm>,
+        <http://www.wikidata.org/entity/Q160826> ;
+    core:shortLabel "Sweden"@en-gb ;
+    core:slug "sweden"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3cd9c8e6-0767-449c-b12e-8a95ccae5624#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Palestine"@en-gb ;
+    sal:videCode "PLE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1868> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Palestine"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/palestine> ;
+    core:sameAs <http://dbpedia.org/resource/Palestine_national_football_team> ;
+    core:shortLabel "Palestine"@en-gb ;
+    core:slug "palestine"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3d119357-390d-458a-b33c-3910532977fd#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Poland"@en-gb ;
+    sal:videCode "POL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB511> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Poland"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/poland>,
+        <http://www.pzpn.pl/> ;
+    core:sameAs <http://dbpedia.org/resource/Poland_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03b6j8>,
+        <http://www.wikidata.org/entity/Q166196> ;
+    core:shortLabel "Poland"@en-gb ;
+    core:slug "poland"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/44a506ff-224c-488c-b667-ce31bc523d3d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bahrain"@en-gb ;
+    sal:videCode "BHR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1813> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Bahrain"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/bahrain> ;
+    core:sameAs <http://dbpedia.org/resource/Bahrain_national_football_team> ;
+    core:shortLabel "Bahrain"@en-gb ;
+    core:slug "bahrain"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/44a698f0-304a-42d7-8c58-e503dcba252d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Vietnam"@en-gb ;
+    sal:videCode "VIE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1895> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Vietnam"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/vietnam> ;
+    core:sameAs <http://dbpedia.org/resource/Vietnam_national_football_team> ;
+    core:shortLabel "Vietnam"@en-gb ;
+    core:slug "vietnam"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/48e56743-a961-42f7-9e7e-066f19e40c71#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Japan"@en-gb ;
+    sal:videCode "JPN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1266> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Japan"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/japan> ;
+    core:sameAs <http://dbpedia.org/resource/Japan_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03xh50>,
+        <http://www.wikidata.org/entity/Q170566> ;
+    core:shortLabel "Japan"@en-gb ;
+    core:slug "japan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4acd60e9-8730-49f8-a1f7-2f28de398749#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "South Africa"@en-gb ;
+    sal:videCode "RSA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB522> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "South Africa"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/south-africa> ;
+    core:sameAs <http://dbpedia.org/resource/South_Africa_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03zrc_>,
+        <http://www.wikidata.org/entity/Q170327> ;
+    core:shortLabel "South Africa"@en-gb ;
+    core:slug "south-africa"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4ba212dc-8bc5-4b05-b735-5fd573a6c87c#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Slovakia"@en-gb ;
+    sal:videCode "SVK"@en-gb ;
+    cms:locator <urn:sports-data:TFBB507> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Slovakia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/slovakia>,
+        <http://www.futbalsfz.sk/> ;
+    core:sameAs <http://dbpedia.org/resource/Slovakia_national_football_team>,
+        <http://www.wikidata.org/entity/Q174512> ;
+    core:shortLabel "Slovakia"@en-gb ;
+    core:slug "slovakia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4e8fccab-5cb1-4354-99fd-79d3c2b16b90#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Kenya"@en-gb ;
+    sal:videCode "KEN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1724> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Kenya"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/kenya> ;
+    core:sameAs <http://dbpedia.org/resource/Kenya_national_football_team> ;
+    core:shortLabel "Kenya"@en-gb ;
+    core:slug "kenya"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4f045458-b81c-48a3-8459-bf5abf7c6b6b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wales"@en-gb ;
+    sal:videCode "WAL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB508> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Wales"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/wales>,
+        <http://www.faw.org.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Wales_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02s2ys>,
+        <http://www.wikidata.org/entity/Q180857> ;
+    core:shortLabel "Wales"@en-gb ;
+    core:slug "wales"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4f47e77a-218f-47ba-b148-e3493f06943a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Algeria"@en-gb ;
+    sal:videCode "ALG"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1215> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Algeria"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Algeria_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03_qj1>,
+        <http://www.wikidata.org/entity/Q181903> ;
+    core:shortLabel "Algeria"@en-gb ;
+    core:slug "algeria"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/50e8aed7-1ce9-4784-962f-e61fea038990#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Portugal"@en-gb ;
+    sal:videCode "POR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB359> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Portugal"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/portugal>,
+        <http://www.fpf.pt/> ;
+    core:sameAs <http://dbpedia.org/resource/Portugal_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02rqxc>,
+        <http://www.wikidata.org/entity/Q267245> ;
+    core:shortLabel "Portugal"@en-gb ;
+    core:slug "portugal"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/50ff6cc4-129e-428a-b936-39618e33f9e6#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "South Korea"@en-gb ;
+    sal:videCode "KOR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1041> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "South Korea"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/south-korea> ;
+    core:sameAs <http://dbpedia.org/resource/South_Korea_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03zrhb>,
+        <http://www.wikidata.org/entity/Q543842> ;
+    core:shortLabel "South Korea"@en-gb ;
+    core:slug "south-korea"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/51a65d8d-8ab7-4662-b303-5fb89ea4ee59#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Curacao"@en-gb ;
+    sal:videCode "CUR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6512> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Curacao"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/curacao> ;
+    core:sameAs <http://dbpedia.org/resource/Curaçao_national_football_team> ;
+    core:shortLabel "Curacao"@en-gb ;
+    core:slug "curacao"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/51bc6665-92bc-4926-8689-969dc76a9d34#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "France"@en-gb ;
+    sal:videCode "FRA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB368> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "France"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/france>,
+        <http://www.francefootball.fr/> ;
+    core:sameAs <http://dbpedia.org/resource/France_national_football_team>,
+        <http://rdf.freebase.com/ns/m.01l3vx>,
+        <http://www.wikidata.org/entity/Q47774> ;
+    core:shortLabel "France"@en-gb ;
+    core:slug "france"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/55794b4a-e4d5-44e6-af1a-47eea3027e2a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Egypt"@en-gb ;
+    sal:videCode "EGY"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1225> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Egypt"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/egypt> ;
+    core:sameAs <http://dbpedia.org/resource/Egypt_national_football_team> ;
+    core:shortLabel "Egypt"@en-gb ;
+    core:slug "egypt"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/55d417f1-1471-401c-8412-2b4a5180277e#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Denmark U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6250> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Denmark U21"@en-gb ;
+    core:shortLabel "Denmark U21"@en-gb ;
+    core:slug "denmark-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id>,
+        <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/56a6f6d6-dd33-42ab-a48f-290219d08235#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Uganda"@en-gb ;
+    sal:videCode "UGA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1892> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Uganda"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/uganda> ;
+    core:sameAs <http://dbpedia.org/resource/Uganda_national_football_team> ;
+    core:shortLabel "Uganda"@en-gb ;
+    core:slug "uganda"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/579919ac-dc79-43cf-bbf0-2940205d44ac#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Kosovo"@en-gb ;
+    sal:videCode "KOS"@en-gb ;
+    cms:locator <urn:sports-data:TFBB11658> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Kosovo"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Kosovo_national_football_team> ;
+    core:shortLabel "Kosovo"@en-gb ;
+    core:slug "kosovo"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5a02e0be-50ad-48cf-a798-73b65bfa2f0c#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bulgaria"@en-gb ;
+    sal:videCode "BUL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB502> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Bulgaria"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Bulgaria_national_football_team> ;
+    core:shortLabel "Bulgaria"@en-gb ;
+    core:slug "bulgaria"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5c536b5a-c76f-4b77-85b1-9cf8605506b6#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Zambia"@en-gb ;
+    sal:videCode "ZAM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1227> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Zambia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Zambia_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0415zv>,
+        <http://www.wikidata.org/entity/Q206350> ;
+    core:shortLabel "Zambia"@en-gb ;
+    core:slug "zambia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5cf42ba7-daad-4dfd-b2ae-e26010e8c9cf#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Netherlands U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2104> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Netherlands U21"@en-gb ;
+    core:shortLabel "Netherlands U21"@en-gb ;
+    core:slug "netherlands-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5d26691c-05ba-4465-af38-5cfba4865b90#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Kyrgyzstan"@en-gb ;
+    sal:videCode "KGZ"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1845> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Kyrgyzstan"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/kyrgyzstan> ;
+    core:sameAs <http://dbpedia.org/resource/Kyrgyzstan_national_football_team> ;
+    core:shortLabel "Kyrgyzstan"@en-gb ;
+    core:slug "kyrgyzstan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/611ecd3d-8b08-48d5-aee9-d01e7620d2a4#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "England"@en-gb ;
+    sal:videCode "ENG"@en-gb ;
+    cms:locator <urn:sports-data:TFBB114> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "England"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/england>,
+        <http://www.thefa.com/> ;
+    core:sameAs <http://dbpedia.org/resource/England_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02pp1>,
+        <http://www.wikidata.org/entity/Q47762> ;
+    core:shortLabel "England"@en-gb ;
+    core:slug "england"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6247858b-4d10-486f-a3d1-a5ac50788a90#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Serbia"@en-gb ;
+    sal:videCode "SER"@en-gb ;
+    cms:locator <urn:sports-data:TFBB364> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Serbia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/serbia>,
+        <http://www.fss.rs/> ;
+    core:sameAs <http://dbpedia.org/resource/Serbia_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03y_f8>,
+        <http://www.wikidata.org/entity/Q182740> ;
+    core:shortLabel "Serbia"@en-gb ;
+    core:slug "serbia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/64bdc649-db63-4b65-b036-982fdd645dfa#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Croatia U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9078> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Croatia U21"@en-gb ;
+    core:shortLabel "Croatia U21"@en-gb ;
+    core:slug "croatia-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/65058c8d-de38-435a-b90f-7c4b5c52d01a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Costa Rica"@en-gb ;
+    sal:videCode "CRC"@en-gb ;
+    cms:locator <urn:sports-data:TFBB838> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Costa Rica"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/costa-rica> ;
+    core:sameAs <http://dbpedia.org/resource/Costa_Rica_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03zb6t>,
+        <http://www.wikidata.org/entity/Q194387> ;
+    core:shortLabel "Costa Rica"@en-gb ;
+    core:slug "costa-rica"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6549bafb-4997-4764-baa1-754fa498fb5e#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "England U17"@en-gb ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "England U17"@en-gb ;
+    core:shortLabel "England U17"@en-gb ;
+    core:slug "england-u17"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/65e33e6b-ded0-450a-80fb-0c25fe88b5f6#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Republic of Ireland"@en-gb ;
+    sal:videCode "IRE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB116> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Republic of Ireland"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/republic-of-ireland>,
+        <http://www.fai.ie/> ;
+    core:sameAs <http://dbpedia.org/resource/Republic_of_Ireland_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02ryyk>,
+        <http://www.wikidata.org/entity/Q163547> ;
+    core:shortLabel "R. of Ireland"@en-gb ;
+    core:slug "republic-of-ireland"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/68c324cd-45c3-42e1-a4fa-3c6b456b7b51#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Scotland"@en-gb ;
+    sal:videCode "SCO"@en-gb ;
+    cms:locator <urn:sports-data:TFBB115> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Scotland"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/scotland>,
+        <http://www.scottishfa.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Scotland_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02rxrh>,
+        <http://www.wikidata.org/entity/Q34044> ;
+    core:shortLabel "Scotland"@en-gb ;
+    core:slug "scotland"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/698abaf8-39f9-4c36-8018-832affec28d0#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Czech Republic U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2107> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Czech Republic U21"@en-gb ;
+    core:shortLabel "Czech Rep U21"@en-gb ;
+    core:slug "czech-republic-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6ca2bce6-33c0-4bbc-a7f4-029846117372#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Mauritania"@en-gb ;
+    sal:videCode "MTN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1855> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Mauritania"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/mauritania> ;
+    core:sameAs <http://dbpedia.org/resource/Mauritania_national_football_team> ;
+    core:shortLabel "Mauritania"@en-gb ;
+    core:slug "mauritania"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6d4a2858-462e-4375-b51b-2a4fb480eee2#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Netherlands"@en-gb ;
+    sal:videCode "NED"@en-gb ;
+    cms:locator <urn:sports-data:TFBB366> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Netherlands"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/netherlands>,
+        <http://www.onsoranje.nl/> ;
+    core:sameAs <http://dbpedia.org/resource/Netherlands_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02ltg3>,
+        <http://www.wikidata.org/entity/Q47050> ;
+    core:shortLabel "Netherlands"@en-gb ;
+    core:slug "netherlands"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6e18e0db-5746-431f-8e17-c59fd30e36a5#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ivory Coast"@en-gb ;
+    sal:videCode "CIV"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1221> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Ivory Coast"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Ivory_Coast_national_football_team>,
+        <http://rdf.freebase.com/ns/m.040pyq>,
+        <http://www.wikidata.org/entity/Q175145> ;
+    core:shortLabel "Ivory Coast"@en-gb ;
+    core:slug "ivory-coast"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6ea5913c-9f68-41dd-b3ed-8bd7e10cd39f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Togo"@en-gb ;
+    sal:videCode "TOG"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1223> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Togo"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Togo_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0449sw>,
+        <http://www.wikidata.org/entity/Q191595> ;
+    core:shortLabel "Togo"@en-gb ;
+    core:slug "togo"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6ed6e732-c8ca-4f4a-9377-76fee24216a4#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Czech Republic"@en-gb ;
+    sal:videCode "CZE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB367> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Czech Republic"@en-gb ;
+    core:primaryTopicOf <http://nv.fotbal.cz/en-index.php>,
+        <http://www.bbc.co.uk/sport/football/teams/czech-republic> ;
+    core:sameAs <http://dbpedia.org/resource/Czech_Republic_national_football_team>,
+        <http://rdf.freebase.com/ns/m.036b7l>,
+        <http://www.wikidata.org/entity/Q483868> ;
+    core:shortLabel "Czech Rep"@en-gb ;
+    core:slug "czech-republic"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/70a4c626-30a1-45f2-9054-fd772ea45eca#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Luxembourg"@en-gb ;
+    sal:videCode "LUX"@en-gb ;
+    cms:locator <urn:sports-data:TFBB496> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Luxembourg"@en-gb ;
+    core:primaryTopicOf <http://www.flf.lu/> ;
+    core:sameAs <http://dbpedia.org/resource/Luxembourg_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0329sr>,
+        <http://www.wikidata.org/entity/Q184266> ;
+    core:shortLabel "Luxembourg"@en-gb ;
+    core:slug "luxembourg"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/72d28c1a-7315-40bf-9ca8-04272af97e9d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Kazakhstan"@en-gb ;
+    sal:videCode "KAZ"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1846> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Kazakhstan"@en-gb ;
+    core:primaryTopicOf <http://kff.kz/eng/> ;
+    core:sameAs <http://dbpedia.org/resource/Kazakhstan_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03z2rz>,
+        <http://www.wikidata.org/entity/Q183468> ;
+    core:shortLabel "Kazakhstan"@en-gb ;
+    core:slug "kazakhstan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/730946c3-4ceb-4fd9-afd7-18a399149346#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Philippines"@en-gb ;
+    sal:videCode "PHI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6304> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Philippines"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/philippines> ;
+    core:sameAs <http://dbpedia.org/resource/Philippines_national_football_team> ;
+    core:shortLabel "Philippines"@en-gb ;
+    core:slug "philippines"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/74678291-0500-488e-8114-6cbfae75fcf2#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Belgium U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2106> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Belgium U21"@en-gb ;
+    core:shortLabel "Belgium U21"@en-gb ;
+    core:slug "belgium-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/74ab21e9-b248-4baa-9140-4609c699ff87#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Turkmenistan"@en-gb ;
+    sal:videCode "TKM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1890> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Turkmenistan"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/turkmenistan> ;
+    core:sameAs <http://dbpedia.org/resource/Turkmenistan_national_football_team> ;
+    core:shortLabel "Turkmenistan"@en-gb ;
+    core:slug "turkmenistan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/74b0025f-2d2d-4e29-94fa-e93a247cbeae#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Latvia"@en-gb ;
+    sal:videCode "LAT"@en-gb ;
+    cms:locator <urn:sports-data:TFBB513> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Latvia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Latvia_national_football_team> ;
+    core:shortLabel "Latvia"@en-gb ;
+    core:slug "latvia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/765113d8-7fa7-4f55-a461-4b8fe28aba9a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Martinique"@en-gb ;
+    sal:videCode "MQE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB7973> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Martinique"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/martinique> ;
+    core:sameAs <http://dbpedia.org/resource/Martinique_national_football_team> ;
+    core:shortLabel "Martinique"@en-gb ;
+    core:slug "martinique"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/77d1e6c2-97a6-450a-904d-21ea66700a53#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "USA"@en-gb ;
+    sal:videCode "USA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB596> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "USA"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/United_States_men's_national_soccer_team>,
+        <http://rdf.freebase.com/ns/m.02s9vc>,
+        <http://www.wikidata.org/entity/Q164134> ;
+    core:shortLabel "USA"@en-gb ;
+    core:slug "usa"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/77e9e3c1-bb79-4852-bab2-bb7d6fd0e12b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Angola"@en-gb ;
+    sal:videCode "ANG"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1161> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Angola"@en-gb ;
+    core:primaryTopicOf <http://www.fafutebol-angola.og.ao/> ;
+    core:sameAs <http://dbpedia.org/resource/Angola_national_football_team>,
+        <http://rdf.freebase.com/ns/m.044lbv>,
+        <http://www.wikidata.org/entity/Q192828> ;
+    core:shortLabel "Angola"@en-gb ;
+    core:slug "angola"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7b8f9e72-72fa-4bbc-892a-07b675a9b16c#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Tanzania"@en-gb ;
+    sal:videCode "TAN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1888> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Tanzania"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/tanzania> ;
+    core:sameAs <http://dbpedia.org/resource/Tanzania_national_football_team> ;
+    core:shortLabel "Tanzania"@en-gb ;
+    core:slug "tanzania"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7ff4a510-3eee-4ed2-bc1c-c54896127b77#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Haiti"@en-gb ;
+    sal:videCode "HAI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1327> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Haiti"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Haiti_national_football_team>,
+        <http://www.wikidata.org/entity/Q236006> ;
+    core:shortLabel "Haiti"@en-gb ;
+    core:slug "haiti"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/80c861fe-d2c0-4fd0-82a9-cd474d33664d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "China"@en-gb ;
+    sal:videCode "CHN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1263> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "China"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/china> ;
+    core:sameAs <http://dbpedia.org/resource/China_national_football_team> ;
+    core:shortLabel "China"@en-gb ;
+    core:slug "china"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/81260343-d8f8-4d14-8d7c-43cd7a31ccab#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "England U18"@en-gb ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "England U18"@en-gb ;
+    core:shortLabel "England U18"@en-gb ;
+    core:slug "england-u18"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8230b0f4-fee9-49c9-8186-0308f8bbcfe0#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "England U20"@en-gb ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "England U20"@en-gb ;
+    core:shortLabel "England U20"@en-gb ;
+    core:slug "england-u20"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/825aa545-9794-498e-951c-9b85709a3720#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Lithuania"@en-gb ;
+    sal:videCode "LTU"@en-gb ;
+    cms:locator <urn:sports-data:TFBB519> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Lithuania"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Lithuania_national_football_team> ;
+    core:shortLabel "Lithuania"@en-gb ;
+    core:slug "lithuania"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/847c7327-941f-43dd-9406-5b74c5b9c1b6#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Lebanon"@en-gb ;
+    sal:videCode "LEB"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1848> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Lebanon"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/lebanon> ;
+    core:sameAs <http://dbpedia.org/resource/Lebanon_national_football_team> ;
+    core:shortLabel "Lebanon"@en-gb ;
+    core:slug "lebanon"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/84a875c2-b0b7-483c-9c89-5cedd03062e9#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Spain U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB3688> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Spain U21"@en-gb ;
+    core:shortLabel "Spain U21"@en-gb ;
+    core:slug "spain-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id>,
+        <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8781e9b9-250e-4140-8ef2-a5797a9470e3#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Finland"@en-gb ;
+    sal:videCode "FIN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB518> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Finland"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Finland_national_football_team> ;
+    core:shortLabel "Finland"@en-gb ;
+    core:slug "finland"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8b176286-1a1f-4e5e-9c6c-f512fc0087f8#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cuba"@en-gb ;
+    sal:videCode "CUB"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1720> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Cuba"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Cuba_national_football_team>,
+        <http://www.wikidata.org/entity/Q236014> ;
+    core:shortLabel "Cuba"@en-gb ;
+    core:slug "cuba"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8cebd2da-6db3-41fe-b4be-1b7b906e0cd0#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Oman"@en-gb ;
+    sal:videCode "OMA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1357> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Oman"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/oman> ;
+    core:sameAs <http://dbpedia.org/resource/Oman_national_football_team> ;
+    core:shortLabel "Oman"@en-gb ;
+    core:slug "oman"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8dc0e127-325a-49d5-935b-f74439e3bf03#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "India"@en-gb ;
+    sal:videCode "IND"@en-gb ;
+    cms:locator <urn:sports-data:TFBB662> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "India"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/india> ;
+    core:sameAs <http://dbpedia.org/resource/India_national_football_team> ;
+    core:shortLabel "India"@en-gb ;
+    core:slug "india"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/901c84f9-eba9-48af-95ca-8e80e7e81415#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Georgia"@en-gb ;
+    sal:videCode "GEO"@en-gb ;
+    cms:locator <urn:sports-data:TFBB520> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Georgia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Georgia_national_football_team> ;
+    core:shortLabel "Georgia"@en-gb ;
+    core:slug "georgia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/917ff174-9011-4a0d-9262-912fe9b0711b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Azerbaijan"@en-gb ;
+    sal:videCode "AZE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB505> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Azerbaijan"@en-gb ;
+    core:primaryTopicOf <http://www.affa.az/?lang=en> ;
+    core:sameAs <http://dbpedia.org/resource/Azerbaijan_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0303jw>,
+        <http://www.wikidata.org/entity/Q180800> ;
+    core:shortLabel "Azerbaijan"@en-gb ;
+    core:slug "azerbaijan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/931bc5b4-1859-4572-8001-a4d322057ae0#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Peru"@en-gb ;
+    sal:videCode "PER"@en-gb ;
+    cms:locator <urn:sports-data:TFBB834> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Peru"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/peru> ;
+    core:shortLabel "Peru"@en-gb ;
+    core:slug "peru"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/6b7a7299-741d-42d4-afd5-94765fc1c655#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/96a45a0e-876a-4b31-b9bc-25a9eb365dc3#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Brazil"@en-gb ;
+    sal:videCode "BRZ"@en-gb ;
+    cms:locator <urn:sports-data:TFBB614> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Brazil"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/brazil> ;
+    core:sameAs <http://dbpedia.org/resource/Brazil_national_football_team>,
+        <http://rdf.freebase.com/ns/m.01352_>,
+        <http://www.wikidata.org/entity/Q83459> ;
+    core:shortLabel "Brazil"@en-gb ;
+    core:slug "brazil"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/97184f99-0a66-416d-97ca-9f10b2b43cfd#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Syria"@en-gb ;
+    sal:videCode "SYR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1798> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Syria"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/syria> ;
+    core:sameAs <http://dbpedia.org/resource/Syria_national_football_team> ;
+    core:shortLabel "Syria"@en-gb ;
+    core:slug "syria"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/989f1a15-da76-43f0-bf4f-8328c7c555ca#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Estonia"@en-gb ;
+    sal:videCode "EST"@en-gb ;
+    cms:locator <urn:sports-data:TFBB500> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Estonia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Estonia_national_football_team> ;
+    core:shortLabel "Estonia"@en-gb ;
+    core:slug "estonia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9a53bd9f-90f6-4838-9810-9467992de26b#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Iceland"@en-gb ;
+    sal:videCode "ICE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB503> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Iceland"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/iceland>,
+        <http://www.ksi.is/> ;
+    core:sameAs <http://dbpedia.org/resource/Iceland_national_football_team>,
+        <http://www.wikidata.org/entity/Q189198> ;
+    core:shortLabel "Iceland"@en-gb ;
+    core:slug "iceland"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a1be965a-bdbd-48b3-89b1-868ff5dd5d9f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cape Verde"@en-gb ;
+    sal:videCode "CPV"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1529> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Cape Verde"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Cape_Verde_national_football_team>,
+        <http://rdf.freebase.com/ns/m.04h5tx>,
+        <http://www.wikidata.org/entity/Q330039> ;
+    core:shortLabel "Cape Verde"@en-gb ;
+    core:slug "cape-verde"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a1bf24e8-88ee-4865-9469-aa71c050c414#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Panama"@en-gb ;
+    sal:videCode "PAN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1869> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Panama"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/panama> ;
+    core:sameAs <http://dbpedia.org/resource/Panama_national_football_team>,
+        <http://www.wikidata.org/entity/Q223748> ;
+    core:shortLabel "Panama"@en-gb ;
+    core:slug "panama"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a27fcfcf-0621-4c78-af6c-1db88bb4a901#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Jordan"@en-gb ;
+    sal:videCode "JOR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1843> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Jordan"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/jordan> ;
+    core:sameAs <http://dbpedia.org/resource/Jordan_national_football_team> ;
+    core:shortLabel "Jordan"@en-gb ;
+    core:slug "jordan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a80d80f4-c47e-4417-b1c7-de1af76a03a7#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Russia"@en-gb ;
+    sal:videCode "RUS"@en-gb ;
+    cms:locator <urn:sports-data:TFBB536> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Russia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/russia>,
+        <http://www.rfs.ru/> ;
+    core:sameAs <http://dbpedia.org/resource/Russia_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03262k>,
+        <http://www.wikidata.org/entity/Q726080> ;
+    core:shortLabel "Russia"@en-gb ;
+    core:slug "russia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a96d9920-594f-45f2-b2aa-4d3a8b3b6966#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Greece"@en-gb ;
+    sal:videCode "GRE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB517> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Greece"@en-gb ;
+    core:primaryTopicOf <http://www.footballleague.gr/> ;
+    core:sameAs <http://dbpedia.org/resource/Greece_national_football_team>,
+        <http://rdf.freebase.com/ns/m.035qgm>,
+        <http://www.wikidata.org/entity/Q134925> ;
+    core:shortLabel "Greece"@en-gb ;
+    core:slug "greece"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/aacd7b64-abd7-47cb-a5b6-48f51c3efd0a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Faroe Islands"@en-gb ;
+    sal:videCode "FAR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB498> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Faroe Islands"@en-gb ;
+    core:primaryTopicOf <http://www.fsf.fo/> ;
+    core:sameAs <http://dbpedia.org/resource/Faroe_Islands_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03z0x2>,
+        <http://www.wikidata.org/entity/Q200688> ;
+    core:shortLabel "Faroe Islands"@en-gb ;
+    core:slug "faroe-islands"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ad6cc23f-fa33-4c0d-b658-c5e5cdfd75dc#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Madagascar"@en-gb ;
+    sal:videCode "MAD"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1852> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Madagascar"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/madagascar> ;
+    core:sameAs <http://dbpedia.org/resource/Madagascar_national_football_team> ;
+    core:shortLabel "Madagascar"@en-gb ;
+    core:slug "madagascar"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ae29ce6f-ccb5-46e1-9213-73febdb68e59#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Benin"@en-gb ;
+    sal:videCode "BEN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1717> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Benin"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/benin> ;
+    core:sameAs <http://dbpedia.org/resource/Benin_national_football_team> ;
+    core:shortLabel "Benin"@en-gb ;
+    core:slug "benin"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/aef9ea59-2f89-4760-a31c-5c319c53d166#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Nigeria"@en-gb ;
+    sal:videCode "NGA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1216> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Nigeria"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/nigeria> ;
+    core:sameAs <http://dbpedia.org/resource/Nigeria_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03ylxn>,
+        <http://www.wikidata.org/entity/Q181930> ;
+    core:shortLabel "Nigeria"@en-gb ;
+    core:slug "nigeria"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/af3f9f71-7bb1-4350-906b-db0bcd7c1693#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Hungary"@en-gb ;
+    sal:videCode "HUN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB538> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Hungary"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/hungary>,
+        <http://www.mlsz.hu/> ;
+    core:sameAs <http://dbpedia.org/resource/Hungary_national_football_team>,
+        <http://www.wikidata.org/entity/Q170561> ;
+    core:shortLabel "Hungary"@en-gb ;
+    core:slug "hungary"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/af6492fe-1a6e-4066-8410-83fd00f513c7#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ukraine"@en-gb ;
+    sal:videCode "UKR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB510> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Ukraine"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/ukraine>,
+        <http://www.ffu.org.ua/eng/> ;
+    core:sameAs <http://dbpedia.org/resource/Ukraine_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03ytp3>,
+        <http://www.wikidata.org/entity/Q170403> ;
+    core:shortLabel "Ukraine"@en-gb ;
+    core:slug "ukraine"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b12dd6db-c022-4df3-9ea0-025ec69ac61e#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gibraltar"@en-gb ;
+    sal:videCode "GIB"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9493> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Gibraltar"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Gibraltar_national_football_team> ;
+    core:shortLabel "Gibraltar"@en-gb ;
+    core:slug "gibraltar"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b25761d2-b78b-4d45-8aaf-8f7682d7d394#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Albania"@en-gb ;
+    sal:videCode "ALB"@en-gb ;
+    cms:locator <urn:sports-data:TFBB534> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Albania"@en-gb ;
+    core:primaryTopicOf <http://www.fshf.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Albania_national_football_team>,
+        <http://www.wikidata.org/entity/Q186262> ;
+    core:shortLabel "Albania"@en-gb ;
+    core:slug "albania"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b50012cc-99c3-45c9-a290-cb8a90a13e94#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Trinidad and Tobago"@en-gb ;
+    sal:videCode "TRI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1794> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Trinidad and Tobago"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Trinidad_and_Tobago_national_football_team>,
+        <http://www.wikidata.org/entity/Q192149> ;
+    core:shortLabel "T'dad & Tobago"@en-gb ;
+    core:slug "trinidad-and-tobago"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b866b757-104e-4990-a3d2-edd38a7d4070#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Germany U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB3689> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Germany U21"@en-gb ;
+    core:shortLabel "Germany U21"@en-gb ;
+    core:slug "germany-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id>,
+        <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b8dbc515-a3a7-4f8d-b03c-aa675a7c2467#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Guyana"@en-gb ;
+    sal:videCode "GUY"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1842> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Guyana"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/guyana> ;
+    core:sameAs <http://dbpedia.org/resource/Guyana_national_football_team> ;
+    core:shortLabel "Guyana"@en-gb ;
+    core:slug "guyana"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b993e234-b89e-4b39-be4b-e2f6f33199c8#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Nicaragua"@en-gb ;
+    sal:videCode "NCA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1865> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Nicaragua"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/nicaragua> ;
+    core:sameAs <http://dbpedia.org/resource/Nicaragua_national_football_team> ;
+    core:shortLabel "Nicaragua"@en-gb ;
+    core:slug "nicaragua"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Spain"@en-gb ;
+    sal:videCode "SPA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB118> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Spain"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/spain>,
+        <http://www.rfef.es/> ;
+    core:sameAs <http://dbpedia.org/resource/Spain_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02w64f>,
+        <http://www.wikidata.org/entity/Q42267> ;
+    core:shortLabel "Spain"@en-gb ;
+    core:slug "spain"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b9d79493-931c-4265-b558-6a7e283d33f6#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Morocco"@en-gb ;
+    sal:videCode "MOR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1057> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Morocco"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/morocco> ;
+    core:sameAs <http://dbpedia.org/resource/Morocco_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03_9hm>,
+        <http://www.wikidata.org/entity/Q207337> ;
+    core:shortLabel "Morocco"@en-gb ;
+    core:slug "morocco"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bcdd3b1e-a131-4940-98a0-d844acf7bb9d#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Italy U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2105> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Italy U21"@en-gb ;
+    core:shortLabel "Italy U21"@en-gb ;
+    core:slug "italy-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id>,
+        <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bcfa15f8-4ff0-4cfd-ab0d-40ded48e8f5d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Norway"@en-gb ;
+    sal:videCode "NOR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB363> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Norway"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Norway_national_football_team> ;
+    core:shortLabel "Norway"@en-gb ;
+    core:slug "norway"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bdc57f19-3e73-4cd3-a8c1-482136761925#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Andorra"@en-gb ;
+    sal:videCode "AND"@en-gb ;
+    cms:locator <urn:sports-data:TFBB499> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Andorra"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Andorra_national_football_team> ;
+    core:shortLabel "Andorra"@en-gb ;
+    core:slug "andorra"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/beb68026-a8d4-4e93-a7da-69236e988e18#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Australia"@en-gb ;
+    sal:videCode "AUS"@en-gb ;
+    cms:locator <urn:sports-data:TFBB575> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Australia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/australia> ;
+    core:sameAs <http://dbpedia.org/resource/Australia_national_soccer_team>,
+        <http://rdf.freebase.com/ns/m.0cnk2q> ;
+    core:shortLabel "Australia"@en-gb ;
+    core:slug "australia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bf4932d4-aa58-4dfd-8d89-57a09164ba18#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Paraguay"@en-gb ;
+    sal:videCode "PAR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB835> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Paraguay"@en-gb ;
+    core:shortLabel "Paraguay"@en-gb ;
+    core:slug "paraguay"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/6b7a7299-741d-42d4-afd5-94765fc1c655#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c1419a1e-ebc7-4c00-9073-12ed4f0e99de#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Northern Ireland"@en-gb ;
+    sal:videCode "NI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB117> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Northern Ireland"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/northern-ireland>,
+        <http://www.irishfa.com/> ;
+    core:sameAs <http://dbpedia.org/resource/Northern_Ireland_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0272vm>,
+        <http://www.wikidata.org/entity/Q190978> ;
+    core:shortLabel "Northern Ireland"@en-gb ;
+    core:slug "northern-ireland"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c27c0133-1c67-4c26-88ab-4b2a3f0cc710#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Yemen"@en-gb ;
+    sal:videCode "YEM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1896> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Yemen"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/yemen> ;
+    core:sameAs <http://dbpedia.org/resource/Yemen_national_football_team> ;
+    core:shortLabel "Yemen"@en-gb ;
+    core:slug "yemen"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c297c13f-ce09-499c-ae5f-a660cfb4e13f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Mexico"@en-gb ;
+    sal:videCode "MEX"@en-gb ;
+    cms:locator <urn:sports-data:TFBB659> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Mexico"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/mexico> ;
+    core:sameAs <http://dbpedia.org/resource/Mexico_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03dj48>,
+        <http://www.wikidata.org/entity/Q164089> ;
+    core:shortLabel "Mexico"@en-gb ;
+    core:slug "mexico"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c701e5ee-5bc3-4922-a621-d6c51f7477dc#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ethiopia"@en-gb ;
+    sal:videCode "ETH"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1835> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Ethiopia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Ethiopia_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0451lm>,
+        <http://www.wikidata.org/entity/Q257411> ;
+    core:shortLabel "Ethiopia"@en-gb ;
+    core:slug "ethiopia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c7ebf02e-83e5-4b0f-a546-41041ac4c69e#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bermuda"@en-gb ;
+    sal:videCode "BER"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1817> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Bermuda"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/bermuda> ;
+    core:sameAs <http://dbpedia.org/resource/Bermuda_national_football_team> ;
+    core:shortLabel "Bermuda"@en-gb ;
+    core:slug "bermuda"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c900fe7f-2e33-4373-93d3-f94ad1c6b3e1#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Iraq"@en-gb ;
+    sal:videCode "IRQ"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1800> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Iraq"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/iraq> ;
+    core:sameAs <http://dbpedia.org/resource/Iraq_national_football_team> ;
+    core:shortLabel "Iraq"@en-gb ;
+    core:slug "iraq"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/cb31695c-f178-4958-8ac0-5e4e134c840d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "San Marino"@en-gb ;
+    sal:videCode "SAN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB495> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "San Marino"@en-gb ;
+    core:primaryTopicOf <http://www.fsgc.sm/> ;
+    core:sameAs <http://dbpedia.org/resource/San_Marino_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02_zcj>,
+        <http://www.wikidata.org/entity/Q185350> ;
+    core:shortLabel "San Marino"@en-gb ;
+    core:slug "san-marino"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/cf825117-9051-4230-9086-183c51db99f4#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "North Korea"@en-gb ;
+    sal:videCode "PRK"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1801> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "North Korea"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/north-korea> ;
+    core:sameAs <http://dbpedia.org/resource/North_Korea_national_football_team> ;
+    core:shortLabel "North Korea"@en-gb ;
+    core:slug "north-korea"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d45ae6d0-2ddd-4c86-bbd5-eaa6862f3afc#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Belarus"@en-gb ;
+    sal:videCode "BLR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB512> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Belarus"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/belarus> ;
+    core:sameAs <http://dbpedia.org/resource/Belarus_national_football_team> ;
+    core:shortLabel "Belarus"@en-gb ;
+    core:slug "belarus"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d4b3bee1-d813-4d59-8c81-0064b5d807b9#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Venezuela"@en-gb ;
+    sal:videCode "VEN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB833> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Venezuela"@en-gb ;
+    core:shortLabel "Venezuela"@en-gb ;
+    core:slug "venezuela"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/6b7a7299-741d-42d4-afd5-94765fc1c655#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d5b732fe-5a7b-42f5-9d1a-206474349efc#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Israel"@en-gb ;
+    sal:videCode "ISR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB516> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Israel"@en-gb ;
+    core:primaryTopicOf <http://football.org.il/> ;
+    core:sameAs <http://dbpedia.org/resource/Israel_national_football_team>,
+        <http://rdf.freebase.com/ns/m.039_ym>,
+        <http://www.wikidata.org/entity/Q191406> ;
+    core:shortLabel "Israel"@en-gb ;
+    core:slug "israel"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d8621c8b-03f2-45ef-ae95-1b30990a64d9#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "England U19"@en-gb ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "England U19"@en-gb ;
+    core:shortLabel "England U19"@en-gb ;
+    core:slug "england-u19"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d9b1cfa0-6653-4da5-ad13-f448475ff9c4#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Thailand"@en-gb ;
+    sal:videCode "THA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB778> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Thailand"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/thailand> ;
+    core:sameAs <http://dbpedia.org/resource/Thailand_national_football_team> ;
+    core:shortLabel "Thailand"@en-gb ;
+    core:slug "thailand"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/da7ff3fd-eb71-4cf8-abb1-a8d025e9e135#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Argentina"@en-gb ;
+    sal:videCode "ARG"@en-gb ;
+    cms:locator <urn:sports-data:TFBB632> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Argentina"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/argentina> ;
+    core:sameAs <http://dbpedia.org/resource/Argentina_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02bh_v>,
+        <http://www.wikidata.org/entity/Q79800> ;
+    core:shortLabel "Argentina"@en-gb ;
+    core:slug "argentina"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/dfa3dba2-199e-4e2f-94c8-f57306c44396#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Liechtenstein"@en-gb ;
+    sal:videCode "LIE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB514> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Liechtenstein"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Liechtenstein_national_football_team> ;
+    core:shortLabel "Liechtenstein"@en-gb ;
+    core:slug "liechtenstein"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e195f56d-570a-4b10-a871-d1d38e622278#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Qatar"@en-gb ;
+    sal:videCode "QAT"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1873> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Qatar"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/qatar> ;
+    core:sameAs <http://dbpedia.org/resource/Qatar_national_football_team> ;
+    core:shortLabel "Qatar"@en-gb ;
+    core:slug "qatar"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e288012f-89ab-429d-9f42-10cf379fb912#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bosnia-Herzegovina"@en-gb ;
+    sal:videCode "BIH"@en-gb ;
+    cms:locator <urn:sports-data:TFBB537> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Bosnia-Herzegovina"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Bosnia_and_Herzegovina_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03yv9r>,
+        <http://www.wikidata.org/entity/Q181190> ;
+    core:shortLabel "Bos-Herze"@en-gb ;
+    core:slug "bosnia-herzegovina"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e35f6388-3716-4d84-b214-75cbf651e9c9#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Malta"@en-gb ;
+    sal:videCode "MLT"@en-gb ;
+    cms:locator <urn:sports-data:TFBB521> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Malta"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Malta_national_football_team> ;
+    core:shortLabel "Malta"@en-gb ;
+    core:slug "malta"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e3fc5ae5-2050-439c-98e0-f7d306d5cd70#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cyprus"@en-gb ;
+    sal:videCode "CYP"@en-gb ;
+    cms:locator <urn:sports-data:TFBB501> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Cyprus"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Cyprus_national_football_team> ;
+    core:shortLabel "Cyprus"@en-gb ;
+    core:slug "cyprus"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e534df02-1f26-4155-a459-9875cae71f41#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "France U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6637> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "France U21"@en-gb ;
+    core:shortLabel "France U21"@en-gb ;
+    core:slug "france-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id>,
+        <http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e58bd16f-c135-4d8f-aa05-1e30c82693e7#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Guinea-Bissau"@en-gb ;
+    sal:videCode "GNB"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1841> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Guinea-Bissau"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/guinea-bissau> ;
+    core:sameAs <http://dbpedia.org/resource/Guinea-Bissau_national_football_team> ;
+    core:shortLabel "Guinea-Bissau"@en-gb ;
+    core:slug "guinea-bissau"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e5e99be2-b732-4ef1-b097-4141050a048a#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Austria U21"@en-gb ;
+    cms:locator <urn:sports-data:TFBB7699> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Austria U21"@en-gb ;
+    core:shortLabel "Austria U21"@en-gb ;
+    core:slug "austria-u21"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f032f98f-c256-4c2f-8bdc-d2fadf20a65a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Croatia"@en-gb ;
+    sal:videCode "CRO"@en-gb ;
+    cms:locator <urn:sports-data:TFBB535> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Croatia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/croatia>,
+        <http://www.hns-cff.hr/> ;
+    core:sameAs <http://dbpedia.org/resource/Croatia_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0356gk>,
+        <http://www.wikidata.org/entity/Q134479> ;
+    core:shortLabel "Croatia"@en-gb ;
+    core:slug "croatia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f0c139e1-c80c-47d5-92eb-b01cc5ed8937#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bolivia"@en-gb ;
+    sal:videCode "BOL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB836> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "Bolivia"@en-gb ;
+    core:shortLabel "Bolivia"@en-gb ;
+    core:slug "bolivia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/6b7a7299-741d-42d4-afd5-94765fc1c655#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f14e9a9a-69e4-4737-9b50-d2030e08aa40#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cameroon"@en-gb ;
+    sal:videCode "CMR"@en-gb ;
+    cms:locator <urn:sports-data:TFBB494> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Cameroon"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Cameroon_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03yl2t>,
+        <http://www.wikidata.org/entity/Q175309> ;
+    core:shortLabel "Cameroon"@en-gb ;
+    core:slug "cameroon"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f1be2537-3c14-40f1-835d-82b4f6507089#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Romania"@en-gb ;
+    sal:videCode "ROM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB358> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Romania"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/romania>,
+        <http://www.frf.ro/> ;
+    core:sameAs <http://dbpedia.org/resource/Romania_national_football_team>,
+        <http://www.wikidata.org/entity/Q168397> ;
+    core:shortLabel "Romania"@en-gb ;
+    core:slug "romania"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f3992f60-5909-4134-9c58-065f030144b1#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Montenegro"@en-gb ;
+    sal:videCode "MNO"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2734> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Montenegro"@en-gb ;
+    core:primaryTopicOf <http://fscg.co.me/> ;
+    core:sameAs <http://dbpedia.org/resource/Montenegro_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0dg36q>,
+        <http://www.wikidata.org/entity/Q189018> ;
+    core:shortLabel "Montenegro"@en-gb ;
+    core:slug "montenegro"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f5a0b205-c294-40de-9329-a5a88aa74ffa#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "El Salvador"@en-gb ;
+    sal:videCode "ELS"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1726> ;
+    core:disambiguationHint "National football team"@en-gb ;
+    core:preferredLabel "El Salvador"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/El_Salvador_national_football_team>,
+        <http://www.wikidata.org/entity/Q188228> ;
+    core:shortLabel "El Salvador"@en-gb ;
+    core:slug "el-salvador"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id>,
+        <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f6d994e3-d9f8-46e8-b717-6537599190cf#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "North Macedonia"@en-gb ;
+    sal:videCode "MKD"@en-gb ;
+    cms:locator <urn:sports-data:TFBB504> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "North Macedonia"@en-gb ;
+    core:primaryTopicOf <http://www.ffm.com.mk/> ;
+    core:sameAs <http://dbpedia.org/resource/North_Macedonia_national_football_team>,
+        <http://rdf.freebase.com/ns/m.0329t7>,
+        <http://www.wikidata.org/entity/Q188568> ;
+    core:shortLabel "North Macedonia"@en-gb ;
+    core:slug "macedonia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f779d5e7-a35d-461d-8f79-852dc1c4a232#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Namibia"@en-gb ;
+    sal:videCode "NAM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1861> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Namibia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/namibia> ;
+    core:sameAs <http://dbpedia.org/resource/Namibia_national_football_team> ;
+    core:shortLabel "Namibia"@en-gb ;
+    core:slug "namibia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/fb5da161-43c1-4cfc-a24a-9b1d2aa62886#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Tunisia"@en-gb ;
+    sal:videCode "TUN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1224> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Tunisia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/tunisia> ;
+    core:sameAs <http://dbpedia.org/resource/Tunisia_national_football_team>,
+        <http://rdf.freebase.com/ns/m.03_r_5>,
+        <http://www.wikidata.org/entity/Q27971> ;
+    core:shortLabel "Tunisia"@en-gb ;
+    core:slug "tunisia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ff9bb350-0bed-4966-9997-704f830d93c5#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Denmark"@en-gb ;
+    sal:videCode "DEN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB369> ;
+    core:disambiguationHint "National Football Team"@en-gb ;
+    core:preferredLabel "Denmark"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/denmark>,
+        <http://www.dbu.dk/> ;
+    core:sameAs <http://dbpedia.org/resource/Denmark_national_football_team>,
+        <http://rdf.freebase.com/ns/m.02s2lg>,
+        <http://www.wikidata.org/entity/Q131785> ;
+    core:shortLabel "Denmark"@en-gb ;
+    core:slug "denmark"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id>,
+        <http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id>,
+        <http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id>,
+        <http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id>,
+        <http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id>,
+        <http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.faf.dz/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<urn:sports-data:TFBB251> a cms:Sports-DataLocator .
+
+<http://football.org.il/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://nv.fotbal.cz/en-index.php> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/football/teams/argentina> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/australia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/belgium> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/brazil> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/colombia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/costa-rica> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/croatia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/denmark> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/egypt> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/england> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/france> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/germany> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/iceland> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/iran> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/japan> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/mexico> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/morocco> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/nigeria> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/northern-ireland> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/panama> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/peru> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/poland> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/portugal> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/republic-of-ireland> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/russia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/saudi-arabia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/scotland> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/senegal> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/serbia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/south-korea> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/spain> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/sweden> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/switzerland> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/tunisia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/uruguay> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/wales> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.belgianfootball.be/en/homepage-b> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.dbu.dk/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.dfb.de/en/start/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fafutebol-angola.og.ao/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fai.ie/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.faw.org.uk/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ffm.com.mk/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ffu.org.ua/eng/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.figc.it/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.flf.lu/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fmf.md/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.footballleague.gr/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fpf.pt/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.francefootball.fr/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.frf.ro/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fsf.fo/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fsgc.sm/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fshf.org/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fss.rs/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.futbalsfz.sk/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.hns-cff.hr/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.irishfa.com/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ksi.is/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.mlsz.hu/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.oefb.at/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.onsoranje.nl/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.pzpn.pl/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.rfef.es/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.rfs.ru/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.scottishfa.co.uk/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.tff.org/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.thefa.com/> bbc:webDocumentCategory sal:ExternalWebsite .
+
+<urn:sports-data:TFBB1041> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1042> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1057> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB114> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB115> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB116> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1161> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB11658> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB117> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB118> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB119> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1215> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1216> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1218> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1219> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1220> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1221> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1222> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1223> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1224> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1225> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1226> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1227> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1263> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1264> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1266> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1327> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1357> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1358> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1359> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1529> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1717> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1720> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1721> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1722> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1723> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1724> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1726> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1727> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1794> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1798> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1800> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1801> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1813> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1817> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1822> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1835> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1841> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1842> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1843> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1845> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1846> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1848> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1852> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1855> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1861> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1865> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1866> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1868> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1869> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1873> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1888> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1890> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1892> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1895> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1896> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2101> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2104> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2105> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2106> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2107> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2108> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2734> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB357> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB358> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB359> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB360> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB361> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB362> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB363> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB364> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB365> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB366> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB367> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB368> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB3688> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB3689> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB369> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB3690> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB4779> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB494> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB495> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB496> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB497> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB498> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB499> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB500> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB501> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB502> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB503> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB504> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB505> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB506> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB507> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB508> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB509> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB510> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB511> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB512> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB513> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB514> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB515> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB516> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB517> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB518> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB519> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB520> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB521> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB522> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB524> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB534> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB535> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB536> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB537> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB538> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB575> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB596> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB597> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB614> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6250> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6304> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB632> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6512> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB659> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB662> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6637> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6640> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB7211> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB7541> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB7699> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB778> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB7973> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB830> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB831> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB832> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB833> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB834> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB835> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB836> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB837> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB838> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB847> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB8880> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9078> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9090> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9094> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9493> a cms:Sports-DataLocator .
+

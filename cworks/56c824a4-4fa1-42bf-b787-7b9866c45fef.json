@@ -1,0 +1,1652 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/284e0ea5-9137-4a29-9305-2a9e049c262a#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-08-08T09:26:54+00:00",
+      "dateModified": "2019-08-08T09:26:54+00:00",
+      "description": "Leeds United sign France Under-20 goalkeeper Illan Meslier on a season-long loan from Lorient.",
+      "shortTitle": "Leeds sign goalkeeper Meslier on loan from Lorient",
+      "title": "Illan Meslier: Leeds United sign Lorient goalkeeper on loan",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:6e49981d-3d69-6646-85ff-98f738c95b68",
+        "urn:bbc:cps:asset:49276576"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/509d2079-2bf6-e44d-b791-a38bcda66529#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Leeds United",
+          "preferredLabel": "Leeds United",
+          "shortLabel": "Leeds",
+          "slug": "leeds-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Leeds_United_A.F.C.",
+            "http://rdf.freebase.com/ns/m.01xn7x1",
+            "http://www.wikidata.org/entity/Q1128631"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/leeds-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.leedsunited.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/56c824a4-4fa1-42bf-b787-7b9866c45fef#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Lorient",
+          "preferredLabel": "Lorient",
+          "shortLabel": "Lorient",
+          "slug": "lorient",
+          "sameAs": "http://dbpedia.org/resource/FC_Lorient",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lorient",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id",
+          "@type": [
+            "sport:Competition",
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Championship",
+          "preferredLabel": "Championship",
+          "shortLabel": "Championship",
+          "slug": "championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/championship",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.efl.com/sky-bet-championship/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aa015fe5-c774-4374-9a06-2cee75bf3552#id",
+          "@type": [
+            "Thing",
+            "Theme",
+            "Event"
+          ],
+          "label": "Football transfers",
+          "preferredLabel": "Football transfers",
+          "sameAs": "http://www.wikidata.org/entity/Q622822"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c23a7f2f-8d78-490f-9e2e-66729c0a5889#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Leeds",
+          "preferredLabel": "Leeds",
+          "sameAs": "http://sws.geonames.org/2644688/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49276576",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/161E1/production/_108239509_gettyimages-1146386375.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Illan Meslier in action for France Under-20s",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/e3552cf1-f918-4866-8a64-133f43ed0566#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2018-07-11T10:13:05+00:00",
+      "dateModified": "2018-07-11T10:13:05+00:00",
+      "description": "Arsenal sign France Under-20 international midfielder Matteo Guendouzi from Lorient for an undisclosed fee.",
+      "shortTitle": "Arsenal sign French youngster Guendouzi",
+      "title": "Matteo Guendouzi: Arsenal sign France Under-20 international midfielder",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:7d789536-15b9-bc44-bae1-3d66f1a50123",
+        "urn:bbc:cps:asset:44791028"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2a8792cf-6e79-44c7-bd83-d842f6a6f2ec#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Highbury",
+          "preferredLabel": "Highbury",
+          "sameAs": "http://sws.geonames.org/2646976/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/43fea90d-0997-4c29-b833-6da1ae1d7262#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Lorient",
+          "preferredLabel": "Lorient",
+          "sameAs": "http://sws.geonames.org/2997577/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/56c824a4-4fa1-42bf-b787-7b9866c45fef#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Lorient",
+          "preferredLabel": "Lorient",
+          "shortLabel": "Lorient",
+          "slug": "lorient",
+          "sameAs": "http://dbpedia.org/resource/FC_Lorient",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lorient",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aa015fe5-c774-4374-9a06-2cee75bf3552#id",
+          "@type": [
+            "Thing",
+            "Theme",
+            "Event"
+          ],
+          "label": "Football transfers",
+          "preferredLabel": "Football transfers",
+          "sameAs": "http://www.wikidata.org/entity/Q622822"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c4285a9a-9865-2343-af3a-8653f7b70734#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Arsenal",
+          "preferredLabel": "Arsenal",
+          "shortLabel": "Arsenal",
+          "slug": "arsenal",
+          "sameAs": [
+            "http://dbpedia.org/resource/Arsenal_F.C.",
+            "http://rdf.freebase.com/ns/m.0xbm",
+            "http://www.wikidata.org/entity/Q9617"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.arsenal.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/arsenal",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/44791028",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/F8A9/production/_102475636_guendouzi_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Matteo Guendouzi",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/6fe6186b-3a00-43e1-9fb1-a5a90cc5ab2c#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2017-05-20T20:40:31+00:00",
+      "dateModified": "2017-05-20T20:40:31+00:00",
+      "description": "Real Madrid and Barcelona battle for the title on the final day of La Liga on Sunday, while Juventus can be crowned champions of Italy.",
+      "shortTitle": "Five-year wait over for Real Madrid?",
+      "title": "Real Madrid on brink of La Liga title while Juventus can clinch Serie A",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:435e8b20-4df5-6a48-950f-60c9739bd97a",
+        "urn:bbc:cps:asset:39974017"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1c9c5c77-4d89-414a-a5df-1f9f1a28d630#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Real Madrid",
+          "preferredLabel": "Real Madrid",
+          "shortLabel": "Real Madrid",
+          "slug": "real-madrid",
+          "sameAs": [
+            "http://dbpedia.org/resource/Real_Madrid_C.F.",
+            "http://rdf.freebase.com/ns/m.06l22",
+            "http://www.wikidata.org/entity/Q8682"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/real-madrid",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/53021f89-0399-47b0-a355-c81f24677a63#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Bastia",
+          "preferredLabel": "Bastia",
+          "shortLabel": "Bastia",
+          "slug": "bastia",
+          "sameAs": "http://dbpedia.org/resource/SC_Bastia",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/bastia",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/56c824a4-4fa1-42bf-b787-7b9866c45fef#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Lorient",
+          "preferredLabel": "Lorient",
+          "shortLabel": "Lorient",
+          "slug": "lorient",
+          "sameAs": "http://dbpedia.org/resource/FC_Lorient",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lorient",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5b2fa9c7-fdd8-4c4e-82cf-ef27f83a0506#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Dijon",
+          "preferredLabel": "Dijon",
+          "shortLabel": "Dijon",
+          "slug": "dijon",
+          "sameAs": "http://dbpedia.org/resource/Dijon_FCO",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/dijon",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6f93127a-159a-45d6-a9d0-97d09b38dd66#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Juventus",
+          "preferredLabel": "Juventus",
+          "shortLabel": "Juventus",
+          "slug": "juventus",
+          "sameAs": [
+            "http://dbpedia.org/resource/Juventus_F.C.",
+            "http://rdf.freebase.com/ns/m.045xx",
+            "http://www.wikidata.org/entity/Q1422"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/juventus",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/855796ec-5090-442e-ac5a-b2f0299c26af#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Roma",
+          "preferredLabel": "Roma",
+          "shortLabel": "Roma",
+          "slug": "roma",
+          "sameAs": [
+            "http://dbpedia.org/resource/A.S._Roma",
+            "http://rdf.freebase.com/ns/m.0ytc",
+            "http://www.wikidata.org/entity/Q2739"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/roma",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/94ba99ae-aeea-42d3-a6f1-71b6cdac0482#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "1899 Hoffenheim",
+          "preferredLabel": "1899 Hoffenheim",
+          "shortLabel": "Hoffenheim",
+          "slug": "hoffenheim",
+          "sameAs": "http://dbpedia.org/resource/TSG_1899_Hoffenheim",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/hoffenheim",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id",
+          "@type": [
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition"
+          ],
+          "label": "Spanish La Liga",
+          "preferredLabel": "Spanish La Liga",
+          "shortLabel": "Spanish La Liga",
+          "slug": "spanish-la-liga",
+          "primaryTopicOf": [
+            "http://www.laliga.es/en",
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/spanish-la-liga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a15c7264-b424-4d81-ab5e-93da6ea7cb89#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Napoli",
+          "preferredLabel": "Napoli",
+          "shortLabel": "Napoli",
+          "slug": "napoli",
+          "sameAs": [
+            "http://dbpedia.org/resource/S.S.C._Napoli",
+            "http://rdf.freebase.com/ns/m.048xg8",
+            "http://www.wikidata.org/entity/Q2641"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/napoli",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a59b1408-794a-4676-b5c2-5390d6ce8b10#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Caen",
+          "preferredLabel": "Caen",
+          "shortLabel": "Caen",
+          "slug": "caen",
+          "sameAs": "http://dbpedia.org/resource/Stade_Malherbe_Caen",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/caen",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "Organisation"
+          ],
+          "label": "Barcelona",
+          "preferredLabel": "Barcelona",
+          "shortLabel": "Barcelona",
+          "slug": "barcelona",
+          "sameAs": [
+            "http://dbpedia.org/resource/FC_Barcelona",
+            "http://rdf.freebase.com/ns/m.0hvgt",
+            "http://www.wikidata.org/entity/Q7156"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/barcelona",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "Thing"
+          ],
+          "label": "German Bundesliga",
+          "preferredLabel": "German Bundesliga",
+          "shortLabel": "German Bundesliga",
+          "slug": "german-bundesliga",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/german-bundesliga",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.bundesliga.com/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "Thing"
+          ],
+          "label": "Italian Serie A",
+          "preferredLabel": "Italian Serie A",
+          "shortLabel": "Italian Serie A",
+          "slug": "italian-serie-a",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/italian-serie-a",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.legaseriea.it/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f6c5e9b7-220b-4dcc-810d-51fb575510e0#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "Thing"
+          ],
+          "label": "Hamburg SV",
+          "preferredLabel": "Hamburg SV",
+          "shortLabel": "Hamburg",
+          "slug": "hamburg",
+          "sameAs": "http://dbpedia.org/resource/Hamburger_SV",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/hamburg",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f76d29fd-ea7c-4880-9b25-cb98acce6185#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Borussia Dortmund",
+          "preferredLabel": "Borussia Dortmund",
+          "shortLabel": "B Dortmund",
+          "slug": "borussia-dortmund",
+          "sameAs": [
+            "http://dbpedia.org/resource/Borussia_Dortmund",
+            "http://rdf.freebase.com/ns/m.01w_d6",
+            "http://www.wikidata.org/entity/Q41420"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/borussia-dortmund",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id",
+          "@type": [
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "Thing"
+          ],
+          "label": "French Ligue 1",
+          "preferredLabel": "French Ligue 1",
+          "shortLabel": "French Ligue 1",
+          "slug": "french-ligue-one",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/french-ligue-one",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.ligue1.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/39974017",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/C45F/production/_96117205_gettyimages-518486656.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Real Madrid boss Zinedine Zidane (left) and Barcelona boss Luis Enrique",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/1e1a8939-bd1a-4a82-b3c5-39bf425d8150#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2017-04-23T16:41:18+00:00",
+      "dateModified": "2017-04-23T16:41:18+00:00",
+      "description": "Ghana striker Abdul Majeed Waris puts French club Lorient\u0027s Ligue 1 survival above personal glory after his ninth goal of the season helped the club claim a 5-1 win over Metz.",
+      "shortTitle": "Ghana\u0027s Waris targets survival with Lorient",
+      "title": "Ghana\u0027s Majeed Waris targets French Ligue 1 survival with Lorient",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:0e280846-f34a-cd4f-a70f-0aaf736de971",
+        "urn:bbc:cps:asset:39686389"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1e9a1407-3a98-4940-b782-5abd89ebcce4#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Ghana",
+          "preferredLabel": "Ghana",
+          "shortLabel": "Ghana",
+          "slug": "ghana",
+          "sameAs": [
+            "http://dbpedia.org/resource/Ghana_national_football_team",
+            "http://rdf.freebase.com/ns/m.03_qrp",
+            "http://www.wikidata.org/entity/Q172014"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/56c824a4-4fa1-42bf-b787-7b9866c45fef#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Lorient",
+          "preferredLabel": "Lorient",
+          "shortLabel": "Lorient",
+          "slug": "lorient",
+          "sameAs": "http://dbpedia.org/resource/FC_Lorient",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lorient",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e05a00e2-7c37-4af9-a7d8-0202dd1f00f8#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "African Football",
+          "preferredLabel": "African Football",
+          "shortLabel": "African Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/african"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/39686389",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/2305/production/_95756980_waris_2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Lorient\u0027s Ghanaian forward Abdul Majeed Waris",
+          "thumbnailType": "FixedSize66Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/4A15/production/_95756981_waris_2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Lorient\u0027s Ghanaian forward Abdul Majeed Waris",
+          "thumbnailType": "FixedSize144Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/59B5/production/_95756922_waris_2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Lorient\u0027s Ghanaian forward Abdul Majeed Waris",
+          "thumbnailType": "StandardThumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/A7D5/production/_95756924_waris_2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Lorient\u0027s Ghanaian forward Abdul Majeed Waris",
+          "thumbnailType": "CloseUpThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/e10ac138-2e83-4ad9-a5df-333daf881ff9#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2017-03-12T22:25:59+00:00",
+      "dateModified": "2017-03-12T22:25:59+00:00",
+      "description": "Paris St-Germain respond to the agony of their Champions League exit at Barcelona by beating Lorient to go second in Ligue 1.",
+      "title": "Lorient 1-2 Paris St-Germain",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:a0899a38-ff8b-437e-8eb9-e94a142f60bd",
+        "urn:bbc:cps:asset:39251705"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/56c824a4-4fa1-42bf-b787-7b9866c45fef#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Lorient",
+          "preferredLabel": "Lorient",
+          "shortLabel": "Lorient",
+          "slug": "lorient",
+          "sameAs": "http://dbpedia.org/resource/FC_Lorient",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lorient",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/da152cb0-5edd-4d9a-824a-c32e4ebd923b#id",
+          "@type": [
+            "Thing",
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Paris Saint Germain",
+          "preferredLabel": "Paris Saint Germain",
+          "shortLabel": "PSG",
+          "slug": "paris-st-germain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Paris_Saint-Germain_F.C.",
+            "http://rdf.freebase.com/ns/m.01_1kk",
+            "http://www.wikidata.org/entity/Q483020"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/paris-st-germain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id",
+          "@type": [
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "Thing"
+          ],
+          "label": "French Ligue 1",
+          "preferredLabel": "French Ligue 1",
+          "shortLabel": "French Ligue 1",
+          "slug": "french-ligue-one",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/french-ligue-one",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.ligue1.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/39251705",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/10196/production/_95124956_adrien_rabiot1_afp.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Adrian Rabiot",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/bd7a6596-3674-4f02-9e86-e040dab11dbb#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2017-01-20T23:01:30+00:00",
+      "dateModified": "2017-01-20T23:01:30+00:00",
+      "description": "Nice go top of Ligue 1 after drawing with struggling Bastia, who finish with 10 men.",
+      "title": "Bastia 1-1 Nice",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:1a17de93-8e4a-4c5b-8179-9bc060166016",
+        "urn:bbc:cps:asset:38640460"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/08917b83-e64f-4d3b-a475-c3a8399c0e67#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Nice",
+          "preferredLabel": "Nice",
+          "shortLabel": "Nice",
+          "slug": "nice",
+          "sameAs": "http://dbpedia.org/resource/OGC_Nice",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/nice",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/56c824a4-4fa1-42bf-b787-7b9866c45fef#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Lorient",
+          "preferredLabel": "Lorient",
+          "shortLabel": "Lorient",
+          "slug": "lorient",
+          "sameAs": "http://dbpedia.org/resource/FC_Lorient",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lorient",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id",
+          "@type": [
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "Thing"
+          ],
+          "label": "French Ligue 1",
+          "preferredLabel": "French Ligue 1",
+          "shortLabel": "French Ligue 1",
+          "slug": "french-ligue-one",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/french-ligue-one",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.ligue1.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/38640460",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/60F6/production/_93722842_nice_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Nice celebrate",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/69eac0d6-16ed-4c56-9082-cefff118e9a3#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2016-10-02T17:47:45+00:00",
+      "dateModified": "2016-10-02T17:47:45+00:00",
+      "description": "Mario Balotelli scores a late winner before being sent off as Nice beat Lorient to return to the top of Ligue 1.",
+      "title": "Nice 2-1 Lorient",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:9f1b9df2-be35-4386-9e12-4756e71b4e92",
+        "urn:bbc:cps:asset:37467841"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/08917b83-e64f-4d3b-a475-c3a8399c0e67#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Nice",
+          "preferredLabel": "Nice",
+          "shortLabel": "Nice",
+          "slug": "nice",
+          "sameAs": "http://dbpedia.org/resource/OGC_Nice",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/nice",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/56c824a4-4fa1-42bf-b787-7b9866c45fef#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Lorient",
+          "preferredLabel": "Lorient",
+          "shortLabel": "Lorient",
+          "slug": "lorient",
+          "sameAs": "http://dbpedia.org/resource/FC_Lorient",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lorient",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/37467841",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/0EF5/production/_91492830_balotelli_afp.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Mario Balotelli",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CloseUpThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CloseUpThumbnail"
+    },
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "Event": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Event"
+    },
+    "FixedSize144Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/FixedSize144Thumbnail"
+    },
+    "FixedSize66Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/FixedSize66Thumbnail"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "Organisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"
+    },
+    "Place": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Place"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "dcterms:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "geoname:GeoTagConcept": {
+      "@id": "http://www.geonames.org/ontology#GeoTagConcept"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "shortTitle": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/shortTitle"
+    },
+    "skos:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:Competition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Competition"
+    },
+    "sport:CompetitiveSportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"
+    },
+    "sport:RecurringCompetition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"
+    },
+    "sport:SportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"
+    },
+    "sport:SportsDiscipline": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentCategory": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentCategory",
+      "@type": "@id"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

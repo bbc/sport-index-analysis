@@ -1,0 +1,152 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/d67405f6-169b-4ea7-8dde-90ca9fcb263c#id> a provenance:Dataset ;
+    rdfs:label "Basketball: Seasons" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/basketball/basketball-seasons.ttl" ;
+    provenance:changeReason "SLS-3012: LD: Model Basketball 2016/17 season competitions, stages, rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-01-03T09:17:36+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Kristian.Epps@bbc.co.uk> ;
+    provenance:version "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/016da2ba-e639-4e81-88fa-f1f47ff85692#id> a sport:Competition ;
+    rdfs:label "BBL Championship 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/dfce0271-c219-467f-aab6-918c4d9428ff#id> ;
+    sal:name "BBL Championship"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/d051e8c2-35d5-40c5-8457-95090e304bef#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d051e8c2-35d5-40c5-8457-95090e304bef#id> .
+
+<http://www.bbc.co.uk/things/0b3f5cfb-58fc-4f27-9fd5-c30456ce8252#id> a sport:Competition ;
+    rdfs:label "BBL Championship 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8ca63dbb-3007-4f28-8e14-924adb368455#id> ;
+    sal:name "BBL Championship"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/d051e8c2-35d5-40c5-8457-95090e304bef#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d051e8c2-35d5-40c5-8457-95090e304bef#id> .
+
+<http://www.bbc.co.uk/things/10b2aa01-454c-43b4-a2f4-c5ed69fd7218#id> a sport:Competition ;
+    rdfs:label "BBL Cup 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0b9a2d1e-1256-4833-843d-d16eedae4ef4#id> ;
+    sal:name "BBL Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/9a0775a4-75e6-4f4d-b6eb-b1aa4be2401e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9a0775a4-75e6-4f4d-b6eb-b1aa4be2401e#id> .
+
+<http://www.bbc.co.uk/things/1419c884-3d05-4e3d-9e37-fddedb17be77#id> a sport:Competition ;
+    rdfs:label "NBA 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/d23507b8-74b1-4a86-a6ab-0d46c85301e4#id> ;
+    sal:name "NBA"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/7e6469de-7a79-4191-86b7-d7499bdd048c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7e6469de-7a79-4191-86b7-d7499bdd048c#id> .
+
+<http://www.bbc.co.uk/things/21852ec6-2fbb-4746-ad3d-91531d2a006e#id> a sport:Competition ;
+    rdfs:label "BBL Pre-Season Friendly 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7142e5aa-b1b8-4f7a-923f-759968bf6047#id> ;
+    sal:name "BBL Pre-Season Friendly"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f1a046aa-1136-47c2-b342-6d5dc95da58c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f1a046aa-1136-47c2-b342-6d5dc95da58c#id> .
+
+<http://www.bbc.co.uk/things/225691ed-e03b-4721-a7db-0f909e93675d#id> a sport:Competition ;
+    rdfs:label "BBL Pre-Season Friendly 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/00fe46d1-e18f-41eb-84ed-8a988b1bd12b#id> ;
+    sal:name "BBL Pre-Season Friendly"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f1a046aa-1136-47c2-b342-6d5dc95da58c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f1a046aa-1136-47c2-b342-6d5dc95da58c#id> .
+
+<http://www.bbc.co.uk/things/3183f254-4614-4b6d-a464-707ba9063f51#id> a sport:Competition ;
+    rdfs:label "NBA 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/1bfade52-688f-40e0-8ceb-adef2d68a4be#id> ;
+    sal:name "NBA"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/7e6469de-7a79-4191-86b7-d7499bdd048c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7e6469de-7a79-4191-86b7-d7499bdd048c#id> .
+
+<http://www.bbc.co.uk/things/a9a7b7e6-d7c7-40c5-9840-8ec7dc579f36#id> a sport:Competition ;
+    rdfs:label "BBL Cup 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ddcce5ea-a269-4c95-a989-a414c0cc8774#id> ;
+    sal:name "BBL Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/9a0775a4-75e6-4f4d-b6eb-b1aa4be2401e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9a0775a4-75e6-4f4d-b6eb-b1aa4be2401e#id> .
+
+<http://www.bbc.co.uk/things/b1424677-cbed-4e31-afa3-87f22b48f342#id> a sport:Competition ;
+    rdfs:label "BBL Trophy 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/60b940e1-12db-4a16-ab1c-88b63ef7be45#id> ;
+    sal:name "BBL Trophy"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/c4904ff9-ca9f-44a5-8864-ab56eac376fb#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c4904ff9-ca9f-44a5-8864-ab56eac376fb#id> .
+
+<http://www.bbc.co.uk/things/fbb10719-8dd3-4797-8b45-927170ebfb1e#id> a sport:Competition ;
+    rdfs:label "BBL Trophy 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4ba0f919-4c22-47a2-8607-ffbfa888df51#id> ;
+    sal:name "BBL Trophy"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/c4904ff9-ca9f-44a5-8864-ab56eac376fb#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c4904ff9-ca9f-44a5-8864-ab56eac376fb#id> .
+
+<http://www.bbc.co.uk/things/00fe46d1-e18f-41eb-84ed-8a988b1bd12b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "BBL Pre-Season Friendly 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-05-15"^^xsd:date ;
+    ns2:hasEnd "2015-09-17"^^xsd:date .
+
+<http://www.bbc.co.uk/things/0b9a2d1e-1256-4833-843d-d16eedae4ef4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "BBL Cup 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-09-18"^^xsd:date ;
+    ns2:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1bfade52-688f-40e0-8ceb-adef2d68a4be#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "NBA 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-10-27"^^xsd:date ;
+    ns2:hasEnd "2016-06-02"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4ba0f919-4c22-47a2-8607-ffbfa888df51#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "BBL Trophy 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-09-18"^^xsd:date ;
+    ns2:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/60b940e1-12db-4a16-ab1c-88b63ef7be45#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "BBL Trophy 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-09-18"^^xsd:date ;
+    ns2:hasEnd "2016-02-27"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7142e5aa-b1b8-4f7a-923f-759968bf6047#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "BBL Pre-Season Friendly 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-05-10"^^xsd:date ;
+    ns2:hasEnd "2016-09-21"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8ca63dbb-3007-4f28-8e14-924adb368455#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "BBL Championship 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-09-18"^^xsd:date ;
+    ns2:hasEnd "2016-05-08"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d23507b8-74b1-4a86-a6ab-0d46c85301e4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "NBA 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-10-27"^^xsd:date ;
+    ns2:hasEnd "2017-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ddcce5ea-a269-4c95-a989-a414c0cc8774#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "BBL Cup 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-09-18"^^xsd:date ;
+    ns2:hasEnd "2016-01-17"^^xsd:date .
+
+<http://www.bbc.co.uk/things/dfce0271-c219-467f-aab6-918c4d9428ff#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "BBL Championship 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-09-18"^^xsd:date ;
+    ns2:hasEnd "2017-05-31"^^xsd:date .
+

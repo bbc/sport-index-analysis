@@ -1,0 +1,1569 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/00c89795-6e4f-4b88-93e4-db1e6b46725c#id> a provenance:Dataset ;
+    rdfs:label "Multidisciplinary: Winter Olympics 2018 Stages" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/multi-disciplinary/winter-olympics-2018-stages.ttl" ;
+    provenance:changeReason "SLS-4100;2: All lower-case slugs for ski-jumping" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-02-20T10:14:16+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "11"^^xsd:int .
+
+<http://www.bbc.co.uk/things/1f8748e8-de19-438c-ae18-6d3a19f0aa5b#id> sport:hasStage <http://www.bbc.co.uk/things/00d34896-4096-4de4-8f0e-badfefcce0b5#id>,
+        <http://www.bbc.co.uk/things/02811411-f241-4326-a2be-a03ef1f2b6f6#id>,
+        <http://www.bbc.co.uk/things/02e53973-ad2d-4a15-87f9-073aef614645#id>,
+        <http://www.bbc.co.uk/things/043979fe-a41f-4884-ae8c-0f9b7e3ef56e#id>,
+        <http://www.bbc.co.uk/things/067ddc43-44e2-4cea-a41f-79bd6a39bd60#id>,
+        <http://www.bbc.co.uk/things/089da27b-3c59-495a-8fde-ef1db2c80550#id>,
+        <http://www.bbc.co.uk/things/09aa941f-6a12-4939-802b-6f7942bf7bbc#id>,
+        <http://www.bbc.co.uk/things/0adad2b3-67cc-4834-bc1f-1be417b0d65f#id>,
+        <http://www.bbc.co.uk/things/0cf482b5-4715-4d58-8d8d-f7a090c35fa1#id>,
+        <http://www.bbc.co.uk/things/10650945-6ec0-40bc-b921-3d5f27b2225f#id>,
+        <http://www.bbc.co.uk/things/12426830-fc6b-4a1d-a3e6-5fd09956fc07#id>,
+        <http://www.bbc.co.uk/things/161bcfc1-65d5-4ea9-a620-332076e7c2a0#id>,
+        <http://www.bbc.co.uk/things/1b68b950-22a6-4211-82df-7d3c916269c6#id>,
+        <http://www.bbc.co.uk/things/1c8f462e-d601-4c1b-a4f9-a138505f4f63#id>,
+        <http://www.bbc.co.uk/things/1d9ce32f-8179-41a1-8c1d-e08717aad08a#id>,
+        <http://www.bbc.co.uk/things/225b856a-712a-447b-a3f7-769d35042592#id>,
+        <http://www.bbc.co.uk/things/24393536-7481-41ea-8df2-24a20c4ccf16#id>,
+        <http://www.bbc.co.uk/things/29193211-8c18-4ba4-a373-f88720439ebc#id>,
+        <http://www.bbc.co.uk/things/2d4e2583-54c7-4c29-a850-fbc20c1bcec9#id>,
+        <http://www.bbc.co.uk/things/304d6b9b-e5a1-48c1-83d2-b2a8ad56c075#id>,
+        <http://www.bbc.co.uk/things/34a529b4-6176-4079-a9ec-6e8c7ab25ff4#id>,
+        <http://www.bbc.co.uk/things/369584a6-c704-4ee6-a590-f10623623d8a#id>,
+        <http://www.bbc.co.uk/things/369f7bfd-410e-41da-a708-ee42c97b5b4a#id>,
+        <http://www.bbc.co.uk/things/371173c0-79fa-4d82-beca-520e9ef4ef33#id>,
+        <http://www.bbc.co.uk/things/38070489-5251-4ed3-800b-bea61c36e85f#id>,
+        <http://www.bbc.co.uk/things/3caf20f2-7cba-4699-bde6-cc7fb5e3b21e#id>,
+        <http://www.bbc.co.uk/things/3e45142e-28af-4843-b33d-2744d7bfce4c#id>,
+        <http://www.bbc.co.uk/things/418c4db5-b3c4-4072-85f9-c0da6da0c8a0#id>,
+        <http://www.bbc.co.uk/things/4275022f-7f8b-4892-b520-b84c3032db33#id>,
+        <http://www.bbc.co.uk/things/42fed238-14a7-4cce-ac4a-6f92bb7a07c2#id>,
+        <http://www.bbc.co.uk/things/44500e1d-17fa-4f21-8c05-f92e72087992#id>,
+        <http://www.bbc.co.uk/things/475ac690-9022-4797-bab9-cf7746c1d1e6#id>,
+        <http://www.bbc.co.uk/things/4806a847-7bdd-4909-827a-1efc49203ca5#id>,
+        <http://www.bbc.co.uk/things/4af1e87c-d4e6-4f21-80cc-0debff675284#id>,
+        <http://www.bbc.co.uk/things/4db2ce84-057d-4d07-8def-0bbaf6d9ddcd#id>,
+        <http://www.bbc.co.uk/things/4dd53ff1-ea73-4fdf-9ba0-4a01fd19f6a5#id>,
+        <http://www.bbc.co.uk/things/50670982-2923-4ab3-8025-c7ad5b11a1ef#id>,
+        <http://www.bbc.co.uk/things/5737b9ea-443b-4def-9312-d5fc3357643c#id>,
+        <http://www.bbc.co.uk/things/57a0e046-7a23-4119-ac2a-6b47ad0948c2#id>,
+        <http://www.bbc.co.uk/things/57aa1adc-3e8c-4010-ad3d-d8d3eca88c2a#id>,
+        <http://www.bbc.co.uk/things/5f12a8ce-8bae-4442-8560-49b2a3931b4e#id>,
+        <http://www.bbc.co.uk/things/60dd664e-ebab-4d8e-a750-27e8d1e8089c#id>,
+        <http://www.bbc.co.uk/things/61fbcd72-6098-4599-ab8c-3df16ffceb28#id>,
+        <http://www.bbc.co.uk/things/629897bd-15ac-4043-acf0-d2951a3e0c19#id>,
+        <http://www.bbc.co.uk/things/68813f40-908b-4684-abab-a3759f1114a7#id>,
+        <http://www.bbc.co.uk/things/68a83f46-3a86-4445-8ac3-b907de0272c1#id>,
+        <http://www.bbc.co.uk/things/6bb753d9-7695-43bc-a248-bd83d6aa9315#id>,
+        <http://www.bbc.co.uk/things/6d4ca33a-4196-47e3-937e-edb413bd219e#id>,
+        <http://www.bbc.co.uk/things/6e2c684a-9a02-41aa-ac0c-903f79097b65#id>,
+        <http://www.bbc.co.uk/things/6f1e6bee-db12-4462-8d30-c2d8480f73ea#id>,
+        <http://www.bbc.co.uk/things/729251e1-dd5a-451c-b622-039a016398b9#id>,
+        <http://www.bbc.co.uk/things/7c77bb3a-8f74-4814-9635-d76927aebb3d#id>,
+        <http://www.bbc.co.uk/things/7fb8915d-9191-4050-b6fd-f3a040dd1d3e#id>,
+        <http://www.bbc.co.uk/things/7fddec28-0284-4b26-b29e-031e30f30951#id>,
+        <http://www.bbc.co.uk/things/80b36e20-a7e5-4d06-8786-eb09a7b058dd#id>,
+        <http://www.bbc.co.uk/things/85de586b-48b8-48e5-9895-90377a1ae7a5#id>,
+        <http://www.bbc.co.uk/things/8600c0b1-b6a5-456b-88ba-3c43023203c9#id>,
+        <http://www.bbc.co.uk/things/8ac3fb20-397c-4b76-ab7c-05a0985da4c3#id>,
+        <http://www.bbc.co.uk/things/8e4afad4-f155-4f0e-a579-502c571fe025#id>,
+        <http://www.bbc.co.uk/things/92744d7d-e8e2-492c-b5a7-904c0dca344a#id>,
+        <http://www.bbc.co.uk/things/96e92ddb-b388-4136-99da-f5a2d0608fa1#id>,
+        <http://www.bbc.co.uk/things/970290a7-5d0a-43c5-add7-b45d5b4193b3#id>,
+        <http://www.bbc.co.uk/things/970cfa1e-872b-4c8c-a930-de6f2bbd9c38#id>,
+        <http://www.bbc.co.uk/things/9df48de0-7c98-4876-b66b-5321357912b9#id>,
+        <http://www.bbc.co.uk/things/9efba528-4980-4093-9c2a-fe005535490b#id>,
+        <http://www.bbc.co.uk/things/a0258ae0-cae1-47d2-8d52-aae48e53103b#id>,
+        <http://www.bbc.co.uk/things/a03244d8-2603-4f6d-9ac9-c3f47da29df0#id>,
+        <http://www.bbc.co.uk/things/a05e976d-155c-45fd-9cb0-8a89dfa78f4f#id>,
+        <http://www.bbc.co.uk/things/a2bb1a33-1007-4b37-a835-89ef492e7129#id>,
+        <http://www.bbc.co.uk/things/a4585a31-2487-4e63-a720-1f258f61e6b9#id>,
+        <http://www.bbc.co.uk/things/a4b81e97-c7db-418e-9255-3cb2dc181072#id>,
+        <http://www.bbc.co.uk/things/a54054e2-13c2-4b4c-bdfc-4635ef221ac6#id>,
+        <http://www.bbc.co.uk/things/a621aec9-0f33-466b-9148-92a7140374de#id>,
+        <http://www.bbc.co.uk/things/ade1fbe2-2c0b-486c-8c64-f74bb5ab9ee1#id>,
+        <http://www.bbc.co.uk/things/b1295a17-3fe9-45ba-aa75-f39d7e238100#id>,
+        <http://www.bbc.co.uk/things/b1fe469a-bbe6-4148-95da-dc550252407b#id>,
+        <http://www.bbc.co.uk/things/b523db8c-aac6-4b80-9a99-788b42164c2a#id>,
+        <http://www.bbc.co.uk/things/b9dff8cb-a327-4d22-8292-5b81ef26a32f#id>,
+        <http://www.bbc.co.uk/things/b9f60662-8f31-487e-95db-596962c327d1#id>,
+        <http://www.bbc.co.uk/things/baf1d9ff-c894-44d4-a907-97511be686b6#id>,
+        <http://www.bbc.co.uk/things/bc4b0128-8500-4c63-8695-6c2cd8ba96ba#id>,
+        <http://www.bbc.co.uk/things/be5d89a4-2d32-46be-9dea-cc08f0b6d220#id>,
+        <http://www.bbc.co.uk/things/bec815f6-8297-4f51-aba8-b302fd35936b#id>,
+        <http://www.bbc.co.uk/things/bfd40c65-dc04-4d86-9e77-a6a6e6602348#id>,
+        <http://www.bbc.co.uk/things/c0361243-2a52-480f-af77-dd77a6760ea1#id>,
+        <http://www.bbc.co.uk/things/c12b798d-74a1-4ff5-9671-0f2afdb485dc#id>,
+        <http://www.bbc.co.uk/things/c1fb36c4-7895-4339-8b2a-2b50966e2120#id>,
+        <http://www.bbc.co.uk/things/c3dab2cb-6086-47f5-abc5-e65995fddf4f#id>,
+        <http://www.bbc.co.uk/things/c4a8f759-72c1-44a5-a1ce-91aa6c104741#id>,
+        <http://www.bbc.co.uk/things/c6dbbea7-0354-43ea-aedd-4bcbd27c35a3#id>,
+        <http://www.bbc.co.uk/things/c80356a5-6431-4a07-b61c-7fdd99b61925#id>,
+        <http://www.bbc.co.uk/things/c94d3026-c594-4d8e-9306-45c7ecf68133#id>,
+        <http://www.bbc.co.uk/things/c9977bea-05fa-4077-8f6d-e1dd81ef1f92#id>,
+        <http://www.bbc.co.uk/things/d4feb6dc-c831-49dc-ad33-5de00efa7d3b#id>,
+        <http://www.bbc.co.uk/things/db783da0-2508-42ce-9bde-12fa5266b799#id>,
+        <http://www.bbc.co.uk/things/db7cf965-5df8-4afb-9416-bbc5806c2389#id>,
+        <http://www.bbc.co.uk/things/df178962-7af2-454a-8611-9db6c2b3e7fd#id>,
+        <http://www.bbc.co.uk/things/e399959a-7ec6-4290-9c73-c828016ed84d#id>,
+        <http://www.bbc.co.uk/things/e3baa164-81c7-48ce-bffd-81eb6e65981a#id>,
+        <http://www.bbc.co.uk/things/e3dccfdc-4389-412a-9bc4-d0ff390ad131#id>,
+        <http://www.bbc.co.uk/things/e8fbd234-6502-45a4-9dd5-d55beb64f7e6#id>,
+        <http://www.bbc.co.uk/things/e92dd225-9610-4b82-8f82-a864a418ef8c#id>,
+        <http://www.bbc.co.uk/things/ea93238f-32e9-4fd8-9a2d-eabc30ad433f#id>,
+        <http://www.bbc.co.uk/things/ec379f6d-9cc9-47b1-b1d1-395c98b3a27a#id>,
+        <http://www.bbc.co.uk/things/ec610a52-d222-4170-b4e9-8a38862c58d0#id>,
+        <http://www.bbc.co.uk/things/f07411f8-b01d-48b1-a863-fe93cb7c46ad#id>,
+        <http://www.bbc.co.uk/things/f2a97ed2-65ad-4d9f-8f3b-4d019c6e5f69#id>,
+        <http://www.bbc.co.uk/things/f4f05153-54dd-4a03-93a3-efe7cfeae241#id>,
+        <http://www.bbc.co.uk/things/f9c26e0f-2c4a-4250-b460-ad2bfa2d2305#id>,
+        <http://www.bbc.co.uk/things/fc23b249-1a95-4806-8e82-d4294a367360#id>,
+        <http://www.bbc.co.uk/things/fe7ff6bc-95cc-4125-adda-4c9df6916407#id> .
+
+<http://www.bbc.co.uk/things/00d34896-4096-4de4-8f0e-badfefcce0b5#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Bobsleigh - Four-man"@en-gb ;
+    sal:name "Bobsleigh - Four-man"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BOBOTEAM4> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Bobsleigh - Four-man"@en-gb ;
+    core:shortLabel "Bobsleigh - Four-man"@en-gb ;
+    core:slug "bobsleigh-four-man"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/521df978-7583-4e19-ad6d-2a83a595a8a6#id> .
+
+<http://www.bbc.co.uk/things/02811411-f241-4326-a2be-a03ef1f2b6f6#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Skeleton - Men"@en-gb ;
+    sal:name "Skeleton - Men"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SKNMSINGLES> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Skeleton - Men"@en-gb ;
+    core:shortLabel "Skeleton - Men"@en-gb ;
+    core:slug "skeleton-men"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a7b083b7-0d8b-45d8-9f09-54e6432dacb5#id> .
+
+<http://www.bbc.co.uk/things/02e53973-ad2d-4a15-87f9-073aef614645#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Curling - Men"@en-gb ;
+    sal:name "Curling - Men"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CURMTEAM4> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Curling - Men"@en-gb ;
+    core:shortLabel "Curling - Men"@en-gb ;
+    core:slug "curling-men"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/dd4191d5-115d-46b9-8f18-d1da16c6a3e8#id> .
+
+<http://www.bbc.co.uk/things/043979fe-a41f-4884-ae8c-0f9b7e3ef56e#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - Men's 12.5 km Pursuit"@en-gb ;
+    sal:name "Biathlon - Men's 12.5 km Pursuit"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHM12.5KMPU> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - Men's 12.5 km Pursuit"@en-gb ;
+    core:shortLabel "Biathlon - Men's 12.5 km Pursuit"@en-gb ;
+    core:slug "biathlon-mens-12-5km-pursuit"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/067ddc43-44e2-4cea-a41f-79bd6a39bd60#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Men's Super-G"@en-gb ;
+    sal:name "Alpine Skiing - Men's Super-G"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPMSG> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Men's Super-G"@en-gb ;
+    core:shortLabel "Alpine Skiing - Men's Super-G"@en-gb ;
+    core:slug "mens-super-g-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/089da27b-3c59-495a-8fde-ef1db2c80550#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Short Track - Men's 1500 m"@en-gb ;
+    sal:name "Short Track - Men's 1500 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018STKM1500M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Short Track - Men's 1500 m"@en-gb ;
+    core:shortLabel "Short Track - Men's 1500 m"@en-gb ;
+    core:slug "short-track-mens-1500m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id> .
+
+<http://www.bbc.co.uk/things/09aa941f-6a12-4939-802b-6f7942bf7bbc#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Women's 10km Classic"@en-gb ;
+    sal:name "C Country - Women's 10km Classic"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSW10KMIS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Women's 10km Classic"@en-gb ;
+    core:shortLabel "C Country - Women's 10km Classic"@en-gb ;
+    core:slug "cross-country-womens-10km-classic"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/0adad2b3-67cc-4834-bc1f-1be417b0d65f#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Curling - Women"@en-gb ;
+    sal:name "Curling - Women"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CURWTEAM4> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Curling - Women"@en-gb ;
+    core:shortLabel "Curling - Women"@en-gb ;
+    core:slug "curling-women"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/dd4191d5-115d-46b9-8f18-d1da16c6a3e8#id> .
+
+<http://www.bbc.co.uk/things/0cf482b5-4715-4d58-8d8d-f7a090c35fa1#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Men's Relay 4 x 10km"@en-gb ;
+    sal:name "C Country - Men's Relay 4 x 10km"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSM4X10KM> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Men's Relay 4 x 10km"@en-gb ;
+    core:shortLabel "C Country - Men's Relay 4 x 10km"@en-gb ;
+    core:slug "cross-country-mens-relay-4x10km"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/10650945-6ec0-40bc-b921-3d5f27b2225f#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Women's 1500 m"@en-gb ;
+    sal:name "Speed Skating - Women's 1500 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKW1500M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Women's 1500 m"@en-gb ;
+    core:shortLabel "Speed Skating - Women's 1500 m"@en-gb ;
+    core:slug "speed-skating-womens-1500m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/12426830-fc6b-4a1d-a3e6-5fd09956fc07#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Ice Hockey - Men"@en-gb ;
+    sal:name "Ice Hockey - Men"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018IHOMTEAM6> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Ice Hockey - Men"@en-gb ;
+    core:shortLabel "Ice Hockey - Men"@en-gb ;
+    core:slug "ice-hockey-men"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> .
+
+<http://www.bbc.co.uk/things/161bcfc1-65d5-4ea9-a620-332076e7c2a0#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Luge - Team Relay"@en-gb ;
+    sal:name "Luge - Team Relay"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018LUGXRELAY4> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Luge - Team Relay"@en-gb ;
+    core:shortLabel "Luge - Team Relay"@en-gb ;
+    core:slug "luge-team-relay"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d06b1e90-c9fe-4e09-9b4a-e0f285da8920#id> .
+
+<http://www.bbc.co.uk/things/1b68b950-22a6-4211-82df-7d3c916269c6#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Men's Sprint 1.5km Free"@en-gb ;
+    sal:name "C Country - Men's Sprint 1.5km Free"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSMSPRINT> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Men's Sprint 1.5km Free"@en-gb ;
+    core:shortLabel "C Country - Men's Sprint 1.5km Free"@en-gb ;
+    core:slug "cross-country-mens-sprint-1-5km-free"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/1c8f462e-d601-4c1b-a4f9-a138505f4f63#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - Women's 12.5 km Mass Start"@en-gb ;
+    sal:name "Biathlon - Women's 12.5 km Mass Start"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHW12.5KMMS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - Women's 12.5 km Mass Start"@en-gb ;
+    core:shortLabel "Biathlon - Women's 12.5 km Mass Start"@en-gb ;
+    core:slug "biathlon-womens-12-5km-mass-start"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/1d9ce32f-8179-41a1-8c1d-e08717aad08a#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Bobsleigh - Women's Two-man"@en-gb ;
+    sal:name "Bobsleigh - Women's Two-man"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BOBWTEAM2> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Bobsleigh - Women's Two-man"@en-gb ;
+    core:shortLabel "Bobsleigh - Women's Two-man"@en-gb ;
+    core:slug "bobsleigh-womens-two-man"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/521df978-7583-4e19-ad6d-2a83a595a8a6#id> .
+
+<http://www.bbc.co.uk/things/225b856a-712a-447b-a3f7-769d35042592#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Men's 1500 m"@en-gb ;
+    sal:name "Speed Skating - Men's 1500 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKM1500M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Men's 1500 m"@en-gb ;
+    core:shortLabel "Speed Skating - Men's 1500 m"@en-gb ;
+    core:slug "speed-skating-mens-1500m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/24393536-7481-41ea-8df2-24a20c4ccf16#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Short Track - Men's 1000 m"@en-gb ;
+    sal:name "Short Track - Men's 1000 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018STKM1000M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Short Track - Men's 1000 m"@en-gb ;
+    core:shortLabel "Short Track - Men's 1000 m"@en-gb ;
+    core:slug "short-track-mens-1000m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id> .
+
+<http://www.bbc.co.uk/things/29193211-8c18-4ba4-a373-f88720439ebc#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Men's 1000 m"@en-gb ;
+    sal:name "Speed Skating - Men's 1000 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKM1000M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Men's 1000 m"@en-gb ;
+    core:shortLabel "Speed Skating - Men's 1000 m"@en-gb ;
+    core:slug "speed-skating-mens-1000m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/2d4e2583-54c7-4c29-a850-fbc20c1bcec9#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Women's Skiathlon 7.5km Classic + 7.5km Free"@en-gb ;
+    sal:name "C Country - Women's Skiathlon 7.5km Classic + 7.5km Free"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSWSKIATHLN> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Women's Skiathlon 7.5km Classic + 7.5km Free"@en-gb ;
+    core:shortLabel "C Country - Women's Skiathlon 7.5km Classic + 7.5km Free"@en-gb ;
+    core:slug "cross-country-womens-skiathlon-7-5km-classic-7-5km-free"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/304d6b9b-e5a1-48c1-83d2-b2a8ad56c075#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Freestyle Skiing - Women's Ski Slopestyle"@en-gb ;
+    sal:name "Freestyle Skiing - Women's Ski Slopestyle"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FRSWSS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Freestyle Skiing - Women's Ski Slopestyle"@en-gb ;
+    core:shortLabel "Freestyle Skiing - Women's Ski Slopestyle"@en-gb ;
+    core:slug "freestyle-skiing-womens-ski-slopestyle"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+
+<http://www.bbc.co.uk/things/34a529b4-6176-4079-a9ec-6e8c7ab25ff4#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Curling - Mixed Doubles"@en-gb ;
+    sal:name "Curling - Mixed Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CURXTEAM2> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Curling - Mixed Doubles"@en-gb ;
+    core:shortLabel "Curling - Mixed Doubles"@en-gb ;
+    core:slug "curling-mixed-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/dd4191d5-115d-46b9-8f18-d1da16c6a3e8#id> .
+
+<http://www.bbc.co.uk/things/369584a6-c704-4ee6-a590-f10623623d8a#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Freestyle Skiing - Men's Ski Halfpipe"@en-gb ;
+    sal:name "Freestyle Skiing - Men's Ski Halfpipe"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FRSMHP> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Freestyle Skiing - Men's Ski Halfpipe"@en-gb ;
+    core:shortLabel "Freestyle Skiing - Men's Ski Halfpipe"@en-gb ;
+    core:slug "freestyle-skiing-mens-ski-halfpipe"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+
+<http://www.bbc.co.uk/things/369f7bfd-410e-41da-a708-ee42c97b5b4a#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Luge - Women's Singles"@en-gb ;
+    sal:name "Luge - Women's Singles"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018LUGWSINGLES> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Luge - Women's Singles"@en-gb ;
+    core:shortLabel "Luge - Women's Singles"@en-gb ;
+    core:slug "luge-womens-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d06b1e90-c9fe-4e09-9b4a-e0f285da8920#id> .
+
+<http://www.bbc.co.uk/things/371173c0-79fa-4d82-beca-520e9ef4ef33#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Freestyle Skiing - Women's Aerials"@en-gb ;
+    sal:name "Freestyle Skiing - Women's Aerials"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FRSWAE> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Freestyle Skiing - Women's Aerials"@en-gb ;
+    core:shortLabel "Freestyle Skiing - Women's Aerials"@en-gb ;
+    core:slug "freestyle-skiing-womens-aerials"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+
+<http://www.bbc.co.uk/things/38070489-5251-4ed3-800b-bea61c36e85f#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Ski Jumping - Men's K90 Individual (70M)"@en-gb ;
+    sal:name "Ski Jumping - Men's K90 Individual (70M)"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SJPMNH> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Ski Jumping - Men's K90 Individual (70M)"@en-gb ;
+    core:shortLabel "Ski Jumping - Men's K90 Individual (70M)"@en-gb ;
+    core:slug "ski-jumping-mens-k90-individual-70m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/8fdc4c32-3d0c-4814-9d69-3bf1269135df#id> .
+
+<http://www.bbc.co.uk/things/3caf20f2-7cba-4699-bde6-cc7fb5e3b21e#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Freestyle Skiing - Men's Ski Cross"@en-gb ;
+    sal:name "Freestyle Skiing - Men's Ski Cross"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FRSMSX> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Freestyle Skiing - Men's Ski Cross"@en-gb ;
+    core:shortLabel "Freestyle Skiing - Men's Ski Cross"@en-gb ;
+    core:slug "freestyle-skiing-mens-ski-cross"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+
+<http://www.bbc.co.uk/things/3e45142e-28af-4843-b33d-2744d7bfce4c#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Short Track - Women's 1500 m"@en-gb ;
+    sal:name "Short Track - Women's 1500 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018STKW1500M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Short Track - Women's 1500 m"@en-gb ;
+    core:shortLabel "Short Track - Women's 1500 m"@en-gb ;
+    core:slug "short-track-womens-1500m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id> .
+
+<http://www.bbc.co.uk/things/418c4db5-b3c4-4072-85f9-c0da6da0c8a0#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Snowboard - Men's Slopestyle"@en-gb ;
+    sal:name "Snowboard - Men's Slopestyle"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SBDMSS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Snowboard - Men's Slopestyle"@en-gb ;
+    core:shortLabel "Snowboard - Men's Slopestyle"@en-gb ;
+    core:slug "snowboard-mens-slopestyle"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> .
+
+<http://www.bbc.co.uk/things/4275022f-7f8b-4892-b520-b84c3032db33#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Short Track - Women's 500 m"@en-gb ;
+    sal:name "Short Track - Women's 500 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018STKW500M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Short Track - Women's 500 m"@en-gb ;
+    core:shortLabel "Short Track - Women's 500 m"@en-gb ;
+    core:slug "short-track-womens-500m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id> .
+
+<http://www.bbc.co.uk/things/42fed238-14a7-4cce-ac4a-6f92bb7a07c2#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Women’s Sprint 1.5km Free"@en-gb ;
+    sal:name "C Country - Women’s Sprint 1.5km Free"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSWSPRINT> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Women’s Sprint 1.5km Free"@en-gb ;
+    core:shortLabel "C Country - Women’s Sprint 1.5km Free"@en-gb ;
+    core:slug "cross-country-womens-sprint-1-5km-free"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/44500e1d-17fa-4f21-8c05-f92e72087992#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Skeleton - Women"@en-gb ;
+    sal:name "Skeleton - Women"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SKNWSINGLES> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Skeleton - Women"@en-gb ;
+    core:shortLabel "Skeleton - Women"@en-gb ;
+    core:slug "skeleton-women"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a7b083b7-0d8b-45d8-9f09-54e6432dacb5#id> .
+
+<http://www.bbc.co.uk/things/475ac690-9022-4797-bab9-cf7746c1d1e6#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Men's 500 m"@en-gb ;
+    sal:name "Speed Skating - Men's 500 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKM500M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Men's 500 m"@en-gb ;
+    core:shortLabel "Speed Skating - Men's 500 m"@en-gb ;
+    core:slug "speed-skating-mens-500m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/4806a847-7bdd-4909-827a-1efc49203ca5#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Freestyle Skiing - Men's Ski Slopestyle"@en-gb ;
+    sal:name "Freestyle Skiing - Men's Ski Slopestyle"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FRSMSS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Freestyle Skiing - Men's Ski Slopestyle"@en-gb ;
+    core:shortLabel "Freestyle Skiing - Men's Ski Slopestyle"@en-gb ;
+    core:slug "freestyle-skiing-mens-ski-slopestyle"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+
+<http://www.bbc.co.uk/things/4af1e87c-d4e6-4f21-80cc-0debff675284#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Men's Giant Slalom"@en-gb ;
+    sal:name "Alpine Skiing - Men's Giant Slalom"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPMGS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Men's Giant Slalom"@en-gb ;
+    core:shortLabel "Alpine Skiing - Men's Giant Slalom"@en-gb ;
+    core:slug "mens-giant-slalom-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/4db2ce84-057d-4d07-8def-0bbaf6d9ddcd#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Women's Team Sprint Classic"@en-gb ;
+    sal:name "C Country - Women's Team Sprint Classic"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSWTEAMSP2> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Women's Team Sprint Classic"@en-gb ;
+    core:shortLabel "C Country - Women's Team Sprint Classic"@en-gb ;
+    core:slug "cross-country-womens-team-sprint-classic"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/4dd53ff1-ea73-4fdf-9ba0-4a01fd19f6a5#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Luge - Doubles"@en-gb ;
+    sal:name "Luge - Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018LUGODOUBLES> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Luge - Doubles"@en-gb ;
+    core:shortLabel "Luge - Doubles"@en-gb ;
+    core:slug "luge-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d06b1e90-c9fe-4e09-9b4a-e0f285da8920#id> .
+
+<http://www.bbc.co.uk/things/5737b9ea-443b-4def-9312-d5fc3357643c#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Freestyle Skiing - Men's Moguls"@en-gb ;
+    sal:name "Freestyle Skiing - Men's Moguls"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FRSMMO> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Freestyle Skiing - Men's Moguls"@en-gb ;
+    core:shortLabel "Freestyle Skiing - Men's Moguls"@en-gb ;
+    core:slug "freestyle-skiing-mens-moguls"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+
+<http://www.bbc.co.uk/things/57a0e046-7a23-4119-ac2a-6b47ad0948c2#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Snowboard - Men's Snowboard Cross"@en-gb ;
+    sal:name "Snowboard - Men's Snowboard Cross"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SBDMSBX> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Snowboard - Men's Snowboard Cross"@en-gb ;
+    core:shortLabel "Snowboard - Men's Snowboard Cross"@en-gb ;
+    core:slug "snowboard-mens-snowboard-cross"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> .
+
+<http://www.bbc.co.uk/things/57aa1adc-3e8c-4010-ad3d-d8d3eca88c2a#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Ski Jumping - Men's Team"@en-gb ;
+    sal:name "Ski Jumping - Men's Team"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SJPMLHTEAM4> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Ski Jumping - Men's Team"@en-gb ;
+    core:shortLabel "Ski Jumping - Men's Team"@en-gb ;
+    core:slug "ski-jumping-mens-team"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/8fdc4c32-3d0c-4814-9d69-3bf1269135df#id> .
+
+<http://www.bbc.co.uk/things/5f12a8ce-8bae-4442-8560-49b2a3931b4e#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Men's 10000 m"@en-gb ;
+    sal:name "Speed Skating - Men's 10000 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKM10000M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Men's 10000 m"@en-gb ;
+    core:shortLabel "Speed Skating - Men's 10000 m"@en-gb ;
+    core:slug "speed-skating-mens-10000"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/60dd664e-ebab-4d8e-a750-27e8d1e8089c#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Men's Slalom"@en-gb ;
+    sal:name "Alpine Skiing - Men's Slalom"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPMSL> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Men's Slalom"@en-gb ;
+    core:shortLabel "Alpine Skiing - Men's Slalom"@en-gb ;
+    core:slug "mens-slalom-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/61fbcd72-6098-4599-ab8c-3df16ffceb28#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - Women's 10 km Pursuit"@en-gb ;
+    sal:name "Biathlon - Women's 10 km Pursuit"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHW10KMPU> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - Women's 10 km Pursuit"@en-gb ;
+    core:shortLabel "Biathlon - Women's 10 km Pursuit"@en-gb ;
+    core:slug "biathlon-womens-10km-pursuit"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/629897bd-15ac-4043-acf0-d2951a3e0c19#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Men's 15km Classic"@en-gb ;
+    sal:name "C Country - Men's 15km Classic"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSM15KMIS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Men's 15km Classic"@en-gb ;
+    core:shortLabel "C Country - Men's 15km Classic"@en-gb ;
+    core:slug "cross-country-mens-15km-classic"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/68813f40-908b-4684-abab-a3759f1114a7#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Freestyle Skiing - Men's Aerials"@en-gb ;
+    sal:name "Freestyle Skiing - Men's Aerials"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FRSMAE> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Freestyle Skiing - Men's Aerials"@en-gb ;
+    core:shortLabel "Freestyle Skiing - Men's Aerials"@en-gb ;
+    core:slug "freestyle-skiing-mens-aerials"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+
+<http://www.bbc.co.uk/things/68a83f46-3a86-4445-8ac3-b907de0272c1#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Men's Combined"@en-gb ;
+    sal:name "Alpine Skiing - Men's Combined"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPMAC> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Men's Combined"@en-gb ;
+    core:shortLabel "Alpine Skiing - Men's Combined"@en-gb ;
+    core:slug "mens-combined-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/6bb753d9-7695-43bc-a248-bd83d6aa9315#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Women's Super-G"@en-gb ;
+    sal:name "Alpine Skiing - Women's Super-G"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPWSG> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Women's Super-G"@en-gb ;
+    core:shortLabel "Alpine Skiing - Women's Super-G"@en-gb ;
+    core:slug "womens-super-g-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/6e2c684a-9a02-41aa-ac0c-903f79097b65#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Women's Giant Slalom"@en-gb ;
+    sal:name "Alpine Skiing - Women's Giant Slalom"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPWGS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Women's Giant Slalom"@en-gb ;
+    core:shortLabel "Alpine Skiing - Women's Giant Slalom"@en-gb ;
+    core:slug "womens-giant-slalom-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/6f1e6bee-db12-4462-8d30-c2d8480f73ea#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Ski Jumping - Women's K90 Individual (70M)"@en-gb ;
+    sal:name "Ski Jumping - Women's K90 Individual (70M)"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SJPWNH> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Ski Jumping - Women's K90 Individual (70M)"@en-gb ;
+    core:shortLabel "Ski Jumping - Women's K90 Individual (70M)"@en-gb ;
+    core:slug "ski-jumping-womens-k90-individual-70m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/8fdc4c32-3d0c-4814-9d69-3bf1269135df#id> .
+
+<http://www.bbc.co.uk/things/729251e1-dd5a-451c-b622-039a016398b9#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Women's Downhill"@en-gb ;
+    sal:name "Alpine Skiing - Women's Downhill"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPWDH> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Women's Downhill"@en-gb ;
+    core:shortLabel "Alpine Skiing - Women's Downhill"@en-gb ;
+    core:slug "womens-downhill-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/7c77bb3a-8f74-4814-9635-d76927aebb3d#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Women's Relay 4 x 5km"@en-gb ;
+    sal:name "C Country - Women's Relay 4 x 5km"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSW4X5KM> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Women's Relay 4 x 5km"@en-gb ;
+    core:shortLabel "C Country - Women's Relay 4 x 5km"@en-gb ;
+    core:slug "cross-country-womens-relay-4x5km"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/7fb8915d-9191-4050-b6fd-f3a040dd1d3e#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Snowboard - Men's Parallel Giant Slalom"@en-gb ;
+    sal:name "Snowboard - Men's Parallel Giant Slalom"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SBDMPGS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Snowboard - Men's Parallel Giant Slalom"@en-gb ;
+    core:shortLabel "Snowboard - Men's Parallel Giant Slalom"@en-gb ;
+    core:slug "snowboard-mens-parallel-giant-slalom"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> .
+
+<http://www.bbc.co.uk/things/7fddec28-0284-4b26-b29e-031e30f30951#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Women's 500 m"@en-gb ;
+    sal:name "Speed Skating - Women's 500 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKW500M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Women's 500 m"@en-gb ;
+    core:shortLabel "Speed Skating - Women's 500 m"@en-gb ;
+    core:slug "speed-skating-womens-500m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/80b36e20-a7e5-4d06-8786-eb09a7b058dd#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Snowboard - Women's Slopestyle"@en-gb ;
+    sal:name "Snowboard - Women's Slopestyle"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SBDWSS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Snowboard - Women's Slopestyle"@en-gb ;
+    core:shortLabel "Snowboard - Women's Slopestyle"@en-gb ;
+    core:slug "snowboard-womens-slopestyle"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> .
+
+<http://www.bbc.co.uk/things/8600c0b1-b6a5-456b-88ba-3c43023203c9#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Women's Team Pursuit"@en-gb ;
+    sal:name "Speed Skating - Women's Team Pursuit"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKWTEAMPU> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Women's Team Pursuit"@en-gb ;
+    core:shortLabel "Speed Skating - Women's Team Pursuit"@en-gb ;
+    core:slug "speed-skating-womens-team-pursuit"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/8ac3fb20-397c-4b76-ab7c-05a0985da4c3#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Nordic Combined - Men’s Team 4x5km"@en-gb ;
+    sal:name "Nordic Combined - Men’s Team 4x5km"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018NCBMLH4X5KM> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Nordic Combined - Men’s Team 4x5km"@en-gb ;
+    core:shortLabel "Nordic Combined - Men’s Team 4x5km"@en-gb ;
+    core:slug "nordic-combined-mens-team-4x5km"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe11a0ff-a7c0-45eb-a9e0-708dddf9bc7d#id> .
+
+<http://www.bbc.co.uk/things/8e4afad4-f155-4f0e-a579-502c571fe025#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - Men's 10 km Sprint"@en-gb ;
+    sal:name "Biathlon - Men's 10 km Sprint"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHM10KMSP> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - Men's 10 km Sprint"@en-gb ;
+    core:shortLabel "Biathlon - Men's 10 km Sprint"@en-gb ;
+    core:slug "biathlon-mens-10km-sprint"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/92744d7d-e8e2-492c-b5a7-904c0dca344a#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Men's Team Sprint Classic"@en-gb ;
+    sal:name "C Country - Men's Team Sprint Classic"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSMTEAMSP2> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Men's Team Sprint Classic"@en-gb ;
+    core:shortLabel "C Country - Men's Team Sprint Classic"@en-gb ;
+    core:slug "cross-country-mens-team-sprint-classic"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/96e92ddb-b388-4136-99da-f5a2d0608fa1#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Bobsleigh - Men's Two-man"@en-gb ;
+    sal:name "Bobsleigh - Men's Two-man"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BOBMTEAM2> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Bobsleigh - Men's Two-man"@en-gb ;
+    core:shortLabel "Bobsleigh - Men's Two-man"@en-gb ;
+    core:slug "bobsleigh-mens-two-man"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/521df978-7583-4e19-ad6d-2a83a595a8a6#id> .
+
+<http://www.bbc.co.uk/things/970cfa1e-872b-4c8c-a930-de6f2bbd9c38#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Snowboard - Women's Big Air"@en-gb ;
+    sal:name "Snowboard - Women's Big Air"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SBDWBA> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Snowboard - Women's Big Air"@en-gb ;
+    core:shortLabel "Snowboard - Women's Big Air"@en-gb ;
+    core:slug "snowboard-womens-big-air"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> .
+
+<http://www.bbc.co.uk/things/9df48de0-7c98-4876-b66b-5321357912b9#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Ski Jumping - Men's K120 Individual (90M)"@en-gb ;
+    sal:name "Ski Jumping - Men's K120 Individual (90M)"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SJPMLH> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Ski Jumping - Men's K120 Individual (90M)"@en-gb ;
+    core:shortLabel "Ski Jumping - Men's K120 Individual (90M)"@en-gb ;
+    core:slug "ski-jumping-mens-k120-individual-90m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/8fdc4c32-3d0c-4814-9d69-3bf1269135df#id> .
+
+<http://www.bbc.co.uk/things/9efba528-4980-4093-9c2a-fe005535490b#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Mixed Team"@en-gb ;
+    sal:name "Alpine Skiing - Mixed Team"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPXPLTEAM4> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Mixed Team"@en-gb ;
+    core:shortLabel "Alpine Skiing - Mixed Team"@en-gb ;
+    core:slug "mixed-team-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/a0258ae0-cae1-47d2-8d52-aae48e53103b#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Figure Skating - Team"@en-gb ;
+    sal:name "Figure Skating - Team"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FSKXTEAM> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Figure Skating - Team"@en-gb ;
+    core:shortLabel "Figure Skating - Team"@en-gb ;
+    core:slug "figure-skating-team"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/485f8f94-f87e-4513-b133-46a5dfccd428#id> .
+
+<http://www.bbc.co.uk/things/a03244d8-2603-4f6d-9ac9-c3f47da29df0#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Men's Team Pursuit"@en-gb ;
+    sal:name "Speed Skating - Men's Team Pursuit"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKMTEAMPU> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Men's Team Pursuit"@en-gb ;
+    core:shortLabel "Speed Skating - Men's Team Pursuit"@en-gb ;
+    core:slug "speed-skating-mens-team-pursuit"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/a05e976d-155c-45fd-9cb0-8a89dfa78f4f#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Short Track - Women's 3000 m Relay"@en-gb ;
+    sal:name "Short Track - Women's 3000 m Relay"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018STKW3000MRY4> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Short Track - Women's 3000 m Relay"@en-gb ;
+    core:shortLabel "Short Track - Women's 3000 m Relay"@en-gb ;
+    core:slug "short-track-womens-3000m-relay"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id> .
+
+<http://www.bbc.co.uk/things/a2bb1a33-1007-4b37-a835-89ef492e7129#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Women’s Mass Start"@en-gb ;
+    sal:name "Speed Skating - Women’s Mass Start"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKWMS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Women’s Mass Start"@en-gb ;
+    core:shortLabel "Speed Skating - Women’s Mass Start"@en-gb ;
+    core:slug "speed-skating-womens-mass-start"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/a4585a31-2487-4e63-a720-1f258f61e6b9#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - 2x6 km Women + 2x7.5 km Men Mixed Relay"@en-gb ;
+    sal:name "Biathlon - 2x6 km Women + 2x7.5 km Men Mixed Relay"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHXRELAY4> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - 2x6 km Women + 2x7.5 km Men Mixed Relay"@en-gb ;
+    core:shortLabel "Biathlon - 2x6 km Women + 2x7.5 km Men Mixed Relay"@en-gb ;
+    core:slug "biathlon-2x6km-women-2x7-5km-mens-mixed-relay"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/a4b81e97-c7db-418e-9255-3cb2dc181072#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - Women's 15 km Individual"@en-gb ;
+    sal:name "Biathlon - Women's 15 km Individual"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHW15KMIS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - Women's 15 km Individual"@en-gb ;
+    core:shortLabel "Biathlon - Women's 15 km Individual"@en-gb ;
+    core:slug "biathlon-womens-15km-individual"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/a54054e2-13c2-4b4c-bdfc-4635ef221ac6#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Men’s Mass Start"@en-gb ;
+    sal:name "Speed Skating - Men’s Mass Start"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKMMS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Men’s Mass Start"@en-gb ;
+    core:shortLabel "Speed Skating - Men’s Mass Start"@en-gb ;
+    core:slug "speed-skating-mens-mass-start"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/a621aec9-0f33-466b-9148-92a7140374de#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Women's 30km Free Mass Start"@en-gb ;
+    sal:name "C Country - Women's 30km Free Mass Start"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSW30KMMS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Women's 30km Free Mass Start"@en-gb ;
+    core:shortLabel "C Country - Women's 30km Free Mass Start"@en-gb ;
+    core:slug "cross-country-womens-30km-free-mass-start"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/ade1fbe2-2c0b-486c-8c64-f74bb5ab9ee1#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Women's Combined"@en-gb ;
+    sal:name "Alpine Skiing - Women's Combined"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPWAC> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Women's Combined"@en-gb ;
+    core:shortLabel "Alpine Skiing - Women's Combined"@en-gb ;
+    core:slug "womens-combined-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/b1295a17-3fe9-45ba-aa75-f39d7e238100#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Women's 5000 m"@en-gb ;
+    sal:name "Speed Skating - Women's 5000 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKW5000M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Women's 5000 m"@en-gb ;
+    core:shortLabel "Speed Skating - Women's 5000 m"@en-gb ;
+    core:slug "speed-skating-womens-5000m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/b1fe469a-bbe6-4148-95da-dc550252407b#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Freestyle Skiing - Women's Ski Cross"@en-gb ;
+    sal:name "Freestyle Skiing - Women's Ski Cross"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FRSWSX> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Freestyle Skiing - Women's Ski Cross"@en-gb ;
+    core:shortLabel "Freestyle Skiing - Women's Ski Cross"@en-gb ;
+    core:slug "freestyle-skiing-womens-ski-cross"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+
+<http://www.bbc.co.uk/things/b523db8c-aac6-4b80-9a99-788b42164c2a#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Women's 3000 m"@en-gb ;
+    sal:name "Speed Skating - Women's 3000 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKW3000M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Women's 3000 m"@en-gb ;
+    core:shortLabel "Speed Skating - Women's 3000 m"@en-gb ;
+    core:slug "speed-skating-womens-3000m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/b9dff8cb-a327-4d22-8292-5b81ef26a32f#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Figure Skating - Pairs"@en-gb ;
+    sal:name "Figure Skating - Pairs"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FSKXPAIRS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Figure Skating - Pairs"@en-gb ;
+    core:shortLabel "Figure Skating - Pairs"@en-gb ;
+    core:slug "figure-skating-pairs"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/485f8f94-f87e-4513-b133-46a5dfccd428#id> .
+
+<http://www.bbc.co.uk/things/b9f60662-8f31-487e-95db-596962c327d1#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Figure Skating - Ice Dance"@en-gb ;
+    sal:name "Figure Skating - Ice Dance"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FSKXICEDANCE> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Figure Skating - Ice Dance"@en-gb ;
+    core:shortLabel "Figure Skating - Ice Dance"@en-gb ;
+    core:slug "figure-skating-ice-dance"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/485f8f94-f87e-4513-b133-46a5dfccd428#id> .
+
+<http://www.bbc.co.uk/things/baf1d9ff-c894-44d4-a907-97511be686b6#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Figure Skating - Ladies"@en-gb ;
+    sal:name "Figure Skating - Ladies"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FSKWSINGLES> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Figure Skating - Ladies"@en-gb ;
+    core:shortLabel "Figure Skating - Ladies"@en-gb ;
+    core:slug "figure-skating-ladies"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/485f8f94-f87e-4513-b133-46a5dfccd428#id> .
+
+<http://www.bbc.co.uk/things/bec815f6-8297-4f51-aba8-b302fd35936b#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Snowboard - Women's Snowboard Cross"@en-gb ;
+    sal:name "Snowboard - Women's Snowboard Cross"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SBDWSBX> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Snowboard - Women's Snowboard Cross"@en-gb ;
+    core:shortLabel "Snowboard - Women's Snowboard Cross"@en-gb ;
+    core:slug "snowboard-womens-snowboard-cross"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> .
+
+<http://www.bbc.co.uk/things/bfd40c65-dc04-4d86-9e77-a6a6e6602348#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Nordic Combined - Men’s K120 Sprint"@en-gb ;
+    sal:name "Nordic Combined - Men’s K120 Sprint"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018NCBMLH10KM> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Nordic Combined - Men’s K120 Sprint"@en-gb ;
+    core:shortLabel "Nordic Combined - Men’s K120 Sprint"@en-gb ;
+    core:slug "nordic-combined-mens-k120-sprint"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe11a0ff-a7c0-45eb-a9e0-708dddf9bc7d#id> .
+
+<http://www.bbc.co.uk/things/c12b798d-74a1-4ff5-9671-0f2afdb485dc#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Men's Downhill"@en-gb ;
+    sal:name "Alpine Skiing - Men's Downhill"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPMDH> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Men's Downhill"@en-gb ;
+    core:shortLabel "Alpine Skiing - Men's Downhill"@en-gb ;
+    core:slug "mens-downhill-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/c1fb36c4-7895-4339-8b2a-2b50966e2120#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Ice Hockey - Women"@en-gb ;
+    sal:name "Ice Hockey - Women"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018IHOWTEAM6> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Ice Hockey - Women"@en-gb ;
+    core:shortLabel "Ice Hockey - Women"@en-gb ;
+    core:slug "ice-hockey-women"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> .
+
+<http://www.bbc.co.uk/things/c3dab2cb-6086-47f5-abc5-e65995fddf4f#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Short Track - Women's 1000 m"@en-gb ;
+    sal:name "Short Track - Women's 1000 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018STKW1000M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Short Track - Women's 1000 m"@en-gb ;
+    core:shortLabel "Short Track - Women's 1000 m"@en-gb ;
+    core:slug "short-track-womens-1000m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id> .
+
+<http://www.bbc.co.uk/things/c6dbbea7-0354-43ea-aedd-4bcbd27c35a3#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - Women's 4x6 km Relay"@en-gb ;
+    sal:name "Biathlon - Women's 4x6 km Relay"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHW4X6KM> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - Women's 4x6 km Relay"@en-gb ;
+    core:shortLabel "Biathlon - Women's 4x6 km Relay"@en-gb ;
+    core:slug "biathlon-womens-4x6km-relay"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/c80356a5-6431-4a07-b61c-7fdd99b61925#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Short Track - Men's 500 m"@en-gb ;
+    sal:name "Short Track - Men's 500 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018STKM500M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Short Track - Men's 500 m"@en-gb ;
+    core:shortLabel "Short Track - Men's 500 m"@en-gb ;
+    core:slug "short-track-mens-500m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id> .
+
+<http://www.bbc.co.uk/things/c94d3026-c594-4d8e-9306-45c7ecf68133#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Short Track - Men's 5000 m Relay"@en-gb ;
+    sal:name "Short Track - Men's 5000 m Relay"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018STKM5000M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Short Track - Men's 5000 m Relay"@en-gb ;
+    core:shortLabel "Short Track - Men's 5000 m Relay"@en-gb ;
+    core:slug "short-track-mens-5000m-relay"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id> .
+
+<http://www.bbc.co.uk/things/c9977bea-05fa-4077-8f6d-e1dd81ef1f92#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Snowboard - Women's Parallel Giant Slalom"@en-gb ;
+    sal:name "Snowboard - Women's Parallel Giant Slalom"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SBDWPGS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Snowboard - Women's Parallel Giant Slalom"@en-gb ;
+    core:shortLabel "Snowboard - Women's Parallel Giant Slalom"@en-gb ;
+    core:slug "snowboard-womens-parallel-giant-slalom"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> .
+
+<http://www.bbc.co.uk/things/d4feb6dc-c831-49dc-ad33-5de00efa7d3b#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - Women's 7.5 km Sprint"@en-gb ;
+    sal:name "Biathlon - Women's 7.5 km Sprint"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHW7.5KMSP> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - Women's 7.5 km Sprint"@en-gb ;
+    core:shortLabel "Biathlon - Women's 7.5 km Sprint"@en-gb ;
+    core:slug "biathlon-womens-7-5km-sprint"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/db783da0-2508-42ce-9bde-12fa5266b799#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Men's Skiathlon 15km Classic + 15km Free"@en-gb ;
+    sal:name "C Country - Men's Skiathlon 15km Classic + 15km Free"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSMSKIATHLN> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Men's Skiathlon 15km Classic + 15km Free"@en-gb ;
+    core:shortLabel "C Country - Men's Skiathlon 15km Classic + 15km Free"@en-gb ;
+    core:slug "cross-country-mens-skiathlon-15km-classic-15km-free"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/db7cf965-5df8-4afb-9416-bbc5806c2389#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - Men's 4x7.5 km Relay"@en-gb ;
+    sal:name "Biathlon - Men's 4x7.5 km Relay"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHM4X7.5KM> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - Men's 4x7.5 km Relay"@en-gb ;
+    core:shortLabel "Biathlon - Men's 4x7.5 km Relay"@en-gb ;
+    core:slug "biathlon-mens-4x7-5km-relay"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/df178962-7af2-454a-8611-9db6c2b3e7fd#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - Men's 15 km Mass Start"@en-gb ;
+    sal:name "Biathlon - Men's 15 km Mass Start"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHM15KMMS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - Men's 15 km Mass Start"@en-gb ;
+    core:shortLabel "Biathlon - Men's 15 km Mass Start"@en-gb ;
+    core:slug "biathlon-mens-15km-mass-start"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/e399959a-7ec6-4290-9c73-c828016ed84d#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Nordic Combined - Men’s Individual Ski Jumping K90"@en-gb ;
+    sal:name "Nordic Combined - Men’s Individual Ski Jumping K90"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018NCBMNH10KM> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Nordic Combined - Men’s Individual Ski Jumping K90"@en-gb ;
+    core:shortLabel "Nordic Combined - Men’s Individual Ski Jumping K90"@en-gb ;
+    core:slug "nordic-combined-mens-individual-ski-jumping-k90"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe11a0ff-a7c0-45eb-a9e0-708dddf9bc7d#id> .
+
+<http://www.bbc.co.uk/things/e3baa164-81c7-48ce-bffd-81eb6e65981a#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Biathlon - Men's 20 km Individual"@en-gb ;
+    sal:name "Biathlon - Men's 20 km Individual"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018BTHM20KMIS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Biathlon - Men's 20 km Individual"@en-gb ;
+    core:shortLabel "Biathlon - Men's 20 km Individual"@en-gb ;
+    core:slug "biathlon-mens-20km-individual"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> .
+
+<http://www.bbc.co.uk/things/e3dccfdc-4389-412a-9bc4-d0ff390ad131#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Women's 1000 m"@en-gb ;
+    sal:name "Speed Skating - Women's 1000 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKW1000M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Women's 1000 m"@en-gb ;
+    core:shortLabel "Speed Skating - Women's 1000 m"@en-gb ;
+    core:slug "speed-skating-womens-1000m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/e8fbd234-6502-45a4-9dd5-d55beb64f7e6#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Luge - Men's Singles"@en-gb ;
+    sal:name "Luge - Men's Singles"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018LUGMSINGLES> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Luge - Men's Singles"@en-gb ;
+    core:shortLabel "Luge - Men's Singles"@en-gb ;
+    core:slug "luge-mens-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d06b1e90-c9fe-4e09-9b4a-e0f285da8920#id> .
+
+<http://www.bbc.co.uk/things/e92dd225-9610-4b82-8f82-a864a418ef8c#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Snowboard - Women's Halfpipe"@en-gb ;
+    sal:name "Snowboard - Women's Halfpipe"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SBDWHP> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Snowboard - Women's Halfpipe"@en-gb ;
+    core:shortLabel "Snowboard - Women's Halfpipe"@en-gb ;
+    core:slug "snowboard-womens-halfpipe"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> .
+
+<http://www.bbc.co.uk/things/ea93238f-32e9-4fd8-9a2d-eabc30ad433f#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Speed Skating - Men's 5000 m"@en-gb ;
+    sal:name "Speed Skating - Men's 5000 m"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SSKM5000M> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Speed Skating - Men's 5000 m"@en-gb ;
+    core:shortLabel "Speed Skating - Men's 5000 m"@en-gb ;
+    core:slug "speed-skating-mens-5000m"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> .
+
+<http://www.bbc.co.uk/things/ec610a52-d222-4170-b4e9-8a38862c58d0#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Alpine Skiing - Women's Slalom"@en-gb ;
+    sal:name "Alpine Skiing - Women's Slalom"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018ALPWSL> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Alpine Skiing - Women's Slalom"@en-gb ;
+    core:shortLabel "Alpine Skiing - Women's Slalom"@en-gb ;
+    core:slug "womens-slalom-alpine-skiing"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> .
+
+<http://www.bbc.co.uk/things/f07411f8-b01d-48b1-a863-fe93cb7c46ad#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: C Country - Men's 50km Free Mass Start"@en-gb ;
+    sal:name "C Country - Men's 50km Free Mass Start"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018CCSM50KMMS> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "C Country - Men's 50km Free Mass Start"@en-gb ;
+    core:shortLabel "C Country - Men's 50km Free Mass Start"@en-gb ;
+    core:slug "cross-country-mens-50km-free-mass-start"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> .
+
+<http://www.bbc.co.uk/things/f2a97ed2-65ad-4d9f-8f3b-4d019c6e5f69#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Snowboard - Men's Big Air"@en-gb ;
+    sal:name "Snowboard - Men's Big Air"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SBDMBA> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Snowboard - Men's Big Air"@en-gb ;
+    core:shortLabel "Snowboard - Men's Big Air"@en-gb ;
+    core:slug "snowboard-mens-big-air"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> .
+
+<http://www.bbc.co.uk/things/f4f05153-54dd-4a03-93a3-efe7cfeae241#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Snowboard - Men's Halfpipe"@en-gb ;
+    sal:name "Snowboard - Men's Halfpipe"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018SBDMHP> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Snowboard - Men's Halfpipe"@en-gb ;
+    core:shortLabel "Snowboard - Men's Halfpipe"@en-gb ;
+    core:slug "snowboard-mens-halfpipe"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> .
+
+<http://www.bbc.co.uk/things/f9c26e0f-2c4a-4250-b460-ad2bfa2d2305#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Freestyle Skiing - Women's Moguls"@en-gb ;
+    sal:name "Freestyle Skiing - Women's Moguls"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FRSWMO> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Freestyle Skiing - Women's Moguls"@en-gb ;
+    core:shortLabel "Freestyle Skiing - Women's Moguls"@en-gb ;
+    core:slug "freestyle-skiing-womens-moguls"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+
+<http://www.bbc.co.uk/things/fc23b249-1a95-4806-8e82-d4294a367360#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Freestyle Skiing - Women's Ski Halfpipe"@en-gb ;
+    sal:name "Freestyle Skiing - Women's Ski Halfpipe"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FRSWHP> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Freestyle Skiing - Women's Ski Halfpipe"@en-gb ;
+    core:shortLabel "Freestyle Skiing - Women's Ski Halfpipe"@en-gb ;
+    core:slug "freestyle-skiing-womens-ski-halfpipe"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+
+<http://www.bbc.co.uk/things/fe7ff6bc-95cc-4125-adda-4c9df6916407#id> a core:Thing,
+        sport:MedalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 Medal Event: Figure Skating - Men"@en-gb ;
+    sal:name "Figure Skating - Men"@en-gb ;
+    cms:locator <urn:sports-data:CWOB22018FSKMSINGLES> ;
+    core:disambiguationHint "Pyeongchang 2018 Event"@en-gb ;
+    core:preferredLabel "Figure Skating - Men"@en-gb ;
+    core:shortLabel "Figure Skating - Men"@en-gb ;
+    core:slug "figure-skating-men"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/485f8f94-f87e-4513-b133-46a5dfccd428#id> .
+
+<urn:sports-data:CWOB22018ALPMAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018ALPMDH> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018ALPMGS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018ALPMSG> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018ALPMSL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018ALPWAC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018ALPWDH> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018ALPWGS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018ALPWSG> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018ALPWSL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018ALPXPLTEAM4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BOBMTEAM2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BOBOTEAM4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BOBWTEAM2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHM10KMSP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHM12.5KMPU> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHM15KMMS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHM20KMIS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHM4X7.5KM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHW10KMPU> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHW12.5KMMS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHW15KMIS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHW4X6KM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHW7.5KMSP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018BTHXRELAY4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSM15KMIS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSM4X10KM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSM50KMMS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSMSKIATHLN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSMSPRINT> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSMTEAMSP2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSW10KMIS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSW30KMMS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSW4X5KM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSWSKIATHLN> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSWSPRINT> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CCSWTEAMSP2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CURMTEAM4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CURWTEAM4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018CURXTEAM2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FRSMAE> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FRSMHP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FRSMMO> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FRSMSS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FRSMSX> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FRSWAE> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FRSWHP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FRSWMO> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FRSWSS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FRSWSX> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FSKMSINGLES> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FSKWSINGLES> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FSKXICEDANCE> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FSKXPAIRS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018FSKXTEAM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018IHOMTEAM6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018IHOWTEAM6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018LUGMSINGLES> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018LUGODOUBLES> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018LUGWSINGLES> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018LUGXRELAY4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018NCBMLH10KM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018NCBMLH4X5KM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018NCBMNH10KM> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SBDMBA> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SBDMHP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SBDMPGS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SBDMSBX> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SBDMSS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SBDWBA> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SBDWHP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SBDWPGS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SBDWSBX> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SBDWSS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SJPMLH> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SJPMLHTEAM4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SJPMNH> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SJPWNH> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SKNMSINGLES> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SKNWSINGLES> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKM10000M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKM1000M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKM1500M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKM5000M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKM500M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKMMS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKMTEAMPU> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKW1000M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKW1500M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKW3000M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKW5000M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKW500M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKWMS> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018SSKWTEAMPU> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018STKM1000M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018STKM1500M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018STKM5000M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018STKM500M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018STKW1000M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018STKW1500M> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018STKW3000MRY4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB22018STKW500M> a cms:Sports-DataLocator .
+

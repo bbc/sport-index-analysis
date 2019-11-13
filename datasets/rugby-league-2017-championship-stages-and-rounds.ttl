@@ -1,0 +1,113 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/3ec2688a-f347-485c-bb98-80c9a7fe379b#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2017 The Kingstone Press Championship Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-league/rugby-league-2017-championship-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3028 Rugby League: model Kingstone Press Championship Shield Season 2017." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-01-25T10:15:14+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Kristian.Epps@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/1e7cf8bb-116d-47bf-8ea5-87a26cacb324#id> sport:firstStage <http://www.bbc.co.uk/things/136f0ef7-fa6a-49bf-b653-eba8e0df18e8#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/f1b717e2-5d3e-49f2-987e-2f0a342146af#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/5091dd95-f138-4da3-a258-acf794659c8b#id> .
+
+<http://www.bbc.co.uk/things/031c0530-f7b4-4e96-9aaf-5c46ef62b622#id> a sport:Round ;
+    rdfs:label "Stage 2 Round 2 of Championship Shield 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1142017S2R2> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/068afa76-33c7-4b77-8dad-a9edf9904437#id> a sport:Round ;
+    rdfs:label "Round 1 of Kingstone Press Championship 2017"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CRLB1112017S1R1> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel ""@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/136f0ef7-fa6a-49bf-b653-eba8e0df18e8#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Kingstone Press Championship 2017"@en-gb ;
+    sal:name "Stage 1 of Kingstone Press Championship 2017"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1112017S1> ;
+    core:preferredLabel "Championship"@en-gb ;
+    core:shortLabel "Championship"@en-gb ;
+    core:slug "championship"^^xsd:string ;
+    sport:firstRound <http://www.bbc.co.uk/things/068afa76-33c7-4b77-8dad-a9edf9904437#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/5091dd95-f138-4da3-a258-acf794659c8b#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Championship Shield 2017"@en-gb ;
+    sal:name "Stage 2 of Championship Shield 2017"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1142017S2> ;
+    core:preferredLabel "Championship Shield"@en-gb ;
+    core:shortLabel "Championship Shield"@en-gb ;
+    core:slug "championship-shield"^^xsd:string ;
+    sport:firstRound <http://www.bbc.co.uk/things/811ff1f2-4aab-4332-a3a8-030d520e47ea#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/031c0530-f7b4-4e96-9aaf-5c46ef62b622#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/67161ef8-1df3-4ba0-8d20-c930e2e92a61#id> a sport:Round ;
+    rdfs:label "Round 1 of Rugby League Championship Shield 2017"@en-gb ;
+    sal:name "Championship Shield"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1142017S1R1> ;
+    core:preferredLabel "Championship Shield"@en-gb ;
+    core:shortLabel "Shield"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/811ff1f2-4aab-4332-a3a8-030d520e47ea#id> a sport:Round ;
+    rdfs:label "Stage 2 Round 1 of Championship Shield 2017"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1142017S2R1> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/f1b717e2-5d3e-49f2-987e-2f0a342146af#id> a sport:Competition ;
+    rdfs:label "Rugby League Championship Shield 2017"@en-gb ;
+    sal:name "Rugby League Championship Shield 2017"@en-gb ;
+    cms:locator <urn:sports-data:CRLB114> ;
+    core:preferredLabel "Championship Shield"@en-gb ;
+    core:shortLabel "Championship Shield"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/67161ef8-1df3-4ba0-8d20-c930e2e92a61#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<urn:sports-data:CRLB1112017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1112017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB114> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1142017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1142017S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1142017S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1142017S2R2> a cms:Sports-DataLocator .
+

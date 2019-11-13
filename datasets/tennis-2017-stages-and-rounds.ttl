@@ -1,0 +1,1320 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/c29f48d1-c9c2-499c-9e76-198801bcde8a#id> a provenance:Dataset ;
+    rdfs:label "Tennis: 2017 Tennis Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/tennis/tennis-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "ITV-230;4: Model Wimbledon 2017 seasons and rounds abbreviations" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-06-20T09:08:56+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/2477b125-49a6-43f9-ac74-3d1c96b024c9#id> sport:firstStage <http://www.bbc.co.uk/things/ae3542cb-ceb4-4dfa-bfdd-6540e78f76ba#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/0d00e10a-bd45-4f6f-ae8d-d5c75ada79bb#id>,
+        <http://www.bbc.co.uk/things/0df74e32-403f-4e32-9219-bbdc59d52405#id>,
+        <http://www.bbc.co.uk/things/1bed5957-a79d-4faa-9312-d69776c84693#id>,
+        <http://www.bbc.co.uk/things/1e444d85-9368-44ce-96b1-988948cbef51#id>,
+        <http://www.bbc.co.uk/things/4c674068-9928-453a-b336-bdeff051d34f#id>,
+        <http://www.bbc.co.uk/things/4d7efe3d-4f2a-48f1-9b4e-a4b9b0ee3b8e#id>,
+        <http://www.bbc.co.uk/things/5bf1b980-5ee6-49db-a291-6a79480f6b1a#id>,
+        <http://www.bbc.co.uk/things/6bb1d0e3-ac21-4a15-a603-687d4b32a5ca#id>,
+        <http://www.bbc.co.uk/things/83cbbab0-f6fd-4af1-bb6b-7befa513d793#id>,
+        <http://www.bbc.co.uk/things/84b66b5a-4026-44f5-b651-960ee471592c#id>,
+        <http://www.bbc.co.uk/things/87e2f6ac-323f-4ac1-acbe-9ba618193d6b#id>,
+        <http://www.bbc.co.uk/things/98e1f1dc-e908-4c0a-89b7-3c2050e75e2f#id>,
+        <http://www.bbc.co.uk/things/9c15bbc9-8ad5-4452-a26b-c413df13ed29#id>,
+        <http://www.bbc.co.uk/things/abcf66c1-0d1c-49d8-9b8d-66484a0d9416#id>,
+        <http://www.bbc.co.uk/things/d47b5bb0-bde9-466f-af87-a4205c1566b3#id>,
+        <http://www.bbc.co.uk/things/e32efd39-b770-40fb-8137-24186202d7fa#id>,
+        <http://www.bbc.co.uk/things/e7be692f-96d9-4295-9e33-f9cab96d2f82#id>,
+        <http://www.bbc.co.uk/things/fad65227-a1b3-41a3-970e-869e11322c93#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/00a31c70-78a1-4c9f-a4e9-0d8db853c25b#id> .
+
+<http://www.bbc.co.uk/things/00a31c70-78a1-4c9f-a4e9-0d8db853c25b#id> a sport:KnockoutCompetition ;
+    rdfs:label "Women's Wheelchair Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Women's Wheelchair Singles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S20> ;
+    core:preferredLabel "Women's Wheelchair Singles"@en-gb ;
+    core:shortLabel "W. Wheelchair Singles"@en-gb ;
+    core:slug "womens-wheelchair-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/79425723-d680-4611-a16d-170ffebe6e2f#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/e9175434-956b-41ea-a730-2e0bcb9f57ce#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/b03dcf75-a0cd-4310-a8b0-316bde4c5660#id> ;
+    sport:stageNumber "14"^^xsd:int .
+
+<http://www.bbc.co.uk/things/0150469d-5922-4767-b1b7-e230978d2eb6#id> a sport:Round ;
+    rdfs:label "Round 1 of Men's Wheelchair Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S13R1> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/03b51b32-ca55-4fdb-8253-4e5bee12461c#id> a sport:Round ;
+    rdfs:label "Round 3 of Women's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S4R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/0406442c-0f76-4a62-b328-3e441f765e78#id> a sport:Round ;
+    rdfs:label "Round 1 of Mixed Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S5R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/05b3b13d-195b-4210-b9f9-68cf668226d3#id> a sport:Round ;
+    rdfs:label "Round 4 of Boys' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S6R4> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/06647567-d67e-4d30-91c8-7b9037d133da#id> a sport:Round ;
+    rdfs:label "Round 2 of Women's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S4R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/0d00e10a-bd45-4f6f-ae8d-d5c75ada79bb#id> a sport:KnockoutCompetition ;
+    rdfs:label "Women's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Women's Singles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S3> ;
+    core:preferredLabel "Women's Singles"@en-gb ;
+    core:shortLabel "Women's Singles"@en-gb ;
+    core:slug "womens-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/5915c6db-ac34-41de-b67f-53f5c8816d2f#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/544f3c7e-790a-48b9-b3d8-7f2d73413fb6#id>,
+        <http://www.bbc.co.uk/things/8af8091b-dc15-4340-9296-c715c5501d8f#id>,
+        <http://www.bbc.co.uk/things/a3112c8e-24f0-485e-8e3e-91f684e2e27c#id>,
+        <http://www.bbc.co.uk/things/b1c25067-2253-4fae-aed3-21e17648ca43#id>,
+        <http://www.bbc.co.uk/things/bab85b99-3701-4804-99f4-e5052d5e1a7c#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/d2744f6a-7ea9-4b6f-a367-9de90d2813d1#id> ;
+    sport:stageNumber "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/0df74e32-403f-4e32-9219-bbdc59d52405#id> a sport:KnockoutCompetition ;
+    rdfs:label "Girls' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Girls' Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S9> ;
+    core:preferredLabel "Girls' Doubles"@en-gb ;
+    core:shortLabel "Girls' Doubles"@en-gb ;
+    core:slug "girls-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/ac4df679-6779-4c3b-9560-eb3f45b9756a#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/9598d770-8a6d-4c3d-b755-29a0e2db87e5#id>,
+        <http://www.bbc.co.uk/things/ed47c48e-de7a-455f-85a6-f72b370a4ff8#id>,
+        <http://www.bbc.co.uk/things/fd53c351-db4d-4b6d-ba32-56036543b05c#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/1029b299-492c-4df2-8e18-637b33a0901b#id> ;
+    sport:stageNumber "9"^^xsd:int .
+
+<http://www.bbc.co.uk/things/1029b299-492c-4df2-8e18-637b33a0901b#id> a sport:Round ;
+    rdfs:label "Round 5 of Girls' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S9R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/1bed5957-a79d-4faa-9312-d69776c84693#id> a sport:KnockoutCompetition ;
+    rdfs:label "Men's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Men's Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S2> ;
+    core:preferredLabel "Men's Doubles"@en-gb ;
+    core:shortLabel "Men's Doubles"@en-gb ;
+    core:slug "mens-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/ef943700-0f58-4045-851b-7031a9314e32#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/87a1a3f1-0d67-46ab-8fc6-1248fe3ff6a8#id>,
+        <http://www.bbc.co.uk/things/ad233102-48d0-4ab0-a06b-e6de242252d2#id>,
+        <http://www.bbc.co.uk/things/c0669907-d7ca-4d3f-8c27-1c6cacd6195a#id>,
+        <http://www.bbc.co.uk/things/e7b529e6-1e1c-4904-b998-2792e6db1c4b#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/d2633244-e170-41a8-a448-cc15a84242b4#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/1e444d85-9368-44ce-96b1-988948cbef51#id> a sport:KnockoutCompetition ;
+    rdfs:label "Men's Singles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Men's Singles Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S15> ;
+    core:preferredLabel "Men's Singles Qualifying"@en-gb ;
+    core:shortLabel "M. Singles Qualifying"@en-gb ;
+    core:slug "mens-qualifying-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/715ed889-5c94-4850-86e3-295afe0a9067#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/2f5c56e5-bd12-4867-b623-2a552422d147#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/a21029ed-5faa-4d0b-8738-3b9c991affc7#id> ;
+    sport:stageNumber "15"^^xsd:int .
+
+<http://www.bbc.co.uk/things/244233e4-f51b-488f-a55c-2b4ffd28f413#id> a sport:Round ;
+    rdfs:label "Round 3 of Women's Singles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S16R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/24c26f57-fbe3-4047-951a-45628825f331#id> a sport:Round ;
+    rdfs:label "Round 1 of Men's Senior Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S12R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/2735d407-a23b-4c59-bfd7-51a8b96e6001#id> a sport:Round ;
+    rdfs:label "Round 4 of Men's Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S10R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/2b9f5416-9a41-4c9a-8323-cceffdce4c38#id> a sport:Round ;
+    rdfs:label "Round 3 of Boys' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S7R3> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/2f5c56e5-bd12-4867-b623-2a552422d147#id> a sport:Round ;
+    rdfs:label "Round 2 of Men's Singles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S15R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/31aa0bde-4dd9-4ad8-88ea-35a647b9f85f#id> a sport:Round ;
+    rdfs:label "Round 1 of Women's Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S11R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/39e6ad4e-6e56-4278-8e14-096baa97fdb9#id> a sport:Round ;
+    rdfs:label "Round 5 of Women's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S4R5> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/430c20db-a9c1-4bb2-bfaa-b85b8cd3a753#id> a sport:Round ;
+    rdfs:label "Round 3 of Men's Wheelchair Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S19R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/4adf354d-a009-4071-acbd-c0ec508240d5#id> a sport:Round ;
+    rdfs:label "Round 3 of Boys' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S6R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/4c674068-9928-453a-b336-bdeff051d34f#id> a sport:KnockoutCompetition ;
+    rdfs:label "Men's Wheelchair Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Men's Wheelchair Singles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S19> ;
+    core:preferredLabel "Men's Wheelchair Singles"@en-gb ;
+    core:shortLabel "M. Wheelchair Singles"@en-gb ;
+    core:slug "mens-wheelchair-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/4eea9256-9e4e-4ba5-8668-a9783b5ee923#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/b8947a5c-e43c-4827-8d6a-714674b089ee#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/430c20db-a9c1-4bb2-bfaa-b85b8cd3a753#id> ;
+    sport:stageNumber "13"^^xsd:int .
+
+<http://www.bbc.co.uk/things/4d7efe3d-4f2a-48f1-9b4e-a4b9b0ee3b8e#id> a sport:KnockoutCompetition ;
+    rdfs:label "Men's Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Men's Invitation Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S10> ;
+    core:preferredLabel "Men's Invitation Doubles"@en-gb ;
+    core:shortLabel "M. Inv. Doubles"@en-gb ;
+    core:slug "mens-invite-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/cea041d5-61ed-4edd-a214-6b4126b8017d#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/93d6b946-6fdf-4ea8-a177-7ab3896905b8#id>,
+        <http://www.bbc.co.uk/things/cbe370cc-69f8-42d1-bd38-d34fbcbe5694#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/2735d407-a23b-4c59-bfd7-51a8b96e6001#id> ;
+    sport:stageNumber "10"^^xsd:int .
+
+<http://www.bbc.co.uk/things/4e81ba31-2e25-49eb-9534-95324ad0ba56#id> a sport:Round ;
+    rdfs:label "Round 5 of Girls' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S8R5> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/4eea9256-9e4e-4ba5-8668-a9783b5ee923#id> a sport:Round ;
+    rdfs:label "Round 1 of Men's Wheelchair Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S19R1> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/50474133-7a61-4c07-90ef-afa77e6f7a03#id> a sport:Round ;
+    rdfs:label "Round 1 of Boys' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S6R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/50b0b64e-de8a-4c0d-ab2c-ebb074c48130#id> a sport:Round ;
+    rdfs:label "Round 4 of Mixed Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S5R4> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/5157916d-0922-4b48-8d2a-34400ab37190#id> a sport:Round ;
+    rdfs:label "Round 2 of Girls' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S8R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5309e563-b7a1-480c-aa82-9a7827ba7bd1#id> a sport:Round ;
+    rdfs:label "Round 2 of Mixed Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S5R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/544f3c7e-790a-48b9-b3d8-7f2d73413fb6#id> a sport:Round ;
+    rdfs:label "Round 4 of Women's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 4"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S3R4> ;
+    core:preferredLabel "Round 4"@en-gb ;
+    core:shortLabel "Round 4"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5466be9d-2b56-4780-bd69-cd9a9a82d09a#id> a sport:Round ;
+    rdfs:label "Round 2 of Women's Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S11R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/55f2bd1a-4d8a-401b-887a-5ac7c405979b#id> a sport:Round ;
+    rdfs:label "Round 2 of Men's Senior Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S12R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5915c6db-ac34-41de-b67f-53f5c8816d2f#id> a sport:Round ;
+    rdfs:label "Round 1 of Women's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S3R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5aa89c8a-b4ca-4584-bb71-85fdf5ff209a#id> a sport:Round ;
+    rdfs:label "Round 3 of Men's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S1R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5bf1b980-5ee6-49db-a291-6a79480f6b1a#id> a sport:KnockoutCompetition ;
+    rdfs:label "Boys' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Boys' Singles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S6> ;
+    core:preferredLabel "Boys' Singles"@en-gb ;
+    core:shortLabel "Boys' Singles"@en-gb ;
+    core:slug "boys-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/50474133-7a61-4c07-90ef-afa77e6f7a03#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/05b3b13d-195b-4210-b9f9-68cf668226d3#id>,
+        <http://www.bbc.co.uk/things/4adf354d-a009-4071-acbd-c0ec508240d5#id>,
+        <http://www.bbc.co.uk/things/a64c8e6c-65fd-409a-99ac-7166e94e03ca#id>,
+        <http://www.bbc.co.uk/things/f9cd3c33-8b6f-4c55-98a9-77fa00ebf874#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/e361e1ad-c129-4415-8e2f-cde09a03899c#id> ;
+    sport:stageNumber "6"^^xsd:int .
+
+<http://www.bbc.co.uk/things/616ad07d-74de-46ce-b33c-e24cb597a22c#id> a sport:Round ;
+    rdfs:label "Round 4 of Boys' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S7R4> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/646e8768-223d-4aec-9233-6c17bfe08a0e#id> a sport:Round ;
+    rdfs:label "Round 2 of Women's Wheelchair Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S14R2> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/6752e3f1-0a40-425f-adf4-f6e96f683337#id> a sport:Round ;
+    rdfs:label "Round 6 of Girls' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S8R6> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/67682a01-3693-4820-9024-2e444f6ef5de#id> a sport:Round ;
+    rdfs:label "Round 2 of Women's Doubles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S18R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6bb1d0e3-ac21-4a15-a603-687d4b32a5ca#id> a sport:KnockoutCompetition ;
+    rdfs:label "Boys' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Boys' Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S7> ;
+    core:preferredLabel "Boys' Doubles"@en-gb ;
+    core:shortLabel "Boys' Doubles"@en-gb ;
+    core:slug "boys-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/a53fc68e-35f0-47e3-bc7b-968a9ad04339#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/2b9f5416-9a41-4c9a-8323-cceffdce4c38#id>,
+        <http://www.bbc.co.uk/things/616ad07d-74de-46ce-b33c-e24cb597a22c#id>,
+        <http://www.bbc.co.uk/things/6c380b4c-2675-4c45-b1ed-e9f8115f3cf2#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/c0cf4880-8389-4ec2-b0b3-d9d611240303#id> ;
+    sport:stageNumber "7"^^xsd:int .
+
+<http://www.bbc.co.uk/things/6bb2147e-79b2-4874-a457-d331a8cead80#id> a sport:Round ;
+    rdfs:label "Round 3 of Mixed Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S5R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6c0dc80a-be73-401d-b5c7-cb1f45b490a0#id> a sport:Round ;
+    rdfs:label "Round 2 of Men's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S1R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6c380b4c-2675-4c45-b1ed-e9f8115f3cf2#id> a sport:Round ;
+    rdfs:label "Round 2 of Boys' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S7R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6e730274-b62b-475c-a2e7-8f53e73be719#id> a sport:Round ;
+    rdfs:label "Round 6 of Mixed Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S5R6> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/708f810b-1e58-43ac-8007-9ffd1f120dfc#id> a sport:Round ;
+    rdfs:label "Round 3 of Men's Senior Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S12R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/715ed889-5c94-4850-86e3-295afe0a9067#id> a sport:Round ;
+    rdfs:label "Round 1 of Men's Singles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S15R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/76b2b37d-930c-4991-8e0e-3887662da770#id> a sport:Round ;
+    rdfs:label "Round 4 of Men's Senior Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S12R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/790d7ba8-b2c6-42f9-bc30-914f1c87766f#id> a sport:Round ;
+    rdfs:label "Round 1 of Women's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S4R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/79425723-d680-4611-a16d-170ffebe6e2f#id> a sport:Round ;
+    rdfs:label "Round 1 of Women's Wheelchair Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S20R1> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/7ab46448-d163-4280-8642-523fc9333f7a#id> a sport:Round ;
+    rdfs:label "Round 1 of Women's Wheelchair Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S14R1> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/7af97b92-1c49-4e21-a5c5-64004fe91cb3#id> a sport:Round ;
+    rdfs:label "Round 2 of Men's Wheelchair Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S13R2> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/83cbbab0-f6fd-4af1-bb6b-7befa513d793#id> a sport:KnockoutCompetition ;
+    rdfs:label "Men's Doubles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Men's Doubles Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S17> ;
+    core:preferredLabel "Men's Doubles Qualifying"@en-gb ;
+    core:shortLabel "M. Doubles Qualifying"@en-gb ;
+    core:slug "mens-qualifying-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/d55b018d-0259-4c63-8fdc-97bdcbe57b9d#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/865a45dd-ae72-4561-a1c2-22d8713fbca5#id> ;
+    sport:stageNumber "17"^^xsd:int .
+
+<http://www.bbc.co.uk/things/84b66b5a-4026-44f5-b651-960ee471592c#id> a sport:KnockoutCompetition ;
+    rdfs:label "Men's Senior Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Men's Senior Invitation Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S12> ;
+    core:preferredLabel "Men's Senior Invitation Doubles"@en-gb ;
+    core:shortLabel "M. Sen. Inv. Doubles"@en-gb ;
+    core:slug "senior-mens-invite-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/24c26f57-fbe3-4047-951a-45628825f331#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/55f2bd1a-4d8a-401b-887a-5ac7c405979b#id>,
+        <http://www.bbc.co.uk/things/708f810b-1e58-43ac-8007-9ffd1f120dfc#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/76b2b37d-930c-4991-8e0e-3887662da770#id> ;
+    sport:stageNumber "12"^^xsd:int .
+
+<http://www.bbc.co.uk/things/865a45dd-ae72-4561-a1c2-22d8713fbca5#id> a sport:Round ;
+    rdfs:label "Round 2 of Men's Doubles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S17R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/87a1a3f1-0d67-46ab-8fc6-1248fe3ff6a8#id> a sport:Round ;
+    rdfs:label "Round 3 of Men's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S2R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/87e2f6ac-323f-4ac1-acbe-9ba618193d6b#id> a sport:KnockoutCompetition ;
+    rdfs:label "Women's Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Women's Invitation Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S11> ;
+    core:preferredLabel "Women's Invitation Doubles"@en-gb ;
+    core:shortLabel "W. Inv. Doubles"@en-gb ;
+    core:slug "womens-invite-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/31aa0bde-4dd9-4ad8-88ea-35a647b9f85f#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/5466be9d-2b56-4780-bd69-cd9a9a82d09a#id>,
+        <http://www.bbc.co.uk/things/fd967343-872c-4a10-9e08-d03dfa75d4cf#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/f7b7467e-45b3-4c18-82b4-bfe273435dc8#id> ;
+    sport:stageNumber "11"^^xsd:int .
+
+<http://www.bbc.co.uk/things/8af8091b-dc15-4340-9296-c715c5501d8f#id> a sport:Round ;
+    rdfs:label "Round 5 of Women's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S3R5> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/8b87d52a-2e0c-4b34-9387-bc883cb69df3#id> a sport:Round ;
+    rdfs:label "Round 1 of Men's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S1R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/8e5a757a-2828-44c9-a805-744750497533#id> a sport:Round ;
+    rdfs:label "Round 4 of Girls' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S8R4> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/8f2114f1-a463-40ad-afea-1425f384f467#id> a sport:Round ;
+    rdfs:label "Round 6 of Women's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S4R6> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/92585fb1-ce46-40a6-84b2-439784a23da5#id> a sport:Round ;
+    rdfs:label "Round 5 of Mixed Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S5R5> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/93d6b946-6fdf-4ea8-a177-7ab3896905b8#id> a sport:Round ;
+    rdfs:label "Round 3 of Men's Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S10R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/9598d770-8a6d-4c3d-b755-29a0e2db87e5#id> a sport:Round ;
+    rdfs:label "Round 2 of Girls' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S9R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/97c0aef9-8e4e-4d57-aa23-bbfc93d773aa#id> a sport:Round ;
+    rdfs:label "Round 1 of Girls' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S8R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/98e1f1dc-e908-4c0a-89b7-3c2050e75e2f#id> a sport:KnockoutCompetition ;
+    rdfs:label "Women's Wheelchair Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Women's Wheelchair Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S14> ;
+    core:preferredLabel "Women's Wheelchair Doubles"@en-gb ;
+    core:shortLabel "W. Wheelchair Doubles"@en-gb ;
+    core:slug "womens-wheelchair-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/7ab46448-d163-4280-8642-523fc9333f7a#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/646e8768-223d-4aec-9233-6c17bfe08a0e#id> ;
+    sport:stageNumber "14"^^xsd:int .
+
+<http://www.bbc.co.uk/things/99577c83-e9a5-477d-a3ce-d162bedbb8bb#id> a sport:Round ;
+    rdfs:label "Round 2 of Women's Singles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S16R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/99e68d42-7999-4a3f-beb2-3e57c39cfb4d#id> a sport:Round ;
+    rdfs:label "Round 4 of Women's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S4R4> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/9c15bbc9-8ad5-4452-a26b-c413df13ed29#id> a sport:KnockoutCompetition ;
+    rdfs:label "Girls' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Girls' Singles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S8> ;
+    core:preferredLabel "Girls' Singles"@en-gb ;
+    core:shortLabel "Girls' Singles"@en-gb ;
+    core:slug "girls-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/97c0aef9-8e4e-4d57-aa23-bbfc93d773aa#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/4e81ba31-2e25-49eb-9534-95324ad0ba56#id>,
+        <http://www.bbc.co.uk/things/5157916d-0922-4b48-8d2a-34400ab37190#id>,
+        <http://www.bbc.co.uk/things/8e5a757a-2828-44c9-a805-744750497533#id>,
+        <http://www.bbc.co.uk/things/c708b40e-0831-48c4-9b26-074bbc203e19#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/6752e3f1-0a40-425f-adf4-f6e96f683337#id> ;
+    sport:stageNumber "8"^^xsd:int .
+
+<http://www.bbc.co.uk/things/a21029ed-5faa-4d0b-8738-3b9c991affc7#id> a sport:Round ;
+    rdfs:label "Round 3 of Men's Singles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S15R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a2833574-d0a9-4e34-9329-9f70a69cd1b9#id> a sport:Round ;
+    rdfs:label "Round 1 of Women's Doubles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S18R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a3112c8e-24f0-485e-8e3e-91f684e2e27c#id> a sport:Round ;
+    rdfs:label "Round 3 of Women's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S3R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a53fc68e-35f0-47e3-bc7b-968a9ad04339#id> a sport:Round ;
+    rdfs:label "Round 1 of Boys' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S7R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/a64c8e6c-65fd-409a-99ac-7166e94e03ca#id> a sport:Round ;
+    rdfs:label "Round 2 of Boys' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S6R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/abcf66c1-0d1c-49d8-9b8d-66484a0d9416#id> a sport:KnockoutCompetition ;
+    rdfs:label "Men's Wheelchair Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Men's Wheelchair Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S13> ;
+    core:preferredLabel "Men's Wheelchair Doubles"@en-gb ;
+    core:shortLabel "M. Wheelchair Doubles"@en-gb ;
+    core:slug "mens-wheelchair-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/0150469d-5922-4767-b1b7-e230978d2eb6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/7af97b92-1c49-4e21-a5c5-64004fe91cb3#id> ;
+    sport:stageNumber "13"^^xsd:int .
+
+<http://www.bbc.co.uk/things/abfe6e4c-c5d3-4ac7-ac0b-9c87f0c4035e#id> a sport:Round ;
+    rdfs:label "Round 7 of Men's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S1R7> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/ac4df679-6779-4c3b-9560-eb3f45b9756a#id> a sport:Round ;
+    rdfs:label "Round 1 of Girls' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S9R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ad233102-48d0-4ab0-a06b-e6de242252d2#id> a sport:Round ;
+    rdfs:label "Round 4 of Men's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S2R4> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/ae3542cb-ceb4-4dfa-bfdd-6540e78f76ba#id> a sport:KnockoutCompetition ;
+    rdfs:label "Men's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Men's Singles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S1> ;
+    core:preferredLabel "Men's Singles"@en-gb ;
+    core:shortLabel "Men's Singles"@en-gb ;
+    core:slug "mens-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/8b87d52a-2e0c-4b34-9387-bc883cb69df3#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/5aa89c8a-b4ca-4584-bb71-85fdf5ff209a#id>,
+        <http://www.bbc.co.uk/things/6c0dc80a-be73-401d-b5c7-cb1f45b490a0#id>,
+        <http://www.bbc.co.uk/things/bd363db0-fe07-4b0f-83ab-8e1360c0d9f3#id>,
+        <http://www.bbc.co.uk/things/e820cfd2-63cc-4eea-afe8-5097ee57358d#id>,
+        <http://www.bbc.co.uk/things/ff5728d2-9dfb-4e3f-996d-486e043c0818#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/abfe6e4c-c5d3-4ac7-ac0b-9c87f0c4035e#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/b03dcf75-a0cd-4310-a8b0-316bde4c5660#id> a sport:Round ;
+    rdfs:label "Round 3 of Women's Wheelchair Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S20R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/b1c25067-2253-4fae-aed3-21e17648ca43#id> a sport:Round ;
+    rdfs:label "Round 6 of Women's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S3R6> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/b8947a5c-e43c-4827-8d6a-714674b089ee#id> a sport:Round ;
+    rdfs:label "Round 2 of Men's Wheelchair Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S19R2> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/bab85b99-3701-4804-99f4-e5052d5e1a7c#id> a sport:Round ;
+    rdfs:label "Round 2 of Women's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S3R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/bd363db0-fe07-4b0f-83ab-8e1360c0d9f3#id> a sport:Round ;
+    rdfs:label "Round 5 of Men's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S1R5> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/c0669907-d7ca-4d3f-8c27-1c6cacd6195a#id> a sport:Round ;
+    rdfs:label "Round 5 of Men's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S2R5> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/c0cf4880-8389-4ec2-b0b3-d9d611240303#id> a sport:Round ;
+    rdfs:label "Round 5 of Boys' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S7R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/c708b40e-0831-48c4-9b26-074bbc203e19#id> a sport:Round ;
+    rdfs:label "Round 3 of Girls' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S8R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/cbe370cc-69f8-42d1-bd38-d34fbcbe5694#id> a sport:Round ;
+    rdfs:label "Round 2 of Men's Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S10R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/cea041d5-61ed-4edd-a214-6b4126b8017d#id> a sport:Round ;
+    rdfs:label "Round 1 of Men's Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S10R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/d2633244-e170-41a8-a448-cc15a84242b4#id> a sport:Round ;
+    rdfs:label "Round 6 of Men's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S2R6> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/d2744f6a-7ea9-4b6f-a367-9de90d2813d1#id> a sport:Round ;
+    rdfs:label "Round 7 of Women's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S3R7> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/d47b5bb0-bde9-466f-af87-a4205c1566b3#id> a sport:KnockoutCompetition ;
+    rdfs:label "Women's Singles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Women's Singles Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S16> ;
+    core:preferredLabel "Women's Singles Qualifying"@en-gb ;
+    core:shortLabel "W. Singles Qualifying"@en-gb ;
+    core:slug "womens-qualifying-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/efed89bf-1c49-4dcd-8742-311891b3dfcc#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/99577c83-e9a5-477d-a3ce-d162bedbb8bb#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/244233e4-f51b-488f-a55c-2b4ffd28f413#id> ;
+    sport:stageNumber "16"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d55b018d-0259-4c63-8fdc-97bdcbe57b9d#id> a sport:Round ;
+    rdfs:label "Round 1 of Men's Doubles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S17R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/e32efd39-b770-40fb-8137-24186202d7fa#id> a sport:KnockoutCompetition ;
+    rdfs:label "Women's Doubles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Women's Doubles Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S18> ;
+    core:preferredLabel "Women's Doubles Qualifying"@en-gb ;
+    core:shortLabel "W. Doubles Qualifying"@en-gb ;
+    core:slug "womens-qualifying-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/a2833574-d0a9-4e34-9329-9f70a69cd1b9#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/67682a01-3693-4820-9024-2e444f6ef5de#id> ;
+    sport:stageNumber "18"^^xsd:int .
+
+<http://www.bbc.co.uk/things/e361e1ad-c129-4415-8e2f-cde09a03899c#id> a sport:Round ;
+    rdfs:label "Round 6 of Boys' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S6R6> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/e7b529e6-1e1c-4904-b998-2792e6db1c4b#id> a sport:Round ;
+    rdfs:label "Round 2 of Men's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S2R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/e7be692f-96d9-4295-9e33-f9cab96d2f82#id> a sport:KnockoutCompetition ;
+    rdfs:label "Mixed Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Mixed Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S5> ;
+    core:preferredLabel "Mixed Doubles"@en-gb ;
+    core:shortLabel "Mixed Doubles"@en-gb ;
+    core:slug "mixed-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/0406442c-0f76-4a62-b328-3e441f765e78#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/50b0b64e-de8a-4c0d-ab2c-ebb074c48130#id>,
+        <http://www.bbc.co.uk/things/5309e563-b7a1-480c-aa82-9a7827ba7bd1#id>,
+        <http://www.bbc.co.uk/things/6bb2147e-79b2-4874-a457-d331a8cead80#id>,
+        <http://www.bbc.co.uk/things/92585fb1-ce46-40a6-84b2-439784a23da5#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/6e730274-b62b-475c-a2e7-8f53e73be719#id> ;
+    sport:stageNumber "5"^^xsd:int .
+
+<http://www.bbc.co.uk/things/e820cfd2-63cc-4eea-afe8-5097ee57358d#id> a sport:Round ;
+    rdfs:label "Round 4 of Men's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 4"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S1R4> ;
+    core:preferredLabel "Round 4"@en-gb ;
+    core:shortLabel "Round 4"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/e9175434-956b-41ea-a730-2e0bcb9f57ce#id> a sport:Round ;
+    rdfs:label "Round 2 of Women's Wheelchair Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S20R2> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/ed47c48e-de7a-455f-85a6-f72b370a4ff8#id> a sport:Round ;
+    rdfs:label "Round 3 of Girls' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S9R3> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/ef943700-0f58-4045-851b-7031a9314e32#id> a sport:Round ;
+    rdfs:label "Round 1 of Men's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S2R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/efed89bf-1c49-4dcd-8742-311891b3dfcc#id> a sport:Round ;
+    rdfs:label "Round 1 of Women's Singles Qualifying for Wimbledon 2017"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S16R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/f7b7467e-45b3-4c18-82b4-bfe273435dc8#id> a sport:Round ;
+    rdfs:label "Round 4 of Women's Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S11R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/f9cd3c33-8b6f-4c55-98a9-77fa00ebf874#id> a sport:Round ;
+    rdfs:label "Round 5 of Boys' Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S6R5> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/fad65227-a1b3-41a3-970e-869e11322c93#id> a sport:KnockoutCompetition ;
+    rdfs:label "Women's Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Women's Doubles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S4> ;
+    core:preferredLabel "Women's Doubles"@en-gb ;
+    core:shortLabel "Women's Doubles"@en-gb ;
+    core:slug "womens-doubles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/790d7ba8-b2c6-42f9-bc30-914f1c87766f#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/03b51b32-ca55-4fdb-8253-4e5bee12461c#id>,
+        <http://www.bbc.co.uk/things/06647567-d67e-4d30-91c8-7b9037d133da#id>,
+        <http://www.bbc.co.uk/things/39e6ad4e-6e56-4278-8e14-096baa97fdb9#id>,
+        <http://www.bbc.co.uk/things/99e68d42-7999-4a3f-beb2-3e57c39cfb4d#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/8f2114f1-a463-40ad-afea-1425f384f467#id> ;
+    sport:stageNumber "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/fd53c351-db4d-4b6d-ba32-56036543b05c#id> a sport:Round ;
+    rdfs:label "Round 4 of Girls' Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S9R4> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/fd967343-872c-4a10-9e08-d03dfa75d4cf#id> a sport:Round ;
+    rdfs:label "Round 3 of Women's Invitation Doubles for Wimbledon 2017"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S11R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ff5728d2-9dfb-4e3f-996d-486e043c0818#id> a sport:Round ;
+    rdfs:label "Round 6 of Men's Singles for Wimbledon 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402017S1R6> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<urn:sports-data:CTEI5402017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S10> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S10R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S10R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S10R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S10R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S11> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S11R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S11R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S11R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S11R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S12> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S12R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S12R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S12R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S12R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S13> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S13R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S13R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S14R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S14R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S15> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S15R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S15R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S15R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S16> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S16R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S16R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S16R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S17> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S17R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S17R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S18> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S18R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S18R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S19> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S19R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S19R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S19R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S20> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S20R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S20R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S20R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S2R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S2R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S3R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S3R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S3R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S3R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S3R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S3R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S3R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S4R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S4R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S4R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S4R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S4R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S4R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S5R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S5R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S5R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S5R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S5R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S5R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S6R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S6R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S6R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S6R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S6R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S6R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S7R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S7R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S7R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S7R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S7R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S8R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S8R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S8R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S8R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S8R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S8R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S9> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S9R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S9R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S9R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S9R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402017S9R5> a cms:Sports-DataLocator .
+

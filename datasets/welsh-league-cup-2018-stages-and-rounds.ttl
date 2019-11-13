@@ -1,0 +1,98 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/d3c8cdbc-b780-46e0-ad9d-1ab1653c9ede#id> a provenance:Dataset ;
+    rdfs:label "Football: Welsh League Cup 2018/19 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/welsh-league-cup-2018-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4413: Welsh Cups stages and rounds 2018/19" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-05-29T15:16:57+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/bf274973-0443-4ad1-99bf-ed12dbbb2ef2#id> sport:hasStage <http://www.bbc.co.uk/things/be7c7b73-805a-4837-a033-86836cd420b2#id> .
+
+<http://www.bbc.co.uk/things/a5cd7b7b-2941-4f48-96ed-fd73bc2c3bb4#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432018S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/be7c7b73-805a-4837-a033-86836cd420b2#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Welsh League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432018S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/dfc30bd4-11e3-4cb5-adf8-163d766204c2#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/a5cd7b7b-2941-4f48-96ed-fd73bc2c3bb4#id>,
+        <http://www.bbc.co.uk/things/d7467bb0-3975-48be-8a5f-32c3eeea1e4f#id>,
+        <http://www.bbc.co.uk/things/f3afa487-e7ae-40e0-91d1-c089ec638614#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/f27e5f3b-19b7-48b3-a0fa-26f6267cfdda#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/d7467bb0-3975-48be-8a5f-32c3eeea1e4f#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432018S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/dfc30bd4-11e3-4cb5-adf8-163d766204c2#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432018S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/f27e5f3b-19b7-48b3-a0fa-26f6267cfdda#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432018S1R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/f3afa487-e7ae-40e0-91d1-c089ec638614#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432018S1R4> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<urn:sports-data:CFBB6432018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432018S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432018S1R5> a cms:Sports-DataLocator .
+

@@ -1,0 +1,401 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns3: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/40488fc3-9c0b-4569-b16a-56027a328a23#id> a provenance:Dataset ;
+    rdfs:label "Multidisciplinary: Competitions" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/multi-disciplinary/multi-disciplinary-competitions.ttl" ;
+    provenance:changeReason "SLS-4283;2: Commonwealth Games 2018 - remove Powerlifting from disciplines" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-08-01T09:24:45+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "70"^^xsd:int .
+
+<http://www.bbc.co.uk/things/079a365b-0602-42f8-83d5-9db03c6b16c7#id> a core:Thing,
+        sport:DivisionalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Sochi 2014 (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/1cc5a7c2-5a33-4cea-9992-61e0f3db6307#id> ;
+    sal:name "Sochi 2014"@en-gb ;
+    core:disambiguationHint "Winter Olympics Competition"@en-gb ;
+    core:preferredLabel "Sochi 2014"@en-gb ;
+    core:shortLabel "Sochi 2014"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8ffc564e-5a37-4f6b-bcec-01124da58681#id> ;
+    provenance:deprecated true ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id>,
+        <http://www.bbc.co.uk/things/485f8f94-f87e-4513-b133-46a5dfccd428#id>,
+        <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id>,
+        <http://www.bbc.co.uk/things/521df978-7583-4e19-ad6d-2a83a595a8a6#id>,
+        <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id>,
+        <http://www.bbc.co.uk/things/8fdc4c32-3d0c-4814-9d69-3bf1269135df#id>,
+        <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id>,
+        <http://www.bbc.co.uk/things/a7b083b7-0d8b-45d8-9f09-54e6432dacb5#id>,
+        <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id>,
+        <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id>,
+        <http://www.bbc.co.uk/things/d06b1e90-c9fe-4e09-9b4a-e0f285da8920#id>,
+        <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id>,
+        <http://www.bbc.co.uk/things/dd4191d5-115d-46b9-8f18-d1da16c6a3e8#id>,
+        <http://www.bbc.co.uk/things/fe11a0ff-a7c0-45eb-a9e0-708dddf9bc7d#id>,
+        <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8ffc564e-5a37-4f6b-bcec-01124da58681#id> .
+
+<http://www.bbc.co.uk/things/1d2e1514-faa8-425d-8481-a1cc4da6cc24#id> a core:Thing,
+        sport:DivisionalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Rio 2016 (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/17a18041-3deb-4a6c-b743-a45f98680a0d#id> ;
+    sal:name "Rio 2016"@en-gb ;
+    core:disambiguationHint "Summer Olympics Competition"@en-gb ;
+    core:preferredLabel "Rio 2016"@en-gb ;
+    core:shortLabel "Rio 2016"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/0d205538-c52e-41c7-a4a1-50efd6c1da59#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/02fb02ee-9e6b-46c3-92e1-db372543facd#id>,
+        <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id>,
+        <http://www.bbc.co.uk/things/126190f0-5bd7-7346-a739-39a80c01ae23#id>,
+        <http://www.bbc.co.uk/things/21c45f67-36da-874e-ab36-02650add8311#id>,
+        <http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id>,
+        <http://www.bbc.co.uk/things/3d556f88-c802-4fcc-9c25-469d2ba7b42a#id>,
+        <http://www.bbc.co.uk/things/3d5e63ec-1f4f-c24c-86ad-fd5d54e014f6#id>,
+        <http://www.bbc.co.uk/things/452019a5-f0f2-0c47-aa11-42fdcf2ae16b#id>,
+        <http://www.bbc.co.uk/things/53accf6c-631b-9140-852a-109fab88d3f8#id>,
+        <http://www.bbc.co.uk/things/5a9bba82-5f5e-f343-9df7-48fc6d6a008e#id>,
+        <http://www.bbc.co.uk/things/654f550c-0c2d-2341-a8f5-66e3a9ba28ba#id>,
+        <http://www.bbc.co.uk/things/69cbc5e2-b228-a143-8085-860c053f44f7#id>,
+        <http://www.bbc.co.uk/things/6b04e406-c181-204b-a2dd-bc20142b9e6a#id>,
+        <http://www.bbc.co.uk/things/7e4ba3a7-909a-473f-b332-95b5ed42c213#id>,
+        <http://www.bbc.co.uk/things/7e517328-5306-49a4-addb-37a94a2be3bb#id>,
+        <http://www.bbc.co.uk/things/921a13d0-6fc6-6740-af87-8af4655ec20f#id>,
+        <http://www.bbc.co.uk/things/a5695e6f-2e4c-1b42-9b11-af0862edbb2a#id>,
+        <http://www.bbc.co.uk/things/b3a086df-ab42-2b44-be8b-76b600bfcdce#id>,
+        <http://www.bbc.co.uk/things/b84fd4d8-b7b5-5b45-9f7a-d701c9f3907f#id>,
+        <http://www.bbc.co.uk/things/b9a58a01-0c74-8b47-972f-68f922ebd90a#id>,
+        <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id>,
+        <http://www.bbc.co.uk/things/bd51d530-f0fb-684e-a305-3f15b7e6d4a1#id>,
+        <http://www.bbc.co.uk/things/c5d39deb-46b8-1e4e-ba2c-5c6e2436b92d#id>,
+        <http://www.bbc.co.uk/things/c6e2a7ac-2d13-8640-9f98-41f749d94a6e#id>,
+        <http://www.bbc.co.uk/things/d65c5dce-f5e4-4340-931b-16ca1848d092#id>,
+        <http://www.bbc.co.uk/things/d9d6cc4d-79f1-ab49-9c9e-c98d166b99fe#id>,
+        <http://www.bbc.co.uk/things/e4d61a41-dba2-7849-a725-d8b445ec3cbc#id>,
+        <http://www.bbc.co.uk/things/e681e822-b849-0243-b698-1b9afe3f3858#id>,
+        <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id>,
+        <http://www.bbc.co.uk/things/eceae071-5f37-0848-acd2-f21e3b2de8ca#id>,
+        <http://www.bbc.co.uk/things/f21d1a82-e919-b24f-b3fb-8f2f46372f40#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0d205538-c52e-41c7-a4a1-50efd6c1da59#id> .
+
+<http://www.bbc.co.uk/things/1f8748e8-de19-438c-ae18-6d3a19f0aa5b#id> a core:Thing,
+        sport:DivisionalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Pyeongchang 2018 (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/775f2713-1cc0-4dc2-996c-7dde173b7399#id> ;
+    sal:name "Pyeongchang 2018"@en-gb ;
+    core:disambiguationHint "Winter Olympics Competition"@en-gb ;
+    core:preferredLabel "Pyeongchang 2018"@en-gb ;
+    core:shortLabel "Pyeongchang 2018"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/8ffc564e-5a37-4f6b-bcec-01124da58681#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id>,
+        <http://www.bbc.co.uk/things/485f8f94-f87e-4513-b133-46a5dfccd428#id>,
+        <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id>,
+        <http://www.bbc.co.uk/things/521df978-7583-4e19-ad6d-2a83a595a8a6#id>,
+        <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id>,
+        <http://www.bbc.co.uk/things/8fdc4c32-3d0c-4814-9d69-3bf1269135df#id>,
+        <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id>,
+        <http://www.bbc.co.uk/things/a7b083b7-0d8b-45d8-9f09-54e6432dacb5#id>,
+        <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id>,
+        <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id>,
+        <http://www.bbc.co.uk/things/d06b1e90-c9fe-4e09-9b4a-e0f285da8920#id>,
+        <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id>,
+        <http://www.bbc.co.uk/things/dd4191d5-115d-46b9-8f18-d1da16c6a3e8#id>,
+        <http://www.bbc.co.uk/things/fe11a0ff-a7c0-45eb-a9e0-708dddf9bc7d#id>,
+        <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8ffc564e-5a37-4f6b-bcec-01124da58681#id> .
+
+<http://www.bbc.co.uk/things/2218be1a-1465-46d2-84bf-99eeee38fa4a#id> a core:Thing,
+        sport:DivisionalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Rio 2016 Paralympics (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/a030a1b2-9f26-4a90-bc5d-e00c54b69558#id> ;
+    sal:name "Rio 2016 Paralympics"@en-gb ;
+    core:disambiguationHint "Summer Paralympics Competition"@en-gb ;
+    core:preferredLabel "Rio 2016 Paralympics"@en-gb ;
+    core:shortLabel "2016 Paralympics"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/ab1c93d1-9e04-4451-96e9-df6eab52b512#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/0887fcc7-2037-459e-a39e-9e38d091235d#id>,
+        <http://www.bbc.co.uk/things/1f712c02-df3c-420f-8efb-ba6da0b7f015#id>,
+        <http://www.bbc.co.uk/things/41676c21-b7ec-4730-9505-38f8dccb5403#id>,
+        <http://www.bbc.co.uk/things/452019a5-f0f2-0c47-aa11-42fdcf2ae16b#id>,
+        <http://www.bbc.co.uk/things/654f550c-0c2d-2341-a8f5-66e3a9ba28ba#id>,
+        <http://www.bbc.co.uk/things/7e4ba3a7-909a-473f-b332-95b5ed42c213#id>,
+        <http://www.bbc.co.uk/things/7e517328-5306-49a4-addb-37a94a2be3bb#id>,
+        <http://www.bbc.co.uk/things/8f5a0681-b6cf-4d1d-a810-e50d70f824ce#id>,
+        <http://www.bbc.co.uk/things/934b800d-5689-4fb9-bafa-47dd2b51822c#id>,
+        <http://www.bbc.co.uk/things/99984ee5-007a-473a-a83d-29814b224bb8#id>,
+        <http://www.bbc.co.uk/things/a5695e6f-2e4c-1b42-9b11-af0862edbb2a#id>,
+        <http://www.bbc.co.uk/things/b3a086df-ab42-2b44-be8b-76b600bfcdce#id>,
+        <http://www.bbc.co.uk/things/b84fd4d8-b7b5-5b45-9f7a-d701c9f3907f#id>,
+        <http://www.bbc.co.uk/things/b9a58a01-0c74-8b47-972f-68f922ebd90a#id>,
+        <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id>,
+        <http://www.bbc.co.uk/things/c5d39deb-46b8-1e4e-ba2c-5c6e2436b92d#id>,
+        <http://www.bbc.co.uk/things/c7735805-861d-48a7-a180-afacf1f716bb#id>,
+        <http://www.bbc.co.uk/things/d65c5dce-f5e4-4340-931b-16ca1848d092#id>,
+        <http://www.bbc.co.uk/things/eceae071-5f37-0848-acd2-f21e3b2de8ca#id>,
+        <http://www.bbc.co.uk/things/eff3e927-07e0-4d50-91f9-c6691f1806d7#id>,
+        <http://www.bbc.co.uk/things/f21d1a82-e919-b24f-b3fb-8f2f46372f40#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ab1c93d1-9e04-4451-96e9-df6eab52b512#id> .
+
+<http://www.bbc.co.uk/things/82b6a339-073b-482b-868b-607fe4abaa05#id> a core:Thing,
+        sport:Competition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Gold Coast 2018 (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/c63f963d-1769-4167-84d4-53b3a913ab42#id> ;
+    sal:name "Gold Coast 2018"@en-gb ;
+    core:disambiguationHint "Commonwealth Games Competition"@en-gb ;
+    core:preferredLabel "Gold Coast 2018"@en-gb ;
+    core:shortLabel "Gold Coast 2018"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/4b26f944-cc1f-4798-8873-e790b88cd842#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/02fb02ee-9e6b-46c3-92e1-db372543facd#id>,
+        <http://www.bbc.co.uk/things/039859a4-51ac-447f-a687-728ee2b34817#id>,
+        <http://www.bbc.co.uk/things/126190f0-5bd7-7346-a739-39a80c01ae23#id>,
+        <http://www.bbc.co.uk/things/21c45f67-36da-874e-ab36-02650add8311#id>,
+        <http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id>,
+        <http://www.bbc.co.uk/things/3d556f88-c802-4fcc-9c25-469d2ba7b42a#id>,
+        <http://www.bbc.co.uk/things/5b95d205-6cff-4cf1-8fc9-475b29e17511#id>,
+        <http://www.bbc.co.uk/things/6b04e406-c181-204b-a2dd-bc20142b9e6a#id>,
+        <http://www.bbc.co.uk/things/7e4ba3a7-909a-473f-b332-95b5ed42c213#id>,
+        <http://www.bbc.co.uk/things/921a13d0-6fc6-6740-af87-8af4655ec20f#id>,
+        <http://www.bbc.co.uk/things/993dde29-b0bf-4ceb-b3b2-ad20faf9c539#id>,
+        <http://www.bbc.co.uk/things/a5695e6f-2e4c-1b42-9b11-af0862edbb2a#id>,
+        <http://www.bbc.co.uk/things/b3a086df-ab42-2b44-be8b-76b600bfcdce#id>,
+        <http://www.bbc.co.uk/things/c5d39deb-46b8-1e4e-ba2c-5c6e2436b92d#id>,
+        <http://www.bbc.co.uk/things/c6e2a7ac-2d13-8640-9f98-41f749d94a6e#id>,
+        <http://www.bbc.co.uk/things/d9d6cc4d-79f1-ab49-9c9e-c98d166b99fe#id>,
+        <http://www.bbc.co.uk/things/e681e822-b849-0243-b698-1b9afe3f3858#id>,
+        <http://www.bbc.co.uk/things/eceae071-5f37-0848-acd2-f21e3b2de8ca#id>,
+        <http://www.bbc.co.uk/things/f21d1a82-e919-b24f-b3fb-8f2f46372f40#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/4b26f944-cc1f-4798-8873-e790b88cd842#id> .
+
+<http://www.bbc.co.uk/things/903ef380-bdae-4a45-9a8b-5e5a270a7d6c#id> a core:Thing,
+        sport:DivisionalCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "London 2012 (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/d2d2c195-a349-4819-8ab7-2c62094cb61f#id> ;
+    sal:name "London 2012"@en-gb ;
+    core:disambiguationHint "Summer Olympics Competition"@en-gb ;
+    core:preferredLabel "London 2012"@en-gb ;
+    core:shortLabel "London 2012"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/0d205538-c52e-41c7-a4a1-50efd6c1da59#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0d205538-c52e-41c7-a4a1-50efd6c1da59#id> .
+
+<http://www.bbc.co.uk/things/b3f29756-78db-40d1-ae3c-8407ec88950e#id> a core:Thing,
+        sport:Competition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    rdfs:label "Glasgow 2014 (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/5938fc14-ec21-429c-8b8f-55b00e8862d4#id> ;
+    sal:name "Glasgow 2014"@en-gb ;
+    core:disambiguationHint "Commonwealth Games Competition"@en-gb ;
+    core:preferredLabel "Glasgow 2014"@en-gb ;
+    core:shortLabel "Glasgow 2014"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/4b26f944-cc1f-4798-8873-e790b88cd842#id> ;
+    provenance:deprecated true ;
+    sport:discipline <http://www.bbc.co.uk/things/02fb02ee-9e6b-46c3-92e1-db372543facd#id>,
+        <http://www.bbc.co.uk/things/039859a4-51ac-447f-a687-728ee2b34817#id>,
+        <http://www.bbc.co.uk/things/126190f0-5bd7-7346-a739-39a80c01ae23#id>,
+        <http://www.bbc.co.uk/things/21c45f67-36da-874e-ab36-02650add8311#id>,
+        <http://www.bbc.co.uk/things/3d556f88-c802-4fcc-9c25-469d2ba7b42a#id>,
+        <http://www.bbc.co.uk/things/5b95d205-6cff-4cf1-8fc9-475b29e17511#id>,
+        <http://www.bbc.co.uk/things/654f550c-0c2d-2341-a8f5-66e3a9ba28ba#id>,
+        <http://www.bbc.co.uk/things/6b04e406-c181-204b-a2dd-bc20142b9e6a#id>,
+        <http://www.bbc.co.uk/things/7e4ba3a7-909a-473f-b332-95b5ed42c213#id>,
+        <http://www.bbc.co.uk/things/921a13d0-6fc6-6740-af87-8af4655ec20f#id>,
+        <http://www.bbc.co.uk/things/993dde29-b0bf-4ceb-b3b2-ad20faf9c539#id>,
+        <http://www.bbc.co.uk/things/a5695e6f-2e4c-1b42-9b11-af0862edbb2a#id>,
+        <http://www.bbc.co.uk/things/b3a086df-ab42-2b44-be8b-76b600bfcdce#id>,
+        <http://www.bbc.co.uk/things/c5d39deb-46b8-1e4e-ba2c-5c6e2436b92d#id>,
+        <http://www.bbc.co.uk/things/d9d6cc4d-79f1-ab49-9c9e-c98d166b99fe#id>,
+        <http://www.bbc.co.uk/things/e681e822-b849-0243-b698-1b9afe3f3858#id>,
+        <http://www.bbc.co.uk/things/eceae071-5f37-0848-acd2-f21e3b2de8ca#id>,
+        <http://www.bbc.co.uk/things/f21d1a82-e919-b24f-b3fb-8f2f46372f40#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/4b26f944-cc1f-4798-8873-e790b88cd842#id> .
+
+<urn:sports-data:CCGB2> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/17a18041-3deb-4a6c-b743-a45f98680a0d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Summer Olympics 2016 (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2015-08-01"^^xsd:date ;
+    ns1:hasEnd "2020-06-30"^^xsd:date ;
+    core:slug "2016"^^xsd:string .
+
+<http://www.bbc.co.uk/things/1cc5a7c2-5a33-4cea-9992-61e0f3db6307#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Winter Olympics 2014 (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2013-01-08"^^xsd:date ;
+    ns1:hasEnd "2017-07-31"^^xsd:date ;
+    core:slug "2014"^^xsd:string .
+
+<http://www.bbc.co.uk/things/5938fc14-ec21-429c-8b8f-55b00e8862d4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Commonwealth Games 2014 (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2013-01-08"^^xsd:date ;
+    ns1:hasEnd "2017-07-31"^^xsd:date ;
+    core:slug "2014"^^xsd:string .
+
+<http://www.bbc.co.uk/things/775f2713-1cc0-4dc2-996c-7dde173b7399#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Winter Olympics 2018 (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2017-08-01"^^xsd:date ;
+    ns1:hasEnd "2021-07-31"^^xsd:date ;
+    core:slug "2018"^^xsd:string .
+
+<http://www.bbc.co.uk/things/a030a1b2-9f26-4a90-bc5d-e00c54b69558#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Summer Paralympics 2016 (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2015-08-01"^^xsd:date ;
+    ns1:hasEnd "2020-06-30"^^xsd:date ;
+    core:slug "2016"^^xsd:string .
+
+<http://www.bbc.co.uk/things/c63f963d-1769-4167-84d4-53b3a913ab42#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Commonwealth Games 2018 (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2017-08-01"^^xsd:date ;
+    ns1:hasEnd "2021-07-31"^^xsd:date ;
+    core:slug "2018"^^xsd:string .
+
+<http://www.bbc.co.uk/things/d2d2c195-a349-4819-8ab7-2c62094cb61f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Summer Olympics 2012 (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2012-07-27"^^xsd:date ;
+    ns1:hasEnd "2015-07-31"^^xsd:date ;
+    core:slug "2012"^^xsd:string .
+
+<urn:sports-data:CCGB3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CSOB3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CSPB3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CWOB2> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/ab1c93d1-9e04-4451-96e9-df6eab52b512#id> a core:Thing,
+        sport:MultiDisciplineRecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Paralympics"@en-gb ;
+    cms:locator <urn:sports-data:CSPB3> ;
+    core:disambiguationHint "Summer Paralympics Recurring Competition"@en-gb ;
+    core:preferredLabel "Paralympics"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Summer_Paralympic_Games> ;
+    core:shortLabel "Paralympics"@en-gb ;
+    core:slug "paralympics"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> .
+
+<http://www.bbc.co.uk/things/0d205538-c52e-41c7-a4a1-50efd6c1da59#id> a core:Thing,
+        sport:MultiDisciplineRecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Olympics"@en-gb ;
+    cms:locator <urn:sports-data:CSOB3> ;
+    core:disambiguationHint "Summer Olympics Recurring Competition"@en-gb ;
+    core:preferredLabel "Olympics"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Summer_Olympic_Games> ;
+    core:shortLabel "Olympics"@en-gb ;
+    core:slug "olympics"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/02fb02ee-9e6b-46c3-92e1-db372543facd#id>,
+        <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id>,
+        <http://www.bbc.co.uk/things/126190f0-5bd7-7346-a739-39a80c01ae23#id>,
+        <http://www.bbc.co.uk/things/21c45f67-36da-874e-ab36-02650add8311#id>,
+        <http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id>,
+        <http://www.bbc.co.uk/things/3d556f88-c802-4fcc-9c25-469d2ba7b42a#id>,
+        <http://www.bbc.co.uk/things/3d5e63ec-1f4f-c24c-86ad-fd5d54e014f6#id>,
+        <http://www.bbc.co.uk/things/452019a5-f0f2-0c47-aa11-42fdcf2ae16b#id>,
+        <http://www.bbc.co.uk/things/53accf6c-631b-9140-852a-109fab88d3f8#id>,
+        <http://www.bbc.co.uk/things/5a9bba82-5f5e-f343-9df7-48fc6d6a008e#id>,
+        <http://www.bbc.co.uk/things/654f550c-0c2d-2341-a8f5-66e3a9ba28ba#id>,
+        <http://www.bbc.co.uk/things/69cbc5e2-b228-a143-8085-860c053f44f7#id>,
+        <http://www.bbc.co.uk/things/6b04e406-c181-204b-a2dd-bc20142b9e6a#id>,
+        <http://www.bbc.co.uk/things/7e4ba3a7-909a-473f-b332-95b5ed42c213#id>,
+        <http://www.bbc.co.uk/things/7e517328-5306-49a4-addb-37a94a2be3bb#id>,
+        <http://www.bbc.co.uk/things/921a13d0-6fc6-6740-af87-8af4655ec20f#id>,
+        <http://www.bbc.co.uk/things/a5695e6f-2e4c-1b42-9b11-af0862edbb2a#id>,
+        <http://www.bbc.co.uk/things/b3a086df-ab42-2b44-be8b-76b600bfcdce#id>,
+        <http://www.bbc.co.uk/things/b84fd4d8-b7b5-5b45-9f7a-d701c9f3907f#id>,
+        <http://www.bbc.co.uk/things/b9a58a01-0c74-8b47-972f-68f922ebd90a#id>,
+        <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id>,
+        <http://www.bbc.co.uk/things/bd51d530-f0fb-684e-a305-3f15b7e6d4a1#id>,
+        <http://www.bbc.co.uk/things/c5d39deb-46b8-1e4e-ba2c-5c6e2436b92d#id>,
+        <http://www.bbc.co.uk/things/c6e2a7ac-2d13-8640-9f98-41f749d94a6e#id>,
+        <http://www.bbc.co.uk/things/d65c5dce-f5e4-4340-931b-16ca1848d092#id>,
+        <http://www.bbc.co.uk/things/d9d6cc4d-79f1-ab49-9c9e-c98d166b99fe#id>,
+        <http://www.bbc.co.uk/things/e4d61a41-dba2-7849-a725-d8b445ec3cbc#id>,
+        <http://www.bbc.co.uk/things/e681e822-b849-0243-b698-1b9afe3f3858#id>,
+        <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id>,
+        <http://www.bbc.co.uk/things/eceae071-5f37-0848-acd2-f21e3b2de8ca#id>,
+        <http://www.bbc.co.uk/things/f21d1a82-e919-b24f-b3fb-8f2f46372f40#id> .
+
+<http://www.bbc.co.uk/things/4b26f944-cc1f-4798-8873-e790b88cd842#id> a core:Thing,
+        sport:MultiDisciplineRecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gold Coast 2018"@en-gb ;
+    cms:locator <urn:sports-data:CCGB3> ;
+    core:disambiguationHint "Commonwealth Games Recurring Competition"@en-gb ;
+    core:preferredLabel "Commonwealth Games"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Commonwealth_Games> ;
+    core:shortLabel "Commonwealth Games"@en-gb ;
+    core:slug "commonwealth-games"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/02fb02ee-9e6b-46c3-92e1-db372543facd#id>,
+        <http://www.bbc.co.uk/things/039859a4-51ac-447f-a687-728ee2b34817#id>,
+        <http://www.bbc.co.uk/things/126190f0-5bd7-7346-a739-39a80c01ae23#id>,
+        <http://www.bbc.co.uk/things/21c45f67-36da-874e-ab36-02650add8311#id>,
+        <http://www.bbc.co.uk/things/3d556f88-c802-4fcc-9c25-469d2ba7b42a#id>,
+        <http://www.bbc.co.uk/things/5b95d205-6cff-4cf1-8fc9-475b29e17511#id>,
+        <http://www.bbc.co.uk/things/654f550c-0c2d-2341-a8f5-66e3a9ba28ba#id>,
+        <http://www.bbc.co.uk/things/6b04e406-c181-204b-a2dd-bc20142b9e6a#id>,
+        <http://www.bbc.co.uk/things/7e4ba3a7-909a-473f-b332-95b5ed42c213#id>,
+        <http://www.bbc.co.uk/things/921a13d0-6fc6-6740-af87-8af4655ec20f#id>,
+        <http://www.bbc.co.uk/things/993dde29-b0bf-4ceb-b3b2-ad20faf9c539#id>,
+        <http://www.bbc.co.uk/things/a5695e6f-2e4c-1b42-9b11-af0862edbb2a#id>,
+        <http://www.bbc.co.uk/things/b3a086df-ab42-2b44-be8b-76b600bfcdce#id>,
+        <http://www.bbc.co.uk/things/c5d39deb-46b8-1e4e-ba2c-5c6e2436b92d#id>,
+        <http://www.bbc.co.uk/things/d9d6cc4d-79f1-ab49-9c9e-c98d166b99fe#id>,
+        <http://www.bbc.co.uk/things/e681e822-b849-0243-b698-1b9afe3f3858#id>,
+        <http://www.bbc.co.uk/things/eceae071-5f37-0848-acd2-f21e3b2de8ca#id>,
+        <http://www.bbc.co.uk/things/f21d1a82-e919-b24f-b3fb-8f2f46372f40#id> .
+
+<http://www.bbc.co.uk/things/8ffc564e-5a37-4f6b-bcec-01124da58681#id> a core:Thing,
+        sport:MultiDisciplineRecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Winter Olympics"@en-gb ;
+    cms:locator <urn:sports-data:CWOB2> ;
+    core:disambiguationHint "Winter Olympics Recurring Competition"@en-gb ;
+    core:preferredLabel "Winter Olympics"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Winter_Olympic_Games> ;
+    core:shortLabel "Winter Olympics"@en-gb ;
+    core:slug "winter-olympics"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id>,
+        <http://www.bbc.co.uk/things/485f8f94-f87e-4513-b133-46a5dfccd428#id>,
+        <http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id>,
+        <http://www.bbc.co.uk/things/521df978-7583-4e19-ad6d-2a83a595a8a6#id>,
+        <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id>,
+        <http://www.bbc.co.uk/things/8fdc4c32-3d0c-4814-9d69-3bf1269135df#id>,
+        <http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id>,
+        <http://www.bbc.co.uk/things/a7b083b7-0d8b-45d8-9f09-54e6432dacb5#id>,
+        <http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id>,
+        <http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id>,
+        <http://www.bbc.co.uk/things/d06b1e90-c9fe-4e09-9b4a-e0f285da8920#id>,
+        <http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id>,
+        <http://www.bbc.co.uk/things/dd4191d5-115d-46b9-8f18-d1da16c6a3e8#id>,
+        <http://www.bbc.co.uk/things/fe11a0ff-a7c0-45eb-a9e0-708dddf9bc7d#id>,
+        <http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> .
+

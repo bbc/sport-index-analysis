@@ -1,0 +1,662 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/ed1b7790-334b-4aa3-b2f6-ae3819d97d66#id> a provenance:Dataset ;
+    rdfs:label "Football: European French Domestic Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-french-football-teams.ttl" ;
+    provenance:changeReason "SWD-821: Model 2019/20 European domestic football - UEFA club comps" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-06-06T11:30:29+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "8"^^xsd:int .
+
+<http://www.bbc.co.uk/things/08917b83-e64f-4d3b-a475-c3a8399c0e67#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Nice"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1395> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Nice"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/nice> ;
+    core:sameAs <http://dbpedia.org/resource/OGC_Nice> ;
+    core:shortLabel "Nice"@en-gb ;
+    core:slug "nice"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/31b669ff-ade5-452a-bbd4-3ed7e1f6f88b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Marseille"@en-gb ;
+    cms:locator <urn:sports-data:TFBB144> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Marseille"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/marseille> ;
+    core:sameAs <http://dbpedia.org/resource/Olympique_de_Marseille> ;
+    core:shortLabel "Marseille"@en-gb ;
+    core:slug "marseille"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/42cbc042-1d58-4a46-840a-93137ddc9bf1#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Troyes"@en-gb ;
+    cms:locator <urn:sports-data:TFBB154> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Troyes"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/troyes> ;
+    core:sameAs <http://dbpedia.org/resource/Troyes_AC> ;
+    core:shortLabel "Troyes"@en-gb ;
+    core:slug "troyes"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4b1d3a19-5e03-43b2-b153-3f58833d8451#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Rennes"@en-gb ;
+    cms:locator <urn:sports-data:TFBB150> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Rennes"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/rennes> ;
+    core:sameAs <http://dbpedia.org/resource/Stade_Rennais_F.C.> ;
+    core:shortLabel "Rennes"@en-gb ;
+    core:slug "rennes"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id>,
+        <http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/53021f89-0399-47b0-a355-c81f24677a63#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bastia"@en-gb ;
+    cms:locator <urn:sports-data:TFBB139> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Bastia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/bastia> ;
+    core:sameAs <http://dbpedia.org/resource/SC_Bastia> ;
+    core:shortLabel "Bastia"@en-gb ;
+    core:slug "bastia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/54afd548-7f72-440c-95b0-2534b5685769#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Nancy"@en-gb ;
+    cms:locator <urn:sports-data:TFBB148> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Nancy"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/nancy> ;
+    core:sameAs <http://dbpedia.org/resource/AS_Nancy> ;
+    core:shortLabel "Nancy"@en-gb ;
+    core:slug "nancy"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/56c824a4-4fa1-42bf-b787-7b9866c45fef#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Lorient"@en-gb ;
+    cms:locator <urn:sports-data:TFBB694> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Lorient"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/lorient> ;
+    core:sameAs <http://dbpedia.org/resource/FC_Lorient> ;
+    core:shortLabel "Lorient"@en-gb ;
+    core:slug "lorient"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5b2fa9c7-fdd8-4c4e-82cf-ef27f83a0506#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Dijon"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2130> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Dijon"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/dijon> ;
+    core:sameAs <http://dbpedia.org/resource/Dijon_FCO> ;
+    core:shortLabel "Dijon"@en-gb ;
+    core:slug "dijon"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/76fe976d-dc70-4f4f-8efc-37db9765e982#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Angers"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2128> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Angers"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/angers> ;
+    core:sameAs <http://dbpedia.org/resource/Angers_SCO> ;
+    core:shortLabel "Angers"@en-gb ;
+    core:slug "angers"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7db03a51-1abd-406d-8356-5b37434eb9e8#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Metz"@en-gb ;
+    cms:locator <urn:sports-data:TFBB145> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Metz"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/metz> ;
+    core:sameAs <http://dbpedia.org/resource/FC_Metz> ;
+    core:shortLabel "Metz"@en-gb ;
+    core:slug "metz"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7e3205d0-7d76-40f1-8039-21b477a1edaa#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Nîmes"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2336> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Nîmes"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/nimes> ;
+    core:sameAs <http://dbpedia.org/resource/Nîmes_Olympique> ;
+    core:shortLabel "Nîmes"@en-gb ;
+    core:slug "nimes"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8009d1c1-e823-432e-ba5d-41b5db44ec58#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Reims"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1423> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Reims"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/reims> ;
+    core:sameAs <http://dbpedia.org/resource/Stade_de_Reims> ;
+    core:shortLabel "Reims"@en-gb ;
+    core:slug "reims"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8ef0bba5-fc49-4e7e-9ee3-1dd9e3672824#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Lille"@en-gb ;
+    sal:videCode "LILL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB429> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Lille"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/lille> ;
+    core:sameAs <http://dbpedia.org/resource/Lille_OSC>,
+        <http://rdf.freebase.com/ns/m.03x746>,
+        <http://www.wikidata.org/entity/Q19516> ;
+    core:shortLabel "Lille"@en-gb ;
+    core:slug "lille"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/994fd859-a1f9-496b-9c63-da968d7cae53#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Brest"@en-gb ;
+    cms:locator <urn:sports-data:TFBB862> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Brest"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/brest> ;
+    core:sameAs <http://dbpedia.org/resource/Stade_Brestois_29> ;
+    core:shortLabel "Brest"@en-gb ;
+    core:slug "brest"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a59b1408-794a-4676-b5c2-5390d6ce8b10#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Caen"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1028> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Caen"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/caen> ;
+    core:sameAs <http://dbpedia.org/resource/Stade_Malherbe_Caen> ;
+    core:shortLabel "Caen"@en-gb ;
+    core:slug "caen"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a99bdb90-fee7-4670-a267-7509fd896ace#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Amiens"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1430> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Amiens"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/amiens> ;
+    core:sameAs <http://dbpedia.org/resource/Amiens_SC> ;
+    core:shortLabel "Amiens"@en-gb ;
+    core:slug "amiens"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/aea2272e-c26d-481f-bd59-614d7c8053d2#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Lyon"@en-gb ;
+    sal:videCode "LYON"@en-gb ;
+    cms:locator <urn:sports-data:TFBB143> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Lyon"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/lyon> ;
+    core:sameAs <http://dbpedia.org/resource/Olympique_Lyonnais>,
+        <http://rdf.freebase.com/ns/m.03w7kx>,
+        <http://www.wikidata.org/entity/Q704> ;
+    core:shortLabel "Lyon"@en-gb ;
+    core:slug "lyon"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/4a64b2de-a14e-4098-98a4-b60e0bed7d31#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b3f48321-d045-448c-ab44-a8facc4cf8e3#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Toulouse"@en-gb ;
+    cms:locator <urn:sports-data:TFBB427> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Toulouse"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/toulouse> ;
+    core:sameAs <http://dbpedia.org/resource/Toulouse_FC> ;
+    core:shortLabel "Toulouse"@en-gb ;
+    core:slug "toulouse"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b6f551ab-5c37-44b2-b001-ba73285cc958#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Monaco"@en-gb ;
+    sal:videCode "MONA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB146> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Monaco"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/monaco> ;
+    core:sameAs <http://dbpedia.org/resource/AS_Monaco_FC>,
+        <http://rdf.freebase.com/ns/m.01gjlw>,
+        <http://www.wikidata.org/entity/Q180305> ;
+    core:shortLabel "Monaco"@en-gb ;
+    core:slug "monaco"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id>,
+        <http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d1b57dca-f093-45e1-979a-16c14e61012d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Strasbourg"@en-gb ;
+    cms:locator <urn:sports-data:TFBB153> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Strasbourg"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/strasbourg> ;
+    core:sameAs <http://dbpedia.org/resource/RC_Strasbourg_Alsace> ;
+    core:shortLabel "Strasbourg"@en-gb ;
+    core:slug "strasbourg"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d2a528cd-562f-4e95-bb71-6abd02825237#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Guingamp"@en-gb ;
+    cms:locator <urn:sports-data:TFBB428> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Guingamp"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/guingamp> ;
+    core:sameAs <http://dbpedia.org/resource/Guingamp> ;
+    core:shortLabel "Guingamp"@en-gb ;
+    core:slug "guingamp"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d4e4d631-52b4-4354-ad10-2741fb31c8a6#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Saint-Étienne"@en-gb ;
+    cms:locator <urn:sports-data:TFBB152> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Saint-Étienne"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/st-etienne> ;
+    core:sameAs <http://dbpedia.org/resource/AS_Saint-Étienne> ;
+    core:shortLabel "Saint-Étienne"@en-gb ;
+    core:slug "st-etienne"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id>,
+        <http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/da152cb0-5edd-4d9a-824a-c32e4ebd923b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Paris Saint Germain"@en-gb ;
+    sal:videCode "PSGM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB149> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Paris Saint Germain"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/paris-st-germain> ;
+    core:sameAs <http://dbpedia.org/resource/Paris_Saint-Germain_F.C.>,
+        <http://rdf.freebase.com/ns/m.01_1kk>,
+        <http://www.wikidata.org/entity/Q483020> ;
+    core:shortLabel "PSG"@en-gb ;
+    core:slug "paris-st-germain"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id>,
+        <http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e21f75b3-7485-4a86-a8fe-5091e1aac64f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bordeaux"@en-gb ;
+    cms:locator <urn:sports-data:TFBB140> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Bordeaux"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/bordeaux> ;
+    core:sameAs <http://dbpedia.org/resource/FC_Girondins_de_Bordeaux>,
+        <http://rdf.freebase.com/ns/m.04991x>,
+        <http://www.wikidata.org/entity/Q172476> ;
+    core:shortLabel "Bordeaux"@en-gb ;
+    core:slug "bordeaux"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/eb4c21db-f9a8-444f-882d-f7d82d422adb#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Nantes"@en-gb ;
+    cms:locator <urn:sports-data:TFBB430> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Nantes"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/nantes> ;
+    core:sameAs <http://dbpedia.org/resource/FC_Nantes> ;
+    core:shortLabel "Nantes"@en-gb ;
+    core:slug "nantes"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/fd600554-c07d-407d-b755-8e582e7095c6#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Montpellier"@en-gb ;
+    sal:videCode "MONT"@en-gb ;
+    cms:locator <urn:sports-data:TFBB147> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Montpellier"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/montpellier> ;
+    core:sameAs <http://dbpedia.org/resource/Montpellier_HSC>,
+        <http://rdf.freebase.com/ns/m.05jx2d>,
+        <http://www.wikidata.org/entity/Q19513> ;
+    core:shortLabel "Montpellier"@en-gb ;
+    core:slug "montpellier"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id>,
+        <http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id>,
+        <http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id>,
+        <http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/sport/football/teams/amiens> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/angers> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/bastia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/bordeaux> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/brest> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/caen> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/dijon> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/guingamp> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/lille> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/lorient> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/lyon> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/marseille> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/metz> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/monaco> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/montpellier> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/nancy> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/nantes> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/nice> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/nimes> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/paris-st-germain> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/reims> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/rennes> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/st-etienne> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/strasbourg> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/toulouse> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/troyes> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<urn:sports-data:TFBB1028> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB139> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1395> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB140> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1423> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB143> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1430> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB144> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB145> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB146> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB147> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB148> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB149> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB150> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB152> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB153> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB154> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2128> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2130> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2336> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB427> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB428> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB429> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB430> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB694> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB862> a cms:Sports-DataLocator .
+

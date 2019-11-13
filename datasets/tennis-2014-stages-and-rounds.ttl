@@ -1,0 +1,55 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/46772b98-fa40-4e53-9e35-da02fcfb9e87#id> a provenance:Dataset ;
+    rdfs:label "Tennis: 2014 Tennis Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/tennis/tennis-2014-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-2544: split tennis-YYYY-stages and rounds." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-07-04T10:46:31+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d62c11cb-5322-4365-9412-b39c6880710c#id> sport:firstStage <http://www.bbc.co.uk/things/0fb9ca70-4041-44b7-9ddf-8462f8b938ab#id> .
+
+<http://www.bbc.co.uk/things/0fb9ca70-4041-44b7-9ddf-8462f8b938ab#id> a sport:KnockoutCompetition ;
+    rdfs:label "Mens Singles for Wimbledon 2014"@en-gb ;
+    sal:name "Mens Singles"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402014S1> ;
+    core:preferredLabel "Mens Singles"@en-gb ;
+    core:shortLabel "Mens Singles"@en-gb ;
+    core:slug "mens-singles"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/552a2184-c9c0-409e-a846-dc7cb81192a7#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/552a2184-c9c0-409e-a846-dc7cb81192a7#id> a sport:Round ;
+    rdfs:label "Round 1 of Mens Singles for Wimbledon 2014"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CTEI5402014S1R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CTEI5402014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI5402014S1R1> a cms:Sports-DataLocator .
+

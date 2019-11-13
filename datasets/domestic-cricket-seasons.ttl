@@ -1,0 +1,577 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix ns2: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/37fc496d-b8de-4339-a932-67243b48a456#id> a provenance:Dataset ;
+    rdfs:label "Cricket: Domestic Seasons" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/cricket/domestic-cricket-seasons.ttl" ;
+    provenance:changeReason "SWD-752: Create 2019 cricket season modelling" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-05-09T14:29:52+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "35"^^xsd:int .
+
+<http://www.bbc.co.uk/things/04d50a0f-aa8c-421c-aa48-0873b9a5a297#id> a sport:Competition ;
+    rdfs:label "Women's Cricket Super League 2016 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7a06fabe-0062-45b9-9eb8-d60efd7129a8#id> ;
+    sal:name "Women's Super League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/cc0953f6-1ea2-49ad-bcc9-00987acf33f9#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/cc0953f6-1ea2-49ad-bcc9-00987acf33f9#id> .
+
+<http://www.bbc.co.uk/things/0dd2e2ce-7640-48c5-9ed3-8f8f6ee81582#id> a sport:Competition ;
+    rdfs:label "Cricket One Day Cup 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/5ce54b4f-cbdb-4da8-a712-e9d3848de48a#id> ;
+    sal:name "Royal London One-Day Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> .
+
+<http://www.bbc.co.uk/things/17daed3b-fb19-4e1d-b0ad-7380d6e4e49f#id> a sport:Competition ;
+    rdfs:label "Cricket Australian Sheffield Shield 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/43195ff0-30b4-40d2-8aa7-8cfcfc462030#id> ;
+    sal:name "Cricket Australian Sheffield Shield"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/d761cbde-6b4f-4d3e-b7f7-dbe9a9922c69#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d761cbde-6b4f-4d3e-b7f7-dbe9a9922c69#id> .
+
+<http://www.bbc.co.uk/things/2c154c8f-a5ff-4795-a108-9cba89e6f441#id> a sport:Competition ;
+    rdfs:label "Cricket English Twenty20 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/5ce54b4f-cbdb-4da8-a712-e9d3848de48a#id> ;
+    sal:name "NatWest T20 Blast"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> .
+
+<http://www.bbc.co.uk/things/2f7f649e-23ce-463e-913f-caee578de829#id> a sport:Competition ;
+    rdfs:label "Women's Cricket Super League 2018 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/f35935b2-7e84-42c6-8a28-3e26036975fc#id> ;
+    sal:name "Women's Super League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/cc0953f6-1ea2-49ad-bcc9-00987acf33f9#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/cc0953f6-1ea2-49ad-bcc9-00987acf33f9#id> .
+
+<http://www.bbc.co.uk/things/2f9e1603-923a-40dd-9fa9-3c764cb86952#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division One 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/5ce54b4f-cbdb-4da8-a712-e9d3848de48a#id> ;
+    sal:name "Specsavers County Championship - Division One"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> .
+
+<http://www.bbc.co.uk/things/32c3f7d0-1356-4e4a-b067-cddf76c7602d#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division Two 2016 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/077b9857-56c6-4151-83c4-d03754e82683#id> ;
+    sal:name "Specsavers County Championship - Division Two"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> .
+
+<http://www.bbc.co.uk/things/338aecba-5d20-4071-a96d-e5b049bba8a1#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division One 2015 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/ff73f37c-0d2e-430f-925e-e6c302a31e95#id> ;
+    sal:name "LV County Championship - Division One"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> .
+
+<http://www.bbc.co.uk/things/3580ca92-7f52-4a75-9b15-d9f882c18ff5#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division Two 2018 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/e4c02fa1-273c-4620-ac4b-e490675471ee#id> ;
+    sal:name "Specsavers County Championship - Division Two"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> .
+
+<http://www.bbc.co.uk/things/3c172598-9113-4569-9ee5-e26cce07b404#id> a sport:Competition ;
+    rdfs:label "Cricket Australian Big Bash League 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/58129387-c362-4d5e-b629-3a06cc47e2c1#id> ;
+    sal:name "Cricket Australian Big Bash League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/0f9d28de-a9f2-402c-9e9d-4778244cf9d3#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0f9d28de-a9f2-402c-9e9d-4778244cf9d3#id> .
+
+<http://www.bbc.co.uk/things/4229fc02-0ea1-43ec-8da8-3b03faf8ac2c#id> a sport:Competition ;
+    rdfs:label "Cricket One Day Cup 2018 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/e4c02fa1-273c-4620-ac4b-e490675471ee#id> ;
+    sal:name "Royal London One-Day Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> .
+
+<http://www.bbc.co.uk/things/42cda32d-0ecb-491b-a4e4-dd812bb9128f#id> a sport:Competition ;
+    rdfs:label "Cricket Indian Premier League 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/342d9196-e450-45ea-9931-58ce516f5cfc#id> ;
+    sal:name "Cricket Indian Premier League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/50c110b3-9efb-415f-9747-c54aa643cf2a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/50c110b3-9efb-415f-9747-c54aa643cf2a#id> .
+
+<http://www.bbc.co.uk/things/4f23862c-5812-4408-9187-bec01441522a#id> a sport:Competition ;
+    rdfs:label "Cricket Varsity Matches 2015 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/ade8f446-a53d-4e22-bdcf-dbacf095abd6#id> ;
+    sal:name "Varsity Matches 2015 Season"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/253f82a5-0550-482e-8a98-10bdd0b10193#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/253f82a5-0550-482e-8a98-10bdd0b10193#id> .
+
+<http://www.bbc.co.uk/things/53aa2c11-13f6-44c6-939e-6f5d0271a2ce#id> a sport:Competition ;
+    rdfs:label "Cricket One Day Cup 2019 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/3a723224-6fdf-4dcc-93df-5fc643182f18#id> ;
+    sal:name "Royal London One-Day Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> .
+
+<http://www.bbc.co.uk/things/5b519b6b-69c0-41bc-9291-84f7f5d205b9#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division Two 2019 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/3a723224-6fdf-4dcc-93df-5fc643182f18#id> ;
+    sal:name "Specsavers County Championship - Division Two"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> .
+
+<http://www.bbc.co.uk/things/5bc996ce-b588-43ab-acd6-240e8475f2aa#id> a sport:Competition ;
+    rdfs:label "MCC-Hosted Tour Match 2014 (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/7d58d259-2148-4a8a-a73b-72dea22730a5#id> ;
+    sal:name "MCC-Hosted Tour Match"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/14beaae1-8e1a-4220-8b94-59eae5253cc8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/14beaae1-8e1a-4220-8b94-59eae5253cc8#id> .
+
+<http://www.bbc.co.uk/things/5e14968a-5288-4b2b-b09e-2c57d141d191#id> a sport:Competition ;
+    rdfs:label "Cricket Australian Women's Big Bash League 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/506e0693-ed06-4077-9ab7-1dfe3a3af30f#id> ;
+    sal:name "Cricket Australian Women's Big Bash League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/36acf200-3f63-44c8-830f-809849ab0e54#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/36acf200-3f63-44c8-830f-809849ab0e54#id> .
+
+<http://www.bbc.co.uk/things/67c77901-5918-4172-803c-405be183c450#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division One 2014 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/4899e2ec-c4f7-426a-bda6-9af4328e5b77#id> ;
+    sal:name "LV County Championship - Division One"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> .
+
+<http://www.bbc.co.uk/things/696a1645-9efa-46c4-8a3e-7a35ecb18912#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division One 2018 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/e4c02fa1-273c-4620-ac4b-e490675471ee#id> ;
+    sal:name "Specsavers County Championship - Division One"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> .
+
+<http://www.bbc.co.uk/things/765f3449-0502-4578-a36f-a2d719cebe0a#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division Two 2014 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/e62c3b8b-120c-4146-8559-9df86ee07529#id> ;
+    sal:name "LV County Championship - Division Two"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> .
+
+<http://www.bbc.co.uk/things/7c8f0da2-0060-4da7-ab5a-2294608601fa#id> a sport:Competition ;
+    rdfs:label "Cricket Pakistan Super League 2018 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/6d0d0ff8-1617-4a56-b23b-cd9abc75c73a#id> ;
+    sal:name "Cricket Pakistan Super League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/45c0c9d5-06ca-4cf2-8a29-7d1cde62321a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/45c0c9d5-06ca-4cf2-8a29-7d1cde62321a#id> .
+
+<http://www.bbc.co.uk/things/801c7f29-abdf-46f4-98bd-4b98d75df0c0#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division Two 2011/13 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/e744a2f3-ab4f-4344-9d2c-bce9a0f60a68#id> ;
+    sal:name "LV County Championship - Division Two"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> .
+
+<http://www.bbc.co.uk/things/82ef6a7c-d3eb-4ccb-b4d3-6dd639dfb100#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division Two 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/5ce54b4f-cbdb-4da8-a712-e9d3848de48a#id> ;
+    sal:name "Specsavers County Championship - Division Two"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> .
+
+<http://www.bbc.co.uk/things/83189fdd-7321-4471-9f2d-1e25ecf05cfe#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division One 2019 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/3a723224-6fdf-4dcc-93df-5fc643182f18#id> ;
+    sal:name "Specsavers County Championship - Division One"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> .
+
+<http://www.bbc.co.uk/things/83dd9293-ec99-40c3-bbef-2511a6a64f63#id> a sport:Competition ;
+    rdfs:label "Cricket New Zealand One-Day Cup 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/a26f40a5-8a7a-4410-9d61-4f4260ee0761#id> ;
+    sal:name "Cricket New Zealand One-Day Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/70409871-e1b9-41d2-888e-fe6c675cb6f7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/70409871-e1b9-41d2-888e-fe6c675cb6f7#id> .
+
+<http://www.bbc.co.uk/things/91781fa3-d009-43bb-af66-7c07da69278e#id> a sport:Competition ;
+    rdfs:label "Cricket English Twenty20 2019 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/3a723224-6fdf-4dcc-93df-5fc643182f18#id> ;
+    sal:name "NatWest T20 Blast"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> .
+
+<http://www.bbc.co.uk/things/96806cfc-1a16-480f-ad27-7cae824abe73#id> a sport:Competition ;
+    rdfs:label "MCC-Hosted Tour Match 2015 (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/cdcc96ed-9afb-4e77-bf56-b757a911b6fb#id> ;
+    sal:name "MCC-Hosted Tour Match"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/14beaae1-8e1a-4220-8b94-59eae5253cc8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/14beaae1-8e1a-4220-8b94-59eae5253cc8#id> .
+
+<http://www.bbc.co.uk/things/9b3cd7d9-e63e-460f-864d-d87719edfef8#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division One 2011/13 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/998f4e45-e774-4f1a-8ce2-f47339c81a07#id> ;
+    sal:name "LV County Championship - Division One"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> .
+
+<http://www.bbc.co.uk/things/a03f828d-a274-4a9d-9e24-a4309b0409b1#id> a sport:Competition ;
+    rdfs:label "Cricket One Day Cup 2015 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/ffe0d5ec-d31a-40cb-8de7-b1d2faed7542#id> ;
+    sal:name "Royal London One-Day Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> .
+
+<http://www.bbc.co.uk/things/a1ae47d3-3fa6-427c-9824-013de80c5093#id> a sport:Competition ;
+    rdfs:label "MCC University Match 2015 (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/b2e897c8-4c9f-49fc-ac61-15f1ce740a7c#id> ;
+    sal:name "MCC University Match"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/6f3be55a-8b72-4e28-ae32-0804689229b7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/6f3be55a-8b72-4e28-ae32-0804689229b7#id> .
+
+<http://www.bbc.co.uk/things/a7c0c7a5-3e02-466d-ae3d-c11bd4c2077e#id> a sport:Competition ;
+    rdfs:label "Cricket English Twenty20 2018 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/e4c02fa1-273c-4620-ac4b-e490675471ee#id> ;
+    sal:name "NatWest T20 Blast"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> .
+
+<http://www.bbc.co.uk/things/aa0c5eea-bad7-4770-b595-82bc42b5d2ac#id> a sport:Competition ;
+    rdfs:label "Women's Cricket Super League 2019 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/18dc0b88-c705-4117-b512-9f4aead7edd3#id> ;
+    sal:name "Women's Super League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/cc0953f6-1ea2-49ad-bcc9-00987acf33f9#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/cc0953f6-1ea2-49ad-bcc9-00987acf33f9#id> .
+
+<http://www.bbc.co.uk/things/aa2af370-2280-4d45-8273-d8fc59015899#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division One 2016 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/65a1e2be-1097-4474-b3c2-86a1824bd020#id> ;
+    sal:name "Specsavers County Championship - Division One"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c102994e-db33-45f2-9e93-cb01a648ad5e#id> .
+
+<http://www.bbc.co.uk/things/af5aae83-ad7d-49b8-afe7-af1fde28fbee#id> a sport:Competition ;
+    rdfs:label "Cricket T20 2014 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/9c6f03e1-d897-4feb-b52d-e647e10bbd08#id> ;
+    sal:name "NatWest T20 Blast"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> .
+
+<http://www.bbc.co.uk/things/b405bb94-54ac-452f-975f-6e596df369ed#id> a sport:Competition ;
+    rdfs:label "Cricket Indian Premier League 2018 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/7d8c023b-d012-4cce-a28d-144657389ac6#id> ;
+    sal:name "Cricket Indian Premier League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/50c110b3-9efb-415f-9747-c54aa643cf2a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/50c110b3-9efb-415f-9747-c54aa643cf2a#id> .
+
+<http://www.bbc.co.uk/things/b6a0e667-4708-45ec-a8f2-5e29f646c3be#id> a sport:Competition ;
+    rdfs:label "Cricket New Zealand Twenty20 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/486e9167-ac5c-4936-a4d4-b58e29f9502a#id> ;
+    sal:name "Cricket New Zealand Twenty20"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/ed00d0e8-b510-4fab-b644-8f1dc2848d94#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ed00d0e8-b510-4fab-b644-8f1dc2848d94#id> .
+
+<http://www.bbc.co.uk/things/d516c977-cba1-46a2-b659-16b4f3498160#id> a sport:Competition ;
+    rdfs:label "Cricket English MCC University Matches 2015 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/34d71201-18b3-4fde-8974-50d8694c018a#id> ;
+    sal:name "English MCC University Matches 2015 Season"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/59709ea9-a9f5-4af6-adc9-e631630e5238#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/59709ea9-a9f5-4af6-adc9-e631630e5238#id> .
+
+<http://www.bbc.co.uk/things/d8696be4-f02c-4458-89d0-bdaa4ade8a78#id> a sport:Competition ;
+    rdfs:label "Cricket County Championship - Division Two 2015 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/c4b0d0e7-48e6-4905-9b6d-326fc1f00591#id> ;
+    sal:name "LV County Championship - Division Two"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d4bb2987-8946-43e7-abc7-ded0708c8b67#id> .
+
+<http://www.bbc.co.uk/things/d8908f1a-5aee-45f9-bcc1-c147aa09ea18#id> a sport:Competition ;
+    rdfs:label "Cricket Australian One-Day Cup 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/a56b8c69-9691-47ee-b07c-1083bf36f5eb#id> ;
+    sal:name "Cricket Australian One-Day Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/859b6986-5a83-41c8-ac11-2c282c634c34#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/859b6986-5a83-41c8-ac11-2c282c634c34#id> .
+
+<http://www.bbc.co.uk/things/da74ecfc-6b9a-4d7a-b064-5cb057be7008#id> a sport:Competition ;
+    rdfs:label "Cricket Pakistan Super League 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/5ce54b4f-cbdb-4da8-a712-e9d3848de48a#id> ;
+    sal:name "Cricket Pakistan Super League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/45c0c9d5-06ca-4cf2-8a29-7d1cde62321a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/45c0c9d5-06ca-4cf2-8a29-7d1cde62321a#id> .
+
+<http://www.bbc.co.uk/things/de017b13-48ff-4fc5-96b3-ca17d8c19308#id> a sport:Competition ;
+    rdfs:label "Cricket New Zealand Plunket Shield 2017 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/ee499c88-2c88-4025-a20e-ddf390faf6b6#id> ;
+    sal:name "Cricket New Zealand Plunket Shield"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/b7e09c1f-ae70-48d4-b1ed-931c9431212a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b7e09c1f-ae70-48d4-b1ed-931c9431212a#id> .
+
+<http://www.bbc.co.uk/things/df730b2c-17ed-4514-b23b-69174a2ac94c#id> a sport:Competition ;
+    rdfs:label "Cricket One Day Cup 2016 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/ab70f43c-944f-4991-8229-adf1e982b153#id> ;
+    sal:name "Royal London One-Day Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> .
+
+<http://www.bbc.co.uk/things/e0b08059-f89f-4707-8900-d8d2940e2533#id> a sport:Competition ;
+    rdfs:label "Cricket Caribbean Premier League 2018 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/70d3b6ac-0766-4419-b253-06244b1037a8#id> ;
+    sal:name "Cricket Caribbean Premier League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/a07ec582-bbe9-4f62-be5f-5b99ccefa4b9#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/a07ec582-bbe9-4f62-be5f-5b99ccefa4b9#id> .
+
+<http://www.bbc.co.uk/things/e4a69b49-15ef-4e1e-b89e-72538a423b6d#id> a sport:Competition ;
+    rdfs:label "Cricket One Day Cup 2011/13 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/cb70592d-17d1-44f7-8b50-4b23232eab75#id> ;
+    sal:name "Royal London One-Day Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> .
+
+<http://www.bbc.co.uk/things/e602cbcc-611c-45b3-a2be-3e7d4cb9ab05#id> a sport:Competition ;
+    rdfs:label "Cricket One Day Cup 2014 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/53299e71-a294-4df2-a55e-0e8f8f392bcc#id> ;
+    sal:name "Royal London One-Day Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2de1ce91-fca2-494b-8c00-fa94df03fba7#id> .
+
+<http://www.bbc.co.uk/things/e8273d24-0016-44b0-814d-06bde1f1ca71#id> a sport:Competition ;
+    rdfs:label "Cricket English Domestic Other Matches 2015 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/c0e2f9d2-1f93-44c6-86b7-e7d2466f507f#id> ;
+    sal:name "English Domestic Other Matches 2015 Season"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/bfce4326-d893-47ab-a2cb-9b9b6e83b115#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bfce4326-d893-47ab-a2cb-9b9b6e83b115#id> .
+
+<http://www.bbc.co.uk/things/ef4bb640-221c-49da-9197-ffbdc8892c7e#id> a sport:Competition ;
+    rdfs:label "MCC University Match 2014 (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/5a85714e-27f4-49ac-bad1-e8872405b77c#id> ;
+    sal:name "MCC University Match"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/6f3be55a-8b72-4e28-ae32-0804689229b7#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/6f3be55a-8b72-4e28-ae32-0804689229b7#id> .
+
+<http://www.bbc.co.uk/things/f03253bd-9be1-4631-861a-02ebfaa16f0b#id> a sport:Competition ;
+    rdfs:label "Cricket T20 2011/13 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/d2212ea0-0165-48a5-a04e-df59dd694bdc#id> ;
+    sal:name "NatWest T20 Blast"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> .
+
+<http://www.bbc.co.uk/things/f3585410-d9b3-4be1-9842-6ec10dc50e60#id> a sport:Competition ;
+    rdfs:label "Cricket T20 2015 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/96c81136-05c0-4d89-8679-00b518e3c90b#id> ;
+    sal:name "NatWest T20 Blast"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> .
+
+<http://www.bbc.co.uk/things/f80844ec-7d93-4e6e-a493-0d0637c78a75#id> a sport:Competition ;
+    rdfs:label "Cricket English Twenty20 2016 Season (Competition)" ;
+    ns2:time <http://www.bbc.co.uk/things/ab70f43c-944f-4991-8229-adf1e982b153#id> ;
+    sal:name "NatWest T20 Blast"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/10467085-fe14-478a-9063-1ae0d6c0e229#id> .
+
+<http://www.bbc.co.uk/things/077b9857-56c6-4151-83c4-d03754e82683#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket County Championship - Division Two 2016 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2016-04-10"^^xsd:date ;
+    ns3:hasEnd "2017-03-09"^^xsd:date .
+
+<http://www.bbc.co.uk/things/18dc0b88-c705-4117-b512-9f4aead7edd3#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Super League 2019 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2019-04-01"^^xsd:date ;
+    ns3:hasEnd "2020-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/342d9196-e450-45ea-9931-58ce516f5cfc#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Indian Premier League 2017 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2017-04-01"^^xsd:date ;
+    ns3:hasEnd "2018-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/34d71201-18b3-4fde-8974-50d8694c018a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "English MCC University Matches 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/43195ff0-30b4-40d2-8aa7-8cfcfc462030#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Australian Sheffield Shield 2017 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2017-10-01"^^xsd:date ;
+    ns3:hasEnd "2018-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/486e9167-ac5c-4936-a4d4-b58e29f9502a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "New Zealand Twenty20 2017 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2017-12-01"^^xsd:date ;
+    ns3:hasEnd "2018-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4899e2ec-c4f7-426a-bda6-9af4328e5b77#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket County Championship - Division One 2014 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/506e0693-ed06-4077-9ab7-1dfe3a3af30f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Australian Women's Big Bash League 2017 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2017-12-01"^^xsd:date ;
+    ns3:hasEnd "2018-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/53299e71-a294-4df2-a55e-0e8f8f392bcc#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket One Day Cup 2014 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/58129387-c362-4d5e-b629-3a06cc47e2c1#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Australian Big Bash League 2017 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2017-12-01"^^xsd:date ;
+    ns3:hasEnd "2018-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5a85714e-27f4-49ac-bad1-e8872405b77c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "MCC University Match 2014 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/65a1e2be-1097-4474-b3c2-86a1824bd020#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket County Championship - Division One 2016 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2016-04-10"^^xsd:date ;
+    ns3:hasEnd "2017-03-09"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6d0d0ff8-1617-4a56-b23b-cd9abc75c73a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Pakistan Super League 2018 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2018-02-01"^^xsd:date ;
+    ns3:hasEnd "2019-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/70d3b6ac-0766-4419-b253-06244b1037a8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Caribbean Premier League 2018 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2018-08-01"^^xsd:date ;
+    ns3:hasEnd "2019-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7a06fabe-0062-45b9-9eb8-d60efd7129a8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Super League 2016 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2016-04-01"^^xsd:date ;
+    ns3:hasEnd "2017-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7d58d259-2148-4a8a-a73b-72dea22730a5#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "MCC-Hosted Tour Match 2014 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7d8c023b-d012-4cce-a28d-144657389ac6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Indian Premier League 2018 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2018-04-01"^^xsd:date ;
+    ns3:hasEnd "2019-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/96c81136-05c0-4d89-8679-00b518e3c90b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket T20 2015 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2015-04-10"^^xsd:date ;
+    ns3:hasEnd "2016-04-09"^^xsd:date .
+
+<http://www.bbc.co.uk/things/998f4e45-e774-4f1a-8ce2-f47339c81a07#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket County Championship - Division One 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-06-17"^^xsd:date ;
+    ns3:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/9c6f03e1-d897-4feb-b52d-e647e10bbd08#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket T20 2014 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a26f40a5-8a7a-4410-9d61-4f4260ee0761#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "New Zealand One-Day Cup 2017 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2017-12-01"^^xsd:date ;
+    ns3:hasEnd "2018-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a56b8c69-9691-47ee-b07c-1083bf36f5eb#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Australian One-Day Cup 2017 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2017-09-01"^^xsd:date ;
+    ns3:hasEnd "2018-08-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ade8f446-a53d-4e22-bdcf-dbacf095abd6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Varsity Matches 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b2e897c8-4c9f-49fc-ac61-15f1ce740a7c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "MCC University Match 2015 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c0e2f9d2-1f93-44c6-86b7-e7d2466f507f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "English Domestic Other Matches 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c4b0d0e7-48e6-4905-9b6d-326fc1f00591#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket County Championship - Division Two 2015 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2015-04-10"^^xsd:date ;
+    ns3:hasEnd "2016-03-09"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cb70592d-17d1-44f7-8b50-4b23232eab75#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket One Day Cup 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-06-17"^^xsd:date ;
+    ns3:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cdcc96ed-9afb-4e77-bf56-b757a911b6fb#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "MCC-Hosted Tour Match 2015 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-01"^^xsd:date ;
+    ns3:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d2212ea0-0165-48a5-a04e-df59dd694bdc#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket T20 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-06-17"^^xsd:date ;
+    ns3:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e62c3b8b-120c-4146-8559-9df86ee07529#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket County Championship - Division Two 2014 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e744a2f3-ab4f-4344-9d2c-bce9a0f60a68#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket County Championship - Division Two 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-06-17"^^xsd:date ;
+    ns3:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ee499c88-2c88-4025-a20e-ddf390faf6b6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "New Zealand Plunket Shield 2017 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2017-10-01"^^xsd:date ;
+    ns3:hasEnd "2018-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f35935b2-7e84-42c6-8a28-3e26036975fc#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Super League 2018 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2018-04-01"^^xsd:date ;
+    ns3:hasEnd "2019-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ff73f37c-0d2e-430f-925e-e6c302a31e95#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket County Championship - Division One 2015 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2015-04-10"^^xsd:date ;
+    ns3:hasEnd "2016-03-09"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ffe0d5ec-d31a-40cb-8de7-b1d2faed7542#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket One Day Cup 2015 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2015-04-10"^^xsd:date ;
+    ns3:hasEnd "2016-04-09"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ab70f43c-944f-4991-8229-adf1e982b153#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket English Twenty20 2016 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2016-04-10"^^xsd:date ;
+    ns3:hasEnd "2017-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3a723224-6fdf-4dcc-93df-5fc643182f18#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket English Domestic 2019 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2019-04-01"^^xsd:date ;
+    ns3:hasEnd "2020-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e4c02fa1-273c-4620-ac4b-e490675471ee#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket English Domestic 2018 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2018-04-01"^^xsd:date ;
+    ns3:hasEnd "2019-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5ce54b4f-cbdb-4da8-a712-e9d3848de48a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket English Domestic 2017 Season (Temporal Entity)" ;
+    ns3:hasBeginning "2017-04-01"^^xsd:date ;
+    ns3:hasEnd "2018-03-31"^^xsd:date .
+

@@ -1,0 +1,112 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/931e3b8e-30b1-4906-b37d-48906874d7ed#id> a provenance:Dataset ;
+    rdfs:label "Cricket: English Domestic One Day Cup 2016 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/cricket/cricket-competition-english-one-day-2016-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-1769: Added CCKBO572016S2R3 locator for final; Revise short labels; Add stages and rounds for One Day Cup 2016" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-04-11T12:01:25+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:eleni.mikroyannidi@bbc.co.uk> ;
+    provenance:version "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/df730b2c-17ed-4514-b23b-69174a2ac94c#id> sport:firstStage <http://www.bbc.co.uk/things/3d59d589-f900-4bda-a4d0-7e85f25966d7#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/a057b105-d5c0-448b-ae75-019b915409b9#id> .
+
+<http://www.bbc.co.uk/things/069dd734-c9ba-4a7b-b4bf-f137a9735abc#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Cricket One Day Cup 2016 Season"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO572016S2R1> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/34f36e2e-712e-452c-9696-17f075381fdd#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Cricket One Day Cup 2016 Season"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO572016S2R2> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/4e8d567c-afa1-4814-a944-ff34979c273c#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Cricket One Day Cup 2016 Season"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO572016S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/669ae76e-e227-42a8-b41a-ac8abcb07e06#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Cricket One Day Cup 2016 Season"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO572016S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/f5ef572b-fbcd-4201-9325-65f591746f7f#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Cricket One Day Cup 2016 Season"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO572016S2R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<urn:sports-data:CCKBO572016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO572016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO572016S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO572016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO572016S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO572016S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO572016S2R3> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/3d59d589-f900-4bda-a4d0-7e85f25966d7#id> a sport:LeagueCompetition ;
+    sal:name "Stage 1 of Cricket One Day Cup 2016 Season"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO572016S1> ;
+    core:preferredLabel "Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/669ae76e-e227-42a8-b41a-ac8abcb07e06#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/4e8d567c-afa1-4814-a944-ff34979c273c#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/a057b105-d5c0-448b-ae75-019b915409b9#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/a057b105-d5c0-448b-ae75-019b915409b9#id> a sport:KnockoutCompetition ;
+    sal:name "Stage 2 of Cricket One Day Cup 2016 Season"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO572016S2> ;
+    core:preferredLabel "Knockout Stage"@en-gb ;
+    core:shortLabel "Knockout Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/069dd734-c9ba-4a7b-b4bf-f137a9735abc#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/34f36e2e-712e-452c-9696-17f075381fdd#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/f5ef572b-fbcd-4201-9325-65f591746f7f#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/3d59d589-f900-4bda-a4d0-7e85f25966d7#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

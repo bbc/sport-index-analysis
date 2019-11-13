@@ -1,0 +1,1001 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/4d0c4f33-abfd-419a-af82-6ddb2535bb80#id> a provenance:Dataset ;
+    rdfs:label "Football: UK and Ireland Competitions" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/uk-and-ireland-football-competitions.ttl" ;
+    provenance:changeReason "SWD-815: Update competition sponsor names" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-08-08T10:56:16+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "108"^^xsd:int .
+
+<http://www.bbc.co.uk/sport/football/fa-cup-qualifying> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/things/040f1f0b-e733-4ceb-bb49-1216117b8126#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The FA Women’s National League - Southern Premier Division"@en-gb ;
+    sal:videCode "WPL"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB124> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "The FA Women’s National League - Southern Premier Division"@en-gb ;
+    core:shortLabel "Women's NL Southern Prem"@en-gb ;
+    core:slug "womens-premier-league-south"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league-womens> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2bcda748-2062-4571-b236-f57c6634ab1e#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Buildbase FA Trophy"@en-gb ;
+    sal:videCode "TROP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB418>,
+        <urn:sports-stats:118998041> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "The FA Trophy"@en-gb ;
+    core:primaryTopicOf <http://www.thefa.com/fa-trophy> ;
+    core:shortLabel "FA Trophy"@en-gb ;
+    core:slug "fa-trophy"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/318b396b-3ccf-4f7f-a7f5-fc626e2b1923#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Scottish Cup Qualifying"@en-gb ;
+    sal:videCode "SCPQ"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB815> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Scottish Cup Qualifying"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/scottish-cup>,
+        <http://www.scottishfa.co.uk/index.cfm?page=1850> ;
+    core:shortLabel "Scottish Cup Qualifying"@en-gb ;
+    core:slug "scottish-cup-qualifying"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/36d14d35-ee1f-49cd-9505-934c0a25381f#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Irish Cup"@en-gb ;
+    sal:videCode "IRCP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB415>,
+        <urn:sports-stats:118998043> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Irish Cup"@en-gb ;
+    core:primaryTopicOf <http://www.irishfa.com/domestic/irish-cup/> ;
+    core:shortLabel "Irish Cup"@en-gb ;
+    core:slug "irish-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/453e09da-12ed-485f-9454-a644a41fffa0#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The FA Women's Championship"@en-gb ;
+    sal:videCode "WCHA"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB706> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "The FA Women's Championship"@en-gb ;
+    core:shortLabel "Women's Championship"@en-gb ;
+    core:slug "womens-super-league-two"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league-womens> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4c3ac4c9-a738-4e78-a322-86ba6ce85b95#id> a sport:RecurringCompetition ;
+    sal:name "Scottish League Two (Highland/Lowland League Winner) Play-off"@en-gb,
+        "Scottish League Two Play-off Final"@en-gb ;
+    sal:videCode "SCL2"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB751>,
+        <urn:sports-data:CFBB755> ;
+    core:preferredLabel "Scottish League Two (Highland/Lowland League Winner) Play-off"@en-gb,
+        "Scottish League Two Play-off Final"@en-gb ;
+    core:shortLabel "Scottish League Two (Highland/Lowland League Winner) Play-off"@en-gb,
+        "Scottish League Two Play-off Final"@en-gb ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/595ac252-177f-46a0-ad7f-82c2f54631ac#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The SSE Women's FA Cup"@en-gb ;
+    sal:videCode "WFAC"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB669>,
+        <urn:sports-stats:118998132> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "The Women's FA Cup"@en-gb ;
+    core:primaryTopicOf <http://www.thefa.com/Competitions/FACompetitions/TheFAWomensCup> ;
+    core:shortLabel "Women's FA Cup"@en-gb ;
+    core:slug "fa-womens-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup-womens> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/61e8173b-8d08-4b90-89a0-fac6e3e8a155#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Vanarama National League North"@en-gb ;
+    sal:videCode "CNTH"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB373>,
+        <urn:sports-stats:118996307> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "National League North"@en-gb ;
+    core:primaryTopicOf <http://www.thenationalleague.org.uk/> ;
+    core:shortLabel "National Lge North"@en-gb ;
+    core:slug "national-league-north"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6a649f34-6934-4464-8b80-a42a0ee7a1bc#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cymru Premier"@en-gb ;
+    sal:videCode "WEPR"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB377>,
+        <urn:sports-stats:118996207> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Cymru Premier"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/football/welsh-premier-league>,
+        <http://www.welshpremier.com/> ;
+    core:shortLabel "Cymru Premier"@en-gb ;
+    core:slug "welsh-premier-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6c695d6d-8a77-4f1c-bee8-911eea74b81d#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "League of Ireland Cup"@en-gb ;
+    sal:videCode "LIRC"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB396> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "League of Ireland Cup"@en-gb ;
+    core:shortLabel "League of Ireland Cup"@en-gb ;
+    core:slug "league-of-ireland-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6e131455-631e-421b-b6d9-070e99234caf#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Danske Bank Premiership"@en-gb ;
+    sal:videCode "IREP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB146>,
+        <urn:sports-stats:118996238> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Irish Premiership"@en-gb ;
+    core:primaryTopicOf <https://www.nifootballleague.com/> ;
+    core:shortLabel "Irish Premiership"@en-gb ;
+    core:slug "irish-premiership"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/73fb3d82-560a-4e96-8c3b-3c8464c6d4cd#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Vanarama National League South"@en-gb ;
+    sal:videCode "CSTH"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB372>,
+        <urn:sports-stats:118996308> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "National League South"@en-gb ;
+    core:primaryTopicOf <http://www.thenationalleague.org.uk/> ;
+    core:shortLabel "National Lge South"@en-gb ;
+    core:slug "national-league-south"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7ba0e09d-037f-694f-a73b-4deccbb7fda3#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Betfred Cup"@en-gb ;
+    sal:videCode "SLCP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB177>,
+        <urn:sports-stats:118998099> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Scottish League Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/scottish-league-cup>,
+        <http://www.scottishfootballleague.com/football/league-cup/> ;
+    core:shortLabel "Scottish League Cup"@en-gb ;
+    core:slug "scottish-league-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7cfff28d-51fc-4506-a6d1-f1be65441d3a#id> a sport:RecurringCompetition ;
+    sal:name "The FA Women's National League Championship Play-off"@en-gb ;
+    sal:videCode "WPL"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB823> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "The FA Women's National League Championship Play-off"@en-gb ;
+    core:shortLabel "Women's National League Championship Play-off"@en-gb ;
+    core:slug "womens-premier-league-championship-play-off"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup-womens> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7dd1ef4f-d66b-4987-8638-312dc3db2058#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "SSE Airtricity Premier Division"@en-gb ;
+    sal:videCode "LOIP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB101>,
+        <urn:sports-stats:118996240> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Irish Premier Division"@en-gb ;
+    core:primaryTopicOf <http://www.airtricityleague.ie/> ;
+    core:shortLabel "Irish Prem Division"@en-gb ;
+    core:slug "league-of-ireland-premier"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/83148322-9c79-4cc0-b94d-85865a380edb#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Nathaniel MG Cup"@en-gb ;
+    sal:videCode "WLCP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB643>,
+        <urn:sports-stats:118996208> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Welsh League Cup"@en-gb ;
+    core:primaryTopicOf <http://www.welsh-premier.com/index.php/cups> ;
+    core:shortLabel "Welsh League Cup"@en-gb ;
+    core:slug "welsh-league-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8e3dcd09-b512-42b1-b82d-db4aceefac86#id> a sport:RecurringCompetition ;
+    sal:name "Scottish League One Play Offs"@en-gb ;
+    sal:videCode "S1PO"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB499> ;
+    core:preferredLabel "Scottish League One Play Offs"@en-gb ;
+    core:shortLabel "Scottish League One Play Offs"@en-gb ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/936f2c74-fad7-4e95-8ba7-882fd0051e14#id> a sport:RecurringCompetition ;
+    sal:name "Scottish Championship Play Offs"@en-gb ;
+    sal:videCode "SCPO"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB498> ;
+    core:preferredLabel "Scottish Championship Play Offs"@en-gb ;
+    core:shortLabel "Scottish Championship Play Offs"@en-gb ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/96b7c068-a153-d640-8a37-5cfa8e1eff57#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The William Hill Scottish Cup"@en-gb ;
+    sal:videCode "SCUP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB80>,
+        <urn:sports-stats:118998098> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Scottish Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/scottish-cup>,
+        <http://www.scottishfa.co.uk/index.cfm?page=1850> ;
+    core:shortLabel "Scottish Cup"@en-gb ;
+    core:slug "scottish-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9d29df2d-252c-42ca-b7e9-4a2425e35404#id> a sport:RecurringCompetition ;
+    sal:name "Scottish Premiership Play Offs"@en-gb ;
+    sal:videCode "SPPO"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB697> ;
+    core:preferredLabel "Scottish Premiership Play Offs"@en-gb ;
+    core:shortLabel "Scottish Premiership Play Offs"@en-gb ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9e1878d1-8faa-f245-b2f5-c450cf392cb0#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Emirates FA Cup"@en-gb ;
+    sal:videCode "FACP"^^xsd:string ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/football/fa-cup>,
+        <urn:sports-data:CFBB1>,
+        <urn:sports-stats:118998036> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "The FA Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/fa-cup>,
+        <http://www.thefa.com/thefacup> ;
+    core:shortLabel "FA Cup"@en-gb ;
+    core:slug "fa-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a5fa8c3b-201c-4645-848d-1d8687f74a0d#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Northern Irish League Cup"@en-gb ;
+    sal:videCode "NILC"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB401> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Northern Irish League Cup"@en-gb ;
+    core:shortLabel "Northern Irish League Cup"@en-gb ;
+    core:slug "northern-irish-league-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/aabbcc83-27fa-4734-97ab-583fce731f00#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Emirates FA Cup Qualifying"@en-gb ;
+    sal:videCode "FACP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB668> ;
+    core:preferredLabel "FA Cup Qualifying"@en-gb ;
+    core:shortLabel "FA Cup Qualifying"@en-gb ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ac2fbefe-ec66-4859-92eb-d0a881c55c5f#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ferrari Packaging Lowland League"@en-gb ;
+    sal:videCode "SLFL"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB677>,
+        <urn:sports-stats:119003997> ;
+    core:disambiguationHint "Scottish football competition"@en-gb ;
+    core:preferredLabel "Lowland League"@en-gb ;
+    core:primaryTopicOf <http://slfl.co.uk/> ;
+    core:shortLabel "Lowland League"@en-gb ;
+    core:slug "lowland-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b08927d4-df90-4fc5-9998-6588f6bab4ee#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Leasing.com Trophy"@en-gb ;
+    sal:videCode "EFLT"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB7>,
+        <urn:sports-stats:118998038> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "EFL Trophy"@en-gb ;
+    core:primaryTopicOf <http://www.efl.com/efl-trophy/> ;
+    core:shortLabel "EFL Trophy"@en-gb ;
+    core:slug "football-league-trophy"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b1f841c0-b58b-48db-82ff-1756aed5700b#id> a sport:RecurringCompetition ;
+    sal:name "Friendly Match"@en-gb ;
+    sal:videCode "FRIE"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB34>,
+        <urn:sports-stats:118999028> ;
+    core:disambiguationHint "Football"@en-gb ;
+    core:preferredLabel "Friendly Match"@en-gb ;
+    core:shortLabel "Friendly Match"@en-gb ;
+    core:slug "club-friendly"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bed202dc-dbd7-4f00-98dd-e1085f4bf125#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The FA Community Shield Sponsored by McDonalds"@en-gb ;
+    sal:videCode "FACS"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB38>,
+        <urn:sports-stats:118998997> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "The FA Community Shield"@en-gb ;
+    core:primaryTopicOf <http://www.thefa.com/fa-community-shield> ;
+    core:shortLabel "FA Community Shield"@en-gb ;
+    core:slug "fa-community-shield"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c9eec9e5-c048-4676-b210-25d51e15113a#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The FA Women's Super League"@en-gb ;
+    sal:videCode "WSL"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB550>,
+        <urn:sports-stats:119003989> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "The FA Women's Super League"@en-gb ;
+    core:primaryTopicOf <http://www.fawsl.com/> ;
+    core:shortLabel "Women's Super League"@en-gb ;
+    core:slug "womens-super-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league-womens> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/cbcfd133-c7b6-4740-86ad-b50fcd218fb1#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Welsh Cup"@en-gb ;
+    sal:videCode "WCUP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB478>,
+        <urn:sports-stats:118998129> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Welsh Cup"@en-gb ;
+    core:primaryTopicOf <http://www.welsh-premier.com/index.php/cups/welsh-cup> ;
+    core:shortLabel "Welsh Cup"@en-gb ;
+    core:slug "welsh-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d8ecc1e9-4290-486d-919f-0418a7beb741#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Press & Journal Highland League"@en-gb ;
+    sal:videCode "SHFL"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB645>,
+        <urn:sports-stats:118999031> ;
+    core:disambiguationHint "Scottish football competition"@en-gb ;
+    core:preferredLabel "Highland League"@en-gb ;
+    core:primaryTopicOf <http://www.highlandfootballleague.com/Default.aspx> ;
+    core:shortLabel "Highland League"@en-gb ;
+    core:slug "highland-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/dcce9f57-119f-452b-889c-7007eddf3258#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The FA Women’s National League - Northern Premier Division"@en-gb ;
+    sal:videCode "WPL"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB123> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "The FA Women’s National League - Northern Premier Division"@en-gb ;
+    core:shortLabel "Women's NL Northern Prem"@en-gb ;
+    core:slug "womens-premier-league-north"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league-womens> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/defc89c7-c01a-402b-a780-480c841b27c4#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Northern Ireland Football League Charity Shield"@en-gb ;
+    sal:videCode "NICS"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB824> ;
+    core:disambiguationHint "Northern Irish football competition"@en-gb ;
+    core:preferredLabel "NIFL Charity Shield"@en-gb ;
+    core:primaryTopicOf <http://nifootballleague.com/> ;
+    core:shortLabel "NIFL Charity Shield"@en-gb ;
+    core:slug "nifl-charity-shield"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ed80fd46-3713-d445-9419-de091f8a7223#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Irn-Bru Cup"@en-gb ;
+    sal:videCode "SCCP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB37>,
+        <urn:sports-stats:118998100> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Scottish Challenge Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/scottish-challenge-cup>,
+        <http://www.scottishfootballleague.com/football/challenge-cup/> ;
+    core:shortLabel "Scottish Chal Cup"@en-gb ;
+    core:slug "scottish-challenge-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f7eeb725-55f4-3542-89ae-f4a4e8bd3c58#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Carabao Cup"@en-gb ;
+    sal:videCode "EFLC"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB2>,
+        <urn:sports-stats:118998037> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "EFL Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/league-cup>,
+        <http://www.efl.com/efl-cup/> ;
+    core:shortLabel "EFL Cup"@en-gb ;
+    core:slug "league-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/fc191ddb-8951-462c-b461-175313bc830f#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The FA Women's Continental Tyres League Cup"@en-gb ;
+    sal:videCode "WSLC"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB604> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "The FA Women's League Cup"@en-gb ;
+    core:primaryTopicOf <http://www.fawsl.com/> ;
+    core:shortLabel "FA Women's League Cup"@en-gb ;
+    core:slug "fa-wsl-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.thefa.com/Competitions/FACompetitions/TheFAWomensPLCup> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<urn:sports-data:CFBB178> a cms:Sports-DataLocator .
+
+<urn:sports-stats:118998039> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998135> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118999030> a cms:Sports-StatsLocator .
+
+<http://nifootballleague.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://slfl.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.airtricityleague.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/football/welsh-premier-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/championship> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/fa-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/league-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/league-one> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/league-two> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/national-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/premier-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/scottish-challenge-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/scottish-championship> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/scottish-league-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/scottish-league-one> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/scottish-league-two> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/scottish-premiership> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Premier League"@en-gb ;
+    sal:videCode "PREM"^^xsd:string ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/football/premier-league>,
+        <urn:sports-data:CFBB8>,
+        <urn:sports-stats:118996114> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "Premier League"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/premier-league>,
+        <http://www.premierleague.com/en-gb.html> ;
+    core:shortLabel "Premier League"@en-gb ;
+    core:slug "premier-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:relegatesTo <http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id> .
+
+<http://www.bbc.co.uk/things/7bf5cec0-5a16-2d42-ab3a-bb7137c4ff43#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ladbrokes Scottish League Two"@en-gb ;
+    sal:videCode "SCL2"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB93>,
+        <urn:sports-stats:118996179> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Scottish League Two"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/scottish-league-two>,
+        <http://www.scottishfootballleague.com/football/third/> ;
+    core:shortLabel "Scottish League Two"@en-gb ;
+    core:slug "scottish-league-two"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:promotesTo <http://www.bbc.co.uk/things/5af78336-c06e-0b48-83a2-e50e2c14cba6#id> .
+
+<http://www.bbc.co.uk/things/d5e7ede8-a199-804f-9a09-7c91a6df1b96#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Vanarama National League"@en-gb ;
+    sal:videCode "CNAT"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB89>,
+        <urn:sports-stats:118996118> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "National League"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/national-league>,
+        <http://www.thenationalleague.org.uk/> ;
+    core:shortLabel "National League"@en-gb ;
+    core:slug "national-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:promotesTo <http://www.bbc.co.uk/things/71d1288c-d1ea-6a4a-bd87-237dbb9e6470#id> .
+
+<http://www.bbc.co.uk/things/ebca7141-e8ba-0e40-bba9-d0864e29bc1f#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ladbrokes Scottish Premiership"@en-gb ;
+    sal:videCode "SCPR"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB14>,
+        <urn:sports-stats:118996176> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Scottish Premiership"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/scottish-premiership>,
+        <http://www.scotprem.com/content/> ;
+    core:shortLabel "Scottish Prem"@en-gb ;
+    core:slug "scottish-premiership"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:relegatesTo <http://www.bbc.co.uk/things/f9ea64db-238d-2545-95a0-6bdecd52c489#id> .
+
+<http://www.efl.com/efl-cup/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.efl.com/efl-trophy/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.efl.com/sky-bet-championship/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.efl.com/sky-bet-league-one/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.efl.com/sky-bet-league-two/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.highlandfootballleague.com/Default.aspx> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.irishfa.com/domestic/irish-cup/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.premierleague.com/en-gb.html> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.scotprem.com/content/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.scottishfootballleague.com/football/challenge-cup/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.scottishfootballleague.com/football/first/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.scottishfootballleague.com/football/league-cup/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.scottishfootballleague.com/football/second/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.scottishfootballleague.com/football/third/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.thefa.com/Competitions/FACompetitions/TheFAWomensCup> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.thefa.com/fa-community-shield> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.thefa.com/fa-trophy> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.thefa.com/thefacup> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.welsh-premier.com/index.php/cups> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.welsh-premier.com/index.php/cups/welsh-cup> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.welshpremier.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<https://api.bbc.co.uk/content/asset/sport/football/fa-cup> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/football/premier-league> a cms:CPSLocator .
+
+<https://www.nifootballleague.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<urn:sports-data:CFBB1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB10> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB101> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB11> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB123> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB124> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB14> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB146> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB177> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB34> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB37> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB372> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB373> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB377> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB38> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB396> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB401> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB415> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB418> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB478> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB498> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB499> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB550> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB604> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB643> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB645> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB668> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB669> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB677> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB697> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB706> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB80> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB815> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB823> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB824> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB89> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB91> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB92> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB93> a cms:Sports-DataLocator .
+
+<urn:sports-stats:118996114> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996115> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996116> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996117> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996118> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996176> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996177> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996178> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996179> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996207> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996208> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996238> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996240> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996307> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118996308> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998036> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998037> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998038> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998041> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998043> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998098> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998099> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998100> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998129> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998132> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118998997> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118999028> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118999031> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119003989> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119003997> a cms:Sports-StatsLocator .
+
+<http://www.bbc.co.uk/sport/football/scottish-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/things/030b5eaf-15db-3e4e-bac9-a7789892f436#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sky Bet League One"@en-gb ;
+    sal:videCode "LGE1"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB11>,
+        <urn:sports-stats:118996116> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "League One"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/league-one>,
+        <http://www.efl.com/sky-bet-league-one/> ;
+    core:shortLabel "League One"@en-gb ;
+    core:slug "league-one"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:promotesTo <http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id> ;
+    sport:relegatesTo <http://www.bbc.co.uk/things/71d1288c-d1ea-6a4a-bd87-237dbb9e6470#id> .
+
+<http://www.bbc.co.uk/things/5af78336-c06e-0b48-83a2-e50e2c14cba6#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ladbrokes Scottish League One"@en-gb ;
+    sal:videCode "SCL1"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB92>,
+        <urn:sports-stats:118996178> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Scottish League One"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/scottish-league-one>,
+        <http://www.scottishfootballleague.com/football/second/> ;
+    core:shortLabel "Scottish League One"@en-gb ;
+    core:slug "scottish-league-one"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:promotesTo <http://www.bbc.co.uk/things/f9ea64db-238d-2545-95a0-6bdecd52c489#id> ;
+    sport:relegatesTo <http://www.bbc.co.uk/things/7bf5cec0-5a16-2d42-ab3a-bb7137c4ff43#id> .
+
+<http://www.bbc.co.uk/things/71d1288c-d1ea-6a4a-bd87-237dbb9e6470#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sky Bet League Two"@en-gb ;
+    sal:videCode "LGE2"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB12>,
+        <urn:sports-stats:118996117> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "League Two"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/league-two>,
+        <http://www.efl.com/sky-bet-league-two/> ;
+    core:shortLabel "League Two"@en-gb ;
+    core:slug "league-two"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:promotesTo <http://www.bbc.co.uk/things/030b5eaf-15db-3e4e-bac9-a7789892f436#id> ;
+    sport:relegatesTo <http://www.bbc.co.uk/things/d5e7ede8-a199-804f-9a09-7c91a6df1b96#id> .
+
+<http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sky Bet Championship"@en-gb ;
+    sal:videCode "CHSP"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB10>,
+        <urn:sports-stats:118996115> ;
+    core:disambiguationHint "English football competition"@en-gb ;
+    core:preferredLabel "Championship"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/championship>,
+        <http://www.efl.com/sky-bet-championship/> ;
+    core:shortLabel "Championship"@en-gb ;
+    core:slug "championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:promotesTo <http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id> ;
+    sport:relegatesTo <http://www.bbc.co.uk/things/030b5eaf-15db-3e4e-bac9-a7789892f436#id> .
+
+<http://www.bbc.co.uk/things/f9ea64db-238d-2545-95a0-6bdecd52c489#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ladbrokes Scottish Championship"@en-gb ;
+    sal:videCode "SCCH"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB91>,
+        <urn:sports-stats:118996177> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Scottish Championship"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/scottish-championship>,
+        <http://www.scottishfootballleague.com/football/first/> ;
+    core:shortLabel "Scottish Champ"@en-gb ;
+    core:slug "scottish-championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:promotesTo <http://www.bbc.co.uk/things/ebca7141-e8ba-0e40-bba9-d0864e29bc1f#id> ;
+    sport:relegatesTo <http://www.bbc.co.uk/things/5af78336-c06e-0b48-83a2-e50e2c14cba6#id> .
+
+<http://www.fawsl.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.scottishfa.co.uk/index.cfm?page=1850> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.thenationalleague.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+

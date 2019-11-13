@@ -1,0 +1,1772 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bathrugby.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bathrugby.com/rss/rss-all-news.rss> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.bbc.co.uk/contexts/0af5eaf6-ba92-48f8-9f39-208d793177cd#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-union/rugby-union-teams.ttl" ;
+    provenance:changeReason "SLS-1035;3: Add teams to English Prem, Pro14 2019/20" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-10-03T13:03:06+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "70"^^xsd:int .
+
+<http://www.bbc.co.uk/podcasts/series/lru> a bbc:WebDocument ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Podcast .
+
+<http://www.bbc.co.uk/podcasts/series/scotrugby> a bbc:WebDocument ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Podcast .
+
+<http://www.bbc.co.uk/podcasts/series/tigers> a bbc:WebDocument ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Podcast .
+
+<http://www.bbc.co.uk/sport/rugby-union/13629208> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Commentary .
+
+<http://www.bbc.co.uk/sport/rugby-union/welsh/> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/things/06a5dc3e-ecbd-4427-8537-24785e0c96b0#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "London Welsh"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33246>,
+        <urn:sports-stats:2139740989> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "London Welsh"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/London_Welsh> ;
+    core:shortLabel "London Welsh"@en-gb ;
+    core:slug "london-welsh"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4e70f21a-9a50-4258-b62b-9e212a5dfa6f#id>,
+        <http://www.bbc.co.uk/things/6b1c2b03-8005-4d3c-b6b3-ebf283055118#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/08449ec0-069c-45ff-a3ac-0c3efccd4ec3#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Dragons"@en-gb ;
+    cms:locator <urn:sports-data:TRUB47973>,
+        <urn:sports-stats:2140790491> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Dragons"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/ng-dragons> ;
+    core:sameAs <http://dbpedia.org/resource/Newport_Gwent_Dragons> ;
+    core:shortLabel "Dragons"@en-gb ;
+    core:slug "ng-dragons"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/4e70f21a-9a50-4258-b62b-9e212a5dfa6f#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/6b1c2b03-8005-4d3c-b6b3-ebf283055118#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id>,
+        <http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id>,
+        <http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/096ae835-414b-4ea1-9e67-cb550d15ddb9#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Brive"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34756> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Brive"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/CA_Brive> ;
+    core:shortLabel "Brive"@en-gb ;
+    core:slug "brive"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/0d3f732e-9d44-4572-872c-831c1bae41ec#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Fiji"@en-gb ;
+    cms:locator <urn:sports-data:TRUB35079> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Fiji"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Fiji_national_rugby_union_team> ;
+    core:shortLabel "Fiji"@en-gb ;
+    core:slug "fiji"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/1345a472-97c2-4f43-8d83-36261ccab1f8#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Newcastle"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34698>,
+        <urn:sports-stats:2139774781> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Newcastle Falcons"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/newcastle> ;
+    core:sameAs <http://dbpedia.org/resource/Newcastle_Falcons> ;
+    core:shortLabel "Newcastle"@en-gb ;
+    core:slug "newcastle"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/148ec1e0-f7e3-4a67-b234-a0fa794a0bad#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Pau"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34753> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Pau"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Section_Paloise> ;
+    core:shortLabel "Pau"@en-gb ;
+    core:slug "pau"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/17ac5a02-bbdc-4fce-97cb-931ffd7988d3#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "La Rochelle"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34955> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "La Rochelle"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Atlantique_Stade_Rochelais> ;
+    core:shortLabel "La Rochelle"@en-gb ;
+    core:slug "la-rochelle"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/1869157e-8fbc-4689-b2b6-ebc6b2900d5a#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Scarlets"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33240>,
+        <urn:sports-stats:2139740983> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Scarlets"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/scarlets> ;
+    core:sameAs <http://dbpedia.org/resource/Scarlets> ;
+    core:shortLabel "Scarlets"@en-gb ;
+    core:slug "scarlets"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/18ef9f97-fb48-4021-92e1-af4ce300ab67#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Georgia"@en-gb ;
+    cms:locator <urn:sports-data:TRUB35098> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Georgia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Georgia_national_rugby_union_team> ;
+    core:shortLabel "Georgia"@en-gb ;
+    core:slug "georgia"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/20b6fa96-38fa-4609-af0e-60f1314e0f57#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Enisei-STM"@en-gb ;
+    cms:locator <urn:sports-data:TRUB63619> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Enisei-STM"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Yenisey-STM_Krasnoyarsk> ;
+    core:shortLabel "Enisei-STM"@en-gb ;
+    core:slug "enisei"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/20ff4730-bad5-46e1-8b06-c20b5b16ff01#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cardiff Blues"@en-gb ;
+    cms:locator <urn:sports-data:TRUB47880>,
+        <urn:sports-stats:2140789558> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Cardiff Blues"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/cardiff-blues> ;
+    core:sameAs <http://dbpedia.org/resource/Cardiff_Blues> ;
+    core:shortLabel "Blues"@en-gb ;
+    core:slug "cardiff-blues"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/246b8eb1-e7a7-4f6d-b9f2-7cfdeb9c8240#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sale"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33324>,
+        <urn:sports-stats:2139741886> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Sale"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/sale> ;
+    core:sameAs <http://dbpedia.org/resource/Sale_Rugby_Union_Football_Club> ;
+    core:shortLabel "Sale"@en-gb ;
+    core:slug "sale"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/26d3a742-4d46-4ec8-82ac-d51d1d77ccb5#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Grenoble"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34960> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Grenoble"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/FC_Grenoble> ;
+    core:shortLabel "Grenoble"@en-gb ;
+    core:slug "grenoble"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/27870108-ed4b-4a93-ab89-de8b1b7c7136#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Samoa"@en-gb ;
+    cms:locator <urn:sports-data:TRUB35230> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Samoa"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Samoa_national_rugby_union_team> ;
+    core:shortLabel "Samoa"@en-gb ;
+    core:slug "samoa"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/30c05f4b-073e-4f90-8353-3f19e3c77bb7#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Stade Français"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34957> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Stade Français"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Stade_Français> ;
+    core:shortLabel "Stade Français"@en-gb ;
+    core:slug "stade-francais"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/3236acc0-1fd3-4f4d-a416-9feb128751c1#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Lyon"@en-gb ;
+    cms:locator <urn:sports-data:TRUB60921> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Lyon"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Lyon_OU> ;
+    core:shortLabel "Lyon"@en-gb ;
+    core:slug "lyon"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/363cce1c-2550-4cf8-9b2b-e73333b4de1a#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cheetahs"@en-gb ;
+    cms:locator <urn:sports-data:TRUB38197> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Cheetahs"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Cheetahs_(rugby_union)> ;
+    core:shortLabel "Cheetahs"@en-gb ;
+    core:slug "cheetahs"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/370949ac-c7ce-4d18-b40a-5d89acd88433#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ulster"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33396>,
+        <urn:sports-stats:2139742105> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Ulster"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/ulster> ;
+    core:sameAs <http://dbpedia.org/resource/Ulster_rugby> ;
+    core:shortLabel "Ulster"@en-gb ;
+    core:slug "ulster"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/3fd9ec42-fa70-4902-818e-b7574c4cfc60#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Connacht"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33132>,
+        <urn:sports-stats:2139739993> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Connacht"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/connacht> ;
+    core:sameAs <http://dbpedia.org/resource/Connacht_Rugby> ;
+    core:shortLabel "Connacht"@en-gb ;
+    core:slug "connacht"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/41972762-ebbc-4977-9d32-c56f0a5a91d3#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ireland"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33216> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Ireland"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Ireland_national_rugby_union_team> ;
+    core:shortLabel "Ireland"@en-gb ;
+    core:slug "ireland"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/41f9bc1e-b474-4e7f-b127-24ab338c5768#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wales"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33401> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Wales"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Wales_national_rugby_union_team> ;
+    core:shortLabel "Wales"@en-gb ;
+    core:slug "wales"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/4d10319d-bd46-47da-9558-9da975f0e547#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Clermont Auvergne"@en-gb ;
+    cms:locator <urn:sports-data:TRUB51397> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Clermont Auvergne"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/ASM_Clermont_Auvergne> ;
+    core:shortLabel "Clermont"@en-gb ;
+    core:slug "clermont"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/4ee2d754-3f34-43d0-8163-f64e694a565d#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bristol"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33110>,
+        <urn:sports-stats:2139739929> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Bristol"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/bristol> ;
+    core:sameAs <http://dbpedia.org/resource/Bristol_Rugby> ;
+    core:shortLabel "Bristol"@en-gb ;
+    core:slug "bristol"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/56404727-1f35-46b9-a42b-1408713eb816#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bath"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33094>,
+        <urn:sports-stats:2139739220> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Bath"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/bath> ;
+    core:sameAs <http://dbpedia.org/resource/Bath_Rugby> ;
+    core:shortLabel "Bath"@en-gb ;
+    core:slug "bath"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/4e70f21a-9a50-4258-b62b-9e212a5dfa6f#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/6b1c2b03-8005-4d3c-b6b3-ebf283055118#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/58a01e4e-4139-4a85-890d-6f57cbe47d23#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Namibia"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33269> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Namibia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Namibia_national_rugby_union_team> ;
+    core:shortLabel "Namibia"@en-gb ;
+    core:slug "namibia"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/59a877c7-81dc-45e8-8bb5-fae08929b1dd#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Toulon"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33384> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Toulon"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/RC_Toulonnais> ;
+    core:shortLabel "Toulon"@en-gb ;
+    core:slug "toulon"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/5ba9f34c-b034-44a3-9465-5b0427834f82#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Italy"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33221> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Italy"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Italy_national_rugby_union_team> ;
+    core:shortLabel "Italy"@en-gb ;
+    core:slug "italy"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/64b44a9a-07f6-4a27-892f-49f74610e7de#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Harlequins"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33200>,
+        <urn:sports-stats:2139740859> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Harlequins"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/harlequins>,
+        <http://www.quins.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Harlequin_F.C.> ;
+    core:shortLabel "Harlequins"@en-gb ;
+    core:slug "harlequins"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/64bcbbd3-6c7c-4ee9-87a4-b077bde97dc3#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Glasgow"@en-gb ;
+    cms:locator <urn:sports-data:TRUB35099>,
+        <urn:sports-stats:2139798807> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Glasgow Warriors"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/glasgow> ;
+    core:sameAs <http://dbpedia.org/resource/Glasgow_Warriors> ;
+    core:shortLabel "Glasgow"@en-gb ;
+    core:slug "glasgow"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/65e03372-4a5c-4c1d-8532-a5d77f815199#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Argentina"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33085> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Argentina"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Argentina_national_rugby_union_team> ;
+    core:shortLabel "Argentina"@en-gb ;
+    core:slug "argentina"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/68cc7843-dbd9-4830-bde9-49d0fd92a050#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Uruguay"@en-gb ;
+    cms:locator <urn:sports-data:TRUB35229> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Uruguay"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Uruguay_national_rugby_union_team> ;
+    core:shortLabel "Uruguay"@en-gb ;
+    core:slug "uruguay"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/6c885797-6b30-4952-badc-cb3680aed9d9#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Castres"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34520> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Castres"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Castres_Olympique> ;
+    core:shortLabel "Castres"@en-gb ;
+    core:slug "castres"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/6d6ddae0-12eb-4c7c-a76f-e6a8a3d2025f#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Leicester"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33234>,
+        <urn:sports-stats:2139740956> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Leicester Tigers"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/leicester> ;
+    core:sameAs <http://dbpedia.org/resource/Leicester_Tigers> ;
+    core:shortLabel "Leicester"@en-gb ;
+    core:slug "leicester"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/76a591fb-dab5-40b7-b000-5c4c7adbf937#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Tonga"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34983> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Tonga"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Tonga_national_rugby_union_team> ;
+    core:shortLabel "Tonga"@en-gb ;
+    core:slug "tonga"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/76e60472-fc96-4be6-bc71-dd956ce63c96#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Perpignan"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34962> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Perpignan"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/USA_Perpignan> ;
+    core:shortLabel "Perpignan"@en-gb ;
+    core:slug "perpignan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/77f976f7-27e3-40d1-b68f-482c49f0a3d7#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Benetton"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34761>,
+        <urn:sports-stats:2139775642> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Benetton"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/treviso> ;
+    core:sameAs <http://dbpedia.org/resource/Benetton_Rugby_Treviso> ;
+    core:shortLabel "Benetton"@en-gb ;
+    core:slug "treviso"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/810733f9-a6eb-46c7-9bd3-6f84b25114db#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Japan"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33637> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Japan"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Japan_national_rugby_union_team> ;
+    core:shortLabel "Japan"@en-gb ;
+    core:slug "japan"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/844e6991-c5a1-4efc-98f6-5a307077f45d#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wasps"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33410>,
+        <urn:sports-stats:2139742812> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Wasps"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/wasps>,
+        <http://www.wasps.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/London_wasps> ;
+    core:shortLabel "Wasps"@en-gb ;
+    core:slug "wasps"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/4e70f21a-9a50-4258-b62b-9e212a5dfa6f#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/6b1c2b03-8005-4d3c-b6b3-ebf283055118#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/88dc5c11-8c2d-44c6-a2c5-0343a3ff6c6f#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "France"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33176> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "France"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/France_national_rugby_union_team> ;
+    core:shortLabel "France"@en-gb ;
+    core:slug "france"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/89cfe0b7-d5df-457e-a2f2-e3226490249e#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Australia"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33088> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Australia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Australia_national_rugby_union_team> ;
+    core:shortLabel "Australia"@en-gb ;
+    core:slug "australia"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/911c44e6-35cf-4451-8323-678c5a679d1d#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Edinburgh"@en-gb ;
+    cms:locator <urn:sports-data:TRUB35100>,
+        <urn:sports-stats:2139799480> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Edinburgh"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/edinburgh> ;
+    core:sameAs <http://dbpedia.org/resource/Edinburgh_Rugby> ;
+    core:shortLabel "Edinburgh"@en-gb ;
+    core:slug "edinburgh"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/9f2b27b0-641f-4d9a-a400-b9db34e9cdea#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Munster"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33266>,
+        <urn:sports-stats:2139741051> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Munster"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/munster> ;
+    core:sameAs <http://dbpedia.org/resource/Munster_Rugby> ;
+    core:shortLabel "Munster"@en-gb ;
+    core:slug "munster"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/a6da7353-ef55-4a01-9941-65077a91bc2f#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Timisoara Saracens"@en-gb ;
+    cms:locator <urn:sports-data:TRUB63944> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Timisoara Saracens"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Timișoara_Saracens> ;
+    core:shortLabel "Timisoara"@en-gb ;
+    core:slug "timisoara"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/ab4e8a5f-721d-448d-a357-a1c1a6dbd2de#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Racing 92"@en-gb ;
+    cms:locator <urn:sports-data:TRUB58953> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Racing 92"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Racing_92> ;
+    core:shortLabel "Racing 92"@en-gb ;
+    core:slug "racing"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/b04d768b-f13c-4b50-9098-dc9e3339f887#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gloucester"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33189>,
+        <urn:sports-stats:2139740155> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Gloucester"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/gloucester> ;
+    core:sameAs <http://dbpedia.org/resource/Gloucester_Rugby> ;
+    core:shortLabel "Gloucester"@en-gb ;
+    core:slug "gloucester"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/4e70f21a-9a50-4258-b62b-9e212a5dfa6f#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/6b1c2b03-8005-4d3c-b6b3-ebf283055118#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/b1157634-4867-441b-a403-1d48ae8218cc#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "United States"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33640> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "United States"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/United_States_national_rugby_union_team> ;
+    core:shortLabel "United States"@en-gb ;
+    core:slug "united-states"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/b787ade3-3e7f-4b67-bb1b-50fd07291aed#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Canada"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33117> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Canada"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Canada_national_rugby_union_team> ;
+    core:shortLabel "Canada"@en-gb ;
+    core:slug "canada"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/b9e8abfd-aa3f-4602-8efb-205ca245d95f#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Russia"@en-gb ;
+    cms:locator <urn:sports-data:TRUB45539> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Russia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Russia_national_rugby_union_team> ;
+    core:shortLabel "Russia"@en-gb ;
+    core:slug "russia"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/bddd4f9e-d239-4726-892c-019985bae518#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bordeaux Bègles"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34764> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Bordeaux Bègles"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Union_Bordeaux_Bègles> ;
+    core:shortLabel "Bordeaux Bègles"@en-gb ;
+    core:slug "bordeaux-begles"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/bfc59c46-23db-49ba-8655-430cbe940dc0#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "New Zealand"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33273> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "New Zealand"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/New_Zealand_Rugby_Union> ;
+    core:shortLabel "New Zealand"@en-gb ;
+    core:slug "new-zealand"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/c10958f9-07bf-46fd-822e-1d7590ec5d6a#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Montpellier"@en-gb ;
+    cms:locator <urn:sports-data:TRUB48112> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Montpellier"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Montpellier_Hérault_Rugby> ;
+    core:shortLabel "Montpellier"@en-gb ;
+    core:slug "montpellier"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/c18bac6c-f0cb-4a7b-8206-37c4ff1d56b6#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Agen"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34735> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Agen"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/SU_Agen_Lot-et-Garonne> ;
+    core:shortLabel "Agen"@en-gb ;
+    core:slug "agen"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/c63a5d33-1f58-4bf8-9ae1-01af58e5168e#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Toulouse"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33385> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Toulouse"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Stade_Toulousain> ;
+    core:shortLabel "Toulouse"@en-gb ;
+    core:slug "toulouse"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/ccd1293e-e3b8-4dbf-b187-365c896b593f#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Oyonnax"@en-gb ;
+    cms:locator <urn:sports-data:TRUB62516> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Oyonnax"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Oyonnax_Rugby> ;
+    core:shortLabel "Oyonnax"@en-gb ;
+    core:slug "oyonnax"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/d2a89d11-0f61-4a71-8ef5-03524f693de1#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "England"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33163> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "England"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/England_national_rugby_union_team> ;
+    core:shortLabel "England"@en-gb ;
+    core:slug "england"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/d4e94988-a6c9-4288-ba18-b82bbf578fc6#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Northampton"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33286>,
+        <urn:sports-stats:2139741113> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Northampton Saints"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/northampton> ;
+    core:sameAs <http://dbpedia.org/resource/Northampton_Saints> ;
+    core:shortLabel "N'hampton"@en-gb ;
+    core:slug "northampton"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/da61079b-b8bf-49e6-9d05-8f833f6c7d6b#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "South Africa"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33344> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "South Africa"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/South_Africa_national_rugby_union_team> ;
+    core:shortLabel "South Africa"@en-gb ;
+    core:slug "south-africa"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/ddd04cdd-783a-411a-b936-1b0e9cde47f8#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Saracens"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33326>,
+        <urn:sports-stats:2139741888> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Saracens"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/saracens> ;
+    core:sameAs <http://dbpedia.org/resource/Saracens_F.C.> ;
+    core:shortLabel "Saracens"@en-gb ;
+    core:slug "saracens"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/e6e923e4-3e6b-4a6b-9bb6-5923374fe37a#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Southern Kings"@en-gb ;
+    cms:locator <urn:sports-data:TRUB58947> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Southern Kings"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Southern_Kings> ;
+    core:shortLabel "Southern Kings"@en-gb ;
+    core:slug "southern-kings"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/ea45cb53-75a4-4bb7-b9c1-a4eb1a51a2ed#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "London Irish"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33244>,
+        <urn:sports-stats:2139740987> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "London Irish"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/london-irish> ;
+    core:sameAs <http://dbpedia.org/resource/London_Irish> ;
+    core:shortLabel "London Irish"@en-gb ;
+    core:slug "london-irish"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/4e70f21a-9a50-4258-b62b-9e212a5dfa6f#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/6b1c2b03-8005-4d3c-b6b3-ebf283055118#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/eac72aaf-bd96-4a2f-a013-7c8db3dd84c7#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Romania"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33317> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Romania"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Romania_national_rugby_union_team> ;
+    core:shortLabel "Romania"@en-gb ;
+    core:slug "romania"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/f034786d-cb10-49f5-adf6-bd2f727c397f#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Rugby Calvisano"@en-gb ;
+    cms:locator <urn:sports-data:TRUB35242> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Calvisano"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Rugby_Calvisano> ;
+    core:shortLabel "Calvisano"@en-gb ;
+    core:slug "calvisano"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/f1506061-2a82-4451-b12d-f4e7e7cb9336#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Aviron Bayonnais"@en-gb ;
+    cms:locator <urn:sports-data:TRUB45940> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Bayonne"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Aviron_Bayonnais> ;
+    core:shortLabel "Bayonne"@en-gb ;
+    core:slug "bayonne"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/f475527c-74ba-4005-aee2-c529ab8300b4#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ospreys"@en-gb ;
+    cms:locator <urn:sports-data:TRUB47974>,
+        <urn:sports-stats:2140790492> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Ospreys"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/ospreys> ;
+    core:sameAs <http://dbpedia.org/resource/Ospreys_(rugby_team)> ;
+    core:shortLabel "Ospreys"@en-gb ;
+    core:slug "ospreys"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/f47d3ef3-b487-48bc-940a-45291d4eb27c#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Exeter"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33171>,
+        <urn:sports-stats:2139740116> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Exeter Chiefs"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/exeter> ;
+    core:sameAs <http://dbpedia.org/resource/Exeter_Chiefs> ;
+    core:shortLabel "Exeter"@en-gb ;
+    core:slug "exeter"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/6ec351cb-ddf1-44ca-968a-c9319dbee667#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/b5f51544-51ce-4732-8f76-61b49dc8e1b8#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/cab1d0a7-7e85-4a72-8b8b-ea4ac3fef4a1#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/f5282fb8-3673-46a7-be9a-e2eb89c444a8#id> a core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Scotland"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33327> ;
+    core:disambiguationHint "National Rugby Union Team"@en-gb ;
+    core:preferredLabel "Scotland"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Scotland_national_rugby_union_team> ;
+    core:shortLabel "Scotland"@en-gb ;
+    core:slug "scotland"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/f8c8c7f5-a139-443a-afa4-d2ee5f27e191#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Zebre"@en-gb ;
+    cms:locator <urn:sports-data:TRUB61739>,
+        <urn:sports-stats:2142456747> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Zebre"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/zebre> ;
+    core:sameAs <http://dbpedia.org/resource/Zebre> ;
+    core:shortLabel "Zebre"@en-gb ;
+    core:slug "zebre"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/f9bcd500-e383-408f-9177-6d8468d6ae35#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Worcester"@en-gb ;
+    cms:locator <urn:sports-data:TRUB34027>,
+        <urn:sports-stats:2139768797> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Worcester Warriors"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/worcester> ;
+    core:sameAs <http://dbpedia.org/resource/Worcester_Warriors> ;
+    core:shortLabel "Worcester"@en-gb ;
+    core:slug "worcester"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/38c54e01-4063-4e9f-9c28-5483e5f0738f#id>,
+        <http://www.bbc.co.uk/things/3c296455-b80e-45bb-b077-4c8230b02446#id>,
+        <http://www.bbc.co.uk/things/6368ba2d-bea9-470f-b464-fbcede239b86#id>,
+        <http://www.bbc.co.uk/things/681b7fa8-6b29-453c-994d-303b56f678be#id>,
+        <http://www.bbc.co.uk/things/6b1c2b03-8005-4d3c-b6b3-ebf283055118#id>,
+        <http://www.bbc.co.uk/things/6f32188f-3fb0-47f9-9c7c-a593db3e6e26#id>,
+        <http://www.bbc.co.uk/things/7a9c55e3-d48d-4047-8513-98c079788995#id>,
+        <http://www.bbc.co.uk/things/84d7334b-58e8-4e35-a0a7-7ad6569ce813#id>,
+        <http://www.bbc.co.uk/things/85192268-bb60-4e3e-8f04-fbd12bd6d952#id>,
+        <http://www.bbc.co.uk/things/9d9f672e-5618-4ade-a68d-d258a65014db#id>,
+        <http://www.bbc.co.uk/things/cd35f3a5-76e9-4c31-a3ce-68badc5042b4#id>,
+        <http://www.bbc.co.uk/things/d9c0611a-cc3c-4594-a2cd-1037f97b4dd3#id>,
+        <http://www.bbc.co.uk/things/d9f3a93d-f0f1-461f-b908-0d1810327d44#id>,
+        <http://www.bbc.co.uk/things/fe6f1537-22bc-4f58-a979-f7170e9456de#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/fbc174b2-1fdc-4905-8aa2-536036519848#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Leinster"@en-gb ;
+    cms:locator <urn:sports-data:TRUB33236>,
+        <urn:sports-stats:2139740958> ;
+    core:disambiguationHint "Rugby Union Team"@en-gb ;
+    core:preferredLabel "Leinster"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/teams/leinster> ;
+    core:sameAs <http://dbpedia.org/resource/Leinster_Rugby> ;
+    core:shortLabel "Leinster"@en-gb ;
+    core:slug "leinster"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/17e0ef55-3489-4fed-bd7d-dc1d7eb487b0#id>,
+        <http://www.bbc.co.uk/things/2ac35a57-dd2e-4b17-b912-102ba8a9055c#id>,
+        <http://www.bbc.co.uk/things/44e9f891-d232-4e14-a7cc-a2f3e4ccddbe#id>,
+        <http://www.bbc.co.uk/things/64e3384e-75d3-4a01-9b6a-3f7084424ee3#id>,
+        <http://www.bbc.co.uk/things/74c83945-c03c-4620-99d9-9118beb0491e#id>,
+        <http://www.bbc.co.uk/things/802eda6d-e1ca-4339-b709-1b283a74f8b3#id>,
+        <http://www.bbc.co.uk/things/af50493e-b06d-4d77-b36a-89775a221830#id>,
+        <http://www.bbc.co.uk/things/b085ab1a-13c7-48fe-816a-aa2ac35edea3#id>,
+        <http://www.bbc.co.uk/things/b6a5b5dc-0e66-461f-83ef-48195f34c0bb#id>,
+        <http://www.bbc.co.uk/things/bf42f739-ff01-41e7-9e9c-e86d8cfaee0f#id>,
+        <http://www.bbc.co.uk/things/d2f8afa3-f3b1-4901-a6aa-4bc7db452d84#id>,
+        <http://www.bbc.co.uk/things/d3ac6806-9edd-4fd2-b05b-cecef7413555#id>,
+        <http://www.bbc.co.uk/things/d971bc98-9522-4a2f-99d7-562c19ccb635#id>,
+        <http://www.bbc.co.uk/things/e78d020c-6b83-4ad8-a026-95f2883d5fa9#id>,
+        <http://www.bbc.co.uk/things/ecc1fa1e-fe33-4c93-bcc1-465f1906f2e8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.cardiffblues.com/RSS_Blues_News.xml> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.cardiffblues.com/home.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.connachtrugby.ie/component/option,com_ninjarsssyndicator/feed_id,2/format,raw/lang,en/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.connachtrugby.ie/home> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.dragonsrugby.wales/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.edinburghrugby.org/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.exeterchiefs.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.glasgowwarriors.org/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.gloucesterrugby.co.uk/RSSLatestNews.xml> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.gloucesterrugby.co.uk/home.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.leicestertigers.com/home.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.leinsterrugby.ie/home.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.leinsterrugby.ie/newsroom/rss_syndication_and_social_media.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.london-welsh.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.munsterrugby.ie/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.munsterrugby.ie/RssLatestNews.xml> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.northamptonsaints.co.uk/home.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ospreysrugby.com/RSS_Latest_News.xml> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.ospreysrugby.com/home.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.quins.co.uk/Quins_RU_News.xml> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.salesharks.com/RSSLatestNews.xml> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.salesharks.com/home.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.saracens.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.saracens.com/news/rss.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.scarlets.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ulsterrugby.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ulsterrugby.com/RssLatestNews.xml> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.warriors.co.uk/home.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.wasps.co.uk/RSSFeed.ink> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:RSS .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/bath> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/bristol> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/cardiff-blues> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/connacht> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/edinburgh> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/exeter> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/glasgow> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/gloucester> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/harlequins> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/leicester> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/leinster> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/london-irish> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/munster> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/newcastle> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/ng-dragons> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/northampton> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/ospreys> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/sale> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/saracens> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/scarlets> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/ulster> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/wasps> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/teams/worcester> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.quins.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.wasps.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<urn:sports-data:TRUB33085> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33088> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33094> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33110> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33117> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33132> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33163> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33171> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33176> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33189> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33200> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33216> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33221> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33234> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33236> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33240> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33244> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33246> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33266> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33269> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33273> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33286> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33317> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33324> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33326> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33327> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33344> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33384> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33385> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33396> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33401> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33410> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33637> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB33640> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34027> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34520> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34698> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34735> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34753> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34756> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34761> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34764> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34955> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34957> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34960> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34962> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB34983> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB35079> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB35098> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB35099> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB35100> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB35229> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB35230> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB35242> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB38197> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB45539> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB45940> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB47880> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB47973> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB47974> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB48112> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB51397> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB58947> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB58953> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB60921> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB62516> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB63619> a cms:Sports-DataLocator .
+
+<urn:sports-data:TRUB63944> a cms:Sports-DataLocator .
+
+<urn:sports-stats:2139739220> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139739929> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139739993> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139740116> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139740155> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139740859> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139740956> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139740958> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139740983> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139740987> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139740989> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139741051> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139741113> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139741886> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139741888> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139742105> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139742812> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139768797> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139774781> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139798807> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2139799480> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2140789558> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2140790491> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:2140790492> a cms:Sports-StatsLocator .
+

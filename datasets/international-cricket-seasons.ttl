@@ -1,0 +1,500 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/7f933deb-d4f9-403a-a521-b230c3940761#id> a provenance:Dataset ;
+    rdfs:label "Cricket: International Seasons" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/cricket/international-cricket-seasons.ttl" ;
+    provenance:changeReason "SWD-752: Create 2019 cricket season modelling" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-05-09T14:30:48+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "26"^^xsd:int .
+
+<http://www.bbc.co.uk/things/05f9856c-b987-439b-9422-7945b16bd4bf#id> a sport:Competition ;
+    rdfs:label "ICC World Twenty20 2012 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/520779de-2935-434f-802b-b2febcabfb8c#id> ;
+    sal:name "World Twenty20"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/905ed4c9-8719-4775-a1a5-e52cb80aac19#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/905ed4c9-8719-4775-a1a5-e52cb80aac19#id> .
+
+<http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id> a sport:Competition ;
+    rdfs:label "ICC World Cup 2019 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/f1358ba9-34d1-4954-9793-35c48221f37a#id> ;
+    sal:name "ICC World Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/7a230020-66f2-4b36-8e3d-6b8cbbddf913#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7a230020-66f2-4b36-8e3d-6b8cbbddf913#id> .
+
+<http://www.bbc.co.uk/things/221444a5-1f8e-4caa-84b7-c27a64c1bb25#id> a sport:Competition ;
+    rdfs:label "Cricket World Cup Qualifier Warm-up 2018 Season (Competition)" ;
+    ns3:time <http://www.bbc.co.uk/things/cc64adca-33dc-4c6d-9a52-bcde26155c9c#id> ;
+    sal:name "Cricket World Cup Qualifier Warm-up"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/b0ae3c2b-1ef0-46b2-be01-128b8a4aaa26#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b0ae3c2b-1ef0-46b2-be01-128b8a4aaa26#id> .
+
+<http://www.bbc.co.uk/things/29240906-08d3-4456-aa5f-0b61afde5add#id> a sport:Competition ;
+    rdfs:label "Women's Twenty20 2013 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/e862b57c-6b16-46b5-8b97-9719e5fe56a5#id> ;
+    sal:name "Women's Twenty20 Match"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/0d108e47-5740-4670-9509-d33d94470733#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0d108e47-5740-4670-9509-d33d94470733#id> .
+
+<http://www.bbc.co.uk/things/36e7f091-e7c3-4d48-aa82-5ec09f643868#id> a sport:Competition ;
+    rdfs:label "ICC Women's World Twenty20 2016 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/aa4d59d5-46d6-4d50-9745-1bc21912b8b4#id> ;
+    sal:name "Women's World Twenty20"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/bca5d79e-599a-450b-ab7e-b5c20bcf9201#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bca5d79e-599a-450b-ab7e-b5c20bcf9201#id> .
+
+<http://www.bbc.co.uk/things/4c319e42-47ea-4018-b6ba-681118c050ab#id> a sport:Competition ;
+    rdfs:label "ICC Champions Trophy 2013 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/2eba6d8a-4645-45a2-8c16-ed861b09cc57#id> ;
+    sal:name "ICC Champions Trophy"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/733c26ea-2708-4283-93f7-7887a242853d#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/733c26ea-2708-4283-93f7-7887a242853d#id> .
+
+<http://www.bbc.co.uk/things/4e760e6a-839c-4188-8546-f32c458cb2cb#id> a sport:Competition ;
+    rdfs:label "ICC Champions Trophy 2014 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/c888b473-91b8-4c1a-83a9-b9acd8fbaa78#id> ;
+    sal:name "ICC Champions Trophy"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/733c26ea-2708-4283-93f7-7887a242853d#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/733c26ea-2708-4283-93f7-7887a242853d#id> .
+
+<http://www.bbc.co.uk/things/4ea6b161-311f-44d6-9124-54a8e39c7ef1#id> a sport:Competition ;
+    rdfs:label "Asia Cup 2016 (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/561379d9-4c82-42ab-b803-de733eeef56a#id> ;
+    sal:name "Asia Cup 2016"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/7e6fb8b0-e644-481e-8a47-add56969e9dc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7e6fb8b0-e644-481e-8a47-add56969e9dc#id> .
+
+<http://www.bbc.co.uk/things/50364d60-6bac-4ecc-bb87-0e36728187c7#id> a sport:Competition ;
+    rdfs:label "ICC Women's World Cup 2013 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/a67b07b7-0ab7-485c-96c6-a552822f9e03#id> ;
+    sal:name "ICC Women's World Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/cffb1e12-4ade-4aa0-948f-98261cbb83fb#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/cffb1e12-4ade-4aa0-948f-98261cbb83fb#id> .
+
+<http://www.bbc.co.uk/things/539a946e-2f95-436b-8373-1cc73851a915#id> a sport:Competition ;
+    rdfs:label "Women's Test Series 2013 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/7d1f9693-4077-4a21-8f67-6766b4d516b4#id> ;
+    sal:name "Women's Test Match Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/81ee50cc-8726-4229-97f6-e19479f06d64#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/81ee50cc-8726-4229-97f6-e19479f06d64#id> .
+
+<http://www.bbc.co.uk/things/58e5deed-a97b-443d-b0b9-c5bb60a2c9e5#id> a sport:Competition ;
+    rdfs:label "Women's ODI 2013 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/96a37c5a-1aea-474d-a1a6-4b5792447b79#id> ;
+    sal:name "Women's One Day International Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/e5b006e1-bdd0-446a-9354-8658f0f303ab#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e5b006e1-bdd0-446a-9354-8658f0f303ab#id> .
+
+<http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id> a sport:Competition ;
+    rdfs:label "ICC World Cup 2015 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/18f24926-d233-44cb-9627-d29eb7eabe0e#id> ;
+    sal:name "ICC World Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/7a230020-66f2-4b36-8e3d-6b8cbbddf913#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7a230020-66f2-4b36-8e3d-6b8cbbddf913#id> .
+
+<http://www.bbc.co.uk/things/6adff3b5-8ea0-4f6b-9280-6b09f1b7bedf#id> a sport:Competition ;
+    rdfs:label "One Day International Series 2014 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/d74fbb68-cb7b-4275-95fc-7b473a3656d6#id> ;
+    sal:name "One Day International Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/943bcbc6-5865-4b94-9d59-c164665b0eb5#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/943bcbc6-5865-4b94-9d59-c164665b0eb5#id> .
+
+<http://www.bbc.co.uk/things/6c61106f-33dd-4bef-ad35-04936697057d#id> a sport:Competition ;
+    rdfs:label "Tour Match (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/2cf1c2db-4fdd-4aba-a4a8-60376485fb30#id> ;
+    sal:name "Tour Match"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/c5793940-de0a-4704-9199-96c0ab19100f#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c5793940-de0a-4704-9199-96c0ab19100f#id> .
+
+<http://www.bbc.co.uk/things/73ddaed4-9eed-4651-bf8d-49009aa6b50d#id> a sport:Competition ;
+    rdfs:label "Women's Test Match Series (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/63b4f68f-8d6a-4909-842c-086642464329#id> ;
+    sal:name "Women's Test Match Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/09f2c53d-dc9d-4ec9-bb23-51d1a1c079fe#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/09f2c53d-dc9d-4ec9-bb23-51d1a1c079fe#id> .
+
+<http://www.bbc.co.uk/things/78a3ef65-db58-4fc1-80ed-d5bb7c25dcec#id> a sport:Competition ;
+    rdfs:label "Champions League Twenty20 (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/ee770bc9-03ae-4097-a0ca-3da51f672d01#id> ;
+    sal:name "Champions League Twenty20"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/e313b27c-b5bf-44e2-9052-da6b21b210f6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e313b27c-b5bf-44e2-9052-da6b21b210f6#id> .
+
+<http://www.bbc.co.uk/things/7fe25a96-0b37-4b62-8211-1e65213b3815#id> a sport:Competition ;
+    rdfs:label "ICC Women's World Twenty20 2014 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/bd8986bb-6bfe-4d83-a0de-e822ed92289e#id> ;
+    sal:name "Women's World Twenty20"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/bca5d79e-599a-450b-ab7e-b5c20bcf9201#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bca5d79e-599a-450b-ab7e-b5c20bcf9201#id> .
+
+<http://www.bbc.co.uk/things/80bf93f2-d4b6-466b-ac8f-0f85e425a753#id> a sport:Competition ;
+    rdfs:label "'A' Test Match Series (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/cba9a44f-70ac-4d2c-bd16-bdbbcc71381d#id> ;
+    sal:name "'A' Test Match Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/04228c94-8ccf-462e-af4c-089a9251bc07#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/04228c94-8ccf-462e-af4c-089a9251bc07#id> .
+
+<http://www.bbc.co.uk/things/839a1515-cf2a-4c43-97a4-0cb2cf152761#id> a sport:Competition ;
+    rdfs:label "ICC Women's World Twenty20 2012 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/6b32d904-ce07-4fcb-9094-ab8f08769be2#id> ;
+    sal:name "Women's World Twenty20"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/bca5d79e-599a-450b-ab7e-b5c20bcf9201#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bca5d79e-599a-450b-ab7e-b5c20bcf9201#id> .
+
+<http://www.bbc.co.uk/things/86184ba5-e883-40e5-92a3-d427857bd94d#id> a sport:Competition ;
+    rdfs:label "'A' Tours of England 2016 (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/b36877b1-9344-49d3-9269-c7cf9906ff93#id> ;
+    sal:name "'A' Tours of England 2016"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/77f2cb23-4f03-451f-963d-7038a4661004#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/77f2cb23-4f03-451f-963d-7038a4661004#id> .
+
+<http://www.bbc.co.uk/things/8b9bc094-2378-42ae-924c-f47cbcad9977#id> a sport:Competition ;
+    rdfs:label "Women's Twenty20 2014 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/66a5ea83-5b46-44cb-9ba9-8290f50e237a#id> ;
+    sal:name "Women's Twenty20 Match"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/0d108e47-5740-4670-9509-d33d94470733#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0d108e47-5740-4670-9509-d33d94470733#id> .
+
+<http://www.bbc.co.uk/things/97ce041a-24cc-4d02-809f-e2ddc5f078a6#id> a sport:Competition ;
+    rdfs:label "Ashes 2011/13 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/7d9376ef-3bce-41f8-b423-189cd189dd97#id> ;
+    sal:name "The Ashes"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/02c68c33-5e83-4b2a-9d24-fb5831f3c115#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/02c68c33-5e83-4b2a-9d24-fb5831f3c115#id> .
+
+<http://www.bbc.co.uk/things/9e46250c-e155-4f8e-88ed-4a3196dd38f9#id> a sport:Competition ;
+    rdfs:label "Under 19 World Cup 2016 (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/1445aa4f-d39e-4225-855d-cd5cc1f6446e#id> ;
+    sal:name "Under 19 World Cup 2016"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/59341889-bde0-4a41-9369-a9c33b1746e9#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/59341889-bde0-4a41-9369-a9c33b1746e9#id> .
+
+<http://www.bbc.co.uk/things/9f5365eb-ebb3-4aca-976d-b0dd3a3cf8b6#id> a sport:Competition ;
+    rdfs:label "ICC Champions Trophy 2017 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/bb982174-2546-4ee1-95b9-3265da126499#id> ;
+    sal:name "ICC Champions Trophy"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/733c26ea-2708-4283-93f7-7887a242853d#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/733c26ea-2708-4283-93f7-7887a242853d#id> .
+
+<http://www.bbc.co.uk/things/a3f2f951-b605-476b-bd15-8cb8c985b449#id> a sport:Competition ;
+    rdfs:label "International Triangular Series (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/e57a3255-1614-4082-beea-e8085dd1d8a7#id> ;
+    sal:name "International Triangular Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/239187a1-a4be-41a0-bead-47a0e6fbd90d#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/239187a1-a4be-41a0-bead-47a0e6fbd90d#id> .
+
+<http://www.bbc.co.uk/things/aa118663-e60d-479d-aa6e-bfdef67672fd#id> a sport:Competition ;
+    rdfs:label "Women's Test Series 2014 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/cd39bc39-0ed0-4227-a996-17d83b98605a#id> ;
+    sal:name "Women's Test Match Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/81ee50cc-8726-4229-97f6-e19479f06d64#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/81ee50cc-8726-4229-97f6-e19479f06d64#id> .
+
+<http://www.bbc.co.uk/things/b7ec1f54-3a3b-439b-b265-65e4bb42b081#id> a sport:Competition ;
+    rdfs:label "Ashes 2013/15 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/3562eba0-4bf9-4583-b9be-77ab0a31c53e#id> ;
+    sal:name "The Ashes"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/02c68c33-5e83-4b2a-9d24-fb5831f3c115#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/02c68c33-5e83-4b2a-9d24-fb5831f3c115#id> .
+
+<http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id> a sport:Competition ;
+    rdfs:label "ICC World Cup 2011 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/1f63f238-ec35-4e67-a776-584ef883e7e6#id> ;
+    sal:name "ICC World Cup"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/7a230020-66f2-4b36-8e3d-6b8cbbddf913#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7a230020-66f2-4b36-8e3d-6b8cbbddf913#id> .
+
+<http://www.bbc.co.uk/things/c1d10a46-1e1a-480c-97e4-4ff76cd352e4#id> a sport:Competition ;
+    rdfs:label "Cricket World Cup Qualifier 2018 Season (Competition)" ;
+    ns3:time <http://www.bbc.co.uk/things/5865d9e0-5d1f-4899-ba22-43f6b19452b0#id> ;
+    sal:name "Cricket World Cup Qualifier"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/a9ee633a-3e81-434d-831a-fc3b6a4ac796#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/a9ee633a-3e81-434d-831a-fc3b6a4ac796#id> .
+
+<http://www.bbc.co.uk/things/c5028332-dcf5-4c11-891f-ac772ddce28a#id> a sport:Competition ;
+    rdfs:label "Asia Cup 2014 (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/46db6a11-2580-4116-865c-972726e2edef#id> ;
+    sal:name "Asia Cup 2014"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/7e6fb8b0-e644-481e-8a47-add56969e9dc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7e6fb8b0-e644-481e-8a47-add56969e9dc#id> .
+
+<http://www.bbc.co.uk/things/cd0868d2-ce03-40b3-9dc2-b27bc8bbae3e#id> a sport:Competition ;
+    rdfs:label "International Test Match Series (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/785a9bef-0f7e-4a21-a974-309067f114a2#id> ;
+    sal:name "International Test Match Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/830df1ec-6722-4816-9d7f-2a459af0c1ab#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/830df1ec-6722-4816-9d7f-2a459af0c1ab#id> .
+
+<http://www.bbc.co.uk/things/d6daa3bf-d88e-449d-815d-28dfdfe4b4a4#id> a sport:Competition ;
+    rdfs:label "Women's ODI 2014 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/aa1db1e7-51d5-4e23-985b-58a9fe255f0e#id> ;
+    sal:name "Women's One Day International Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/e5b006e1-bdd0-446a-9354-8658f0f303ab#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e5b006e1-bdd0-446a-9354-8658f0f303ab#id> .
+
+<http://www.bbc.co.uk/things/db2b84b0-e422-4268-97c4-a996d4b484e6#id> a sport:Competition ;
+    rdfs:label "International Twenty20 Series (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/68c5982f-9a2d-4653-ab26-80b0b37879d1#id> ;
+    sal:name "International Twenty20 Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/5119109a-c594-4d8a-97d3-7c98e1ed7ae8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/5119109a-c594-4d8a-97d3-7c98e1ed7ae8#id> .
+
+<http://www.bbc.co.uk/things/df18fae4-48b8-4fc0-a51f-1a01dd7e0f01#id> a sport:Competition ;
+    rdfs:label "ICC World Cricket League (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/8b9399f0-5e97-414d-86e6-81486d492dc8#id> ;
+    sal:name "ICC World Cricket League"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/88cb697c-2930-4f52-b4a8-f74642b1609b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/88cb697c-2930-4f52-b4a8-f74642b1609b#id> .
+
+<http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> a sport:Competition ;
+    rdfs:label "ICC World Twenty20 2016 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/c70b19b7-6bc6-4a36-8d62-3ffb13dcab44#id> ;
+    sal:name "World Twenty20"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/905ed4c9-8719-4775-a1a5-e52cb80aac19#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/905ed4c9-8719-4775-a1a5-e52cb80aac19#id> .
+
+<http://www.bbc.co.uk/things/e729add4-0984-4c0c-8571-740f10fd51b1#id> a sport:Competition ;
+    rdfs:label "Women's ODI 2014 Series (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/d3c1efdf-5afb-4ffd-9de4-7a00d6dc1d8c#id> ;
+    sal:name "Women's One Day International Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/64d3da81-8dbe-49c5-aa55-337012fc43b5#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/64d3da81-8dbe-49c5-aa55-337012fc43b5#id> .
+
+<http://www.bbc.co.uk/things/f28d1b71-d227-4256-8dfb-1daf845e96af#id> a sport:Competition ;
+    rdfs:label "International Twenty20 Series (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/000b0c37-e3cc-418c-93bd-86d16ed306cd#id> ;
+    sal:name "International Twenty20 Series"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/25e722b9-c0bf-4df5-a4b0-6b038513bfb1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/25e722b9-c0bf-4df5-a4b0-6b038513bfb1#id> .
+
+<http://www.bbc.co.uk/things/f9c7cc39-60e7-4072-9083-24b58db94585#id> a sport:Competition ;
+    rdfs:label "ICC World Twenty20 2014 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/3abf6b0e-42f7-4bed-b421-2f9ef74f4c81#id> ;
+    sal:name "World Twenty20"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/905ed4c9-8719-4775-a1a5-e52cb80aac19#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/905ed4c9-8719-4775-a1a5-e52cb80aac19#id> .
+
+<http://www.bbc.co.uk/things/fb64b8ce-bb68-4041-a81b-8e9e47ca1b71#id> a sport:Competition ;
+    rdfs:label "Women's Ashes 2015 Series (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/c3237ebf-9caa-4a13-a5df-efa7232592f8#id> ;
+    sal:name "Women's Ashes 2015"@en-gb ;
+    ns1:recurringEvent <http://www.bbc.co.uk/things/9278c1e4-b74e-40b4-bea8-0bc3d7850996#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9278c1e4-b74e-40b4-bea8-0bc3d7850996#id> .
+
+<http://www.bbc.co.uk/things/000b0c37-e3cc-418c-93bd-86d16ed306cd#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "International Twenty20 Series(Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1445aa4f-d39e-4225-855d-cd5cc1f6446e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Under 19 World Cup 2016 (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/18f24926-d233-44cb-9627-d29eb7eabe0e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC World Cup 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2019-02-13"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1f63f238-ec35-4e67-a776-584ef883e7e6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC World Cup 2011 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2011-06-17"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2cf1c2db-4fdd-4aba-a4a8-60376485fb30#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Tour Match (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2eba6d8a-4645-45a2-8c16-ed861b09cc57#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC Champions Trophy 2013 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-06-01"^^xsd:date ;
+    ns2:hasEnd "2013-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3562eba0-4bf9-4583-b9be-77ab0a31c53e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Ashes 2013/15 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-11-21"^^xsd:date ;
+    ns2:hasEnd "2015-01-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3abf6b0e-42f7-4bed-b421-2f9ef74f4c81#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC World Twenty20 2014 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/46db6a11-2580-4116-865c-972726e2edef#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Asia Cup 2014 (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/520779de-2935-434f-802b-b2febcabfb8c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC World Twenty20 2012 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2011-08-01"^^xsd:date ;
+    ns2:hasEnd "2013-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/561379d9-4c82-42ab-b803-de733eeef56a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Asia Cup 2016 (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5865d9e0-5d1f-4899-ba22-43f6b19452b0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket World Cup Qualifier 2018 Season (Temporal Entity)" ;
+    ns2:hasBeginning "2018-02-01"^^xsd:date ;
+    ns2:hasEnd "2018-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/63b4f68f-8d6a-4909-842c-086642464329#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Test Match Series (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/66a5ea83-5b46-44cb-9ba9-8290f50e237a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Twenty20 2014 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/68c5982f-9a2d-4653-ab26-80b0b37879d1#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "International Twenty20 Series (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6b32d904-ce07-4fcb-9094-ab8f08769be2#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC Women's World Twenty20 2012 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2011-08-01"^^xsd:date ;
+    ns2:hasEnd "2013-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/785a9bef-0f7e-4a21-a974-309067f114a2#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "International Test match series (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7d1f9693-4077-4a21-8f67-6766b4d516b4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Test Series 2013 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-01-01"^^xsd:date ;
+    ns2:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7d9376ef-3bce-41f8-b423-189cd189dd97#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Ashes 2011/13 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-06-01"^^xsd:date ;
+    ns2:hasEnd "2013-11-20"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8b9399f0-5e97-414d-86e6-81486d492dc8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC World Cricket League (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/96a37c5a-1aea-474d-a1a6-4b5792447b79#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's ODI 2013 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-01-01"^^xsd:date ;
+    ns2:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a67b07b7-0ab7-485c-96c6-a552822f9e03#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC Women's World Cup 2013 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-01-31"^^xsd:date ;
+    ns2:hasEnd "2017-01-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/aa1db1e7-51d5-4e23-985b-58a9fe255f0e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's ODI 2014 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/aa4d59d5-46d6-4d50-9745-1bc21912b8b4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC Women's World Twenty20 2016 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2017-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b36877b1-9344-49d3-9269-c7cf9906ff93#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "'A' Tours of England 2016 (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2016-02-01"^^xsd:date ;
+    ns2:hasEnd "2017-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/bb982174-2546-4ee1-95b9-3265da126499#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC Champions Trophy 2017 (Temporal Entity)" ;
+    ns2:hasBeginning "2017-04-01"^^xsd:date ;
+    ns2:hasEnd "2018-09-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/bd8986bb-6bfe-4d83-a0de-e822ed92289e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC Women's World Twenty20 2014 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-08-01"^^xsd:date ;
+    ns2:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c3237ebf-9caa-4a13-a5df-efa7232592f8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Ashes 2015 Series (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c70b19b7-6bc6-4a36-8d62-3ffb13dcab44#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC World Twenty20 2016 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-08-01"^^xsd:date ;
+    ns2:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c888b473-91b8-4c1a-83a9-b9acd8fbaa78#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC Champions Trophy 2014 (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cba9a44f-70ac-4d2c-bd16-bdbbcc71381d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "'A' Test Match Series (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cc64adca-33dc-4c6d-9a52-bcde26155c9c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket World Cup Qualifier Warm-up 2018 Season (Temporal Entity)" ;
+    ns2:hasBeginning "2018-02-01"^^xsd:date ;
+    ns2:hasEnd "2018-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cd39bc39-0ed0-4227-a996-17d83b98605a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Test Series 2014 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d3c1efdf-5afb-4ffd-9de4-7a00d6dc1d8c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's One Day International Series (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d74fbb68-cb7b-4275-95fc-7b473a3656d6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "One Day International Series (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e57a3255-1614-4082-beea-e8085dd1d8a7#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "International Triangular Series (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e862b57c-6b16-46b5-8b97-9719e5fe56a5#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Twenty20 2013 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2013-01-01"^^xsd:date ;
+    ns2:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ee770bc9-03ae-4097-a0ca-3da51f672d01#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League Twenty20 (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f1358ba9-34d1-4954-9793-35c48221f37a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "ICC World Cup 2019 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2019-02-14"^^xsd:date ;
+    ns2:hasEnd "2023-02-13"^^xsd:date .
+

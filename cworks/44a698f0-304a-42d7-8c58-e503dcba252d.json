@@ -1,0 +1,231 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/b51b20f4-5b3a-41e3-99e8-4dd7495fdeff#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-08T20:54:16+00:00",
+      "dateModified": "2019-11-08T20:54:16+00:00",
+      "description": "The BBC has been speaking to friends and family of Vietnamese nationals who died in the Essex lorry tragedy.",
+      "shortTitle": "Who are the victims in the Essex lorry tragedy?",
+      "title": "Essex lorry deaths: Who are the victims?",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+      "locator": [
+        "urn:asset:204586ef-2771-714a-b639-bedc16a527eb",
+        "urn:bbc:cps:asset:50208251"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/44a698f0-304a-42d7-8c58-e503dcba252d#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Vietnam",
+          "preferredLabel": "Vietnam",
+          "shortLabel": "Vietnam",
+          "slug": "vietnam",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/teams/vietnam",
+          "sameAs": "http://dbpedia.org/resource/Vietnam_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6517ab06-2c0f-4784-8576-cabfce4d1437#id",
+          "@type": [
+            "Thing",
+            "Event"
+          ],
+          "label": "Essex lorry deaths",
+          "preferredLabel": "Essex lorry deaths"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/91836fb1-7094-472d-b0c1-066a9a03fb6c#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Vietnam",
+          "preferredLabel": "Vietnam",
+          "sameAs": "http://sws.geonames.org/1562822/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d16cf68e-c31a-46b7-98b7-79ec64fa4797#id",
+          "@type": [
+            "Thing",
+            "Theme"
+          ],
+          "label": "People smuggling",
+          "preferredLabel": "People smuggling",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/People_smuggling",
+          "sameAs": [
+            "http://dbpedia.org/resource/People_smuggling",
+            "http://www.wikidata.org/entity/Q1854900"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d16dd7b4-88d7-4835-bf22-5f9f79936cb6#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Grays",
+          "preferredLabel": "Grays",
+          "sameAs": "http://sws.geonames.org/2648182/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/news/uk-50208251",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/D0E6/production/_109587435_1894b83e-5434-4ba6-b7f3-51b4c5424a55.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "A relative lights an incense stick in front of a portrait of Bui Thi Nhung",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "Event": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Event"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "Organisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"
+    },
+    "Place": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Place"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "dcterms:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "geoname:GeoTagConcept": {
+      "@id": "http://www.geonames.org/ontology#GeoTagConcept"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "shortTitle": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/shortTitle"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:CompetitiveSportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"
+    },
+    "sport:SportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/250fdc59-eb35-469a-9456-26ac0e9c2983#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: Anglo-Welsh Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/rugby-union/rugby-union-2014-anglo-welsh-stages-and-rounds-4.ttl" ;
+    provenance:changeReason "Reverted Anglo-Welsh Cup 2014 stages and rounds to version 1" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-02-03T16:36:01+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Jonathan.Balls@bbc.co.uk> ;
+    provenance:version "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/de13b5ac-1938-4c4e-b842-25bb841f5b11#id> sport:firstStage <http://www.bbc.co.uk/things/1cc8d683-3883-4fe8-9ed6-45c3fb4bd524#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/90c4965a-dc7e-4b79-ae86-f0d559a58404#id> .
+
+<http://www.bbc.co.uk/things/0814e8a5-a468-4d03-8561-d9cb4d685421#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    sal:name "Pool 2"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3002014S1R3> ;
+    core:preferredLabel "Pool 2"@en-gb ;
+    core:shortLabel "Pool 2"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/18903869-3456-43ac-a064-2c37990275c9#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    sal:name "Pool 3"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3002014S1R4> ;
+    core:preferredLabel "Pool 3"@en-gb ;
+    core:shortLabel "Pool 3"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/4ce0df1e-5307-4ad6-b3fd-7855126606b7#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3002014S1R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/d523f6eb-b36c-4230-803d-3baa2f3e3fe3#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    sal:name "Pool 4"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3002014S1R5> ;
+    core:preferredLabel "Pool 4"@en-gb ;
+    core:shortLabel "Pool 4"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/dd403454-42fc-49a5-800d-1094ec0c5785#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    sal:name "Semi Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3002014S2R1> ;
+    core:preferredLabel "Semi Final"@en-gb ;
+    core:shortLabel "Semi Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/e5fee87b-4b79-492f-9200-ff92e228c5d4#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    sal:name "Pool 1"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3002014S1R2> ;
+    core:preferredLabel "Pool 1"@en-gb ;
+    core:shortLabel "Pool 1"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/fb955f6c-548c-430a-b722-efac53ad86fe#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3002014S2R2> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CRUB3002014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3002014S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3002014S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3002014S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3002014S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3002014S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3002014S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3002014S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB3002014S2R2> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/1cc8d683-3883-4fe8-9ed6-45c3fb4bd524#id> a sport:LeagueCompetition ;
+    rdfs:label "League Stage 1 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    sal:name "Stage 1 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3002014S1> ;
+    core:preferredLabel "Stage 1 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    core:shortLabel "League Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/4ce0df1e-5307-4ad6-b3fd-7855126606b7#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0814e8a5-a468-4d03-8561-d9cb4d685421#id>,
+        <http://www.bbc.co.uk/things/18903869-3456-43ac-a064-2c37990275c9#id>,
+        <http://www.bbc.co.uk/things/e5fee87b-4b79-492f-9200-ff92e228c5d4#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/d523f6eb-b36c-4230-803d-3baa2f3e3fe3#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/90c4965a-dc7e-4b79-ae86-f0d559a58404#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/90c4965a-dc7e-4b79-ae86-f0d559a58404#id> a sport:KnockoutCompetition ;
+    rdfs:label "Knockout Stage 2 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    sal:name "Stage 2 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    cms:locator <urn:sports-data:CRUB3002014S2> ;
+    core:preferredLabel "Stage 2 of Rugby Union Anglo-Welsh Cup 2014"@en-gb ;
+    core:shortLabel "Knockout Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/dd403454-42fc-49a5-800d-1094ec0c5785#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/fb955f6c-548c-430a-b722-efac53ad86fe#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/1cc8d683-3883-4fe8-9ed6-45c3fb4bd524#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

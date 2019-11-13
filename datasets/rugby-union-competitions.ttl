@@ -1,0 +1,789 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/f586a779-e159-4586-8946-e9cacdf3cd9d#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: Competitions" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-union/rugby-union-competitions.ttl" ;
+    provenance:changeReason "SWD-484: Create All-Ireland League sport store concepts" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-01-24T11:10:41+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "82"^^xsd:int .
+
+<http://www.bbc.co.uk/things/044921b2-6be2-44fb-a025-7eba324e6624#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's Six Nations"@en-gb ;
+    cms:locator <urn:sports-data:CRUB870> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Women's Six Nations"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/womens-six-nations> ;
+    core:shortLabel "Women's Six Nations"@en-gb ;
+    core:slug "womens-six-nations"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/202813d4-264d-44de-9164-440915f0bd1e#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "National League Division Two"@en-gb ;
+    sal:videCode "NLD2"^^xsd:string ;
+    cms:locator <urn:sports-data:SPORT-STORE-TOURNAMENT-ID-TOP9913> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "National League Division Two"@en-gb ;
+    core:shortLabel "English Nat D2"@en-gb ;
+    core:slug "english-national-league-two"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/28044dea-4b84-4b9a-8f2f-1950df8f71b4#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Tennent's Premiership"@en-gb ;
+    sal:videCode "SCPR"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB140>,
+        <urn:sports-stats:735703760> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Tennent's Premiership"@en-gb ;
+    core:primaryTopicOf <http://www.scottishrugby.org> ;
+    core:shortLabel "Scottish Prem"@en-gb ;
+    core:slug "scottish-premiership"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/38d5fc45-9831-4500-a5a1-3a573dbb4676#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Swalec Welsh National League Division One East Central"@en-gb ;
+    cms:locator <urn:sports-data:CRUB114> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Swalec Welsh National League Division One East Central"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/welsh-division-one-east-central> ;
+    core:shortLabel "Welsh 1EC"@en-gb ;
+    core:slug "welsh-division-one-east-central"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/39de99c7-b4db-413c-b27f-436ddf8a69ae#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Swalec Welsh National League Division One East"@en-gb ;
+    sal:videCode "WE1E"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB130>,
+        <urn:sports-stats:735703729> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Swalec National League Division One East"@en-gb ;
+    core:primaryTopicOf <http://www.wru.co.uk/eng/club/swalecleagues/index.php> ;
+    core:shortLabel "Welsh 1E"@en-gb ;
+    core:slug "welsh-division-one-east"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/475d2efb-5441-47da-9be5-8ef347cccf01#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Rugby Championship"@en-gb ;
+    sal:videCode "RUCH"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB730>,
+        <urn:sports-stats:735709495> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "The Rugby Championship"@en-gb ;
+    core:primaryTopicOf <http://www.sanzarrugby.com/therugbychampionship/> ;
+    core:shortLabel "Rugby Champ"@en-gb ;
+    core:slug "rugby-championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/48d4a402-acac-4130-aace-5e5ccbe6df8a#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "British & Irish Lions"@en-gb ;
+    sal:videCode "LION"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB759>,
+        <urn:sports-stats:735709566> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "British & Irish Lions"@en-gb ;
+    core:primaryTopicOf <http://www.lionsrugby.com/> ;
+    core:shortLabel "Lions"@en-gb ;
+    core:slug "british-irish-lions"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/4b464052-1eae-402b-a39f-fc1e19324f3b#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Welsh National League Division One"@en-gb ;
+    cms:locator <urn:sports-data:SPORT-STORE-TOURNAMENT-ID-TOP9889> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Welsh National League Division One"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/welsh-division-one> ;
+    core:shortLabel "Welsh 1"@en-gb ;
+    core:slug "welsh-division-one"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/4bb39ebc-0be8-4ba8-916b-42cf7805d5fe#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "All-Ireland League Division 1B"@en-gb ;
+    cms:locator <urn:sports-data:SPORT-STORE-TOURNAMENT-ID-TOP9893> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "All-Ireland League Division 1B"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/irish-league-division-one-b> ;
+    core:shortLabel "Ireland 1B"@en-gb ;
+    core:slug "irish-league-division-one-b"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/533ab55b-b669-4dbc-abd3-c616416a068e#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Six Nations Under-20 Championship"@en-gb ;
+    cms:locator <urn:sports-data:CRUB753> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Six Nations Under-20 Championship"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/under-20-six-nations> ;
+    core:shortLabel "U20 Six Nations"@en-gb ;
+    core:slug "under-20-six-nations"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/67683660-d9e3-4333-984e-ca2de588ea46#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Tennent's National League Division 1"@en-gb ;
+    sal:videCode "SCN1"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB197>,
+        <urn:sports-stats:735703922> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Tennent's National 1"@en-gb ;
+    core:primaryTopicOf <http://www.scottishrugby.org> ;
+    core:shortLabel "Scottish Nat 1"@en-gb ;
+    core:slug "scottish-national-one"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/6d2de960-381c-4c21-9ea6-b8fddc879441#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Anglo-Welsh Cup"@en-gb ;
+    sal:videCode "ANWC"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB300>,
+        <urn:sports-stats:735705558> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Anglo-Welsh Cup"@en-gb ;
+    core:primaryTopicOf <http://www.lv.com/aboutus/sponsorship/rugby-sponsorship/lv-cup-teams-and-match-fixtures/> ;
+    core:shortLabel "Anglo-Welsh Cup"@en-gb ;
+    core:slug "anglo-welsh-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/european-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/6f749cc2-304d-4ff9-be04-468097d197a7#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "World Rugby Under 20 Championship"@en-gb ;
+    cms:locator <urn:sports-data:CRUB890> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "World Rugby Under 20 Championship"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/under-20-world-championship> ;
+    core:shortLabel "U20 World Championship"@en-gb ;
+    core:slug "under-20-world-championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/70be2227-250a-4cd7-85c9-c361cb8876c0#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "French Top 14 Rugby"@en-gb ;
+    cms:locator <urn:sports-data:CRUB770> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "French Top 14 Rugby"@en-gb ;
+    core:primaryTopicOf <http://www.lnr.fr/rugby-top-14> ;
+    core:shortLabel "French Top 14"@en-gb ;
+    core:slug "top-14"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/70c3ce6b-2835-4934-8c98-1ea036e1faf6#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    cms:locator <urn:sports-stats:735709402> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:primaryTopicOf <http://www.rugbyworldcup.com/> ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/760e6752-e5c3-45cd-a993-9aef5e923c9c#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Principality Building Society Premiership"@en-gb ;
+    sal:videCode "WELP"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB153>,
+        <urn:sports-stats:735703794> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Principality Building Society Premiership"@en-gb ;
+    core:primaryTopicOf <http://www.wru.co.uk/eng/club/principalitypremiership/index.php> ;
+    core:shortLabel "Welsh Prem"@en-gb ;
+    core:slug "welsh-premiership"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/7ad2a016-ed5b-4a4d-8e97-788a1c88d8e9#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Premiership Rugby Cup"@en-gb ;
+    cms:locator <urn:sports-data:CRUB301> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Premiership Rugby Cup"@en-gb ;
+    core:primaryTopicOf <http://www.premiershiprugby.com/home.php> ;
+    core:shortLabel "Premiership Rugby Cup"@en-gb ;
+    core:slug "premiership-rugby-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/8201a00e-3fe7-466d-a8f8-fb6526e19325#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Tennent's National League Division 2"@en-gb ;
+    sal:videCode "SCN2"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB141>,
+        <urn:sports-stats:735703762> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Tennent's National 2"@en-gb ;
+    core:primaryTopicOf <http://www.scottishrugby.org> ;
+    core:shortLabel "Scottish Nat 2"@en-gb ;
+    core:slug "scottish-national-two"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/86cd1528-cc9e-4407-94aa-4c63581bdb26#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "European Rugby Champions Cup"@en-gb ;
+    sal:videCode "CHAM"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB310>,
+        <urn:sports-stats:735705589> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "European Rugby Champions Cup"@en-gb ;
+    core:primaryTopicOf <http://www.epcrugby.com/eng/european-rugby-champions-cup.php> ;
+    core:shortLabel "Champions Cup"@en-gb ;
+    core:slug "european-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/european-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/8807d9d2-d1b6-484d-9d80-1697d999bb26#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gallagher Premiership"@en-gb ;
+    sal:videCode "PREM"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB100>,
+        <urn:sports-stats:735703636> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Gallagher Premiership"@en-gb ;
+    core:primaryTopicOf <http://www.premiershiprugby.com/home.php> ;
+    core:shortLabel "English Prem"@en-gb ;
+    core:slug "english-premiership"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/8cdf750e-f0d8-4e29-82ed-fa98d69a8ddd#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Guinness Pro14"@en-gb ;
+    sal:videCode "PR14"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB143>,
+        <urn:sports-stats:735703763> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Guinness Pro14"@en-gb ;
+    core:primaryTopicOf <http://pro14rugby.org> ;
+    core:shortLabel "Pro14"@en-gb ;
+    core:slug "pro-tournament"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/8e9a589f-555d-44b6-b97a-d6b69183e75a#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's World Cup"@en-gb ;
+    cms:locator <urn:sports-data:CRUB871> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Women's World Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/womens-world-cup> ;
+    core:shortLabel "Women's World Cup"@en-gb ;
+    core:slug "womens-world-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/924f5146-92ac-429b-a4b6-3fa39ac69b77#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Swalec Welsh National League Division One West"@en-gb ;
+    sal:videCode "WE1W"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB131>,
+        <urn:sports-stats:735703730> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Swalec National League Division One West"@en-gb ;
+    core:primaryTopicOf <http://www.wru.co.uk/eng/club/swalecleagues/index.php> ;
+    core:shortLabel "Welsh 1W"@en-gb ;
+    core:slug "welsh-division-one-west"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/93fd6cd2-7c8a-4e1c-b7bd-6b50c961a0d1#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Super Rugby"@en-gb ;
+    sal:videCode "SUPR"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB345>,
+        <urn:sports-stats:735705687> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Super Rugby"@en-gb ;
+    core:primaryTopicOf <http://www.sanzarrugby.com/superrugby/> ;
+    core:shortLabel "Super Rugby"@en-gb ;
+    core:slug "super-rugby"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/b6f223d6-d5e2-4852-a906-2e49a45c1d29#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Tennent's National League Division 3"@en-gb ;
+    sal:videCode "SCN3"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB142>,
+        <urn:sports-stats:735703761> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Tennent's National 3"@en-gb ;
+    core:primaryTopicOf <http://www.scottishrugby.org> ;
+    core:shortLabel "Scottish Nat 3"@en-gb ;
+    core:slug "scottish-national-three"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/b824f1c1-4a4d-4f76-bf63-d6ebced4acd4#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "National League Division Two North"@en-gb ;
+    sal:videCode "NA2N"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB112>,
+        <urn:sports-stats:735703669> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "National League Division Two North"@en-gb ;
+    core:shortLabel "English Nat 2N"@en-gb ;
+    core:slug "english-national-league-two-north"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/bda66fef-14c9-4bf2-8680-13757e30769d#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Guinness Six Nations Championship"@en-gb ;
+    sal:videCode "SIXN"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB710>,
+        <urn:sports-stats:735709433> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Guinness Six Nations Championship"@en-gb ;
+    core:primaryTopicOf <http://www.natwest6nations.com> ;
+    core:shortLabel "Six Nations"@en-gb ;
+    core:slug "six-nations"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/c1ea0bb0-5729-4b2f-89d6-08d01f388e10#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "British & Irish Cup"@en-gb ;
+    sal:videCode "B&IC"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB357>,
+        <urn:sports-stats:735705720> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "British & Irish Cup"@en-gb ;
+    core:primaryTopicOf <http://www.rfu.com/TheGame/Competitions/BICCup> ;
+    core:shortLabel "B&I Cup"@en-gb ;
+    core:slug "british-irish-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/european-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/d0a37d3d-d630-4876-ae4d-7cf94ecead92#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Swalec National Championship"@en-gb ;
+    sal:videCode "WELC"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB154>,
+        <urn:sports-stats:735703795> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Swalec National Championship"@en-gb ;
+    core:primaryTopicOf <http://www.wru.co.uk/eng/club/swalecchampionship/index.php> ;
+    core:shortLabel "Welsh Champ"@en-gb ;
+    core:slug "welsh-championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/d1c40343-bf77-42be-a6b2-6df6779a9b1b#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ulster Bank All-Ireland League Division One"@en-gb ;
+    sal:videCode "IRD1"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB150>,
+        <urn:sports-stats:735703791> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Ulster Bank All-Ireland League Division One"@en-gb ;
+    core:primaryTopicOf <http://www.irishrugby.ie> ;
+    core:shortLabel "Irish 1"@en-gb ;
+    core:slug "irish-league-division-one"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/d31d4928-ac39-4e1b-a5f2-3d55c4c3cc9d#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's Premiership"@en-gb ;
+    cms:locator <urn:sports-data:CRUB875> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Women's Tyrrells Premier 15s"@en-gb ;
+    core:shortLabel "Premier 15s"@en-gb ;
+    core:slug "womens-english-premiership"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league-womens> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/d4228ffa-bd0c-490f-82ac-9c2af29e7e6f#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Championship Cup"@en-gb ;
+    cms:locator <urn:sports-data:CRUB358> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Championship Cup"@en-gb ;
+    core:primaryTopicOf <https://www.championshiprugby.co.uk> ;
+    core:shortLabel "Championship Cup"@en-gb ;
+    core:slug "championship-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/d60d00cc-230c-4bf1-886f-a1c704e98204#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "National League Division Two South"@en-gb ;
+    sal:videCode "NA2S"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB113>,
+        <urn:sports-stats:735703670> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "National League Division Two South"@en-gb ;
+    core:shortLabel "English Nat 2S"@en-gb ;
+    core:slug "english-national-league-two-south"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/da5304ff-767b-41dc-b4aa-d50843a934f5#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Swalec Welsh National League Division One North"@en-gb ;
+    sal:videCode "WE1N"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB132>,
+        <urn:sports-stats:735703731> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Swalec National League Division One North"@en-gb ;
+    core:primaryTopicOf <http://www.wru.co.uk/eng/club/swalecleagues/index.php> ;
+    core:shortLabel "Welsh 1N"@en-gb ;
+    core:slug "welsh-division-one-north"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/df79b316-09bc-4994-8f40-663095430057#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Internationals"@en-gb ;
+    sal:videCode "INTL"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB720>,
+        <urn:sports-stats:735709464> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Internationals"@en-gb ;
+    core:primaryTopicOf <http://www.epcrugby.com/eng/european-rugby-challenge-cup.php>,
+        <http://www.epcrugby.com/eng/european-rugby-champions-cup.php>,
+        <http://www.irishrugby.ie>,
+        <http://www.lionsrugby.com/>,
+        <http://www.lv.com/aboutus/sponsorship/rugby-sponsorship/lv-cup-teams-and-match-fixtures/>,
+        <http://www.premiershiprugby.com/home.php>,
+        <http://www.rabodirectpro12.com/index.php>,
+        <http://www.rbs6nations.com>,
+        <http://www.rfu.com/TheGame/Competitions/BICCup>,
+        <http://www.rfu.com/TheGame/Competitions/TheChampionship>,
+        <http://www.rugbyworldcup.com/>,
+        <http://www.sanzarrugby.com/therugbychampionship/>,
+        <http://www.scottishrugby.org>,
+        <http://www.scottishrugby.org/fixtures-results/?competition=88293>,
+        <http://www.wru.co.uk/eng/club/principalitypremiership/index.php>,
+        <http://www.wru.co.uk/eng/club/swalecchampionship/index.php>,
+        <http://www.wru.co.uk/eng/club/swalecleagues/index.php> ;
+    core:shortLabel "Internationals"@en-gb ;
+    core:slug "international-match"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/e562cb51-100e-4346-b748-f456cc4c9d07#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Greene King IPA Championship"@en-gb ;
+    sal:videCode "ENCH"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB109>,
+        <urn:sports-stats:735703645> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Greene King IPA Championship"@en-gb ;
+    core:primaryTopicOf <http://www.rfu.com/TheGame/Competitions/TheChampionship> ;
+    core:shortLabel "English Championship"@en-gb ;
+    core:slug "the-english-championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/ef55ff8e-8d36-4473-9f11-3ba9fa9ac787#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "World Cup"@en-gb ;
+    cms:locator <urn:sports-data:CRUB700> ;
+    core:disambiguationHint "Rugby Union World Cup"@en-gb ;
+    core:preferredLabel "World Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/world-cup> ;
+    core:shortLabel "World Cup"@en-gb ;
+    core:slug "world-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/efdc4575-f9a5-4466-a6ac-9f7efbb94ebd#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Swalec Welsh National League Division One West Central"@en-gb ;
+    cms:locator <urn:sports-data:CRUB115> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "Swalec Welsh National League Division One West Central"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/welsh-division-one-west-central> ;
+    core:shortLabel "Welsh 1WC"@en-gb ;
+    core:slug "welsh-division-one-west-central"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/f26b03a5-9781-42fe-a6ea-5a74de998cb7#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "European Rugby Challenge Cup"@en-gb ;
+    sal:videCode "CHAL"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB500>,
+        <urn:sports-stats:735707480> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "European Rugby Challenge Cup"@en-gb ;
+    core:primaryTopicOf <http://www.epcrugby.com/eng/european-rugby-challenge-cup.php> ;
+    core:shortLabel "Challenge Cup"@en-gb ;
+    core:slug "european-challenge-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/european-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/f6f20e5f-a0bf-4f38-b44d-a5e7f097343d#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "National League Division One"@en-gb ;
+    sal:videCode "NAT1"^^xsd:string ;
+    cms:locator <urn:sports-data:CRUB110>,
+        <urn:sports-stats:735703667> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "National League Division One"@en-gb ;
+    core:shortLabel "English Nat 1"@en-gb ;
+    core:slug "english-national-league-one"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://www.bbc.co.uk/things/fdf75a76-fcbc-4a5c-9231-ef844ba3158b#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "All-Ireland League Division 1A"@en-gb ;
+    cms:locator <urn:sports-data:SPORT-STORE-TOURNAMENT-ID-TOP9892> ;
+    core:disambiguationHint "Rugby Union competition"@en-gb ;
+    core:preferredLabel "All-Ireland League Division 1A"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/irish-league-division-one-a> ;
+    core:shortLabel "Ireland 1A"@en-gb ;
+    core:slug "irish-league-division-one-a"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> .
+
+<http://pro14rugby.org> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/rugby-union/under-20-six-nations> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/rugby-union/welsh-division-one-east-central> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/rugby-union/welsh-division-one-west-central> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/rugby-union/womens-six-nations> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/rugby-union/womens-world-cup> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/rugby-union/world-cup> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.lnr.fr/rugby-top-14> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.rbs6nations.com> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.sanzarrugby.com/superrugby/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.scottishrugby.org/fixtures-results/?competition=88293> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<https://www.championshiprugby.co.uk> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<urn:sports-data:CRUB100> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB109> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB110> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB112> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB113> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB114> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB115> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB130> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB131> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB132> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB140> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB141> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB142> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB143> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB150> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB153> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB154> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB197> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB300> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB301> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB310> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB345> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB357> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB358> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB500> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB700> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB710> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB720> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB730> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB753> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB759> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB770> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB870> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB871> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB875> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB890> a cms:Sports-DataLocator .
+
+<urn:sports-data:SPORT-STORE-TOURNAMENT-ID-TOP9889> a cms:Sports-DataLocator .
+
+<urn:sports-data:SPORT-STORE-TOURNAMENT-ID-TOP9892> a cms:Sports-DataLocator .
+
+<urn:sports-data:SPORT-STORE-TOURNAMENT-ID-TOP9893> a cms:Sports-DataLocator .
+
+<urn:sports-data:SPORT-STORE-TOURNAMENT-ID-TOP9913> a cms:Sports-DataLocator .
+
+<urn:sports-stats:735703636> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703645> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703667> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703669> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703670> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703729> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703730> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703731> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703760> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703761> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703762> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703763> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703791> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703794> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703795> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735703922> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735705558> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735705589> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735705687> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735705720> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735707480> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735709402> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735709433> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735709464> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735709495> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:735709566> a cms:Sports-StatsLocator .
+
+<http://www.epcrugby.com/eng/european-rugby-challenge-cup.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.epcrugby.com/eng/european-rugby-champions-cup.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.irishrugby.ie> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.lionsrugby.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.lv.com/aboutus/sponsorship/rugby-sponsorship/lv-cup-teams-and-match-fixtures/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.rfu.com/TheGame/Competitions/BICCup> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.rfu.com/TheGame/Competitions/TheChampionship> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.rugbyworldcup.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.sanzarrugby.com/therugbychampionship/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.wru.co.uk/eng/club/principalitypremiership/index.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.wru.co.uk/eng/club/swalecchampionship/index.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.premiershiprugby.com/home.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.wru.co.uk/eng/club/swalecleagues/index.php> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.scottishrugby.org> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+

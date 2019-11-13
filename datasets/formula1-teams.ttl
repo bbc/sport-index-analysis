@@ -1,0 +1,323 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/b06ede67-986c-47fb-8905-aa1886cf0af7#id> a provenance:Dataset ;
+    rdfs:label "Formula1: Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/formula1/formula1-teams.ttl" ;
+    provenance:changeReason "SWD-546: Drivers in Teams season 2019" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-03-13T10:50:04+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "34"^^xsd:int .
+
+<http://www.bbc.co.uk/things/04ae3848-56c9-4485-9419-289c70e47ed4#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Racing Point India F1 Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB401> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Force India"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Force_India> ;
+    core:shortLabel "Force India"@en-gb ;
+    core:slug "force-india"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/0a50f4a5-7f82-4cd5-a26b-6d1020ccc132#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Haas F1 Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB325> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Haas"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Haas_F1_Team> ;
+    core:shortLabel "Haas"@en-gb ;
+    core:slug "haas"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id>,
+        <http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/2c109a1b-dd90-481e-a742-0165590bfac4#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Red Bull Toro Rosso Honda"@en-gb ;
+    cms:locator <urn:sports-data:TMRB136> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Toro Rosso"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Scuderia_Toro_Rosso> ;
+    core:shortLabel "Toro Rosso"@en-gb ;
+    core:slug "toro-rosso"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id>,
+        <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id>,
+        <http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/3564c9b0-ca97-42cb-8275-25fe416d0a29#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Manor Marussia F1 Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB319> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Manor"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Marussia_Manor_Racing> ;
+    core:shortLabel "Manor"@en-gb ;
+    core:slug "manor-marussia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/3fc5a7ef-3147-49dd-8745-fd8883c80ce6#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Williams Martini Racing"@en-gb ;
+    cms:locator <urn:sports-data:TMRB118> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Williams"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Williams_Grand_Prix_Engineering> ;
+    core:shortLabel "Williams"@en-gb ;
+    core:slug "williams"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id>,
+        <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id>,
+        <http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/45c1f909-9a49-4599-ad31-0b483652de83#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Caterham F1 Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB270> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Caterham"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Caterham_F1> ;
+    core:shortLabel "Caterham"@en-gb ;
+    core:slug "caterham"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/5e9bbf98-ae7d-4445-8df3-4858627020f9#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sahara Force India F1 Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB213> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Force India"@en-gb ;
+    core:shortLabel "Force India"@en-gb ;
+    core:slug "old-force-india"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/5f439972-914b-44bd-87ae-223bb2dc0d4c#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Racing Point F1 Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB430> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Racing Point"@en-gb ;
+    core:shortLabel "Racing Point"@en-gb ;
+    core:slug "racing-point"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/667e2d56-8c18-4819-b407-cc5ddcbf2688#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "McLaren F1 Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB107> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "McLaren"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/McLaren> ;
+    core:shortLabel "McLaren"@en-gb ;
+    core:slug "mclaren"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id>,
+        <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id>,
+        <http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/86e9f8e2-5c2e-4622-997a-a5af7a470a25#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Lotus F1 Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB272> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Lotus"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Lotus_F1> ;
+    core:shortLabel "Lotus"@en-gb ;
+    core:slug "lotus"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id>,
+        <http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/baed9b23-287f-4f21-9ade-12238879c0ce#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Alfa Romeo-Ferrari F1 Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB114> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Alfa Romeo"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sauber> ;
+    core:shortLabel "Alfa Romeo"@en-gb ;
+    core:slug "sauber"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id>,
+        <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id>,
+        <http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/bc540490-969d-4888-a031-47f664ece511#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Scuderia Ferrari"@en-gb ;
+    cms:locator <urn:sports-data:TMRB94> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Ferrari"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Scuderia_Ferrari> ;
+    core:shortLabel "Ferrari"@en-gb ;
+    core:slug "ferrari"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id>,
+        <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id>,
+        <http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/d5e292af-83a4-4773-8361-385bb6920093#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Mercedes AMG Petronas Motorsport"@en-gb ;
+    cms:locator <urn:sports-data:TMRB235> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Mercedes"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Mercedes-Benz_in_Formula_One> ;
+    core:shortLabel "Mercedes"@en-gb ;
+    core:slug "mercedes"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id>,
+        <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id>,
+        <http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/d62f9c98-9332-463a-be97-a645380ad8cf#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Marussia F1 Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB271> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Marussia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Marussia_F1> ;
+    core:shortLabel "Marussia"@en-gb ;
+    core:slug "marussia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id>,
+        <http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/efee5735-c0c3-4e26-84a9-ea8acc44d9bd#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Hispania Racing Team"@en-gb ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Hispania Racing Team"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/HRT_Formula_1_Team> ;
+    core:shortLabel "Hispania"@en-gb ;
+    core:slug "hispania"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/f4bf178c-40f8-4fff-84d5-f160b8d93823#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Renault Sport Formula One Team"@en-gb ;
+    cms:locator <urn:sports-data:TMRB120> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Renault"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Renault_in_Formula_One> ;
+    core:shortLabel "Renault"@en-gb ;
+    core:slug "renault"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id>,
+        <http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/f58ec73b-d0d3-4a3b-ae3a-b1dff63ae6ef#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Aston Martin Red Bull Racing"@en-gb ;
+    cms:locator <urn:sports-data:TMRB127> ;
+    core:disambiguationHint "Formula 1 team"@en-gb ;
+    core:preferredLabel "Red Bull"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Red_Bull_Racing> ;
+    core:shortLabel "Red Bull"@en-gb ;
+    core:slug "red-bull"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id>,
+        <http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id>,
+        <http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id>,
+        <http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id>,
+        <http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id>,
+        <http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id>,
+        <http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<urn:sports-data:TMRB107> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB114> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB118> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB120> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB127> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB136> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB213> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB235> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB270> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB271> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB272> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB319> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB325> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB401> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB430> a cms:Sports-DataLocator .
+
+<urn:sports-data:TMRB94> a cms:Sports-DataLocator .
+

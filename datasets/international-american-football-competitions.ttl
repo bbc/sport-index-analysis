@@ -1,0 +1,47 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/348d1d33-5530-4085-a0ec-bf481b6a0238#id> a provenance:Dataset ;
+    rdfs:label "American Football: International Competitions" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/american-football/international-american-football-competitions.ttl" ;
+    provenance:changeReason "SLS-1432: Added NFL recurring competition. Added sports locator." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-01-19T10:39:13+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:dong.liu@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/03081951-e015-4f09-9bc8-2dd207f773e8#id> a sport:RecurringCompetition ;
+    sal:name "National Football League"@en-gb ;
+    cms:locator <urn:sports-data:CAFB1> ;
+    core:disambiguationHint "American Football competition"@en-gb ;
+    core:preferredLabel "NFL"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/american-football/nfl> ;
+    core:shortLabel "NFL"@en-gb ;
+    core:slug "nfl"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/1e069d7e-8dbd-43db-87a0-137e4009fb17#id> .
+
+<http://www.bbc.co.uk/sport/american-football/nfl> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<urn:sports-data:CAFB1> a cms:Sports-DataLocator .
+

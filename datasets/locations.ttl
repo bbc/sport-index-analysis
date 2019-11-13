@@ -1,0 +1,1833 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/c0bf5415-6d64-4444-a55c-911fdee25386#id> a provenance:Dataset ;
+    rdfs:label "News: Locations that originated in Sport" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/locations.ttl" ;
+    provenance:changeReason "Changing Workington (dupe in News) to be the Derwent Park Stadium" ;
+    provenance:product bbc:News ;
+    provenance:provided "2019-03-19T14:55:55+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "13"^^xsd:int .
+
+<http://www.bbc.co.uk/things/0280e88c-26bd-b24c-882f-ae0e5f4142f2#id> sport:hasHome <http://www.bbc.co.uk/things/db21167b-cf0d-41f3-97af-75a9e0d11766#id> .
+
+<http://www.bbc.co.uk/things/03e20e1e-61e9-3749-ae53-0bbaa18e9ed9#id> sport:hasHome <http://www.bbc.co.uk/things/e14abb96-c9f5-4f0e-bd68-e2eca82c00e4#id> .
+
+<http://www.bbc.co.uk/things/05251295-c015-2e42-839a-efe200441c9d#id> sport:hasHome <http://www.bbc.co.uk/things/c7e00567-19d2-4ab2-80a2-b53f17c3aef7#id> .
+
+<http://www.bbc.co.uk/things/0838f428-327a-7f41-9bf4-7758710b572b#id> sport:hasHome <http://www.bbc.co.uk/things/33a30869-f72c-4ec1-b546-4172f3f1a0d1#id> .
+
+<http://www.bbc.co.uk/things/0af7766e-bf70-3a4a-80f3-82bde862187c#id> sport:hasHome <http://www.bbc.co.uk/things/8ec26fce-d8af-49e2-87bf-2089deea496f#id> .
+
+<http://www.bbc.co.uk/things/0c2fa95a-c5ee-4439-acc7-cb04d996ae89#id> sport:hasHome <http://www.bbc.co.uk/things/b5f0840e-24f1-4427-9411-9623369e4509#id> .
+
+<http://www.bbc.co.uk/things/0e4d1250-73dd-ae4c-801f-99629715dc77#id> sport:hasHome <http://www.bbc.co.uk/things/08af0946-0867-4286-80be-64cf4f1cd8a2#id> .
+
+<http://www.bbc.co.uk/things/0ee936e9-92ed-2b44-88d3-9c658b9bfb4a#id> sport:hasHome <http://www.bbc.co.uk/things/d46d7294-559a-45b3-83f3-2077815ac666#id> .
+
+<http://www.bbc.co.uk/things/10726d19-2831-7e46-b1a6-e229862729f7#id> sport:hasHome <http://www.bbc.co.uk/things/97ed31e8-ddfc-4299-add3-edbaf30957e6#id> .
+
+<http://www.bbc.co.uk/things/10786d02-d602-084f-bfb5-3198a9bebfe7#id> sport:hasHome <http://www.bbc.co.uk/things/9a17d973-91c6-4bbe-a6ab-58bef0a45f2a#id> .
+
+<http://www.bbc.co.uk/things/10ddb0dd-f49b-6d4a-a327-7f1d24805c33#id> sport:hasHome <http://www.bbc.co.uk/things/0b162e5a-27a0-40cc-b6ed-8be3d984d3a9#id> .
+
+<http://www.bbc.co.uk/things/1da3b5d2-c5d5-48a0-a6c2-e83a29abf99a#id> sport:hasHome <http://www.bbc.co.uk/things/21447e1c-9bde-4bfb-84e0-191734804544#id> .
+
+<http://www.bbc.co.uk/things/1df920c3-525e-435f-af2c-89f787a1eec6#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The O2 North Greenwich Arena"@en-gb ;
+    core:disambiguationHint "Stadium"@en-gb ;
+    core:preferredLabel "The O2 North Greenwich Arena"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/The_O2>,
+        <http://sws.geonames.org/6621342/> ;
+    core:shortLabel "The O2North Greenwich Arena"@en-gb .
+
+<http://www.bbc.co.uk/things/1fa3a0d0-1a1d-b24a-84a0-ae4607f2123a#id> sport:hasHome <http://www.bbc.co.uk/things/eae432cd-1d56-46f2-aff5-c8934dbcd53b#id> .
+
+<http://www.bbc.co.uk/things/222e1b25-9851-5b46-aa20-a2f9e8591d64#id> sport:hasHome <http://www.bbc.co.uk/things/bedb3b65-076a-4868-8a4c-67cd87f7a2b5#id> .
+
+<http://www.bbc.co.uk/things/23ec8541-6e72-b447-b75a-2ee1a9856e7c#id> sport:hasHome <http://www.bbc.co.uk/things/421051cb-89db-4589-8384-6a4e5c7fa1eb#id> .
+
+<http://www.bbc.co.uk/things/25e5e7ca-004e-d349-8c76-ca86f3adfa7b#id> sport:hasHome <http://www.bbc.co.uk/things/cf87fdd3-a89a-48f4-adb6-878cc2685d2e#id> .
+
+<http://www.bbc.co.uk/things/2784b098-bd1f-a54e-86a5-1fa39a0e0ce4#id> sport:hasHome <http://www.bbc.co.uk/things/63c4eee8-7a11-4eb7-a5c4-4d750fe24c2a#id> .
+
+<http://www.bbc.co.uk/things/279a3dc2-9195-264d-be3e-2a52bb61d4fe#id> sport:hasHome <http://www.bbc.co.uk/things/984fabc6-d7fe-4789-960c-adba1f8f74bb#id> .
+
+<http://www.bbc.co.uk/things/2a279a02-73d7-47ef-ad34-eab3733a91a4#id> sport:hasHome <http://www.bbc.co.uk/things/e9867f4b-ef0c-434a-8e60-00a844c91cf9#id> .
+
+<http://www.bbc.co.uk/things/2acacd19-6609-1840-9c2b-b0820c50d281#id> sport:hasHome <http://www.bbc.co.uk/things/eb363b5f-fb0f-47fd-80df-50dcc8405251#id> .
+
+<http://www.bbc.co.uk/things/34032412-5e2a-324d-bb3e-d0d4b16df2d4#id> sport:hasHome <http://www.bbc.co.uk/things/23aa5995-96b1-4b71-b3e0-7b251067a3e5#id> .
+
+<http://www.bbc.co.uk/things/34e9d74f-f917-db47-aa4a-c96ab97e301d#id> sport:hasHome <http://www.bbc.co.uk/things/1d9f328a-3137-405e-b9a3-18424bca0e0f#id> .
+
+<http://www.bbc.co.uk/things/3790f140-5444-224e-bf05-ce581dc49b17#id> sport:hasHome <http://www.bbc.co.uk/things/fd6aa416-6e46-44d1-a4ff-44ea3689372c#id> .
+
+<http://www.bbc.co.uk/things/39885edd-5611-b540-ae3a-43026125bfd8#id> sport:hasHome <http://www.bbc.co.uk/things/90fed544-d171-4157-a10a-b1d2b9bcfafc#id> .
+
+<http://www.bbc.co.uk/things/39a9af5a-c881-a74d-bae7-226ac220df03#id> sport:hasHome <http://www.bbc.co.uk/things/9ae892dd-8390-4d4f-b03c-7a25f10897b1#id> .
+
+<http://www.bbc.co.uk/things/3d814d88-1f22-d042-a9a6-87fd9216a50a#id> sport:hasHome <http://www.bbc.co.uk/things/eb364ec9-d38c-4e07-a4c3-aba15e6336a0#id> .
+
+<http://www.bbc.co.uk/things/3e4539d2-bdb9-e548-b04c-1060ad05fe5a#id> sport:hasHome <http://www.bbc.co.uk/things/a8388092-8545-4d53-be82-b358132f2b16#id> .
+
+<http://www.bbc.co.uk/things/407fb29a-fa34-a74e-92c5-dedfa26a2401#id> sport:hasHome <http://www.bbc.co.uk/things/76c36ab0-e47d-4c14-9b10-151004a0eca7#id> .
+
+<http://www.bbc.co.uk/things/4411ebc0-89c8-484d-b812-aabf34362a28#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Olympic Stadium"@en-gb ;
+    core:disambiguationHint "Sports Stadium"@en-gb ;
+    core:preferredLabel "Olympic Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Olympic_Stadium_(London)>,
+        <http://sws.geonames.org/7670538/> ;
+    core:shortLabel "Olympic Stadium"@en-gb .
+
+<http://www.bbc.co.uk/things/4573991e-224e-2546-b4fd-6584d1498e23#id> sport:hasHome <http://www.bbc.co.uk/things/3a982873-5929-44c8-96e5-6e7f10092047#id> .
+
+<http://www.bbc.co.uk/things/45c9b875-3c5b-4b11-b888-a4893645f4e9#id> a core:Place ;
+    sal:name "Manchester United FC Halt"@en-gb ;
+    core:disambiguationHint "Railway Station"@en-gb ;
+    core:preferredLabel "Manchester United FC Halt"@en-gb ;
+    core:sameAs <http://sws.geonames.org/6953095/> ;
+    core:shortLabel "Manchester United FC Halt"@en-gb .
+
+<http://www.bbc.co.uk/things/4605e4b2-b2d8-4385-b0cb-149987c566b0#id> a core:Place ;
+    sal:name "Stadium Of Light"@en-gb ;
+    core:disambiguationHint "Metro Station"@en-gb ;
+    core:preferredLabel "Stadium Of Light"@en-gb ;
+    core:sameAs <http://sws.geonames.org/7677044/> ;
+    core:shortLabel "Stadium Of Light"@en-gb .
+
+<http://www.bbc.co.uk/things/4624d7c0-fcab-684d-92f1-23e304d8d879#id> sport:hasHome <http://www.bbc.co.uk/things/0c5225d1-5c51-450d-af6d-530e4467ee0f#id> .
+
+<http://www.bbc.co.uk/things/47ba66dc-aa35-2c46-8446-ac85380126a0#id> sport:hasHome <http://www.bbc.co.uk/things/173886c2-9e32-4272-aa40-7f66a3d27cc4#id> .
+
+<http://www.bbc.co.uk/things/48287aac-b015-1d4e-9c4e-9b8abac03789#id> sport:hasHome <http://www.bbc.co.uk/things/95d51b3e-0bb0-4853-bbb5-e614ea8b526a#id> .
+
+<http://www.bbc.co.uk/things/49c1d28f-157a-0940-b73d-29854cdcf810#id> sport:hasHome <http://www.bbc.co.uk/things/fb578f03-3b69-4563-9184-a140af6a915a#id> .
+
+<http://www.bbc.co.uk/things/4bdbf21d-d1ad-7147-ab08-612cd0dc20b4#id> sport:hasHome <http://www.bbc.co.uk/things/f1eb4771-f8b0-492c-9566-41918fbecf66#id> .
+
+<http://www.bbc.co.uk/things/509d2079-2bf6-e44d-b791-a38bcda66529#id> sport:hasHome <http://www.bbc.co.uk/things/97576f68-d1cf-41bf-bb8c-c7c0e1609403#id> .
+
+<http://www.bbc.co.uk/things/553020dc-64bd-438d-8b4a-cfb6520f6a7b#id> a core:Place ;
+    sal:name "Racecourse Ground"@en-gb ;
+    cms:locator <urn:sports-data:VFBB107> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Racecourse Ground"@en-gb ;
+    core:sameAs <http://sws.geonames.org/6288570/> ;
+    core:shortLabel "Racecourse Ground"@en-gb .
+
+<http://www.bbc.co.uk/things/595f7ab9-0e95-49de-ac7e-184bfbd3d798#id> a core:Place ;
+    sal:name "Derwent Park Stadium"@en-gb ;
+    core:disambiguationHint "Rugby League Stadium"@en-gb ;
+    core:preferredLabel "Derwent Park Stadium"@en-gb ;
+    core:sameAs <http://sws.geonames.org/12035782/> ;
+    core:shortLabel "Derwent Park"@en-gb .
+
+<http://www.bbc.co.uk/things/5d6f03d0-e049-2847-9de8-3be1d51653f4#id> sport:hasHome <http://www.bbc.co.uk/things/250dada4-0093-448b-a4ea-72d313a7b35e#id> .
+
+<http://www.bbc.co.uk/things/5f9c3b8a-44fe-4d41-ac80-4719b3e3be2a#id> sport:hasHome <http://www.bbc.co.uk/things/bfbce502-1e70-45b3-bf75-e2597cd8d2d6#id> .
+
+<http://www.bbc.co.uk/things/5fe62cde-d404-8045-be16-ddb66a00d393#id> sport:hasHome <http://www.bbc.co.uk/things/25910554-7ed2-4b6e-8033-be7d44daa8a9#id> .
+
+<http://www.bbc.co.uk/things/60fb8a80-77b1-4f4e-8ad8-7c0f22f17d64#id> sport:hasHome <http://www.bbc.co.uk/things/82b0b166-c4a9-4c26-8ae2-e4b69800ad63#id> .
+
+<http://www.bbc.co.uk/things/64c75a53-ee2e-3e4e-bd80-b8fa10584123#id> sport:hasHome <http://www.bbc.co.uk/things/d431fc4d-a1f4-4fd9-8eba-f521d426a4a2#id> .
+
+<http://www.bbc.co.uk/things/6606e72d-d16c-482a-aab8-28d059313e2a#id> sport:hasHome <http://www.bbc.co.uk/things/da5f64a0-3bba-47e0-a4a1-4e1d9b3b2dbd#id> .
+
+<http://www.bbc.co.uk/things/661fc640-b304-2d46-bfeb-427505904447#id> sport:hasHome <http://www.bbc.co.uk/things/a361d92f-4563-40b8-910f-b869b7f8457f#id> .
+
+<http://www.bbc.co.uk/things/6780f83f-a17a-e641-8ec8-226c285a5dbb#id> sport:hasHome <http://www.bbc.co.uk/things/d1c641ee-30a2-42a5-9a27-e49a8e7d4c23#id> .
+
+<http://www.bbc.co.uk/things/69ae1e1d-3d11-db4a-9609-283b19d254af#id> sport:hasHome <http://www.bbc.co.uk/things/3c2e1adf-4e92-4b80-be6e-e9c73e2d027e#id> .
+
+<http://www.bbc.co.uk/things/6db79414-364f-e948-b3cb-5dcf987f799e#id> sport:hasHome <http://www.bbc.co.uk/things/66ee503f-04e1-4060-9c36-dfb296d938ee#id> .
+
+<http://www.bbc.co.uk/things/6dc681ec-3b9b-2942-9042-f514c00a1f64#id> sport:hasHome <http://www.bbc.co.uk/things/835780d0-6faa-464a-be9f-b4ab19a082ad#id> .
+
+<http://www.bbc.co.uk/things/703ce394-97c5-6e42-a585-bd1eec9cca9a#id> sport:hasHome <http://www.bbc.co.uk/things/2b984c03-6082-4937-a1ce-32b661cdec4f#id> .
+
+<http://www.bbc.co.uk/things/71843b1d-acf2-48d2-b7a6-3f72bf4d7ce5#id> sport:hasHome <http://www.bbc.co.uk/things/66ee503f-04e1-4060-9c36-dfb296d938ee#id> .
+
+<http://www.bbc.co.uk/things/73e4de65-4e73-6242-bd9b-fee0578c75fe#id> sport:hasHome <http://www.bbc.co.uk/things/3fe35b24-3d60-42f8-b3ec-059d48de37a5#id> .
+
+<http://www.bbc.co.uk/things/75f90667-0306-e847-966e-085a11a8f195#id> sport:hasHome <http://www.bbc.co.uk/things/83c74ccb-f8f5-44c2-b7c0-d5837366b7b2#id> .
+
+<http://www.bbc.co.uk/things/77fd06da-b489-3040-ace3-f8ed4f19d839#id> sport:hasHome <http://www.bbc.co.uk/things/f19f9438-1b90-43fa-a70d-feeda2b6b71b#id> .
+
+<http://www.bbc.co.uk/things/7851e418-cb7e-844f-813d-881e4ea8cf9b#id> sport:hasHome <http://www.bbc.co.uk/things/bef82aed-9e6f-46c7-931f-f38e111fd2a5#id> .
+
+<http://www.bbc.co.uk/things/78bd2e07-667f-9b48-8941-6d64367babfd#id> sport:hasHome <http://www.bbc.co.uk/things/70be2738-19bc-463a-9b7f-8e7b3f04a0b6#id> .
+
+<http://www.bbc.co.uk/things/7b4a9601-b913-3849-94d9-e6e734f04259#id> sport:hasHome <http://www.bbc.co.uk/things/4137b88a-fe7b-4734-9888-5045172da6ed#id> .
+
+<http://www.bbc.co.uk/things/7c6e467d-c612-504b-9389-f30226a4b82e#id> sport:hasHome <http://www.bbc.co.uk/things/dcb576f8-4169-4ab5-a8d9-c9330c91875d#id> .
+
+<http://www.bbc.co.uk/things/7d1d29cb-dab4-a24f-8600-393be1f354fe#id> sport:hasHome <http://www.bbc.co.uk/things/43dce539-3f8c-4a49-b12f-4cda2f6d8b4f#id> .
+
+<http://www.bbc.co.uk/things/7f6edf4a-76f6-4b49-b16b-ff1e232eeb18#id> sport:hasHome <http://www.bbc.co.uk/things/c7f4deeb-7e43-461d-8764-124d3f83a656#id> .
+
+<http://www.bbc.co.uk/things/80db5161-a0d2-46e4-9784-9aeb7a4b9d87#id> sport:hasHome <http://www.bbc.co.uk/things/e880f783-5979-481b-aff8-9194f6f33d53#id> .
+
+<http://www.bbc.co.uk/things/81f6a64f-def0-0d40-bc3a-36dab5472f64#id> sport:hasHome <http://www.bbc.co.uk/things/ee9de8c5-8d46-4232-96f0-0c02b0feea8c#id> .
+
+<http://www.bbc.co.uk/things/843257c2-309c-a749-9888-615bb448f887#id> sport:hasHome <http://www.bbc.co.uk/things/71a43ec8-efc5-4f06-84b7-ae730cbb0d13#id> .
+
+<http://www.bbc.co.uk/things/85eef0da-f836-194f-a2d7-4ce0178278f6#id> sport:hasHome <http://www.bbc.co.uk/things/7aadde59-5b01-47fe-b9bd-d0d5ae9b29a5#id> .
+
+<http://www.bbc.co.uk/things/8df31a76-4c22-5b40-9f0d-78b34dfb26fa#id> sport:hasHome <http://www.bbc.co.uk/things/02f880e0-c2fe-42a8-a4da-6027a2298219#id> .
+
+<http://www.bbc.co.uk/things/90d9a818-850b-b64f-9474-79e15a0355b8#id> sport:hasHome <http://www.bbc.co.uk/things/9afca946-478f-4c7a-90ec-417338be5fe9#id> .
+
+<http://www.bbc.co.uk/things/90e7c0da-d0f3-934a-9c30-c9418ccb0e88#id> sport:hasHome <http://www.bbc.co.uk/things/e3a150e9-8ac2-4f8b-b40a-69a5873bf972#id> .
+
+<http://www.bbc.co.uk/things/9284d26e-8e01-db4c-a1dc-1511bf7785fe#id> sport:hasHome <http://www.bbc.co.uk/things/99e524cc-f35a-45a8-bac2-ecfc7906b681#id> .
+
+<http://www.bbc.co.uk/things/92e4b172-987a-40df-9a3b-e8afaf7f81b9#id> sport:hasHome <http://www.bbc.co.uk/things/81545d62-67f5-424d-b156-cd87bee2a1e4#id> .
+
+<http://www.bbc.co.uk/things/93441dc1-5d81-4c85-81df-89956b63b4cc#id> sport:hasHome <http://www.bbc.co.uk/things/e25419a8-e5bb-44c2-a606-f91f44f3b958#id> .
+
+<http://www.bbc.co.uk/things/98105d9f-b1db-0547-b8c7-581abf30c7e9#id> sport:hasHome <http://www.bbc.co.uk/things/b198bbc1-3526-4a9a-9172-96f52f904eb0#id> .
+
+<http://www.bbc.co.uk/things/98c3db4b-498d-7c4b-acb5-d16ffb214f0d#id> sport:hasHome <http://www.bbc.co.uk/things/75b8f3b2-ebfd-4f20-bd46-b6c4e2a6d3e3#id> .
+
+<http://www.bbc.co.uk/things/99bd3ab2-7110-be4f-bc12-1152d31ab75f#id> sport:hasHome <http://www.bbc.co.uk/things/b37742bd-4d14-4a72-a942-004e846097dd#id> .
+
+<http://www.bbc.co.uk/things/9ce8f75f-4dc0-0f46-8e1b-742513527baf#id> sport:hasHome <http://www.bbc.co.uk/things/7a1069ff-225a-468a-8ee5-97f968fe4c1e#id> .
+
+<http://www.bbc.co.uk/things/a3785681-0dce-3842-9e55-e83aa7a1aae1#id> sport:hasHome <http://www.bbc.co.uk/things/f2843398-7b1a-451a-a2a4-24d9294509fa#id> .
+
+<http://www.bbc.co.uk/things/a4dae0b6-d383-1145-83bf-b2c36f3531bb#id> sport:hasHome <http://www.bbc.co.uk/things/ea645a28-d22f-4c80-8ab1-2cc6174aeca4#id> .
+
+<http://www.bbc.co.uk/things/a5ac6cfb-67ff-df4b-bd41-adc3295bc813#id> sport:hasHome <http://www.bbc.co.uk/things/0f27ec07-d822-4234-8d39-3374d083f4ee#id> .
+
+<http://www.bbc.co.uk/things/a63810a1-83f2-2348-8758-bfc1613314fe#id> sport:hasHome <http://www.bbc.co.uk/things/0067d1d8-eb6f-45cb-b145-54df6eab504c#id> .
+
+<http://www.bbc.co.uk/things/a700cc4d-72eb-a84d-8d7a-73ce435f6985#id> sport:hasHome <http://www.bbc.co.uk/things/b654e7bf-6874-47c3-8c4b-7c472353170c#id> .
+
+<http://www.bbc.co.uk/things/a7b3ebaf-c444-5b4d-8e2a-0b236bc3fdd3#id> sport:hasHome <http://www.bbc.co.uk/things/326ab31b-37de-40e2-961c-f616e387a1f8#id> .
+
+<http://www.bbc.co.uk/things/aae45535-f9de-0449-9d1f-09e2f5f2a02b#id> sport:hasHome <http://www.bbc.co.uk/things/d774085e-f0fa-4943-a318-8be3ec4ecf42#id> .
+
+<http://www.bbc.co.uk/things/aba57165-6d8d-3c49-93ea-bbf1e4181c74#id> sport:hasHome <http://www.bbc.co.uk/things/e8d73740-11fd-4816-a5b9-e80e619d25dc#id> .
+
+<http://www.bbc.co.uk/things/afc071cb-0a83-1c41-ace5-b361be1ecb0a#id> sport:hasHome <http://www.bbc.co.uk/things/042edb0f-f072-4ac8-aaba-15ec57fef45c#id> .
+
+<http://www.bbc.co.uk/things/b02eddf4-cbf0-ac46-a5f1-4c25ce58306d#id> sport:hasHome <http://www.bbc.co.uk/things/4c8f72fb-22ae-43ff-80f0-5b1890cbb0f2#id> .
+
+<http://www.bbc.co.uk/things/b5732135-be6e-e74b-ab47-fd360ecbc7c0#id> sport:hasHome <http://www.bbc.co.uk/things/cb1b9fb9-01b7-4d87-9731-9692697e3241#id> .
+
+<http://www.bbc.co.uk/things/b581d4f3-c869-0a47-88ef-1c78d2d5792f#id> sport:hasHome <http://www.bbc.co.uk/things/97d031ce-2570-43d5-859e-8838c1a7e561#id> .
+
+<http://www.bbc.co.uk/things/b68a1520-32bc-eb42-8dc0-ccc1018e8e8f#id> sport:hasHome <http://www.bbc.co.uk/things/5d3e54c7-0304-4ed9-8aea-6b3209b1c7b5#id> .
+
+<http://www.bbc.co.uk/things/b74aa261-04cb-8845-abf6-bf5648d2ed31#id> sport:hasHome <http://www.bbc.co.uk/things/5a3da4ad-01f3-4e09-a7c1-ce8aeeeb9fac#id> .
+
+<http://www.bbc.co.uk/things/ba8fb808-bed3-9f4b-ba49-c164c3d3a12c#id> sport:hasHome <http://www.bbc.co.uk/things/b3bf4a13-0906-4ebd-aa0f-c74e6fd38001#id> .
+
+<http://www.bbc.co.uk/things/be304c00-b9fd-8f44-877d-8785f93bc52d#id> sport:hasHome <http://www.bbc.co.uk/things/41e4341e-1a1a-4d15-b7cc-dffb2c0ebc9c#id> .
+
+<http://www.bbc.co.uk/things/c051a0b6-91b6-45bb-8879-c75c81e8c216#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wigan Athletic FC"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Wigan Athletic FC"@en-gb ;
+    core:sameAs <http://sws.geonames.org/6288576/> ;
+    core:shortLabel "Wigan Athletic FC"@en-gb .
+
+<http://www.bbc.co.uk/things/c1d8fb3f-0de9-f145-934f-210757952393#id> sport:hasHome <http://www.bbc.co.uk/things/a1603e69-a72a-46a1-914b-711340d66727#id> .
+
+<http://www.bbc.co.uk/things/c41395c3-d459-a14c-a4dd-11f9d95121fe#id> sport:hasHome <http://www.bbc.co.uk/things/071331b6-da88-4fe2-920f-631ce2cd5eac#id> .
+
+<http://www.bbc.co.uk/things/c4285a9a-9865-2343-af3a-8653f7b70734#id> sport:hasHome <http://www.bbc.co.uk/things/3d557833-520e-4a9a-b346-d22c69574d2c#id> .
+
+<http://www.bbc.co.uk/things/c7068d17-1330-324a-b2c9-af3c6e0e5d7f#id> sport:hasHome <http://www.bbc.co.uk/things/fcf89d56-e0c0-4978-968f-2fed48250793#id> .
+
+<http://www.bbc.co.uk/things/c82d9271-571a-47a4-b867-1d4bf0993578#id> a core:Place ;
+    sal:name "City and Borough of Manchester"@en-gb ;
+    core:disambiguationHint "England, City and Borough of Manchester, GB"@en-gb ;
+    core:preferredLabel "City and Borough of Manchester"@en-gb ;
+    core:sameAs <http://sws.geonames.org/3333169/> ;
+    core:shortLabel "City and Borough of Manchester"@en-gb .
+
+<http://www.bbc.co.uk/things/cb19b305-06e8-b74e-aac1-53e0966ec4ac#id> sport:hasHome <http://www.bbc.co.uk/things/5a65aaa1-a5a1-44c7-9542-68830fc61d41#id> .
+
+<http://www.bbc.co.uk/things/cf72a7ad-3054-8d4c-a98c-fb0ec5888922#id> sport:hasHome <http://www.bbc.co.uk/things/9ae46e8b-fea7-4e4a-858e-240c3bc4845f#id> .
+
+<http://www.bbc.co.uk/things/cfd00353-deb5-5b46-9e1c-e22c9f255468#id> sport:hasHome <http://www.bbc.co.uk/things/b31e5b3f-f9db-405d-ac07-c9aa9924d86f#id> .
+
+<http://www.bbc.co.uk/things/d434ee4d-e0e1-0b49-8251-e3f29e8b5598#id> sport:hasHome <http://www.bbc.co.uk/things/1d92e55b-fad5-45ec-a8a0-006e763c5197#id> .
+
+<http://www.bbc.co.uk/things/d5a95ba9-efe6-aa4e-afc4-9adc5f786e58#id> sport:hasHome <http://www.bbc.co.uk/things/b9a45877-2cef-4e5b-8808-827c69d0ddc9#id> .
+
+<http://www.bbc.co.uk/things/d66791b0-d72a-fc43-b6f7-d7bbf5774ef3#id> sport:hasHome <http://www.bbc.co.uk/things/2abd551f-e189-4337-a23b-8c56580d1c12#id> .
+
+<http://www.bbc.co.uk/things/da76bafe-c659-1345-8448-08ef198f492f#id> sport:hasHome <http://www.bbc.co.uk/things/a234e78c-f30a-4c87-928d-fea20982ecc6#id> .
+
+<http://www.bbc.co.uk/things/dae23c89-2b1f-2e46-95dc-67ae27628201#id> sport:hasHome <http://www.bbc.co.uk/things/56b561c4-1546-421e-b2a2-b2cb590d9136#id> .
+
+<http://www.bbc.co.uk/things/dc0bf7e4-b512-4f45-9a00-1439fa0b50be#id> sport:hasHome <http://www.bbc.co.uk/things/8e48b5db-0690-4310-8c73-5d010b9f23b6#id> .
+
+<http://www.bbc.co.uk/things/dc90cfcb-42b4-5343-84ee-5f49730557eb#id> sport:hasHome <http://www.bbc.co.uk/things/e80a99e2-69cc-4eb8-bbd7-133aa880b41b#id> .
+
+<http://www.bbc.co.uk/things/deecd9c9-40fa-479b-b21b-4742de2108c9#id> sport:hasHome <http://www.bbc.co.uk/things/e78633d5-2923-43f8-a27e-f574d6d6bee0#id> .
+
+<http://www.bbc.co.uk/things/e038339b-f929-c640-937a-ba747aa9d3d9#id> sport:hasHome <http://www.bbc.co.uk/things/371c8c74-514e-463b-935f-2c842aaa06a9#id> .
+
+<http://www.bbc.co.uk/things/e37fec1a-e644-4b9a-b4a0-ff7b3acfad56#id> sport:hasHome <http://www.bbc.co.uk/things/b2091003-6e04-4ed0-9f8b-83e970f716ef#id> .
+
+<http://www.bbc.co.uk/things/ea45cb53-75a4-4bb7-b9c1-a4eb1a51a2ed#id> sport:hasHome <http://www.bbc.co.uk/things/33a30869-f72c-4ec1-b546-4172f3f1a0d1#id> .
+
+<http://www.bbc.co.uk/things/eb21087f-1dd7-fd4e-9816-d89ccff84cca#id> sport:hasHome <http://www.bbc.co.uk/things/c0d49a0b-e5e8-4018-9bda-d390a55ffe4f#id> .
+
+<http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id> sport:hasHome <http://www.bbc.co.uk/things/10cd3627-5f44-4e07-8e49-17a395e9b5cd#id> .
+
+<http://www.bbc.co.uk/things/f475527c-74ba-4005-aee2-c529ab8300b4#id> sport:hasHome <http://www.bbc.co.uk/things/b198bbc1-3526-4a9a-9172-96f52f904eb0#id> .
+
+<http://www.bbc.co.uk/things/f7023361-5d4e-3e48-95cc-61e458eed4bb#id> sport:hasHome <http://www.bbc.co.uk/things/afd450f0-0591-4b5c-9fc8-6776e8b536a3#id> .
+
+<http://www.bbc.co.uk/things/f7f03b3a-9902-8c4f-aa19-4eb4fb121dba#id> sport:hasHome <http://www.bbc.co.uk/things/145d3fe7-6f19-4201-8b96-3bb7100db315#id> .
+
+<http://www.bbc.co.uk/things/fb54f8ca-0d6b-4ff9-b926-e481d6022cce#id> sport:hasHome <http://www.bbc.co.uk/things/9bbd70c2-c8c3-46bc-a57d-01497d99163c#id> .
+
+<http://www.bbc.co.uk/things/fb692d4a-0fbd-b146-b82e-8ca7eb23b7e6#id> sport:hasHome <http://www.bbc.co.uk/things/24d657fe-17b6-4eb9-b8bf-57afafd82763#id> .
+
+<http://www.bbc.co.uk/things/fe9a73c6-da9e-c247-934e-6b3bbfc8d93d#id> sport:hasHome <http://www.bbc.co.uk/things/35e4516f-efcf-4f45-bdd7-6d7e0bba4d0c#id> .
+
+<http://www.bbc.co.uk/things/ff3ad258-564a-3d46-967a-cefa4e65cfea#id> sport:hasHome <http://www.bbc.co.uk/things/68087a01-edca-4b84-832d-0ba551255af6#id> .
+
+<http://www.bbc.co.uk/things/ff55aea0-83d7-834c-afc0-d21045f561e9#id> sport:hasHome <http://www.bbc.co.uk/things/165b9a62-aa60-4755-94d0-9767b90a1dd0#id> .
+
+<http://www.bbc.co.uk/things/0067d1d8-eb6f-45cb-b145-54df6eab504c#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "St James Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB22> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "St James Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/St_James_Park_(Exeter)>,
+        <http://sws.geonames.org/7646025/> ;
+    core:shortLabel "St James Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/02f880e0-c2fe-42a8-a4da-6027a2298219#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Anfield"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Anfield"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Anfield>,
+        <http://sws.geonames.org/6288575/> ;
+    core:shortLabel "Anfield"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/042edb0f-f072-4ac8-aaba-15ec57fef45c#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Merseyrail Community Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4239> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The Merseyrail Community Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Haig_Avenue>,
+        <http://sws.geonames.org/7646090/> ;
+    core:shortLabel "Haig Avenue"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/071331b6-da88-4fe2-920f-631ce2cd5eac#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Victoria Road"@en-gb ;
+    cms:locator <urn:sports-data:VFBB3380> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Victoria Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Victoria_Road_(Dagenham)>,
+        <http://sws.geonames.org/7645800/> ;
+    core:shortLabel "Victoria Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/08af0946-0867-4286-80be-64cf4f1cd8a2#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Lamb Ground"@en-gb ;
+    cms:locator <urn:sports-data:VFBB3315> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The Lamb Ground"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/The_Lamb_Ground>,
+        <http://sws.geonames.org/7646100/> ;
+    core:shortLabel "The Lamb Ground"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0b162e5a-27a0-40cc-b6ed-8be3d984d3a9#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Highbury Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB3306> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Highbury Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Highbury_Stadium_(Fleetwood)>,
+        <http://sws.geonames.org/6288569/> ;
+    core:shortLabel "Highbury Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0c5225d1-5c51-450d-af6d-530e4467ee0f#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The JD Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB93> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The JD Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Gigg_Lane>,
+        <http://sws.geonames.org/7645512/> ;
+    core:shortLabel "Gigg Lane"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0f27ec07-d822-4234-8d39-3374d083f4ee#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "London Road Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB24> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "London Road Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/London_Road_Stadium>,
+        <http://sws.geonames.org/7646070/> ;
+    core:shortLabel "London Road Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/10cd3627-5f44-4e07-8e49-17a395e9b5cd#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "White Hart Lane"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "White Hart Lane"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/White_Hart_Lane>,
+        <http://sws.geonames.org/6288549/> ;
+    core:shortLabel "White Hart Lane"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/145d3fe7-6f19-4201-8b96-3bb7100db315#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Memorial Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB94> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Memorial Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Memorial_Stadium_(Bristol)>,
+        <http://sws.geonames.org/7645436/> ;
+    core:shortLabel "Memorial Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/165b9a62-aa60-4755-94d0-9767b90a1dd0#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "King Power Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2516> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "King Power Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/King_Power_Stadium>,
+        <http://sws.geonames.org/7646051/> ;
+    core:shortLabel "King Power Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/173886c2-9e32-4272-aa40-7f66a3d27cc4#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Weston Holmes Community Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB7934> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Weston Holmes Community Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Colchester_Community_Stadium>,
+        <http://sws.geonames.org/7645529/> ;
+    core:shortLabel "Colchester Community Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1d92e55b-fad5-45ec-a8a0-006e763c5197#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Roots Hall"@en-gb ;
+    cms:locator <urn:sports-data:VFBB79> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Roots Hall"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Roots_Hall>,
+        <http://sws.geonames.org/7646089/> ;
+    core:shortLabel "Roots Hall"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1d9f328a-3137-405e-b9a3-18424bca0e0f#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ewood Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB32> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Ewood Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Ewood_Park>,
+        <http://sws.geonames.org/6288578/> ;
+    core:shortLabel "Ewood Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/21447e1c-9bde-4bfb-84e0-191734804544#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "New Bucks Head"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4235> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "New Bucks Head"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/New_Bucks_Head> ;
+    core:shortLabel "New Bucks Head"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/23aa5995-96b1-4b71-b3e0-7b251067a3e5#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "St James Park, Newcastle"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "St James Park, Newcastle"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/St_James%27_Park>,
+        <http://sws.geonames.org/6619953/> ;
+    core:shortLabel "St James Park, Newcastle"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/24d657fe-17b6-4eb9-b8bf-57afafd82763#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Aggborough"@en-gb ;
+    cms:locator <urn:sports-data:VFBB111> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Aggborough"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Aggborough>,
+        <http://sws.geonames.org/7646047/> ;
+    core:shortLabel "Aggborough"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/250dada4-0093-448b-a4ea-72d313a7b35e#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Plainmoor"@en-gb ;
+    cms:locator <urn:sports-data:VFBB77> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Plainmoor"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Plainmoor>,
+        <http://sws.geonames.org/7646102/> ;
+    core:shortLabel "Plainmoor"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/25910554-7ed2-4b6e-8033-be7d44daa8a9#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Kenilworth Road"@en-gb ;
+    cms:locator <urn:sports-data:VFBB100> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Kenilworth Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Kenilworth_Road>,
+        <http://sws.geonames.org/7646056/> ;
+    core:shortLabel "Kenilworth Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2abd551f-e189-4337-a23b-8c56580d1c12#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Priestfield Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB98> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Priestfield Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Priestfield_Stadium>,
+        <http://sws.geonames.org/7646033/> ;
+    core:shortLabel "Priestfield Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2b984c03-6082-4937-a1ce-32b661cdec4f#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Keepmoat Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB3314> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Keepmoat Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Keepmoat_Stadium>,
+        <http://sws.geonames.org/7646015/> ;
+    core:shortLabel "Keepmoat Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/326ab31b-37de-40e2-961c-f616e387a1f8#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Proact Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB6631> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Proact Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Proact_Stadium>,
+        <http://sws.geonames.org/7645518/> ;
+    core:shortLabel "Proact Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/35e4516f-efcf-4f45-bdd7-6d7e0bba4d0c#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Adams Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB3> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Adams Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Adams_Park>,
+        <http://sws.geonames.org/7646107/> ;
+    core:shortLabel "Adams Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/371c8c74-514e-463b-935f-2c842aaa06a9#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Whaddon Road"@en-gb ;
+    cms:locator <urn:sports-data:VFBB85> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Whaddon Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Whaddon_Road>,
+        <http://sws.geonames.org/7645516/> ;
+    core:shortLabel "Whaddon Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3a982873-5929-44c8-96e5-6e7f10092047#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Prenton Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB60> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Prenton Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Prenton_Park>,
+        <http://sws.geonames.org/7646103/> ;
+    core:shortLabel "Prenton Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3c2e1adf-4e92-4b80-be6e-e9c73e2d027e#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Meadow Lane"@en-gb ;
+    cms:locator <urn:sports-data:VFBB102> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Meadow Lane"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Meadow_Lane>,
+        <http://sws.geonames.org/7646066/> ;
+    core:shortLabel "Meadow Lane"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3d557833-520e-4a9a-b346-d22c69574d2c#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Emirates Stadium"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Emirates Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Emirates_stadium>,
+        <http://sws.geonames.org/6288548/> ;
+    core:shortLabel "Emirates Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3fe35b24-3d60-42f8-b3ec-059d48de37a5#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Brunton Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB19> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Brunton Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Brunton_Park>,
+        <http://sws.geonames.org/7645514/> ;
+    core:shortLabel "Brunton Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4137b88a-fe7b-4734-9888-5045172da6ed#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "New York Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB8148> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "New York Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/New_York_Stadium> ;
+    core:shortLabel "New York Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/41e4341e-1a1a-4d15-b7cc-dffb2c0ebc9c#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Pride Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB45> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Pride Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Pride_Park_Stadium>,
+        <http://sws.geonames.org/7645802/> ;
+    core:shortLabel "Pride Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/421051cb-89db-4589-8384-6a4e5c7fa1eb#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Fratton Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB63> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Fratton Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Fratton_Park>,
+        <http://sws.geonames.org/6957293/> ;
+    core:shortLabel "Fratton Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/43dce539-3f8c-4a49-b12f-4cda2f6d8b4f#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Vicarage Road"@en-gb ;
+    cms:locator <urn:sports-data:VFBB73> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Vicarage Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Vicarage_Road>,
+        <http://sws.geonames.org/6288544/> ;
+    core:shortLabel "Vicarage Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4c8f72fb-22ae-43ff-80f0-5b1890cbb0f2#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Victoria Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB87> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Victoria Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Victoria_Park_(Hartlepool)>,
+        <http://sws.geonames.org/7646036/> ;
+    core:shortLabel "Victoria Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/56b561c4-1546-421e-b2a2-b2cb590d9136#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sincil Bank"@en-gb ;
+    cms:locator <urn:sports-data:VFBB81> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Sincil Bank"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sincil_Bank>,
+        <http://sws.geonames.org/7646053/> ;
+    core:shortLabel "Sincil Bank"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5a3da4ad-01f3-4e09-a7c1-ce8aeeeb9fac#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Huish Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2688> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Huish Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Huish_Park>,
+        <http://sws.geonames.org/7646109/> ;
+    core:shortLabel "Huish Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5a65aaa1-a5a1-44c7-9542-68830fc61d41#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Crown Ground"@en-gb ;
+    cms:locator <urn:sports-data:VFBB3286> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Crown Ground"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Crown_Ground>,
+        <http://sws.geonames.org/7644883/> ;
+    core:shortLabel "Crown Ground"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5d3e54c7-0304-4ed9-8aea-6b3209b1c7b5#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Molineux Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB55> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Molineux Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Molineux_Stadium>,
+        <http://sws.geonames.org/6288538/> ;
+    core:shortLabel "Molineux Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/63c4eee8-7a11-4eb7-a5c4-4d750fe24c2a#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Broadhall Way"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2882> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Broadhall Way"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Broadhall_Way>,
+        <http://sws.geonames.org/7646094/> ;
+    core:shortLabel "Broadhall Way"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/68087a01-edca-4b84-832d-0ba551255af6#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Britannia Stadium"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Britannia Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Britannia_Stadium>,
+        <http://sws.geonames.org/7646096/> ;
+    core:shortLabel "Britannia Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/70be2738-19bc-463a-9b7f-8e7b3f04a0b6#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Hive Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB8804> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The Hive Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/The_Hive_Stadium> ;
+    core:shortLabel "The Hive Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/71a43ec8-efc5-4f06-84b7-ae730cbb0d13#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "John Smith's Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB54> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "John Smith's Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/John_Smith's_Stadium>,
+        <http://sws.geonames.org/7646043/> ;
+    core:shortLabel "John Smith's Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/75b8f3b2-ebfd-4f20-bd46-b6c4e2a6d3e3#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Craven Cottage"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Craven Cottage"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Craven_Cottage>,
+        <http://sws.geonames.org/6288545/> ;
+    core:shortLabel "Craven Cottage"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/76c36ab0-e47d-4c14-9b10-151004a0eca7#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Field Mill"@en-gb ;
+    cms:locator <urn:sports-data:VFBB75> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Field Mill"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Field_Mill>,
+        <http://sws.geonames.org/7646058/> ;
+    core:shortLabel "Field Mill"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7a1069ff-225a-468a-8ee5-97f968fe4c1e#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Villa Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB34> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Villa Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Villa_Park>,
+        <http://sws.geonames.org/6288540/> ;
+    core:shortLabel "Villa Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7aadde59-5b01-47fe-b9bd-d0d5ae9b29a5#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Coral Windows Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB71> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Coral Windows Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Valley_Parade>,
+        <http://sws.geonames.org/7645429/> ;
+    core:shortLabel "Valley Parade"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/81545d62-67f5-424d-b156-cd87bee2a1e4#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Princes Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4266> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Princes Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Princes_Park_(Dartford)> ;
+    core:shortLabel "Princes Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/82b0b166-c4a9-4c26-8ae2-e4b69800ad63#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Blundell Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB69> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Blundell Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Blundell_Park>,
+        <http://sws.geonames.org/6944963/> ;
+    core:shortLabel "Blundell Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/835780d0-6faa-464a-be9f-b4ab19a082ad#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Recreation Ground"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2759> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Recreation Ground"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Recreation_Ground_(Aldershot)>,
+        <http://sws.geonames.org/7644938/> ;
+    core:shortLabel "Recreation Ground"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/83c74ccb-f8f5-44c2-b7c0-d5837366b7b2#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bramall Lane"@en-gb ;
+    cms:locator <urn:sports-data:VFBB65> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Bramall Lane"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Bramall_Lane>,
+        <http://sws.geonames.org/6288585/> ;
+    core:shortLabel "Bramall Lane"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8e48b5db-0690-4310-8c73-5d010b9f23b6#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gateshead International Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB270> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Gateshead International Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Gateshead_International_Stadium>,
+        <http://sws.geonames.org/7646032/> ;
+    core:shortLabel "Gateshead International Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8ec26fce-d8af-49e2-87bf-2089deea496f#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gresty Road"@en-gb ;
+    cms:locator <urn:sports-data:VFBB67> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Gresty Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Gresty_Road> ;
+    core:shortLabel "Gresty Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/90fed544-d171-4157-a10a-b1d2b9bcfafc#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Cherry Red Records Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB463> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The Cherry Red Records Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Kingsmeadow>,
+        <http://sws.geonames.org/7644884/> ;
+    core:shortLabel "Kingsmeadow"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/95d51b3e-0bb0-4853-bbb5-e614ea8b526a#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Goodison Park"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Goodison Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Goodison_Park>,
+        <http://sws.geonames.org/6288574/> ;
+    core:shortLabel "Goodison Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/97576f68-d1cf-41bf-bb8c-c7c0e1609403#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Elland Road"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Elland Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Elland_Road>,
+        <http://sws.geonames.org/7646049/> ;
+    core:shortLabel "Elland Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/97d031ce-2570-43d5-859e-8838c1a7e561#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Home Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB27> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Home Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Home_Park>,
+        <http://sws.geonames.org/7646072/> ;
+    core:shortLabel "Home Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/97ed31e8-ddfc-4299-add3-edbaf30957e6#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Globe Arena"@en-gb ;
+    cms:locator <urn:sports-data:VFBB7483> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Globe Arena"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Globe_Arena_(football_stadium)>,
+        <http://sws.geonames.org/7646061/> ;
+    core:shortLabel "Globe Arena"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/984fabc6-d7fe-4789-960c-adba1f8f74bb#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Turf Moor"@en-gb ;
+    cms:locator <urn:sports-data:VFBB88> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Turf Moor"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Turf_Moor>,
+        <http://sws.geonames.org/7645437/> ;
+    core:shortLabel "Turf Moor"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/99e524cc-f35a-45a8-bac2-ecfc7906b681#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Spotland"@en-gb ;
+    cms:locator <urn:sports-data:VFBB80> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Spotland"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Spotland_Stadium>,
+        <http://sws.geonames.org/7646079/> ;
+    core:shortLabel "Spotland"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9a17d973-91c6-4bbe-a6ab-58bef0a45f2a#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "KC Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2638> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "KC Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/KC_Stadium>,
+        <http://sws.geonames.org/6288587/> ;
+    core:shortLabel "KC"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9ae46e8b-fea7-4e4a-858e-240c3bc4845f#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Griffin Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB92> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Griffin Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Griffin_Park>,
+        <http://sws.geonames.org/7645433/> ;
+    core:shortLabel "Griffin Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9ae892dd-8390-4d4f-b03c-7a25f10897b1#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Riverside Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB46> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Riverside Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Riverside_Stadium>,
+        <http://sws.geonames.org/6288586/> ;
+    core:shortLabel "Riverside Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9afca946-478f-4c7a-90ec-417338be5fe9#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Old Trafford"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Old Trafford"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Old_Trafford>,
+        <http://sws.geonames.org/6288580/> ;
+    core:shortLabel "Old Trafford"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9bbd70c2-c8c3-46bc-a57d-01497d99163c#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "North Street"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2677> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "North Street"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/North_Street_(Stadium)>,
+        <http://sws.geonames.org/8436573/> ;
+    core:shortLabel "North St"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a1603e69-a72a-46a1-914b-711340d66727#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Abbey Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB99> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Abbey Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Abbey_Stadium>,
+        <http://sws.geonames.org/7645513/> ;
+    core:shortLabel "Abbey Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a234e78c-f30a-4c87-928d-fea20982ecc6#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Oakwell"@en-gb ;
+    cms:locator <urn:sports-data:VFBB53> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Oakwell"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Oakwell>,
+        <http://sws.geonames.org/7645402/> ;
+    core:shortLabel "Oakwell"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a361d92f-4563-40b8-910f-b869b7f8457f#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Boundary Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB103> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Boundary Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Boundary_Park>,
+        <http://sws.geonames.org/7646067/> ;
+    core:shortLabel "Boundary Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a8388092-8545-4d53-be82-b358132f2b16#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Hillsborough Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB41> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Hillsborough Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Hillsborough_Stadium>,
+        <http://sws.geonames.org/7646085/> ;
+    core:shortLabel "Hillsborough Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/afd450f0-0591-4b5c-9fc8-6776e8b536a3#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sixfields Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB26> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Sixfields Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sixfields_Stadium>,
+        <http://sws.geonames.org/7646063/> ;
+    core:shortLabel "Sixfields Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b2091003-6e04-4ed0-9f8b-83e970f716ef#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Kingfield Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4227> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Kingfield Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Kingfield_Stadium> ;
+    core:shortLabel "Kingfield Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b31e5b3f-f9db-405d-ac07-c9aa9924d86f#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "St Andrew's"@en-gb ;
+    cms:locator <urn:sports-data:VFBB1743> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "St Andrew's"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/St_Andrews_Stadium>,
+        <http://sws.geonames.org/7645408/> ;
+    core:shortLabel "St Andrew's"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b37742bd-4d14-4a72-a942-004e846097dd#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "New Meadow"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4784> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "New Meadow"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/New_Meadow>,
+        <http://sws.geonames.org/7646086/> ;
+    core:shortLabel "New Meadow"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b3bf4a13-0906-4ebd-aa0f-c74e6fd38001#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "County Ground"@en-gb ;
+    cms:locator <urn:sports-data:VFBB62> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "County Ground"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/County_Ground_(Swindon)>,
+        <http://sws.geonames.org/7646099/> ;
+    core:shortLabel "County Ground"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b5f0840e-24f1-4427-9411-9623369e4509#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Park View Road"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4234> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Park View Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Park_View_Road> ;
+    core:shortLabel "Park View Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b654e7bf-6874-47c3-8c4b-7c472353170c#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Carrow Road"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Carrow Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Carrow_Road>,
+        <http://sws.geonames.org/7646064/> ;
+    core:shortLabel "Carrow Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b9a45877-2cef-4e5b-8808-827c69d0ddc9#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Stadium Of Light"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Stadium Of Light"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Stadium_of_light>,
+        <http://sws.geonames.org/7646098/> ;
+    core:shortLabel "Stadium Of Light"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bedb3b65-076a-4868-8a4c-67cd87f7a2b5#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Deepdale"@en-gb ;
+    cms:locator <urn:sports-data:VFBB105> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Deepdale"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Deepdale>,
+        <http://sws.geonames.org/7646075/> ;
+    core:shortLabel "Deepdale"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bef82aed-9e6f-46c7-931f-f38e111fd2a5#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Matchroom Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2737> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Matchroom Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Brisbane_Road>,
+        <http://sws.geonames.org/7646052/> ;
+    core:shortLabel "Brisbane Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bfbce502-1e70-45b3-bf75-e2597cd8d2d6#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Shay Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB20> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The Shay Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/The_Shay> ;
+    core:shortLabel "The Shay Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c0d49a0b-e5e8-4018-9bda-d390a55ffe4f#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Selhurst Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB48> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Selhurst Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Selhurst_Park>,
+        <http://sws.geonames.org/7645799/> ;
+    core:shortLabel "Selhurst Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c7e00567-19d2-4ab2-80a2-b53f17c3aef7#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bloomfield Road"@en-gb ;
+    cms:locator <urn:sports-data:VFBB90> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Bloomfield Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Bloomfield_Road>,
+        <http://sws.geonames.org/7645409/> ;
+    core:shortLabel "Bloomfield Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c7f4deeb-7e43-461d-8764-124d3f83a656#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Hawthorns"@en-gb ;
+    cms:locator <urn:sports-data:VFBB51> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The Hawthorns"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/The_Hawthorns>,
+        <http://sws.geonames.org/6288539/> ;
+    core:shortLabel "The Hawthorns"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/cb1b9fb9-01b7-4d87-9731-9692697e3241#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Pirelli Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2877> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Pirelli Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Pirelli_Stadium>,
+        <http://sws.geonames.org/7645439/> ;
+    core:shortLabel "Pirelli Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/cf87fdd3-a89a-48f4-adb6-878cc2685d2e#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Macron Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB47> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Macron Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Macron_Stadium>,
+        <http://sws.geonames.org/6288577/> ;
+    core:shortLabel "Macron Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d1c641ee-30a2-42a5-9a27-e49a8e7d4c23#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "St Mary's Stadium"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "St Mary's Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/St_Mary%27s_Stadium>,
+        <http://sws.geonames.org/7646088/> ;
+    core:shortLabel "St Mary's Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d431fc4d-a1f4-4fd9-8eba-f521d426a4a2#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ashton Gate Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Ashton Gate Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Ashton_Gate_Stadium>,
+        <http://sws.geonames.org/7645435/> ;
+    core:shortLabel "Ashton Gate Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d46d7294-559a-45b3-83f3-2077815ac666#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Vale Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB66> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Vale Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Vale_Park>,
+        <http://sws.geonames.org/7646073/> ;
+    core:shortLabel "Vale Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d774085e-f0fa-4943-a318-8be3ec4ecf42#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Den"@en-gb ;
+    cms:locator <urn:sports-data:VFBB101> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The Den"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/The_Den>,
+        <http://sws.geonames.org/7646059/> ;
+    core:shortLabel "The Den"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/da5f64a0-3bba-47e0-a4a1-4e1d9b3b2dbd#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Amlin Road"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4228> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Amlin Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Cressing_Road> ;
+    core:shortLabel "Cressing Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/db21167b-cf0d-41f3-97af-75a9e0d11766#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Goldsands Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2734> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Goldsands Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Dean_Court>,
+        <http://sws.geonames.org/7645427/> ;
+    core:shortLabel "Dean Court"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/dcb576f8-4169-4ab5-a8d9-c9330c91875d#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Glanford Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB91> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Glanford Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Glanford_Park>,
+        <http://sws.geonames.org/7646083/> ;
+    core:shortLabel "Glanford Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e14abb96-c9f5-4f0e-bd68-e2eca82c00e4#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Kassam Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2121> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Kassam Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Kassam_Stadium>,
+        <http://sws.geonames.org/7646068/> ;
+    core:shortLabel "Kassam Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e25419a8-e5bb-44c2-a606-f91f44f3b958#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "JDRF James Parnell Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4512> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "JDRF James Parnell Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Liberty_Way> ;
+    core:shortLabel "Liberty Way"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e3a150e9-8ac2-4f8b-b40a-69a5873bf972#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Shielfield Park"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2777> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Shielfield Park"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Shielfield_Park>,
+        <http://sws.geonames.org/7645407/> ;
+    core:shortLabel "Shielfield Park"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e78633d5-2923-43f8-a27e-f574d6d6bee0#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Silverlake Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB3785> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Silverlake Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Ten_Acres> ;
+    core:shortLabel "Ten Acres"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e80a99e2-69cc-4eb8-bbd7-133aa880b41b#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ricoh Arena"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2880> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Ricoh Arena"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Ricoh_Arena>,
+        <http://sws.geonames.org/6288541/> ;
+    core:shortLabel "Ricoh Arena"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e880f783-5979-481b-aff8-9194f6f33d53#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Crabble Athletic Ground"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4254> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Crabble Athletic Ground"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Crabble_Athletic_Ground> ;
+    core:shortLabel "Crabble Athletic Ground"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e8d73740-11fd-4816-a5b9-e80e619d25dc#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Checkatrade.com Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB4223> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Checkatrade.com Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Broadfield_Stadium>,
+        <http://sws.geonames.org/7645796/> ;
+    core:shortLabel "Broadfield Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e9867f4b-ef0c-434a-8e60-00a844c91cf9#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Moss Lane"@en-gb ;
+    cms:locator <urn:sports-data:VFBB3612> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Moss Lane"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Moss_Lane>,
+        <http://sws.geonames.org/7645394/> ;
+    core:shortLabel "Moss Lane"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ea645a28-d22f-4c80-8ab1-2cc6174aeca4#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bootham Crescent"@en-gb ;
+    cms:locator <urn:sports-data:VFBB76> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Bootham Crescent"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Bootham_Crescent>,
+        <http://sws.geonames.org/7646110/> ;
+    core:shortLabel "Bootham Crescent"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/eae432cd-1d56-46f2-aff5-c8934dbcd53b#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Boleyn Ground"@en-gb ;
+    cms:locator <urn:sports-data:VFBB43> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Boleyn Ground"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Boleyn_Ground>,
+        <http://sws.geonames.org/6288551/> ;
+    core:shortLabel "Boleyn Ground"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/eb363b5f-fb0f-47fd-80df-50dcc8405251#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Stamford Bridge"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Stamford Bridge"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Stamford_Bridge_(Stadium)>,
+        <http://sws.geonames.org/6954068/> ;
+    core:shortLabel "Stamford Bridge"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/eb364ec9-d38c-4e07-a4c3-aba15e6336a0#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Amex"@en-gb ;
+    cms:locator <urn:sports-data:VFBB7403> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The Amex"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Falmer_Stadium>,
+        <http://sws.geonames.org/9256358/> ;
+    core:shortLabel "Falmer Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ee9de8c5-8d46-4232-96f0-0c02b0feea8c#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Loftus Road"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Loftus Road"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Loftus_Road>,
+        <http://sws.geonames.org/7646077/> ;
+    core:shortLabel "Loftus Road"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f19f9438-1b90-43fa-a70d-feeda2b6b71b#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Stadium mk"@en-gb ;
+    cms:locator <urn:sports-data:VFBB3678> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Stadium mk"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Stadium_mk>,
+        <http://sws.geonames.org/7506389/> ;
+    core:shortLabel "Stadium mk"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f1eb4771-f8b0-492c-9566-41918fbecf66#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Etihad Stadium"@en-gb ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "City of Manchester Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/City_of_Manchester_Stadium>,
+        <http://sws.geonames.org/6288582/> ;
+    core:shortLabel "City of Manchester Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f2843398-7b1a-451a-a2a4-24d9294509fa#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "City Ground"@en-gb ;
+    cms:locator <urn:sports-data:VFBB40> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "City Ground"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/City_Ground>,
+        <http://sws.geonames.org/7646065/> ;
+    core:shortLabel "City Ground"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/fb578f03-3b69-4563-9184-a140af6a915a#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bank's Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB58> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Bescot Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Bescot_Stadium>,
+        <http://sws.geonames.org/7646104/> ;
+    core:shortLabel "Bescot Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/fcf89d56-e0c0-4978-968f-2fed48250793#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The Valley"@en-gb ;
+    cms:locator <urn:sports-data:VFBB49> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The Valley"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/The_Valley_(London)>,
+        <http://sws.geonames.org/6288550/> ;
+    core:shortLabel "The Valley"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/fd6aa416-6e46-44d1-a4ff-44ea3689372c#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "The New Lawn"@en-gb ;
+    cms:locator <urn:sports-data:VFBB3611> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "The New Lawn"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/The_New_Lawn>,
+        <http://sws.geonames.org/7646029/> ;
+    core:shortLabel "The New Lawn"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<urn:sports-data:VFBB100> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB101> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB102> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB103> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB105> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB111> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB1743> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB19> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB20> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2121> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB22> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB24> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2516> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB26> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2638> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2677> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2688> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB27> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB270> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2734> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2737> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2759> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2777> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2867> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2877> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2880> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB2882> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB3> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB32> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB3286> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB3306> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB3314> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB3315> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB3380> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB34> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB3611> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB3612> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB3678> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB3785> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB40> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB41> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4223> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4227> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4228> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4234> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4235> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4239> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4254> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4266> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB43> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB45> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4512> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB46> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB463> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB47> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB4784> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB48> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB49> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB51> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB53> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB54> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB55> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB58> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB60> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB62> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB63> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB65> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB66> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB6631> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB67> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB69> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB71> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB73> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB7403> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB7483> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB75> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB76> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB77> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB79> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB7934> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB80> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB81> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB8148> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB85> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB87> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB88> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB8804> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB90> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB91> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB92> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB93> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB94> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB98> a cms:Sports-DataLocator .
+
+<urn:sports-data:VFBB99> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/33a30869-f72c-4ec1-b546-4172f3f1a0d1#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Madejski Stadium"@en-gb ;
+    core:disambiguationHint "Sports Stadium"@en-gb ;
+    core:preferredLabel "Madejski Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Madejski_Stadium>,
+        <http://sws.geonames.org/6288543/> ;
+    core:shortLabel "Madejski Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id>,
+        <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/66ee503f-04e1-4060-9c36-dfb296d938ee#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "DW Stadium"@en-gb ;
+    core:disambiguationHint "Sports Stadium"@en-gb ;
+    core:preferredLabel "DW Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/DW_Stadium>,
+        <http://sws.geonames.org/7646106/> ;
+    core:shortLabel "DW Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id>,
+        <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id>,
+        <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b198bbc1-3526-4a9a-9172-96f52f904eb0#id> a core:Place,
+        sport:Venue,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Liberty Stadium"@en-gb ;
+    cms:locator <urn:sports-data:VFBB2867> ;
+    core:disambiguationHint "Football Stadium"@en-gb ;
+    core:preferredLabel "Liberty Stadium"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Liberty_Stadium>,
+        <http://sws.geonames.org/6288524/> ;
+    core:shortLabel "Liberty Stadium"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id>,
+        <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+

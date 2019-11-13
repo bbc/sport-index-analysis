@@ -1,0 +1,102 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/d9fbb66c-6e2e-4b2f-855a-443ece597aeb#id> a provenance:Dataset ;
+    rdfs:label "Cricket: International Women's World Twenty20 2016 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/cricket/cricket-competition-womens-world-twenty20-2016-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-1772;1: Model CCKBP1322 Stages and Rounds for Women's International Twenty20 2016." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-02-29T10:27:47+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:eleni.mikroyannidi@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/36e7f091-e7c3-4d48-aa82-5ec09f643868#id> sport:firstStage <http://www.bbc.co.uk/things/42944d9f-60eb-48a4-836c-3db96ca370c0#id>,
+        <http://www.bbc.co.uk/things/953dc522-15fd-427f-b8c2-3d36c74cef71#id> .
+
+<http://www.bbc.co.uk/things/2e670425-b2a7-4243-b73d-9014312b42d1#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Cricket Women's International Twenty20 Cup 2016"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CCKBP13222016S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/42944d9f-60eb-48a4-836c-3db96ca370c0#id> a sport:Competition ;
+    rdfs:label "Stage 2 of Cricket Women's International Twenty20 Cup 2016"@en-gb ;
+    sal:name "Knockout Stage"@en-gb ;
+    cms:locator <urn:sports-data:CCKBP13222016S2> ;
+    core:preferredLabel "Knockout Stage"@en-gb ;
+    core:shortLabel "Knockout Stage"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/66467d82-a610-4d45-a65e-9de33a15fe25#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/5417c176-0d94-40c3-9bd4-de03c15c6fbd#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/5417c176-0d94-40c3-9bd4-de03c15c6fbd#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 Cricket Women's International Twenty20 Cup 2016"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CCKBP13222016S2R2> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/66467d82-a610-4d45-a65e-9de33a15fe25#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 Cricket Women's International Twenty20 Cup 2016"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CCKBP13222016S2R1> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/953dc522-15fd-427f-b8c2-3d36c74cef71#id> a sport:Competition ;
+    rdfs:label "Stage 1 of Cricket women's International Twenty20 Cup 2016"@en-gb ;
+    sal:name "Group Stage"@en-gb ;
+    cms:locator <urn:sports-data:CCKBP13222016S1> ;
+    core:preferredLabel "Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/c3f6e5fc-48cf-4b5f-9e35-dd7f039a5876#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/2e670425-b2a7-4243-b73d-9014312b42d1#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/c3f6e5fc-48cf-4b5f-9e35-dd7f039a5876#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Cricket Women's International Twenty20 Cup 2016"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CCKBP13222016S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CCKBP13222016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBP13222016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBP13222016S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBP13222016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBP13222016S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBP13222016S2R2> a cms:Sports-DataLocator .
+

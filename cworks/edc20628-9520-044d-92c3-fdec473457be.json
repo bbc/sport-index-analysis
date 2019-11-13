@@ -1,0 +1,4163 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/86be0c66-19a3-45ab-90a6-1d0ef8d9431a#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-13T06:24:14+00:00",
+      "dateModified": "2019-11-13T06:24:14+00:00",
+      "description": "Captain Harry Kane remains England\u0027s first-choice striker, but what do the stats tell us about who Southgate should be selecting to lead the line?",
+      "shortTitle": "Can Abraham push Kane for England spot?",
+      "title": "Tammy Abraham: Is Harry Kane\u0027s England place under threat from Chelsea striker?",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:07577848-90cd-1d4c-98e2-ce9fa24424c2",
+        "urn:bbc:cps:asset:50368254"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2acacd19-6609-1840-9c2b-b0820c50d281#id",
+          "@type": [
+            "Thing",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Chelsea",
+          "preferredLabel": "Chelsea",
+          "shortLabel": "Chelsea",
+          "slug": "chelsea",
+          "sameAs": [
+            "http://dbpedia.org/resource/Chelsea_F.C.",
+            "http://rdf.freebase.com/ns/m.023fb",
+            "http://www.wikidata.org/entity/Q9616"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/chelsea",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.chelseafc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/611ecd3d-8b08-48d5-aee9-d01e7620d2a4#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "England",
+          "preferredLabel": "England",
+          "shortLabel": "England",
+          "slug": "england",
+          "sameAs": [
+            "http://dbpedia.org/resource/England_national_football_team",
+            "http://rdf.freebase.com/ns/m.02pp1",
+            "http://www.wikidata.org/entity/Q47762"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/england",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50368254",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/14578/production/_109602338_gettyimages-1186521424.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Tammy Abraham",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/d28b1376-d7a9-46ee-905d-c16b8f5469e2#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-11T17:32:33+00:00",
+      "dateModified": "2019-11-11T17:32:33+00:00",
+      "description": "Tottenham forward Son Heung-Min has played for his team since 2015 - and there are quite a few reasons to love him!",
+      "shortTitle": "Eight reasons to love Son Heung-Min!",
+      "title": "Son Heung-Min: Tottenham\u0027s South Korean star",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-news/Feature",
+      "locator": [
+        "urn:asset:c7c8b009-0d68-6449-a02d-aac5235680e6",
+        "urn:bbc:cps:asset:47240470"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/newsround/47240470",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/13E11/production/_105652418_son6.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Son Heung-min.",
+          "thumbnailType": "FixedSize66Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/16521/production/_105652419_son6.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Son Heung-min.",
+          "thumbnailType": "FixedSize144Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/4D03/production/_105651791_son6.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Son Heung-min.",
+          "thumbnailType": "StandardThumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/EFF1/production/_105652416_son6.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Son Heung-min.",
+          "thumbnailType": "CloseUpThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/53b70dfa-03a8-499e-94a1-3b89232fcb24#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-09T20:01:34+00:00",
+      "dateModified": "2019-11-09T20:01:34+00:00",
+      "description": "George Baldock cancels out Son Heung-min\u0027s opener as Sheffield United stretch their unbeaten run to five games with a deserved draw at Tottenham.",
+      "shortTitle": "VAR denies Sheff Utd in draw at Spurs",
+      "title": "Tottenham 1-1 Sheffield United: George Baldock salvages point for Blades",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:a9f18279-d779-4eb6-88f0-153dc6f4592b",
+        "urn:bbc:cps:asset:50271774"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2f9868d2-2bc4-47d0-b6fd-17b13fa6aafe#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Sheffield",
+          "preferredLabel": "Sheffield",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Sheffield",
+          "sameAs": "http://sws.geonames.org/2638077/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/75f90667-0306-e847-966e-085a11a8f195#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Sheffield United",
+          "preferredLabel": "Sheffield United",
+          "shortLabel": "Sheff Utd",
+          "slug": "sheffield-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Sheffield_United_F.C.",
+            "http://rdf.freebase.com/ns/m.01tqfs",
+            "http://www.wikidata.org/entity/Q19607"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/sheffield-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.sufc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d817aa97-c64f-453e-aa01-8894f6ca515b#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Tottenham",
+          "preferredLabel": "Tottenham",
+          "sameAs": "http://sws.geonames.org/2635608/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50271774",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/ED57/production/_109595706_gettyimages-1186541217.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "George Baldock, Sheffield United",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/4e1ae629-6176-4df6-ac2c-1e57ab9a95b9#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-09T19:33:12+00:00",
+      "dateModified": "2019-11-09T19:33:12+00:00",
+      "description": "Tottenham manager Mauricio Pochettino says Spurs \u0027need to keep working\u0027 after their 1-1 draw with Sheffield United.",
+      "shortTitle": "Spurs need to keep working – Pochettino",
+      "title": "Tottenham 1-1 Sheffield United: Mauricio Pochettino says Spurs \u0027need to keep working\u0027",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:e738f5ce-f827-d24c-b53b-ee90d03be776",
+        "urn:bbc:cps:asset:50362883"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/75f90667-0306-e847-966e-085a11a8f195#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Sheffield United",
+          "preferredLabel": "Sheffield United",
+          "shortLabel": "Sheff Utd",
+          "slug": "sheffield-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Sheffield_United_F.C.",
+            "http://rdf.freebase.com/ns/m.01tqfs",
+            "http://www.wikidata.org/entity/Q19607"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/sheffield-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.sufc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/50362883",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/148D3/production/_109597148_p07tjlxr.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Mauricio Pochettino",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/413994b6-c488-4ded-8391-73f117effa4f#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-09T18:11:30+00:00",
+      "dateModified": "2019-11-09T18:11:30+00:00",
+      "description": "Sheffield United manager Chris Wilder says his team were the \"better side\" after their 1-1 draw with Tottenham in the Premier League.",
+      "shortTitle": "\u0027That\u0027s a new one\u0027 - Wilder on VAR disallowed goal",
+      "title": "Tottenham 1-1 Sheffield United: Chris Wilder disappointed with VAR disallowed goal",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:79cf6470-c805-824a-9d18-dd56d952f840",
+        "urn:bbc:cps:asset:50362879"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/75f90667-0306-e847-966e-085a11a8f195#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Sheffield United",
+          "preferredLabel": "Sheffield United",
+          "shortLabel": "Sheff Utd",
+          "slug": "sheffield-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Sheffield_United_F.C.",
+            "http://rdf.freebase.com/ns/m.01tqfs",
+            "http://www.wikidata.org/entity/Q19607"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/sheffield-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.sufc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/50362879",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/16B15/production/_109594929_p07thyjp.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Chris Wilder",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/07f18a7f-75bf-4335-9dfb-6d52aed3e626#id",
+      "@type": [
+        "CreativeWork",
+        "LiveCoverage"
+      ],
+      "dateCreated": "2019-11-08T12:31:20+00:00",
+      "dateModified": "2019-11-08T12:31:20+00:00",
+      "description": "Sheffield United travel to Tottenham in the Premier League - follow Final Score and live text commentary.",
+      "shortTitle": "Tottenham v Sheffield United",
+      "title": "Tottenham Hotspur v Sheffield United in the Premier League",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:6dc44c4e-576c-6f42-aa9d-af9cf3c3f22a",
+        "urn:bbc:cps:asset:50091480"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/75f90667-0306-e847-966e-085a11a8f195#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Sheffield United",
+          "preferredLabel": "Sheffield United",
+          "shortLabel": "Sheff Utd",
+          "slug": "sheffield-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Sheffield_United_F.C.",
+            "http://rdf.freebase.com/ns/m.01tqfs",
+            "http://www.wikidata.org/entity/Q19607"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/sheffield-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.sufc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/50091480",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/CF55/production/_109277035_spurssheffieldutd.png",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Spurs Sheffield Utd",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/8c2081fd-97aa-4eb5-83cb-87f63c4b8030#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-07T17:35:56+00:00",
+      "dateModified": "2019-11-07T17:35:56+00:00",
+      "description": "Mark Lawrenson takes on \u0027The Irishman\u0027 star Stephen Graham to make predictions for the latest round of Premier League fixtures.",
+      "shortTitle": "Liverpool to beat Man City and go nine clear?",
+      "title": "Premier League predictions: Lawro vs \u0027The Irishman\u0027 star Stephen Graham",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:72cc9960-54db-fe4a-a9ba-c79dd29a0ba6",
+        "urn:bbc:cps:asset:50334337"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/0280e88c-26bd-b24c-882f-ae0e5f4142f2#id",
+          "@type": [
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Bournemouth",
+          "preferredLabel": "Bournemouth",
+          "shortLabel": "Bournemouth",
+          "slug": "afc-bournemouth",
+          "sameAs": [
+            "http://dbpedia.org/resource/A.F.C._Bournemouth",
+            "http://rdf.freebase.com/ns/m.02b0xq",
+            "http://www.wikidata.org/entity/Q19568"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.afcb.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/afc-bournemouth",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/1fa3a0d0-1a1d-b24a-84a0-ae4607f2123a#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "West Ham United",
+          "preferredLabel": "West Ham United",
+          "shortLabel": "West Ham",
+          "slug": "west-ham-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/West_Ham_United_F.C.",
+            "http://rdf.freebase.com/ns/m.0ckf6",
+            "http://www.wikidata.org/entity/Q18747"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/west-ham-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.whufc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/219e3f21-8d60-47fa-a0b8-f705b9abec36#id",
+          "@type": [
+            "Thing",
+            "Theme"
+          ],
+          "label": "Lawro\u0027s predictions",
+          "preferredLabel": "Lawro\u0027s predictions",
+          "shortLabel": "Lawro"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/279a3dc2-9195-264d-be3e-2a52bb61d4fe#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Burnley",
+          "preferredLabel": "Burnley",
+          "shortLabel": "Burnley",
+          "slug": "burnley",
+          "sameAs": [
+            "http://dbpedia.org/resource/Burnley_F.C.",
+            "http://rdf.freebase.com/ns/m.0212mp",
+            "http://www.wikidata.org/entity/Q19458"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/burnley",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.burnleyfootballclub.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/2acacd19-6609-1840-9c2b-b0820c50d281#id",
+          "@type": [
+            "Thing",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Chelsea",
+          "preferredLabel": "Chelsea",
+          "shortLabel": "Chelsea",
+          "slug": "chelsea",
+          "sameAs": [
+            "http://dbpedia.org/resource/Chelsea_F.C.",
+            "http://rdf.freebase.com/ns/m.023fb",
+            "http://www.wikidata.org/entity/Q9616"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/chelsea",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.chelseafc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/34032412-5e2a-324d-bb3e-d0d4b16df2d4#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Newcastle United",
+          "preferredLabel": "Newcastle United",
+          "shortLabel": "Newcastle",
+          "slug": "newcastle-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Newcastle_United_F.C.",
+            "http://rdf.freebase.com/ns/m.0fvly",
+            "http://www.wikidata.org/entity/Q18716"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/newcastle-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.nufc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3d814d88-1f22-d042-a9a6-87fd9216a50a#id",
+          "@type": [
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Brighton \u0026 Hove Albion",
+          "preferredLabel": "Brighton \u0026 Hove Albion",
+          "shortLabel": "Brighton",
+          "slug": "brighton-and-hove-albion",
+          "sameAs": [
+            "http://dbpedia.org/resource/Brighton_\u0026_Hove_Albion_F.C.",
+            "http://rdf.freebase.com/ns/m.0j2pg",
+            "http://www.wikidata.org/entity/Q19453"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/brighton-and-hove-albion",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.seagulls.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/48287aac-b015-1d4e-9c4e-9b8abac03789#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Everton",
+          "preferredLabel": "Everton",
+          "shortLabel": "Everton",
+          "slug": "everton",
+          "sameAs": [
+            "http://dbpedia.org/resource/Everton_F.C.",
+            "http://rdf.freebase.com/ns/m.0mmd6",
+            "http://www.wikidata.org/entity/Q5794"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/everton",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.evertonfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4bdbf21d-d1ad-7147-ab08-612cd0dc20b4#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Manchester City",
+          "preferredLabel": "Manchester City",
+          "shortLabel": "Man City",
+          "slug": "manchester-city",
+          "sameAs": [
+            "http://dbpedia.org/resource/Manchester_City_F.C.",
+            "http://rdf.freebase.com/ns/m.01634x",
+            "http://www.wikidata.org/entity/Q50602"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/manchester-city",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.mancity.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6780f83f-a17a-e641-8ec8-226c285a5dbb#id",
+          "@type": [
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "Organisation",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Southampton",
+          "preferredLabel": "Southampton",
+          "shortLabel": "Southampton",
+          "slug": "southampton",
+          "sameAs": [
+            "http://dbpedia.org/resource/Southampton_F.C.",
+            "http://rdf.freebase.com/ns/m.0k_l4",
+            "http://www.wikidata.org/entity/Q18732"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/southampton",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.saintsfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/75f90667-0306-e847-966e-085a11a8f195#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Sheffield United",
+          "preferredLabel": "Sheffield United",
+          "shortLabel": "Sheff Utd",
+          "slug": "sheffield-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Sheffield_United_F.C.",
+            "http://rdf.freebase.com/ns/m.01tqfs",
+            "http://www.wikidata.org/entity/Q19607"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/sheffield-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.sufc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/7d1d29cb-dab4-a24f-8600-393be1f354fe#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Watford",
+          "preferredLabel": "Watford",
+          "shortLabel": "Watford",
+          "slug": "watford",
+          "sameAs": [
+            "http://dbpedia.org/resource/Watford_F.C.",
+            "http://rdf.freebase.com/ns/m.0lmm3",
+            "http://www.wikidata.org/entity/Q2714"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/watford",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.watfordfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/8df31a76-4c22-5b40-9f0d-78b34dfb26fa#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent"
+          ],
+          "label": "Liverpool",
+          "preferredLabel": "Liverpool",
+          "shortLabel": "Liverpool",
+          "slug": "liverpool",
+          "sameAs": [
+            "http://dbpedia.org/resource/Liverpool_F.C.",
+            "http://rdf.freebase.com/ns/m.04ltf",
+            "http://www.wikidata.org/entity/Q1130849"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/liverpool",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.liverpoolfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/90d9a818-850b-b64f-9474-79e15a0355b8#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Manchester United",
+          "preferredLabel": "Manchester United",
+          "shortLabel": "Man Utd",
+          "slug": "manchester-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Manchester_United_F.C.",
+            "http://rdf.freebase.com/ns/m.050fh",
+            "http://www.wikidata.org/entity/Q18656"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/manchester-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.manutd.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/9ce8f75f-4dc0-0f46-8e1b-742513527baf#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Aston Villa",
+          "preferredLabel": "Aston Villa",
+          "shortLabel": "Aston Villa",
+          "slug": "aston-villa",
+          "sameAs": [
+            "http://dbpedia.org/resource/Aston_Villa_F.C.",
+            "http://rdf.freebase.com/ns/m.0bl8l",
+            "http://www.wikidata.org/entity/Q18711"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.avfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/aston-villa",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a700cc4d-72eb-a84d-8d7a-73ce435f6985#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Norwich City",
+          "preferredLabel": "Norwich City",
+          "shortLabel": "Norwich",
+          "slug": "norwich-city",
+          "sameAs": [
+            "http://dbpedia.org/resource/Norwich_City_F.C.",
+            "http://rdf.freebase.com/ns/m.01kwhf",
+            "http://www.wikidata.org/entity/Q18721"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/norwich-city",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.canaries.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b68a1520-32bc-eb42-8dc0-ccc1018e8e8f#id",
+          "@type": [
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Thing",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Wolverhampton Wanderers",
+          "preferredLabel": "Wolverhampton Wanderers",
+          "shortLabel": "Wolves",
+          "slug": "wolverhampton-wanderers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Wolverhampton_Wanderers_F.C.",
+            "http://rdf.freebase.com/ns/m.01fwqn",
+            "http://www.wikidata.org/entity/Q19500"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/wolverhampton-wanderers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.wolves.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c4285a9a-9865-2343-af3a-8653f7b70734#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Arsenal",
+          "preferredLabel": "Arsenal",
+          "shortLabel": "Arsenal",
+          "slug": "arsenal",
+          "sameAs": [
+            "http://dbpedia.org/resource/Arsenal_F.C.",
+            "http://rdf.freebase.com/ns/m.0xbm",
+            "http://www.wikidata.org/entity/Q9617"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.arsenal.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/arsenal",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/eb21087f-1dd7-fd4e-9816-d89ccff84cca#id",
+          "@type": [
+            "Thing",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Crystal Palace",
+          "preferredLabel": "Crystal Palace",
+          "shortLabel": "Crystal Palace",
+          "slug": "crystal-palace",
+          "sameAs": [
+            "http://dbpedia.org/resource/Crystal_Palace_F.C.",
+            "http://rdf.freebase.com/ns/m.0223bl",
+            "http://www.wikidata.org/entity/Q19467"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/crystal-palace",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.cpfc.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ff55aea0-83d7-834c-afc0-d21045f561e9#id",
+          "@type": [
+            "Thing",
+            "dcterms:Agent",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Leicester City",
+          "preferredLabel": "Leicester City",
+          "shortLabel": "Leicester",
+          "slug": "leicester-city",
+          "sameAs": [
+            "http://dbpedia.org/resource/Leicester_City_F.C.",
+            "http://rdf.freebase.com/ns/m.01rlzn",
+            "http://www.wikidata.org/entity/Q19481"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/leicester-city",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.lcfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50334337",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/13034/production/_109567877_\u0027theirishman\u0027actorstephengraham.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Actor Stephen Graham",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/e77e9453-8dd0-4912-8a4c-013efd0932d4#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-07T11:32:07+00:00",
+      "dateModified": "2019-11-07T11:32:07+00:00",
+      "description": "Tottenham keeper Hugo Lloris has surgery after dislocating his left elbow in a 3-0 defeat by Brighton in October.",
+      "shortTitle": "Spurs keeper Lloris has surgery on elbow",
+      "title": "Tottenham keeper Hugo Lloris has surgery on dislocated elbow",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:06bb4dc9-befe-f649-9659-ad1f7e332fa0",
+        "urn:bbc:cps:asset:50329554"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d817aa97-c64f-453e-aa01-8894f6ca515b#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Tottenham",
+          "preferredLabel": "Tottenham",
+          "sameAs": "http://sws.geonames.org/2635608/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50329554",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/134BC/production/_109563097_lloris_reuters.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Tottenham keeper Hugo Lloris was injured during a 3-0 defeat at Brighton",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/a8d1de71-29bd-4ed3-bbc3-4cf83f21e99e#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-07T08:44:45+00:00",
+      "dateModified": "2019-11-07T08:44:45+00:00",
+      "description": "England will play the final Test of next year\u0027s Ashes series against Australia at Tottenham Hotspur\u0027s new stadium.",
+      "shortTitle": "Spurs to host England v Australia Test",
+      "title": "Tottenham Hotspur Stadium to host final England v Australia Ashes test in 2020",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:0c2a6c54-65a9-d540-9ee2-aeae3bf4a8d3",
+        "urn:bbc:cps:asset:50329514"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:SportsDiscipline"
+          ],
+          "label": "Rugby League",
+          "preferredLabel": "Rugby League",
+          "shortLabel": "Rugby League",
+          "slug": "rugby-league",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/rugby-league",
+          "sameAs": "http://dbpedia.org/resource/Rugby_league"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/61e63af6-03e6-4329-aede-21ec4992a675#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Australia",
+          "preferredLabel": "Australia",
+          "slug": "australia",
+          "sameAs": "http://sws.geonames.org/2077456/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/8febf904-b4a8-4f3c-a33c-879c7b1dead6#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Betfred Super League",
+          "preferredLabel": "Betfred Super League",
+          "shortLabel": "Super League",
+          "slug": "super-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.superleague.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d817aa97-c64f-453e-aa01-8894f6ca515b#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Tottenham",
+          "preferredLabel": "Tottenham",
+          "sameAs": "http://sws.geonames.org/2635608/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e9c7624f-b4cf-4ac8-80b5-188ba151b64d#id",
+          "@type": [
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "England",
+          "preferredLabel": "England",
+          "shortLabel": "England",
+          "slug": "england",
+          "sameAs": "http://dbpedia.org/resource/England_national_rugby_league_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f550cc59-90d8-4add-ab20-afa633c7df8c#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "Thing"
+          ],
+          "label": "Australia",
+          "preferredLabel": "Australia",
+          "shortLabel": "Australia",
+          "slug": "australia",
+          "sameAs": "http://dbpedia.org/resource/Australia_national_rugby_league_team"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/rugby-league/50329514",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/7C48/production/_109561813_cfda69bc-d624-46fa-8454-c9a1e651d54b.gif",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Rugby League",
+          "thumbnailType": "FixedSize66Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/CA68/production/_109561815_gbaus.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Great Britain v Australia",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/36811931-0365-49c6-95c5-b42e970f0742#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-07T00:12:29+00:00",
+      "dateModified": "2019-11-07T00:12:29+00:00",
+      "description": "Tottenham forward Son Heung-min says he is \"really sorry\" for his tackle which led to Everton midfielder Andre Gomes\u0027 horrific ankle injury.",
+      "shortTitle": "Son \u0027really sorry\u0027 for Gomes incident",
+      "title": "Son Heung-min: Tottenham forward \u0027really sorry\u0027 for Andre Gomes incident",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:38830afd-f859-f94f-bc81-905f131b2fb8",
+        "urn:bbc:cps:asset:50326983"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/48287aac-b015-1d4e-9c4e-9b8abac03789#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Everton",
+          "preferredLabel": "Everton",
+          "shortLabel": "Everton",
+          "slug": "everton",
+          "sameAs": [
+            "http://dbpedia.org/resource/Everton_F.C.",
+            "http://rdf.freebase.com/ns/m.0mmd6",
+            "http://www.wikidata.org/entity/Q5794"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/everton",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.evertonfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50326983",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/7FAD/production/_109558623_son_reuters.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Son Heung-min",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/eef4d5be-265c-44b0-9692-b35666935693#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-06T23:54:45+00:00",
+      "dateModified": "2019-11-06T23:54:45+00:00",
+      "description": "Son Heung-min scores twice to take Tottenham towards the Champions League knockout stages by easing to victory at Red Star Belgrade.",
+      "shortTitle": "Son double as Spurs thrash Red Star",
+      "title": "Red Star Belgrade 0-4 Tottenham: Son Heung-min scores twice for Spurs",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:9d50d039-dd3e-4d1f-9471-fb657a72cde7",
+        "urn:bbc:cps:asset:50296549"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b719bd8e-1c21-425b-ad3c-f9e501cf4ccb#id",
+          "@type": [
+            "dcterms:Agent",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Red Star Belgrade",
+          "preferredLabel": "Red Star Belgrade",
+          "shortLabel": "Red Star Belgrade",
+          "slug": "red-star-belgrade",
+          "sameAs": "http://dbpedia.org/resource/Red_Star_Belgrade"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50296549",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/0C71/production/_109558130_son_epa.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Son",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/cf2d7e80-15fd-4fdc-85e6-62a4dc5d7f34#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-05T19:40:15+00:00",
+      "dateModified": "2019-11-05T19:40:15+00:00",
+      "description": "Tottenham forward Son Heung-min\u0027s red card for his tackle on Andre Gomes is overturned by the Football Association.",
+      "shortTitle": "Spurs forward Son\u0027s red card overturned",
+      "title": "Tottenham forward Son Heung-min red card for tackle on Andre Gomes overturned",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:456308ab-114e-4c43-964d-786c4ebb6b38",
+        "urn:bbc:cps:asset:50309594"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d817aa97-c64f-453e-aa01-8894f6ca515b#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Tottenham",
+          "preferredLabel": "Tottenham",
+          "sameAs": "http://sws.geonames.org/2635608/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50309594",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/0066/production/_109520100_sours2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Son Hueng-min",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/a16fd455-5b2b-4e2d-ab04-867e684629d9#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-05T17:02:30+00:00",
+      "dateModified": "2019-11-05T17:02:30+00:00",
+      "description": "Tottenham players will not face any racism against Red Star Belgrade, says the Serb side\u0027s boss Vladan Milojevic.",
+      "shortTitle": "Spurs won\u0027t face racism - Red Star boss",
+      "title": "Tottenham will face no racism in Belgrade, says Red Star boss Vladan Milojevic",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:82e9450c-c3fe-5f4d-bd4b-b66eedd4f4bc",
+        "urn:bbc:cps:asset:50308884"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "Thing"
+          ],
+          "label": "Champions League",
+          "preferredLabel": "Champions League",
+          "shortLabel": "Champions League",
+          "slug": "champions-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Champions_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/champions-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefachampionsleague",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50308884",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/88BC/production/_109540053_tottenham_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Tottenham",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/f2e38b12-11e9-47b0-a893-2a618e9aa3ba#id",
+      "@type": [
+        "LiveCoverage",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-05T13:48:54+00:00",
+      "dateModified": "2019-11-05T13:48:54+00:00",
+      "description": "Spurs win in Belgrade while Atalanta hold Man City in the Champions League - follow live text \u0026 5 Live Final Score.",
+      "shortTitle": "Man City draw as Walker finishes in goal, Son double in Spurs win",
+      "title": "Vitoria SC v Arsenal in Europa League, Red Star v Spurs \u0026 Atalanta v Man City in Champions League - live text and watch 5 Live Final Score",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:48d3e5e6-f637-3645-90a5-250a05291286",
+        "urn:bbc:cps:asset:49373288"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "Thing"
+          ],
+          "label": "Champions League",
+          "preferredLabel": "Champions League",
+          "shortLabel": "Champions League",
+          "slug": "champions-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Champions_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/champions-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefachampionsleague",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4bdbf21d-d1ad-7147-ab08-612cd0dc20b4#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Manchester City",
+          "preferredLabel": "Manchester City",
+          "shortLabel": "Man City",
+          "slug": "manchester-city",
+          "sameAs": [
+            "http://dbpedia.org/resource/Manchester_City_F.C.",
+            "http://rdf.freebase.com/ns/m.01634x",
+            "http://www.wikidata.org/entity/Q50602"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/manchester-city",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.mancity.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c4285a9a-9865-2343-af3a-8653f7b70734#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Arsenal",
+          "preferredLabel": "Arsenal",
+          "shortLabel": "Arsenal",
+          "slug": "arsenal",
+          "sameAs": [
+            "http://dbpedia.org/resource/Arsenal_F.C.",
+            "http://rdf.freebase.com/ns/m.0xbm",
+            "http://www.wikidata.org/entity/Q9617"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.arsenal.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/arsenal",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/49373288",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/7DB9/production/_109558123_walker.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Walker",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/f41af953-c4a6-4807-8c44-c80e88239a4f#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-04T22:48:56+00:00",
+      "dateModified": "2019-11-04T22:48:56+00:00",
+      "description": "Tottenham appeal against Son Heung-min\u0027s red card for his tackle on Andre Gomes, which led to the Everton midfielder suffering a horrific ankle injury.",
+      "shortTitle": "Spurs appeal against Son\u0027s red card",
+      "title": "Tottenham appeal against Son Heung-min\u0027s red card for tackle on Andre Gomes v Everton",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:b1af4fcb-7298-e34b-9d79-b4f9779c462f",
+        "urn:bbc:cps:asset:50289614"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d817aa97-c64f-453e-aa01-8894f6ca515b#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Tottenham",
+          "preferredLabel": "Tottenham",
+          "sameAs": "http://sws.geonames.org/2635608/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50289614",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/0066/production/_109520100_sours2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Son Hueng-min",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/386b78ec-5977-4024-ad51-c6f1d4ab72bd#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-04T10:02:48+00:00",
+      "dateModified": "2019-11-04T10:02:48+00:00",
+      "description": "Match of the Day 2 pundit Martin Keown says he does not think Son Heung-min should have been sent off for his tackle against Andre Gomes.",
+      "shortTitle": "\u0027I don\u0027t think it was called for\u0027 - Keown on Son\u0027s red card",
+      "title": "Match of the Day 2: Martin Keown says Son Heung-min did not deserve a red card for Andre Gomes tackle",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:cbe68d6d-ea45-034d-aca2-1a5c5401e89b",
+        "urn:bbc:cps:asset:50288383"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/48287aac-b015-1d4e-9c4e-9b8abac03789#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Everton",
+          "preferredLabel": "Everton",
+          "shortLabel": "Everton",
+          "slug": "everton",
+          "sameAs": [
+            "http://dbpedia.org/resource/Everton_F.C.",
+            "http://rdf.freebase.com/ns/m.0mmd6",
+            "http://www.wikidata.org/entity/Q5794"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/everton",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.evertonfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/50288383",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/15C03/production/_109519098_motd2sonredcard.png",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Son Heung-Min",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/68d47061-f5a3-406b-83c0-b86491dd4948#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-03T23:50:23+00:00",
+      "dateModified": "2019-11-03T23:50:23+00:00",
+      "description": "Everton are investigating alleged racist behaviour by a supporter during their 1-1 draw with Tottenham in the Premier League on Sunday.",
+      "shortTitle": "Everton investigating racism allegation",
+      "title": "Everton investigating racism allegation at Tottenham match",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:18d843c6-d0b1-6f43-b810-02bb0f556b38",
+        "urn:bbc:cps:asset:50284399"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/48287aac-b015-1d4e-9c4e-9b8abac03789#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Everton",
+          "preferredLabel": "Everton",
+          "shortLabel": "Everton",
+          "slug": "everton",
+          "sameAs": [
+            "http://dbpedia.org/resource/Everton_F.C.",
+            "http://rdf.freebase.com/ns/m.0mmd6",
+            "http://www.wikidata.org/entity/Q5794"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/everton",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.evertonfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a94244e7-f543-4717-b818-f53cfc68359d#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Liverpool",
+          "preferredLabel": "Liverpool",
+          "sameAs": "http://sws.geonames.org/2644210/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b3802964-8bbd-4a3b-b736-0fa2e5c68c7b#id",
+          "@type": [
+            "Thing",
+            "Theme"
+          ],
+          "label": "Racism in sport",
+          "preferredLabel": "Racism in sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50284399",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/CBAD/production/_109514125_everton_badge_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "The blue and white Everton badge on the side of Goodison Park",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/992b4e43-c3ef-425f-8a8e-b9fdb102b69b#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-03T20:26:36+00:00",
+      "dateModified": "2019-11-03T20:26:36+00:00",
+      "description": "Everton\u0027s Andre Gomes suffers a serious leg injury which overshadows 97th-minute equaliser against visitors Tottenham.",
+      "shortTitle": "Gomes injury overshadows Everton draw",
+      "title": "Everton 1-1 Tottenham: Andre Gomes injury overshadows Everton draw",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:ec43d2e8-2dd7-4c0b-af55-764ff51965e6",
+        "urn:bbc:cps:asset:50197735"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/48287aac-b015-1d4e-9c4e-9b8abac03789#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Everton",
+          "preferredLabel": "Everton",
+          "shortLabel": "Everton",
+          "slug": "everton",
+          "sameAs": [
+            "http://dbpedia.org/resource/Everton_F.C.",
+            "http://rdf.freebase.com/ns/m.0mmd6",
+            "http://www.wikidata.org/entity/Q5794"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/everton",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.evertonfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a94244e7-f543-4717-b818-f53cfc68359d#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Liverpool",
+          "preferredLabel": "Liverpool",
+          "sameAs": "http://sws.geonames.org/2644210/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "http://www.bbc.co.uk/things/d817aa97-c64f-453e-aa01-8894f6ca515b#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Tottenham",
+          "preferredLabel": "Tottenham",
+          "sameAs": "http://sws.geonames.org/2635608/"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50197735",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/118E7/production/_109511917_cenk.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Cenk Tosun",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/1c13537f-9e80-4fb7-bfbc-b3270e0c39fd#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-03T19:47:36+00:00",
+      "dateModified": "2019-11-03T19:47:36+00:00",
+      "description": "Tottenham Hotspur midfielder Dele Alli says his teammate Son Heung-min is \"very upset\" after his challenge resulted in Andre Gomes suffering a serious injury.",
+      "shortTitle": "Son can\u0027t pick his head up after Gomes injury - Alli",
+      "title": "Everton 1-1 Tottenham: Son can\u0027t pick his head up - Dele Alli",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:2093a6b0-d144-f047-8bab-d54114956ee3",
+        "urn:bbc:cps:asset:50282791"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/48287aac-b015-1d4e-9c4e-9b8abac03789#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Everton",
+          "preferredLabel": "Everton",
+          "shortLabel": "Everton",
+          "slug": "everton",
+          "sameAs": [
+            "http://dbpedia.org/resource/Everton_F.C.",
+            "http://rdf.freebase.com/ns/m.0mmd6",
+            "http://www.wikidata.org/entity/Q5794"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/everton",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.evertonfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/50282791",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/BB27/production/_109511974_p07sw4z4.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Tottenham Hotspur midfielder Dele Alli",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/d0cfa95b-cef8-41a0-bad2-c8c507160c0d#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-03T19:43:23+00:00",
+      "dateModified": "2019-11-03T19:43:23+00:00",
+      "description": "Manager Marco Silva says it has been a \"difficult day\" for Everton after Andre Gomes suffers a horrendous leg injury in the 1-1 draw with Tottenham.",
+      "shortTitle": "Silva reflects on \u0027difficult day\u0027 for Everton",
+      "title": "Everton 1-1 Tottenham: Silva reflects on \u0027difficult day\u0027 after Gomes injury",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:dca22639-546c-c04a-804d-4948b210ba80",
+        "urn:bbc:cps:asset:50276156"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/48287aac-b015-1d4e-9c4e-9b8abac03789#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Everton",
+          "preferredLabel": "Everton",
+          "shortLabel": "Everton",
+          "slug": "everton",
+          "sameAs": [
+            "http://dbpedia.org/resource/Everton_F.C.",
+            "http://rdf.freebase.com/ns/m.0mmd6",
+            "http://www.wikidata.org/entity/Q5794"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/everton",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.evertonfc.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Premier League",
+          "preferredLabel": "Premier League",
+          "shortLabel": "Premier League",
+          "slug": "premier-league",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/premier-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.premierleague.com/en-gb.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/50276156",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/EAE3/production/_109513106_p07sw53j.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Marco Silva",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CloseUpThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CloseUpThumbnail"
+    },
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "FixedSize144Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/FixedSize144Thumbnail"
+    },
+    "FixedSize66Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/FixedSize66Thumbnail"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "LiveCoverage": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/LiveCoverage"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "Organisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"
+    },
+    "Place": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Place"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "VideoFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/VideoFormat"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "dcterms:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "geoname:GeoTagConcept": {
+      "@id": "http://www.geonames.org/ontology#GeoTagConcept"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "mentions": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/mentions",
+      "@type": "@id"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "shortTitle": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/shortTitle"
+    },
+    "skos:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:Competition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Competition"
+    },
+    "sport:CompetitiveSportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"
+    },
+    "sport:RecurringCompetition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"
+    },
+    "sport:SportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"
+    },
+    "sport:SportsDiscipline": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentCategory": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentCategory",
+      "@type": "@id"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

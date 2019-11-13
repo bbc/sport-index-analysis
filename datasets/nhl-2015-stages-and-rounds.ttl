@@ -1,0 +1,248 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/d42c9cfd-7950-4858-93c1-8bb45b3e1512#id> a provenance:Dataset ;
+    rdfs:label "Ice Hockey: NHL 2015 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/ice-hockey/nhl-2015-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-1798: Stanley Cup is CIHB110602015S1R11280 not CIHB110602015S2R11280." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-07-05T14:09:53+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "7"^^xsd:int .
+
+<http://www.bbc.co.uk/things/44130133-68e5-4998-b132-bca419f70f25#id> sport:firstStage <http://www.bbc.co.uk/things/54d35477-9fa6-441a-90dc-9d64ee433768#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/a221d990-5737-4034-b64e-6d3a8fd2eadc#id> .
+
+<http://www.bbc.co.uk/things/11bdda53-0bda-477f-9707-03de7bf90a21#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Eastern Conference Play-Off Final"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2R11240> ;
+    core:preferredLabel "Eastern Conference Play-Off Final"@en-gb ;
+    core:shortLabel "East Play-Off Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/24a56764-1618-4bbd-91fa-3812f950a767#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Eastern Conference Play-Off First Round"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2R13697> ;
+    core:preferredLabel "Eastern Conference Play-Off First Round"@en-gb ;
+    core:shortLabel "East Play-Off First Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/2b6c56f6-3ab6-4878-b133-c37c5468ccf1#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Eastern Conference Play-off Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2R13704> ;
+    core:preferredLabel "Eastern Conference Play-off Second Round"@en-gb ;
+    core:shortLabel "East Play-off Second Round"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/347a35ad-2fba-4c14-8ed3-5a25644e1d82#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "National Hockey League"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S1R11060> ;
+    core:preferredLabel "National Hockey League"@en-gb ;
+    core:shortLabel "National Hockey League"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/40bb881e-1738-46d5-a8e8-6e6460b845c9#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Western Conference Play-Off First Round"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2R13698> ;
+    core:preferredLabel "Western Conference Play-Off First Round"@en-gb ;
+    core:shortLabel "West Play-Off First Round"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/5a166e57-beb1-4a2c-b4d2-ee4708860990#id> a sport:Round ;
+    rdfs:label "Round 10 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Western Conference Play-Off Final"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2R11241> ;
+    core:preferredLabel "Western Conference Play-Off Final"@en-gb ;
+    core:shortLabel "West Play-Off Final"@en-gb ;
+    sport:roundNumber "10"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/66eab02d-e7af-4d21-a7a7-b0c401142d40#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Eastern Conference Play-Off Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2R11173> ;
+    core:preferredLabel "Eastern Conference Play-Off Quarter-Final"@en-gb ;
+    core:shortLabel "East Play-Off Quarter-Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/839d8ddb-e51b-4160-ae70-0972cee95549#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Western Conference Play-Off Quarter-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2R11174> ;
+    core:preferredLabel "Western Conference Play-Off Quarter-Finals"@en-gb ;
+    core:shortLabel "West Play-Off Quarter-Finals"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/8a945803-ba5f-479f-897f-54b8604a1403#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Eastern Conference Metropolitan Division"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S1R11083> ;
+    core:preferredLabel "Eastern Conference Metropolitan Division"@en-gb ;
+    core:shortLabel "East Metropolitan Division"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/9cd95871-2df6-422a-8bbc-5b0929d9e493#id> a sport:Round ;
+    rdfs:label "Round 9 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Western Conference Play-Off Semi-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2R11203> ;
+    core:preferredLabel "Western Conference Play-Off Semi-Finals"@en-gb ;
+    core:shortLabel "West Play-Off Semi-Finals"@en-gb ;
+    sport:roundNumber "9"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/ab9bf4f6-d820-4cf7-8434-83acf7f08b13#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Western Conference Central Division"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S1R11084> ;
+    core:preferredLabel "Western Conference Central Division"@en-gb ;
+    core:shortLabel "West Central Division"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/c07ea249-c737-4bae-9479-e5cb2d494689#id> a sport:Round ;
+    rdfs:label "Round 11 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Stanley Cup"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S1R11280> ;
+    core:preferredLabel "Stanley Cup"@en-gb ;
+    core:shortLabel "Stanley Cup"@en-gb ;
+    sport:roundNumber "11"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/cce2e9c4-d66a-46ce-9188-9eb29fca874d#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Western Conference Pacific Division"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S1R11086> ;
+    core:preferredLabel "Western Conference Pacific Division"@en-gb ;
+    core:shortLabel "West Pacific Division"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ce2c8385-ba13-46af-aa69-fb7cce7ef0d2#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Eastern Conference Atlantic Division"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S1R11081> ;
+    core:preferredLabel "Eastern Conference Atlantic Division"@en-gb ;
+    core:shortLabel "East Atlantic Division"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/e0df4bea-3b04-40dd-b3c5-803db0663ca9#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Eastern Conference Play-Off Semi-Finals"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2R11204> ;
+    core:preferredLabel "Eastern Conference Play-Off Semi-Finals"@en-gb ;
+    core:shortLabel "East Play-Off Semi-Finals"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/e509cc0c-eb98-47a8-8b49-21096021c7eb#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Western Conference Play-offs Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2R13705> ;
+    core:preferredLabel "Western Conference Play-offs Second Round"@en-gb ;
+    core:shortLabel "West Play-offs Second Round"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CIHB110602015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S1R11060> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S1R11081> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S1R11083> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S1R11084> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S1R11086> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S1R11280> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2R11173> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2R11174> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2R11203> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2R11204> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2R11240> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2R11241> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2R13697> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2R13698> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2R13704> a cms:Sports-DataLocator .
+
+<urn:sports-data:CIHB110602015S2R13705> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/54d35477-9fa6-441a-90dc-9d64ee433768#id> a sport:Competition ;
+    rdfs:label "Stage 1 of NHL 2015"@en-gb ;
+    sal:name "Regular Season"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S1> ;
+    core:preferredLabel "Regular Season"@en-gb ;
+    core:shortLabel "Regular Season"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/347a35ad-2fba-4c14-8ed3-5a25644e1d82#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/8a945803-ba5f-479f-897f-54b8604a1403#id>,
+        <http://www.bbc.co.uk/things/ab9bf4f6-d820-4cf7-8434-83acf7f08b13#id>,
+        <http://www.bbc.co.uk/things/ce2c8385-ba13-46af-aa69-fb7cce7ef0d2#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/cce2e9c4-d66a-46ce-9188-9eb29fca874d#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/a221d990-5737-4034-b64e-6d3a8fd2eadc#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/a221d990-5737-4034-b64e-6d3a8fd2eadc#id> a sport:Competition ;
+    rdfs:label "Stage 2 of NHL 2015"@en-gb ;
+    sal:name "Play-Offs"@en-gb ;
+    cms:locator <urn:sports-data:CIHB110602015S2> ;
+    core:preferredLabel "Play-Offs"@en-gb ;
+    core:shortLabel "Play-Offs"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/24a56764-1618-4bbd-91fa-3812f950a767#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/11bdda53-0bda-477f-9707-03de7bf90a21#id>,
+        <http://www.bbc.co.uk/things/2b6c56f6-3ab6-4878-b133-c37c5468ccf1#id>,
+        <http://www.bbc.co.uk/things/40bb881e-1738-46d5-a8e8-6e6460b845c9#id>,
+        <http://www.bbc.co.uk/things/5a166e57-beb1-4a2c-b4d2-ee4708860990#id>,
+        <http://www.bbc.co.uk/things/66eab02d-e7af-4d21-a7a7-b0c401142d40#id>,
+        <http://www.bbc.co.uk/things/839d8ddb-e51b-4160-ae70-0972cee95549#id>,
+        <http://www.bbc.co.uk/things/9cd95871-2df6-422a-8bbc-5b0929d9e493#id>,
+        <http://www.bbc.co.uk/things/e0df4bea-3b04-40dd-b3c5-803db0663ca9#id>,
+        <http://www.bbc.co.uk/things/e509cc0c-eb98-47a8-8b49-21096021c7eb#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/c07ea249-c737-4bae-9479-e5cb2d494689#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/54d35477-9fa6-441a-90dc-9d64ee433768#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

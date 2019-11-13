@@ -1,0 +1,776 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/f791423c-b6f2-407c-b56e-eec6650d6bf0#id> a provenance:Dataset ;
+    rdfs:label "Cricket: International Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/cricket/international-cricket-teams.ttl" ;
+    provenance:changeReason "SWD-1059: Add international team data IDs" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-10-17T11:40:30+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "43"^^xsd:int .
+
+<http://www.bbc.co.uk/things/12ad8c10-085a-46d3-99ba-40ed97f5c95e#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "NEP"^^xsd:string ;
+    sal:name "Nepal"@en-gb ;
+    sal:videCode "NEP"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB266> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Nepal"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Nepal_national_cricket_team> ;
+    core:shortLabel "Nepal"@en-gb ;
+    core:slug "nepal"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/142c8b42-12bb-43be-8fb2-37c47f289011#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "SA"^^xsd:string ;
+    sal:name "South Africa Women"@en-gb ;
+    sal:videCode "SA"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB194> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "South Africa Women"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/South_Africa_women%27s_national_cricket_team> ;
+    core:shortLabel "SA Women"@en-gb ;
+    core:slug "south-africa-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/16abacdc-2b82-4f20-a9bd-bf58b142cadb#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "BAN"^^xsd:string ;
+    sal:name "Bangladesh Women"@en-gb ;
+    sal:videCode "BAN"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB290> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Bangladesh Women"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Bangladesh_women%27s_national_cricket_team> ;
+    core:shortLabel "Ban Women"@en-gb ;
+    core:slug "bangladesh-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/1a741adc-d962-473a-b0aa-3548e4fed0b2#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "NED"^^xsd:string ;
+    sal:name "Netherlands"@en-gb ;
+    sal:videCode "NED"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB14> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Netherlands"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Netherlands_national_cricket_team> ;
+    core:shortLabel "Netherlands"@en-gb ;
+    core:slug "netherlands"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/2091b53c-6104-4c7b-a797-6cb3ff525366#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "BER"^^xsd:string ;
+    sal:name "Bermuda"@en-gb ;
+    sal:videCode "BER"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB23> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Bermuda"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Bermuda_national_cricket_team> ;
+    core:shortLabel "Bermuda"@en-gb ;
+    core:slug "bermuda"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/2111aba1-fe08-4804-b1e0-60f2c2b2e768#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "IRE"^^xsd:string ;
+    sal:name "Ireland Women"@en-gb ;
+    sal:videCode "IRE"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB195> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Ireland Women"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Ireland_women%27s_cricket_team> ;
+    core:shortLabel "Ire Women"@en-gb ;
+    core:slug "ireland-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/21f944bb-8fca-41d0-94ab-463310746208#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "HKG"^^xsd:string ;
+    sal:name "Hong Kong"@en-gb ;
+    sal:videCode "HKG"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB18> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Hong Kong"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Hong_Kong_national_cricket_team> ;
+    core:shortLabel "Hong Kong"@en-gb ;
+    core:slug "hong-kong"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/24e14219-8ae2-4ee7-b180-cad9b0d5bfa2#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "NZ"^^xsd:string ;
+    sal:name "New Zealand"@en-gb ;
+    sal:videCode "NZ"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB4>,
+        <urn:sports-stats:29640064> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "New Zealand"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/new-zealand> ;
+    core:sameAs <http://dbpedia.org/resource/New_Zealand_national_cricket_team> ;
+    core:shortLabel "New Zealand"@en-gb ;
+    core:slug "new-zealand"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id>,
+        <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/28a3cb5b-a2ea-4283-b58e-d72dc48d6034#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "PKN"^^xsd:string ;
+    sal:name "Pakistan"@en-gb ;
+    sal:videCode "PKN"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB5>,
+        <urn:sports-stats:29640161> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Pakistan"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/pakistan> ;
+    core:sameAs <http://dbpedia.org/resource/Pakistan_national_cricket_team> ;
+    core:shortLabel "Pakistan"@en-gb ;
+    core:slug "pakistan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id>,
+        <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/2f721877-ba0d-4339-820f-c8dfe1a886db#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "WI"^^xsd:string ;
+    sal:name "West Indies Women"@en-gb ;
+    sal:videCode "WI"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB188> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "West Indies Women"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/West_Indies_women's_cricket_team> ;
+    core:shortLabel "WI Women"@en-gb ;
+    core:slug "west-indies-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/33791f1b-2d53-4080-bd66-2d27684cfd8f#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "ENL"^^xsd:string ;
+    sal:name "England Lions"@en-gb ;
+    sal:videCode "ENL"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB181> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "England Lions"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/England_Lions_(cricket_team)> ;
+    core:shortLabel "England Lions"@en-gb ;
+    core:slug "england-lions"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/39975f00-e00a-46c4-89b9-85424a1b7846#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "IND"^^xsd:string ;
+    sal:name "India Women"@en-gb ;
+    sal:videCode "IND"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB183> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "India Women"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/India_women%27s_national_cricket_team> ;
+    core:shortLabel "Ind Women"@en-gb ;
+    core:slug "india-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/414600e4-1cf0-429c-831f-81e1b14b9b78#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "SCO"^^xsd:string ;
+    sal:name "Scotland"@en-gb ;
+    sal:videCode "SCO"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB15>,
+        <urn:sports-stats:29640127> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Scotland"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/scotland> ;
+    core:sameAs <http://dbpedia.org/resource/Scotland_national_cricket_team> ;
+    core:shortLabel "Scotland"@en-gb ;
+    core:slug "scotland"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/4ee2fb3e-9040-4883-be8e-f12dcfbfa0f7#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "AUS"^^xsd:string ;
+    sal:name "Australia Women"@en-gb ;
+    sal:videCode "AUS"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB203> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Australia Women"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Australia_women%27s_national_cricket_team> ;
+    core:shortLabel "Aus Women"@en-gb ;
+    core:slug "australia-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/50364d60-6bac-4ecc-bb87-0e36728187c7#id>,
+        <http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id>,
+        <http://www.bbc.co.uk/things/7fe25a96-0b37-4b62-8211-1e65213b3815#id>,
+        <http://www.bbc.co.uk/things/839a1515-cf2a-4c43-97a4-0cb2cf152761#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/542d5906-4e33-42ce-8fcf-db7b85116546#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "PKN"^^xsd:string ;
+    sal:name "Pakistan Women"@en-gb ;
+    sal:videCode "PKN"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB196> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Pakistan Women"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Pakistan_women%27s_national_cricket_team> ;
+    core:shortLabel "Pkn Women"@en-gb ;
+    core:slug "pakistan-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/565d637f-6fb0-4799-8db8-a001978d2222#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "SA"^^xsd:string ;
+    sal:name "South Africa"@en-gb ;
+    sal:videCode "SA"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB6>,
+        <urn:sports-stats:29640065> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "South Africa"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/south-africa> ;
+    core:sameAs <http://dbpedia.org/resource/South_Africa_national_cricket_team> ;
+    core:shortLabel "South Africa"@en-gb ;
+    core:slug "south-africa"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id>,
+        <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/5a3060a2-e236-4dbf-8049-86287f369c54#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "UAE"^^xsd:string ;
+    sal:name "United Arab Emirates"@en-gb ;
+    sal:videCode "UAE"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB16> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "United Arab Emirates"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/United_Arab_Emirates_national_cricket_team> ;
+    core:shortLabel "UAE"@en-gb ;
+    core:slug "united-arab-emirates"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/5ec63a0c-4a74-43d4-926c-c75789c078c1#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "IND"^^xsd:string ;
+    sal:name "India"@en-gb ;
+    sal:videCode "IND"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB3>,
+        <urn:sports-stats:29640216> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "India"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/india> ;
+    core:sameAs <http://dbpedia.org/resource/India_national_cricket_team> ;
+    core:shortLabel "India"@en-gb ;
+    core:slug "india"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id>,
+        <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/5ef06231-8951-4621-a7d0-6d0edffc5237#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "KEN"^^xsd:string ;
+    sal:name "Kenya"@en-gb ;
+    sal:videCode "KEN"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB13> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Kenya"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Kenya_national_cricket_team> ;
+    core:shortLabel "Kenya"@en-gb ;
+    core:slug "kenya"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/65e7e652-4bcc-4d48-a19c-241f58d830ba#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "BAN"^^xsd:string ;
+    sal:name "Bangladesh"@en-gb ;
+    sal:videCode "BAN"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB10>,
+        <urn:sports-stats:29688018> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Bangladesh"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/bangladesh> ;
+    core:sameAs <http://dbpedia.org/resource/Bangladesh_national_cricket_team> ;
+    core:shortLabel "Bangladesh"@en-gb ;
+    core:slug "bangladesh"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id>,
+        <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/67e1c4a6-d2de-4b01-9d7b-34ff86b04a83#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "OMA"^^xsd:string ;
+    sal:name "Oman"@en-gb ;
+    sal:videCode "OMA"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB93> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Oman"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Oman_national_cricket_team> ;
+    core:shortLabel "Oman"@en-gb ;
+    core:slug "oman"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/6f205602-86fe-4942-bf63-88a240095f2c#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "ENU"^^xsd:string ;
+    sal:name "England U19"@en-gb ;
+    sal:videCode "ENU"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB184> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "England U19"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/England_under-19_cricket_team> ;
+    core:shortLabel "England U19"@en-gb ;
+    core:slug "england-u19"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/77e5f32b-a1d8-45c3-a2c8-aabaf286537d#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "AFG"^^xsd:string ;
+    sal:name "Afghanistan"@en-gb ;
+    sal:videCode "AFG"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB95> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Afghanistan"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/afghanistan> ;
+    core:sameAs <http://dbpedia.org/resource/Afghanistan_national_cricket_team> ;
+    core:shortLabel "Afghanistan"@en-gb ;
+    core:slug "afghanistan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id>,
+        <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/89739cb4-b331-4a52-990b-1be9578aa1ef#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "SRI"^^xsd:string ;
+    sal:name "Sri Lanka Women"@en-gb ;
+    sal:videCode "SRI"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB201> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Sri Lanka Women"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sri_Lanka_women%27s_national_cricket_team> ;
+    core:shortLabel "SL Women"@en-gb ;
+    core:slug "sri-lanka-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/9057858a-33bd-425c-891c-a9b072728513#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "IRE"^^xsd:string ;
+    sal:name "Ireland"@en-gb ;
+    sal:videCode "IRE"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB24>,
+        <urn:sports-stats:29640095> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Ireland"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/ireland> ;
+    core:sameAs <http://dbpedia.org/resource/Ireland_cricket_team> ;
+    core:shortLabel "Ireland"@en-gb ;
+    core:slug "ireland"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/953617d1-0829-4db4-9e0c-8112abfdb4c3#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "PNG"^^xsd:string ;
+    sal:name "Papua New Guinea"@en-gb ;
+    sal:videCode "PNG"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB267> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Papua New Guinea"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Papua_New_Guinea_national_cricket_team> ;
+    core:shortLabel "Papua New Guinea"@en-gb ;
+    core:slug "papua-new-guinea"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/966cc28f-ae31-40f2-b66f-948b56849383#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "ENG"^^xsd:string ;
+    sal:name "England Women"@en-gb ;
+    sal:videCode "ENG"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB182>,
+        <urn:sports-stats:29688237> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "England Women"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/England_women's_cricket_team> ;
+    core:shortLabel "Eng Women"@en-gb ;
+    core:slug "england-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/50364d60-6bac-4ecc-bb87-0e36728187c7#id>,
+        <http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id>,
+        <http://www.bbc.co.uk/things/7fe25a96-0b37-4b62-8211-1e65213b3815#id>,
+        <http://www.bbc.co.uk/things/839a1515-cf2a-4c43-97a4-0cb2cf152761#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/9d794c09-c573-4a97-9a0e-9518888f19ed#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "AUS"^^xsd:string ;
+    sal:name "Australia"@en-gb ;
+    sal:videCode "AUS"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB1>,
+        <urn:sports-stats:29638449> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Australia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/australia> ;
+    core:sameAs <http://dbpedia.org/resource/Australia_national_cricket_team> ;
+    core:shortLabel "Australia"@en-gb ;
+    core:slug "australia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id>,
+        <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/bea1cb38-a492-44e9-8c9e-8865e4a2c014#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "WI"^^xsd:string ;
+    sal:name "West Indies"@en-gb ;
+    sal:videCode "WI"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB8>,
+        <urn:sports-stats:29638455> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "West Indies"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/west-indies> ;
+    core:sameAs <http://dbpedia.org/resource/West_Indies_cricket_team> ;
+    core:shortLabel "West Indies"@en-gb ;
+    core:slug "west-indies"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id>,
+        <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/c5663352-b1e0-49a5-8a87-b63129b7d066#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "USA"^^xsd:string ;
+    sal:name "United States"@en-gb ;
+    sal:videCode "USA"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB19> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "United States"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/United_States_national_cricket_team> ;
+    core:shortLabel "United States"@en-gb ;
+    core:slug "united-states"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/c645646c-0ca5-46c6-96cd-9eb3d9f278d1#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "ZIM"^^xsd:string ;
+    sal:name "Zimbabwe"@en-gb ;
+    sal:videCode "ZIM"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB9>,
+        <urn:sports-stats:29640189> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Zimbabwe"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/zimbabwe> ;
+    core:sameAs <http://dbpedia.org/resource/Zimbabwe_national_cricket_team> ;
+    core:shortLabel "Zimbabwe"@en-gb ;
+    core:slug "zimbabwe"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/cae8e6d6-18d2-49a1-9318-11ab76a96250#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "NZ"^^xsd:string ;
+    sal:name "New Zealand Women"@en-gb ;
+    sal:videCode "NZ"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB202> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "New Zealand Women"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/New_Zealand_women%27s_national_cricket_team> ;
+    core:shortLabel "NZ Women"@en-gb ;
+    core:slug "new-zealand-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/cd988a73-6c41-4690-b785-c8d3abc2d13c#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "ENG"^^xsd:string ;
+    sal:name "England"@en-gb ;
+    sal:videCode "ENG"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB2>,
+        <urn:sports-stats:29638451> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "England"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/england> ;
+    core:sameAs <http://dbpedia.org/resource/England_Cricket_Team> ;
+    core:shortLabel "England"@en-gb ;
+    core:slug "england"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id>,
+        <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/d69257ce-bf5a-43dc-8c00-852c98eaf5b8#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "CAN"^^xsd:string ;
+    sal:name "Canada"@en-gb ;
+    sal:videCode "CAN"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB11> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Canada"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Canada_national_cricket_team> ;
+    core:shortLabel "Canada"@en-gb ;
+    core:slug "canada"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/d847d0eb-8ef3-4621-bc99-1bcb48295d95#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "NAM"^^xsd:string ;
+    sal:name "Namibia"@en-gb ;
+    sal:videCode "NAM"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB17> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Namibia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Namibia_national_cricket_team> ;
+    core:shortLabel "Namibia"@en-gb ;
+    core:slug "namibia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/things/fe736477-01b6-4020-8b30-36522ac59457#id> a sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:emblem "SRI"^^xsd:string ;
+    sal:name "Sri Lanka"@en-gb ;
+    sal:videCode "SRI"^^xsd:string ;
+    cms:locator <urn:sports-data:TCKB7>,
+        <urn:sports-stats:29640215> ;
+    core:disambiguationHint "National Cricket Team"@en-gb ;
+    core:preferredLabel "Sri Lanka"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/teams/sri-lanka> ;
+    core:sameAs <http://dbpedia.org/resource/Sri_Lanka_national_cricket_team> ;
+    core:shortLabel "Sri Lanka"@en-gb ;
+    core:slug "sri-lanka"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/0d995c5a-53e1-4829-8010-f4805c2b4d18#id>,
+        <http://www.bbc.co.uk/things/628a7e3a-3c5e-4f2e-b731-a7b3fa6fd5d0#id>,
+        <http://www.bbc.co.uk/things/beb92a39-772a-43fa-ac51-9367ce9450d9#id>,
+        <http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id>,
+        <http://www.bbc.co.uk/things/e1a8ab77-497e-4f59-a6a0-9beecc8ee083#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> .
+
+<http://www.bbc.co.uk/sport/cricket/teams/afghanistan> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/australia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/bangladesh> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/england> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/india> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/ireland> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/new-zealand> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/pakistan> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/scotland> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/south-africa> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/sri-lanka> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/west-indies> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket/teams/zimbabwe> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<urn:sports-data:TCKB1> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB10> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB11> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB13> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB14> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB15> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB16> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB17> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB18> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB181> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB182> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB183> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB184> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB188> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB19> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB194> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB195> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB196> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB2> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB201> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB202> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB203> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB23> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB24> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB266> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB267> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB290> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB3> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB4> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB5> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB6> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB7> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB8> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB9> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB93> a cms:Sports-DataLocator .
+
+<urn:sports-data:TCKB95> a cms:Sports-DataLocator .
+
+<urn:sports-stats:29638449> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29638451> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29638455> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29640064> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29640065> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29640095> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29640127> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29640161> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29640189> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29640215> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29640216> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29688018> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:29688237> a cms:Sports-StatsLocator .
+

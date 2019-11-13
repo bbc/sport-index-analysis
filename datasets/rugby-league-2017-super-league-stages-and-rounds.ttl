@@ -1,0 +1,106 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/859e94ec-e8a3-4a2c-9531-a4abcb5b8ebb#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2017 Super League Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-league/rugby-league-2017-super-league-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3026,3: Rugby League: model First Utility Super League Season 2017" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-01-12T14:05:45+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Kristian.Epps@bbc.co.uk> ;
+    provenance:version "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/540bf07f-1457-4d83-b469-7df62f4a1a06#id> sport:firstStage <http://www.bbc.co.uk/things/aba2dbcd-67f7-450b-b501-f2a1f8872b53#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/864a9453-bcbd-4f79-9b27-b1bc7c44a91b#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/8add82fc-7d69-4f36-9748-be99d2a5da41#id> .
+
+<http://www.bbc.co.uk/things/368cd8a6-b311-48db-940c-9e2631a73f27#id> a sport:Round ;
+    rdfs:label "Stage 3 Round 2 of Rugby Super League 2017"@en-gb ;
+    sal:name "Grand Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002017S3R2> ;
+    core:preferredLabel "Grand Final"@en-gb ;
+    core:shortLabel "Grand Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/573b9cd1-da28-46e5-b384-975b9c263687#id> a sport:Round ;
+    rdfs:label "Stage 2 Round 1 of Rugby Super League 2017"@en-gb ;
+    sal:name "Super 8s"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002017S2R1> ;
+    core:preferredLabel "Super 8s"@en-gb ;
+    core:shortLabel "Super 8s"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/dbe84b79-0228-451e-8259-6e8d426f8a4f#id> a sport:Round ;
+    rdfs:label "Stage 1 Round 1 of Rugby Super League 2017"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002017S1R1> ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/fb5d70f6-4ae1-45cf-9acd-f03c4a68c97b#id> a sport:Round ;
+    rdfs:label "Stage 3 Round 1 of Rugby Super League 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002017S3R1> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<urn:sports-data:CRLB1002017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002017S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002017S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002017S3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002017S3R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1002017S3R2> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/8add82fc-7d69-4f36-9748-be99d2a5da41#id> a sport:Competition ;
+    rdfs:label "Stage 3 of Rugby Super League 2017"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002017S3> ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/fb5d70f6-4ae1-45cf-9acd-f03c4a68c97b#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/368cd8a6-b311-48db-940c-9e2631a73f27#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/864a9453-bcbd-4f79-9b27-b1bc7c44a91b#id> ;
+    sport:stageNumber "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/aba2dbcd-67f7-450b-b501-f2a1f8872b53#id> a sport:Competition ;
+    rdfs:label "Stage 1 of Rugby Super League 2017"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002017S1> ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/dbe84b79-0228-451e-8259-6e8d426f8a4f#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/864a9453-bcbd-4f79-9b27-b1bc7c44a91b#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/864a9453-bcbd-4f79-9b27-b1bc7c44a91b#id> a sport:Competition ;
+    rdfs:label "Stage 2 of Rugby Super League 2017"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1002017S2> ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/573b9cd1-da28-46e5-b384-975b9c263687#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/8add82fc-7d69-4f36-9748-be99d2a5da41#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/aba2dbcd-67f7-450b-b501-f2a1f8872b53#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

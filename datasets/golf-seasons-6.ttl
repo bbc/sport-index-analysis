@@ -1,0 +1,176 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/f7ea0e76-aa82-42d5-adc3-ca447c667ae5#id> a provenance:Dataset ;
+    rdfs:label "Golf: Seasons" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/golf/golf-seasons-6.ttl" ;
+    provenance:changeReason "SPORTSDATA-6167 Add year 2015 to the competition of Ladies Major Championships" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-04-20T10:46:53+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:dong.liu@bbc.co.uk> ;
+    provenance:version "6"^^xsd:int .
+
+<http://www.bbc.co.uk/things/06fb07d6-656b-41ce-95a6-b7ed14e7fa99#id> a sport:Competition ;
+    rdfs:label "Men's World Rankings 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/c5e5c439-55b0-4fc1-8904-8b8c77903963#id> ;
+    sal:name "Men's World Rankings"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/2043c09a-bed3-408d-a953-f0773a1976c4#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2043c09a-bed3-408d-a953-f0773a1976c4#id> .
+
+<http://www.bbc.co.uk/things/2b95da53-a7d8-49c1-91d9-d72ecbedcc66#id> a sport:Competition ;
+    rdfs:label "Golf USPGA Champions Tour 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/df311574-3d3b-4141-9ada-558e6bb04597#id> ;
+    sal:name "USPGA Champions Tour"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/7e0c8679-f5a4-4340-bbbf-fb7442c1f09b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7e0c8679-f5a4-4340-bbbf-fb7442c1f09b#id> .
+
+<http://www.bbc.co.uk/things/4b368527-dcd6-4ca4-b395-a76f27a1c02a#id> a sport:Competition ;
+    rdfs:label "Ladies Major Championships 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0bbf5cd8-a4d2-421f-b5ba-7c84b1cf686e#id> ;
+    sal:name "Ladies Major Championships 2015"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/f183fe97-0156-4b12-ae99-90d986f19a4c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f183fe97-0156-4b12-ae99-90d986f19a4c#id> .
+
+<http://www.bbc.co.uk/things/4bac9511-f7cf-44e8-a0c8-db7f39359f86#id> a sport:Competition ;
+    rdfs:label "Ladies European Tour 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/cf053fe7-ce71-4580-aed1-38d64fe88962#id> ;
+    sal:name "Ladies European Tour"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/ad35f0f9-c8c1-4748-84a4-bc126447a3a5#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ad35f0f9-c8c1-4748-84a4-bc126447a3a5#id> .
+
+<http://www.bbc.co.uk/things/63811929-521a-4666-98d4-845546a28d46#id> a sport:Competition ;
+    rdfs:label "Major Championships 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/3fcf597b-b9dd-4db7-977d-2e32c59dc220#id> ;
+    sal:name "Major Championships"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/67782745-91e0-48ca-8243-ab2709f0effb#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/67782745-91e0-48ca-8243-ab2709f0effb#id> .
+
+<http://www.bbc.co.uk/things/6e3a89af-ccab-488c-9b96-72a7345780f3#id> a sport:Competition ;
+    rdfs:label "World Golf Championships 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4da0da23-9cd2-4292-aa9b-2ef98c2df107#id> ;
+    sal:name "World Golf Championships"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/91a60ab7-c3b4-4281-abb9-a13c9936b742#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/91a60ab7-c3b4-4281-abb9-a13c9936b742#id> .
+
+<http://www.bbc.co.uk/things/7346a8d0-7936-46e0-b756-991f2dfc834e#id> a sport:Competition ;
+    rdfs:label "Women's World Rankings 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/41e3449a-fbf8-4519-874c-8ecb435b7642#id> ;
+    sal:name "Women's World Rankings"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/7da5ac7d-e6d9-4b70-83cd-b27a19239de3#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7da5ac7d-e6d9-4b70-83cd-b27a19239de3#id> .
+
+<http://www.bbc.co.uk/things/7939de55-e8ff-486c-9f5d-0739d6c7efdb#id> a sport:Competition ;
+    rdfs:label "USLPGA Tour 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/24b6cae1-b315-4fc1-8f71-e18d236c8700#id> ;
+    sal:name "USLPGA Tour"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/3018286d-136a-40e6-bff4-ffa4975c9eb0#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/3018286d-136a-40e6-bff4-ffa4975c9eb0#id> .
+
+<http://www.bbc.co.uk/things/97675ae2-52b0-46e8-af87-e5d0feb4eadd#id> a sport:Competition ;
+    rdfs:label "USPGA Tour 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b83d620e-75c1-4751-914a-668566e42741#id> ;
+    sal:name "USPGA Tour"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/54f85680-2c9c-485f-8ba6-dc972c793f80#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/54f85680-2c9c-485f-8ba6-dc972c793f80#id> .
+
+<http://www.bbc.co.uk/things/b4352c8f-3444-487a-a6fe-9b6fb11efd5c#id> a sport:Competition ;
+    rdfs:label "International Federation of PGA Tours 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/6c714567-6b7a-4703-a94d-426c2fbb64cf#id> ;
+    sal:name "International Federation of PGA Tours"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/84f9adca-bf96-4e70-a95b-dd73789fa2aa#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/84f9adca-bf96-4e70-a95b-dd73789fa2aa#id> .
+
+<http://www.bbc.co.uk/things/bdf81318-f822-4a3e-80a0-7b98413c16c2#id> a sport:Competition ;
+    rdfs:label "PGA European Tour 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/907723bd-b917-493f-836b-c308d7602412#id> ;
+    sal:name "PGA European Tour"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/42bfec4c-4207-4791-951b-b0252ecf9c10#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/42bfec4c-4207-4791-951b-b0252ecf9c10#id> .
+
+<http://www.bbc.co.uk/things/fc25047f-9a65-483a-8b3d-efc0d299cad1#id> a sport:Competition ;
+    rdfs:label "Major Championships 2014 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e90bf67b-ec6a-45b6-a23b-a47ad8d98a4d#id> ;
+    sal:name "Major Championships"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/67782745-91e0-48ca-8243-ab2709f0effb#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/67782745-91e0-48ca-8243-ab2709f0effb#id> .
+
+<http://www.bbc.co.uk/things/0bbf5cd8-a4d2-421f-b5ba-7c84b1cf686e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Ladies Major Championships 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/24b6cae1-b315-4fc1-8f71-e18d236c8700#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "USLPGA Tour 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3fcf597b-b9dd-4db7-977d-2e32c59dc220#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Major Championships 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/41e3449a-fbf8-4519-874c-8ecb435b7642#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's World Rankings 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4da0da23-9cd2-4292-aa9b-2ef98c2df107#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Golf Championships 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6c714567-6b7a-4703-a94d-426c2fbb64cf#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "International Federation of PGA Tours 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/907723bd-b917-493f-836b-c308d7602412#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "PGA European Tour 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b83d620e-75c1-4751-914a-668566e42741#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "USPGA Tour 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c5e5c439-55b0-4fc1-8904-8b8c77903963#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Men's World Rankings 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cf053fe7-ce71-4580-aed1-38d64fe88962#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Ladies European Tour 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/df311574-3d3b-4141-9ada-558e6bb04597#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Golf USPGA Champions Tour 2015 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2015-01-01"^^xsd:date ;
+    ns2:hasEnd "2015-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e90bf67b-ec6a-45b6-a23b-a47ad8d98a4d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Major Championships 2014 Season (Temporal Entity)"@en-gb ;
+    ns2:hasBeginning "2014-01-01"^^xsd:date ;
+    ns2:hasEnd "2014-12-31"^^xsd:date .
+

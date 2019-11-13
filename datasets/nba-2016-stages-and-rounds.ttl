@@ -1,0 +1,186 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/2c3dd1cc-b084-45ee-b803-0aba461d02a8#id> a provenance:Dataset ;
+    rdfs:label "Basketball: NBA 2016/17 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/basketball/nba-2016-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3012: LD: Model Basketball 2016/17 season competitions, stages, rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-01-03T09:22:45+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Kristian.Epps@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/1419c884-3d05-4e3d-9e37-fddedb17be77#id> sport:firstStage <http://www.bbc.co.uk/things/3608ee52-1f2c-4957-8a2b-790cb249fed4#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/76c76803-3cc1-429a-b603-e6f4cccb98d0#id> .
+
+<http://www.bbc.co.uk/things/07ab663d-aab8-49a6-99bf-6a326a3a8200#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "League"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S1R10952> ;
+    core:preferredLabel "League"@en-gb ;
+    core:shortLabel "League"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/0e292483-f4e1-480f-ab69-9b5f1f946987#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Western Pacific"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S1R10950> ;
+    core:preferredLabel "Western Pacific"@en-gb ;
+    core:shortLabel "Western Pacific"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/3db562cc-afd3-4966-b289-493e1ee0a9c1#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Play-offs First Round"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S2R11183> ;
+    core:preferredLabel "Play-offs First Round"@en-gb ;
+    core:shortLabel "Play-offs First Round"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/45c55169-7f72-4ad1-8793-40052163189b#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Western Northwest"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S1R10949> ;
+    core:preferredLabel "Western Northwest"@en-gb ;
+    core:shortLabel "Western Northwest"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/5b97c2c7-6c12-4ce7-9afa-5a90863cb5bd#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Eastern Atlantic"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S1R10946> ;
+    core:preferredLabel "Eastern Atlantic"@en-gb ;
+    core:shortLabel "Eastern Atlantic"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/75e85185-8099-4d4e-9f84-c1a1f82696e2#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Western Southwest"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S1R10951> ;
+    core:preferredLabel "Western Southwest"@en-gb ;
+    core:shortLabel "Western Southwest"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/81a66e88-a7e3-4a69-b6be-b28010c16257#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S2R11279> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/98bd7beb-2f21-4ecf-a3ce-c60249a4263c#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Conference Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S2R11208> ;
+    core:preferredLabel "Conference Semi-final"@en-gb ;
+    core:shortLabel "Conference Semi-final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/a3721192-df9b-4b25-a7f1-90e88e16a7bc#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Conference Final"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S2R11249> ;
+    core:preferredLabel "Conference Final"@en-gb ;
+    core:shortLabel "Conference Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/b67a4de4-9fe4-46e0-a7ab-1a60f40c3d95#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Eastern Central"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S1R10947> ;
+    core:preferredLabel "Eastern Central"@en-gb ;
+    core:shortLabel "Eastern Central"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/b70ffb8f-5169-407d-8214-cefad4c27b8f#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Eastern Southwest"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S1R10948> ;
+    core:preferredLabel "Eastern Southwest"@en-gb ;
+    core:shortLabel "Eastern Southwest"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CBKB109522016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S1R10946> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S1R10947> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S1R10948> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S1R10949> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S1R10950> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S1R10951> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S1R10952> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S2R11183> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S2R11208> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S2R11249> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB109522016S2R11279> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/3608ee52-1f2c-4957-8a2b-790cb249fed4#id> a sport:Competition ;
+    rdfs:label "Stage 1 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Regular Season"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S1> ;
+    core:preferredLabel "Regular Season"@en-gb ;
+    core:shortLabel "Regular Season"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/07ab663d-aab8-49a6-99bf-6a326a3a8200#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0e292483-f4e1-480f-ab69-9b5f1f946987#id>,
+        <http://www.bbc.co.uk/things/45c55169-7f72-4ad1-8793-40052163189b#id>,
+        <http://www.bbc.co.uk/things/5b97c2c7-6c12-4ce7-9afa-5a90863cb5bd#id>,
+        <http://www.bbc.co.uk/things/b67a4de4-9fe4-46e0-a7ab-1a60f40c3d95#id>,
+        <http://www.bbc.co.uk/things/b70ffb8f-5169-407d-8214-cefad4c27b8f#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/75e85185-8099-4d4e-9f84-c1a1f82696e2#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/76c76803-3cc1-429a-b603-e6f4cccb98d0#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/76c76803-3cc1-429a-b603-e6f4cccb98d0#id> a sport:Competition ;
+    rdfs:label "Stage 2 of Basketball NBA 2016/17"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CBKB109522016S2> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/3db562cc-afd3-4966-b289-493e1ee0a9c1#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/98bd7beb-2f21-4ecf-a3ce-c60249a4263c#id>,
+        <http://www.bbc.co.uk/things/a3721192-df9b-4b25-a7f1-90e88e16a7bc#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/81a66e88-a7e3-4a69-b6be-b28010c16257#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/3608ee52-1f2c-4957-8a2b-790cb249fed4#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

@@ -1,0 +1,179 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/23a030e3-e892-4b10-8f9d-694d9b09b058#id> a provenance:Dataset ;
+    rdfs:label "Golf: Competitions" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/golf/golf-competitions-10.ttl" ;
+    provenance:changeReason "SPORTSDATA-6167 Add Ladies Major Championships as a recurring competition" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-04-20T10:46:24+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:dong.liu@bbc.co.uk> ;
+    provenance:version "10"^^xsd:int .
+
+<http://www.bbc.co.uk/things/2043c09a-bed3-408d-a953-f0773a1976c4#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Men's World Rankings"@en-gb ;
+    sal:videCode "MWR"@en-gb ;
+    cms:locator <urn:sports-data:CGOBMWLD> ;
+    core:disambiguationHint "Golf competition"@en-gb ;
+    core:preferredLabel "Men's World Rankings"@en-gb ;
+    core:primaryTopicOf <http://www.owgr.com/> ;
+    core:shortLabel "Men's World Rankings"@en-gb ;
+    core:slug "mens-world-rankings"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> .
+
+<http://www.bbc.co.uk/things/3018286d-136a-40e6-bff4-ffa4975c9eb0#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "USLPGA Tour"@en-gb ;
+    sal:videCode "USLPGA"@en-gb ;
+    cms:locator <urn:sports-data:CGOBLPGA> ;
+    core:disambiguationHint "Golf competition"@en-gb ;
+    core:preferredLabel "USLPGA Tour"@en-gb ;
+    core:primaryTopicOf <http://www.lpga.com/> ;
+    core:shortLabel "USLPGA"@en-gb ;
+    core:slug "lpga-tour"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> .
+
+<http://www.bbc.co.uk/things/42bfec4c-4207-4791-951b-b0252ecf9c10#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "PGA European Tour"@en-gb ;
+    sal:videCode "PGA"@en-gb ;
+    cms:locator <urn:sports-data:CGOBMEUR> ;
+    core:disambiguationHint "Golf competition"@en-gb ;
+    core:preferredLabel "PGA European Tour"@en-gb ;
+    core:primaryTopicOf <http://www.pgatour.com/> ;
+    core:shortLabel "PGA European"@en-gb ;
+    core:slug "european-tour"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> .
+
+<http://www.bbc.co.uk/things/54f85680-2c9c-485f-8ba6-dc972c793f80#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "USPGA Tour"@en-gb ;
+    sal:videCode "USPGA"@en-gb ;
+    cms:locator <urn:sports-data:CGOBMPGA> ;
+    core:disambiguationHint "Golf competition"@en-gb ;
+    core:preferredLabel "USPGA Tour"@en-gb ;
+    core:primaryTopicOf <http://www.pgatour.com/> ;
+    core:shortLabel "USPGA Tour"@en-gb ;
+    core:slug "uspga-tour"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> .
+
+<http://www.bbc.co.uk/things/67782745-91e0-48ca-8243-ab2709f0effb#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Major Championships"@en-gb ;
+    sal:videCode "MJC"@en-gb ;
+    cms:locator <urn:sports-data:CGOBMMAJ> ;
+    core:disambiguationHint "Golf competition"@en-gb ;
+    core:preferredLabel "Major Championships"@en-gb ;
+    core:shortLabel "Majors"@en-gb ;
+    core:slug "major-championships"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> .
+
+<http://www.bbc.co.uk/things/7da5ac7d-e6d9-4b70-83cd-b27a19239de3#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's World Rankings"@en-gb ;
+    sal:videCode "WWR"@en-gb ;
+    cms:locator <urn:sports-data:CGOBWWLD> ;
+    core:disambiguationHint "Golf competition"@en-gb ;
+    core:preferredLabel "Women's World Rankings"@en-gb ;
+    core:primaryTopicOf <http://www.rolexrankings.com/> ;
+    core:shortLabel "Women's World Rankings"@en-gb ;
+    core:slug "womens-world-rankings"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> .
+
+<http://www.bbc.co.uk/things/7e0c8679-f5a4-4340-bbbf-fb7442c1f09b#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "USPGA Champions Tour"@en-gb ;
+    sal:videCode "WWR"@en-gb ;
+    cms:locator <urn:sports-data:CGOBMCMP> ;
+    core:disambiguationHint "Golf competition"@en-gb ;
+    core:preferredLabel "USPGA Champions Tour"@en-gb ;
+    core:primaryTopicOf <http://www.pgatour.com/> ;
+    core:shortLabel "USPGA Champions"@en-gb ;
+    core:slug "uspga-champions-tour"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> .
+
+<http://www.bbc.co.uk/things/84f9adca-bf96-4e70-a95b-dd73789fa2aa#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "International Federation of PGA Tours"@en-gb ;
+    sal:videCode "IFPGA"@en-gb ;
+    cms:locator <urn:sports-data:CGOBINTL> ;
+    core:disambiguationHint "Golf competition"@en-gb ;
+    core:preferredLabel "International Federation of PGA Tours"@en-gb ;
+    core:primaryTopicOf <http://www.worldgolfchampionships.com/> ;
+    core:shortLabel "International Federation of PGA Tours"@en-gb ;
+    core:slug "international-federation-of-pga-tours"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> .
+
+<http://www.bbc.co.uk/things/91a60ab7-c3b4-4281-abb9-a13c9936b742#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "World Golf Championships"@en-gb ;
+    sal:videCode "WGC"@en-gb ;
+    cms:locator <urn:sports-data:CGOBMWGC> ;
+    core:disambiguationHint "Golf competition"@en-gb ;
+    core:preferredLabel "World Golf Championships"@en-gb ;
+    core:primaryTopicOf <http://www.pgatour.com/> ;
+    core:shortLabel "World Golf Champs"@en-gb ;
+    core:slug "world-golf-championships"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> .
+
+<http://www.bbc.co.uk/things/f183fe97-0156-4b12-ae99-90d986f19a4c#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ladies Major Championships"@en-gb ;
+    sal:videCode "LMC"@en-gb ;
+    cms:locator <urn:sports-data:CGOBWMAJ> ;
+    core:disambiguationHint "Golf competition"@en-gb ;
+    core:preferredLabel "Ladies Major Championships"@en-gb ;
+    core:shortLabel "Ladies Majors"@en-gb ;
+    core:slug "ladies-major-championships"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> .
+
+<urn:sports-data:CGOBMINT> a cms:Sports-DataLocator .
+
+<urn:sports-data:CGOBINTL> a cms:Sports-DataLocator .
+
+<urn:sports-data:CGOBLPGA> a cms:Sports-DataLocator .
+
+<urn:sports-data:CGOBMCMP> a cms:Sports-DataLocator .
+
+<urn:sports-data:CGOBMEUR> a cms:Sports-DataLocator .
+
+<urn:sports-data:CGOBMMAJ> a cms:Sports-DataLocator .
+
+<urn:sports-data:CGOBMPGA> a cms:Sports-DataLocator .
+
+<urn:sports-data:CGOBMWGC> a cms:Sports-DataLocator .
+
+<urn:sports-data:CGOBMWLD> a cms:Sports-DataLocator .
+
+<urn:sports-data:CGOBWMAJ> a cms:Sports-DataLocator .
+
+<urn:sports-data:CGOBWWLD> a cms:Sports-DataLocator .
+

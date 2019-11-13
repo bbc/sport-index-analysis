@@ -1,0 +1,594 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/2c6dd8b0-bca0-46ec-808d-4e461af3f646#id> a provenance:Dataset ;
+    rdfs:label "My Sport Topics" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/my-sport-topic/my-sport-topics.ttl" ;
+    provenance:changeReason "SLS-4866: Create new sport Olympic sport concepts" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-11-19T07:35:00+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "40"^^xsd:int .
+
+<http://www.bbc.co.uk/sport/get-inspired/wales> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/things/0159dce8-645a-4fa3-b73d-f274e808509c#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/02fb02ee-9e6b-46c3-92e1-db372543facd#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/030b5eaf-15db-3e4e-bac9-a7789892f436#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/0350ec6a-76af-4d2b-80f5-396998ce775b#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/039859a4-51ac-447f-a687-728ee2b34817#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/03b86acd-7664-415c-b28a-c42571d63367#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/get-inspired> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/get-inspired> .
+
+<http://www.bbc.co.uk/things/05ec165d-2118-4664-b6c1-80087107afc0#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/0626e0fb-0d00-416a-a1f6-b1c7eb6c5e78#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/get-inspired/england> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/get-inspired/england> .
+
+<http://www.bbc.co.uk/things/06a5dc3e-ecbd-4427-8537-24785e0c96b0#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/079a365b-0602-42f8-83d5-9db03c6b16c7#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/winter-olympics/2014> .
+
+<http://www.bbc.co.uk/things/08449ec0-069c-45ff-a3ac-0c3efccd4ec3#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/08d91596-72fc-4a55-a02c-50265cb9e09e#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/09753e7d-8037-4826-ae66-f3969d0ccb1e#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/0c9641bb-47b3-4e12-83eb-08a9556e0a0c#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/0d205538-c52e-41c7-a4a1-50efd6c1da59#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/olympics> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/olympics> .
+
+<http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/126190f0-5bd7-7346-a739-39a80c01ae23#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/1345a472-97c2-4f43-8d83-36261ccab1f8#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/150707bb-593e-4e9a-847a-a2c3b20f83ff#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/rugby-union/welsh> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/welsh> .
+
+<http://www.bbc.co.uk/things/1869157e-8fbc-4689-b2b6-ebc6b2900d5a#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/1a3a2dcd-c973-42a3-84e4-f13a44b9d849#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/1aa023c9-b945-4bda-8b1c-211f9fe9e05f#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/1ba0cae8-de35-4d71-9177-e4291295311b#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/1d2e1514-faa8-425d-8481-a1cc4da6cc24#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/olympics/2016> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/olympics/rio-2016> .
+
+<http://www.bbc.co.uk/things/1e069d7e-8dbd-43db-87a0-137e4009fb17#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/1fcfda6d-f50e-4367-8208-ac1415d3d613#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/20ff4730-bad5-46e1-8b06-c20b5b16ff01#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/21c45f67-36da-874e-ab36-02650add8311#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/23fd16e9-f50d-4c43-afab-d80a7bce71ab#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/get-inspired/northern-ireland> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/get-inspired/northern-ireland> .
+
+<http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/246b8eb1-e7a7-4f6d-b9f2-7cfdeb9c8240#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/24e14219-8ae2-4ee7-b180-cad9b0d5bfa2#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/25734f16-1a36-42e0-879a-8cd4c3275028#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/28a3cb5b-a2ea-4283-b58e-d72dc48d6034#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/2bab7697-c436-4581-87cb-1a9178ad81af#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/311fec37-a12a-46d5-9b6a-f485c7413077#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/333aa62f-9b65-4bf2-9556-3ae78123c80e#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/34dcb1f1-59d8-4555-b55d-d1218d113e2d#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/370949ac-c7ce-4d18-b40a-5d89acd88433#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/37ea9997-eeb5-457c-9f9c-d6bf78467d85#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/388b5f68-acbe-4643-9e6c-7f734b5d016d#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/390e123c-8e59-43ed-937a-915a81891a33#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/sports-personality> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/sports-personality> .
+
+<http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/3d556f88-c802-4fcc-9c25-469d2ba7b42a#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/3d5e63ec-1f4f-c24c-86ad-fd5d54e014f6#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/3ebf9ee6-6037-4fdb-b00f-cca98c6574a3#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/3fd9ec42-fa70-4902-818e-b7574c4cfc60#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/414600e4-1cf0-429c-831f-81e1b14b9b78#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/452019a5-f0f2-0c47-aa11-42fdcf2ae16b#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/467fd84f-5bf7-419e-9bd3-a0963c9cebbf#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/485f8f94-f87e-4513-b133-46a5dfccd428#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/4b26f944-cc1f-4798-8873-e790b88cd842#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/commonwealth-games> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/commonwealth-games> .
+
+<http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/4d62f2ca-861b-4db6-bc36-e2e537031718#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/4d6c3925-fa94-42dd-b5b4-f24714a36758#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/4e1cd8c0-ef81-4cea-a005-ba769e3bb2fb#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/4ee2d754-3f34-43d0-8163-f64e694a565d#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/51814d20-20e8-4e2c-87d0-66997e408bea#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/get-inspired/scotland> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/get-inspired/scotland> .
+
+<http://www.bbc.co.uk/things/521df978-7583-4e19-ad6d-2a83a595a8a6#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/53accf6c-631b-9140-852a-109fab88d3f8#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/56404727-1f35-46b9-a42b-1408713eb816#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/565d637f-6fb0-4799-8db8-a001978d2222#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/5938fc14-ec21-429c-8b8f-55b00e8862d4#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/59b6624c-3ba5-480f-9eb6-1cdbda2c4284#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/5a9bba82-5f5e-f343-9df7-48fc6d6a008e#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/5af78336-c06e-0b48-83a2-e50e2c14cba6#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/5b95d205-6cff-4cf1-8fc9-475b29e17511#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/5cd4682a-7643-f445-8b1f-bcbaf450bc89#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/5cf9a862-35ed-45c0-8fd3-6e4b207240df#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/5ec63a0c-4a74-43d4-926c-c75789c078c1#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/64b44a9a-07f6-4a27-892f-49f74610e7de#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/64bcbbd3-6c7c-4ee9-87a4-b077bde97dc3#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/650d0160-f1a2-4c7f-b7fb-954abc03fc27#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/get-inspired/wales> .
+
+<http://www.bbc.co.uk/things/654f550c-0c2d-2341-a8f5-66e3a9ba28ba#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/65e7e652-4bcc-4d48-a19c-241f58d830ba#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/663de257-779e-4869-bd68-6c469a984469#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/684ea433-99a9-44a0-a2d3-4b5bd1e47114#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/69cbc5e2-b228-a143-8085-860c053f44f7#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/6a48e77e-3465-4e35-a94b-dac77299838c#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/6a649f34-6934-4464-8b80-a42a0ee7a1bc#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/6b04e406-c181-204b-a2dd-bc20142b9e6a#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/6d2040e9-3e55-4662-b463-4878c42726da#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/6d6ddae0-12eb-4c7c-a76f-e6a8a3d2025f#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/6de13fc0-2217-44f3-b4be-f4727008d7ab#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/71843b1d-acf2-48d2-b7a6-3f72bf4d7ce5#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/71d1288c-d1ea-6a4a-bd87-237dbb9e6470#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/7ba0e09d-037f-694f-a73b-4deccbb7fda3#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/7bf5cec0-5a16-2d42-ab3a-bb7137c4ff43#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/7d6a100b-69fc-4702-a53f-ec4312102f65#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/7e4ba3a7-909a-473f-b332-95b5ed42c213#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/7e517328-5306-49a4-addb-37a94a2be3bb#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/7f503ae5-3778-4951-b559-ea30ce7bd167#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/844e6991-c5a1-4efc-98f6-5a307077f45d#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/8454df99-d7a6-4b15-8109-48193378bac8#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/cricket/counties> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cricket/counties> .
+
+<http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/football/european-championship/2016> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/european-championship/euro-2016> .
+
+<http://www.bbc.co.uk/things/85b9702c-d2ef-45d2-b176-73bc87a4ba61#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/869e0ec9-af00-4f2b-82b6-b760d69a4492#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/87e9eb08-b0b1-4232-a585-3762aea99680#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/8fdc4c32-3d0c-4814-9d69-3bf1269135df#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/8ffc564e-5a37-4f6b-bcec-01124da58681#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/winter-olympics> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/winter-olympics> .
+
+<http://www.bbc.co.uk/things/9057858a-33bd-425c-891c-a9b072728513#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/90c95587-a1bb-4a6c-bba1-1c4b72502129#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/911c44e6-35cf-4451-8323-678c5a679d1d#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/921a13d0-6fc6-6740-af87-8af4655ec20f#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/9631e5b8-6068-f74e-a4f0-bf267ce2bc21#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/football/championship> .
+
+<http://www.bbc.co.uk/things/96b7c068-a153-d640-8a37-5cfa8e1eff57#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/98597f3a-b928-4bba-ac36-a719eaa4658b#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/993dde29-b0bf-4ceb-b3b2-ad20faf9c539#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/9d258752-018b-4871-9b44-44921d3f3e5e#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/9d794c09-c573-4a97-9a0e-9518888f19ed#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/9e1878d1-8faa-f245-b2f5-c450cf392cb0#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/9f2b27b0-641f-4d9a-a400-b9db34e9cdea#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/a5695e6f-2e4c-1b42-9b11-af0862edbb2a#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/a7b083b7-0d8b-45d8-9f09-54e6432dacb5#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/a8dbc02d-8119-4541-baf6-0d14cd1ffe41#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/a922e938-91e3-40a0-adba-097983a7d38e#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/aa5ecf71-63d3-460f-a98d-5cab5a9a3baa#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/ae6a1e5a-1636-4e8d-8e0e-fac28430e53e#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/b04d768b-f13c-4b50-9098-dc9e3339f887#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/b3a086df-ab42-2b44-be8b-76b600bfcdce#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/b668ea17-2339-40d4-a232-a0d73a2d2bfb#id> a sal:SportTopic ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/get-inspired/bodypositive> .
+
+<http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/b84fd4d8-b7b5-5b45-9f7a-d701c9f3907f#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/b86ca75b-7f26-4221-9791-37ddc01660dc#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/b9a58a01-0c74-8b47-972f-68f922ebd90a#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/bd51d530-f0fb-684e-a305-3f15b7e6d4a1#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/bdf78c83-34f7-4692-9bac-3658d63c2b24#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/england> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/england> .
+
+<http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/bea1cb38-a492-44e9-8c9e-8865e4a2c014#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/c1416640-7401-4021-8304-34442d9c423a#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/c5d39deb-46b8-1e4e-ba2c-5c6e2436b92d#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/c645646c-0ca5-46c6-96cd-9eb3d9f278d1#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/c6e2a7ac-2d13-8640-9f98-41f749d94a6e#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/c7ddc4d2-3efa-4e4c-8bd0-81f0de0634c8#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/c8b2685d-9517-4601-8561-482e2bd67ea9#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/cd26e358-f761-4ebe-8bc2-9b8648e04bb5#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/cd988a73-6c41-4690-b785-c8d3abc2d13c#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/ce88dce3-fe00-4344-aedd-84ff5ff42cd7#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/d06b1e90-c9fe-4e09-9b4a-e0f285da8920#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/d18285f8-e619-4cf3-99d8-8fa5f4913dcf#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/d3b859fd-fe4d-4f36-abf5-a2e3c41c5b8c#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/d4e94988-a6c9-4288-ba18-b82bbf578fc6#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/d5e7ede8-a199-804f-9a09-7c91a6df1b96#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/d65c5dce-f5e4-4340-931b-16ca1848d092#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/d97ad279-e97b-475c-8680-01ae478aed73#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/d9d6cc4d-79f1-ab49-9c9e-c98d166b99fe#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/da9ec554-2395-4376-96a5-75476886774d#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/rugby-union/irish> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/irish> .
+
+<http://www.bbc.co.uk/things/dd4191d5-115d-46b9-8f18-d1da16c6a3e8#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/ddd04cdd-783a-411a-b936-1b0e9cde47f8#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/de615059-4444-46e3-a76b-d05c6bd58272#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/rugby-union/english> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/english> .
+
+<http://www.bbc.co.uk/things/de6a07ff-47ff-4551-9b71-7494a71aceac#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/e05a00e2-7c37-4af9-a7d8-0202dd1f00f8#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/e05c629c-ddec-4ca0-a5bb-95dd12c8df54#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/e3056dd5-434c-4391-a2e4-8e02a31645a7#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/e4d61a41-dba2-7849-a725-d8b445ec3cbc#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/e51a3be3-ad58-4aca-a38d-b8657899b4d6#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/e681e822-b849-0243-b698-1b9afe3f3858#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/golf> .
+
+<http://www.bbc.co.uk/things/ea45cb53-75a4-4bb7-b9c1-a4eb1a51a2ed#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/ebca7141-e8ba-0e40-bba9-d0864e29bc1f#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/eceae071-5f37-0848-acd2-f21e3b2de8ca#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/ed80fd46-3713-d445-9419-de091f8a7223#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/f0489362-27b3-4200-b0a9-c73c15b9869a#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/f102a51c-1276-4d55-901a-575d63ca263c#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/f1125cb0-7114-4b36-b5b9-469864464b31#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/f21d1a82-e919-b24f-b3fb-8f2f46372f40#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/f475527c-74ba-4005-aee2-c529ab8300b4#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/f47d3ef3-b487-48bc-940a-45291d4eb27c#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/f7eeb725-55f4-3542-89ae-f4a4e8bd3c58#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/f9bcd500-e383-408f-9177-6d8468d6ae35#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/f9ea64db-238d-2545-95a0-6bdecd52c489#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/faf45037-e629-45dd-8496-f2dd8fb907e7#id> a sal:SportTopic ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/rugby-union/scottish> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union/scottish> .
+
+<http://www.bbc.co.uk/things/fb22cefb-a93b-4e34-9192-2af25713cff8#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/fbc174b2-1fdc-4905-8aa2-536036519848#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/fe11a0ff-a7c0-45eb-a9e0-708dddf9bc7d#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/fe2526f0-d352-4a2f-8b03-9b7b692fd3cd#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/things/fe736477-01b6-4020-8b30-36522ac59457#id> a sal:SportTopic .
+
+<http://www.bbc.co.uk/sport/cricket/counties> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/england> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/football/european-championship/euro-2016> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/get-inspired> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/get-inspired/bodypositive> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/get-inspired/england> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/get-inspired/northern-ireland> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/get-inspired/scotland> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/olympics> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/olympics/rio-2016> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/english> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/irish> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/scottish> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union/welsh> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/sports-personality> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<https://api.bbc.co.uk/content/asset/sport/commonwealth-games> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/cricket/counties> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/england> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/football/championship> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/football/european-championship/2016> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/get-inspired> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/get-inspired/england> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/get-inspired/northern-ireland> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/get-inspired/scotland> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/get-inspired/wales> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/golf> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/olympics> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/olympics/2016> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/rugby-union/english> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/rugby-union/irish> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/rugby-union/scottish> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/rugby-union/welsh> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/sports-personality> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/winter-olympics> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/winter-olympics/2014> a cms:CPSLocator .
+

@@ -1,0 +1,128 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/348ceae1-be4e-48bc-b25f-36d932ed1f43#id> a provenance:Dataset ;
+    rdfs:label "Basketball: BBL Championship 2015 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/basketball/bbl-championship-2015-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-1795: Added BBL Championship Stages and Rounds. Updated year of rdfs:label. Applied appropriate round types." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-03-15T10:43:25+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:eleni.mikroyannidi@bbc.co.uk> ;
+    provenance:version "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/0b3f5cfb-58fc-4f27-9fd5-c30456ce8252#id> sport:firstStage <http://www.bbc.co.uk/things/e65dffdc-a8bc-43e7-b2c2-c711496d2b5a#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/1a8e18fb-8d31-46c9-8a8b-842d6c3f9a43#id> .
+
+<http://www.bbc.co.uk/things/09f9feca-0076-4f82-af57-f37f0302b517#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Basketball BBL Championship 2015"@en-gb ;
+    sal:name "Play-offs Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CBKB108742015S2R12660> ;
+    core:preferredLabel "Play-offs Semi-Final"@en-gb ;
+    core:shortLabel "Play-offs Semi-Final"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/98303670-d326-46be-b104-de8336071a50#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Basketball BBL Championship 2015"@en-gb ;
+    sal:name "Play-offs Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CBKB108742015S2R12659> ;
+    core:preferredLabel "Play-offs Semi-Final"@en-gb ;
+    core:shortLabel "Play-offs Semi-Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/b0d75d48-fe4b-4f2f-8288-308f8812e98a#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Basketball BBL Championship 2015"@en-gb ;
+    sal:name "Play-offs Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CBKB108742015S2R13480> ;
+    core:preferredLabel "Play-offs Quarter-Final"@en-gb ;
+    core:shortLabel "Play-offs Quarter-Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/b8d9d4fc-f7d4-41ee-8f97-660af7f978d6#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Basketball BBL Championship 2015"@en-gb ;
+    sal:name "BBL Championship"@en-gb ;
+    cms:locator <urn:sports-data:CBKB108742015S1R10874> ;
+    core:preferredLabel "BBL Championship"@en-gb ;
+    core:shortLabel "BBL Championship"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/c240aaf4-cfdc-443e-9025-196afbd0f207#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 2 of Basketball BBL Championship 2015"@en-gb ;
+    sal:name "Play-offs Final"@en-gb ;
+    cms:locator <urn:sports-data:CBKB108742015S2R11154> ;
+    core:preferredLabel "Play-offs Final"@en-gb ;
+    core:shortLabel "Play-offs Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/f7e92ea5-9ea8-45e5-823d-f2c8e838ca45#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Basketball BBL Championship 2015"@en-gb ;
+    sal:name "Play-offs Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CBKB108742015S2R13479> ;
+    core:preferredLabel "Play-offs Quarter-Final"@en-gb ;
+    core:shortLabel "Play-offs Quarter-Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<urn:sports-data:CBKB108742015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB108742015S1R10874> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB108742015S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB108742015S2R11154> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB108742015S2R12659> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB108742015S2R12660> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB108742015S2R13479> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB108742015S2R13480> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/1a8e18fb-8d31-46c9-8a8b-842d6c3f9a43#id> a sport:Competition ;
+    rdfs:label "Stage 2 of Basketball BBL Championship 2016"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CBKB108742015S2> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/f7e92ea5-9ea8-45e5-823d-f2c8e838ca45#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/09f9feca-0076-4f82-af57-f37f0302b517#id>,
+        <http://www.bbc.co.uk/things/98303670-d326-46be-b104-de8336071a50#id>,
+        <http://www.bbc.co.uk/things/b0d75d48-fe4b-4f2f-8288-308f8812e98a#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/c240aaf4-cfdc-443e-9025-196afbd0f207#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/e65dffdc-a8bc-43e7-b2c2-c711496d2b5a#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/e65dffdc-a8bc-43e7-b2c2-c711496d2b5a#id> a sport:Competition ;
+    rdfs:label "Stage 1 of Basketball BBL Championship 2016"@en-gb ;
+    sal:name "Regular Season"@en-gb ;
+    cms:locator <urn:sports-data:CBKB108742015S1> ;
+    core:preferredLabel "Regular Season"@en-gb ;
+    core:shortLabel "Regular Season"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/b8d9d4fc-f7d4-41ee-8f97-660af7f978d6#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/1a8e18fb-8d31-46c9-8a8b-842d6c3f9a43#id> ;
+    sport:stageNumber "1"^^xsd:int .
+

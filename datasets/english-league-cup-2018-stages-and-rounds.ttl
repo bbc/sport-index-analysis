@@ -1,0 +1,122 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/cff67008-3afd-4253-a127-3883d7f23fb1#id> a provenance:Dataset ;
+    rdfs:label "Football: English League Cup 2018/19 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/english-league-cup-2018-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4410: Model English Cup 2018/19 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-05-24T08:30:43+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/42ec39d2-f055-41ce-a707-39d1808f3f10#id> sport:hasStage <http://www.bbc.co.uk/things/1476cc6b-d242-4790-8477-36d54e353e06#id> .
+
+<http://www.bbc.co.uk/things/0e8925f1-931f-451d-9925-ad77338f3a84#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22018S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/1476cc6b-d242-4790-8477-36d54e353e06#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22018S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/40942d3d-a92a-4b55-81ed-56bee0116ad4#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0e8925f1-931f-451d-9925-ad77338f3a84#id>,
+        <http://www.bbc.co.uk/things/187fb17d-6eed-4535-91c2-bece356cc45d#id>,
+        <http://www.bbc.co.uk/things/b7571a20-1927-4b12-b9c4-9fc23c64dca4#id>,
+        <http://www.bbc.co.uk/things/c08e6c36-bbac-44dd-b980-2b29da6cd8d5#id>,
+        <http://www.bbc.co.uk/things/c4ed6de3-21c2-4b67-b456-91dc8aab0dcb#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/997067f6-566d-4726-a5f1-267633151f9b#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/187fb17d-6eed-4535-91c2-bece356cc45d#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22018S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/40942d3d-a92a-4b55-81ed-56bee0116ad4#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of League Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22018S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/997067f6-566d-4726-a5f1-267633151f9b#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22018S1R7> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/b7571a20-1927-4b12-b9c4-9fc23c64dca4#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22018S1R5> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/c08e6c36-bbac-44dd-b980-2b29da6cd8d5#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22018S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/c4ed6de3-21c2-4b67-b456-91dc8aab0dcb#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of League Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22018S1R6> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<urn:sports-data:CFBB22018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22018S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22018S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22018S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22018S1R7> a cms:Sports-DataLocator .
+

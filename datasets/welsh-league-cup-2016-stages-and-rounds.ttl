@@ -1,0 +1,98 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/656a2183-7a08-428e-ad74-bf6986efd37e#id> a provenance:Dataset ;
+    rdfs:label "Football: Welsh League Cup 2016/17 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/welsh-league-cup-2016-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-2316 Model CFBB643 Welsh League Cup 2016/17 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-06-08T08:28:04+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/233339de-00a0-4ec9-aa2b-1003cf4d81e1#id> sport:hasStage <http://www.bbc.co.uk/things/f0eb294b-1474-47ac-8716-0044ae97a354#id> .
+
+<http://www.bbc.co.uk/things/4710bbe4-f22e-43e5-8f3b-628d95d365f5#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432016S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/7312ac53-9aff-41df-b6fc-e9407a9fe558#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432016S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/9803a6ef-f862-47a7-8255-8f1601d63c1d#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Semi Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432016S1R4> ;
+    core:preferredLabel "Semi Final"@en-gb ;
+    core:shortLabel "Semi Final"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/beb0ae40-9144-455a-8b44-2977e0f6b706#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432016S1R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/d6c7d3ac-d643-4577-ba5b-e01b73d848ff#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Welsh League Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432016S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/f0eb294b-1474-47ac-8716-0044ae97a354#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Welsh League Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6432016S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/7312ac53-9aff-41df-b6fc-e9407a9fe558#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/4710bbe4-f22e-43e5-8f3b-628d95d365f5#id>,
+        <http://www.bbc.co.uk/things/9803a6ef-f862-47a7-8255-8f1601d63c1d#id>,
+        <http://www.bbc.co.uk/things/d6c7d3ac-d643-4577-ba5b-e01b73d848ff#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/beb0ae40-9144-455a-8b44-2977e0f6b706#id> ;
+    sport:stageNumber 1 .
+
+<urn:sports-data:CFBB6432016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432016S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432016S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432016S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6432016S1R5> a cms:Sports-DataLocator .
+

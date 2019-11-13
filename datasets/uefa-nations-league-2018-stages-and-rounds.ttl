@@ -1,0 +1,276 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/b8909e91-d778-482f-b2c3-4cb681705ca7#id> a provenance:Dataset ;
+    rdfs:label "Football: UEFA Nations League 2018/19 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/uefa-nations-league-2018-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4755: Model UEFA Nations League 2018/19 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-09-03T11:04:58+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/febbd64e-cb99-4eea-a5e2-4df61c3a68f3#id> sport:firstStage <http://www.bbc.co.uk/things/772e9f40-4313-41bb-b48a-deaa0d37919c#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/103b0a43-f4da-4c02-a9e1-f9c8a74c0c58#id> .
+
+<http://www.bbc.co.uk/things/05f35fef-34f0-4639-8739-849f52f96bf6#id> a sport:Round ;
+    rdfs:label "Round C1 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group C1"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R9> ;
+    core:preferredLabel "Group C1"@en-gb ;
+    core:shortLabel "Group C1"@en-gb ;
+    sport:roundNumber 9 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/15365e2a-8494-405c-8515-958644b627ed#id> a sport:Round ;
+    rdfs:label "Round C2 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group C2"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R10> ;
+    core:preferredLabel "Group C2"@en-gb ;
+    core:shortLabel "Group C2"@en-gb ;
+    sport:roundNumber 10 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/5ac3e3c1-4c11-4032-949b-6ead4b81aff7#id> a sport:Round ;
+    rdfs:label "Round D1 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group D1"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R13> ;
+    core:preferredLabel "Group D1"@en-gb ;
+    core:shortLabel "Group D1"@en-gb ;
+    sport:roundNumber 13 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/5fc20917-9d84-415e-b6b3-d9e01ac118e7#id> a sport:Round ;
+    rdfs:label "Round C4 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group C4"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R12> ;
+    core:preferredLabel "Group C4"@en-gb ;
+    core:shortLabel "Group C4"@en-gb ;
+    sport:roundNumber 12 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/61106b8f-4e43-4ff0-9c20-eefdfa569296#id> a sport:Round ;
+    rdfs:label "Round C3 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group C3"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R11> ;
+    core:preferredLabel "Group C3"@en-gb ;
+    core:shortLabel "Group C3"@en-gb ;
+    sport:roundNumber 11 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/699b0277-0f52-4d0a-8359-a323bb552241#id> a sport:Round ;
+    rdfs:label "Round B3 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group B3"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R7> ;
+    core:preferredLabel "Group B3"@en-gb ;
+    core:shortLabel "Group B3"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/6b7fe9cc-2024-4fc8-9028-2b4c714a9503#id> a sport:Round ;
+    rdfs:label "Round A4 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group A4"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R4> ;
+    core:preferredLabel "Group A4"@en-gb ;
+    core:shortLabel "Group A4"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/772ac779-0905-40a9-a9af-bf9e855465bf#id> a sport:Round ;
+    rdfs:label "Round A2 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group A2"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R2> ;
+    core:preferredLabel "Group A2"@en-gb ;
+    core:shortLabel "Group A2"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/a165ddc5-5454-41b0-9292-289ff996337c#id> a sport:Round ;
+    rdfs:label "Round A3 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group A3"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R3> ;
+    core:preferredLabel "Group A3"@en-gb ;
+    core:shortLabel "Group A3"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/aac07347-abc1-4867-bbfa-5b0228cfe343#id> a sport:Round ;
+    rdfs:label "Round B4 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group B4"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R8> ;
+    core:preferredLabel "Group B4"@en-gb ;
+    core:shortLabel "Group B4"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/b27ebd2c-b49e-4469-9efb-80d63016e32a#id> a sport:Round ;
+    rdfs:label "Round D3 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group D3"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R15> ;
+    core:preferredLabel "Group D3"@en-gb ;
+    core:shortLabel "Group D3"@en-gb ;
+    sport:roundNumber 15 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/b5a8f6da-eaa8-4819-8fa6-e9b818ee03c1#id> a sport:Round ;
+    rdfs:label "Round B1 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group B1"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R5> ;
+    core:preferredLabel "Group B1"@en-gb ;
+    core:shortLabel "Group B1"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/bcc27197-e90d-4f28-b566-400966830f31#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of UEFA Nations League"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S2R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/c072e6a7-bec5-4349-bb15-09f7b06ddf96#id> a sport:Round ;
+    rdfs:label "Round D2 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group D2"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R14> ;
+    core:preferredLabel "Group D2"@en-gb ;
+    core:shortLabel "Group D2"@en-gb ;
+    sport:roundNumber 14 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/e97d6607-7c1c-4ab5-8529-88b85eb4e46c#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of UEFA Nations League"@en-gb ;
+    sal:name "Third Place Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S2R2> ;
+    core:preferredLabel "Third Place Play-off"@en-gb ;
+    core:shortLabel "Third Place Play-off"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/eae7bf9c-0efd-40ee-a198-1255a3776b68#id> a sport:Round ;
+    rdfs:label "Round B2 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group B2"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R6> ;
+    core:preferredLabel "Group B2"@en-gb ;
+    core:shortLabel "Group B2"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/edde4f2d-cc86-4395-8eaa-1d9046c8743c#id> a sport:Round ;
+    rdfs:label "Round D4 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group D4"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R16> ;
+    core:preferredLabel "Group D4"@en-gb ;
+    core:shortLabel "Group D4"@en-gb ;
+    sport:roundNumber 16 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ee320171-bf99-4fc6-adba-90ce2bede27e#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of UEFA Nations League"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S2R1> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/f763d46d-ef13-45b5-b035-2863d71b13e5#id> a sport:Round ;
+    rdfs:label "Round A1 of Stage 1 of UEFA Nations League"@en-gb ;
+    sal:name "Group A1"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1R1> ;
+    core:preferredLabel "Group A1"@en-gb ;
+    core:shortLabel "Group A1"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CFBB9412018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R10> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R11> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R12> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R13> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R14> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R15> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R16> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S1R9> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9412018S2R3> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/103b0a43-f4da-4c02-a9e1-f9c8a74c0c58#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of UEFA Nations League"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/ee320171-bf99-4fc6-adba-90ce2bede27e#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/e97d6607-7c1c-4ab5-8529-88b85eb4e46c#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/bcc27197-e90d-4f28-b566-400966830f31#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/772e9f40-4313-41bb-b48a-deaa0d37919c#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/772e9f40-4313-41bb-b48a-deaa0d37919c#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of UEFA Nations League"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9412018S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/f763d46d-ef13-45b5-b035-2863d71b13e5#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/05f35fef-34f0-4639-8739-849f52f96bf6#id>,
+        <http://www.bbc.co.uk/things/15365e2a-8494-405c-8515-958644b627ed#id>,
+        <http://www.bbc.co.uk/things/5ac3e3c1-4c11-4032-949b-6ead4b81aff7#id>,
+        <http://www.bbc.co.uk/things/5fc20917-9d84-415e-b6b3-d9e01ac118e7#id>,
+        <http://www.bbc.co.uk/things/61106b8f-4e43-4ff0-9c20-eefdfa569296#id>,
+        <http://www.bbc.co.uk/things/699b0277-0f52-4d0a-8359-a323bb552241#id>,
+        <http://www.bbc.co.uk/things/6b7fe9cc-2024-4fc8-9028-2b4c714a9503#id>,
+        <http://www.bbc.co.uk/things/772ac779-0905-40a9-a9af-bf9e855465bf#id>,
+        <http://www.bbc.co.uk/things/a165ddc5-5454-41b0-9292-289ff996337c#id>,
+        <http://www.bbc.co.uk/things/aac07347-abc1-4867-bbfa-5b0228cfe343#id>,
+        <http://www.bbc.co.uk/things/b27ebd2c-b49e-4469-9efb-80d63016e32a#id>,
+        <http://www.bbc.co.uk/things/b5a8f6da-eaa8-4819-8fa6-e9b818ee03c1#id>,
+        <http://www.bbc.co.uk/things/c072e6a7-bec5-4349-bb15-09f7b06ddf96#id>,
+        <http://www.bbc.co.uk/things/eae7bf9c-0efd-40ee-a198-1255a3776b68#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/edde4f2d-cc86-4395-8eaa-1d9046c8743c#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/103b0a43-f4da-4c02-a9e1-f9c8a74c0c58#id> ;
+    sport:stageNumber 1 .
+

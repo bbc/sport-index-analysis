@@ -1,0 +1,65 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/a653633c-892c-469f-8adb-5ee514704428#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2015 World Club Series Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-league/rugby-league-2015-world-club-challenge-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-1584: rename World Club Series." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-04-19T09:06:39+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d9df39cd-3028-4656-98ce-b96fdb6c497c#id> sport:firstStage <http://www.bbc.co.uk/things/aad2de38-6be7-45d5-9c4d-b7c4cd357702#id> .
+
+<http://www.bbc.co.uk/things/11184877-c6c4-44b5-9ee7-2f43098534c4#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Rugby League World Club Series 2015"@en-gb ;
+    sal:name "World Club Series"@en-gb ;
+    cms:locator <urn:sports-data:CRLB4062015S1R1> ;
+    core:preferredLabel "World Club Series"@en-gb ;
+    core:shortLabel "World Club Series"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/87abd2c0-8091-431a-86b1-f7022bcce93c#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Rugby League World Club Series 2015"@en-gb ;
+    sal:name "World Club Challenge"@en-gb ;
+    cms:locator <urn:sports-data:CRLB4062015S1R2> ;
+    core:preferredLabel "World Club Challenge"@en-gb ;
+    core:shortLabel "World Club Challenge"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/aad2de38-6be7-45d5-9c4d-b7c4cd357702#id> a sport:KnockoutCompetition ;
+    rdfs:label "Knockout Stage 1 of Rugby League World Club Series 2015"@en-gb ;
+    sal:name "Rugby League World Club Series 2015"@en-gb ;
+    cms:locator <urn:sports-data:CRLB4062015S1> ;
+    core:preferredLabel "Rugby League World Club Series 2015"@en-gb ;
+    core:shortLabel "World Club Challenge"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/11184877-c6c4-44b5-9ee7-2f43098534c4#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/87abd2c0-8091-431a-86b1-f7022bcce93c#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<urn:sports-data:CRLB4062015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB4062015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB4062015S1R2> a cms:Sports-DataLocator .
+

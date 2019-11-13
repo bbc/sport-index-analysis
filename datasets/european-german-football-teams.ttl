@@ -1,0 +1,617 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/2097b8d3-a4cb-46b1-9d67-db594e5fcddb#id> a provenance:Dataset ;
+    rdfs:label "Football: European German Domestic Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-german-football-teams.ttl" ;
+    provenance:changeReason "SWD-814: Add qualified teams to EL 2019/20" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-09-02T12:57:40+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "8"^^xsd:int .
+
+<http://www.bbc.co.uk/things/1945f8c2-773f-49fd-b248-55d5620edd2f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Hannover 96"@en-gb ;
+    sal:videCode "HANN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB808> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Hannover 96"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/hannover> ;
+    core:sameAs <http://dbpedia.org/resource/Hannover_96> ;
+    core:shortLabel "Hannover"@en-gb ;
+    core:slug "hannover"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/21c0c550-b087-4094-98ab-d4eb3a0c5b9c#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "1. FC Nuremberg"@en-gb ;
+    cms:locator <urn:sports-data:TFBB684> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "1. FC Nuremberg"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/nuremberg> ;
+    core:sameAs <http://dbpedia.org/resource/1._FC_Nürnberg> ;
+    core:shortLabel "Nuremberg"@en-gb ;
+    core:slug "nuremberg"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/498ef63e-ed95-4338-bdcc-a00d950527b4#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Mainz 05"@en-gb ;
+    cms:locator <urn:sports-data:TFBB810> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Mainz 05"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/mainz> ;
+    core:sameAs <http://dbpedia.org/resource/1._FSV_Mainz_05> ;
+    core:shortLabel "Mainz"@en-gb ;
+    core:slug "mainz"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4fc23804-aa65-46ee-9f68-5ad0044b08dc#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Hertha Berlin"@en-gb ;
+    cms:locator <urn:sports-data:TFBB162> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Hertha Berlin"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/hertha-berlin> ;
+    core:sameAs <http://dbpedia.org/resource/Hertha_BSC> ;
+    core:shortLabel "Hertha Berlin"@en-gb ;
+    core:slug "hertha-berlin"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4a64b2de-a14e-4098-98a4-b60e0bed7d31#id>,
+        <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/523e12b6-7173-4553-a703-b78fde7f1346#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "1. FC Union Berlin"@en-gb ;
+    cms:locator <urn:sports-data:TFBB816> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Union Berlin"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/union-berlin> ;
+    core:sameAs <http://dbpedia.org/resource/1._FC_Union_Berlin> ;
+    core:shortLabel "Union Berlin"@en-gb ;
+    core:slug "union-berlin"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6abc4a67-af36-4abb-8ec2-669e3575e547#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "VfL Wolfsburg"@en-gb ;
+    cms:locator <urn:sports-data:TFBB172> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "VfL Wolfsburg"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/wolfsburg> ;
+    core:sameAs <http://dbpedia.org/resource/VfL_Wolfsburg> ;
+    core:shortLabel "Wolfsburg"@en-gb ;
+    core:slug "wolfsburg"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/77f179b4-9c91-4914-9803-767bb0d3d966#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FC Ingolstadt"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2743> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "FC Ingolstadt"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/ingolstadt> ;
+    core:sameAs <http://dbpedia.org/resource/FC_Ingolstadt_04> ;
+    core:shortLabel "Ingolstadt"@en-gb ;
+    core:slug "ingolstadt"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/77f41f42-507f-4430-91bf-d78d3e8d1c3b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Fortuna Düsseldorf"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1738> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Fortuna Düsseldorf"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/dusseldorf> ;
+    core:sameAs <http://dbpedia.org/resource/Fortuna_Düsseldorf> ;
+    core:shortLabel "Düsseldorf"@en-gb ;
+    core:slug "dusseldorf"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7cfcb1ff-d667-4592-8398-3594b2e917d3#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FC Augsburg"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1772> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "FC Augsburg"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/augsburg> ;
+    core:sameAs <http://dbpedia.org/resource/FC_Augsburg> ;
+    core:shortLabel "Augsburg"@en-gb ;
+    core:slug "augsburg"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/94ba99ae-aeea-42d3-a6f1-71b6cdac0482#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "1899 Hoffenheim"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1902> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "1899 Hoffenheim"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/hoffenheim> ;
+    core:sameAs <http://dbpedia.org/resource/TSG_1899_Hoffenheim> ;
+    core:shortLabel "Hoffenheim"@en-gb ;
+    core:slug "hoffenheim"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a670a2e7-09ce-4ab7-ab2f-03a8678fb295#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "VfB Stuttgart"@en-gb ;
+    sal:videCode "VFBS"@en-gb ;
+    cms:locator <urn:sports-data:TFBB169> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "VfB Stuttgart"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/vfb-stuttgart> ;
+    core:sameAs <http://dbpedia.org/resource/VfB_Stuttgart> ;
+    core:shortLabel "Stuttgart"@en-gb ;
+    core:slug "vfb-stuttgart"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a67f03d8-c536-4376-ba03-a317053472e7#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "RB Leipzig"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6339> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "RB Leipzig"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/leipzig> ;
+    core:sameAs <http://dbpedia.org/resource/RB_Leipzig> ;
+    core:shortLabel "RB Leipzig"@en-gb ;
+    core:slug "leipzig"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id>,
+        <http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/be635de8-c92e-47be-a456-68219c8c99a7#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bayer 04 Leverkusen"@en-gb ;
+    sal:videCode "BAYL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB164> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Bayer 04 Leverkusen"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/bayer-leverkusen> ;
+    core:sameAs <http://dbpedia.org/resource/Bayer_04_Leverkusen>,
+        <http://rdf.freebase.com/ns/m.02hzx8>,
+        <http://www.wikidata.org/entity/Q104761> ;
+    core:shortLabel "B Leverkusen"@en-gb ;
+    core:slug "bayer-leverkusen"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c871db7b-c97b-4e48-8cd4-c43f9cf6cf3b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "SC Freiburg"@en-gb ;
+    cms:locator <urn:sports-data:TFBB160> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "SC Freiburg"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/freiburg> ;
+    core:sameAs <http://dbpedia.org/resource/SC_Freiburg> ;
+    core:shortLabel "Freiburg"@en-gb ;
+    core:slug "freiburg"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c89459f0-13ad-4cec-8bb4-7f4264683228#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FC Schalke 04"@en-gb ;
+    sal:videCode "SCHA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB167> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "FC Schalke 04"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/fc-schalke> ;
+    core:sameAs <http://dbpedia.org/resource/FC_Schalke_04>,
+        <http://rdf.freebase.com/ns/m.024_ql>,
+        <http://www.wikidata.org/entity/Q32494> ;
+    core:shortLabel "Schalke"@en-gb ;
+    core:slug "fc-schalke"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d4ef5090-13c2-4dab-bccb-057f79d6a76c#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "SC Paderborn 07"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1743> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "SC Paderborn"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/paderborn> ;
+    core:sameAs <http://dbpedia.org/resource/SC_Paderborn_07> ;
+    core:shortLabel "Paderborn"@en-gb ;
+    core:slug "paderborn"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d801141d-b1ca-4ef7-80fd-208c00dbae7a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bayern Munich"@en-gb ;
+    sal:videCode "BAYM"@en-gb ;
+    cms:locator <urn:sports-data:TFBB156> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Bayern Munich"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/bayern-munich> ;
+    core:sameAs <http://dbpedia.org/resource/Bayern_Munich>,
+        <http://rdf.freebase.com/ns/m.0175rc> ;
+    core:shortLabel "Bayern Munich"@en-gb ;
+    core:slug "bayern-munich"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e68504a3-fa4d-45c0-93d4-6e6c7e25f9a5#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Borussia Mönchengladbach"@en-gb ;
+    cms:locator <urn:sports-data:TFBB683> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Borussia Mönchengladbach"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/borussia-moenchengladbach> ;
+    core:sameAs <http://dbpedia.org/resource/Borussia_Mönchengladbach> ;
+    core:shortLabel "B Mgladbach"@en-gb ;
+    core:slug "borussia-moenchengladbach"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e6f58a46-bd63-4b0a-85a4-e748e9ca22a5#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "1. FC Köln"@en-gb ;
+    cms:locator <urn:sports-data:TFBB387> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "1. FC Köln"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/koeln> ;
+    core:sameAs <http://dbpedia.org/resource/1._FC_Köln> ;
+    core:shortLabel "Köln"@en-gb ;
+    core:slug "koeln"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4a64b2de-a14e-4098-98a4-b60e0bed7d31#id>,
+        <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f3e8f72a-99b1-40a8-a9d6-9e5fbf7c6cfb#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Werder Bremen"@en-gb ;
+    cms:locator <urn:sports-data:TFBB171> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Werder Bremen"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/werder-bremen> ;
+    core:sameAs <http://dbpedia.org/resource/SV_Werder_Bremen> ;
+    core:shortLabel "Werder Bremen"@en-gb ;
+    core:slug "werder-bremen"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f6c5e9b7-220b-4dcc-810d-51fb575510e0#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Hamburg SV"@en-gb ;
+    cms:locator <urn:sports-data:TFBB161> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Hamburg SV"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/hamburg> ;
+    core:sameAs <http://dbpedia.org/resource/Hamburger_SV> ;
+    core:shortLabel "Hamburg"@en-gb ;
+    core:slug "hamburg"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f76d29fd-ea7c-4880-9b25-cb98acce6185#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Borussia Dortmund"@en-gb ;
+    sal:videCode "DORT"@en-gb ;
+    cms:locator <urn:sports-data:TFBB157> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Borussia Dortmund"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/borussia-dortmund> ;
+    core:sameAs <http://dbpedia.org/resource/Borussia_Dortmund>,
+        <http://rdf.freebase.com/ns/m.01w_d6>,
+        <http://www.wikidata.org/entity/Q41420> ;
+    core:shortLabel "B Dortmund"@en-gb ;
+    core:slug "borussia-dortmund"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/fce24b9e-756c-4620-be0e-e14f5ed70881#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Darmstadt 98"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1756> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Darmstadt 98"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/darmstadt> ;
+    core:sameAs <http://dbpedia.org/resource/SV_Darmstadt_98> ;
+    core:shortLabel "Darmstadt"@en-gb ;
+    core:slug "darmstadt"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ff79ba43-5119-4f92-be14-7b2966f21412#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Eintracht Frankfurt"@en-gb ;
+    cms:locator <urn:sports-data:TFBB159> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Eintracht Frankfurt"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/eintracht-frankfurt> ;
+    core:sameAs <http://dbpedia.org/resource/Eintracht_Frankfurt> ;
+    core:shortLabel "Frankfurt"@en-gb ;
+    core:slug "eintracht-frankfurt"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id>,
+        <http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id>,
+        <http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id>,
+        <http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id>,
+        <http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/sport/football/teams/augsburg> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/bayer-leverkusen> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/bayern-munich> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/borussia-dortmund> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/borussia-moenchengladbach> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/darmstadt> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/dusseldorf> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/eintracht-frankfurt> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/fc-schalke> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/freiburg> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/hamburg> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/hannover> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/hertha-berlin> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/hoffenheim> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/ingolstadt> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/koeln> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/leipzig> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/mainz> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/nuremberg> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/paderborn> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/union-berlin> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/vfb-stuttgart> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/werder-bremen> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/wolfsburg> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<urn:sports-data:TFBB156> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB157> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB159> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB160> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB161> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB162> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB164> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB167> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB169> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB171> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB172> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1738> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1743> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1756> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1772> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1902> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2743> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB387> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6339> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB683> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB684> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB808> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB810> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB816> a cms:Sports-DataLocator .
+

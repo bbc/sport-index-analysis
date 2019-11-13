@@ -1,0 +1,1999 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/e7d98ba2-55ac-4418-8a14-599e8377cbb1#id> a provenance:Dataset ;
+    rdfs:label "Sport: Disciplines" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/disciplines.ttl" ;
+    provenance:changeReason "SWD-868: some sports now have CPS manual indexes" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-07-08T14:04:53+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "56"^^xsd:int .
+
+<http://www.bbc.co.uk/sport/karate> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/skateboarding> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/surfing> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/things/02fb02ee-9e6b-46c3-92e1-db372543facd#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gymnastics"@en-gb ;
+    cms:locator <urn:things-to-do-category:33> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Gymnastics"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/gymnastics> ;
+    core:sameAs <http://dbpedia.org/resource/Gymnastics> ;
+    core:shortLabel "Gymnastics"@en-gb ;
+    core:slug "gymnastics"^^xsd:string .
+
+<http://www.bbc.co.uk/things/039859a4-51ac-447f-a687-728ee2b34817#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bowls"@en-gb ;
+    cms:locator <urn:things-to-do-category:74> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Bowls"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/bowls> ;
+    core:sameAs <http://dbpedia.org/resource/Bowls> ;
+    core:shortLabel "Bowls"@en-gb ;
+    core:slug "bowls"^^xsd:string .
+
+<http://www.bbc.co.uk/things/0887fcc7-2037-459e-a39e-9e38d091235d#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wheelchair Tennis"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Wheelchair Tennis"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Wheelchair_Tennis> ;
+    core:shortLabel "Wheelchair Tennis"@en-gb ;
+    core:slug "wheelchair-tennis"^^xsd:string .
+
+<http://www.bbc.co.uk/things/088d7faa-f62d-4072-b2fb-d48af0fc7fe1#id> a core:Theme,
+        core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Horse Racing"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/horse-racing> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Horse Racing"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Horse_racing>,
+        <http://www.bbc.co.uk/sport/horse-racing> ;
+    core:sameAs <http://dbpedia.org/resource/Horse_racing> ;
+    core:shortLabel "Horse Racing"@en-gb ;
+    core:slug "horse-racing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Tennis"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/tennis>,
+        <urn:things-to-do-category:55> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Tennis"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Tennis>,
+        <http://www.bbc.co.uk/sport/tennis>,
+        <http://www.itftennis.com/>,
+        <http://www.lta.org.uk/>,
+        <http://www.lta.org.uk/in-your-area/scotland/>,
+        <http://www.lta.org.uk/in-your-area/wales/>,
+        <http://www.ulstertennis.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Tennis> ;
+    core:shortLabel "Tennis"@en-gb ;
+    core:slug "tennis"^^xsd:string .
+
+<http://www.bbc.co.uk/things/126190f0-5bd7-7346-a739-39a80c01ae23#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wrestling"@en-gb ;
+    cms:locator <urn:things-to-do-category:63> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Wrestling"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/wrestling>,
+        <http://www.britishwrestling.org/>,
+        <http://www.fila-wrestling.com/>,
+        <http://www.niwrestling.org/>,
+        <http://www.scottishwrestling.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Freestyle_wrestling> ;
+    core:shortLabel "Wrestling"@en-gb ;
+    core:slug "wrestling"^^xsd:string .
+
+<http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Formula 1"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/formula1> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Formula 1"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/formula1> ;
+    core:sameAs <http://dbpedia.org/resource/Formula_One> ;
+    core:shortLabel "Formula 1"@en-gb ;
+    core:slug "formula1"^^xsd:string .
+
+<http://www.bbc.co.uk/things/1ba0cae8-de35-4d71-9177-e4291295311b#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Karate"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Karate"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Karate> ;
+    core:shortLabel "Karate"@en-gb ;
+    core:slug "karate"^^xsd:string .
+
+<http://www.bbc.co.uk/things/1e069d7e-8dbd-43db-87a0-137e4009fb17#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "American Football"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/american-football>,
+        <urn:things-to-do-category:68> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "American Football"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/american-football> ;
+    core:sameAs <http://dbpedia.org/resource/American_football> ;
+    core:shortLabel "American Football"@en-gb ;
+    core:slug "american-football"^^xsd:string .
+
+<http://www.bbc.co.uk/things/1f712c02-df3c-420f-8efb-ba6da0b7f015#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Boccia"@en-gb ;
+    cms:locator <urn:things-to-do-category:66> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Boccia"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Boccia> ;
+    core:shortLabel "Boccia"@en-gb ;
+    core:slug "boccia"^^xsd:string .
+
+<http://www.bbc.co.uk/things/219d52a8-615e-4c43-bbdc-f52235a1c2ed#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Beach Volleyball"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Beach Volleyball"@en-gb ;
+    core:primaryTopicOf <http://www.fivb.org/EN/BeachVolleyball/>,
+        <http://www.nivb.com/index.php>,
+        <http://www.scottishvolleyball.org/>,
+        <http://www.volleyballengland.org/beach>,
+        <http://www.volleyballwales.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Beach_volleyball> ;
+    core:shortLabel "Beach Volleyball"@en-gb ;
+    core:slug "beach-volleyball"^^xsd:string .
+
+<http://www.bbc.co.uk/things/21c45f67-36da-874e-ab36-02650add8311#id> a core:Theme,
+        core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Badminton"@en-gb ;
+    cms:locator <urn:things-to-do-category:15> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Badminton"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Badminton>,
+        <http://www.badmintonengland.co.uk/homepage.asp>,
+        <http://www.badmintonireland.com/>,
+        <http://www.badmintonscotland.org.uk/>,
+        <http://www.badmintonwales.net/>,
+        <http://www.bbc.co.uk/sport/badminton>,
+        <http://www.bwfbadminton.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Badminton> ;
+    core:shortLabel "Badminton"@en-gb ;
+    core:slug "badminton"^^xsd:string .
+
+<http://www.bbc.co.uk/things/24c87ae7-78db-449b-b398-ca4237d251e5#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Biathlon"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Biathlon"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/biathlon> ;
+    core:sameAs <http://dbpedia.org/resource/Biathlon> ;
+    core:shortLabel "Biathlon"@en-gb ;
+    core:slug "biathlon"^^xsd:string .
+
+<http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Basketball"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/basketball>,
+        <urn:things-to-do-category:17> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Basketball"@en-gb ;
+    core:primaryTopicOf <http://www.basketball-scotland.com/>,
+        <http://www.basketballni.com/>,
+        <http://www.basketballwales.com/>,
+        <http://www.bbc.co.uk/sport/basketball>,
+        <http://www.englandbasketball.co.uk/>,
+        <http://www.fiba.com/> ;
+    core:sameAs <http://dbpedia.org/resource/Basketball> ;
+    core:shortLabel "Basketball"@en-gb ;
+    core:slug "basketball"^^xsd:string .
+
+<http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Rugby League"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/rugby-league>,
+        <urn:things-to-do-category:94> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Rugby League"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-league> ;
+    core:sameAs <http://dbpedia.org/resource/Rugby_league> ;
+    core:shortLabel "Rugby League"@en-gb ;
+    core:slug "rugby-league"^^xsd:string .
+
+<http://www.bbc.co.uk/things/34c47f0b-ba75-0c40-8f01-d53cb40fcfa2#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cycling - Track"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Cycling Track"@en-gb ;
+    core:primaryTopicOf <http://www.britishcycling.org.uk>,
+        <http://www.britishcycling.org.uk/scotland>,
+        <http://www.cyclingireland.ie/Home.aspx>,
+        <http://www.uci.ch/templates/UCI/UCI8/layout.asp?MenuId=MTYzMjg&LangId=1>,
+        <http://www.welshcycling.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Track_cycling> ;
+    core:shortLabel "Cycling - Track"@en-gb ;
+    core:slug "cycling-track"^^xsd:string .
+
+<http://www.bbc.co.uk/things/3637ee90-a161-4cfd-8ee1-101c3405795f#id> a core:Theme,
+        core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Motorcycle Speedway"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Motorcycle Speedway"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Motorcycle_speedway> ;
+    core:sameAs <http://dbpedia.org/resource/Motorcycle_speedway> ;
+    core:shortLabel "Motorcycle Speedway"@en-gb ;
+    core:slug "motorcycle-speedway"^^xsd:string .
+
+<http://www.bbc.co.uk/things/3d556f88-c802-4fcc-9c25-469d2ba7b42a#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Rugby Sevens"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Rugby Sevens"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-sevens> ;
+    core:sameAs <http://dbpedia.org/resource/Rugby_sevens> ;
+    core:shortLabel "Rugby Sevens"@en-gb ;
+    core:slug "rugby-sevens"^^xsd:string .
+
+<http://www.bbc.co.uk/things/3d5e63ec-1f4f-c24c-86ad-fd5d54e014f6#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Handball"@en-gb ;
+    cms:locator <urn:things-to-do-category:35> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Handball"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/handball>,
+        <http://www.britishhandball.com/DesktopDefault.aspx?menuid=13128>,
+        <http://www.englandhandball.com/handball/>,
+        <http://www.ihf.info/>,
+        <http://www.scottishhandball.com/DesktopDefault.aspx?menuid=13483> ;
+    core:sameAs <http://dbpedia.org/resource/Handball> ;
+    core:shortLabel "Handball"@en-gb ;
+    core:slug "handball"^^xsd:string .
+
+<http://www.bbc.co.uk/things/3e8c2d0d-7c01-4d32-a1eb-ff8e7733e303#id> a core:Theme,
+        core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Rugby"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Rugby"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Rugby_football> ;
+    core:sameAs <http://dbpedia.org/resource/Rugby_football> ;
+    core:shortLabel "Rugby"@en-gb ;
+    core:slug "rugby"^^xsd:string .
+
+<http://www.bbc.co.uk/things/40defff9-abc0-4cfa-bf7b-5e467b9a6fce#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Superbikes"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Superbikes"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Superbike_racing> ;
+    core:shortLabel "Superbikes"@en-gb ;
+    core:slug "superbikes"^^xsd:string .
+
+<http://www.bbc.co.uk/things/41676c21-b7ec-4730-9505-38f8dccb5403#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wheelchair Rugby"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Wheelchair Rugby"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Wheelchair_Rugby> ;
+    core:shortLabel "Wheelchair Rugby"@en-gb ;
+    core:slug "wheelchair-rugby"^^xsd:string .
+
+<http://www.bbc.co.uk/things/452019a5-f0f2-0c47-aa11-42fdcf2ae16b#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Rowing"@en-gb ;
+    cms:locator <urn:things-to-do-category:43> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Rowing"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Rowing_(sport)>,
+        <http://www.bbc.co.uk/sport/rowing>,
+        <http://www.britishrowing.org/>,
+        <http://www.iaru.ie/>,
+        <http://www.scottish-rowing.org.uk/>,
+        <http://www.welshrowing.com/index.html>,
+        <http://www.worldrowing.com/> ;
+    core:sameAs <http://dbpedia.org/resource/Rowing_(sport)> ;
+    core:shortLabel "Rowing"@en-gb ;
+    core:slug "rowing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/485f8f94-f87e-4513-b133-46a5dfccd428#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Figure Skating"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Figure Skating"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/figure-skating> ;
+    core:sameAs <http://dbpedia.org/resource/Figure_Skating> ;
+    core:shortLabel "Figure Skating"@en-gb ;
+    core:slug "figure-skating"^^xsd:string .
+
+<http://www.bbc.co.uk/things/4d38153b-987e-4497-b959-8be7c968d4d1#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Alpine Skiing"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Alpine Skiing"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/alpine-skiing> ;
+    core:sameAs <http://dbpedia.org/resource/Alpine_Skiing> ;
+    core:shortLabel "Alpine Skiing"@en-gb ;
+    core:slug "alpine-skiing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/4d62f2ca-861b-4db6-bc36-e2e537031718#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Baseball"@en-gb ;
+    cms:locator <urn:things-to-do-category:72> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Baseball"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/baseball> ;
+    core:sameAs <http://dbpedia.org/resource/Baseball> ;
+    core:shortLabel "Baseball"@en-gb ;
+    core:slug "baseball"^^xsd:string .
+
+<http://www.bbc.co.uk/things/521df978-7583-4e19-ad6d-2a83a595a8a6#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bobsleigh"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Bobsleigh"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/bobsleigh> ;
+    core:sameAs <http://dbpedia.org/resource/Bobsleigh> ;
+    core:shortLabel "Bobsleigh"@en-gb ;
+    core:slug "bobsleigh"^^xsd:string .
+
+<http://www.bbc.co.uk/things/53accf6c-631b-9140-852a-109fab88d3f8#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Modern Pentathlon"@en-gb ;
+    cms:locator <urn:things-to-do-category:41> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Modern Pentathlon"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/modern-pentathlon>,
+        <http://www.pentathlon-scotland.org/>,
+        <http://www.pentathlon.org/>,
+        <http://www.pentathlongb.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Modern_pentathlon> ;
+    core:shortLabel "Modern Pentathlon"@en-gb ;
+    core:slug "modern-pentathlon"^^xsd:string .
+
+<http://www.bbc.co.uk/things/59ac9a3a-5a8f-4143-bd71-3268762cefc1#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ice Hockey"@en-gb ;
+    cms:locator <urn:things-to-do-category:37> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Ice Hockey"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/ice-hockey> ;
+    core:sameAs <http://dbpedia.org/resource/Ice_Hockey> ;
+    core:shortLabel "Ice Hockey"@en-gb ;
+    core:slug "ice-hockey"^^xsd:string .
+
+<http://www.bbc.co.uk/things/5a9bba82-5f5e-f343-9df7-48fc6d6a008e#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Fencing"@en-gb ;
+    cms:locator <urn:things-to-do-category:29> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Fencing"@en-gb ;
+    core:primaryTopicOf <http://nifencing.com/>,
+        <http://scottish-fencing.co.uk/>,
+        <http://www.bbc.co.uk/sport/fencing>,
+        <http://www.englandfencing.org.uk/>,
+        <http://www.fie.ch/>,
+        <http://www.welshfencing.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Fencing> ;
+    core:shortLabel "Fencing"@en-gb ;
+    core:slug "fencing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/5b95d205-6cff-4cf1-8fc9-475b29e17511#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Squash"@en-gb ;
+    cms:locator <urn:things-to-do-category:98> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Squash"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/squash> ;
+    core:sameAs <http://dbpedia.org/resource/Squash> ;
+    core:shortLabel "Squash"@en-gb ;
+    core:slug "squash"^^xsd:string .
+
+<http://www.bbc.co.uk/things/5d4c0236-5f3c-7849-a765-c1de4004025c#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cycling - BMX"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Cycling BMX"@en-gb ;
+    core:primaryTopicOf <http://www.britishcycling.org.uk>,
+        <http://www.britishcycling.org.uk/scotland>,
+        <http://www.cyclingireland.ie/Home.aspx>,
+        <http://www.uci.ch/templates/UCI/UCI5/layout.asp?MenuId=MTI2MDA&LangId=1>,
+        <http://www.welshcycling.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/BMX> ;
+    core:shortLabel "Cycling - BMX"@en-gb ;
+    core:slug "cycling-bmx"^^xsd:string .
+
+<http://www.bbc.co.uk/things/654f550c-0c2d-2341-a8f5-66e3a9ba28ba#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Judo"@en-gb ;
+    cms:locator <urn:things-to-do-category:39> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Judo"@en-gb ;
+    core:primaryTopicOf <http://nijudo.com/>,
+        <http://www.bbc.co.uk/sport/judo>,
+        <http://www.britishjudo.org.uk/home/index.php>,
+        <http://www.intjudo.eu/>,
+        <http://www.judoscotland.com/>,
+        <http://www.welshjudo.com/> ;
+    core:sameAs <http://dbpedia.org/resource/Judo> ;
+    core:shortLabel "Judo"@en-gb ;
+    core:slug "judo"^^xsd:string .
+
+<http://www.bbc.co.uk/things/69cbc5e2-b228-a143-8085-860c053f44f7#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Taekwondo"@en-gb ;
+    cms:locator <urn:things-to-do-category:53> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Taekwondo"@en-gb ;
+    core:primaryTopicOf <http://itfwales.com/wordpress/>,
+        <http://www.bbc.co.uk/sport/taekwondo>,
+        <http://www.britishtaekwondocouncil.org/>,
+        <http://www.itftkd.org/>,
+        <http://www.taekwondoscotland.org/>,
+        <http://www.tani.org.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Taekwondo> ;
+    core:shortLabel "Taekwondo"@en-gb ;
+    core:slug "taekwondo"^^xsd:string .
+
+<http://www.bbc.co.uk/things/6b04e406-c181-204b-a2dd-bc20142b9e6a#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Weightlifting"@en-gb ;
+    cms:locator <urn:things-to-do-category:61> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Weightlifting"@en-gb ;
+    core:primaryTopicOf <http://welshweightlifting.tumblr.com/>,
+        <http://www.bbc.co.uk/sport/weightlifting>,
+        <http://www.britishweightlifting.org/>,
+        <http://www.iwf.net/> ;
+    core:sameAs <http://dbpedia.org/resource/Weightlifting> ;
+    core:shortLabel "Weightlifting"@en-gb ;
+    core:slug "weightlifting"^^xsd:string .
+
+<http://www.bbc.co.uk/things/6ee5960a-e0d5-e545-aac8-fc67b0618710#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gymnastics - Artistic"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Gymnastics Artistic"@en-gb ;
+    core:primaryTopicOf <http://www.englishgymnastics.org.uk/page.asp?node=1&dec=Home>,
+        <http://www.fig-gymnastics.com/vsite/vnavsite/page/directory/0,10853,5187-188042-205264-nav-list,00.html>,
+        <http://www.northernirelandgymnastics.org/home.html>,
+        <http://www.scottishgymnastics.org/>,
+        <http://www.welshgymnastics.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Artistic_gymnastics> ;
+    core:shortLabel "Gymnastics - Artistic"@en-gb ;
+    core:slug "gymnastics-artistic"^^xsd:string .
+
+<http://www.bbc.co.uk/things/7b9b56fd-7c21-9b49-8c11-ce9854cb1ba4#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Canoe Sprint"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Canoe Sprint"@en-gb ;
+    core:primaryTopicOf <http://www.cani.org.uk/>,
+        <http://www.canoe-england.org.uk/>,
+        <http://www.canoeicf.com/icf/Aboutoursport/Canoe-Sprint.html>,
+        <http://www.canoescotland.org/>,
+        <http://www.canoewales.com/> ;
+    core:sameAs <http://dbpedia.org/resource/Canoe_racing#Sprint> ;
+    core:shortLabel "Canoe Sprint"@en-gb ;
+    core:slug "canoe-sprint"^^xsd:string .
+
+<http://www.bbc.co.uk/things/7e4ba3a7-909a-473f-b332-95b5ed42c213#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cycling"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/cycling>,
+        <urn:things-to-do-category:23> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Cycling"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cycling> ;
+    core:sameAs <http://dbpedia.org/resource/Cycling_sport> ;
+    core:shortLabel "Cycling"@en-gb ;
+    core:slug "cycling"^^xsd:string .
+
+<http://www.bbc.co.uk/things/7e517328-5306-49a4-addb-37a94a2be3bb#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Canoeing"@en-gb ;
+    cms:locator <urn:things-to-do-category:21> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Canoeing"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/canoeing> ;
+    core:sameAs <http://dbpedia.org/resource/Canoe_racing> ;
+    core:shortLabel "Canoeing"@en-gb ;
+    core:slug "canoeing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/869e0ec9-af00-4f2b-82b6-b760d69a4492#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Darts"@en-gb ;
+    cms:locator <urn:things-to-do-category:8> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Darts"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/darts> ;
+    core:sameAs <http://dbpedia.org/resource/Darts> ;
+    core:shortLabel "Darts"@en-gb ;
+    core:slug "darts"^^xsd:string .
+
+<http://www.bbc.co.uk/things/8f5a0681-b6cf-4d1d-a810-e50d70f824ce#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wheelchair Basketball"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Wheelchair Basketball"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Wheelchair_Basketball> ;
+    core:shortLabel "Wheelchair Basketball"@en-gb ;
+    core:slug "wheelchair-basketball"^^xsd:string .
+
+<http://www.bbc.co.uk/things/8fdc4c32-3d0c-4814-9d69-3bf1269135df#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ski Jumping"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Ski Jumping"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/ski-jumping> ;
+    core:sameAs <http://dbpedia.org/resource/Ski_jumping> ;
+    core:shortLabel "Ski Jumping"@en-gb ;
+    core:slug "ski-jumping"^^xsd:string .
+
+<http://www.bbc.co.uk/things/9128f810-9feb-7546-ac3d-645cee9f5712#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gymnastics - Trampoline"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Trampoline"@en-gb ;
+    core:primaryTopicOf <http://www.englishgymnastics.org.uk/page.asp?node=1&dec=Home>,
+        <http://www.fig-gymnastics.com/vsite/vnavsite/page/directory/0,10853,5187-188045-205267-nav-list,00.html>,
+        <http://www.northernirelandgymnastics.org/home.html>,
+        <http://www.scottishgymnastics.org/>,
+        <http://www.welshgymnastics.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Trampolining> ;
+    core:shortLabel "Gymnastics - Trampoline"@en-gb ;
+    core:slug "gymnastics-trampoline"^^xsd:string .
+
+<http://www.bbc.co.uk/things/921a13d0-6fc6-6740-af87-8af4655ec20f#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Boxing"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/boxing>,
+        <urn:things-to-do-category:19> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Boxing"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Boxing>,
+        <http://welshboxingassociation.org/>,
+        <http://www.abae.co.uk/aba/>,
+        <http://www.amateurboxingscotland.co.uk/>,
+        <http://www.bbc.co.uk/sport/boxing>,
+        <http://www.iaba.ie/boxing/Main/Home.htm>,
+        <http://www.ibf-usba-boxing.com/> ;
+    core:sameAs <http://dbpedia.org/resource/Boxing> ;
+    core:shortLabel "Boxing"@en-gb ;
+    core:slug "boxing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/934b800d-5689-4fb9-bafa-47dd2b51822c#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wheelchair Fencing"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Wheelchair Fencing"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Wheelchair_fencing> ;
+    core:shortLabel "Wheelchair Fencing"@en-gb ;
+    core:slug "wheelchair-fencing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/993dde29-b0bf-4ceb-b3b2-ad20faf9c539#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Netball"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/netball>,
+        <urn:things-to-do-category:90> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Netball"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/netball> ;
+    core:sameAs <http://dbpedia.org/resource/Netball> ;
+    core:shortLabel "Netball"@en-gb ;
+    core:slug "netball"^^xsd:string .
+
+<http://www.bbc.co.uk/things/99984ee5-007a-473a-a83d-29814b224bb8#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Powerlifting"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Powerlifting"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Powerlifting> ;
+    core:shortLabel "Powerlifting"@en-gb ;
+    core:slug "powerlifting"^^xsd:string .
+
+<http://www.bbc.co.uk/things/9ceaa6a2-4fd2-5a41-8621-5055dd6c9a8c#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cycling - Mountain Bike"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Cycling Mountain Bike"@en-gb ;
+    core:primaryTopicOf <http://www.britishcycling.org.uk>,
+        <http://www.britishcycling.org.uk/scotland>,
+        <http://www.cyclingireland.ie/Home.aspx>,
+        <http://www.uci.ch/Templates/UCI/UCI5/layout.asp?MenuID=MTYxNw&LangId=1>,
+        <http://www.welshcycling.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Mountain_biking> ;
+    core:shortLabel "Cycling - Mountain Bike"@en-gb ;
+    core:slug "cycling-mountain-bike"^^xsd:string .
+
+<http://www.bbc.co.uk/things/a5695e6f-2e4c-1b42-9b11-af0862edbb2a#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Swimming"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/swimming>,
+        <urn:things-to-do-category:49> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Swimming"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Swimming_(sport)>,
+        <http://www.bbc.co.uk/sport/swimming>,
+        <http://www.fina.org/>,
+        <http://www.scottishswimming.com/>,
+        <http://www.swimming.org/asa/>,
+        <http://www.swimulster.net/>,
+        <http://www.welshasa.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Swimming_(sport)> ;
+    core:shortLabel "Swimming"@en-gb ;
+    core:slug "swimming"^^xsd:string .
+
+<http://www.bbc.co.uk/things/a6315c80-6bd3-4be1-a40d-869e49e1a94f#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cross-Country Skiing"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Cross-Country Skiing"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/cross-country-skiing> ;
+    core:sameAs <http://dbpedia.org/resource/Cross_country_skiing> ;
+    core:shortLabel "Cross-Country"@en-gb ;
+    core:slug "cross-country-skiing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/a7b083b7-0d8b-45d8-9f09-54e6432dacb5#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Skeleton"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Skeleton"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/skeleton> ;
+    core:sameAs <http://dbpedia.org/resource/Skeleton_(sport)> ;
+    core:shortLabel "Skeleton"@en-gb ;
+    core:slug "skeleton"^^xsd:string .
+
+<http://www.bbc.co.uk/things/aa5ecf71-63d3-460f-a98d-5cab5a9a3baa#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Skateboarding"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Skateboarding"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Skateboarding> ;
+    core:shortLabel "Skateboarding"@en-gb ;
+    core:slug "skateboarding"^^xsd:string .
+
+<http://www.bbc.co.uk/things/b08bbfea-d065-4ef5-b38f-0e034d42534f#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Speed Skating"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Speed Skating"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/speed-skating> ;
+    core:sameAs <http://dbpedia.org/resource/Speed_skating> ;
+    core:shortLabel "Speed Skating"@en-gb ;
+    core:slug "speed-skating"^^xsd:string .
+
+<http://www.bbc.co.uk/things/b3a086df-ab42-2b44-be8b-76b600bfcdce#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Athletics"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/athletics>,
+        <urn:things-to-do-category:13> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Athletics"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Athletics_(sport)>,
+        <http://www.athleticsni.org/>,
+        <http://www.bbc.co.uk/sport/athletics>,
+        <http://www.englandathletics.org/>,
+        <http://www.iaaf.org/>,
+        <http://www.scottishathletics.org.uk/>,
+        <http://www.welshathletics.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Athletics_(sport)> ;
+    core:shortLabel "Athletics"@en-gb ;
+    core:slug "athletics"^^xsd:string .
+
+<http://www.bbc.co.uk/things/b773195a-9880-4773-88d4-50d36260fe12#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Rugby Union"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/rugby-union>,
+        <urn:things-to-do-category:96> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Rugby Union"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/rugby-union> ;
+    core:sameAs <http://dbpedia.org/resource/Rugby_Union> ;
+    core:shortLabel "Rugby Union"@en-gb ;
+    core:slug "rugby-union"^^xsd:string ;
+    rdfs:seeAlso <http://www.bbc.co.uk/things/71ee11b0-807f-47ed-b552-3db8c885fb74#id>,
+        <http://www.bbc.co.uk/things/d47e3ae5-3e19-4d3d-8b06-aae7fc93ac71#id>,
+        <http://www.bbc.co.uk/things/fcc32da4-266f-4e5f-8eae-4cf0a8ca1f79#id> .
+
+<http://www.bbc.co.uk/things/b84fd4d8-b7b5-5b45-9f7a-d701c9f3907f#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Equestrian"@en-gb ;
+    cms:locator <urn:things-to-do-category:27> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Equestrian"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/equestrian>,
+        <http://www.bef.co.uk/>,
+        <http://www.fei.org/>,
+        <http://www.horsescotland.org/>,
+        <http://www.horsesportireland.ie/> ;
+    core:sameAs <http://dbpedia.org/resource/Equestrianism> ;
+    core:shortLabel "Equestrian"@en-gb ;
+    core:slug "equestrian"^^xsd:string .
+
+<http://www.bbc.co.uk/things/b9a58a01-0c74-8b47-972f-68f922ebd90a#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Archery"@en-gb ;
+    cms:locator <urn:things-to-do-category:11> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Archery"@en-gb ;
+    core:primaryTopicOf <http://www.archery.org/>,
+        <http://www.bbc.co.uk/sport/archery>,
+        <http://www.englisharcheryfederation.org/>,
+        <http://www.niarchery.co.uk/>,
+        <http://www.scottisharchery.org.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Archery> ;
+    core:shortLabel "Archery"@en-gb ;
+    core:slug "archery"^^xsd:string .
+
+<http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Football"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/football>,
+        <urn:things-to-do-category:31> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Football"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Association_football>,
+        <http://www.bbc.co.uk/sport/football>,
+        <http://www.faw.org.uk/>,
+        <http://www.fifa.com/>,
+        <http://www.irishfa.com/>,
+        <http://www.scottishfa.co.uk/>,
+        <http://www.thefa.com/> ;
+    core:sameAs <http://dbpedia.org/resource/Association_football> ;
+    core:shortLabel "Football"@en-gb ;
+    core:slug "football"^^xsd:string ;
+    rdfs:seeAlso <http://www.bbc.co.uk/things/1fcfda6d-f50e-4367-8208-ac1415d3d613#id>,
+        <http://www.bbc.co.uk/things/388b5f68-acbe-4643-9e6c-7f734b5d016d#id>,
+        <http://www.bbc.co.uk/things/9d258752-018b-4871-9b44-44921d3f3e5e#id>,
+        <http://www.bbc.co.uk/things/d3b859fd-fe4d-4f36-abf5-a2e3c41c5b8c#id>,
+        <http://www.bbc.co.uk/things/e05a00e2-7c37-4af9-a7d8-0202dd1f00f8#id> .
+
+<http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> a core:Theme,
+        core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cricket"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/cricket>,
+        <urn:things-to-do-category:76> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Cricket"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Cricket>,
+        <http://www.bbc.co.uk/sport/cricket> ;
+    core:sameAs <http://dbpedia.org/resource/Cricket> ;
+    core:shortLabel "Cricket"@en-gb ;
+    core:slug "cricket"^^xsd:string .
+
+<http://www.bbc.co.uk/things/bd51d530-f0fb-684e-a305-3f15b7e6d4a1#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Synchronised Swimming"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Synchronised Swimming"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/synchronised-swimming>,
+        <http://www.fina.org/>,
+        <http://www.scottishswimming.com/>,
+        <http://www.swimming.org/asa/>,
+        <http://www.swimulster.net/>,
+        <http://www.welshasa.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Synchronized_swimming> ;
+    core:shortLabel "Sync Swimming"@en-gb ;
+    core:slug "synchronised-swimming"^^xsd:string .
+
+<http://www.bbc.co.uk/things/c26d7906-7843-4997-b7d7-f834b82b7919#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Short Track Skating"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Short Track Skating"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/short-track-skating> ;
+    core:sameAs <http://dbpedia.org/resource/Short_track_speed_skating> ;
+    core:shortLabel "Short Track"@en-gb ;
+    core:slug "short-track-skating"^^xsd:string .
+
+<http://www.bbc.co.uk/things/c5d39deb-46b8-1e4e-ba2c-5c6e2436b92d#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Triathlon"@en-gb ;
+    cms:locator <urn:things-to-do-category:57> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Triathlon"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/triathlon>,
+        <http://www.britishtriathlon.org/>,
+        <http://www.triathlon.org/>,
+        <http://www.triathlonscotland.org/>,
+        <http://www.triathlonulster.org/>,
+        <http://www.welshtriathlon.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Triathlon> ;
+    core:shortLabel "Triathlon"@en-gb ;
+    core:slug "triathlon"^^xsd:string .
+
+<http://www.bbc.co.uk/things/c6e2a7ac-2d13-8640-9f98-41f749d94a6e#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Volleyball"@en-gb ;
+    cms:locator <urn:things-to-do-category:59> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Volleyball"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/volleyball>,
+        <http://www.fivb.org/en/volleyball/index.asp>,
+        <http://www.nivb.com/index.php>,
+        <http://www.scottishvolleyball.org/>,
+        <http://www.volleyballengland.org>,
+        <http://www.volleyballwales.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Volleyball> ;
+    core:shortLabel "Volleyball"@en-gb ;
+    core:slug "volleyball"^^xsd:string .
+
+<http://www.bbc.co.uk/things/c7735805-861d-48a7-a180-afacf1f716bb#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sitting Volleyball"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Sitting Volleyball"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Sitting_Volleyball> ;
+    core:shortLabel "Sitting Volleyball"@en-gb ;
+    core:slug "sitting-volleyball"^^xsd:string .
+
+<http://www.bbc.co.uk/things/c7ddc4d2-3efa-4e4c-8bd0-81f0de0634c8#id> a sport:SportsDiscipline ;
+    sal:name "Climbing"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/climbing> ;
+    core:slug "climbing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/cd26e358-f761-4ebe-8bc2-9b8648e04bb5#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Surfing"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Surfing"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Surfing> ;
+    core:shortLabel "Surfing"@en-gb ;
+    core:slug "surfing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/d06b1e90-c9fe-4e09-9b4a-e0f285da8920#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Luge"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Luge"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/luge> ;
+    core:sameAs <http://dbpedia.org/resource/Luge> ;
+    core:shortLabel "Luge"@en-gb ;
+    core:slug "luge"^^xsd:string .
+
+<http://www.bbc.co.uk/things/d18285f8-e619-4cf3-99d8-8fa5f4913dcf#id> a sport:SportsDiscipline ;
+    sal:name "Mixed Martial Arts"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/mixed-martial-arts> ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/mixed-martial-arts> ;
+    core:slug "mixed-martial-arts"^^xsd:string .
+
+<http://www.bbc.co.uk/things/d5844b24-1e62-4bec-b4e5-bc0e17fe3c8d#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Snowboarding"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Snowboarding"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/snowboarding> ;
+    core:sameAs <http://dbpedia.org/resource/Snowboarding> ;
+    core:shortLabel "Snowboarding"@en-gb ;
+    core:slug "snowboarding"^^xsd:string .
+
+<http://www.bbc.co.uk/things/d65c5dce-f5e4-4340-931b-16ca1848d092#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sailing"@en-gb ;
+    cms:locator <urn:things-to-do-category:45> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Sailing"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/sailing>,
+        <http://www.rya.org.uk/Pages/Home.aspx>,
+        <http://www.ryani.org.uk/>,
+        <http://www.ryascotland.org.uk/aboutus/Pages/default.aspx>,
+        <http://www.sailing.org/>,
+        <http://www.welshsailing.org/Pages/default.aspx> ;
+    core:sameAs <http://dbpedia.org/resource/Sailing_(sport)> ;
+    core:shortLabel "Sailing"@en-gb ;
+    core:slug "sailing"^^xsd:string .
+
+<http://www.bbc.co.uk/things/d7cab341-67c6-43e4-8d6c-c4ba352e2765#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Rallying"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Rallying"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Rallying> ;
+    core:shortLabel "Rallying"@en-gb ;
+    core:slug "rallying"^^xsd:string .
+
+<http://www.bbc.co.uk/things/d9d6cc4d-79f1-ab49-9c9e-c98d166b99fe#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Diving"@en-gb ;
+    cms:locator <urn:things-to-do-category:25> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Diving"@en-gb ;
+    core:primaryTopicOf <hhttp://www.swimulster.net/>,
+        <http://www.bbc.co.uk/sport/diving>,
+        <http://www.fina.org/>,
+        <http://www.scottishswimming.com/>,
+        <http://www.swimming.org/asa/>,
+        <http://www.welshasa.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Diving> ;
+    core:shortLabel "Diving"@en-gb ;
+    core:slug "diving"^^xsd:string .
+
+<http://www.bbc.co.uk/things/dd4191d5-115d-46b9-8f18-d1da16c6a3e8#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Curling"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Curling"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/curling> ;
+    core:sameAs <http://dbpedia.org/resource/Curling> ;
+    core:shortLabel "Curling"@en-gb ;
+    core:slug "curling"^^xsd:string .
+
+<http://www.bbc.co.uk/things/e3f61624-ad0d-0e45-b138-f583bfc9f6bd#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cycling - Road"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Cycling Road"@en-gb ;
+    core:primaryTopicOf <http://www.britishcycling.org.uk>,
+        <http://www.britishcycling.org.uk/scotland>,
+        <http://www.cyclingireland.ie/Home.aspx>,
+        <http://www.uci.ch/templates/UCI/UCI5/layout.asp?MenuId=MTkyNw&LangId=1>,
+        <http://www.welshcycling.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Road_bicycle_racing> ;
+    core:shortLabel "Cycling - Road"@en-gb ;
+    core:slug "cycling-road"^^xsd:string .
+
+<http://www.bbc.co.uk/things/e4d61a41-dba2-7849-a725-d8b445ec3cbc#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Water Polo"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Water Polo"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/water-polo>,
+        <http://www.fina.org/>,
+        <http://www.scottishswimming.com/>,
+        <http://www.swimming.org/asa/>,
+        <http://www.swimulster.net/>,
+        <http://www.welshasa.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Water_Polo> ;
+    core:shortLabel "Water Polo"@en-gb ;
+    core:slug "water-polo"^^xsd:string .
+
+<http://www.bbc.co.uk/things/e681e822-b849-0243-b698-1b9afe3f3858#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Hockey"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Hockey"@en-gb ;
+    core:primaryTopicOf <http://englandhockey.co.uk/>,
+        <http://hockeywales.org.uk>,
+        <http://www.bbc.co.uk/sport/hockey>,
+        <http://www.fih.ch/en/home>,
+        <http://www.scottish-hockey.org.uk/>,
+        <http://www.ulsterhockey.com/hockey/index.php> ;
+    core:sameAs <http://dbpedia.org/resource/Hockey> ;
+    core:shortLabel "Hockey"@en-gb ;
+    core:slug "hockey"^^xsd:string .
+
+<http://www.bbc.co.uk/things/e6e040e5-c2a2-4a2c-a132-dcc55147d8b5#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Golf"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/golf>,
+        <urn:things-to-do-category:84> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Golf"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/golf> ;
+    core:sameAs <http://dbpedia.org/resource/Golf> ;
+    core:shortLabel "Golf"@en-gb ;
+    core:slug "golf"^^xsd:string .
+
+<http://www.bbc.co.uk/things/ec975ffc-9b1d-5149-a2b7-aea59c5cafbe#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Gymnastics - Rhythmic"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Gymnastics Rhythmic"@en-gb ;
+    core:primaryTopicOf <http://www.englishgymnastics.org.uk/page.asp?node=1&dec=Home>,
+        <http://www.fig-gymnastics.com/vsite/vnavsite/page/directory/0,10853,5187-188044-205266-nav-list,00.html>,
+        <http://www.northernirelandgymnastics.org/home.html>,
+        <http://www.scottishgymnastics.org/>,
+        <http://www.welshgymnastics.org/> ;
+    core:sameAs <http://dbpedia.org/resource/Rhythmic_gymnastics> ;
+    core:shortLabel "Gymnastics - Rhythmic"@en-gb ;
+    core:slug "gymnastics-rhythmic"^^xsd:string .
+
+<http://www.bbc.co.uk/things/eceae071-5f37-0848-acd2-f21e3b2de8ca#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Shooting"@en-gb ;
+    cms:locator <urn:things-to-do-category:47> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Shooting"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/shooting>,
+        <http://www.issf-sports.org/>,
+        <http://www.nra.org.uk/>,
+        <http://www.stsf.org.uk/>,
+        <http://www.ulsterrifleassociation.org.uk/>,
+        <http://www.wtsf.org.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Shooting_sport> ;
+    core:shortLabel "Shooting"@en-gb ;
+    core:slug "shooting"^^xsd:string .
+
+<http://www.bbc.co.uk/things/eff3e927-07e0-4d50-91f9-c6691f1806d7#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Goalball"@en-gb ;
+    cms:locator <urn:things-to-do-category:64> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Goalball"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Goalball> ;
+    core:shortLabel "Goalball"@en-gb ;
+    core:slug "goalball"^^xsd:string .
+
+<http://www.bbc.co.uk/things/f102a51c-1276-4d55-901a-575d63ca263c#id> a core:Theme,
+        core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Snooker"@en-gb ;
+    cms:locator <https://api.bbc.co.uk/content/asset/sport/snooker> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Snooker"@en-gb ;
+    core:primaryTopicOf <http://en.wikipedia.org/wiki/Snooker>,
+        <http://www.bbc.co.uk/sport/snooker> ;
+    core:sameAs <http://dbpedia.org/resource/Snooker> ;
+    core:shortLabel "Snooker"@en-gb ;
+    core:slug "snooker"^^xsd:string .
+
+<http://www.bbc.co.uk/things/f21d1a82-e919-b24f-b3fb-8f2f46372f40#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Table Tennis"@en-gb ;
+    cms:locator <urn:things-to-do-category:51> ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Table Tennis"@en-gb ;
+    core:primaryTopicOf <http://etta.co.uk/>,
+        <http://www.bbc.co.uk/sport/table-tennis>,
+        <http://www.irishtabletennis.com/itta/ulster/>,
+        <http://www.ittf.com/>,
+        <http://www.tabletennisscotland.com/>,
+        <http://www.ttaw.co.uk/> ;
+    core:sameAs <http://dbpedia.org/resource/Table_tennis> ;
+    core:shortLabel "Table Tennis"@en-gb ;
+    core:slug "table-tennis"^^xsd:string .
+
+<http://www.bbc.co.uk/things/f4f02418-1c5e-4be0-86ef-91ccd27d8aaf#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "MotoGP"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "MotoGP"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/MotoGP> ;
+    core:shortLabel "MotoGP"@en-gb ;
+    core:slug "motogp"^^xsd:string .
+
+<http://www.bbc.co.uk/things/f583bff7-93c2-6d42-9425-0d8dae178ba0#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Canoe Slalom"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Canoe Slalom"@en-gb ;
+    core:primaryTopicOf <http://www.cani.org.uk/>,
+        <http://www.canoe-england.org.uk/>,
+        <http://www.canoeicf.com/icf/Aboutoursport/Canoe-Slalom.html>,
+        <http://www.canoescotland.org/>,
+        <http://www.canoewales.com/> ;
+    core:sameAs <http://dbpedia.org/resource/Whitewater_slalom> ;
+    core:shortLabel "Canoe Slalom"@en-gb ;
+    core:slug "canoe-slalom"^^xsd:string .
+
+<http://www.bbc.co.uk/things/fe11a0ff-a7c0-45eb-a9e0-708dddf9bc7d#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Nordic Combined"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Nordic Combined"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/nordic-combined> ;
+    core:sameAs <http://dbpedia.org/resource/Nordic_combined> ;
+    core:shortLabel "Nordic Combined"@en-gb ;
+    core:slug "nordic-combined"^^xsd:string .
+
+<http://www.bbc.co.uk/things/fe63c304-110f-4fad-b9c7-7d00410abc92#id> a core:Thing,
+        sport:SportsDiscipline,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Freestyle Skiing"@en-gb ;
+    core:disambiguationHint "Sports discipline"@en-gb ;
+    core:preferredLabel "Freestyle Skiing"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/freestyle-skiing> ;
+    core:sameAs <http://dbpedia.org/resource/Freestyle_skiing> ;
+    core:shortLabel "Freestyle Skiing"@en-gb ;
+    core:slug "freestyle-skiing"^^xsd:string .
+
+<http://englandhockey.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://etta.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://hockeywales.org.uk> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://itfwales.com/wordpress/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://nifencing.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://nijudo.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://scottish-fencing.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://welshboxingassociation.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://welshweightlifting.tumblr.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.abae.co.uk/aba/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.amateurboxingscotland.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.archery.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.athleticsni.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.badmintonengland.co.uk/homepage.asp> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.badmintonireland.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.badmintonscotland.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.badmintonwales.net/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.basketball-scotland.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.basketballni.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.basketballwales.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/alpine-skiing> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/american-football> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/archery> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/athletics> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/badminton> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/baseball> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/basketball> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/biathlon> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/bobsleigh> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/bowls> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/boxing> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/canoeing> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/climbing> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cricket> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cross-country-skiing> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/curling> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/cycling> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/darts> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/diving> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/equestrian> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/fencing> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/figure-skating> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/football> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/formula1> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/golf> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/gymnastics> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/handball> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/hockey> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/horse-racing> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/ice-hockey> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/judo> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/luge> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/mixed-martial-arts> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/modern-pentathlon> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/netball> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/nordic-combined> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/rowing> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-sevens> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/rugby-union> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/sailing> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/shooting> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/short-track-skating> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/skeleton> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/ski-jumping> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/snooker> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/snowboarding> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/speed-skating> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/squash> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/swimming> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/synchronised-swimming> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/table-tennis> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/taekwondo> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/tennis> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/triathlon> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/volleyball> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/water-polo> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/weightlifting> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bbc.co.uk/sport/wrestling> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentType sal:Index .
+
+<http://www.bef.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.britishhandball.com/DesktopDefault.aspx?menuid=13128> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.britishjudo.org.uk/home/index.php> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.britishrowing.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.britishtaekwondocouncil.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.britishtriathlon.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.britishweightlifting.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.britishwrestling.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.bwfbadminton.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.canoeicf.com/icf/Aboutoursport/Canoe-Slalom.html> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.canoeicf.com/icf/Aboutoursport/Canoe-Sprint.html> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.englandathletics.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.englandbasketball.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.englandfencing.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.englandhandball.com/handball/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.englisharcheryfederation.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.faw.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fei.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fiba.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fie.ch/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fifa.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fig-gymnastics.com/vsite/vnavsite/page/directory/0,10853,5187-188042-205264-nav-list,00.html> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fig-gymnastics.com/vsite/vnavsite/page/directory/0,10853,5187-188044-205266-nav-list,00.html> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fig-gymnastics.com/vsite/vnavsite/page/directory/0,10853,5187-188045-205267-nav-list,00.html> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fih.ch/en/home> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fila-wrestling.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fivb.org/EN/BeachVolleyball/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fivb.org/en/volleyball/index.asp> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.horsescotland.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.horsesportireland.ie/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.iaaf.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.iaba.ie/boxing/Main/Home.htm> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.iaru.ie/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ibf-usba-boxing.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ihf.info/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.intjudo.eu/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.irishfa.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.irishtabletennis.com/itta/ulster/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.issf-sports.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.itftennis.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.itftkd.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ittf.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.iwf.net/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.judoscotland.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.lta.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.lta.org.uk/in-your-area/scotland/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.lta.org.uk/in-your-area/wales/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.niarchery.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.niwrestling.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.nra.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.pentathlon-scotland.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.pentathlon.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.pentathlongb.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.rya.org.uk/Pages/Home.aspx> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ryani.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ryascotland.org.uk/aboutus/Pages/default.aspx> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.sailing.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.scottish-hockey.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.scottish-rowing.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.scottisharchery.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.scottishathletics.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.scottishfa.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.scottishhandball.com/DesktopDefault.aspx?menuid=13483> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.scottishwrestling.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.stsf.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.tabletennisscotland.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.taekwondoscotland.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.tani.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.thefa.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.triathlon.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.triathlonscotland.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.triathlonulster.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ttaw.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.uci.ch/Templates/UCI/UCI5/layout.asp?MenuID=MTYxNw&LangId=1> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.uci.ch/templates/UCI/UCI5/layout.asp?MenuId=MTI2MDA&LangId=1> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.uci.ch/templates/UCI/UCI5/layout.asp?MenuId=MTkyNw&LangId=1> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.uci.ch/templates/UCI/UCI8/layout.asp?MenuId=MTYzMjg&LangId=1> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ulsterhockey.com/hockey/index.php> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ulsterrifleassociation.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.ulstertennis.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.volleyballengland.org> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.volleyballengland.org/beach> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.welshathletics.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.welshfencing.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.welshjudo.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.welshrowing.com/index.html> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.welshsailing.org/Pages/default.aspx> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.welshtriathlon.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.worldrowing.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.wtsf.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<https://api.bbc.co.uk/content/asset/sport/american-football> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/athletics> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/basketball> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/boxing> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/cricket> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/cycling> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/football> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/formula1> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/horse-racing> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/mixed-martial-arts> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/netball> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/rugby-league> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/rugby-union> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/snooker> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/swimming> a cms:CPSLocator .
+
+<https://api.bbc.co.uk/content/asset/sport/tennis> a cms:CPSLocator .
+
+<urn:things-to-do-category:11> a cms:TTDLocator .
+
+<urn:things-to-do-category:13> a cms:TTDLocator .
+
+<urn:things-to-do-category:15> a cms:TTDLocator .
+
+<urn:things-to-do-category:17> a cms:TTDLocator .
+
+<urn:things-to-do-category:19> a cms:TTDLocator .
+
+<urn:things-to-do-category:21> a cms:TTDLocator .
+
+<urn:things-to-do-category:23> a cms:TTDLocator .
+
+<urn:things-to-do-category:25> a cms:TTDLocator .
+
+<urn:things-to-do-category:27> a cms:TTDLocator .
+
+<urn:things-to-do-category:29> a cms:TTDLocator .
+
+<urn:things-to-do-category:31> a cms:TTDLocator .
+
+<urn:things-to-do-category:33> a cms:TTDLocator .
+
+<urn:things-to-do-category:35> a cms:TTDLocator .
+
+<urn:things-to-do-category:37> a cms:TTDLocator .
+
+<urn:things-to-do-category:39> a cms:TTDLocator .
+
+<urn:things-to-do-category:41> a cms:TTDLocator .
+
+<urn:things-to-do-category:43> a cms:TTDLocator .
+
+<urn:things-to-do-category:45> a cms:TTDLocator .
+
+<urn:things-to-do-category:47> a cms:TTDLocator .
+
+<urn:things-to-do-category:49> a cms:TTDLocator .
+
+<urn:things-to-do-category:51> a cms:TTDLocator .
+
+<urn:things-to-do-category:53> a cms:TTDLocator .
+
+<urn:things-to-do-category:55> a cms:TTDLocator .
+
+<urn:things-to-do-category:57> a cms:TTDLocator .
+
+<urn:things-to-do-category:59> a cms:TTDLocator .
+
+<urn:things-to-do-category:61> a cms:TTDLocator .
+
+<urn:things-to-do-category:63> a cms:TTDLocator .
+
+<urn:things-to-do-category:64> a cms:TTDLocator .
+
+<urn:things-to-do-category:66> a cms:TTDLocator .
+
+<urn:things-to-do-category:68> a cms:TTDLocator .
+
+<urn:things-to-do-category:72> a cms:TTDLocator .
+
+<urn:things-to-do-category:74> a cms:TTDLocator .
+
+<urn:things-to-do-category:76> a cms:TTDLocator .
+
+<urn:things-to-do-category:8> a cms:TTDLocator .
+
+<urn:things-to-do-category:84> a cms:TTDLocator .
+
+<urn:things-to-do-category:90> a cms:TTDLocator .
+
+<urn:things-to-do-category:94> a cms:TDDLocator .
+
+<urn:things-to-do-category:96> a cms:TTDLocator .
+
+<http://www.cani.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.canoe-england.org.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.canoescotland.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.canoewales.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.nivb.com/index.php> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.scottishvolleyball.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.volleyballwales.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.englishgymnastics.org.uk/page.asp?node=1&dec=Home> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.northernirelandgymnastics.org/home.html> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.scottishgymnastics.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.swimulster.net/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.welshgymnastics.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.britishcycling.org.uk> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.britishcycling.org.uk/scotland> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.cyclingireland.ie/Home.aspx> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fina.org/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.scottishswimming.com/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.swimming.org/asa/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.welshasa.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.welshcycling.co.uk/> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+

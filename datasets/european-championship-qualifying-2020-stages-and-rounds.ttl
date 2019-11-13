@@ -1,0 +1,161 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/1ad41eb4-65ef-49e7-bc47-1df97aca0ad4#id> a provenance:Dataset ;
+    rdfs:label "Football: Euro 2020 Qualifying Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-championship-qualifying-2020-stages-and-rounds.ttl" ;
+    provenance:changeReason "SWD-638;2: Model Euro 2020 Stages and Rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-03-22T11:32:14+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> sport:hasStage <http://www.bbc.co.uk/things/814b320d-c0f0-463b-b92f-d14cb93acd6c#id> .
+
+<http://www.bbc.co.uk/things/1011e5a5-95ec-4fb3-9797-5f57b0159d44#id> a sport:Round ;
+    rdfs:label "Round 2 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/44afb452-31d3-4ea8-a2a7-4c602d15ff79#id> a sport:Round ;
+    rdfs:label "Round 9 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "Group I"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1R9> ;
+    core:preferredLabel "Group I"@en-gb ;
+    core:shortLabel "Group I"@en-gb ;
+    sport:roundNumber 9 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/4cc4dc8f-2414-4438-9601-f77794db8e28#id> a sport:Round ;
+    rdfs:label "Round 5 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1R5> ;
+    core:preferredLabel "Group E"@en-gb ;
+    core:shortLabel "Group E"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/50974a7e-8b3c-46a9-94bd-fe3ef8f86ea8#id> a sport:Round ;
+    rdfs:label "Round 10 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "Group J"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1R10> ;
+    core:preferredLabel "Group J"@en-gb ;
+    core:shortLabel "Group J"@en-gb ;
+    sport:roundNumber 10 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/60ecaa0b-c38c-4e77-a44e-bf25de568b0c#id> a sport:Round ;
+    rdfs:label "Round 3 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/73070954-b6da-42ae-b690-db85aee15be0#id> a sport:Round ;
+    rdfs:label "Round 6 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1R6> ;
+    core:preferredLabel "Group F"@en-gb ;
+    core:shortLabel "Group F"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/7d8104f6-da24-47fb-bcf2-9e787e2c3d33#id> a sport:Round ;
+    rdfs:label "Round 8 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "Group H"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1R8> ;
+    core:preferredLabel "Group H"@en-gb ;
+    core:shortLabel "Group H"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/814b320d-c0f0-463b-b92f-d14cb93acd6c#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "UEFA European Championship 2020 Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1> ;
+    core:preferredLabel "Euro 2020 Qualifying"@en-gb ;
+    core:shortLabel "Euro 2020 Qualifying"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/bb834908-8385-4deb-96e0-836317e9b156#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/1011e5a5-95ec-4fb3-9797-5f57b0159d44#id>,
+        <http://www.bbc.co.uk/things/44afb452-31d3-4ea8-a2a7-4c602d15ff79#id>,
+        <http://www.bbc.co.uk/things/4cc4dc8f-2414-4438-9601-f77794db8e28#id>,
+        <http://www.bbc.co.uk/things/60ecaa0b-c38c-4e77-a44e-bf25de568b0c#id>,
+        <http://www.bbc.co.uk/things/73070954-b6da-42ae-b690-db85aee15be0#id>,
+        <http://www.bbc.co.uk/things/7d8104f6-da24-47fb-bcf2-9e787e2c3d33#id>,
+        <http://www.bbc.co.uk/things/acf2bbfb-3466-4650-a0c5-3408a8362e66#id>,
+        <http://www.bbc.co.uk/things/b3c790e7-9caa-46fd-9b7f-405395ee0814#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/50974a7e-8b3c-46a9-94bd-fe3ef8f86ea8#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/acf2bbfb-3466-4650-a0c5-3408a8362e66#id> a sport:Round ;
+    rdfs:label "Round 4 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/b3c790e7-9caa-46fd-9b7f-405395ee0814#id> a sport:Round ;
+    rdfs:label "Round 7 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "Group G"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1R7> ;
+    core:preferredLabel "Group G"@en-gb ;
+    core:shortLabel "Group G"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/bb834908-8385-4deb-96e0-836317e9b156#id> a sport:Round ;
+    rdfs:label "Round 1 of UEFA European Championship 2020 Qualifying"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112020S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CFBB235112020S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112020S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112020S1R10> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112020S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112020S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112020S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112020S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112020S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112020S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112020S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112020S1R9> a cms:Sports-DataLocator .
+

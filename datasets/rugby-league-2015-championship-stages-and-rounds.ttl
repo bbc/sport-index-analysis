@@ -1,0 +1,116 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/8609c157-0145-47a7-8035-20b2822067ca#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2015 The Kingstone Press Championship Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-league/rugby-league-2015-championship-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-765;16+1: update of the roundType to reflect semi-final and final rounds. Modeled CRLB1142015S2 as a stage of  a98387e8-be86-4497-abbb-6499c4e4fff5. SLS-931: Left empty all names in round CRLB1112015S1R1, Changed shortLabel for CRLB1142015S1R1 SLS-765: Revert changes in version 9; Changed CRLB1142015S2R1 into CRLB1142015S1R1. Added a round for the first stage (experiment). Added prevStage relationship for the 2nd stage. Changed the locator of Championship Shield Round 1 into  CRLB1142015S2R1. Add Round 1 for Championship Shield; Model Championship Shield as part of Championship competition" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-07-04T12:19:44+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "17"^^xsd:int .
+
+<http://www.bbc.co.uk/things/a98387e8-be86-4497-abbb-6499c4e4fff5#id> sport:firstStage <http://www.bbc.co.uk/things/5fa76847-f42a-4189-874a-d5a1ad9c4a34#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/90886183-32c2-4ee1-b330-cd3ab916da93#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/87cab0a3-0ec4-4751-90f7-edd52f3c5ca6#id> .
+
+<http://www.bbc.co.uk/things/5c95bcae-c02c-49cd-a686-961decde53f7#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Championship Shield 2015"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1142015S2R1> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/87cab0a3-0ec4-4751-90f7-edd52f3c5ca6#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Championship Shield 2015"@en-gb ;
+    sal:name "Stage 2 of Championship Shield 2015"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1142015S2> ;
+    core:preferredLabel "Championship Shield"@en-gb ;
+    core:shortLabel "Championship Shield"@en-gb ;
+    core:slug "championship-shield"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/5c95bcae-c02c-49cd-a686-961decde53f7#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/f2a22c86-15be-4092-a797-edd97162abb6#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/90886183-32c2-4ee1-b330-cd3ab916da93#id> a sport:Competition ;
+    rdfs:label "Rugby League Championship Shield 2015"@en-gb ;
+    sal:name "Rugby League Championship Shield 2015"@en-gb ;
+    cms:locator <urn:sports-data:CRLB114> ;
+    core:preferredLabel "Championship Shield"@en-gb ;
+    core:shortLabel "Championship Shield"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/9413dcf4-f6cb-49e8-b7e9-da59d1545881#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/5fa76847-f42a-4189-874a-d5a1ad9c4a34#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/9413dcf4-f6cb-49e8-b7e9-da59d1545881#id> a sport:Round ;
+    rdfs:label "Round 1 of Rugby League Championship Shield 2015"@en-gb ;
+    sal:name "Championship Shield"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1142015S1R1> ;
+    core:preferredLabel "Championship Shield"@en-gb ;
+    core:shortLabel "Shield"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/963345f3-d1f7-432c-b4da-7cadf92707b4#id> a sport:Round ;
+    rdfs:label "Round 1 of Kingston Press Championship 2015"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CRLB1112015S1R1> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel ""@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/f2a22c86-15be-4092-a797-edd97162abb6#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Championship Shield 2015"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1142015S2R2> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<urn:sports-data:CRLB1112015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1112015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB114> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1142015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1142015S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1142015S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1142015S2R2> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/5fa76847-f42a-4189-874a-d5a1ad9c4a34#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Kingston Press Championship 2015"@en-gb ;
+    sal:name "Stage 1 of Kingston Press Championship 2015"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1112015S1> ;
+    core:preferredLabel "Championship"@en-gb ;
+    core:shortLabel "Championship"@en-gb ;
+    core:slug "championship"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/963345f3-d1f7-432c-b4da-7cadf92707b4#id> ;
+    sport:stageNumber "1"^^xsd:int .
+

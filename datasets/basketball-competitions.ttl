@@ -1,0 +1,89 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/4d8b3046-0c37-4414-a55e-aae23f491cc6#id> a provenance:Dataset ;
+    rdfs:label "Basketball: Competitions" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/basketball/basketball-competitions.ttl" ;
+    provenance:changeReason "SLS-1795;2: Added BBL Championship, BBL Cup, BBL Trophy, BBL Pre-Season Friendly and NBA Recurring Competitions." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-03-18T11:59:09+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/7e6469de-7a79-4191-86b7-d7499bdd048c#id> a sport:RecurringCompetition ;
+    sal:name "NBA"@en-gb ;
+    cms:locator <urn:sports-data:CBKB10952> ;
+    core:disambiguationHint "Basketball competition"@en-gb ;
+    core:preferredLabel "NBA"@en-gb ;
+    core:shortLabel "NBA"@en-gb ;
+    core:slug "nba"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id> .
+
+<http://www.bbc.co.uk/things/9a0775a4-75e6-4f4d-b6eb-b1aa4be2401e#id> a sport:RecurringCompetition ;
+    sal:name "BBL Cup"@en-gb ;
+    cms:locator <urn:sports-data:CBKB12143> ;
+    core:disambiguationHint "Basketball competition"@en-gb ;
+    core:preferredLabel "BBL Cup"@en-gb ;
+    core:shortLabel "BBL Cup"@en-gb ;
+    core:slug "bbl-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id> .
+
+<http://www.bbc.co.uk/things/c4904ff9-ca9f-44a5-8864-ab56eac376fb#id> a sport:RecurringCompetition ;
+    sal:name "BBL Trophy"@en-gb ;
+    cms:locator <urn:sports-data:CBKB12405> ;
+    core:disambiguationHint "Basketball competition"@en-gb ;
+    core:preferredLabel "BBL Trophy"@en-gb ;
+    core:shortLabel "BBL Trophy"@en-gb ;
+    core:slug "bbl-trophy"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id> .
+
+<http://www.bbc.co.uk/things/d051e8c2-35d5-40c5-8457-95090e304bef#id> a sport:RecurringCompetition ;
+    sal:name "BBL Championship"@en-gb ;
+    cms:locator <urn:sports-data:CBKB10874> ;
+    core:disambiguationHint "Basketball competition"@en-gb ;
+    core:preferredLabel "BBL Championship"@en-gb ;
+    core:shortLabel "BBL Championship"@en-gb ;
+    core:slug "bbl-championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id> .
+
+<http://www.bbc.co.uk/things/f1a046aa-1136-47c2-b342-6d5dc95da58c#id> a sport:RecurringCompetition ;
+    sal:name "BBL Pre-Season Friendly"@en-gb ;
+    cms:locator <urn:sports-data:CBKB12448> ;
+    core:disambiguationHint "Basketball competition"@en-gb ;
+    core:preferredLabel "BBL Pre-Season Friendly"@en-gb ;
+    core:shortLabel "BBL Pre-Season Friendly"@en-gb ;
+    core:slug "bbl-pre-season-friendly"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic> ;
+    sport:discipline <http://www.bbc.co.uk/things/27ed8ba8-005a-5044-87dd-5373d679a020#id> .
+
+<urn:sports-data:CBKB10874> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB10952> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB12143> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB12405> a cms:Sports-DataLocator .
+
+<urn:sports-data:CBKB12448> a cms:Sports-DataLocator .
+

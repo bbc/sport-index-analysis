@@ -1,0 +1,134 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/5c1b46cb-2760-4221-9c22-4a8a0b726498#id> a provenance:Dataset ;
+    rdfs:label "Football: Scottish Cup 2017/18 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/scottish-cup-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3260: Model CFBB80 Scottish Cup 2017/18 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-05-25T09:50:56+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/78ccdd8b-21e2-1a58-31a6-1cd8479fcde9#id> sport:hasStage <http://www.bbc.co.uk/things/e75905a4-89c6-495d-b4b1-089de5e7f3f7#id> .
+
+<http://www.bbc.co.uk/things/6af3e9ba-6389-4142-8bae-72c795005445#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802017S1R8> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/72b36883-2a96-4e1d-ab87-894d814a1697#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Fifth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802017S1R5> ;
+    core:preferredLabel "Fifth Round"@en-gb ;
+    core:shortLabel "Fifth Round"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/7631ca5f-4d99-4ebb-a141-752b0255849d#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802017S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/95b1cf5a-3c50-4aea-98a2-426a00198337#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802017S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ceabcc2e-fb34-42c6-bc54-4cf6d8904555#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802017S1R6> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/e75905a4-89c6-495d-b4b1-089de5e7f3f7#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Scottish Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802017S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/eff022e7-9572-424c-992c-cc25bcd47ee5#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/72b36883-2a96-4e1d-ab87-894d814a1697#id>,
+        <http://www.bbc.co.uk/things/7631ca5f-4d99-4ebb-a141-752b0255849d#id>,
+        <http://www.bbc.co.uk/things/95b1cf5a-3c50-4aea-98a2-426a00198337#id>,
+        <http://www.bbc.co.uk/things/ceabcc2e-fb34-42c6-bc54-4cf6d8904555#id>,
+        <http://www.bbc.co.uk/things/f3029597-ed69-4c2d-9e78-e074e0dc4983#id>,
+        <http://www.bbc.co.uk/things/ff6ee7f5-5359-4a3d-b592-ae2fcc89e75c#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/6af3e9ba-6389-4142-8bae-72c795005445#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/eff022e7-9572-424c-992c-cc25bcd47ee5#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802017S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/f3029597-ed69-4c2d-9e78-e074e0dc4983#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802017S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ff6ee7f5-5359-4a3d-b592-ae2fcc89e75c#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Scottish Cup"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB802017S1R7> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<urn:sports-data:CFBB802017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802017S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802017S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802017S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802017S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB802017S1R8> a cms:Sports-DataLocator .
+

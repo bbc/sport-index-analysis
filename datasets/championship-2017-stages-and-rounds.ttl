@@ -1,0 +1,62 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/46f77f3b-dc4c-43be-bdf3-d490ea7412c4#id> a provenance:Dataset ;
+    rdfs:label "Football: Championship 2017/18 Play-offs stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/championship-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4369;5: Model Championship Play-offs 2017/18 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-05-29T11:29:20+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "5"^^xsd:int .
+
+<http://www.bbc.co.uk/things/fc71afea-9beb-1b98-ff00-0bacf72e3122#id> sport:firstStage <http://www.bbc.co.uk/things/5608271c-27d1-4489-97fb-7e847f5529cf#id> .
+
+<http://www.bbc.co.uk/things/5608271c-27d1-4489-97fb-7e847f5529cf#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Championship"@en-gb ;
+    cms:locator <urn:sports-data:CFBB102017S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/d8ac5f0f-dab6-43fe-9dc6-f30966d62fc9#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/c48e403f-cc44-4261-8532-292003496888#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/c48e403f-cc44-4261-8532-292003496888#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Championship"@en-gb ;
+    sal:name "Play-off Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB102017S2R2> ;
+    core:preferredLabel "Play-off Final"@en-gb ;
+    core:shortLabel "Play-off Final"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/d8ac5f0f-dab6-43fe-9dc6-f30966d62fc9#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Championship"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB102017S2R1> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<urn:sports-data:CFBB102017S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB102017S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB102017S2R2> a cms:Sports-DataLocator .
+

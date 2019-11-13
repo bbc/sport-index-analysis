@@ -1,0 +1,92 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/8dd2d29f-e92a-4a7f-ad2d-a1b0aea21b26#id> a provenance:Dataset ;
+    rdfs:label "Cricket: International Asia Cup 2016 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/cricket/cricket-competition-asia-cup-2016-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-2930: Opta Cricket Competitions, Stages & Rounds." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-03-14T14:04:46+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "6"^^xsd:int .
+
+<http://www.bbc.co.uk/things/4ea6b161-311f-44d6-9124-54a8e39c7ef1#id> sport:firstStage <http://www.bbc.co.uk/things/9619b208-f116-4ad7-9acc-28e4a9c86800#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/a0918aea-b3fd-4d29-a783-ff2bb64c1fbe#id> .
+
+<urn:sports-data:CCKBO102016S2R1> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/56d5e0a7-32db-462b-8fb6-977950b55cef#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Cricket Asia Cup 2016"@en-gb ;
+    sal:name "Qualifier"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO102016S1R1> ;
+    core:preferredLabel "Qualifier"@en-gb ;
+    core:shortLabel "Qualifier"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/9619b208-f116-4ad7-9acc-28e4a9c86800#id> a sport:Competition ;
+    rdfs:label "Stage 1 of Cricket Asia Cup 2016"@en-gb ;
+    sal:name "Group Stage"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO102016S1> ;
+    core:preferredLabel "Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/56d5e0a7-32db-462b-8fb6-977950b55cef#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/d33b31ef-8426-4cc0-81ce-bcb559f08c67#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/a0918aea-b3fd-4d29-a783-ff2bb64c1fbe#id> a sport:Competition ;
+    rdfs:label "Stage 2 of Cricket Asia Cup 2016"@en-gb ;
+    sal:name "Final Stage"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO102016S2> ;
+    core:preferredLabel "Final Stage"@en-gb ;
+    core:shortLabel "Final Stage"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/bb2d8784-45cb-4358-b506-7832b01831fd#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/f806d730-5194-4868-9166-205f95710314#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d33b31ef-8426-4cc0-81ce-bcb559f08c67#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Asia Cup 2016"@en-gb ;
+    sal:name "Group Stage"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO102016S1R2> ;
+    core:preferredLabel "Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/f806d730-5194-4868-9166-205f95710314#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 Cricket Asia Cup 2016"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CCKBO102016S2R2> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<urn:sports-data:CCKBO102016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO102016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO102016S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO102016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CCKBO102016S2R2> a cms:Sports-DataLocator .
+

@@ -1,0 +1,68 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns3: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/7c121b44-1ff2-4f19-9399-61c52510e4b7#id> a provenance:Dataset ;
+    rdfs:label "Ice Hockey: Seasons" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/ice-hockey/ice-hockey-seasons.ttl" ;
+    provenance:changeReason "SLS-1798: Minor changes to lablels; Elite League, Elite League Challenge Cup and NHL competitions and Temporal Entities. Updated year in label" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-04-12T09:57:24+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:eleni.mikroyannidi@bbc.co.uk> ;
+    provenance:version "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/44130133-68e5-4998-b132-bca419f70f25#id> a sport:Competition ;
+    rdfs:label "NHL 2015 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/8747bc27-0efc-4587-82d3-a2b943dafb12#id> ;
+    sal:name "NHL"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/2722dad3-cb7e-4e9b-a727-d63f35fa9375#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2722dad3-cb7e-4e9b-a727-d63f35fa9375#id> .
+
+<http://www.bbc.co.uk/things/a56318fc-5783-4a4a-aab1-3e223345548b#id> a sport:Competition ;
+    rdfs:label "Elite League Challenge Cup 2015 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/fefb0e6e-5fce-411e-a6e3-fe0cecac89c0#id> ;
+    sal:name "Elite League Challenge Cup"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/9b05692c-2f6f-49f1-b456-953bff275dc8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9b05692c-2f6f-49f1-b456-953bff275dc8#id> .
+
+<http://www.bbc.co.uk/things/eb1ae82f-b40d-4007-8616-69e54f408b22#id> a sport:Competition ;
+    rdfs:label "Elite League 2015 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/3c1a2e1a-6a05-4afa-ba7f-0d5d3ae188b3#id> ;
+    sal:name "Elite League"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/ec7a5450-144b-4e30-b1a4-768c3c09a226#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ec7a5450-144b-4e30-b1a4-768c3c09a226#id> .
+
+<http://www.bbc.co.uk/things/3c1a2e1a-6a05-4afa-ba7f-0d5d3ae188b3#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Elite League 2015 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2015-09-04"^^xsd:date ;
+    ns1:hasEnd "2016-04-03"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8747bc27-0efc-4587-82d3-a2b943dafb12#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "NHL 2015 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2015-10-07"^^xsd:date ;
+    ns1:hasEnd "2016-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fefb0e6e-5fce-411e-a6e3-fe0cecac89c0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Elite League Challenge Cup 2015 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2015-09-04"^^xsd:date ;
+    ns1:hasEnd "2016-04-03"^^xsd:date .
+

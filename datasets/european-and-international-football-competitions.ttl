@@ -1,0 +1,1689 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/a1a9f240-d414-11e2-8b8b-0800200c9a66#id> a provenance:Dataset ;
+    rdfs:label "Football: European and International Competitions" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-and-international-football-competitions.ttl" ;
+    provenance:changeReason "SWD-743;2: add French Ligue 1/2 Play-offs RecurringCompetition (and move German Bundesliga Play-offs to here from 2014/15 stages and rounds)" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-06-07T13:09:46+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "124"^^xsd:int .
+
+<http://www.bbc.co.uk/sport/football/asian-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/welsh-premier-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/things/0072fcba-4f2b-42e5-9274-29fd0394eaf3#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "International Champions Cup"@en-gb ;
+    sal:videCode "ICC"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB638> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "International Champions Cup"@en-gb ;
+    core:shortLabel "International Champions Cup"@en-gb ;
+    core:slug "international-champions-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0350ec6a-76af-4d2b-80f5-396998ce775b#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Brazilian Chevrolet Campeonato Série A"@en-gb ;
+    sal:videCode "BRZA"@en-gb ;
+    cms:locator <urn:sports-data:CFBB363> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Brazilian Série A"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/brazilian-league> ;
+    core:shortLabel "Brazilian Série A"@en-gb ;
+    core:slug "brazilian-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0430aa56-3fdd-4e06-9389-0054bfe9f038#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Men's Olympic Football"@en-gb ;
+    sal:videCode "OLYM"@en-gb ;
+    cms:locator <urn:sports-data:CFBB378> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Men's Olympic Football"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/olympic-football-men> ;
+    core:shortLabel "Men's Olympic Football"@en-gb ;
+    core:slug "olympic-football-men"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/04bedd51-db91-4bf2-85ca-e69c664811ec#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA Women's World Cup"@en-gb ;
+    sal:videCode "WCWO"@en-gb ;
+    cms:locator <urn:sports-data:CFBB408>,
+        <urn:sports-stats:119003058> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Women's World Cup"@en-gb ;
+    core:primaryTopicOf <http://www.fifa.com/womensworldcup/index.html> ;
+    core:shortLabel "Women's World Cup"@en-gb ;
+    core:slug "womens-world-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/057ba885-0cae-4f0d-9f73-2079489387ad#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Copa Sudamericana"@en-gb ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Copa Sudamericana"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/copa-sudamericana> ;
+    core:sameAs <http://dbpedia.org/resource/Copa_Sudamericana> ;
+    core:shortLabel "Copa Sudamericana"@en-gb ;
+    core:slug "copa-sudamericana"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/08d91596-72fc-4a55-a02c-50265cb9e09e#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Australian Hyundai A-League"@en-gb ;
+    sal:videCode "AUSA"@en-gb ;
+    cms:locator <urn:sports-data:CFBB214> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Australian A-League"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/australian-a-league> ;
+    core:shortLabel "Australian A-League"@en-gb ;
+    core:slug "australian-a-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0b50097d-b492-4358-ae83-ee2915d36f84#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "AFC Asian Cup"@en-gb ;
+    sal:videCode "AC"@en-gb ;
+    cms:locator <urn:sports-data:CFBB379> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Asian Cup"@en-gb ;
+    core:shortLabel "Asian Cup"@en-gb ;
+    core:slug "asian-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0d54ddb5-a347-4245-86c6-e7cc6c82964b#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Italian TIM Cup Coppa Italia"@en-gb ;
+    sal:videCode "ITCI"@en-gb ;
+    cms:locator <urn:sports-data:CFBB259> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Italian Coppa Italia"@en-gb ;
+    core:shortLabel "Italian Coppa Italia"@en-gb ;
+    core:slug "italian-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Danish Alka Superliga"@en-gb ;
+    sal:videCode "DENS"@en-gb ;
+    cms:locator <urn:sports-data:CFBB100>,
+        <urn:sports-stats:119000950> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Danish Superliga"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/danish-superliga>,
+        <http://www.superliga.dk/forside/english.html> ;
+    core:shortLabel "Danish Superliga"@en-gb ;
+    core:slug "danish-superliga"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/161a086b-0282-4657-a72c-125bedfbb4fd#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA Women's World Cup Qualifying"@en-gb ;
+    sal:videCode "WWCQ"@en-gb ;
+    cms:locator <urn:sports-data:CFBB642> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Women's World Cup Qualifying"@en-gb ;
+    core:shortLabel "Women's World Cup Q"@en-gb ;
+    core:slug "womens-world-cup-qualifying-european"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/17f1075a-1e6e-45a3-838a-707d586ddd10#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA World Cup Qualifying - Asia/Oceania Play-Off"@en-gb ;
+    sal:videCode "WQAO"@en-gb ;
+    cms:locator <urn:sports-data:CFBB525> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup Qualifying - Asia/Oceania Play-Off"@en-gb ;
+    core:shortLabel "Asia/Oceania Play-off"@en-gb ;
+    core:slug "qualifying-playoff-asia-oceania"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA Champions League Qualifying"@en-gb ;
+    sal:videCode "CHLG"@en-gb ;
+    cms:locator <urn:sports-data:CFBB232>,
+        <urn:sports-stats:118999959> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Champions League Qualifying"@en-gb ;
+    core:shortLabel "Champions League Qualifying"@en-gb ;
+    core:slug "champions-league-qualifying"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA Champions League"@en-gb ;
+    sal:videCode "CHLG"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5>,
+        <urn:sports-stats:118999958> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Champions League"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/champions-league>,
+        <http://www.uefa.com/uefachampionsleague> ;
+    core:sameAs <http://dbpedia.org/resource/UEFA_Champions_League> ;
+    core:shortLabel "Champions League"@en-gb ;
+    core:slug "champions-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1f29aa24-0ed7-4880-a8c5-9c28ed07f166#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA World Cup Qualifying - CONCACAF"@en-gb ;
+    sal:videCode "WQAM"@en-gb ;
+    cms:locator <urn:sports-data:CFBB339> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup Qualifying - North/Central America"@en-gb ;
+    core:shortLabel "World Cup Qual CONCACAF"@en-gb ;
+    core:slug "world-cup-qualifying-concacaf"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Finnish Veikkausliiga"@en-gb ;
+    sal:videCode "FINV"@en-gb ;
+    cms:locator <urn:sports-data:CFBB56>,
+        <urn:sports-stats:119000955> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Finnish Veikkausliiga"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/finnish-veikkausliiga>,
+        <http://www.veikkausliiga.com/> ;
+    core:shortLabel "Finnish Veikkausliiga"@en-gb ;
+    core:slug "finnish-veikkausliiga"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/25d343d4-ee0a-4ebf-86b7-8ca6dc6e17aa#id> a sport:RecurringCompetition ;
+    sal:name "FIFA World Cup Qualifying - CONCACAF/South America Play-Off"@en-gb ;
+    sal:videCode "WQAM"@en-gb ;
+    cms:locator <urn:sports-data:CFBB527>,
+        <urn:sports-stats:119003959> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup Qualifying - CONCACAF/South America Play-Off"@en-gb ;
+    core:primaryTopicOf <http://www.fifa.com/worldcup/> ;
+    core:shortLabel "Americas Play-off"@en-gb ;
+    core:slug "qualifying-playoff-americas"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA Europa League"@en-gb ;
+    sal:videCode "EURL"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6>,
+        <urn:sports-stats:118999989> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Europa League"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/europa-league>,
+        <http://www.uefa.com/uefaeuropaleague/index.html> ;
+    core:sameAs <http://dbpedia.org/resource/UEFA_Europa_League> ;
+    core:shortLabel "Europa League"@en-gb ;
+    core:slug "europa-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2b116ed2-f01c-48bf-8adb-6fff1d8d7c50#id> a sport:RecurringCompetition ;
+    sal:name "French Ligue 1/2 Play-offs"@en-gb ;
+    sal:videCode "FRE"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB808> ;
+    core:preferredLabel "French Ligue 1/2 Play-offs"@en-gb ;
+    core:shortLabel "French Ligue 1/2 Play-offs"@en-gb ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2c36e6b7-796d-4518-9e02-2f90f15ee8e3#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA World Cup Qualifying - European Region"@en-gb ;
+    sal:videCode "WQEU"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336>,
+        <urn:sports-stats:119001881> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup Qualifying - European"@en-gb ;
+    core:primaryTopicOf <http://www.fifa.com/worldcup/preliminaries/> ;
+    core:sameAs <http://dbpedia.org/resource/2014_FIFA_World_Cup_qualification> ;
+    core:shortLabel "World Cup Qual Euro"@en-gb ;
+    core:slug "world-cup-qualifying-european"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/36f86ee6-f326-446d-b415-c6b250e434b1#id> a sport:RecurringCompetition ;
+    sal:name "International Friendlies"@en-gb ;
+    sal:videCode "INT"@en-gb ;
+    cms:locator <urn:sports-data:CFBB88>,
+        <urn:sports-stats:119001943> ;
+    core:disambiguationHint "Football competitions"@en-gb ;
+    core:preferredLabel "International Friendlies"@en-gb ;
+    core:shortLabel "Int Friendlies"@en-gb ;
+    core:slug "international-friendlies"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/37ea9997-eeb5-457c-9f9c-d6bf78467d85#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Greek Superleague"@en-gb ;
+    sal:videCode "GREE"@en-gb ;
+    cms:locator <urn:sports-data:CFBB113>,
+        <urn:sports-stats:119001136> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Greek Superleague"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/greek-superleague>,
+        <http://www.superleaguegreece.net/eng/> ;
+    core:shortLabel "Greek Superleague"@en-gb ;
+    core:slug "greek-superleague"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Norwegian Eliteserien"@en-gb ;
+    sal:videCode "NORW"@en-gb ;
+    cms:locator <urn:sports-data:CFBB90>,
+        <urn:sports-stats:119001043> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Norwegian Eliteserien"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/norwegian-tippeligaen>,
+        <http://www.eliteserien.no/om-eliteserien/norsk-toppfotball> ;
+    core:shortLabel "Norwegian Eliteserien"@en-gb ;
+    core:slug "norwegian-tippeligaen"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/40c5eeed-29da-41de-b618-8b5b73e0a070#id> a sport:RecurringCompetition ;
+    sal:name "German Bundesliga play-offs 2014/15"@en-gb ;
+    sal:videCode "SHLL"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB419> ;
+    core:preferredLabel "German Bundesliga play-offs 2015"@en-gb ;
+    core:shortLabel "German Bundesliga play-offs 2015"@en-gb ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4184fd7a-6be8-4973-9edb-6d2d728a9ae8#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA Women's World Cup Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB642> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Women's World Cup Qualifying"@en-gb ;
+    core:shortLabel "Womens World Cup Qualifying"@en-gb ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/467fd84f-5bf7-419e-9bd3-a0963c9cebbf#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Argentine Primera Division"@en-gb ;
+    sal:videCode "ARGP"@en-gb ;
+    cms:disambiguationHint "Football competition"@en-gb ;
+    cms:locator <urn:sports-data:CFBB724> ;
+    core:preferredLabel "Argentine Primera Division"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/argentine-primera-division> ;
+    core:shortLabel "Argentine Primera"@en-gb ;
+    core:slug "argentine-primera-division"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Turkish Spor Toto Super Lig"@en-gb ;
+    sal:videCode "TURK"@en-gb ;
+    cms:locator <urn:sports-data:CFBB115>,
+        <urn:sports-stats:119001110> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Turkish Super Lig"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/turkish-super-lig>,
+        <http://www.tff.org/Default.aspx?pageID=449> ;
+    core:shortLabel "Turkish Super Lig"@en-gb ;
+    core:slug "turkish-super-lig"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4dfebe2e-3d6a-4ecc-822d-b55f7d0ed216#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "French Coupe de la Ligue"@en-gb ;
+    sal:videCode "FCDL"@en-gb ;
+    cms:locator <urn:sports-data:CFBB362> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "French Coupe de la Ligue"@en-gb ;
+    core:shortLabel "French League Cup"@en-gb ;
+    core:slug "french-league-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/55f5d9e8-aec2-4b1b-99f6-eb09111df01b#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA World Cup Qualifying - CONMEBOL"@en-gb ;
+    sal:videCode "WQSA"@en-gb ;
+    cms:locator <urn:sports-data:CFBB342> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup Qualifying - South America"@en-gb ;
+    core:shortLabel "World Cup Qual CONMEBOL"@en-gb ;
+    core:slug "world-cup-qualifying-conmebol"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/56d3ade5-e8be-485e-b5ad-93bf3365b21d#id> a sport:RecurringCompetition ;
+    sal:name "United States Major League Soccer All-Star Game"@en-gb ;
+    sal:videCode "MLSA"^^xsd:string ;
+    cms:locator <urn:sports-data:CFBB355> ;
+    core:preferredLabel "United States Major League Soccer All-Star Game"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/mls-all-star-game> ;
+    core:shortLabel "MLS All-Star Game"@en-gb ;
+    core:slug "mls-all-star-game"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/58c093b8-6bbf-4a84-9ad5-e927110e907b#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's International Friendlies"@en-gb ;
+    sal:videCode "WIF"@en-gb ;
+    cms:locator <urn:sports-data:CFBB551> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Women's International Friendlies"@en-gb ;
+    core:shortLabel "Women's International"@en-gb ;
+    core:slug "womens-international-friendlies"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Belgian First Division A"@en-gb ;
+    sal:videCode "BEL"@en-gb ;
+    cms:locator <urn:sports-data:CFBB112>,
+        <urn:sports-stats:119000924> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Belgian First Division A"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/belgian-pro-league>,
+        <http://www.sport.be/fr/jupilerproleague/> ;
+    core:shortLabel "Belgian First Division A"@en-gb ;
+    core:slug "belgian-pro-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5e7a1c0e-9976-4410-b001-69333e169095#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Argentine Primera Division - Finals"@en-gb ;
+    sal:videCode "ARGP"@en-gb ;
+    cms:locator <urn:sports-data:CFBB384> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Argentine Primera Division - Finals"@en-gb ;
+    core:shortLabel "Argentine Primera - Finals"@en-gb ;
+    core:slug "argentine-primera-division-finals"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "CONCACAF Gold Cup"@en-gb ;
+    sal:videCode "GC"@en-gb ;
+    cms:locator <urn:sports-data:CFBB380> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Gold Cup"@en-gb ;
+    core:shortLabel "Gold Cup"@en-gb ;
+    core:slug "gold-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6492b643-39bd-44c9-97e4-c099896844fa#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA World Cup Qualifying - Oceania"@en-gb ;
+    sal:videCode "WQOC"@en-gb ;
+    cms:locator <urn:sports-data:CFBB338> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup Qualifying - Oceania"@en-gb ;
+    core:shortLabel "World Cup Qual Oceania"@en-gb ;
+    core:slug "world-cup-qualifying-oceania"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6b71918f-e3a3-4dff-ad36-c3d737605d43#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Copa Libertadores"@en-gb ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Copa Libertadores"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/copa-libertadores> ;
+    core:sameAs <http://dbpedia.org/resource/Copa_Libertadores> ;
+    core:shortLabel "Copa Libertadores"@en-gb ;
+    core:slug "copa-libertadores"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/729e1500-140c-4f30-b290-8175007d9ce4#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "SheBelieves Cup"@en-gb ;
+    sal:videCode "SHEB"@en-gb ;
+    cms:locator <urn:sports-data:CFBB784> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "SheBelieves Cup"@en-gb ;
+    core:shortLabel "SheBelieves Cup"@en-gb ;
+    core:slug "shebelieves-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/738de2ea-5fd4-4a9e-8804-046b9f1166ba#id> a sport:RecurringCompetition ;
+    sal:name "B International Match"@en-gb ;
+    sal:videCode "INTB"@en-gb ;
+    cms:locator <urn:sports-data:CFBB343>,
+        <urn:sports-stats:119001944> ;
+    core:disambiguationHint "B-team Football matches"@en-gb ;
+    core:preferredLabel "B Internationals"@en-gb ;
+    core:shortLabel "B Internationals"@en-gb ;
+    core:slug "b-internationals"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/76da52ef-f8a5-4fa1-880d-d2d9197b01b5#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA World Cup Qualifying - Asia"@en-gb ;
+    sal:videCode "WQAS"@en-gb ;
+    cms:locator <urn:sports-data:CFBB341> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup Qualifying - Asia"@en-gb ;
+    core:shortLabel "World Cup Qual Asia"@en-gb ;
+    core:slug "world-cup-qualifying-asia"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7ae7b00a-67af-44c1-9c87-b794678ed40e#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Categoria Primera A"@en-gb ;
+    sal:videCode "COPD"@en-gb ;
+    cms:locator <urn:sports-data:CFBB371> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Liga Aguila"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/categoria-primera-a> ;
+    core:shortLabel "Liga Aguila"@en-gb ;
+    core:slug "categoria-primera-a"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7d304dc2-9e5c-426f-a2bd-90ec195c7d3a#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Chilean Primera Division"@en-gb ;
+    sal:videCode "CHPD"@en-gb ;
+    cms:locator <urn:sports-data:CFBB558> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Chilean Primera Division"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/chilean-primera-division> ;
+    core:shortLabel "Chilean Primera Division"@en-gb ;
+    core:slug "chilean-primera-division"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7f1ad365-5ea1-48a9-b35a-18843e4fb3a9#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA Confederations Cup"@en-gb ;
+    sal:videCode "CCUP"@en-gb ;
+    cms:locator <urn:sports-data:CFBB330>,
+        <urn:sports-stats:119001913> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Confederations Cup"@en-gb ;
+    core:primaryTopicOf <http://www.fifa.com/confederationscup/> ;
+    core:sameAs <http://dbpedia.org/resource/FIFA_Confederations_Cup> ;
+    core:shortLabel "Confederations Cup"@en-gb ;
+    core:slug "confederations-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> a sport:RecurringCompetition ;
+    sal:name "UEFA Europa League Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB524>,
+        <urn:sports-stats:118999990> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Europa League Qualifying"@en-gb ;
+    core:shortLabel "Europa League Qualifying"@en-gb ;
+    core:slug "europa-league-qualifying"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Dutch Eredivisie"@en-gb ;
+    sal:videCode "DUTC"@en-gb ;
+    cms:locator <urn:sports-data:CFBB9>,
+        <urn:sports-stats:119001012> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Dutch Eredivisie"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/dutch-eredivisie>,
+        <http://www.eredivisie.nl/> ;
+    core:shortLabel "Dutch Eredivisie"@en-gb ;
+    core:slug "dutch-eredivisie"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/888b4526-95f4-4d67-956c-21691208143d#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA Super Cup"@en-gb ;
+    sal:videCode "SUPC"@en-gb ;
+    cms:locator <urn:sports-data:CFBB174>,
+        <urn:sports-stats:119000051> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Super Cup"@en-gb ;
+    core:shortLabel "Super Cup"@en-gb ;
+    core:slug "super-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/89217517-99f5-4049-bc4e-c2a910300b35#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA Nations League"@en-gb ;
+    sal:videCode "UNTL"@en-gb ;
+    cms:locator <urn:sports-data:CFBB941> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "UEFA Nations League"@en-gb ;
+    core:primaryTopicOf <https://www.uefa.com/uefanationsleague/index.html> ;
+    core:shortLabel "Nations League"@en-gb ;
+    core:slug "nations-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Portuguese Primeira Liga NOS"@en-gb ;
+    sal:videCode "PORT"@en-gb ;
+    cms:locator <urn:sports-data:CFBB99>,
+        <urn:sports-stats:119001048> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Portuguese Primeira Liga"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/portuguese-primeira-liga>,
+        <http://www.lpfp.pt/Pages/Inicio.aspx> ;
+    core:shortLabel "Portuguese Primeira"@en-gb ;
+    core:slug "portuguese-primeira-liga"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/91658eff-f985-49e8-9969-27496c4d3ad0#id> a sport:RecurringCompetition ;
+    sal:name "FIFA World Cup Qualifying - OFC/CONMEBOL Play-Off"@en-gb ;
+    sal:videCode "WQAM"@en-gb ;
+    cms:locator <urn:sports-data:CFBB345> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup Qualifying - OFC/CONMEBOL Play-Off"@en-gb ;
+    core:primaryTopicOf <http://www.fifa.com/worldcup/> ;
+    core:shortLabel "OFC/CONMEBOL Play-Off"@en-gb ;
+    core:slug "world-cup-qualifying-playoff-ofc-conmebol"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9257d19b-c900-440c-8ad6-0c9fe8e81a07#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Women's Olympic Football"@en-gb ;
+    sal:videCode "OLYW"@en-gb ;
+    cms:locator <urn:sports-data:CFBB578> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Women's Olympic Football"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/olympic-football-women> ;
+    core:shortLabel "Women's Olympic Football"@en-gb ;
+    core:slug "olympic-football-women"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "CAF Total Africa Cup of Nations"@en-gb ;
+    sal:videCode "ACN"@en-gb ;
+    cms:locator <urn:sports-data:CFBB190>,
+        <urn:sports-stats:119001914> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Africa Cup of Nations"@en-gb ;
+    core:primaryTopicOf <http://www.cafonline.com/> ;
+    core:shortLabel "Africa Cup of Nations"@en-gb ;
+    core:slug "africa-cup-of-nations"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/94213dc1-8aef-4ff2-8d35-d345747ee621#id> a sport:RecurringCompetition ;
+    sal:name "Under-21 Friendly"@en-gb ;
+    sal:videCode "U21F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB35>,
+        <urn:sports-stats:119001974> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Under-21 Friendly"@en-gb ;
+    core:primaryTopicOf <http://www.uefa.com/under21/index.html> ;
+    core:shortLabel "Under-21 Friendly"@en-gb ;
+    core:slug "under-21-friendlies"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9919ac56-b4de-4786-8059-c4a46a603b2b#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA Women's Champions League"@en-gb ;
+    sal:videCode "WCHG"@en-gb ;
+    cms:locator <urn:sports-data:CFBB646> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Women's Champions League"@en-gb ;
+    core:primaryTopicOf <http://www.uefa.com/womenschampionsleague> ;
+    core:shortLabel "Women's Champs Lge"@en-gb ;
+    core:slug "womens-champions-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Spanish La Liga Santander"@en-gb ;
+    sal:videCode "SPAN"@en-gb ;
+    cms:locator <urn:sports-data:CFBB23>,
+        <urn:sports-stats:119001074> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Spanish La Liga"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/spanish-la-liga>,
+        <http://www.laliga.es/en> ;
+    core:shortLabel "Spanish La Liga"@en-gb ;
+    core:slug "spanish-la-liga"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a626b35a-026a-4a02-942d-eba9975f1346#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Japanese J1 League"@en-gb ;
+    sal:videCode "JPN"@en-gb ;
+    cms:locator <urn:sports-data:CFBB20> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Japanese J1 League"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/japanese-j1-league>,
+        <https://www.jleague.jp/en/> ;
+    core:shortLabel "Japanese J1 League"@en-gb ;
+    core:slug "japanese-j1-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a703c3d9-8259-4329-93df-daa7467d0728#id> a sport:RecurringCompetition ;
+    sal:name "UEFA European Championship Under-21 Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB511>,
+        <urn:sports-stats:119002004> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Euro U21 Qualifying"@en-gb ;
+    core:primaryTopicOf <http://www.uefa.com/under21/> ;
+    core:shortLabel "Euro Under-21 Qualifying"@en-gb ;
+    core:slug "euro-under-21-qualifying"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ab832e84-e79c-48b3-8cd5-b0953bd8eafe#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "German DFB Cup"@en-gb ;
+    sal:videCode "DFB"@en-gb ;
+    cms:locator <urn:sports-data:CFBB231> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "German DFB Cup"@en-gb ;
+    core:shortLabel "German Cup"@en-gb ;
+    core:slug "german-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/abb65521-4d89-4881-aa11-d763bf3ff92d#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "CONCACAF Champions League"@en-gb ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "CONCACAF Champions League"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/concacaf-champions-league> ;
+    core:sameAs <http://dbpedia.org/resource/CONCACAF_Champions_League> ;
+    core:shortLabel "CONCACAF Champions League"@en-gb ;
+    core:slug "concacaf-champions-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ad6233e8-3232-4173-982b-743a6de3d65a#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "French Coupe de France"@en-gb ;
+    sal:videCode "FCDF"@en-gb ;
+    cms:locator <urn:sports-data:CFBB361> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "French Coupe de France"@en-gb ;
+    core:shortLabel "French Cup"@en-gb ;
+    core:slug "french-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ae705764-7425-4629-a108-4878cae994a9#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Argentine Primera Division - Playoffs"@en-gb ;
+    sal:videCode "ARGP"@en-gb ;
+    cms:locator <urn:sports-data:CFBB585> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Argentine Primera Division - Playoffs"@en-gb ;
+    core:shortLabel "Argentine Primera - Playoffs"@en-gb ;
+    core:slug "argentine-primera-division-playoffs"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/aed49af8-618e-4cdf-b6f4-df8822d1df9c#id> a sport:RecurringCompetition ;
+    sal:name "FIFA World Cup Qualifying - CONCACAF/AFC Play-Off"@en-gb ;
+    sal:videCode "WQAM"@en-gb ;
+    cms:locator <urn:sports-data:CFBB344> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup Qualifying - CONCACAF/AFC Play-Off"@en-gb ;
+    core:primaryTopicOf <http://www.fifa.com/worldcup/> ;
+    core:shortLabel "CONCACAF/AFC Play-Off"@en-gb ;
+    core:slug "world-cup-qualifying-playoff-concacaf-afc"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b0b47aae-841c-4d17-ab82-a2560fb0e728#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Argentine Primera Division - Inicial"@en-gb ;
+    sal:videCode "ARGP"@en-gb ;
+    cms:locator <urn:sports-data:CFBB240> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Argentine Primera Division - Inicial"@en-gb ;
+    core:shortLabel "Argentine Inicial"@en-gb ;
+    core:slug "argentine-primera-division-inicial"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b14d2c7f-663f-440f-8e9f-54019f9488ce#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA Club World Cup"@en-gb ;
+    sal:videCode "CWC"@en-gb ;
+    cms:locator <urn:sports-data:CFBB335>,
+        <urn:sports-stats:119003064> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Club World Cup"@en-gb ;
+    core:primaryTopicOf <http://www.fifa.com/clubworldcup/index.html> ;
+    core:shortLabel "Club World Cup"@en-gb ;
+    core:slug "club-world-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b77c85f4-f7cb-43bf-a5d5-0f04a0cd7378#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Mexican Clausura"@en-gb ;
+    sal:videCode "MEXC"@en-gb ;
+    cms:locator <urn:sports-data:CFBB385> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Mexican Clausura"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/mexican-clausura> ;
+    core:shortLabel "Mexican Clausura"@en-gb ;
+    core:slug "mexican-clausura"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Swedish Allsvenskan"@en-gb ;
+    sal:videCode "SWED"@en-gb ;
+    cms:locator <urn:sports-data:CFBB226>,
+        <urn:sports-stats:119001079> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Swedish Allsvenskan"@en-gb ;
+    core:primaryTopicOf <http://www.allsvenskan.se/>,
+        <http://www.bbc.co.uk/sport/football/swedish-allsvenskan> ;
+    core:shortLabel "Swedish Allsvenskan"@en-gb ;
+    core:slug "swedish-allsvenskan"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bc71c3a0-e74d-4add-ace6-50877079f0b3#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA Women's European Championship"@en-gb ;
+    sal:videCode "WEUR"@en-gb ;
+    cms:locator <urn:sports-data:CFBB616>,
+        <urn:sports-stats:118999062> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Women's European Championship"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/womens-european-championship>,
+        <http://www.uefa.com/womenseuro/> ;
+    core:sameAs <http://dbpedia.org/resource/UEFA_Women%27s_Championship> ;
+    core:shortLabel "Women's Euro Champs"@en-gb ;
+    core:slug "womens-european-championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "United States Major League Soccer"@en-gb ;
+    sal:videCode "MLS"@en-gb ;
+    cms:locator <urn:sports-data:CFBB98> ;
+    core:disambiguationHint "North American football competition"@en-gb ;
+    core:preferredLabel "United States Major League Soccer"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/us-major-league> ;
+    core:shortLabel "US MLS"@en-gb ;
+    core:slug "us-major-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Austrian T-Mobile Bundesliga"@en-gb ;
+    sal:videCode "AUT"@en-gb ;
+    cms:locator <urn:sports-data:CFBB119>,
+        <urn:sports-stats:119000919> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Austrian Bundesliga"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/austrian-bundesliga>,
+        <http://www.bundesliga.at/> ;
+    core:shortLabel "Austrian Bundesliga"@en-gb ;
+    core:slug "austrian-bundesliga"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bfd7da21-7306-4cfc-925a-3e6fc485ce74#id> a sport:RecurringCompetition ;
+    sal:name "Football Association of Ireland Senior Challenge Cup"@en-gb ;
+    sal:videCode "FAI"@en-gb ;
+    cms:locator <urn:sports-data:CFBB400> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "FAI Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/fai-cup>,
+        <http://www.fai.ie/domestic/competitions/irish-daily-mail-fai-senior-cup> ;
+    core:shortLabel "FAI Cup"@en-gb ;
+    core:slug "fai-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c2849b16-b4f1-4ef7-9baa-437937470d71#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "CONMEBOL Copa América"@en-gb ;
+    sal:videCode "CA"@en-gb ;
+    cms:locator <urn:sports-data:CFBB128> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Copa America"@en-gb ;
+    core:shortLabel "Copa America"@en-gb ;
+    core:slug "copa-america"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c2985623-1bd4-43a7-b29e-c48bc19759e8#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA Women's European Championship Qualifying"@en-gb ;
+    sal:videCode "WEUQ"@en-gb ;
+    cms:locator <urn:sports-data:CFBB565>,
+        <urn:sports-stats:119000055> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Women's European Championship Qualifying"@en-gb ;
+    core:primaryTopicOf <http://www.uefa.com/womenseuro/> ;
+    core:shortLabel "Women's Euro Qual"@en-gb ;
+    core:slug "womens-european-championship-qualifying"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group-womens> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c5ff496d-f54e-4cf4-a3b8-ecb9918a87fe#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA European Under-21 Championship"@en-gb ;
+    cms:locator <urn:sports-data:CFBB352>,
+        <urn:sports-stats:119002005> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Euro Under-21 Championship"@en-gb ;
+    core:primaryTopicOf <http://www.uefa.com/under21/> ;
+    core:sameAs <http://dbpedia.org/resource/UEFA_European_Under-21_Football_Championship> ;
+    core:shortLabel "Euro U21 Champs"@en-gb ;
+    core:slug "euro-under-21-championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "German Bundesliga"@en-gb ;
+    sal:videCode "GERB"@en-gb ;
+    cms:locator <urn:sports-data:CFBB22>,
+        <urn:sports-stats:119000986> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "German Bundesliga"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/german-bundesliga>,
+        <http://www.bundesliga.com/en/> ;
+    core:shortLabel "German Bundesliga"@en-gb ;
+    core:slug "german-bundesliga"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA European Championship Qualifying"@en-gb ;
+    sal:videCode "EURO"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235>,
+        <urn:sports-stats:119002036> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "European Championship Qualifying"@en-gb ;
+    core:primaryTopicOf <http://www.uefa.com/uefaeuro/> ;
+    core:shortLabel "Euro Qualifying"@en-gb ;
+    core:slug "european-championship-qualifying"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d2498561-e2b0-469e-a968-0cbc46f97457#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Spanish Copa del Rey"@en-gb ;
+    sal:videCode "SCDR"@en-gb ;
+    cms:locator <urn:sports-data:CFBB331> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Spanish Copa del Rey"@en-gb ;
+    core:shortLabel "Spanish Cup"@en-gb ;
+    core:slug "spanish-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d422dd36-0f86-4a13-aab5-e9fe3465d225#id> a sport:RecurringCompetition ;
+    sal:name "Colombia Primera A Finalizacion"@en-gb ;
+    sal:videCode "CPAF"@en-gb ;
+    cms:locator <urn:sports-data:CFBB589> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Colombia Primera A Finalizacion"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/colombia-primera-a-finalizacion> ;
+    core:shortLabel "Primera A Finalizacion"@en-gb ;
+    core:slug "colombia-primera-a-finalizacion"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d81d8ca9-c916-4bc1-9c9c-80ea03964562#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA World Cup Qualifying - African Region"@en-gb ;
+    sal:videCode "WQAF"@en-gb ;
+    cms:locator <urn:sports-data:CFBB340>,
+        <urn:sports-stats:119001882> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup Qualifying - African"@en-gb ;
+    core:primaryTopicOf <http://www.fifa.com/worldcup/> ;
+    core:shortLabel "World Cup Qual Africa"@en-gb ;
+    core:slug "qualifying-african"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d97ad279-e97b-475c-8680-01ae478aed73#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Russian SOGAZ Premier League"@en-gb ;
+    sal:videCode "RUSP"@en-gb ;
+    cms:locator <urn:sports-data:CFBB129> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Russian Premier League"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/russian-premier-league> ;
+    core:shortLabel "Russian Prem League"@en-gb ;
+    core:slug "russian-premier-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Italian TIM Serie A"@en-gb ;
+    sal:videCode "ITAL"@en-gb ;
+    cms:locator <urn:sports-data:CFBB21>,
+        <urn:sports-stats:119001017> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Italian Serie A"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/italian-serie-a>,
+        <http://www.legaseriea.it/en/> ;
+    core:shortLabel "Italian Serie A"@en-gb ;
+    core:slug "italian-serie-a"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/de6a07ff-47ff-4551-9b71-7494a71aceac#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIFA World Cup"@en-gb ;
+    sal:videCode "WCUP"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4>,
+        <urn:sports-stats:119001880> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "World Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/world-cup>,
+        <http://www.fifa.com/worldcup/> ;
+    core:sameAs <http://dbpedia.org/resource/FIFA_World_Cup> ;
+    core:shortLabel "World Cup"@en-gb ;
+    core:slug "world-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Swiss Raiffeisen Super League"@en-gb ;
+    sal:videCode "SWIS"@en-gb ;
+    cms:locator <urn:sports-data:CFBB135>,
+        <urn:sports-stats:119001105> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "Swiss Super League"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/swiss-super-league>,
+        <http://www.sfl.ch/fr/Swiss-Football-League.aspx> ;
+    core:shortLabel "Swiss Super League"@en-gb ;
+    core:slug "swiss-super-league"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/club-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ed49dd50-30b0-43cd-a9b5-405a066a7e22#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "China Cup"@en-gb ;
+    sal:videCode "CHN"@en-gb ;
+    cms:locator <urn:sports-data:CFBB822> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "China Cup"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/china-cup> ;
+    core:shortLabel "China Cup"@en-gb ;
+    core:slug "china-cup"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/eecba9c9-afb4-4d64-9c1f-b7e62da658bf#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "UEFA European Championship"@en-gb ;
+    sal:videCode "EURO"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3>,
+        <urn:sports-stats:119002035> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "European Championship"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/european-championship/euro-2016>,
+        <http://www.uefa.com/uefaeuro/> ;
+    core:sameAs <http://dbpedia.org/resource/UEFA_European_Football_Championship> ;
+    core:shortLabel "European Championship"@en-gb ;
+    core:slug "european-championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "French Ligue 1"@en-gb ;
+    sal:videCode "FRE"@en-gb ;
+    cms:locator <urn:sports-data:CFBB24>,
+        <urn:sports-stats:119000981> ;
+    core:disambiguationHint "Football competition"@en-gb ;
+    core:preferredLabel "French Ligue 1"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/french-ligue-one>,
+        <http://www.ligue1.com/> ;
+    core:shortLabel "French Ligue 1"@en-gb ;
+    core:slug "french-ligue-one"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/domestic-league> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.fotball.no/Landslag_og_toppfotball> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.lfp.es/Home/tabid/442/language/en-GB/Default.aspx> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<urn:sports-stats:119003958> a cms:Sports-StatsLocator .
+
+<http://www.allsvenskan.se/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bbc.co.uk/sport/football/argentine-primera-division> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/australian-a-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/austrian-bundesliga> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/belgian-pro-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/brazilian-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/categoria-primera-a> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/champions-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/chilean-primera-division> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/china-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/concacaf-champions-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/copa-libertadores> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/copa-sudamericana> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/danish-superliga> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/dutch-eredivisie> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/europa-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/european-championship/euro-2016> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/fai-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/finnish-veikkausliiga> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/french-ligue-one> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/german-bundesliga> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/greek-superleague> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/italian-serie-a> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/japanese-j1-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/mexican-clausura> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/mls-all-star-game> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/norwegian-tippeligaen> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/olympic-football-men> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/olympic-football-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/portuguese-primeira-liga> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/russian-premier-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/spanish-la-liga> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/swedish-allsvenskan> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/swiss-super-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/turkish-super-lig> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/us-major-league> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/womens-european-championship> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/world-cup> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bundesliga.at/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.bundesliga.com/en/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.cafonline.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.eredivisie.nl/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fai.ie/domestic/competitions/irish-daily-mail-fai-senior-cup> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fifa.com/clubworldcup/index.html> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fifa.com/confederationscup/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fifa.com/womensworldcup/index.html> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.fifa.com/worldcup/preliminaries/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.legaseriea.it/en/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.ligue1.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.lpfp.pt/Pages/Inicio.aspx> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.sfl.ch/fr/Swiss-Football-League.aspx> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.sport.be/fr/jupilerproleague/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.superleaguegreece.net/eng/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.superliga.dk/forside/english.html> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.tff.org/Default.aspx?pageID=449> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.uefa.com/uefachampionsleague> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.uefa.com/uefaeuropaleague/index.html> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.uefa.com/under21/index.html> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.uefa.com/womenschampionsleague> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.veikkausliiga.com/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<https://www.jleague.jp/en/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<https://www.uefa.com/uefanationsleague/index.html> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<urn:sports-data:CFBB100> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB112> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB113> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB115> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB119> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB128> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB129> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB135> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB174> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB190> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB20> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB21> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB214> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB22> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB226> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB23> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB231> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB232> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB24> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB240> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB259> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB330> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB331> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB335> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB338> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB339> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB340> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB341> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB342> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB343> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB344> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB345> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB35> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB352> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB355> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB361> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB362> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB363> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB371> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB378> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB379> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB380> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB384> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB385> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB400> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB408> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB511> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB524> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB525> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB527> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB551> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB558> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB56> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB565> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB578> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB585> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB589> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB616> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB638> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB646> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB724> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB784> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB822> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB88> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB9> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB90> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB941> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB98> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB99> a cms:Sports-DataLocator .
+
+<urn:sports-stats:118999062> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118999958> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118999959> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118999989> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:118999990> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119000051> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119000055> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119000919> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119000924> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119000950> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119000955> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119000981> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119000986> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001012> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001017> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001043> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001048> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001074> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001079> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001105> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001110> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001136> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001880> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001881> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001882> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001913> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001914> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001943> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001944> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119001974> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119002004> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119002005> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119002035> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119002036> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119003058> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119003064> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:119003959> a cms:Sports-StatsLocator .
+
+<http://www.uefa.com/uefaeuro/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.uefa.com/under21/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<http://www.uefa.com/womenseuro/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+
+<urn:sports-data:CFBB642> a cms:Sports-DataLocator .
+
+<http://www.fifa.com/worldcup/> a bbc:WebDocument ;
+    bbc:webDocumentCategory sal:ExternalWebsite .
+

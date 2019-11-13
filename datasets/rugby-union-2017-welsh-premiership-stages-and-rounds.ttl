@@ -1,0 +1,74 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/0626da1b-fef4-4672-82d6-909c8d380e5e#id> a provenance:Dataset ;
+    rdfs:label "Rugby Union: Welsh Premiership 2017/18 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-union/rugby-union-2017-welsh-premiership-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3639;2: Model Welsh Premiership 2017/18 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-08-31T09:49:38+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/190ebae0-a116-4746-ac66-cf627e9a2ec4#id> sport:firstStage <http://www.bbc.co.uk/things/847b30b6-6547-4392-812f-628519998bff#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/87f563ca-ee44-4ffd-90ab-43eb2e6bb89b#id> .
+
+<http://www.bbc.co.uk/things/1255577a-9687-4a0c-98b9-bbf459839865#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Welsh Premiership"@en-gb ;
+    sal:name "West League"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532017S1R2> ;
+    core:preferredLabel "West League"@en-gb ;
+    core:shortLabel "West"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/79470bd4-43c2-4551-bcf2-0f262ae1c1e6#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Welsh Premiership"@en-gb ;
+    sal:name "East League"@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532017S1R1> ;
+    core:preferredLabel "East League"@en-gb ;
+    core:shortLabel "East"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CRUB1532017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1532017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1532017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRUB1532017S2> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/847b30b6-6547-4392-812f-628519998bff#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 'Leagues' of 'Welsh Premiership' "@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532017S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/79470bd4-43c2-4551-bcf2-0f262ae1c1e6#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/1255577a-9687-4a0c-98b9-bbf459839865#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/87f563ca-ee44-4ffd-90ab-43eb2e6bb89b#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/87f563ca-ee44-4ffd-90ab-43eb2e6bb89b#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 'Final League' of 'Welsh Premiership' "@en-gb ;
+    cms:locator <urn:sports-data:CRUB1532017S2> ;
+    core:preferredLabel "Final League"@en-gb ;
+    core:shortLabel "Final League"@en-gb ;
+    sport:prevStage <http://www.bbc.co.uk/things/847b30b6-6547-4392-812f-628519998bff#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

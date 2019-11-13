@@ -1,0 +1,98 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/ea58ffb6-cd44-4835-8117-57cdb7772fe0#id> a provenance:Dataset ;
+    rdfs:label "League of Ireland Cup 2017 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/league-of-ireland-cup-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3290;2: League of Ireland Cup" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-08-04T13:11:39+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Kristian.Epps@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/e6126c36-b1b7-419a-950b-9378159b0394#id> sport:hasStage <http://www.bbc.co.uk/things/2c379f2f-59b7-46db-b391-13cf2fc461b7#id> .
+
+<http://www.bbc.co.uk/things/0f9270cb-3ffa-44d8-b0a2-f792934fcff4#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of League of Ireland Cup"@en-gb ;
+    sal:name "Round 2 of League of Ireland Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3962017S1R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/2c379f2f-59b7-46db-b391-13cf2fc461b7#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of League of Ireland Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3962017S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/b8c115c2-014f-443a-8dc7-44343b0ec0d1#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0f9270cb-3ffa-44d8-b0a2-f792934fcff4#id>,
+        <http://www.bbc.co.uk/things/39537111-69dc-42d7-a716-67b63669d465#id>,
+        <http://www.bbc.co.uk/things/3d656fae-4ce5-48b3-b573-20460b21fd80#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/66e6bf98-3925-4bd8-ad1b-38b844bd3f31#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/39537111-69dc-42d7-a716-67b63669d465#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of League of Ireland Cup"@en-gb ;
+    sal:name "League of Ireland Cup Semi Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3962017S1R4> ;
+    core:preferredLabel "Semi Finals"@en-gb ;
+    core:shortLabel "Semi Finals"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/3d656fae-4ce5-48b3-b573-20460b21fd80#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of League of Ireland Cup"@en-gb ;
+    sal:name "League of Ireland Cup Quarter Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3962017S1R3> ;
+    core:preferredLabel "Quarter Finals"@en-gb ;
+    core:shortLabel "Quarter Finals"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/66e6bf98-3925-4bd8-ad1b-38b844bd3f31#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of League of Ireland Cup"@en-gb ;
+    sal:name "League of Ireland Cup Finals"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3962017S1R5> ;
+    core:preferredLabel "Finals"@en-gb ;
+    core:shortLabel "Finals"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/b8c115c2-014f-443a-8dc7-44343b0ec0d1#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of League of Ireland Cup"@en-gb ;
+    sal:name "Round 1 of League of Ireland Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3962017S1R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<urn:sports-data:CFBB3962017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3962017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3962017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3962017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3962017S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3962017S1R5> a cms:Sports-DataLocator .
+

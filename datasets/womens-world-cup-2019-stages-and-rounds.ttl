@@ -1,0 +1,186 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/7721163a-4a77-40d3-a7d7-82dcb379d562#id> a provenance:Dataset ;
+    rdfs:label "Football: Women's World Cup 2019 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/womens-world-cup-2019-stages-and-rounds.ttl" ;
+    provenance:changeReason "SWD-743: Model summer football tournaments" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-05-24T14:12:07+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> sport:firstStage <http://www.bbc.co.uk/things/8aafe234-0e0b-4309-b0c8-064aee13c55a#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/3c97907f-7dbf-440f-881b-a45f3ccd533f#id> .
+
+<http://www.bbc.co.uk/things/00f79bea-d98b-47b8-a548-4f99d5a514e1#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Women's World Cup 2019"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/42aa431e-38fc-452d-8bd0-3d902ae31f51#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Women's World Cup 2019"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S2R2> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/50db94c2-8fb2-4106-ab72-bcde4a552ec2#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Women's World Cup 2019"@en-gb ;
+    sal:name "3rd/4th Play-Offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S2R4> ;
+    core:preferredLabel "3rd/4th Play-Offs"@en-gb ;
+    core:shortLabel "3rd/4th Play-Offs"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/69741f0c-781c-4712-9668-274eb8f11d9d#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Women's World Cup 2019"@en-gb ;
+    sal:name "Round of 16"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S2R1> ;
+    core:preferredLabel "Round of 16"@en-gb ;
+    core:shortLabel "Round of 16"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-16> .
+
+<http://www.bbc.co.uk/things/81569ceb-8902-4a22-8750-1ec96bbb5628#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Women's World Cup 2019"@en-gb ;
+    sal:name "Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S1R5> ;
+    core:preferredLabel "Group E"@en-gb ;
+    core:shortLabel "Group E"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/9cd1ac8e-0209-4a43-b5d4-26c576dd5191#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Women's World Cup 2019"@en-gb ;
+    sal:name "Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S1R6> ;
+    core:preferredLabel "Group F"@en-gb ;
+    core:shortLabel "Group F"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/a27342fe-85e1-4b9e-80a1-4ee652488364#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 2 of Women's World Cup 2019"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S2R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/c6332f81-66f6-4dbc-9463-75d66b3ad621#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Women's World Cup 2019"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/d5253d1c-ae6f-45e7-a420-0a9a67d48987#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Women's World Cup 2019"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/dbe36363-ee13-4de9-9075-a682e8bf511a#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Women's World Cup 2019"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/faa63572-38de-43d1-8155-4c4861d5e141#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Women's World Cup 2019"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S2R3> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<urn:sports-data:CFBB4082018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4082018S2R5> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/3c97907f-7dbf-440f-881b-a45f3ccd533f#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Women's World Cup 2019"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S2> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel ""@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/69741f0c-781c-4712-9668-274eb8f11d9d#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/42aa431e-38fc-452d-8bd0-3d902ae31f51#id>,
+        <http://www.bbc.co.uk/things/50db94c2-8fb2-4106-ab72-bcde4a552ec2#id>,
+        <http://www.bbc.co.uk/things/faa63572-38de-43d1-8155-4c4861d5e141#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/a27342fe-85e1-4b9e-80a1-4ee652488364#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/8aafe234-0e0b-4309-b0c8-064aee13c55a#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/8aafe234-0e0b-4309-b0c8-064aee13c55a#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Women's World Cup 2019"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CFBB4082018S1> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel ""@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/d5253d1c-ae6f-45e7-a420-0a9a67d48987#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/00f79bea-d98b-47b8-a548-4f99d5a514e1#id>,
+        <http://www.bbc.co.uk/things/81569ceb-8902-4a22-8750-1ec96bbb5628#id>,
+        <http://www.bbc.co.uk/things/c6332f81-66f6-4dbc-9463-75d66b3ad621#id>,
+        <http://www.bbc.co.uk/things/dbe36363-ee13-4de9-9075-a682e8bf511a#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/9cd1ac8e-0209-4a43-b5d4-26c576dd5191#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/3c97907f-7dbf-440f-881b-a45f3ccd533f#id> ;
+    sport:stageNumber 1 .
+

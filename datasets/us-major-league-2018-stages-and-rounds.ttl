@@ -1,0 +1,62 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/32d2f6c3-cd00-406c-b644-8a38c864e022#id> a provenance:Dataset ;
+    rdfs:label "Football: US Major League 2018 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/us-major-league-2018-stages-and-rounds.ttl" ;
+    provenance:changeReason "SWD-737: model stage and rounds for US Major League 2019 (and 2018)" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-04-30T12:08:08+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/5f304f79-67df-4baa-a872-78990b485133#id> sport:hasStage <http://www.bbc.co.uk/things/253938ae-b1fe-4f10-91d0-e6a17c124e88#id> .
+
+<http://www.bbc.co.uk/things/253938ae-b1fe-4f10-91d0-e6a17c124e88#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of US Major League"@en-gb ;
+    cms:locator <urn:sports-data:CFBB982018S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/d6cbb122-02af-4869-af04-c8cf59bfabcc#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/e31efc91-0945-49bb-831c-efeb595109d3#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/d6cbb122-02af-4869-af04-c8cf59bfabcc#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of US Major League"@en-gb ;
+    sal:name "Eastern Conference"@en-gb ;
+    cms:locator <urn:sports-data:CFBB982018S1RE> ;
+    core:preferredLabel "Eastern Conference"@en-gb ;
+    core:shortLabel "Eastern Conference"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/e31efc91-0945-49bb-831c-efeb595109d3#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of US Major League"@en-gb ;
+    sal:name "Western Conference"@en-gb ;
+    cms:locator <urn:sports-data:CFBB982018S1RW> ;
+    core:preferredLabel "Western Conference"@en-gb ;
+    core:shortLabel "Western Conference"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CFBB982018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB982018S1RE> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB982018S1RW> a cms:Sports-DataLocator .
+

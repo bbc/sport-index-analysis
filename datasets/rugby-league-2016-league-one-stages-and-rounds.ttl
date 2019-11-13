@@ -1,0 +1,179 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/df84fb8f-4e20-413e-9387-af9254dc15b3#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2016 Kingstone Press League 1 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-league/rugby-league-2016-league-one-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-1119;10: Model CRLB115 and CRLB1152016S2 as stage 4 and 5 of CRLB1122016; Use final as the round type instead of knockout; Add Kingstone Press League 1 Shield stages and rounds." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-07-26T10:29:30+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "10"^^xsd:int .
+
+<http://www.bbc.co.uk/things/dbb562ca-dd40-4cb2-bc22-5c22b8ed161f#id> sport:firstStage <http://www.bbc.co.uk/things/d2687331-6242-4724-8fd6-c93f06dbdf3e#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/2503cc25-bf82-4c76-9137-33f53690df39#id>,
+        <http://www.bbc.co.uk/things/5d0912ad-14f5-412f-8603-98af0e9b49b4#id>,
+        <http://www.bbc.co.uk/things/6ea47187-3306-4411-a506-3d5188c77b62#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/7348cae3-20cc-4352-ba46-a7b04e894010#id> .
+
+<http://www.bbc.co.uk/things/2dc0e178-3771-457b-90e6-86cc695c4fb3#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Rugby League Kingstone Press League 1 Shield 2016"@en-gb ;
+    sal:name "Shield Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1152016S2R1> ;
+    core:preferredLabel "Shield Final"@en-gb ;
+    core:shortLabel "Shield Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/5e65b5b0-67f7-48fd-b255-2ca3ad2279c9#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Rugby League Kingstone Press League 1 2016"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1122016S1R1> ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/7470e7ad-ceba-4454-976b-02c4e585e6c5#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 3 of Rugby League Kingstone Press League 1 2016"@en-gb ;
+    sal:name "Play-off Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1122016S3R1> ;
+    core:preferredLabel "Play-off Semi-Final"@en-gb ;
+    core:shortLabel "Play-off Semi-Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/7670796f-19b2-4acd-a62e-ad1c82cafb36#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 3 of Rugby League Kingstone Press League 1 2016"@en-gb ;
+    sal:name "Promotion Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1122016S3R3> ;
+    core:preferredLabel "Promotion Final"@en-gb ;
+    core:shortLabel "Promotion Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/8bb3190a-268b-4aed-8464-6e3817ea1f88#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 3 of Rugby League Kingstone Press League 1 2016"@en-gb ;
+    sal:name "Play-off Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1122016S3R2> ;
+    core:preferredLabel "Play-off Final"@en-gb ;
+    core:shortLabel "Play-off Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/ab1f0f5d-46b8-4306-9a5a-00b721911855#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Rugby League Kingstone Press League 1 Shield 2016"@en-gb ;
+    sal:name "Shield"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1152016S1R1> ;
+    core:preferredLabel "Shield"@en-gb ;
+    core:shortLabel "Shield"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/fe5b28b4-6339-42db-af96-ffa8bdfbc5bf#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Rugby League Kingstone Press League 1 2016"@en-gb ;
+    sal:name "Super 8s"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1122016S2R1> ;
+    core:preferredLabel "Super 8s"@en-gb ;
+    core:shortLabel "Super 8s"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CRLB1122016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1122016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1122016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1122016S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1122016S3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1122016S3R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1122016S3R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1122016S3R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB115> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1152016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1152016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB1152016S2R1> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/7348cae3-20cc-4352-ba46-a7b04e894010#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Rugby League Kingstone Press League 1 Shield 2016"@en-gb ;
+    sal:name "League 1 Shield Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1152016S2> ;
+    core:preferredLabel "League 1 Shield Final"@en-gb ;
+    core:shortLabel "League 1 Shield Final"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/2dc0e178-3771-457b-90e6-86cc695c4fb3#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/6ea47187-3306-4411-a506-3d5188c77b62#id> ;
+    sport:stageNumber "5"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d2687331-6242-4724-8fd6-c93f06dbdf3e#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Rugby League Kingstone Press League 1 2016"@en-gb ;
+    sal:name "League 1"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1122016S1> ;
+    core:preferredLabel "League 1"@en-gb ;
+    core:shortLabel "League 1"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/5e65b5b0-67f7-48fd-b255-2ca3ad2279c9#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/5d0912ad-14f5-412f-8603-98af0e9b49b4#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/2503cc25-bf82-4c76-9137-33f53690df39#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 3 of Rugby League Kingstone Press League 1 2016"@en-gb ;
+    sal:name "League 1 Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1122016S3> ;
+    core:preferredLabel "League 1 Play-offs"@en-gb ;
+    core:shortLabel "League 1 Play-offs"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/7670796f-19b2-4acd-a62e-ad1c82cafb36#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/7470e7ad-ceba-4454-976b-02c4e585e6c5#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/8bb3190a-268b-4aed-8464-6e3817ea1f88#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/6ea47187-3306-4411-a506-3d5188c77b62#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/5d0912ad-14f5-412f-8603-98af0e9b49b4#id> ;
+    sport:stageNumber "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/5d0912ad-14f5-412f-8603-98af0e9b49b4#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 2 of Rugby League Kingstone Press League 1 2016"@en-gb ;
+    sal:name "League 1 Super 8s"@en-gb ;
+    cms:locator <urn:sports-data:CRLB1122016S2> ;
+    core:preferredLabel "League 1 Super 8s"@en-gb ;
+    core:shortLabel "League 1 Super 8s"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/fe5b28b4-6339-42db-af96-ffa8bdfbc5bf#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/2503cc25-bf82-4c76-9137-33f53690df39#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/d2687331-6242-4724-8fd6-c93f06dbdf3e#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/6ea47187-3306-4411-a506-3d5188c77b62#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Rugby League Kingstone Press League 1 Shield 2016"@en-gb ;
+    sal:name "League 1 Shield"@en-gb ;
+    cms:locator <urn:sports-data:CRLB115> ;
+    core:preferredLabel "League 1 Shield"@en-gb ;
+    core:shortLabel "League 1 Shield"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/2ff39a77-e085-41bd-90f5-8a81f0312e9a#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/ab1f0f5d-46b8-4306-9a5a-00b721911855#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/7348cae3-20cc-4352-ba46-a7b04e894010#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/2503cc25-bf82-4c76-9137-33f53690df39#id> ;
+    sport:stageNumber "4"^^xsd:int .
+

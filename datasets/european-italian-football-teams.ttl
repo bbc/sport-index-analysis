@@ -1,0 +1,688 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/f78375c1-299e-4f81-b6cb-de73f6a95198#id> a provenance:Dataset ;
+    rdfs:label "Football: European Italian Domestic Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-italian-football-teams.ttl" ;
+    provenance:changeReason "SWD-821: Model 2019/20 European domestic football - UEFA club comps" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-06-06T11:30:43+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "7"^^xsd:int .
+
+<http://www.bbc.co.uk/things/00358f81-e421-4464-bdc9-ecf2034c822e#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sampdoria"@en-gb ;
+    cms:locator <urn:sports-data:TFBB603> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Sampdoria"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/sampdoria> ;
+    core:sameAs <http://dbpedia.org/resource/U.C._Sampdoria> ;
+    core:shortLabel "Sampdoria"@en-gb ;
+    core:slug "sampdoria"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/235e7428-a622-44b5-8161-fedc34aff4ab#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sassuolo"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2182> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Sassuolo"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/sassuolo> ;
+    core:sameAs <http://dbpedia.org/resource/U.S._Sassuolo_Calcio> ;
+    core:shortLabel "Sassuolo"@en-gb ;
+    core:slug "sassuolo"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/29d5b5a1-08a2-48cc-a0c0-ebefddec861c#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Udinese"@en-gb ;
+    sal:videCode "UDIN"@en-gb ;
+    cms:locator <urn:sports-data:TFBB136> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Udinese"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/udinese> ;
+    core:sameAs <http://dbpedia.org/resource/Udinese_Calcio>,
+        <http://rdf.freebase.com/ns/m.0138mv>,
+        <http://www.wikidata.org/entity/Q2798> ;
+    core:shortLabel "Udinese"@en-gb ;
+    core:slug "udinese"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2e65069d-6333-4d0d-a29e-3ab63b75de6a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Lecce"@en-gb ;
+    cms:locator <urn:sports-data:TFBB130> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Lecce"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/lecce> ;
+    core:sameAs <http://dbpedia.org/resource/U.S._Lecce> ;
+    core:shortLabel "Lecce"@en-gb ;
+    core:slug "lecce"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3447fd88-6593-40f8-8688-143141bd5d22#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Inter Milan"@en-gb ;
+    sal:videCode "INTE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB127> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Inter Milan"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/inter-milan> ;
+    core:sameAs <http://dbpedia.org/resource/Inter_Milan>,
+        <http://rdf.freebase.com/ns/m.03x6m>,
+        <http://www.wikidata.org/entity/Q631> ;
+    core:shortLabel "Inter Milan"@en-gb ;
+    core:slug "inter-milan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/48f9379b-2db4-494e-9790-8ef11649cfa8#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Palermo"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1405> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Palermo"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/palermo> ;
+    core:sameAs <http://dbpedia.org/resource/U.S._Città_di_Palermo> ;
+    core:shortLabel "Palermo"@en-gb ;
+    core:slug "palermo"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4c9e70bb-a50f-4aeb-8698-7022295fb178#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bologna"@en-gb ;
+    cms:locator <urn:sports-data:TFBB123> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Bologna"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/bologna> ;
+    core:sameAs <http://dbpedia.org/resource/Bologna_F.C._1909> ;
+    core:shortLabel "Bologna"@en-gb ;
+    core:slug "bologna"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5257a7f4-b161-41de-a593-028b487e680f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cagliari"@en-gb ;
+    cms:locator <urn:sports-data:TFBB124> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Cagliari"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/cagliari> ;
+    core:sameAs <http://dbpedia.org/resource/Cagliari> ;
+    core:shortLabel "Cagliari"@en-gb ;
+    core:slug "cagliari"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6520ad1c-5219-423e-8192-8051c27aebc6#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Torino"@en-gb ;
+    cms:locator <urn:sports-data:TFBB135> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Torino"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/torino> ;
+    core:sameAs <http://dbpedia.org/resource/Torino_F.C.> ;
+    core:shortLabel "Torino"@en-gb ;
+    core:slug "torino"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/66149bab-0472-4d1f-8ce0-4fb91aa4fc18#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Pescara"@en-gb ;
+    cms:locator <urn:sports-data:TFBB747> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Pescara"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/pescara> ;
+    core:sameAs <http://dbpedia.org/resource/Delfino_Pescara_1936> ;
+    core:shortLabel "Pescara"@en-gb ;
+    core:slug "pescara"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/69df1063-8877-4f13-8794-df424d1d2b73#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "SPAL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1454> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "SPAL"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/spal> ;
+    core:sameAs <http://dbpedia.org/resource/S.P.A.L._2013> ;
+    core:shortLabel "SPAL"@en-gb ;
+    core:slug "spal"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/6f93127a-159a-45d6-a9d0-97d09b38dd66#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Juventus"@en-gb ;
+    sal:videCode "JUVE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB128> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Juventus"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/juventus> ;
+    core:sameAs <http://dbpedia.org/resource/Juventus_F.C.>,
+        <http://rdf.freebase.com/ns/m.045xx>,
+        <http://www.wikidata.org/entity/Q1422> ;
+    core:shortLabel "Juventus"@en-gb ;
+    core:slug "juventus"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/756a1eb5-f8bf-486d-b65d-fc74390b7288#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Lazio"@en-gb ;
+    sal:videCode "LAZI"@en-gb ;
+    cms:locator <urn:sports-data:TFBB129> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Lazio"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/lazio> ;
+    core:sameAs <http://dbpedia.org/resource/S.S._Lazio>,
+        <http://rdf.freebase.com/ns/m.075q_>,
+        <http://www.wikidata.org/entity/Q2609> ;
+    core:shortLabel "Lazio"@en-gb ;
+    core:slug "lazio"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/4a64b2de-a14e-4098-98a4-b60e0bed7d31#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7f79e78a-dc44-4008-9315-ee2c098dbc85#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Chievo"@en-gb ;
+    cms:locator <urn:sports-data:TFBB988> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Chievo"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/chievo> ;
+    core:sameAs <http://dbpedia.org/resource/A.C._Chievo_Verona> ;
+    core:shortLabel "Chievo"@en-gb ;
+    core:slug "chievo"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/8451bdf1-433f-4706-90f7-6a0589ddc807#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Brescia"@en-gb ;
+    cms:locator <urn:sports-data:TFBB458> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Brescia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/brescia> ;
+    core:sameAs <http://dbpedia.org/resource/Brescia_Calcio> ;
+    core:shortLabel "Brescia"@en-gb ;
+    core:slug "brescia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/855796ec-5090-442e-ac5a-b2f0299c26af#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Roma"@en-gb ;
+    sal:videCode "ROMA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB121> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Roma"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/roma> ;
+    core:sameAs <http://dbpedia.org/resource/A.S._Roma>,
+        <http://rdf.freebase.com/ns/m.0ytc>,
+        <http://www.wikidata.org/entity/Q2739> ;
+    core:shortLabel "Roma"@en-gb ;
+    core:slug "roma"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/85f043fe-1346-470c-96dd-d6ed1c0e47a9#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "AC Milan"@en-gb ;
+    sal:videCode "AC M"@en-gb ;
+    cms:locator <urn:sports-data:TFBB120> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "AC Milan"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/milan> ;
+    core:sameAs <http://dbpedia.org/resource/A.C._Milan>,
+        <http://rdf.freebase.com/ns/m.011v3>,
+        <http://www.wikidata.org/entity/Q1543> ;
+    core:shortLabel "AC Milan"@en-gb ;
+    core:slug "milan"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/92bae4bd-bdfd-4904-bf36-0276061b46e8#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Hellas Verona"@en-gb ;
+    cms:locator <urn:sports-data:TFBB126> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Hellas Verona"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/hellas-verona> ;
+    core:sameAs <http://dbpedia.org/resource/Hellas_Verona_Football_Club> ;
+    core:shortLabel "Hellas Verona"@en-gb ;
+    core:slug "hellas-verona"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9c4d4d40-2956-4a5b-a8e3-e7274bc2a6db#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Empoli"@en-gb ;
+    cms:locator <urn:sports-data:TFBB695> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Empoli"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/empoli> ;
+    core:sameAs <http://dbpedia.org/resource/Empoli_F.C.> ;
+    core:shortLabel "Empoli"@en-gb ;
+    core:slug "empoli"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/9e4e22f6-26ec-471e-b558-4e5d20c27cb1#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Frosinone"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2037> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Frosinone"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/frosinone> ;
+    core:sameAs <http://dbpedia.org/resource/Frosinone_Calcio> ;
+    core:shortLabel "Frosinone"@en-gb ;
+    core:slug "frosinone"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a15c7264-b424-4d81-ab5e-93da6ea7cb89#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Napoli"@en-gb ;
+    sal:videCode "NAPL"@en-gb ;
+    cms:locator <urn:sports-data:TFBB459> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Napoli"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/napoli> ;
+    core:sameAs <http://dbpedia.org/resource/S.S.C._Napoli>,
+        <http://rdf.freebase.com/ns/m.048xg8>,
+        <http://www.wikidata.org/entity/Q2641> ;
+    core:shortLabel "Napoli"@en-gb ;
+    core:slug "napoli"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a4cf3728-7b51-4c4e-807e-288635ff45ad#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Fiorentina"@en-gb ;
+    cms:locator <urn:sports-data:TFBB125> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Fiorentina"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/fiorentina> ;
+    core:sameAs <http://dbpedia.org/resource/ACF_Fiorentina> ;
+    core:shortLabel "Fiorentina"@en-gb ;
+    core:slug "fiorentina"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b4473ed2-b6ed-4d70-a0bc-0c6087ffde36#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Crotone"@en-gb ;
+    cms:locator <urn:sports-data:TFBB744> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Crotone"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/crotone> ;
+    core:sameAs <http://dbpedia.org/resource/F.C._Crotone> ;
+    core:shortLabel "Crotone"@en-gb ;
+    core:slug "crotone"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c794dfb2-9a41-4016-a09c-861240bdf0a3#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Benevento"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2000> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Benevento"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/benevento> ;
+    core:sameAs <http://dbpedia.org/resource/Benevento_Calcio> ;
+    core:shortLabel "Benevento"@en-gb ;
+    core:slug "benevento"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c8eec46e-f951-4f14-a9b6-005cc4668c27#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Atalanta"@en-gb ;
+    cms:locator <urn:sports-data:TFBB456> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Atalanta"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/atalanta> ;
+    core:sameAs <http://dbpedia.org/resource/Atalanta_B.C.> ;
+    core:shortLabel "Atalanta"@en-gb ;
+    core:slug "atalanta"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/4a64b2de-a14e-4098-98a4-b60e0bed7d31#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/cb23fc40-513a-4f0d-a2b7-37494d82b5df#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Genoa"@en-gb ;
+    cms:locator <urn:sports-data:TFBB990> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Genoa"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/genoa> ;
+    core:sameAs <http://dbpedia.org/resource/Genoa_C.F.C.> ;
+    core:shortLabel "Genoa"@en-gb ;
+    core:slug "genoa"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id>,
+        <http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f0131ea9-813f-4fe2-a319-57f8118fc918#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Parma"@en-gb ;
+    cms:locator <urn:sports-data:TFBB131> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Parma"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/parma> ;
+    core:sameAs <http://dbpedia.org/resource/Parma_Calcio_1913> ;
+    core:shortLabel "Parma"@en-gb ;
+    core:slug "parma"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id>,
+        <http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/sport/football/teams/atalanta> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/benevento> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/bologna> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/brescia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/cagliari> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/chievo> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/crotone> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/empoli> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/fiorentina> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/frosinone> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/genoa> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/hellas-verona> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/inter-milan> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/juventus> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/lazio> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/lecce> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/milan> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/napoli> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/palermo> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/parma> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/pescara> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/roma> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/sampdoria> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/sassuolo> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/spal> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/torino> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/udinese> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<urn:sports-data:TFBB120> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB121> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB123> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB124> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB125> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB126> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB127> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB128> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB129> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB130> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB131> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB135> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB136> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1405> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB1454> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2000> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2037> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2182> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB456> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB458> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB459> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB603> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB695> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB744> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB747> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB988> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB990> a cms:Sports-DataLocator .
+

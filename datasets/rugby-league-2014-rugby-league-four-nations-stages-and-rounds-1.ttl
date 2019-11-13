@@ -1,0 +1,78 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/a20865e5-30a3-4ffd-8261-025d056d8e13#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2014 Rugby League Four Nations Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/rugby-league/rugby-league-2014-rugby-league-four-nations-stages-and-rounds-1.ttl" ;
+    provenance:changeReason "Regenerated dataset with corrections to tool." ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-01-13T13:45:57+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Jonathan.Balls@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/6038c6e2-7664-4ed3-aeaf-aeef9270d9e8#id> sport:firstStage <http://www.bbc.co.uk/things/4d1059fe-5905-49d8-a729-c5f95254feeb#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/478f582f-1c28-48e0-939a-cc5f76b51bb3#id> .
+
+<http://www.bbc.co.uk/things/0486ae9c-5e83-4421-8595-fadaeade97e6#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Rugby League Four Nations"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB7212014S2R1> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/c91f394d-a53c-452c-8731-d859a4fef137#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Rugby League Four Nations"@en-gb ;
+    sal:name "League"@en-gb ;
+    cms:locator <urn:sports-data:CRLB7212014S1R1> ;
+    core:preferredLabel "League"@en-gb ;
+    core:shortLabel "League"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CRLB7212014S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB7212014S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB7212014S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB7212014S2R1> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/478f582f-1c28-48e0-939a-cc5f76b51bb3#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 'Final Stage' of 'Rugby League Four Nations' "@en-gb ;
+    sal:name "Final Stage"@en-gb ;
+    cms:locator <urn:sports-data:CRLB7212014S2> ;
+    core:preferredLabel "Final Stage"@en-gb ;
+    core:shortLabel "Final Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/0486ae9c-5e83-4421-8595-fadaeade97e6#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/4d1059fe-5905-49d8-a729-c5f95254feeb#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/4d1059fe-5905-49d8-a729-c5f95254feeb#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 'League Stage' of 'Rugby League Four Nations' "@en-gb ;
+    sal:name "League Stage"@en-gb ;
+    cms:locator <urn:sports-data:CRLB7212014S1> ;
+    core:preferredLabel "League Stage"@en-gb ;
+    core:shortLabel "League Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/c91f394d-a53c-452c-8731-d859a4fef137#id> ;
+    sport:nextstage <http://www.bbc.co.uk/things/478f582f-1c28-48e0-939a-cc5f76b51bb3#id> ;
+    sport:stageNumber "1"^^xsd:int .
+

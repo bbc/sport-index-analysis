@@ -1,0 +1,317 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/ea3153f1-6dbd-4bf3-8546-ac3a6ddf9468#id> a provenance:Dataset ;
+    rdfs:label "Football: Europa League 2017/18 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/europa-league-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3403: Europa League 2017/18 Stages and Rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-06-27T12:26:44+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/4a64b2de-a14e-4098-98a4-b60e0bed7d31#id> sport:firstStage <http://www.bbc.co.uk/things/13cb0fd0-f183-4a3c-8c2d-437554e1cfc5#id> ;
+    sport:hasStage <http://www.bbc.co.uk/things/26680422-f660-414f-ac8c-08069187540c#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/332b8d1e-b817-4bf3-b66b-9f81142b5914#id> .
+
+<http://www.bbc.co.uk/things/0bf24eba-208c-467f-a0f3-c9a61f84a25f#id> a sport:Round ;
+    rdfs:label "Round 1 of Qualifying Stage of Europa League"@en-gb ;
+    sal:name "Qualifying First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5242017S1R1> ;
+    core:preferredLabel "Qualifying First Round"@en-gb ;
+    core:shortLabel "Qualifying First Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/qualifying> .
+
+<http://www.bbc.co.uk/things/1f74ac15-3c84-4cb1-94b8-bf5ea0ae9d4e#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Europa League"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S2R4> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/273da746-d7d5-4354-8ade-f69e1d158644#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R6> ;
+    core:preferredLabel "Group F"@en-gb ;
+    core:shortLabel "Group F"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/280d79b5-d588-4484-a45d-69da791671a6#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/332ca039-d194-4b0b-bef6-75441b0a43a6#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Europa League"@en-gb ;
+    sal:name "Quarter-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S2R3> ;
+    core:preferredLabel "Quarter-Final"@en-gb ;
+    core:shortLabel "Quarter-Final"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/37ff42d1-c464-4947-8bd0-d712db58322e#id> a sport:Round ;
+    rdfs:label "Round 12 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group L"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R12> ;
+    core:preferredLabel "Group L"@en-gb ;
+    core:shortLabel "Group L"@en-gb ;
+    sport:roundNumber 12 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/52a279a5-2f80-48fd-b729-4d290467b942#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/57e1c33f-e5cd-4610-a030-5ec540ba4894#id> a sport:Round ;
+    rdfs:label "Round 10 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group J"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R10> ;
+    core:preferredLabel "Group J"@en-gb ;
+    core:shortLabel "Group J"@en-gb ;
+    sport:roundNumber 10 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/75d5192b-3a50-4755-be7a-cb1ede3f6ff3#id> a sport:Round ;
+    rdfs:label "Round 2 of Qualifying Stage of Europa League"@en-gb ;
+    sal:name "Qualifying Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5242017S1R2> ;
+    core:preferredLabel "Qualifying Second Round"@en-gb ;
+    core:shortLabel "Qualifying Second Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/qualifying> .
+
+<http://www.bbc.co.uk/things/79d637e8-95d6-4184-a290-62ac8e2d68ea#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Europa League"@en-gb ;
+    sal:name "Round of 32"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S2R1> ;
+    core:preferredLabel "Round of 32"@en-gb ;
+    core:shortLabel "Round of 32"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-32> .
+
+<http://www.bbc.co.uk/things/7d16357b-e67c-401c-9e8b-c72acca0ab52#id> a sport:Round ;
+    rdfs:label "Round 9 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group I"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R9> ;
+    core:preferredLabel "Group I"@en-gb ;
+    core:shortLabel "Group I"@en-gb ;
+    sport:roundNumber 9 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/81ac32bb-ea77-4e58-bfbd-a6c54599a2ee#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/85083fa2-8499-4500-b773-f4a14397ffa2#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group G"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R7> ;
+    core:preferredLabel "Group G"@en-gb ;
+    core:shortLabel "Group G"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/98dbbf31-d324-43ef-b478-7a0079beb390#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 2 of Europa League"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S2R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/9cc39610-3f6c-4e4a-bf5b-8d0d31105600#id> a sport:Round ;
+    rdfs:label "Round 3 of Qualifying Stage of Europa League"@en-gb ;
+    sal:name "Qualifying Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5242017S1R3> ;
+    core:preferredLabel "Qualifying Third Round"@en-gb ;
+    core:shortLabel "Qualifying Third Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/qualifying> .
+
+<http://www.bbc.co.uk/things/a33ad25a-f889-4dd0-8f95-f874af754991#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group H"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R8> ;
+    core:preferredLabel "Group H"@en-gb ;
+    core:shortLabel "Group H"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ced71583-4671-473d-b143-63d5d563b6a4#id> a sport:Round ;
+    rdfs:label "Round 11 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group K"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R11> ;
+    core:preferredLabel "Group K"@en-gb ;
+    core:shortLabel "Group K"@en-gb ;
+    sport:roundNumber 11 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/d92d591b-53f3-4e43-8af1-8a0b3d20116c#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/e851c9d3-7ab0-473b-9494-a2220912539c#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Europa League"@en-gb ;
+    sal:name "Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1R5> ;
+    core:preferredLabel "Group E"@en-gb ;
+    core:shortLabel "Group E"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/ee38e191-6f37-4083-87a5-e3d343cdaf51#id> a sport:Round ;
+    rdfs:label "Round 4 of Qualifying Stage of Europa League"@en-gb ;
+    sal:name "Qualifying Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5242017S1R4> ;
+    core:preferredLabel "Qualifying Play-offs"@en-gb ;
+    core:shortLabel "Qualifying Play-offs"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/qualifying> .
+
+<http://www.bbc.co.uk/things/ff4416a9-7253-40da-ad6a-195339e72c93#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Europa League"@en-gb ;
+    sal:name "Round of 16"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S2R2> ;
+    core:preferredLabel "Round of 16"@en-gb ;
+    core:shortLabel "Round of 16"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-16> .
+
+<urn:sports-data:CFBB5242017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5242017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5242017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5242017S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R10> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R11> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R12> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S1R9> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB62017S2R5> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/13cb0fd0-f183-4a3c-8c2d-437554e1cfc5#id> a sport:KnockoutCompetition ;
+    rdfs:label "Qualifying Stage of Europa League"@en-gb ;
+    sal:name "Qualifying Stage"@en-gb ;
+    cms:locator <urn:sports-data:CFBB524> ;
+    core:preferredLabel "Qualifying Stage"@en-gb ;
+    core:shortLabel "Qualifying Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/0bf24eba-208c-467f-a0f3-c9a61f84a25f#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/75d5192b-3a50-4755-be7a-cb1ede3f6ff3#id>,
+        <http://www.bbc.co.uk/things/9cc39610-3f6c-4e4a-bf5b-8d0d31105600#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/ee38e191-6f37-4083-87a5-e3d343cdaf51#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/26680422-f660-414f-ac8c-08069187540c#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/332b8d1e-b817-4bf3-b66b-9f81142b5914#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Europa League"@en-gb ;
+    sal:name "Knockout Stage"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S2> ;
+    core:preferredLabel "Knockout Stage"@en-gb ;
+    core:shortLabel "Knockout Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/79d637e8-95d6-4184-a290-62ac8e2d68ea#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/1f74ac15-3c84-4cb1-94b8-bf5ea0ae9d4e#id>,
+        <http://www.bbc.co.uk/things/332ca039-d194-4b0b-bef6-75441b0a43a6#id>,
+        <http://www.bbc.co.uk/things/ff4416a9-7253-40da-ad6a-195339e72c93#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/98dbbf31-d324-43ef-b478-7a0079beb390#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/26680422-f660-414f-ac8c-08069187540c#id> ;
+    sport:stageNumber 3 .
+
+<http://www.bbc.co.uk/things/26680422-f660-414f-ac8c-08069187540c#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of Europa League"@en-gb ;
+    sal:name "Group Stage"@en-gb ;
+    cms:locator <urn:sports-data:CFBB62017S1> ;
+    core:preferredLabel "Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/280d79b5-d588-4484-a45d-69da791671a6#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/273da746-d7d5-4354-8ade-f69e1d158644#id>,
+        <http://www.bbc.co.uk/things/52a279a5-2f80-48fd-b729-4d290467b942#id>,
+        <http://www.bbc.co.uk/things/57e1c33f-e5cd-4610-a030-5ec540ba4894#id>,
+        <http://www.bbc.co.uk/things/7d16357b-e67c-401c-9e8b-c72acca0ab52#id>,
+        <http://www.bbc.co.uk/things/81ac32bb-ea77-4e58-bfbd-a6c54599a2ee#id>,
+        <http://www.bbc.co.uk/things/85083fa2-8499-4500-b773-f4a14397ffa2#id>,
+        <http://www.bbc.co.uk/things/a33ad25a-f889-4dd0-8f95-f874af754991#id>,
+        <http://www.bbc.co.uk/things/ced71583-4671-473d-b143-63d5d563b6a4#id>,
+        <http://www.bbc.co.uk/things/d92d591b-53f3-4e43-8af1-8a0b3d20116c#id>,
+        <http://www.bbc.co.uk/things/e851c9d3-7ab0-473b-9494-a2220912539c#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/37ff42d1-c464-4947-8bd0-d712db58322e#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/332b8d1e-b817-4bf3-b66b-9f81142b5914#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/13cb0fd0-f183-4a3c-8c2d-437554e1cfc5#id> ;
+    sport:stageNumber 2 .
+

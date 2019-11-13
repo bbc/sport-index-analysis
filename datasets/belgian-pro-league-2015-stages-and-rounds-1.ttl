@@ -1,0 +1,75 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/f6f7d40c-5daa-40a9-922f-ba4d4f008c5f#id> a provenance:Dataset ;
+    rdfs:label "Football: Belgian Pro League 2015 stages and rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/football/belgian-pro-league-2015-stages-and-rounds-1.ttl" ;
+    provenance:changeReason "SLS-431: Model Belgian Pro League 2015/16 competition. " ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-08-13T10:20:53+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:dong.liu@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/81caae66-7b74-48bb-b15d-3f1652a29162#id> sport:firstStage <http://www.bbc.co.uk/things/bf6f8a9f-68e5-4232-845c-59a3f9cbf43e#id> .
+
+<http://www.bbc.co.uk/things/83cd291d-a7d9-4c92-b66a-4e1c344cbeb9#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Belgian Pro League"@en-gb ;
+    sal:name "Championship Play-Off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122015S2R1> ;
+    core:preferredLabel "Championship Play-Off"@en-gb ;
+    core:shortLabel "Championship Play-Off"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/8cff5e4c-339a-480d-a0a3-1585e75ccfd0#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Belgian Pro League"@en-gb ;
+    sal:name "Europa League Play-Off Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122015S2R2> ;
+    core:preferredLabel "Europa League Play-Off Group A"@en-gb ;
+    core:shortLabel "Europa League Play-Off Group A"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ad560d71-27ab-46b8-8583-4d016dcd04aa#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Belgian Pro League"@en-gb ;
+    sal:name "Europa League Play-Off Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122015S2R3> ;
+    core:preferredLabel "Europa League Play-Off Group B"@en-gb ;
+    core:shortLabel "Europa League Play-Off Group B"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/bf6f8a9f-68e5-4232-845c-59a3f9cbf43e#id> a sport:Competition ;
+    rdfs:label "Stage 2 of Belgian Pro League"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1122015S2> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:firstRound <http://www.bbc.co.uk/things/83cd291d-a7d9-4c92-b66a-4e1c344cbeb9#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/8cff5e4c-339a-480d-a0a3-1585e75ccfd0#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/ad560d71-27ab-46b8-8583-4d016dcd04aa#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<urn:sports-data:CFBB1122015S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122015S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122015S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1122015S2R3> a cms:Sports-DataLocator .
+

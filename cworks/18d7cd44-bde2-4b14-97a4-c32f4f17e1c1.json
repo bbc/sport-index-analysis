@@ -1,0 +1,3371 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/9cebbeee-1d81-4593-bbb6-da4d0d6b3814#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-12T20:38:00+00:00",
+      "dateModified": "2019-10-12T20:38:00+00:00",
+      "description": "Chelsea\u0027s Jorginho scores as Italy book their place at next year\u0027s Euro 2020 finals by beating Greece 2-0 in Rome.",
+      "shortTitle": "Italy seal qualification for Euro 2020",
+      "title": "Italy 2-0 Greece: Chelsea\u0027s Jorginho scores as Italy secure Euro 2020 spot",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:b29e0026-d87a-4628-af7b-d7146a5ba7a3",
+        "urn:bbc:cps:asset:50029582"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/0021de37-b64a-46ac-a4bb-5bdbdf0908ec#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "sameAs": "http://sws.geonames.org/3175395/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/62fd6d95-0dfa-4b2a-840b-eedcf8603cae#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Rome",
+          "preferredLabel": "Rome",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Rome",
+          "sameAs": "http://sws.geonames.org/3169070/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/785b1cd2-db1a-493f-8647-05da1aaef049#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Greece",
+          "preferredLabel": "Greece",
+          "sameAs": "http://sws.geonames.org/390903/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a96d9920-594f-45f2-b2aa-4d3a8b3b6966#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Greece",
+          "preferredLabel": "Greece",
+          "shortLabel": "Greece",
+          "slug": "greece",
+          "sameAs": [
+            "http://dbpedia.org/resource/Greece_national_football_team",
+            "http://rdf.freebase.com/ns/m.035qgm",
+            "http://www.wikidata.org/entity/Q134925"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.footballleague.gr/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50029582",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/66BD/production/_109210362_jorginho.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Jorginho",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/1449fe4d-a7f1-4a96-9c8e-eb48cfd0f6ff#id",
+      "@type": [
+        "LiveCoverage",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-10-11T10:51:19+00:00",
+      "dateModified": "2019-10-11T10:51:19+00:00",
+      "description": "Italy beat Greece to qualify for Euro 2020 and Spain draw in Norway .",
+      "shortTitle": "Italy qualify for Euro 2020, Spain draw with Norway",
+      "title": "Euro 2020 qualifying latest: Italy \u0026 Spain among the teams in action - live text",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:8478eb1c-9ee5-4c4b-a47a-697754f07845",
+        "urn:bbc:cps:asset:49985906"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/eecba9c9-afb4-4d64-9c1f-b7e62da658bf#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "European Championship",
+          "preferredLabel": "European Championship",
+          "shortLabel": "European Championship",
+          "slug": "european-championship",
+          "sameAs": "http://dbpedia.org/resource/UEFA_European_Football_Championship",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/european-championship/euro-2016",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/49985906",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/E9FD/production/_109210995_gettyimages-1175417819.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Italy v Greece",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/a8f014f0-b03d-4ec9-a0b1-c98c9a8e6294#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-09-08T21:05:29+00:00",
+      "dateModified": "2019-09-08T21:05:29+00:00",
+      "description": "Italy edge closer to qualifying for Euro 2020 as a Jorginho penalty secures victory against Group J rivals Finland.",
+      "shortTitle": "Italy near Euros after Jorginho winner",
+      "title": "Finland 1-2 Italy: Jorginho penalty puts Italy further clear in Group J",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:8fa9f8e0-f3dd-4dae-b4a8-98829d259ffa",
+        "urn:bbc:cps:asset:49603008"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/8781e9b9-250e-4140-8ef2-a5797a9470e3#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing"
+          ],
+          "label": "Finland",
+          "preferredLabel": "Finland",
+          "shortLabel": "Finland",
+          "slug": "finland",
+          "sameAs": "http://dbpedia.org/resource/Finland_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49603008",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/8CC4/production/_108663063_jorginho_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Jorginho celebrates",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/34654b25-cff6-4037-b1f3-0dc8bb13c5ab#id",
+      "@type": [
+        "CreativeWork",
+        "LiveCoverage"
+      ],
+      "dateCreated": "2019-09-07T18:41:23+00:00",
+      "dateModified": "2019-09-07T18:41:23+00:00",
+      "description": "Finland host Italy and Spain face Faroe Islands in Euro 2020 qualifying - follow live text coverage.",
+      "shortTitle": "Euro 2020 qualifying: Spain \u0026 Italy in action",
+      "title": "Finland v Italy \u0026 Spain v Faroe Islands in Euro 2020 qualifying action",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:c0605fb4-4be5-194e-8c55-bf5d87d5c57c",
+        "urn:bbc:cps:asset:49582366"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/8781e9b9-250e-4140-8ef2-a5797a9470e3#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing"
+          ],
+          "label": "Finland",
+          "preferredLabel": "Finland",
+          "shortLabel": "Finland",
+          "slug": "finland",
+          "sameAs": "http://dbpedia.org/resource/Finland_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aacd7b64-abd7-47cb-a5b6-48f51c3efd0a#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Faroe Islands",
+          "preferredLabel": "Faroe Islands",
+          "shortLabel": "Faroe Islands",
+          "slug": "faroe-islands",
+          "sameAs": [
+            "http://dbpedia.org/resource/Faroe_Islands_national_football_team",
+            "http://rdf.freebase.com/ns/m.03z0x2",
+            "http://www.wikidata.org/entity/Q200688"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.fsf.fo/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/49582366",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/2EF0/production/_108661021_spa_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Spain",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/e8c8eb7e-4499-4c82-8f4f-d8afc33f0f52#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-09-05T17:57:31+00:00",
+      "dateModified": "2019-09-05T17:57:31+00:00",
+      "description": "Italy come from behind to beat Armenia and keep up their 100% start to Euro 2020 qualifying.",
+      "shortTitle": "Italy fight back to beat Armenia",
+      "title": "Euro 2020 qualifying: Italy fight back to beat Armenia",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:8b16c4ab-301e-44f7-b219-f5b664ff1120",
+        "urn:bbc:cps:asset:49597680"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/2df22694-ea99-463b-a212-459215bc237b#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Armenia",
+          "preferredLabel": "Armenia",
+          "shortLabel": "Armenia",
+          "slug": "armenia",
+          "sameAs": "http://dbpedia.org/resource/Armenia_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49597680",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/DF91/production/_108633275_italy.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Italy",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/7bd51845-20fb-4a1d-994b-bc9b0c64622a#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-08-18T18:36:41+00:00",
+      "dateModified": "2019-08-18T18:36:41+00:00",
+      "description": "Former Manchester City and Liverpool striker Mario Balotelli has returned to Italy to join home town club Brescia.",
+      "shortTitle": "Balotelli returns to Italy with Brescia",
+      "title": "Mario Balotelli: Ex-Man City striker signs for Brescia",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:823f5e78-7e45-7e40-becd-a4c1faa5f89d",
+        "urn:bbc:cps:asset:49390452"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/8451bdf1-433f-4706-90f7-6a0589ddc807#id",
+          "@type": [
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Brescia",
+          "preferredLabel": "Brescia",
+          "shortLabel": "Brescia",
+          "slug": "brescia",
+          "sameAs": "http://dbpedia.org/resource/Brescia_Calcio",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/brescia",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aa015fe5-c774-4374-9a06-2cee75bf3552#id",
+          "@type": [
+            "Thing",
+            "Theme",
+            "Event"
+          ],
+          "label": "Football transfers",
+          "preferredLabel": "Football transfers",
+          "sameAs": "http://www.wikidata.org/entity/Q622822"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "Thing"
+          ],
+          "label": "Italian Serie A",
+          "preferredLabel": "Italian Serie A",
+          "shortLabel": "Italian Serie A",
+          "slug": "italian-serie-a",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/italian-serie-a",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.legaseriea.it/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/49390452",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/13CD2/production/_108360118_gettyimages-1034941492.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Mario Balotelli",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/ba2e553e-d15e-43fb-b410-b989da7d61e2#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-06-29T14:51:26+00:00",
+      "dateModified": "2019-06-29T14:51:26+00:00",
+      "description": "Vivianne Miedema\u0027s header gives Netherlands the lead in their Women\u0027s World Cup quarter-final against Italy.",
+      "shortTitle": "\u0027It\u0027s been coming\u0027 - Miedema header gives Netherlands the lead",
+      "title": "Women’s World Cup 2019: Vivianne Miedema gives Netherlands the lead against Italy",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:83951191-6b49-4349-847b-81f9dc5afdb0",
+        "urn:bbc:cps:asset:48812726"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/04bedd51-db91-4bf2-85ca-e69c664811ec#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "Women\u0027s World Cup",
+          "preferredLabel": "Women\u0027s World Cup",
+          "shortLabel": "Women\u0027s World Cup",
+          "slug": "womens-world-cup",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.fifa.com/womensworldcup/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/388b5f68-acbe-4643-9e6c-7f734b5d016d#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Women\u0027s Football",
+          "preferredLabel": "Women\u0027s Football",
+          "shortLabel": "Women\u0027s Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/womens"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/570540a6-b794-4216-8c49-4266bd5e4048#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Netherlands",
+          "preferredLabel": "Netherlands",
+          "shortLabel": "Netherlands",
+          "slug": "netherlands-women"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/48812726",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/11F8E/production/_107641637_p07fkcj1.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Vivianne Miedema",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/793d9bef-8ee8-414d-a7a3-86b7414856c3#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-06-11T20:48:50+00:00",
+      "dateModified": "2019-06-11T20:48:50+00:00",
+      "description": "Marco Verratti scores a late winner as Italy come from behind to beat Bosnia-Herzegovina 2-1 in their Euro 2020 qualifier in Turin.",
+      "shortTitle": "Late Verratti strike secures Italy win",
+      "title": "Italy 2-1 Bosnia-Herzegovina: Marco Verratti strikes a late winner",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:b0f1a4f0-9078-4da7-bdea-77619c4fe7db",
+        "urn:bbc:cps:asset:48603636"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e288012f-89ab-429d-9f42-10cf379fb912#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Bosnia-Herzegovina",
+          "preferredLabel": "Bosnia-Herzegovina",
+          "shortLabel": "Bos-Herze",
+          "slug": "bosnia-herzegovina",
+          "sameAs": [
+            "http://dbpedia.org/resource/Bosnia_and_Herzegovina_national_football_team",
+            "http://rdf.freebase.com/ns/m.03yv9r",
+            "http://www.wikidata.org/entity/Q181190"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48603636",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/16A2A/production/_107341729_verratti_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Marco Verratti",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/fe2f2d42-1a48-402f-bcd7-cc047d90c8b4#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-06-09T09:30:47+00:00",
+      "dateModified": "2019-06-09T09:30:47+00:00",
+      "description": "This is how you rated the players\u0027 performances out of 10 in the Fifa Women\u0027s World Cup game between Australia and Italy.",
+      "title": "Your ratings - Australia v Italy",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:716d96cc-849f-cc45-95d8-a1d865311bef",
+        "urn:bbc:cps:asset:48573270"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/388b5f68-acbe-4643-9e6c-7f734b5d016d#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Women\u0027s Football",
+          "preferredLabel": "Women\u0027s Football",
+          "shortLabel": "Women\u0027s Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/womens"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4ee2fb3e-9040-4883-be8e-f12dcfbfa0f7#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Australia Women",
+          "preferredLabel": "Australia Women",
+          "shortLabel": "Aus Women",
+          "slug": "australia-women",
+          "sameAs": "http://dbpedia.org/resource/Australia_women%27s_national_cricket_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/beb68026-a8d4-4e93-a7da-69236e988e18#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Australia",
+          "preferredLabel": "Australia",
+          "shortLabel": "Australia",
+          "slug": "australia",
+          "sameAs": [
+            "http://dbpedia.org/resource/Australia_national_soccer_team",
+            "http://rdf.freebase.com/ns/m.0cnk2q"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/australia",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f99d66eb-dd7d-4297-a7dc-d89a4cc06851#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy-women"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48573270",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/1285E/production/_107307857_australia_italy.png",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Australia v Italy",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/eec7cf9a-7d58-48fd-b9f5-13c8ecc06536#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-06-08T20:52:49+00:00",
+      "dateModified": "2019-06-08T20:52:49+00:00",
+      "description": "Italy maintain their 100% winning record in Euro 2020 qualifying with a comfortable victory over Greece.",
+      "shortTitle": "Greece 0-3 Italy",
+      "title": "Euro 2020 qualifying: Greece 0-3 Italy",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:217dd542-4096-464b-8312-357a8d225c0f",
+        "urn:bbc:cps:asset:48570592"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a96d9920-594f-45f2-b2aa-4d3a8b3b6966#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Greece",
+          "preferredLabel": "Greece",
+          "shortLabel": "Greece",
+          "slug": "greece",
+          "sameAs": [
+            "http://dbpedia.org/resource/Greece_national_football_team",
+            "http://rdf.freebase.com/ns/m.035qgm",
+            "http://www.wikidata.org/entity/Q134925"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.footballleague.gr/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/48570592",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/A69A/production/_107305624_italy-index.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Italy players celebrate",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/917fb854-d63a-487a-b9d2-01a47a951398#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-05-19T18:50:05+00:00",
+      "dateModified": "2019-05-19T18:50:05+00:00",
+      "description": "Watch highlights as Netherlands beat Italy 4-2 in the Uefa European Under-17 Championship final in Dublin.",
+      "shortTitle": "Netherlands beat Italy to win Euro U17 final",
+      "title": "European U17 Championship final: Netherlands 4-2 Italy - highlights",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:5ef6f41f-2358-d34f-8c04-f82137aaa4a8",
+        "urn:bbc:cps:asset:48328525"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d4a2858-462e-4375-b51b-2a4fb480eee2#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Netherlands",
+          "preferredLabel": "Netherlands",
+          "shortLabel": "Netherlands",
+          "slug": "netherlands",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/netherlands",
+            {
+              "@id": "http://www.onsoranje.nl/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Netherlands_national_football_team",
+            "http://rdf.freebase.com/ns/m.02ltg3",
+            "http://www.wikidata.org/entity/Q47050"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/48328525",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/DC5C/production/_107021465_p079phqb.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Netherlands U17s celebrate",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/25deceb5-959a-45e4-a871-d713fb28a072#id",
+      "@type": [
+        "LiveCoverage",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-05-14T13:20:36+00:00",
+      "dateModified": "2019-05-14T13:20:36+00:00",
+      "description": "The men\u0027s semi-finals of the UEFA European Under-17 Championship - watch live coverage.",
+      "title": "Watch: Under-17 Euros semi-finals -Netherlands v Spain \u0026 France v Italy",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:95e92ab0-f433-414a-a9c4-b8ef6469346a",
+        "urn:bbc:cps:asset:48113327"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/51bc6665-92bc-4926-8689-969dc76a9d34#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent"
+          ],
+          "label": "France",
+          "preferredLabel": "France",
+          "shortLabel": "France",
+          "slug": "france",
+          "sameAs": [
+            "http://dbpedia.org/resource/France_national_football_team",
+            "http://rdf.freebase.com/ns/m.01l3vx",
+            "http://www.wikidata.org/entity/Q47774"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/france",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.francefootball.fr/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d4a2858-462e-4375-b51b-2a4fb480eee2#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation"
+          ],
+          "label": "Netherlands",
+          "preferredLabel": "Netherlands",
+          "shortLabel": "Netherlands",
+          "slug": "netherlands",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/netherlands",
+            {
+              "@id": "http://www.onsoranje.nl/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Netherlands_national_football_team",
+            "http://rdf.freebase.com/ns/m.02ltg3",
+            "http://www.wikidata.org/entity/Q47050"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/48113327",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/02E8/production/_106944700_theozidane_pa.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Theo Zidane",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/0d510982-e66c-4c40-9497-2f673f9b1607#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-04-04T21:44:35+00:00",
+      "dateModified": "2019-04-04T21:44:35+00:00",
+      "description": "The racist abuse of Juventus forward Moise Kean was \"intolerable\" and such incidents \"can\u0027t go on\", says Italy boss Roberto Mancini.",
+      "shortTitle": "Abuse of Kean intolerable - Mancini",
+      "title": "Moise Kean: Racist abuse of Juventus forward intolerable - Roberto Mancini",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:9955b9c6-38bd-0946-89da-d7eeaaa37b60",
+        "urn:bbc:cps:asset:47822308"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6f93127a-159a-45d6-a9d0-97d09b38dd66#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Juventus",
+          "preferredLabel": "Juventus",
+          "shortLabel": "Juventus",
+          "slug": "juventus",
+          "sameAs": [
+            "http://dbpedia.org/resource/Juventus_F.C.",
+            "http://rdf.freebase.com/ns/m.045xx",
+            "http://www.wikidata.org/entity/Q1422"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/juventus",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "Thing"
+          ],
+          "label": "Italian Serie A",
+          "preferredLabel": "Italian Serie A",
+          "shortLabel": "Italian Serie A",
+          "slug": "italian-serie-a",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/italian-serie-a",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.legaseriea.it/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/47822308",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/E218/production/_106308875_gettyimages-1134534693.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Moise Kean",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/991720dc-86be-47d3-96af-23d937e996eb#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-03-26T22:37:28+00:00",
+      "dateModified": "2019-03-26T22:37:28+00:00",
+      "description": "Italy make it two wins out of the two at the start of the Euro 2020 qualifying campaign to top Group J as they hammer Liechtenstein in Parma.",
+      "shortTitle": "Italy thrash Liechtenstein in Euro qualifier",
+      "title": "Italy 6-0 Liechtenstein: Azzurri score six in Parma as Quagliarella sets record",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:174e940a-9376-446c-869c-eac0b50fb856",
+        "urn:bbc:cps:asset:47697589"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/dd0b24d4-536d-46fd-b7c8-e3baae047955#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Parma",
+          "preferredLabel": "Parma",
+          "sameAs": "http://sws.geonames.org/3171457/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/dfa3dba2-199e-4e2f-94c8-f57306c44396#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Liechtenstein",
+          "preferredLabel": "Liechtenstein",
+          "shortLabel": "Liechtenstein",
+          "slug": "liechtenstein",
+          "sameAs": "http://dbpedia.org/resource/Liechtenstein_national_football_team"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/47697589",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/16647/production/_106191719_gettyimages-1133049508.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Italy celebrate",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/f2abed4b-6347-403f-958e-df1f7f2ae502#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-03-23T21:38:52+00:00",
+      "dateModified": "2019-03-23T21:38:52+00:00",
+      "description": "Teenager Moise Kean scores his first international goal as Italy begin their Euro 2020 qualifying campaign with a comfortable win over Finland.",
+      "title": "Italy 2-0 Finland",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:d869df49-dd73-4aa2-b8a4-ef9216ce56f9",
+        "urn:bbc:cps:asset:47681377"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/8781e9b9-250e-4140-8ef2-a5797a9470e3#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing"
+          ],
+          "label": "Finland",
+          "preferredLabel": "Finland",
+          "shortLabel": "Finland",
+          "slug": "finland",
+          "sameAs": "http://dbpedia.org/resource/Finland_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/47681377",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/21D9/production/_106156680_kean-index.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Moise Kean celebrates",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/ad193f96-582d-4b76-97ce-b4f234a47ceb#id",
+      "@type": [
+        "LiveCoverage",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-03-22T08:48:33+00:00",
+      "dateModified": "2019-03-22T08:48:33+00:00",
+      "description": "Spain and Italy begin their qualifying campaigns for Euro 2020 with wins, against Norway and Finland respectively.",
+      "shortTitle": "Euro 2020 qualifiers: Ramos \u0027Panenka\u0027 penalty earns Spain victory",
+      "title": "Euro 2020 qualifiers: Spain v Norway and Italy v Finland",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:0b4865e1-a061-6248-82da-aa1bc6525740",
+        "urn:bbc:cps:asset:47590777"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/8781e9b9-250e-4140-8ef2-a5797a9470e3#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing"
+          ],
+          "label": "Finland",
+          "preferredLabel": "Finland",
+          "shortLabel": "Finland",
+          "slug": "finland",
+          "sameAs": "http://dbpedia.org/resource/Finland_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b9bb453a-a3e2-46b4-9d20-35efa09d72b8#id",
+          "@type": [
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "Spain",
+          "preferredLabel": "Spain",
+          "shortLabel": "Spain",
+          "slug": "spain",
+          "sameAs": [
+            "http://dbpedia.org/resource/Spain_national_football_team",
+            "http://rdf.freebase.com/ns/m.02w64f",
+            "http://www.wikidata.org/entity/Q42267"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/spain",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rfef.es/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/bcfa15f8-4ff0-4cfd-ab0d-40ded48e8f5d#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "dcterms:Agent",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Norway",
+          "preferredLabel": "Norway",
+          "shortLabel": "Norway",
+          "slug": "norway",
+          "sameAs": "http://dbpedia.org/resource/Norway_national_football_team"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "European Championship Qualifying",
+          "preferredLabel": "European Championship Qualifying",
+          "shortLabel": "Euro Qualifying",
+          "slug": "european-championship-qualifying",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.uefa.com/uefaeuro/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/47590777",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/123A9/production/_106156647_ramosceleb_afp.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Sergio Ramos celebrates",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/057726e2-7157-4dce-8364-94f7f8178a18#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-01-08T18:13:31+00:00",
+      "dateModified": "2019-01-08T18:13:31+00:00",
+      "description": "Inter Milan decide not to appeal against the two-match stadium closure imposed after trouble at their recent game against Napoli at the San Siro.",
+      "shortTitle": "Inter accept two-game San Siro closure",
+      "title": "Inter Milan accept two-match San Siro closure after trouble at Napoli game",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:347c29b0-ebf0-7446-946d-bbb842d42484",
+        "urn:bbc:cps:asset:46802160"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/0021de37-b64a-46ac-a4bb-5bdbdf0908ec#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "sameAs": "http://sws.geonames.org/3175395/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3447fd88-6593-40f8-8688-143141bd5d22#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Inter Milan",
+          "preferredLabel": "Inter Milan",
+          "shortLabel": "Inter Milan",
+          "slug": "inter-milan",
+          "sameAs": [
+            "http://dbpedia.org/resource/Inter_Milan",
+            "http://rdf.freebase.com/ns/m.03x6m",
+            "http://www.wikidata.org/entity/Q631"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/inter-milan",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/a15c7264-b424-4d81-ab5e-93da6ea7cb89#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Napoli",
+          "preferredLabel": "Napoli",
+          "shortLabel": "Napoli",
+          "slug": "napoli",
+          "sameAs": [
+            "http://dbpedia.org/resource/S.S.C._Napoli",
+            "http://rdf.freebase.com/ns/m.048xg8",
+            "http://www.wikidata.org/entity/Q2641"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/napoli",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "Thing"
+          ],
+          "label": "Italian Serie A",
+          "preferredLabel": "Italian Serie A",
+          "shortLabel": "Italian Serie A",
+          "slug": "italian-serie-a",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/italian-serie-a",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.legaseriea.it/en/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/46802160",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/E59C/production/_105108785_milan_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "San Siro",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/b95fee73-c32d-4be9-b474-92af8bed234f#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2018-11-20T22:19:43+00:00",
+      "dateModified": "2018-11-20T22:19:43+00:00",
+      "description": "Substitute Matteo Politano scores the winner with virtually the last kick of the game as Italy overcame the USA.",
+      "shortTitle": "Politano strikes late as Italy beat USA",
+      "title": "Italy 1-0 USA: Matteo Politano secures win for Roberto Mancini\u0027s side",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:bfe25cb2-70f4-40ec-af29-83f4806563ca",
+        "urn:bbc:cps:asset:45174543"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/77d1e6c2-97a6-450a-904d-21ea66700a53#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "USA",
+          "preferredLabel": "USA",
+          "shortLabel": "USA",
+          "slug": "usa",
+          "sameAs": [
+            "http://dbpedia.org/resource/United_States_men\u0027s_national_soccer_team",
+            "http://rdf.freebase.com/ns/m.02s9vc",
+            "http://www.wikidata.org/entity/Q164134"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/45174543",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/01A6/production/_104422400_italy_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Matteo Politano",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/187135be-ebb9-4e32-a1dd-4b9db48bf8c1#id",
+      "@type": [
+        "CreativeWork",
+        "LiveCoverage"
+      ],
+      "dateCreated": "2018-11-19T10:13:08+00:00",
+      "dateModified": "2018-11-19T10:13:08+00:00",
+      "description": "Italy host USA, France play Uruguay and Brazil face Cameroon in international friendlies - follow live text coverage.",
+      "title": "Poland draw with Portugal, France, Brazil \u0026 Italy win",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:29c31573-e868-3945-8253-80ceddc11b56",
+        "urn:bbc:cps:asset:46146942"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/0690666f-509a-44d4-9505-75d58b99f664#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation"
+          ],
+          "label": "Uruguay",
+          "preferredLabel": "Uruguay",
+          "shortLabel": "Uruguay",
+          "slug": "uruguay",
+          "sameAs": [
+            "http://dbpedia.org/resource/Uruguay_national_football_team",
+            "http://rdf.freebase.com/ns/m.0329r5",
+            "http://www.wikidata.org/entity/Q134916"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/uruguay",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/51bc6665-92bc-4926-8689-969dc76a9d34#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "dcterms:Agent"
+          ],
+          "label": "France",
+          "preferredLabel": "France",
+          "shortLabel": "France",
+          "slug": "france",
+          "sameAs": [
+            "http://dbpedia.org/resource/France_national_football_team",
+            "http://rdf.freebase.com/ns/m.01l3vx",
+            "http://www.wikidata.org/entity/Q47774"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/france",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.francefootball.fr/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/77d1e6c2-97a6-450a-904d-21ea66700a53#id",
+          "@type": [
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent"
+          ],
+          "label": "USA",
+          "preferredLabel": "USA",
+          "shortLabel": "USA",
+          "slug": "usa",
+          "sameAs": [
+            "http://dbpedia.org/resource/United_States_men\u0027s_national_soccer_team",
+            "http://rdf.freebase.com/ns/m.02s9vc",
+            "http://www.wikidata.org/entity/Q164134"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/96a45a0e-876a-4b31-b9bc-25a9eb365dc3#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "dcterms:Agent",
+            "Thing",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Brazil",
+          "preferredLabel": "Brazil",
+          "shortLabel": "Brazil",
+          "slug": "brazil",
+          "sameAs": [
+            "http://dbpedia.org/resource/Brazil_national_football_team",
+            "http://rdf.freebase.com/ns/m.01352_",
+            "http://www.wikidata.org/entity/Q83459"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/brazil",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/f14e9a9a-69e4-4737-9b50-d2030e08aa40#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Cameroon",
+          "preferredLabel": "Cameroon",
+          "shortLabel": "Cameroon",
+          "slug": "cameroon",
+          "sameAs": [
+            "http://dbpedia.org/resource/Cameroon_national_football_team",
+            "http://rdf.freebase.com/ns/m.03yl2t",
+            "http://www.wikidata.org/entity/Q175309"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/46146942",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/A5B6/production/_104422424_poland_portugal_reuters.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Portugal 1-1 Poland",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/9986f01f-8845-4cb9-9e34-a64a1d814420#id",
+      "@type": [
+        "LiveCoverage",
+        "CreativeWork"
+      ],
+      "dateCreated": "2018-11-16T07:49:27+00:00",
+      "dateModified": "2018-11-16T07:49:27+00:00",
+      "description": "Italy host Portugal at the San Siro in the Uefa Nations League - follow live text commentary.",
+      "shortTitle": "Nations League: Portugal into semis after goalless draw at Italy",
+      "title": "Uefa Nations League live: Italy v Portugal",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:d0c97639-7457-cd4f-9c52-558f2117c005",
+        "urn:bbc:cps:asset:46047554"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/18d7cd44-bde2-4b14-97a4-c32f4f17e1c1#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing"
+          ],
+          "label": "Italy",
+          "preferredLabel": "Italy",
+          "shortLabel": "Italy",
+          "slug": "italy",
+          "primaryTopicOf": [
+            "http://www.bbc.co.uk/sport/football/teams/italy",
+            {
+              "@id": "http://www.figc.it/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": [
+            "http://dbpedia.org/resource/Italy_national_football_team",
+            "http://rdf.freebase.com/ns/m.01_lhg",
+            "http://www.wikidata.org/entity/Q676899"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/50e8aed7-1ce9-4784-962f-e61fea038990#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Portugal",
+          "preferredLabel": "Portugal",
+          "shortLabel": "Portugal",
+          "slug": "portugal",
+          "sameAs": [
+            "http://dbpedia.org/resource/Portugal_national_football_team",
+            "http://rdf.freebase.com/ns/m.02rqxc",
+            "http://www.wikidata.org/entity/Q267245"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/portugal",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.fpf.pt/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/89217517-99f5-4049-bc4e-c2a910300b35#id",
+          "@type": [
+            "Thing",
+            "sport:RecurringCompetition",
+            "sport:Competition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent"
+          ],
+          "label": "UEFA Nations League",
+          "preferredLabel": "UEFA Nations League",
+          "shortLabel": "Nations League",
+          "slug": "nations-league",
+          "primaryTopicOf": [
+            {
+              "@id": "https://www.uefa.com/uefanationsleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/46047554",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/EC8E/production/_104385506_lorenzoinsigne_reuters.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Lorenzo Insigne",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "Event": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Event"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "LiveCoverage": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/LiveCoverage"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "Organisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"
+    },
+    "Place": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Place"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "VideoFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/VideoFormat"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "dcterms:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "geoname:GeoTagConcept": {
+      "@id": "http://www.geonames.org/ontology#GeoTagConcept"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "shortTitle": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/shortTitle"
+    },
+    "skos:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:Competition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Competition"
+    },
+    "sport:CompetitiveSportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"
+    },
+    "sport:RecurringCompetition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"
+    },
+    "sport:SportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"
+    },
+    "sport:SportsDiscipline": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentCategory": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentCategory",
+      "@type": "@id"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

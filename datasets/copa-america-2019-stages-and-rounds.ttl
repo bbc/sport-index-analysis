@@ -1,0 +1,138 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/6c128083-9ec3-40c9-a842-f13231010b79#id> a provenance:Dataset ;
+    rdfs:label "Football: Copa America 2019 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/copa-america-2019-stages-and-rounds.ttl" ;
+    provenance:changeReason "SWD-743: Model summer football tournaments" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-05-24T14:09:11+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> sport:firstStage <http://www.bbc.co.uk/things/6756afee-9672-49b9-81e8-24cac4aa08e1#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/3de26039-5e50-44f1-9f5e-721139274d56#id> .
+
+<http://www.bbc.co.uk/things/248ed10b-8a70-4af2-9617-d704f74a9305#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of Copa America 2019"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282018S2R2> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/31a16b20-5063-4990-b6aa-5a99e6b276d1#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Copa America 2019"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282018S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/574697b2-8b0f-4cba-8308-a8c281f85266#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Copa America 2019"@en-gb ;
+    sal:name "Quarter-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282018S2R1> ;
+    core:preferredLabel "Quarter-final"@en-gb ;
+    core:shortLabel "Quarter-final"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/607147ec-02c8-4b7b-90a2-6f58442cb9fb#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 2 of Copa America 2019"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282018S2R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/8ac16f4c-82be-44b7-9039-11cf1181a643#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Copa America 2019"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282018S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/9153432f-9762-4f0d-8fa0-8332759b915a#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of Copa America 2019"@en-gb ;
+    sal:name "3rd/4th Play-Offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282018S2R3> ;
+    core:preferredLabel "3rd/4th Play-Offs"@en-gb ;
+    core:shortLabel "3rd/4th Play-Offs"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/a34fc511-c658-432f-8a78-a81c60858001#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Copa America 2019"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282018S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CFBB1282018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282018S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282018S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282018S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282018S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB1282018S2R4> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/3de26039-5e50-44f1-9f5e-721139274d56#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of Copa America 2019"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282018S2> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel ""@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/574697b2-8b0f-4cba-8308-a8c281f85266#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/248ed10b-8a70-4af2-9617-d704f74a9305#id>,
+        <http://www.bbc.co.uk/things/9153432f-9762-4f0d-8fa0-8332759b915a#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/607147ec-02c8-4b7b-90a2-6f58442cb9fb#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/6756afee-9672-49b9-81e8-24cac4aa08e1#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/6756afee-9672-49b9-81e8-24cac4aa08e1#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Copa America 2019"@en-gb ;
+    sal:name ""@en-gb ;
+    cms:locator <urn:sports-data:CFBB1282018S1> ;
+    core:preferredLabel ""@en-gb ;
+    core:shortLabel ""@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/31a16b20-5063-4990-b6aa-5a99e6b276d1#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/a34fc511-c658-432f-8a78-a81c60858001#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/8ac16f4c-82be-44b7-9039-11cf1181a643#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/3de26039-5e50-44f1-9f5e-721139274d56#id> ;
+    sport:stageNumber 1 .
+

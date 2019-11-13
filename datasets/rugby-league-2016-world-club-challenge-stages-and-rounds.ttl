@@ -1,0 +1,53 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/b36898dc-33a6-47dc-af0d-0d2898b2728d#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2018 World Club Series Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/rugby-league/rugby-league-2016-world-club-challenge-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4013; Model Rugby League World Club Series Season 2018" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-01-22T08:33:08+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/7a2b6b79-d90b-4c5c-9e14-8ae45601909d#id> sport:firstStage <http://www.bbc.co.uk/things/f5f4d9b0-c7e9-41fe-9f70-a2b29887c6c9#id> .
+
+<http://www.bbc.co.uk/things/7831c043-c58e-4799-809d-59f5c9681a67#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Rugby League World Club Series 2018"@en-gb ;
+    sal:name "World Club Challenge"@en-gb ;
+    cms:locator <urn:sports-data:CRLB4062018S1R1> ;
+    core:preferredLabel "World Club Challenge"@en-gb ;
+    core:shortLabel "World Club Challenge"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/f5f4d9b0-c7e9-41fe-9f70-a2b29887c6c9#id> a sport:KnockoutCompetition ;
+    rdfs:label "Knockout Stage 1 of Rugby League World Club Series 2018"@en-gb ;
+    sal:name "Rugby League World Club Series 2018"@en-gb ;
+    cms:locator <urn:sports-data:CRLB4062018S1> ;
+    core:preferredLabel "Rugby League World Club Series 2018"@en-gb ;
+    core:shortLabel "World Club Series"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/7831c043-c58e-4799-809d-59f5c9681a67#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<urn:sports-data:CRLB4062018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB4062018S1R1> a cms:Sports-DataLocator .
+

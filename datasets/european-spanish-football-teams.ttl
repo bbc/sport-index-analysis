@@ -1,0 +1,693 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/5896c31a-9412-4c19-be4c-908d8047cd39#id> a provenance:Dataset ;
+    rdfs:label "Football: European Spanish Domestic Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-spanish-football-teams.ttl" ;
+    provenance:changeReason "SWD-814: Add Mallorca to La Liga; add teams to CL and EL 2019/20" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-09-02T12:57:47+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "7"^^xsd:int .
+
+<http://www.bbc.co.uk/things/04a7d274-0f82-4ad6-8a12-35da430c6e7e#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Mallorca"@en-gb ;
+    cms:locator <urn:sports-data:TFBB181> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Mallorca"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/mallorca> ;
+    core:sameAs <http://dbpedia.org/resource/RCD_Mallorca> ;
+    core:shortLabel "Mallorca"@en-gb ;
+    core:slug "mallorca"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/17551c79-999a-4dfd-9f51-28535182153e#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Villarreal"@en-gb ;
+    cms:locator <urn:sports-data:TFBB449> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Villarreal"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/villarreal> ;
+    core:sameAs <http://dbpedia.org/resource/Villarreal_CF> ;
+    core:shortLabel "Villarreal"@en-gb ;
+    core:slug "villarreal"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/4a64b2de-a14e-4098-98a4-b60e0bed7d31#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1c1c5511-e83b-46db-b1bf-eceaec937554#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Getafe"@en-gb ;
+    cms:locator <urn:sports-data:TFBB1450> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Getafe"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/getafe> ;
+    core:sameAs <http://dbpedia.org/resource/Getafe_CF> ;
+    core:shortLabel "Getafe"@en-gb ;
+    core:slug "getafe"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1c9c5c77-4d89-414a-a5df-1f9f1a28d630#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Real Madrid"@en-gb ;
+    sal:videCode "RMAD"@en-gb ;
+    cms:locator <urn:sports-data:TFBB186> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Real Madrid"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/real-madrid> ;
+    core:sameAs <http://dbpedia.org/resource/Real_Madrid_C.F.>,
+        <http://rdf.freebase.com/ns/m.06l22>,
+        <http://www.wikidata.org/entity/Q8682> ;
+    core:shortLabel "Real Madrid"@en-gb ;
+    core:slug "real-madrid"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/1caed9b2-0d25-42cc-862b-827ae509688e#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Alavés"@en-gb ;
+    cms:locator <urn:sports-data:TFBB173> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Alavés"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/deportivo-alaves> ;
+    core:sameAs <http://dbpedia.org/resource/Deportivo_Alavés> ;
+    core:shortLabel "Alavés"@en-gb ;
+    core:slug "deportivo-alaves"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/24d188ce-a76f-47f0-abcb-1aa001b0c34a#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Celta Vigo"@en-gb ;
+    cms:locator <urn:sports-data:TFBB176> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Celta Vigo"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/celta-vigo> ;
+    core:sameAs <http://dbpedia.org/resource/Celta_de_Vigo> ;
+    core:shortLabel "Celta Vigo"@en-gb ;
+    core:slug "celta-vigo"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2905619c-8490-4ec9-a59c-cd25f77f0ef7#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Rayo Vallecano"@en-gb ;
+    cms:locator <urn:sports-data:TFBB184> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Rayo Vallecano"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/rayo-vallecano> ;
+    core:sameAs <http://dbpedia.org/resource/Rayo_Vallecano> ;
+    core:shortLabel "Rayo Vallecano"@en-gb ;
+    core:slug "rayo-vallecano"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2de4dcd0-95df-49f8-8aa8-e6ae96446024#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Leganés"@en-gb ;
+    cms:locator <urn:sports-data:TFBB957> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Leganés"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/leganes> ;
+    core:sameAs <http://dbpedia.org/resource/CD_Leganés> ;
+    core:shortLabel "Leganés"@en-gb ;
+    core:slug "leganes"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/35db1f47-102f-46e1-b25e-745d39d9145f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sporting Gijón"@en-gb ;
+    cms:locator <urn:sports-data:TFBB616> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Sporting Gijón"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/sporting-gijon> ;
+    core:sameAs <http://dbpedia.org/resource/Sporting_de_Gijón> ;
+    core:shortLabel "Sporting Gijón"@en-gb ;
+    core:slug "sporting-gijon"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/37559593-903e-4762-8720-ece3cf715220#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Eibar"@en-gb ;
+    cms:locator <urn:sports-data:TFBB953> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Eibar"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/eibar> ;
+    core:sameAs <http://dbpedia.org/resource/SD_Eibar> ;
+    core:shortLabel "Eibar"@en-gb ;
+    core:slug "eibar"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/44bdad3c-5185-430c-822f-64bad2848b83#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Las Palmas"@en-gb ;
+    cms:locator <urn:sports-data:TFBB407> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Las Palmas"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/las-palmas> ;
+    core:sameAs <http://dbpedia.org/resource/UD_Las_Palmas> ;
+    core:shortLabel "Las Palmas"@en-gb ;
+    core:slug "las-palmas"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/4dcb7da4-25bd-464b-a038-9a0f3d8a9e84#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Real Valladolid"@en-gb ;
+    cms:locator <urn:sports-data:TFBB192> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Real Valladolid"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/real-valladolid> ;
+    core:sameAs <http://dbpedia.org/resource/Real_Valladolid> ;
+    core:shortLabel "Real Valladolid"@en-gb ;
+    core:slug "real-valladolid"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/572083a0-a1b4-4b58-9178-943a234b1a8d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Granada"@en-gb ;
+    cms:locator <urn:sports-data:TFBB5683> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Granada"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/granada> ;
+    core:sameAs <http://dbpedia.org/resource/Granada_CF> ;
+    core:shortLabel "Granada"@en-gb ;
+    core:slug "granada"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5925c68c-b131-4593-aa5e-dc6128b23efc#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Deportivo La Coruña"@en-gb ;
+    cms:locator <urn:sports-data:TFBB180> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Deportivo La Coruña"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/deportivo-de-la-coruna> ;
+    core:sameAs <http://dbpedia.org/resource/Deportivo_de_La_Coruña> ;
+    core:shortLabel "Dep La Coruña"@en-gb ;
+    core:slug "deportivo-de-la-coruna"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5be2b9ad-f9c7-4a3a-a0e8-a9793bf2b12d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Huesca"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2894> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Huesca"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/huesca> ;
+    core:sameAs <http://dbpedia.org/resource/SD_Huesca> ;
+    core:shortLabel "Huesca"@en-gb ;
+    core:slug "huesca"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5c1494b0-7730-4f45-be11-4ef04d3d4efc#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Valencia"@en-gb ;
+    sal:videCode "VALE"@en-gb ;
+    cms:locator <urn:sports-data:TFBB191> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Valencia"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/valencia> ;
+    core:sameAs <http://dbpedia.org/resource/Valencia_CF>,
+        <http://rdf.freebase.com/ns/m.080_y>,
+        <http://www.wikidata.org/entity/Q10333> ;
+    core:shortLabel "Valencia"@en-gb ;
+    core:slug "valencia"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5f293f87-2335-4b8d-9915-2dd20a8900fd#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Athletic Bilbao"@en-gb ;
+    sal:videCode "ATHB"@en-gb ;
+    cms:locator <urn:sports-data:TFBB174> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Athletic Bilbao"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/athletic-bilbao> ;
+    core:sameAs <http://dbpedia.org/resource/Athletic_Bilbao>,
+        <http://rdf.freebase.com/ns/m.0kwv2>,
+        <http://www.wikidata.org/entity/Q8687> ;
+    core:shortLabel "Ath Bilbao"@en-gb ;
+    core:slug "athletic-bilbao"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/73d6cb10-0fb9-4769-97e9-e3a5748e1ef7#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Espanyol"@en-gb ;
+    cms:locator <urn:sports-data:TFBB177> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Espanyol"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/espanyol> ;
+    core:sameAs <http://dbpedia.org/resource/RCD_Espanyol> ;
+    core:shortLabel "Espanyol"@en-gb ;
+    core:slug "espanyol"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7f66e5fb-f7b1-4b84-a592-80a851950fa4#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Atlético Madrid"@en-gb ;
+    sal:videCode "AMAD"@en-gb ;
+    cms:locator <urn:sports-data:TFBB175> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Atlético Madrid"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/atletico-madrid> ;
+    core:sameAs <http://dbpedia.org/resource/Atlético_Madrid>,
+        <http://rdf.freebase.com/ns/m.0lg7v>,
+        <http://www.wikidata.org/entity/Q8701> ;
+    core:shortLabel "Atl Madrid"@en-gb ;
+    core:slug "atletico-madrid"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a3fa3eca-3f05-4fcb-b716-70ac08c77216#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Osasuna"@en-gb ;
+    cms:locator <urn:sports-data:TFBB450> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Osasuna"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/osasuna> ;
+    core:sameAs <http://dbpedia.org/resource/CA_Osasuna> ;
+    core:shortLabel "Osasuna"@en-gb ;
+    core:slug "osasuna"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a66cc19e-e179-45f7-9a9b-8632e2b8c450#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sevilla"@en-gb ;
+    cms:locator <urn:sports-data:TFBB179> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Sevilla"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/sevilla> ;
+    core:sameAs <http://dbpedia.org/resource/Sevilla_FC> ;
+    core:shortLabel "Sevilla"@en-gb ;
+    core:slug "sevilla"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a6772faa-1ff9-4a9a-bd99-14e6bc25cf9d#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Barcelona"@en-gb ;
+    sal:videCode "BARC"@en-gb ;
+    cms:locator <urn:sports-data:TFBB178> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Barcelona"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/barcelona> ;
+    core:sameAs <http://dbpedia.org/resource/FC_Barcelona>,
+        <http://rdf.freebase.com/ns/m.0hvgt>,
+        <http://www.wikidata.org/entity/Q7156> ;
+    core:shortLabel "Barcelona"@en-gb ;
+    core:slug "barcelona"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id>,
+        <http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id>,
+        <http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id>,
+        <http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a6e8cd4b-e80d-4075-8d7c-26f3ccf63eb8#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Malaga"@en-gb ;
+    sal:videCode "MALA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB182> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Malaga"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/malaga> ;
+    core:sameAs <http://dbpedia.org/resource/Málaga_CF>,
+        <http://rdf.freebase.com/ns/m.03fnrc>,
+        <http://www.wikidata.org/entity/Q8857> ;
+    core:shortLabel "Malaga"@en-gb ;
+    core:slug "malaga"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a7e6c0fe-09e6-4c0a-8dbd-53341cf2c22f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Real Sociedad"@en-gb ;
+    cms:locator <urn:sports-data:TFBB188> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Real Sociedad"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/real-sociedad> ;
+    core:sameAs <http://dbpedia.org/resource/Real_Sociedad> ;
+    core:shortLabel "Real Sociedad"@en-gb ;
+    core:slug "real-sociedad"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/4a64b2de-a14e-4098-98a4-b60e0bed7d31#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/bd0bc18e-ceb3-4fb7-b430-3320a953aa1f#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Girona"@en-gb ;
+    cms:locator <urn:sports-data:TFBB2893> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Girona"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/girona> ;
+    core:sameAs <http://dbpedia.org/resource/Girona_FC> ;
+    core:shortLabel "Girona"@en-gb ;
+    core:slug "girona"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e14e65cd-ea5b-4b41-ad23-922b64b55d05#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Real Betis"@en-gb ;
+    cms:locator <urn:sports-data:TFBB185> ;
+    core:disambiguationHint "Football Team"@en-gb ;
+    core:preferredLabel "Real Betis"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/real-betis> ;
+    core:sameAs <http://dbpedia.org/resource/Real_Betis> ;
+    core:shortLabel "Real Betis"@en-gb ;
+    core:slug "real-betis"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id>,
+        <http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id>,
+        <http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f8af60bf-3adf-4813-8453-8f7f5f699b4b#id> a sal:SportTopic,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Levante"@en-gb ;
+    sal:videCode "LEVA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB855> ;
+    core:disambiguationHint "Football Team"^^xsd:string ;
+    core:preferredLabel "Levante"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/levante> ;
+    core:sameAs <http://dbpedia.org/resource/Levante_UD>,
+        <http://rdf.freebase.com/ns/m.01njml>,
+        <http://www.wikidata.org/entity/Q8823> ;
+    core:shortLabel "Levante"@en-gb ;
+    core:slug "levante"@en-gb ;
+    sport:competesIn <http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id>,
+        <http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id>,
+        <http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/sport/football/teams/athletic-bilbao> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/atletico-madrid> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/barcelona> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/celta-vigo> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/deportivo-alaves> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/deportivo-de-la-coruna> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/eibar> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/espanyol> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/getafe> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/girona> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/granada> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/huesca> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/las-palmas> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/leganes> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/levante> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/malaga> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/mallorca> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/osasuna> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/rayo-vallecano> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/real-betis> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/real-madrid> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/real-sociedad> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/real-valladolid> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/sevilla> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/sporting-gijon> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/valencia> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/villarreal> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<urn:sports-data:TFBB1450> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB173> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB174> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB175> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB176> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB177> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB178> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB179> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB180> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB181> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB182> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB184> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB185> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB186> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB188> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB191> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB192> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2893> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB2894> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB407> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB449> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB450> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB5683> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB616> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB855> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB953> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB957> a cms:Sports-DataLocator .
+

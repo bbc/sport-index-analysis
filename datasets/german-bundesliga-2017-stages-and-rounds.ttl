@@ -1,0 +1,53 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/3eb0eeb7-561c-4a64-9bdc-45bfb5157de4#id> a provenance:Dataset ;
+    rdfs:label "Football: German Bundesliga 2017/18 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/german-bundesliga-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-4390;3: Model Bundesliga Play-offs 2017/18 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-05-22T14:21:13+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id> sport:firstStage <http://www.bbc.co.uk/things/0a57299f-a927-4bdd-8b7c-aa75a6d130da#id> .
+
+<http://www.bbc.co.uk/things/0a57299f-a927-4bdd-8b7c-aa75a6d130da#id> a sport:Competition ;
+    rdfs:label "German Bundesliga Play-offs 2017/18"@en-gb ;
+    sal:name "German Bundesliga Play-offs 2017/18"@en-gb ;
+    cms:locator <urn:sports-data:CFBB419> ;
+    core:preferredLabel "German Bundesliga Play-offs"@en-gb ;
+    core:shortLabel "German Bundesliga Play-offs"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/14a7860c-207f-4dd2-be58-df5430b95fd6#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/14a7860c-207f-4dd2-be58-df5430b95fd6#id> a sport:Round ;
+    rdfs:label "Round 1 of German Bundesliga Play-offs 2017/18"@en-gb ;
+    sal:name "Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4192017S1R1> ;
+    core:preferredLabel "Play-offs"@en-gb ;
+    core:shortLabel "Play-offs"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<urn:sports-data:CFBB419> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4192017S1R1> a cms:Sports-DataLocator .
+

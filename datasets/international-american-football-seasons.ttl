@@ -1,0 +1,80 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns3: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/96355e24-179b-4d28-8bb6-dd10d17568c2#id> a provenance:Dataset ;
+    rdfs:label "American Football: International Seasons" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/american-football/international-american-football-seasons.ttl" ;
+    provenance:changeReason "SLS-4780 create 2018 NFL season" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2018-09-17T08:18:44+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "3"^^xsd:int .
+
+<http://www.bbc.co.uk/things/6079fdd5-aa6f-4ed8-bdee-4db250e79883#id> a sport:Competition ;
+    rdfs:label "National Football League 2015 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/2de61e8d-4274-4706-b1b1-5a8b5c0403bc#id> ;
+    sal:name "National Football League"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/03081951-e015-4f09-9bc8-2dd207f773e8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/03081951-e015-4f09-9bc8-2dd207f773e8#id> .
+
+<http://www.bbc.co.uk/things/69c55b54-97fa-4d2c-b04c-248aab661ab4#id> a sport:Competition ;
+    rdfs:label "National Football League 2017 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/e82a657c-5517-4382-b9e8-d85dd2590b73#id> ;
+    sal:name "National Football League"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/03081951-e015-4f09-9bc8-2dd207f773e8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/03081951-e015-4f09-9bc8-2dd207f773e8#id> .
+
+<http://www.bbc.co.uk/things/7ab406a0-8e01-48f7-8e2c-2fc4117e994f#id> a sport:Competition ;
+    rdfs:label "National Football League 2018 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/3946e39f-3170-4f41-bd22-12f2891ed602#id> ;
+    sal:name "National Football League"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/03081951-e015-4f09-9bc8-2dd207f773e8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/03081951-e015-4f09-9bc8-2dd207f773e8#id> .
+
+<http://www.bbc.co.uk/things/bf236c7a-9d5c-49a6-8a59-186c9b089df2#id> a sport:Competition ;
+    rdfs:label "National Football League 2016 Season (Competition)"@en-gb ;
+    ns2:time <http://www.bbc.co.uk/things/4847f74d-3deb-41e2-840d-a587070b8bd4#id> ;
+    sal:name "National Football League"@en-gb ;
+    ns3:recurringEvent <http://www.bbc.co.uk/things/03081951-e015-4f09-9bc8-2dd207f773e8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/03081951-e015-4f09-9bc8-2dd207f773e8#id> .
+
+<http://www.bbc.co.uk/things/2de61e8d-4274-4706-b1b1-5a8b5c0403bc#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "National Football League 2015 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2015-09-10"^^xsd:date ;
+    ns1:hasEnd "2016-08-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3946e39f-3170-4f41-bd22-12f2891ed602#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "National Football League 2018 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2018-09-01"^^xsd:date ;
+    ns1:hasEnd "2019-08-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4847f74d-3deb-41e2-840d-a587070b8bd4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "National Football League 2016 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2016-09-01"^^xsd:date ;
+    ns1:hasEnd "2017-08-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e82a657c-5517-4382-b9e8-d85dd2590b73#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "National Football League 2017 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2017-09-01"^^xsd:date ;
+    ns1:hasEnd "2018-08-31"^^xsd:date .
+

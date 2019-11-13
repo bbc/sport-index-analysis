@@ -1,0 +1,430 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/71268b85-8c53-4a7e-b544-316d49942423#id> a provenance:Dataset ;
+    rdfs:label "Formula1: Competitions" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/formula1/formula1-competitions.ttl" ;
+    provenance:changeReason "SLS-986: remove triples using the domain: prefix; SPORTSDATA-6126 Remove Drivers and Constructors championship test data; re-upload" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-11-16T10:40:09+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:dong.liu@bbc.co.uk> ;
+    provenance:version "23"^^xsd:int .
+
+<http://www.bbc.co.uk/things/31120824-756a-44f4-9904-3bd75a6eba87#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "United States Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002069> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "United States Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/usa-gp> ;
+    core:shortLabel "United States Grand Prix"@en-gb ;
+    core:slug "united-states-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/3255a37e-b73f-433a-adc3-292e3791dc58#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Canadian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135000550> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Canadian Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-canada> ;
+    core:shortLabel "Canadian Grand Prix"@en-gb ;
+    core:slug "canadian-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/45e361a2-833a-4a7c-bea0-419839810762#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Japanese Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002067> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Japanese Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-japan> ;
+    core:shortLabel "Japanese Grand Prix"@en-gb ;
+    core:slug "japanese-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/460b693e-f85b-49bc-85b6-bf828ab6b6cc#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Brazilian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135000545> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Brazilian Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-brazil> ;
+    core:shortLabel "Brazilian Grand Prix"@en-gb ;
+    core:slug "brazilian-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/4b9f9e5c-766c-4e20-a5b7-1b77740b2fdb#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Abu Dhabi Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135049369> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Abu Dhabi Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-abu-dhabi> ;
+    core:shortLabel "Abu Dhabi Grand Prix"@en-gb ;
+    core:slug "abu-dhabi-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/4be36bf5-b99a-4dff-962f-0b088f36b3ca#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "British Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135000543> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "British Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-great-britain> ;
+    core:shortLabel "British Grand Prix"@en-gb ;
+    core:slug "british-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "FIA Formula 1 Championship"@en-gb ;
+    cms:locator <urn:sports-data:CMRBF1> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Formula 1 Championship"@en-gb ;
+    core:sameAs <http://dbpedia.org/resource/Formula_One_racing> ;
+    core:shortLabel "F1 Championship"@en-gb ;
+    core:slug "formula1-championship"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/79a23ab3-e338-408f-bfe8-3c46367ee0b5#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "German Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002062> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "German Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/german-gp> ;
+    core:shortLabel "German Grand Prix"@en-gb ;
+    core:slug "german-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/86b8c229-7b1e-477e-96e6-3e2a0bc2b5b2#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Malaysian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002095> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Malaysian Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-malaysia> ;
+    core:shortLabel "Malaysian Grand Prix"@en-gb ;
+    core:slug "malaysian-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/895e5e78-bd15-4cfa-bd93-92b34e6e6ace#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "European Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002093> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "European Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/european-gp> ;
+    core:shortLabel "European Grand Prix"@en-gb ;
+    core:slug "european-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/97e13059-9e8b-40d8-9a3b-02496afe28d7#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Belgian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002064> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Belgian Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-belgium> ;
+    core:shortLabel "Belgian Grand Prix"@en-gb ;
+    core:slug "belgian-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/a3ecfd32-4425-4abb-a1c9-72704e12f7a5#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Singapore Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135049310> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Singapore Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-singapore> ;
+    core:shortLabel "Singapore Grand Prix"@en-gb ;
+    core:slug "singapore-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/a596c503-94af-42d1-80aa-0185418b0348#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bahrain Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002096> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Bahrain Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-bahrain> ;
+    core:shortLabel "Bahrain Grand Prix"@en-gb ;
+    core:slug "bahrain-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/b12a8e1d-46c0-42c2-9847-7a7937032776#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Monaco Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135000549> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Monaco Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-monaco> ;
+    core:shortLabel "Monaco Grand Prix"@en-gb ;
+    core:slug "monaco-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/b8dbf29b-8d65-422a-8547-4ff2ecb38cea#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Italian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002065> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Italian Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-italy> ;
+    core:shortLabel "Italian Grand Prix"@en-gb ;
+    core:slug "italian-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/ba85d246-3cc8-41c7-9e86-9328037900f8#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Russian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135050211> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Russian Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/championship/events/fia-formula-1-world-championship/2014/russian-grand-prix> ;
+    core:shortLabel "Russian Grand Prix"@en-gb ;
+    core:slug "russian-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/c68fd1e2-ebab-4394-8b60-dc528e932745#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Austrian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002061> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Austrian Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/championship/events/fia-formula-1-world-championship/2014/austrian-grand-prix> ;
+    core:shortLabel "Austrian Grand Prix"@en-gb ;
+    core:slug "austrian-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/dac3947e-e2f4-4a7c-a478-3b2c62e29921#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Korean Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135049374> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Korean Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-korea> ;
+    core:shortLabel "Korean Grand Prix"@en-gb ;
+    core:slug "korean-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/db14205f-858d-41fe-8eb9-e376a72f53d1#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Indian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135050111> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Indian Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-india> ;
+    core:shortLabel "Indian Grand Prix"@en-gb ;
+    core:slug "indian-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/dbb0bd5b-e298-4266-91d1-06f4ec2bccdc#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Spanish Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135000548> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Spanish Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-spain> ;
+    core:shortLabel "Spanish Grand Prix"@en-gb ;
+    core:slug "spanish-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/dc6e72e6-b0a1-4385-a734-f37a9ffd4de7#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Hungarian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002063> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Hungarian Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-hungary> ;
+    core:shortLabel "Hungarian Grand Prix"@en-gb ;
+    core:slug "hungarian-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/f3609a15-6409-41d1-8538-0188ca7be076#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Turkish Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002098> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Turkish Grand Prix"@en-gb ;
+    core:shortLabel "Turkish Grand Prix"@en-gb ;
+    core:slug "turkish-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/f9138c5b-2ec9-4fd5-8fa3-3ef4c645d506#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Australian Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135000544> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Australian Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-australia> ;
+    core:shortLabel "Australian Grand Prix"@en-gb ;
+    core:slug "australian-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.bbc.co.uk/things/f9b9aef7-a4b6-47d7-97cb-333e4826d49e#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Chinese Grand Prix"@en-gb ;
+    cms:locator <urn:sports-stats:135002097> ;
+    core:disambiguationHint "Formula 1 competition"@en-gb ;
+    core:preferredLabel "Chinese Grand Prix"@en-gb ;
+    core:primaryTopicOf <http://www.fia.com/sport/championships/events/gp-china> ;
+    core:shortLabel "Chinese Grand Prix"@en-gb ;
+    core:slug "chinese-grand-prix"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> .
+
+<http://www.fia.com/championship/events/fia-formula-1-world-championship/2014/austrian-grand-prix> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/championship/events/fia-formula-1-world-championship/2014/russian-grand-prix> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/european-gp> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/german-gp> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-abu-dhabi> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-australia> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-bahrain> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-belgium> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-brazil> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-canada> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-china> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-great-britain> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-hungary> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-india> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-italy> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-japan> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-korea> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-malaysia> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-monaco> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-singapore> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/gp-spain> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<http://www.fia.com/sport/championships/events/usa-gp> a bbc:WebDocument ;
+    bbc:webDocumentType sal:ExternalWebsite .
+
+<urn:sports-data:CMRBF1> a cms:Sports-DataLocator .
+
+<urn:sports-stats:135000543> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135000544> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135000545> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135000548> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135000549> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135000550> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002061> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002062> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002063> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002064> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002065> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002067> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002069> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002093> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002095> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002096> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002097> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135002098> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135049310> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135049369> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135049374> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135050111> a cms:Sports-StatsLocator .
+
+<urn:sports-stats:135050211> a cms:Sports-StatsLocator .
+

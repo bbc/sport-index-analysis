@@ -1,0 +1,78 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/2ace84a8-e2e6-4cb6-afa1-6f5406c1767b#id> a provenance:Dataset ;
+    rdfs:label "Rugby League: 2015 Rugby League Four Nations Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/rugby-league/rugby-league-2015-rugby-league-four-stages-and-rounds-2.ttl" ;
+    provenance:changeReason "SPORTSDATA-6314:  Four Nations Stage 2 is Linked to Super League" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-05-27T07:56:28+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:dong.liu@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/52b3e58c-0e28-475e-91f4-6dce369cd83a#id> sport:firstStage <http://www.bbc.co.uk/things/db1970f5-4522-47bf-9062-d1dc6629ccec#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/df142147-6d11-48d5-9cc7-636e8affc683#id> .
+
+<http://www.bbc.co.uk/things/1e8fcb3b-dcf4-465e-87df-58bd977bf099#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Rugby League Four Nations 2015"@en-gb ;
+    sal:name "League"@en-gb ;
+    cms:locator <urn:sports-data:CRLB7212015S1R1> ;
+    core:preferredLabel "League"@en-gb ;
+    core:shortLabel "League"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/934a2b30-9567-4f7f-af8a-0c7ee65bc63e#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of Rugby League Four Nations 2015"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CRLB7212015S2R1> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CRLB7212015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB7212015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB7212015S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CRLB7212015S2R1> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/db1970f5-4522-47bf-9062-d1dc6629ccec#id> a sport:LeagueCompetition ;
+    rdfs:label "League Stage 1 of Rugby League Four Nations 2015"@en-gb ;
+    sal:name "Stage 1 of Rugby League Four Nations 2015"@en-gb ;
+    cms:locator <urn:sports-data:CRLB7212015S1> ;
+    core:preferredLabel "Stage 1 of Rugby League Four Nations 2015"@en-gb ;
+    core:shortLabel "League Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/1e8fcb3b-dcf4-465e-87df-58bd977bf099#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/df142147-6d11-48d5-9cc7-636e8affc683#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/df142147-6d11-48d5-9cc7-636e8affc683#id> a sport:KnockoutCompetition ;
+    rdfs:label "Final Stage 2 of Rugby League Four Nations 2015"@en-gb ;
+    sal:name "Stage 2 of Rugby League Four Nations 2015"@en-gb ;
+    cms:locator <urn:sports-data:CRLB7212015S2> ;
+    core:preferredLabel "Stage 2 of Rugby League Four Nations 2015"@en-gb ;
+    core:shortLabel "Final Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/934a2b30-9567-4f7f-af8a-0c7ee65bc63e#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/db1970f5-4522-47bf-9062-d1dc6629ccec#id> ;
+    sport:stageNumber "2"^^xsd:int .
+

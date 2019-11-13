@@ -1,0 +1,113 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/250731ef-342a-4c31-a0ce-e72b0014cea4#id> a provenance:Dataset ;
+    rdfs:label "Football: FA Cup Qualifying 2017/18 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/fa-cup-qualifying-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3260: Model CFBB668 English FA Cup Qualifying 2017/18 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-05-25T09:50:17+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/146c8006-47b0-bc7b-da37-78ff4908bf9f#id> sport:firstStage <http://www.bbc.co.uk/things/7c94e76f-042e-46bb-b86c-3b0f63c0c586#id> .
+
+<http://www.bbc.co.uk/things/35b72ce5-afd1-456c-afa5-08a27bb2141e#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682017S1R4> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5296226f-811b-4ecf-9ce5-d4ded80c52e7#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682017S1R5> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/58a8997c-7014-483f-9ed5-87e7905d04ec#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - Extra Preliminary Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682017S1R1> ;
+    core:preferredLabel "Extra Preliminary Round"@en-gb ;
+    core:shortLabel "Extra Preliminary Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5ba5825f-efba-4f51-8ff9-b07124dea817#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - Preliminary Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682017S1R2> ;
+    core:preferredLabel "Preliminary Round"@en-gb ;
+    core:shortLabel "Preliminary Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6876159a-74a9-4eec-ac20-439edbe1de69#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682017S1R3> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/7c94e76f-042e-46bb-b86c-3b0f63c0c586#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "FA Cup Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682017S1> ;
+    core:preferredLabel "FA Cup Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/58a8997c-7014-483f-9ed5-87e7905d04ec#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/35b72ce5-afd1-456c-afa5-08a27bb2141e#id>,
+        <http://www.bbc.co.uk/things/5296226f-811b-4ecf-9ce5-d4ded80c52e7#id>,
+        <http://www.bbc.co.uk/things/5ba5825f-efba-4f51-8ff9-b07124dea817#id>,
+        <http://www.bbc.co.uk/things/6876159a-74a9-4eec-ac20-439edbe1de69#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/92715b07-bcce-43f7-82fd-53aca263ec32#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/92715b07-bcce-43f7-82fd-53aca263ec32#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682017S1R6> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB6682017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682017S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682017S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682017S1R6> a cms:Sports-DataLocator .
+

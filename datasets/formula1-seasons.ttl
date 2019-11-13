@@ -1,0 +1,144 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix ns3: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/75751ed7-a39d-446f-b7e8-5f6ed4f90838#id> a provenance:Dataset ;
+    rdfs:label "Formula1: Seasons" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/formula1/formula1-seasons.ttl" ;
+    provenance:changeReason "SWD-546: Model Formula 1 2019 Season Grands Prix to start a few days earlier" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-03-13T10:49:59+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "34"^^xsd:int .
+
+<http://www.bbc.co.uk/things/02b60dd2-a09e-4cd2-8425-018d46c78287#id> a sport:Competition ;
+    rdfs:label "Formula 1 Championship 2016 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> ;
+    sal:name "Formula 1 Championship 2016"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> .
+
+<http://www.bbc.co.uk/things/0627d152-c753-4c31-8133-31a08fe8f746#id> a sport:Competition ;
+    rdfs:label "Formula 1 Championship 2019 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> ;
+    sal:name "Formula 1 Championship 2019"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> .
+
+<http://www.bbc.co.uk/things/21f5a70e-b2c5-41ba-ae11-b21c6b850db5#id> a sport:Competition ;
+    rdfs:label "Formula 1 Championship 2013 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/c1e50294-9a3c-4786-a9ba-9608b642f7e7#id> ;
+    sal:name "Formula 1 Championship 2013"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> .
+
+<http://www.bbc.co.uk/things/22b1279d-0f73-905d-caee-3fd49f8805c2#id> a sport:Competition ;
+    rdfs:label "Formula 1 Championship 2017 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> ;
+    sal:name "Formula 1 Championship 2017"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> .
+
+<http://www.bbc.co.uk/things/30f0bd1a-6efe-4a34-bc3a-3258ab9af756#id> a sport:Competition ;
+    rdfs:label "Formula 1 Championship 2014 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> ;
+    sal:name "Formula 1 Championship 2014"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> .
+
+<http://www.bbc.co.uk/things/67c60513-7577-436b-9f0b-fd0dcfbb6441#id> a sport:Competition ;
+    rdfs:label "Formula 1 Championship 2012 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/99ba11b8-fd5a-497b-b374-53dadc4c025a#id> ;
+    sal:name "Formula 1 Championship 2012"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> .
+
+<http://www.bbc.co.uk/things/6d96ebfc-7fb5-401c-8f0b-2828e6ade118#id> a sport:Competition ;
+    rdfs:label "Formula 1 Championship 2018 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> ;
+    sal:name "Formula 1 Championship 2018"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> .
+
+<http://www.bbc.co.uk/things/999cf715-10a9-407a-82a5-87f73b6d8686#id> a sport:Competition ;
+    rdfs:label "Formula 1 Championship 2015 Season (Competition)"@en-gb ;
+    ns3:time <http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> ;
+    sal:name "Formula 1 Championship 2015"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/13c4b240-b966-410e-a23a-f06dfa0b444b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/65fae837-8320-4b43-923b-215ec4b8dfa0#id> .
+
+<http://www.bbc.co.uk/things/51bc6ba2-facf-418f-bfc8-766c5a4b2b0a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Formula 1 Championship 2017 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2017-03-18"^^xsd:date ;
+    ns1:hasEnd "2018-03-17"^^xsd:date ;
+    core:slug "2017"^^xsd:string .
+
+<http://www.bbc.co.uk/things/60cdf0e9-de58-411a-b409-b3bb0cbbb87d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Formula 1 Championship 2015 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2015-03-09"^^xsd:date ;
+    ns1:hasEnd "2016-03-16"^^xsd:date ;
+    core:slug "2015"^^xsd:string .
+
+<http://www.bbc.co.uk/things/6516b506-7e03-43c5-8fe2-ce734a201a45#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Formula 1 Championship 2019 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2019-03-11"^^xsd:date ;
+    ns1:hasEnd "2020-03-17"^^xsd:date ;
+    core:slug "2019"^^xsd:string .
+
+<http://www.bbc.co.uk/things/766b7906-5f2b-4405-af31-ea8fb56e8bcb#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Formula 1 Championship 2016 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2016-03-17"^^xsd:date ;
+    ns1:hasEnd "2017-03-17"^^xsd:date ;
+    core:slug "2016"^^xsd:string .
+
+<http://www.bbc.co.uk/things/7711696d-ce7a-4d7a-b4f9-c6c81260c65f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Formula 1 Championship 2014 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2014-03-09"^^xsd:date ;
+    ns1:hasEnd "2015-03-08"^^xsd:date ;
+    core:slug "2014"^^xsd:string .
+
+<http://www.bbc.co.uk/things/99ba11b8-fd5a-497b-b374-53dadc4c025a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Formula 1 Championship 2012 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2012-03-08"^^xsd:date ;
+    ns1:hasEnd "2013-03-08"^^xsd:date ;
+    core:slug "2012"^^xsd:string .
+
+<http://www.bbc.co.uk/things/a6c5de1e-dc95-4543-ac1e-aa8c0fa4c635#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Formula 1 Championship 2018 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2018-03-18"^^xsd:date ;
+    ns1:hasEnd "2019-03-10"^^xsd:date ;
+    core:slug "2018"^^xsd:string .
+
+<http://www.bbc.co.uk/things/c1e50294-9a3c-4786-a9ba-9608b642f7e7#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Formula 1 Championship 2013 Season (Temporal Entity)"@en-gb ;
+    ns1:hasBeginning "2013-03-09"^^xsd:date ;
+    ns1:hasEnd "2014-03-08"^^xsd:date ;
+    core:slug "2013"^^xsd:string .
+

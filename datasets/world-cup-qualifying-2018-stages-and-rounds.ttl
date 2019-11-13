@@ -1,0 +1,172 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/79ca4ba9-736a-4561-ab7c-67d564b4efcd#id> a provenance:Dataset ;
+    rdfs:label "Football: World Cup 2018 Qualifying Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/world-cup-qualifying-2018-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-2321: International Competitions 2016/17/18 Stages and Rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2016-07-26T13:04:53+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> sport:firstStage <http://www.bbc.co.uk/things/07d9e413-3720-482e-950c-faa812bd53ba#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/e0e209c4-099c-46e1-8d73-3c27bf974af4#id> .
+
+<http://www.bbc.co.uk/things/07d9e413-3720-482e-950c-faa812bd53ba#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of FIFA World Cup 2018 European Qualifying"@en-gb ;
+    sal:name "FIFA World Cup 2018 European Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S1> ;
+    core:preferredLabel "World Cup 2018 Qualifying"@en-gb ;
+    core:shortLabel "World Cup 2018 Qualifying"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/a129b3a5-5c53-4dc9-95a4-17c00741417c#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/21481e81-01f8-4c21-a60b-3c5a62a16f2f#id>,
+        <http://www.bbc.co.uk/things/27ba6ddc-11cc-4cda-ab35-454d694c302e#id>,
+        <http://www.bbc.co.uk/things/28758a9c-d5b4-4235-bf41-869615b79f4e#id>,
+        <http://www.bbc.co.uk/things/aa8025c0-8ff1-4a37-bd45-ed2f87469d8d#id>,
+        <http://www.bbc.co.uk/things/b7731f3c-da05-47de-85f7-9e35f0680208#id>,
+        <http://www.bbc.co.uk/things/bfec578a-5d31-405d-80c2-479197106760#id>,
+        <http://www.bbc.co.uk/things/f62ddcc7-f94a-4c60-a486-01c98a8ceaff#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/124bfa92-2239-408f-9413-9a6605adb448#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/124bfa92-2239-408f-9413-9a6605adb448#id> a sport:Round ;
+    rdfs:label "Round 9 of FIFA World Cup 2018 European Qualifying"@en-gb ;
+    sal:name "Group I"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S1R9> ;
+    core:preferredLabel "Group I"@en-gb ;
+    core:shortLabel "Group I"@en-gb ;
+    sport:roundNumber 9 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/21481e81-01f8-4c21-a60b-3c5a62a16f2f#id> a sport:Round ;
+    rdfs:label "Round 4 of FIFA World Cup 2018 European Qualifying"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/27ba6ddc-11cc-4cda-ab35-454d694c302e#id> a sport:Round ;
+    rdfs:label "Round 2 of FIFA World Cup 2018 European Qualifying"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/28758a9c-d5b4-4235-bf41-869615b79f4e#id> a sport:Round ;
+    rdfs:label "Round 7 of FIFA World Cup 2018 European Qualifying"@en-gb ;
+    sal:name "Group G"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S1R7> ;
+    core:preferredLabel "Group G"@en-gb ;
+    core:shortLabel "Group G"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/a129b3a5-5c53-4dc9-95a4-17c00741417c#id> a sport:Round ;
+    rdfs:label "Round 1 of FIFA World Cup 2018 European Qualifying"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/aa8025c0-8ff1-4a37-bd45-ed2f87469d8d#id> a sport:Round ;
+    rdfs:label "Round 8 of FIFA World Cup 2018 European Qualifying"@en-gb ;
+    sal:name "Group H"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S1R8> ;
+    core:preferredLabel "Group H"@en-gb ;
+    core:shortLabel "Group H"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/b7731f3c-da05-47de-85f7-9e35f0680208#id> a sport:Round ;
+    rdfs:label "Round 5 of FIFA World Cup 2018 European Qualifying"@en-gb ;
+    sal:name "Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S1R5> ;
+    core:preferredLabel "Group E"@en-gb ;
+    core:shortLabel "Group E"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/bfec578a-5d31-405d-80c2-479197106760#id> a sport:Round ;
+    rdfs:label "Round 6 of FIFA World Cup 2018 European Qualifying"@en-gb ;
+    sal:name "Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S1R6> ;
+    core:preferredLabel "Group F"@en-gb ;
+    core:shortLabel "Group F"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/c1210752-b382-4797-a2b9-d69f0c5f1cea#id> a sport:Round ;
+    rdfs:label "Round 1 of FIFA World Cup 2018 European Qualifying Play-offs"@en-gb ;
+    sal:name "Play-off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S2R1> ;
+    core:preferredLabel "Play-off"@en-gb ;
+    core:shortLabel "Play-off"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/e0e209c4-099c-46e1-8d73-3c27bf974af4#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of FIFA World Cup 2018 European Qualifying Play-offs"@en-gb ;
+    sal:name "FIFA World Cup 2018 European Qualifying Play-offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S2> ;
+    core:preferredLabel "World Cup 2018 Qualifying Play-offs"@en-gb ;
+    core:shortLabel "World Cup 2018 Qualifying Play-offs"@en-gb ;
+    sport:hasRound <http://www.bbc.co.uk/things/c1210752-b382-4797-a2b9-d69f0c5f1cea#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/f62ddcc7-f94a-4c60-a486-01c98a8ceaff#id> a sport:Round ;
+    rdfs:label "Round 3 of FIFA World Cup 2018 European Qualifying"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB336112018S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<urn:sports-data:CFBB336112018S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S1R9> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB336112018S2R1> a cms:Sports-DataLocator .
+

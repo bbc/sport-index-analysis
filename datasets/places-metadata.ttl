@@ -1,0 +1,83 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/64fea8bc-b8ed-44d0-80d0-a3c38129bf01#id> a provenance:Dataset ;
+    rdfs:label "Places: Metadata" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/places-metadata.ttl" ;
+    provenance:changeReason "SWD-546: Adding Colombia" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-03-15T09:43:07+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "15"^^xsd:int .
+
+<http://www.bbc.co.uk/things/000a2a50-fd64-4b77-895b-999d7dfa3e55#id> core:shortLabel "Mon"@en-gb .
+
+<http://www.bbc.co.uk/things/012b505f-b279-43da-bd2e-952966781be9#id> core:shortLabel "Swi"@en-gb .
+
+<http://www.bbc.co.uk/things/019195cb-a977-4197-a49f-580f15417039#id> core:shortLabel "Swe"@en-gb .
+
+<http://www.bbc.co.uk/things/0b439cd3-e9ec-47a7-a382-000c563fa737#id> core:shortLabel "Ita"@en-gb .
+
+<http://www.bbc.co.uk/things/0e812021-ff68-4c66-b9c8-84389092cbae#id> core:shortLabel "Ven"@en-gb .
+
+<http://www.bbc.co.uk/things/116b1968-2767-49e2-ba49-0ee61fc27814#id> core:shortLabel "Idn"@en-gb .
+
+<http://www.bbc.co.uk/things/1bc6d8c1-32d1-4275-9173-69eaa0bd25c2#id> core:shortLabel "Can"@en-gb .
+
+<http://www.bbc.co.uk/things/3064adec-2d3b-4b27-9c49-5d56a6a01dfd#id> core:shortLabel "Mex"@en-gb .
+
+<http://www.bbc.co.uk/things/38ec4561-b8d5-4fd2-b8bf-ec18f0588f17#id> core:shortLabel "Aus"@en-gb .
+
+<http://www.bbc.co.uk/things/3f53c272-5b8f-4a4f-99de-a857d6726c5b#id> core:shortLabel "Jpn"@en-gb .
+
+<http://www.bbc.co.uk/things/5f9de3a3-ce03-485f-ae82-e80d1b4efaf8#id> core:shortLabel "Gbr"@en-gb .
+
+<http://www.bbc.co.uk/things/6b1f042d-11b0-41b5-b439-6d6a0629aee8#id> core:shortLabel "Den"@en-gb .
+
+<http://www.bbc.co.uk/things/6c32df61-7ede-4498-9427-346107509f0a#id> core:shortLabel "Usa"@en-gb .
+
+<http://www.bbc.co.uk/things/7d8dffb3-7027-4a12-b29d-a03e584a8bdf#id> core:shortLabel "Ned"@en-gb .
+
+<http://www.bbc.co.uk/things/89c79985-2e58-4740-921a-9a05ec76405a#id> core:shortLabel "Col"@en-gb .
+
+<http://www.bbc.co.uk/things/8efbaa0c-1756-465a-aa58-a6cfbdaaae87#id> core:shortLabel "Bel"@en-gb .
+
+<http://www.bbc.co.uk/things/90730136-b19d-4cf2-9d1a-701e5891ce92#id> core:shortLabel "Pol"@en-gb .
+
+<http://www.bbc.co.uk/things/adc21f99-8209-4372-a570-70e346114c22#id> core:shortLabel "Brz"@en-gb .
+
+<http://www.bbc.co.uk/things/b01dc349-d1a1-4917-bf1e-575ddcfe4d4d#id> core:shortLabel "Por"@en-gb .
+
+<http://www.bbc.co.uk/things/b6ee5ea7-4f56-40a3-b674-c83479fd2545#id> core:shortLabel "Fra"@en-gb .
+
+<http://www.bbc.co.uk/things/be908ad5-c6f1-40f5-b380-007a13c7a122#id> core:shortLabel "Chn"@en-gb .
+
+<http://www.bbc.co.uk/things/ce027e29-29ea-4a6d-ad4d-539454ef7b19#id> core:shortLabel "Fin"@en-gb .
+
+<http://www.bbc.co.uk/things/d9a95037-4df7-4a97-8061-c4b5760b69f3#id> core:shortLabel "Ger"@en-gb .
+
+<http://www.bbc.co.uk/things/df8e7c5a-3201-4bba-831a-112d2eab6465#id> core:shortLabel "Rus"@en-gb .
+
+<http://www.bbc.co.uk/things/ecb56ea7-7816-42b1-b1bc-a7e167503a27#id> core:shortLabel "Nz"@en-gb .
+
+<http://www.bbc.co.uk/things/f1648937-ee42-4203-b7b9-9af8fc9e481d#id> core:shortLabel "Tha"@en-gb .
+
+<http://www.bbc.co.uk/things/fe881d09-b26d-48b1-80c4-427edc1bbdb6#id> core:shortLabel "Spa"@en-gb .
+

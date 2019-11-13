@@ -1,0 +1,3523 @@
+{
+  "results": [
+    {
+      "@id": "http://www.bbc.co.uk/things/92b4c6ce-5173-4359-907b-95f496e9eb34#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-08T11:26:11+00:00",
+      "dateModified": "2019-11-08T11:26:11+00:00",
+      "description": "Celtic and Rangers beating \"European giants\" shows \"Scottish football is back\", according to former Scotland midfielder Kris Commons.",
+      "shortTitle": "\u0027Real statement for Scottish football\u0027",
+      "title": "Celtic and Rangers have made \u0027real statement for Scottish football\u0027, says Kris Commons",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:5bf562c1-f376-ab4f-adbd-d2d9900413f8",
+        "urn:bbc:cps:asset:50343602"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5840c45e-73f4-9942-b653-8d7eb8067fc9#id",
+          "@type": [
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Rangers",
+          "preferredLabel": "Rangers",
+          "shortLabel": "Rangers",
+          "slug": "rangers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Rangers_F.C.",
+            "http://rdf.freebase.com/ns/m.0j47s",
+            "http://www.wikidata.org/entity/Q19597"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/rangers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rangers.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d3b859fd-fe4d-4f36-abf5-a2e3c41c5b8c#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scottish Football",
+          "preferredLabel": "Scottish Football",
+          "shortLabel": "Scottish Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/scottish"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ebca7141-e8ba-0e40-bba9-d0864e29bc1f#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Scottish Premiership",
+          "preferredLabel": "Scottish Premiership",
+          "shortLabel": "Scottish Prem",
+          "slug": "scottish-premiership",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/scottish-premiership",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.scotprem.com/content/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50343602",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/16D1B/production/_109576439_collage.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Rangers\u0027 Alfredo Morelos and Celtic\u0027s Olivier Ntcham",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/30b683c2-0d7f-49cc-a013-39c8f1887509#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-08T01:05:38+00:00",
+      "dateModified": "2019-11-08T01:05:38+00:00",
+      "description": "Celtic won their first ever match in Italy on Thursday night with a dramatic 2-1 win over Lazio in the Europa League.",
+      "shortTitle": "From Forster\u0027s big hand to Ntcham\u0027s chip",
+      "title": "Lazio 1-2 Celtic: How the final five minutes unfolded in Rome",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:f73d7c34-a8c8-d24e-9ea6-2cd823171951",
+        "urn:bbc:cps:asset:50340659"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5d872f76-05e3-43a5-bff0-c8e20a5e97b4#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Glasgow",
+          "preferredLabel": "Glasgow",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Glasgow",
+          "sameAs": "http://sws.geonames.org/2648579/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d3b859fd-fe4d-4f36-abf5-a2e3c41c5b8c#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scottish Football",
+          "preferredLabel": "Scottish Football",
+          "shortLabel": "Scottish Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/scottish"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ebca7141-e8ba-0e40-bba9-d0864e29bc1f#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Scottish Premiership",
+          "preferredLabel": "Scottish Premiership",
+          "shortLabel": "Scottish Prem",
+          "slug": "scottish-premiership",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/scottish-premiership",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.scotprem.com/content/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50340659",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/38A4/production/_109000541_0365f8db-c029-4b5d-a62a-45bf1afddfd0.gif",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Celtic",
+          "thumbnailType": "FixedSize66Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/F453/production/_109574526_19642939.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Ntcham",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/a583c159-34d0-47f2-928e-4a18e31c2bf8#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-07T23:58:38+00:00",
+      "dateModified": "2019-11-07T23:58:38+00:00",
+      "description": "Captain Scott Brown says Celtic\u0027s 2-1 Europa League win over Lazio in Rome was \"exceptional\".",
+      "shortTitle": "Celtic win over Lazio \u0027exceptional\u0027 - Brown",
+      "title": "Scott Brown: Captain says Celtic win over Lazio \u0027exceptional\u0027",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:f581c390-8e73-ae4c-95ec-24f5ff280cf0",
+        "urn:bbc:cps:asset:50341711"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/50341711",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/480F/production/_109574481_p07tb0l9.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Scott Brown",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/b9b1d477-6495-413c-875f-1e77f23fe2b6#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-07T23:56:00+00:00",
+      "dateModified": "2019-11-07T23:56:00+00:00",
+      "description": "Manager Neil Lennon says his side\u0027s 2-1 Europa League win over Lazio in Rome is a \"historic\" result for the club.",
+      "shortTitle": "Lennon hails \u0027historic\u0027 Celtic win in Rome",
+      "title": "Neil Lennon: Celtic manager hails \u0027historic\u0027 win over Lazio in Rome",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:aa482023-01e7-4747-ae94-cc239956f5d3",
+        "urn:bbc:cps:asset:50341709"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/50341709",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/15597/production/_109574478_p07tb0hz.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Neil Lennon",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/215e7702-b3fe-47dc-ae87-0a3faa3e2efe#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-07T23:52:08+00:00",
+      "dateModified": "2019-11-07T23:52:08+00:00",
+      "description": "Slovan Bratislava coach Jan Kozak says defender Kenan Bajric has concussion after a kick to the head by Wolves striker Raul Jimenez in Thursday\u0027s Europa League tie.",
+      "shortTitle": "Concussed Bajric injury \u0027quite serious\u0027",
+      "title": "Kenan Bajric concussion \u0027quite serious\u0027 after Raul Jimenez collision against Wolves",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:733bb9a6-af2b-624a-86f5-0309d9ed4014",
+        "urn:bbc:cps:asset:50341658"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b68a1520-32bc-eb42-8dc0-ccc1018e8e8f#id",
+          "@type": [
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Thing",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Wolverhampton Wanderers",
+          "preferredLabel": "Wolverhampton Wanderers",
+          "shortLabel": "Wolves",
+          "slug": "wolverhampton-wanderers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Wolverhampton_Wanderers_F.C.",
+            "http://rdf.freebase.com/ns/m.01fwqn",
+            "http://www.wikidata.org/entity/Q19500"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/wolverhampton-wanderers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.wolves.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d6835cbe-6201-4fcc-9452-9a216c30d738#id",
+          "@type": [
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Slovan Bratislava",
+          "preferredLabel": "Slovan Bratislava",
+          "shortLabel": "Slovan Bratislava",
+          "slug": "slovan-bratislava",
+          "sameAs": [
+            "http://dbpedia.org/resource/ŠK_Slovan_Bratislava",
+            "http://rdf.freebase.com/ns/m.05ls7d",
+            "http://www.wikidata.org/entity/Q192253"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50341658",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/B187/production/_109574454_injury.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Players watch on after Slovan player Kenan Bajric is injured",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/d2b7af09-3899-4e3b-aa7b-7e243bdaa76c#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-07T23:25:28+00:00",
+      "dateModified": "2019-11-07T23:25:28+00:00",
+      "description": "Manchester United book their place in the last 32 of the Europa League with a comfortable win over Partizan Belgrade.",
+      "shortTitle": "Man Utd beat Partizan to go through",
+      "title": "Manchester United 3-0 Partizan Belgrade: Hosts qualify for Europa League last 32",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:71cc448d-3f14-4dd4-89fe-f82bf6b990eb",
+        "urn:bbc:cps:asset:50322325"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/89353f27-827c-45dc-90f9-33c2077247ab#id",
+          "@type": [
+            "sport:SportingOrganisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "Organisation"
+          ],
+          "label": "Partizan Belgrade",
+          "preferredLabel": "Partizan Belgrade",
+          "shortLabel": "Partizan Belgrade",
+          "slug": "partizan-belgrade",
+          "sameAs": "http://dbpedia.org/resource/FK_Partizan"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/90d9a818-850b-b64f-9474-79e15a0355b8#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Manchester United",
+          "preferredLabel": "Manchester United",
+          "shortLabel": "Man Utd",
+          "slug": "manchester-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Manchester_United_F.C.",
+            "http://rdf.freebase.com/ns/m.050fh",
+            "http://www.wikidata.org/entity/Q18656"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/manchester-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.manutd.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50322325",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/16E8D/production/_109573839_martial_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Anthony Martial",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/ba561c62-83b5-4ce1-8be1-83d951fabce0#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-07T22:43:37+00:00",
+      "dateModified": "2019-11-07T22:43:37+00:00",
+      "description": "Raul Jimenez puts Wolves on the brink of the Europa League knockout stages as his injury-time strike secures victory against Slovan Bratislava.",
+      "shortTitle": "Jimenez\u0027s late goal gives Wolves win",
+      "title": "Wolves 1-0 Slovan Bratislava: Wolves on brink of qualification after late winner",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:2ff9c76b-6730-46a8-9170-8832a074512a",
+        "urn:bbc:cps:asset:50322318"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b68a1520-32bc-eb42-8dc0-ccc1018e8e8f#id",
+          "@type": [
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Thing",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Wolverhampton Wanderers",
+          "preferredLabel": "Wolverhampton Wanderers",
+          "shortLabel": "Wolves",
+          "slug": "wolverhampton-wanderers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Wolverhampton_Wanderers_F.C.",
+            "http://rdf.freebase.com/ns/m.01fwqn",
+            "http://www.wikidata.org/entity/Q19500"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/wolverhampton-wanderers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.wolves.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d6835cbe-6201-4fcc-9452-9a216c30d738#id",
+          "@type": [
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Slovan Bratislava",
+          "preferredLabel": "Slovan Bratislava",
+          "shortLabel": "Slovan Bratislava",
+          "slug": "slovan-bratislava",
+          "sameAs": [
+            "http://dbpedia.org/resource/ŠK_Slovan_Bratislava",
+            "http://rdf.freebase.com/ns/m.05ls7d",
+            "http://www.wikidata.org/entity/Q192253"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50322318",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/BC13/production/_109574184_jimenez.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Jimenez",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/b10f1461-16e0-42a4-b692-c0848888a5e0#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-07T21:53:29+00:00",
+      "dateModified": "2019-11-07T21:53:29+00:00",
+      "description": "Two goals in four minutes earned Rangers a rousing victory over Porto to surge closer to the Europa League knockout stages.",
+      "shortTitle": "Rangers stun Porto in Europa League",
+      "title": "Rangers 2-0 Porto: Steven Gerrard\u0027s men move closer to Europa League last 32",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:1cd3734c-76ca-435b-ae63-577fd06e30b2",
+        "urn:bbc:cps:asset:50253793"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5840c45e-73f4-9942-b653-8d7eb8067fc9#id",
+          "@type": [
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Rangers",
+          "preferredLabel": "Rangers",
+          "shortLabel": "Rangers",
+          "slug": "rangers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Rangers_F.C.",
+            "http://rdf.freebase.com/ns/m.0j47s",
+            "http://www.wikidata.org/entity/Q19597"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/rangers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rangers.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d3b859fd-fe4d-4f36-abf5-a2e3c41c5b8c#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scottish Football",
+          "preferredLabel": "Scottish Football",
+          "shortLabel": "Scottish Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/scottish"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e05c629c-ddec-4ca0-a5bb-95dd12c8df54#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scotland Sport",
+          "preferredLabel": "Scotland Sport",
+          "shortLabel": "Scotland Sport",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/scotland"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/eb06524e-4f39-4bcf-be75-be162b498d6a#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "FC Porto",
+          "preferredLabel": "FC Porto",
+          "shortLabel": "FC Porto",
+          "slug": "fc-porto",
+          "sameAs": [
+            "http://dbpedia.org/resource/F.C._Porto",
+            "http://rdf.freebase.com/ns/m.0177gl",
+            "http://www.wikidata.org/entity/Q128446"
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50253793",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/134C7/production/_109574097_hi057848426.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Rangers v Porto",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/69a5114f-a243-4a92-96d0-f457ed96a0a4#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-07T20:17:23+00:00",
+      "dateModified": "2019-11-07T20:17:23+00:00",
+      "description": "Olivier Ntcham\u0027s stoppage-time strike earns Celtic a stunning win over Lazio in Rome and a place in the knockout stages of the Europa League with two games to spare.",
+      "shortTitle": "Celtic beat Lazio to reach last 32",
+      "title": "Lazio 1-2 Celtic: Neil Lennon\u0027s side reach Europa League last 32",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:b55fbe2b-5afa-4c99-b54b-cc71fe9a3745",
+        "urn:bbc:cps:asset:50253786"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/756a1eb5-f8bf-486d-b65d-fc74390b7288#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Lazio",
+          "preferredLabel": "Lazio",
+          "shortLabel": "Lazio",
+          "slug": "lazio",
+          "sameAs": [
+            "http://dbpedia.org/resource/S.S._Lazio",
+            "http://rdf.freebase.com/ns/m.075q_",
+            "http://www.wikidata.org/entity/Q2609"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lazio",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d3b859fd-fe4d-4f36-abf5-a2e3c41c5b8c#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scottish Football",
+          "preferredLabel": "Scottish Football",
+          "shortLabel": "Scottish Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/scottish"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e05c629c-ddec-4ca0-a5bb-95dd12c8df54#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scotland Sport",
+          "preferredLabel": "Scotland Sport",
+          "shortLabel": "Scotland Sport",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/scotland"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50253786",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/B17D/production/_109573454_hi057845427.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Celtic celebrate",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/34a89b08-f86c-4f60-94bb-26dbd1fb0dbf#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-07T13:18:11+00:00",
+      "dateModified": "2019-11-07T13:18:11+00:00",
+      "description": "The two men were attacked outside a bar ahead of Celtic\u0027s Europa League match against Lazio.",
+      "title": "Celtic fans stabbed by masked men in Rome",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-news/News",
+      "locator": [
+        "urn:asset:3d65bebd-bc57-5e45-897b-f805215819c1",
+        "urn:bbc:cps:asset:50328537"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/62fd6d95-0dfa-4b2a-840b-eedcf8603cae#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Rome",
+          "preferredLabel": "Rome",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Rome",
+          "sameAs": "http://sws.geonames.org/3169070/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/756a1eb5-f8bf-486d-b65d-fc74390b7288#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Lazio",
+          "preferredLabel": "Lazio",
+          "shortLabel": "Lazio",
+          "slug": "lazio",
+          "sameAs": [
+            "http://dbpedia.org/resource/S.S._Lazio",
+            "http://rdf.freebase.com/ns/m.075q_",
+            "http://www.wikidata.org/entity/Q2609"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lazio",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/news/uk-scotland-glasgow-west-50328537",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/149B6/production/_109560448_cops_lazio_2.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Police outside bar",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/4fe66153-fe76-4c7d-92e2-bfc12ad06640#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-07T11:10:54+00:00",
+      "dateModified": "2019-11-07T11:10:54+00:00",
+      "description": "Celtic manager Neil Lennon hopes for a repeat of the \"fantastic\" atmosphere experienced at Celtic Park as the Scottish champions face Lazio in a Europa League return fixture.",
+      "shortTitle": "\u0027We just want the fans to have a celebration\u0027",
+      "title": "Lazio v Celtic: \u0027We just want the fans to have a celebration\u0027 - Neil Lennon",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:bd53c655-042d-c34b-9ebb-dbe9d8e71551",
+        "urn:bbc:cps:asset:50332284"
+      ],
+      "primaryFormat": "VideoFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/756a1eb5-f8bf-486d-b65d-fc74390b7288#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Lazio",
+          "preferredLabel": "Lazio",
+          "shortLabel": "Lazio",
+          "slug": "lazio",
+          "sameAs": [
+            "http://dbpedia.org/resource/S.S._Lazio",
+            "http://rdf.freebase.com/ns/m.075q_",
+            "http://www.wikidata.org/entity/Q2609"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lazio",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ebca7141-e8ba-0e40-bba9-d0864e29bc1f#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Scottish Premiership",
+          "preferredLabel": "Scottish Premiership",
+          "shortLabel": "Scottish Prem",
+          "slug": "scottish-premiership",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/scottish-premiership",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.scotprem.com/content/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/av/football/50332284",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/17346/production/_109564059_p07t8068.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Celtic manager Neil Lennon",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/df67412e-d2a6-463e-a66b-9ee2a0ac1e20#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-07T06:28:43+00:00",
+      "dateModified": "2019-11-07T06:28:43+00:00",
+      "description": "Celtic manager Neil Lennon has \"proved a point\" since the \"hysterics\" of the Champions League qualifying exit to Cluj, says ex-striker Scott McDonald.",
+      "shortTitle": "\u0027Lennon has proved a point after Cluj hysterics\u0027",
+      "title": "Lazio v Celtic: Neil Lennon has \u0027proved a point\u0027 in Europe, says Scott McDonald",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:e114afe2-aede-4b43-aba6-a729333bccfc",
+        "urn:bbc:cps:asset:50318737"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5d872f76-05e3-43a5-bff0-c8e20a5e97b4#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Glasgow",
+          "preferredLabel": "Glasgow",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Glasgow",
+          "sameAs": "http://sws.geonames.org/2648579/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d3b859fd-fe4d-4f36-abf5-a2e3c41c5b8c#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scottish Football",
+          "preferredLabel": "Scottish Football",
+          "shortLabel": "Scottish Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/scottish"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ebca7141-e8ba-0e40-bba9-d0864e29bc1f#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Scottish Premiership",
+          "preferredLabel": "Scottish Premiership",
+          "shortLabel": "Scottish Prem",
+          "slug": "scottish-premiership",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/scottish-premiership",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.scotprem.com/content/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50318737",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/38A4/production/_109000541_0365f8db-c029-4b5d-a62a-45bf1afddfd0.gif",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Celtic",
+          "thumbnailType": "FixedSize66Thumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/A8D9/production/_109552234_19576779.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Neil Lennon",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/34dfd924-2485-4e2f-a488-d14340e74d0c#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-06T19:46:47+00:00",
+      "dateModified": "2019-11-06T19:46:47+00:00",
+      "description": "Arsenal\u0027s 100% record in the Europa League this season ends as Bruno Duarte scores a 91st-minute equaliser for Vitoria Guimaraes.",
+      "shortTitle": "Arsenal concede injury-time equaliser in Portugal",
+      "title": "Vitoria Guimaraes 1-1 Arsenal: Gunners concede late equaliser in Portugal",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:68cc54b4-a393-4ac9-99e2-db6bfb0207d3",
+        "urn:bbc:cps:asset:50296577"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c4285a9a-9865-2343-af3a-8653f7b70734#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Arsenal",
+          "preferredLabel": "Arsenal",
+          "shortLabel": "Arsenal",
+          "slug": "arsenal",
+          "sameAs": [
+            "http://dbpedia.org/resource/Arsenal_F.C.",
+            "http://rdf.freebase.com/ns/m.0xbm",
+            "http://www.wikidata.org/entity/Q9617"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.arsenal.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/arsenal",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50296577",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/6D33/production/_109555972_emery_epa.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Unai Emery",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/31d677f4-c163-43a6-bbf3-745b72249dc1#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-06T15:45:42+00:00",
+      "dateModified": "2019-11-06T15:45:42+00:00",
+      "description": "Eintracht Frankfurt fans are banned from entering the Belgium city of Liege for Thursday\u0027s Europa League group game against Standard Liege.",
+      "shortTitle": "Liege bans Eintracht Frankfurt fans",
+      "title": "Eintracht Frankfurt fans banned from city of Liege for Europa League tie",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:ba085272-1c97-ef48-8661-238d163d4425",
+        "urn:bbc:cps:asset:50314924"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/22d469d1-c62f-40f5-a38d-883ae67d86ba#id",
+          "@type": [
+            "Thing",
+            "Organisation"
+          ],
+          "label": "Uefa",
+          "preferredLabel": "Uefa",
+          "primaryTopicOf": "http://www.uefa.com"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/3a1503c2-ef90-4157-a7cc-3f3a62f28a76#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "European Football",
+          "preferredLabel": "European Football",
+          "shortLabel": "European Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/european"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/488a2b3e-c999-4747-9fba-6af709239157#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Standard Liege",
+          "preferredLabel": "Standard Liege",
+          "shortLabel": "Standard Liege",
+          "slug": "standard-liege",
+          "sameAs": [
+            "http://dbpedia.org/resource/Standard_Liège",
+            "http://rdf.freebase.com/ns/m.03x79y",
+            "http://www.wikidata.org/entity/Q190561"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ff79ba43-5119-4f92-be14-7b2966f21412#id",
+          "@type": [
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Eintracht Frankfurt",
+          "preferredLabel": "Eintracht Frankfurt",
+          "shortLabel": "Frankfurt",
+          "slug": "eintracht-frankfurt",
+          "sameAs": "http://dbpedia.org/resource/Eintracht_Frankfurt",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/eintracht-frankfurt",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50314924",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/5D1B/production/_109553832_ef.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Eintracht Frankfurt",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/988ce3b7-6273-45f5-9101-b8de4e1f48d2#id",
+      "@type": [
+        "LiveCoverage",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-06T09:38:08+00:00",
+      "dateModified": "2019-11-06T09:38:08+00:00",
+      "description": "Manchester United beat Partizan Belgrade 3-0 to reach the last 32, while Raul Jimenez\u0027s late winner boosts Wolves\u0027 qualification hopes.",
+      "shortTitle": "Europa League: Man Utd through, Wolves win in injury time",
+      "title": "Europa League latest - Man Utd v Partizan Belgrade \u0026 Wolves v Slovan Bratislava",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:6e4c3c7c-3ff7-344a-be62-8c015e92351c",
+        "urn:bbc:cps:asset:49377272"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/90d9a818-850b-b64f-9474-79e15a0355b8#id",
+          "@type": [
+            "dcterms:Agent",
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing"
+          ],
+          "label": "Manchester United",
+          "preferredLabel": "Manchester United",
+          "shortLabel": "Man Utd",
+          "slug": "manchester-united",
+          "sameAs": [
+            "http://dbpedia.org/resource/Manchester_United_F.C.",
+            "http://rdf.freebase.com/ns/m.050fh",
+            "http://www.wikidata.org/entity/Q18656"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/manchester-united",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.manutd.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/b68a1520-32bc-eb42-8dc0-ccc1018e8e8f#id",
+          "@type": [
+            "Organisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "dcterms:Agent",
+            "Thing",
+            "sport:SportingOrganisation"
+          ],
+          "label": "Wolverhampton Wanderers",
+          "preferredLabel": "Wolverhampton Wanderers",
+          "shortLabel": "Wolves",
+          "slug": "wolverhampton-wanderers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Wolverhampton_Wanderers_F.C.",
+            "http://rdf.freebase.com/ns/m.01fwqn",
+            "http://www.wikidata.org/entity/Q19500"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/wolverhampton-wanderers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.wolves.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/49377272",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/06C9/production/_109573710_rashford_getty.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Rashford",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/3c305e61-a319-4395-94a2-1f41bec6e280#id",
+      "@type": [
+        "NewsItem",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-05T19:19:22+00:00",
+      "dateModified": "2019-11-05T19:19:22+00:00",
+      "description": "Get in the mood for Rangers\u0027 next Europa League tie against Porto by testing your knowledge on their previous encounters and connections with Portuguese football.",
+      "shortTitle": "How much do you know about Rangers\u0027 links with Portugal?",
+      "title": "Rangers v Porto: How much do you know about Ibrox club\u0027s links with Portugal?",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:0762139b-0e03-e445-b321-097d516dcd1d",
+        "urn:bbc:cps:asset:50057359"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5840c45e-73f4-9942-b653-8d7eb8067fc9#id",
+          "@type": [
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Rangers",
+          "preferredLabel": "Rangers",
+          "shortLabel": "Rangers",
+          "slug": "rangers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Rangers_F.C.",
+            "http://rdf.freebase.com/ns/m.0j47s",
+            "http://www.wikidata.org/entity/Q19597"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/rangers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rangers.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5d872f76-05e3-43a5-bff0-c8e20a5e97b4#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Glasgow",
+          "preferredLabel": "Glasgow",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Glasgow",
+          "sameAs": "http://sws.geonames.org/2648579/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d3b859fd-fe4d-4f36-abf5-a2e3c41c5b8c#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scottish Football",
+          "preferredLabel": "Scottish Football",
+          "shortLabel": "Scottish Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/scottish"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/eb06524e-4f39-4bcf-be75-be162b498d6a#id",
+          "@type": [
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "Organisation",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "FC Porto",
+          "preferredLabel": "FC Porto",
+          "shortLabel": "FC Porto",
+          "slug": "fc-porto",
+          "sameAs": [
+            "http://dbpedia.org/resource/F.C._Porto",
+            "http://rdf.freebase.com/ns/m.0177gl",
+            "http://www.wikidata.org/entity/Q128446"
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ebca7141-e8ba-0e40-bba9-d0864e29bc1f#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Scottish Premiership",
+          "preferredLabel": "Scottish Premiership",
+          "shortLabel": "Scottish Prem",
+          "slug": "scottish-premiership",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/scottish-premiership",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.scotprem.com/content/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50057359",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/13582/production/_109243297_quiz.png",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Porto v Rangers, 2005",
+          "thumbnailType": "StandardThumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/D0FC/production/_109000535_c35bd55c-ecfb-4d04-9f1a-daa6e76251e8.gif",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Rangers",
+          "thumbnailType": "FixedSize66Thumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/5b924b05-4761-46ac-842f-31c12932407a#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-05T15:14:54+00:00",
+      "dateModified": "2019-11-05T15:14:54+00:00",
+      "description": "How do the Old Firm\u0027s qualification prospects look halfway through the Europa League group stage?",
+      "shortTitle": "How do Old Firm stand in Europa League?",
+      "title": "Europa League: How do Celtic and Rangers stand halfway through group stage?",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:d3a6f380-da05-484e-9922-86cc8b55b3ce",
+        "urn:bbc:cps:asset:50299546"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5840c45e-73f4-9942-b653-8d7eb8067fc9#id",
+          "@type": [
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Rangers",
+          "preferredLabel": "Rangers",
+          "shortLabel": "Rangers",
+          "slug": "rangers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Rangers_F.C.",
+            "http://rdf.freebase.com/ns/m.0j47s",
+            "http://www.wikidata.org/entity/Q19597"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/rangers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rangers.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/aa015fe5-c774-4374-9a06-2cee75bf3552#id",
+          "@type": [
+            "Thing",
+            "Theme",
+            "Event"
+          ],
+          "label": "Football transfers",
+          "preferredLabel": "Football transfers",
+          "sameAs": "http://www.wikidata.org/entity/Q622822"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50299546",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/EF1D/production/_109531216_oldfirmcollage.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Christopher Jullien \u0026 Alfredo Morelos",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/f2e38b12-11e9-47b0-a893-2a618e9aa3ba#id",
+      "@type": [
+        "LiveCoverage",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-05T13:48:54+00:00",
+      "dateModified": "2019-11-05T13:48:54+00:00",
+      "description": "Spurs win in Belgrade while Atalanta hold Man City in the Champions League - follow live text \u0026 5 Live Final Score.",
+      "shortTitle": "Man City draw as Walker finishes in goal, Son double in Spurs win",
+      "title": "Vitoria SC v Arsenal in Europa League, Red Star v Spurs \u0026 Atalanta v Man City in Champions League - live text and watch 5 Live Final Score",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:48d3e5e6-f637-3645-90a5-250a05291286",
+        "urn:bbc:cps:asset:49373288"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "Thing"
+          ],
+          "label": "Champions League",
+          "preferredLabel": "Champions League",
+          "shortLabel": "Champions League",
+          "slug": "champions-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Champions_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/champions-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefachampionsleague",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4bdbf21d-d1ad-7147-ab08-612cd0dc20b4#id",
+          "@type": [
+            "Organisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Manchester City",
+          "preferredLabel": "Manchester City",
+          "shortLabel": "Man City",
+          "slug": "manchester-city",
+          "sameAs": [
+            "http://dbpedia.org/resource/Manchester_City_F.C.",
+            "http://rdf.freebase.com/ns/m.01634x",
+            "http://www.wikidata.org/entity/Q50602"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/manchester-city",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.mancity.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/c4285a9a-9865-2343-af3a-8653f7b70734#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Organisation",
+            "sport:SportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "sport:CompetitiveSportingOrganisation"
+          ],
+          "label": "Arsenal",
+          "preferredLabel": "Arsenal",
+          "shortLabel": "Arsenal",
+          "slug": "arsenal",
+          "sameAs": [
+            "http://dbpedia.org/resource/Arsenal_F.C.",
+            "http://rdf.freebase.com/ns/m.0xbm",
+            "http://www.wikidata.org/entity/Q9617"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.arsenal.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/arsenal",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/edc20628-9520-044d-92c3-fdec473457be#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "sport:CompetitiveSportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:SportingOrganisation",
+            "dcterms:Agent"
+          ],
+          "label": "Tottenham Hotspur",
+          "preferredLabel": "Tottenham Hotspur",
+          "shortLabel": "Tottenham",
+          "slug": "tottenham-hotspur",
+          "sameAs": [
+            "http://dbpedia.org/resource/Tottenham_Hotspur_F.C.",
+            "http://rdf.freebase.com/ns/m.0hvjr",
+            "http://www.wikidata.org/entity/Q18741"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/tottenham-hotspur",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.tottenhamhotspur.com/home/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/49373288",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/7DB9/production/_109558123_walker.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Walker",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/e046f022-0fa3-4433-aae3-9ec09d70979c#id",
+      "@type": [
+        "CreativeWork",
+        "NewsItem"
+      ],
+      "dateCreated": "2019-11-05T11:06:31+00:00",
+      "dateModified": "2019-11-05T11:06:31+00:00",
+      "description": "Get in the mood for Celtic\u0027s next Europa League tie against Lazio by testing your knowledge on their previous encounters and connections with Italian football.",
+      "shortTitle": "Test your memory of Celtic\u0027s history with Italian players \u0026 clubs",
+      "title": "Lazio v Celtic: Test your memory of Scottish champions history with Italy",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:6cac8763-33e8-e44b-9530-3204b143d089",
+        "urn:bbc:cps:asset:50057363"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/4063f80f-cccc-44c8-9449-5ca44e4c8592#id",
+          "@type": [
+            "http://data.press.net/ontology/classification/Classification",
+            "http://www.bbc.co.uk/ontologies/classification/RootClassification",
+            "skos:Concept",
+            "Thing",
+            "Theme"
+          ],
+          "label": "Sport",
+          "preferredLabel": "Sport",
+          "shortLabel": "Sport",
+          "slug": "sport",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Sport",
+            "http://www.bbc.co.uk/sport"
+          ],
+          "sameAs": "http://dbpedia.org/resource/Sport"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5d872f76-05e3-43a5-bff0-c8e20a5e97b4#id",
+          "@type": [
+            "Thing",
+            "Place",
+            "geoname:GeoTagConcept"
+          ],
+          "label": "Glasgow",
+          "preferredLabel": "Glasgow",
+          "primaryTopicOf": "http://en.wikipedia.org/wiki/Glasgow",
+          "sameAs": "http://sws.geonames.org/2648579/"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/756a1eb5-f8bf-486d-b65d-fc74390b7288#id",
+          "@type": [
+            "Organisation",
+            "sport:SportingOrganisation",
+            "sport:CompetitiveSportingOrganisation",
+            "Thing",
+            "dcterms:Agent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Lazio",
+          "preferredLabel": "Lazio",
+          "shortLabel": "Lazio",
+          "slug": "lazio",
+          "sameAs": [
+            "http://dbpedia.org/resource/S.S._Lazio",
+            "http://rdf.freebase.com/ns/m.075q_",
+            "http://www.wikidata.org/entity/Q2609"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/lazio",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id",
+          "@type": [
+            "Thing",
+            "sport:SportsDiscipline",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Theme"
+          ],
+          "label": [
+            "Football",
+            "Football"
+          ],
+          "preferredLabel": "Football",
+          "shortLabel": "Football",
+          "slug": "football",
+          "primaryTopicOf": [
+            "http://en.wikipedia.org/wiki/Association_football",
+            "http://www.bbc.co.uk/sport/football",
+            "http://www.fifa.com/",
+            {
+              "@id": "http://www.faw.org.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.irishfa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.scottishfa.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            },
+            {
+              "@id": "http://www.thefa.com/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ],
+          "sameAs": "http://dbpedia.org/resource/Association_football"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d3b859fd-fe4d-4f36-abf5-a2e3c41c5b8c#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scottish Football",
+          "preferredLabel": "Scottish Football",
+          "shortLabel": "Scottish Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/scottish"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/ebca7141-e8ba-0e40-bba9-d0864e29bc1f#id",
+          "@type": [
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "sport:Competition"
+          ],
+          "label": "Scottish Premiership",
+          "preferredLabel": "Scottish Premiership",
+          "shortLabel": "Scottish Prem",
+          "slug": "scottish-premiership",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/scottish-premiership",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.scotprem.com/content/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/football/50057363",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/183A2/production/_109243299_celticquiz.png",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "AC Milan v Celtic, 2007",
+          "thumbnailType": "StandardThumbnail"
+        },
+        {
+          "@id": "http://c.files.bbci.co.uk/38A4/production/_109000541_0365f8db-c029-4b5d-a62a-45bf1afddfd0.gif",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Celtic",
+          "thumbnailType": "FixedSize66Thumbnail"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.bbc.co.uk/things/38c27866-5802-4895-9678-982be726d0df#id",
+      "@type": [
+        "LiveCoverage",
+        "CreativeWork"
+      ],
+      "dateCreated": "2019-11-04T14:32:28+00:00",
+      "dateModified": "2019-11-04T14:32:28+00:00",
+      "description": "Rangers beat Porto at Ibrox to sit joint top of their Europa League group after Celtic record a stunning win against Lazio in Rome to reach the last 32.",
+      "title": "\u0027The second half was fantastic\u0027 - reaction as Rangers stun Porto in Europa League",
+      "category": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/News",
+      "locator": [
+        "urn:asset:eccec947-1376-4847-8e7d-5a72d979beec",
+        "urn:bbc:cps:asset:50291665"
+      ],
+      "primaryFormat": "TextualFormat",
+      "about": [
+        {
+          "@id": "http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id",
+          "@type": [
+            "Thing",
+            "sport:Competition",
+            "sport:RecurringCompetition",
+            "http://www.bbc.co.uk/ontologies/event/RecurringEvent",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Europa League",
+          "preferredLabel": "Europa League",
+          "shortLabel": "Europa League",
+          "slug": "europa-league",
+          "sameAs": "http://dbpedia.org/resource/UEFA_Europa_League",
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/europa-league",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.uefa.com/uefaeuropaleague/index.html",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/5840c45e-73f4-9942-b653-8d7eb8067fc9#id",
+          "@type": [
+            "dcterms:Agent",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic"
+          ],
+          "label": "Rangers",
+          "preferredLabel": "Rangers",
+          "shortLabel": "Rangers",
+          "slug": "rangers",
+          "sameAs": [
+            "http://dbpedia.org/resource/Rangers_F.C.",
+            "http://rdf.freebase.com/ns/m.0j47s",
+            "http://www.wikidata.org/entity/Q19597"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/rangers",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.rangers.co.uk/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/6d397eab-9d0d-b84a-a746-8062a76649e5#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "sport:CompetitiveSportingOrganisation",
+            "sport:SportingOrganisation",
+            "Organisation",
+            "dcterms:Agent"
+          ],
+          "label": "Celtic",
+          "preferredLabel": "Celtic",
+          "shortLabel": "Celtic",
+          "slug": "celtic",
+          "sameAs": [
+            "http://dbpedia.org/resource/Celtic_F.C.",
+            "http://rdf.freebase.com/ns/m.0j46b",
+            "http://www.wikidata.org/entity/Q19593"
+          ],
+          "primaryTopicOf": [
+            {
+              "@id": "http://www.bbc.co.uk/sport/football/teams/celtic",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/Index"
+            },
+            {
+              "@id": "http://www.celticfc.net/",
+              "webDocumentCategory": "http://www.bbc.co.uk/ontologies/applicationlogic-sport/ExternalWebsite"
+            }
+          ]
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/d3b859fd-fe4d-4f36-abf5-a2e3c41c5b8c#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scottish Football",
+          "preferredLabel": "Scottish Football",
+          "shortLabel": "Scottish Football",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/football/scottish"
+        },
+        {
+          "@id": "http://www.bbc.co.uk/things/e05c629c-ddec-4ca0-a5bb-95dd12c8df54#id",
+          "@type": [
+            "http://www.bbc.co.uk/ontologies/applicationlogic-sport/SportTopic",
+            "Thing",
+            "skos:Concept",
+            "http://data.press.net/ontology/classification/Classification"
+          ],
+          "label": "Scotland Sport",
+          "preferredLabel": "Scotland Sport",
+          "shortLabel": "Scotland Sport",
+          "primaryTopicOf": "http://www.bbc.co.uk/sport/scotland"
+        }
+      ],
+      "primaryContentOf": [
+        {
+          "@id": "http://www.bbc.co.uk/sport/live/football/50291665",
+          "platform": "HighWeb",
+          "webDocumentType": "HighWeb"
+        }
+      ],
+      "thumbnail": [
+        {
+          "@id": "http://c.files.bbci.co.uk/E387/production/_109574285_19649112.jpg",
+          "@type": [
+            "Thumbnail"
+          ],
+          "altText": "Rangers v Porto",
+          "thumbnailType": "StandardThumbnail"
+        }
+      ]
+    }
+  ],
+  "@context": {
+    "CreativeWork": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/CreativeWork"
+    },
+    "Event": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Event"
+    },
+    "FixedSize66Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/FixedSize66Thumbnail"
+    },
+    "HighWeb": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/HighWeb"
+    },
+    "LiveCoverage": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/LiveCoverage"
+    },
+    "NewsItem": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/NewsItem"
+    },
+    "Organisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"
+    },
+    "Place": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Place"
+    },
+    "StandardThumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/StandardThumbnail"
+    },
+    "TextualFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/TextualFormat"
+    },
+    "Theme": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Theme"
+    },
+    "Thing": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/Thing"
+    },
+    "Thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/Thumbnail"
+    },
+    "VideoFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/VideoFormat"
+    },
+    "about": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/about",
+      "@type": "@id"
+    },
+    "altText": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/altText"
+    },
+    "category": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/category",
+      "@type": "@id"
+    },
+    "dateCreated": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateCreated"
+    },
+    "dateModified": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/dateModified"
+    },
+    "dcterms:Agent": {
+      "@id": "http://purl.org/dc/terms/Agent"
+    },
+    "description": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/description"
+    },
+    "geoname:GeoTagConcept": {
+      "@id": "http://www.geonames.org/ontology#GeoTagConcept"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "locator": {
+      "@id": "http://www.bbc.co.uk/ontologies/cms/locator",
+      "@type": "@id"
+    },
+    "platform": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/platform",
+      "@type": "@vocab"
+    },
+    "preferredLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/preferredLabel"
+    },
+    "primaryContentOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/primaryContentOf",
+      "@type": "@id"
+    },
+    "primaryFormat": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/primaryFormat",
+      "@type": "@vocab"
+    },
+    "primaryTopicOf": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopicOf",
+      "@type": "@id"
+    },
+    "results": {
+      "@id": "@graph"
+    },
+    "sameAs": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/sameAs",
+      "@type": "@id"
+    },
+    "shortLabel": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel"
+    },
+    "shortTitle": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/shortTitle"
+    },
+    "skos:Concept": {
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "slug": {
+      "@id": "http://www.bbc.co.uk/ontologies/coreconcepts/slug"
+    },
+    "sport:Competition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/Competition"
+    },
+    "sport:CompetitiveSportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"
+    },
+    "sport:RecurringCompetition": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"
+    },
+    "sport:SportingOrganisation": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"
+    },
+    "sport:SportsDiscipline": {
+      "@id": "http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"
+    },
+    "thumbnail": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnail",
+      "@type": "@id"
+    },
+    "thumbnailType": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/thumbnailType",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "http://www.bbc.co.uk/ontologies/creativework/title"
+    },
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@vocab"
+    },
+    "webDocumentCategory": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentCategory",
+      "@type": "@id"
+    },
+    "webDocumentType": {
+      "@id": "http://www.bbc.co.uk/ontologies/bbc/webDocumentType",
+      "@type": "@vocab"
+    }
+  }
+}

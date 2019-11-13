@@ -1,0 +1,80 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/ad7b1978-74b6-4d9d-a66f-5708099530c1#id> a provenance:Dataset ;
+    rdfs:label "Tennis: Competitions" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/tennis/tennis-competitions.ttl" ;
+    provenance:changeReason "SLS-3051;19 Australian Open" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-01-12T10:56:44+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:steve.potts@bbc.co.uk> ;
+    provenance:version "19"^^xsd:int .
+
+<http://www.bbc.co.uk/things/672be92c-f15e-47a2-b88b-29d3eed099ae#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "ATP World Rankings"@en-gb ;
+    sal:videCode "ATPMW"^^xsd:string ;
+    cms:locator <urn:sports-data:CTEBATPMWRLD> ;
+    core:disambiguationHint "Tennis competition"@en-gb ;
+    core:preferredLabel "ATP World Rankings"@en-gb ;
+    core:shortLabel "ATP World Rankings"@en-gb ;
+    core:slug "atp-world-rankings"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> .
+
+<http://www.bbc.co.uk/things/9ac4a35f-bcc5-4fbe-afef-8bbb7262ec75#id> a core:Thing,
+        sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    core:disambiguationHint "Tennis competition"@en-gb ;
+    core:preferredLabel "Australian Open"@en-gb ;
+    core:shortLabel "Australian Open"@en-gb ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> .
+
+<http://www.bbc.co.uk/things/bd6b883f-7b82-40fc-a39b-d6bf52be3c08#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "WTA World Rankings"@en-gb ;
+    sal:videCode "WTAWW"^^xsd:string ;
+    cms:locator <urn:sports-data:CTEBWTAWWRLD> ;
+    core:disambiguationHint "Tennis competition"@en-gb ;
+    core:preferredLabel "WTA World Rankings"@en-gb ;
+    core:shortLabel "WTA World Rankings"@en-gb ;
+    core:slug "wta-world-rankings"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> .
+
+<http://www.bbc.co.uk/things/bdf1f496-f288-4f20-a209-a359ef798c9a#id> a sport:RecurringCompetition,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wimbledon"@en-gb ;
+    sal:videCode "WIM"^^xsd:string ;
+    cms:locator <urn:sports-data:CTEI540> ;
+    core:disambiguationHint "Tennis competition"@en-gb ;
+    core:preferredLabel "Wimbledon Championships"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/tennis/wimbledon> ;
+    core:shortLabel "Wimbledon"@en-gb ;
+    core:slug "wimbledon"^^xsd:string ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international> ;
+    sport:discipline <http://www.bbc.co.uk/things/0987d977-e389-964b-bbb0-0390f4c7a899#id> .
+
+<urn:sports-data:CTEBATPMWRLD> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEBWTAWWRLD> a cms:Sports-DataLocator .
+
+<urn:sports-data:CTEI540> a cms:Sports-DataLocator .
+

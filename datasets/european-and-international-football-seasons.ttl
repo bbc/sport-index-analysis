@@ -1,0 +1,2743 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns2: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/43fa21b2-81bf-4ed3-81f6-e9235b9868df#id> a provenance:Dataset ;
+    rdfs:label "Football: European and International Seasons" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-and-international-football-seasons.ttl" ;
+    provenance:changeReason "SWD-820;2: Create International & European 2019/20 seasons" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-06-06T11:41:34+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "143"^^xsd:int .
+
+<http://www.bbc.co.uk/things/00081051-a766-45ae-9bc0-dadb10694bd7#id> a sport:Competition ;
+    rdfs:label "French Coupe de France 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/106860a7-c2dd-42dc-a6eb-69fb6c98b81e#id> ;
+    sal:name "French Coupe de France"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ad6233e8-3232-4173-982b-743a6de3d65a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ad6233e8-3232-4173-982b-743a6de3d65a#id> .
+
+<http://www.bbc.co.uk/things/00959960-52a6-4af3-85a8-cff39283caba#id> a sport:Competition ;
+    rdfs:label "European Championship 2019 Under-21 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ff1360ee-62f5-49db-a9b2-18f1b95b12c9#id> ;
+    sal:name "UEFA European Under-21 Championship"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c5ff496d-f54e-4cf4-a3b8-ecb9918a87fe#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c5ff496d-f54e-4cf4-a3b8-ecb9918a87fe#id> .
+
+<http://www.bbc.co.uk/things/0210d3e8-f6c0-42ab-a766-274db07144f1#id> a sport:Competition ;
+    rdfs:label "World Cup 2014 Qualifying - CONCACAF/South America Play-Off Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/cfa1dc4c-9438-4108-b57c-c5f2da19032b#id> ;
+    sal:name "FIFA World Cup Qualifying - CONCACAF/South America Play-Off"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/25d343d4-ee0a-4ebf-86b7-8ca6dc6e17aa#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/25d343d4-ee0a-4ebf-86b7-8ca6dc6e17aa#id> .
+
+<http://www.bbc.co.uk/things/0483dd76-32df-4ef7-a07f-ebe218204f06#id> a sport:Competition ;
+    rdfs:label "Japanese J1 League 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e8e74777-9b08-4abb-9feb-f5505d5a4ba8#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/a626b35a-026a-4a02-942d-eba9975f1346#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/a626b35a-026a-4a02-942d-eba9975f1346#id> .
+
+<http://www.bbc.co.uk/things/04bd39c9-84be-438e-9046-eb13fad2d997#id> a sport:Competition ;
+    rdfs:label "Spanish La Liga 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/d2f4bf6f-8fbb-4dda-8954-54d46d4eaac6#id> ;
+    sal:name "Spanish BBVA La Liga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> .
+
+<http://www.bbc.co.uk/things/066e7efa-6de1-4209-98b4-becdd3326511#id> a sport:Competition ;
+    rdfs:label "B Internationals 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/52cc479c-ce7f-423c-84ec-3385180fab7d#id> ;
+    sal:name "B International Match"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/738de2ea-5fd4-4a9e-8804-046b9f1166ba#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/738de2ea-5fd4-4a9e-8804-046b9f1166ba#id> .
+
+<http://www.bbc.co.uk/things/06c518c5-b538-45ac-8d49-0c5462226f03#id> a sport:Competition ;
+    rdfs:label "Italian Coppa Italia 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/6793420c-57f0-4d9d-88c8-0829c04fc782#id> ;
+    sal:name "Italian Coppa Italia"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0d54ddb5-a347-4245-86c6-e7cc6c82964b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0d54ddb5-a347-4245-86c6-e7cc6c82964b#id> .
+
+<http://www.bbc.co.uk/things/070e68a6-5ffa-458f-b683-3863d2c7724b#id> a sport:Competition ;
+    rdfs:label "Spanish La Liga 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2c9dbef4-bca9-4dfb-a396-2296e6ddb95f#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> .
+
+<http://www.bbc.co.uk/things/0710009f-d842-4b33-a602-c0a5535d1428#id> a sport:Competition ;
+    rdfs:label "Champions League 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8a29db50-b9ba-4c6a-8f82-6bbd8d732818#id> ;
+    sal:name "Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> .
+
+<http://www.bbc.co.uk/things/07d3c6ba-e8a0-4ebc-b7e3-e0b73d7f979b#id> a sport:Competition ;
+    rdfs:label "Turkish Super Lig (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/cc54e12c-d8fb-4034-bd58-5595722fde1b#id> ;
+    sal:name "Turkish Spor Toto Super Lig"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> .
+
+<http://www.bbc.co.uk/things/08f05da6-22fb-448d-9c20-ee0945d7ec40#id> a sport:Competition ;
+    rdfs:label "Categoria Primera A 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ecb55584-9082-4e09-8ba6-82569183ef84#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/7ae7b00a-67af-44c1-9c87-b794678ed40e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7ae7b00a-67af-44c1-9c87-b794678ed40e#id> .
+
+<http://www.bbc.co.uk/things/09b6cd43-1f03-4aba-973e-bb95aa114034#id> a sport:Competition ;
+    rdfs:label "UEFA Super Cup (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/80b90948-c13b-407c-8342-5d1129320c9f#id> ;
+    sal:name "UEFA Super Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/888b4526-95f4-4d67-956c-21691208143d#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/888b4526-95f4-4d67-956c-21691208143d#id> .
+
+<http://www.bbc.co.uk/things/0ddf63ce-9960-4c34-bed7-34ab50f4770e#id> a sport:Competition ;
+    rdfs:label "UEFA Super Cup 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f78a9e67-0547-4c1f-8cfc-578d560cc3f9#id> ;
+    sal:name "UEFA Super Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/888b4526-95f4-4d67-956c-21691208143d#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/888b4526-95f4-4d67-956c-21691208143d#id> .
+
+<http://www.bbc.co.uk/things/0efd1f42-0fb9-4941-809c-761d5d570b88#id> a sport:Competition ;
+    rdfs:label "B Internationals 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4ec095d9-aa1e-4b48-8365-f291341c9595#id> ;
+    sal:name "B International Match"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/738de2ea-5fd4-4a9e-8804-046b9f1166ba#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/738de2ea-5fd4-4a9e-8804-046b9f1166ba#id> .
+
+<http://www.bbc.co.uk/things/101dc175-e097-4197-b447-83820fc606e1#id> a sport:Competition ;
+    rdfs:label "Africa Cup of Nations 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/d19a7678-93e5-4cf0-ab61-b8c1bbda1aaa#id> ;
+    sal:name "Orange Africa Cup of Nations"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> .
+
+<http://www.bbc.co.uk/things/129b2b86-b23a-4b7a-8f4d-a63d1e977774#id> a sport:Competition ;
+    rdfs:label "CONCACAF Gold Cup 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/d8c0353f-656d-457c-b3bf-c741279e1d46#id> ;
+    sal:name "Gold Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id> .
+
+<http://www.bbc.co.uk/things/15678fb9-a04d-4e18-8fd2-6c7feb28e9be#id> a sport:Competition ;
+    rdfs:label "Portuguese Primeira Liga 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b794328a-8377-40c3-b6e1-4a7d69d31138#id> ;
+    sal:name "Portuguese ZON Sagres Primeira Liga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> .
+
+<http://www.bbc.co.uk/things/17b0b5ca-9a72-43fa-bcfb-d77e100f5cf2#id> a sport:Competition ;
+    rdfs:label "Africa Cup of Nations 2015 (2014) Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b94fdcc7-c30a-4123-8875-af0c233a57f2#id> ;
+    sal:name "Orange Africa Cup of Nations"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> .
+
+<http://www.bbc.co.uk/things/1a47a456-76fe-4325-8b36-d0d633b6179c#id> a sport:Competition ;
+    rdfs:label "Danish Superliga 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/623ee2ec-77fc-4f70-b43e-63c8390d8e9e#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> .
+
+<http://www.bbc.co.uk/things/1a67f614-31fa-4696-9b0e-3ac5336db4f8#id> a sport:Competition ;
+    rdfs:label "Finnish Veikkausliiga 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/16f2cde0-6e9c-41e2-bbd1-6062de029f75#id> ;
+    sal:name "Finnish Veikkausliiga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> .
+
+<http://www.bbc.co.uk/things/1a8ca4b9-d5cf-4dfc-b0c6-4f4d6c097724#id> a sport:Competition ;
+    rdfs:label "Spanish La Liga 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/518a3c96-28ac-42b8-8f0d-7f7a4a9fc199#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> .
+
+<http://www.bbc.co.uk/things/1bfd2ba0-05fa-402a-b6a9-cbd3e105150d#id> a sport:Competition ;
+    rdfs:label "Greek Superleague 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/53ad185b-de51-4772-8fce-af41903e32cd#id> ;
+    sal:name "Greek Superleague"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/37ea9997-eeb5-457c-9f9c-d6bf78467d85#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/37ea9997-eeb5-457c-9f9c-d6bf78467d85#id> .
+
+<http://www.bbc.co.uk/things/1d11c742-5aff-4d56-ad76-94c79f64daad#id> a sport:Competition ;
+    rdfs:label "Women's Olympic Football 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/63f9517b-52ed-4bd5-b84e-f89bfa8c9777#id> ;
+    sal:name "Women's Olympic Football"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/9257d19b-c900-440c-8ad6-0c9fe8e81a07#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9257d19b-c900-440c-8ad6-0c9fe8e81a07#id> .
+
+<http://www.bbc.co.uk/things/1d19ebb5-8c45-491d-8d26-e53cd6ff02e2#id> a sport:Competition ;
+    rdfs:label "Europa League Qualifying 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/08cf5415-afa3-4dad-815e-df4e247ae5fc#id> ;
+    sal:name "UEFA Europa League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> .
+
+<http://www.bbc.co.uk/things/1e1c0de8-f584-4454-977f-235ad97531e9#id> a sport:Competition ;
+    rdfs:label "Turkish Super Lig 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2daa0be5-d65e-4f0f-b5e5-e433e8b77a21#id> ;
+    sal:name "Turkish Spor Toto Super Lig"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> .
+
+<http://www.bbc.co.uk/things/1ed69009-eb12-4d9b-9cd9-9bfd37c7db27#id> a sport:Competition ;
+    rdfs:label "Swedish Allsvenskan 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5c6533cb-1fad-445e-9ac0-16ffedb99a62#id> ;
+    sal:name "Swedish Allsvenskan"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> .
+
+<http://www.bbc.co.uk/things/210578e8-133e-4cf3-a66d-c9a8608b4a29#id> a sport:Competition ;
+    rdfs:label "FAI Cup 2017 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/11427f51-53f2-4082-9503-8229d11acb2b#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/bfd7da21-7306-4cfc-925a-3e6fc485ce74#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bfd7da21-7306-4cfc-925a-3e6fc485ce74#id> .
+
+<http://www.bbc.co.uk/things/22cd5559-3556-4296-8188-b9c22b3a5b2c#id> a sport:Competition ;
+    rdfs:label "Italian Serie A 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/58bc1fa1-2c61-4410-b593-ad01e913f6f8#id> ;
+    sal:name "Italian TIM Serie A"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> .
+
+<http://www.bbc.co.uk/things/22d92b14-8c99-4e84-bb8f-0c706c2f0bc2#id> a sport:Competition ;
+    rdfs:label "Colombian Primera A Finalizacion 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/9f7d097a-0b9c-4546-a63b-2262fb13fc4c#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/d422dd36-0f86-4a13-aab5-e9fe3465d225#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d422dd36-0f86-4a13-aab5-e9fe3465d225#id> .
+
+<http://www.bbc.co.uk/things/23847bb8-ffc8-44c3-b250-ab076c9da4a6#id> a sport:Competition ;
+    rdfs:label "Brazilian Campeonato Série A 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/cbca515a-d01e-4096-ae6b-ac9e382a6dc3#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0350ec6a-76af-4d2b-80f5-396998ce775b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0350ec6a-76af-4d2b-80f5-396998ce775b#id> .
+
+<http://www.bbc.co.uk/things/255f1548-54b9-46d0-adf0-cbc45d652a8a#id> a sport:Competition ;
+    rdfs:label "German Bundesliga 2014/15 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ef012e05-ffe2-4f91-ba89-4fb4ab2204a8#id> ;
+    sal:name "German Bundesliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> .
+
+<http://www.bbc.co.uk/things/25e3a8bb-26bf-4e7c-afb3-979b7cc0af8c#id> a sport:Competition ;
+    rdfs:label "Italian Coppa Italia 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5413a48e-1a0a-40dd-ab91-50e3f16a4b3d#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0d54ddb5-a347-4245-86c6-e7cc6c82964b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0d54ddb5-a347-4245-86c6-e7cc6c82964b#id> .
+
+<http://www.bbc.co.uk/things/26db134b-6e1b-499d-8370-8ab76307e24f#id> a sport:Competition ;
+    rdfs:label "Europa League Qualifying 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b639e39f-7482-4812-94d0-dead8c7adec3#id> ;
+    sal:name "UEFA Europa League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> .
+
+<http://www.bbc.co.uk/things/2770fa55-e3f1-4b23-bcff-40a7c746ccf1#id> a sport:Competition ;
+    rdfs:label "Belgian Pro League 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/46a04513-b4e5-4087-afc4-2e3c1d94fd24#id> ;
+    sal:name "Belgian Jupiler Pro League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> .
+
+<http://www.bbc.co.uk/things/277e37fd-2e80-417f-98ed-0bf018634265#id> a sport:Competition ;
+    rdfs:label "World Cup 2018 Qualifying Season - CAF (Africa) Region (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/730ab0df-539b-416d-b690-e65e7b939eae#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/d81d8ca9-c916-4bc1-9c9c-80ea03964562#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d81d8ca9-c916-4bc1-9c9c-80ea03964562#id> .
+
+<http://www.bbc.co.uk/things/2823257a-9fa8-4d3b-aa3f-26d6fe293765#id> a sport:Competition ;
+    rdfs:label "Russian Premier League 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ca9ddb2a-3464-453a-bce2-72d1802a5c48#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/d97ad279-e97b-475c-8680-01ae478aed73#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d97ad279-e97b-475c-8680-01ae478aed73#id> .
+
+<http://www.bbc.co.uk/things/29559193-ccfb-4b2a-b6e4-04f77e4ce350#id> a sport:Competition ;
+    rdfs:label "Belgian First Division A 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/141e374c-69af-4134-b850-77f0678c75f9#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> .
+
+<http://www.bbc.co.uk/things/2a39cd29-9ddd-46e0-860d-8f035853e854#id> a sport:Competition ;
+    rdfs:label "World Cup 2018 Qualifying Season - AFC (Asia) Region (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8fe8b42b-5e14-4e23-8388-995b9cebb635#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/76da52ef-f8a5-4fa1-880d-d2d9197b01b5#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/76da52ef-f8a5-4fa1-880d-d2d9197b01b5#id> .
+
+<http://www.bbc.co.uk/things/2bc0fab0-7f89-4548-b747-956dbaa36f69#id> a sport:Competition ;
+    rdfs:label "French Ligue 1 2019/20 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/65cdfaee-e3c5-4a9e-aef7-c398abd9f7ba#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> .
+
+<http://www.bbc.co.uk/things/2bd5bd3f-8cb1-48b7-9a43-a0effdfc0fc0#id> a sport:Competition ;
+    rdfs:label "Russian Premier League 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/de1b01fe-1c53-4eed-ab7e-0f7360ee0e72#id> ;
+    sal:name "Russian Premier League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/d97ad279-e97b-475c-8680-01ae478aed73#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d97ad279-e97b-475c-8680-01ae478aed73#id> .
+
+<http://www.bbc.co.uk/things/2c505ff9-d2f9-413a-a781-0652b8b42be2#id> a sport:Competition ;
+    rdfs:label "Africa Cup of Nations 2017 (2016) Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/97e5b421-fb15-4d62-b0ac-99eaefb7d174#id> ;
+    sal:name "Total Africa Cup of Nations"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> .
+
+<http://www.bbc.co.uk/things/2d59f426-e54b-4d4e-b5cf-650c67ba638e#id> a sport:Competition ;
+    rdfs:label "World Cup 2018 Qualifying Season - CONCACAF (North and Central America) / AFC (Asia) Play-Off "@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/47c0d6fa-a519-4efa-8f91-cd853934bd5a#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/aed49af8-618e-4cdf-b6f4-df8822d1df9c#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/aed49af8-618e-4cdf-b6f4-df8822d1df9c#id> .
+
+<http://www.bbc.co.uk/things/2decdc4e-af6b-44ec-af89-ca7e9c6e90b1#id> a sport:Competition ;
+    rdfs:label "Swedish Allsvenskan 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/52e86ac2-5407-48bc-b248-3cc911f1a5b9#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> .
+
+<http://www.bbc.co.uk/things/2eb7ef71-3b99-4a4f-ad3d-81ff52aa50fa#id> a sport:Competition ;
+    rdfs:label "French Ligue 1 2017/18 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f5605d56-256a-40da-94c5-ca411a8f9fa3#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> .
+
+<http://www.bbc.co.uk/things/2fb09568-f448-44ac-8420-ee87c570c2be#id> a sport:Competition ;
+    rdfs:label "Turkish Super Lig 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4a0ba7ba-0cd5-49aa-b5be-4810ad49da64#id> ;
+    sal:name "Turkish Spor Toto Super Lig"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> .
+
+<http://www.bbc.co.uk/things/2fdc4191-7371-48f5-984d-abb43926bab2#id> a sport:Competition ;
+    rdfs:label "Dutch Eredivisie 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/a539951f-75bc-47ed-8470-f1c3ae58cfe7#id> ;
+    sal:name "Dutch Eredivisie"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> .
+
+<http://www.bbc.co.uk/things/33498bac-f58a-4a97-8927-a62aa3a346f4#id> a sport:Competition ;
+    rdfs:label "French Ligue 1 2016/17 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0dfee5fe-507a-4cc6-ba7d-e890804149cb#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> .
+
+<http://www.bbc.co.uk/things/33b170ef-75bd-4798-94d1-a325b2b25111#id> a sport:Competition ;
+    rdfs:label "Confederations Cup 2017/21 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b3952ac1-9888-4669-bf05-3fe93bec10f6#id> ;
+    sal:name "FIFA Confederations Cup 2017"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/7f1ad365-5ea1-48a9-b35a-18843e4fb3a9#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7f1ad365-5ea1-48a9-b35a-18843e4fb3a9#id> .
+
+<http://www.bbc.co.uk/things/341e63d1-45f0-4f44-b1f2-3d68eda187af#id> a sport:Competition ;
+    rdfs:label "B Internationals 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/83e40758-2e67-4ca6-8a6e-8049e49468f1#id> ;
+    sal:name "B Internationals"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/738de2ea-5fd4-4a9e-8804-046b9f1166ba#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/738de2ea-5fd4-4a9e-8804-046b9f1166ba#id> .
+
+<http://www.bbc.co.uk/things/354f092b-ca40-41df-b4c5-e25a446175aa#id> a sport:Competition ;
+    rdfs:label "Copa America Centennial Cup 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/1bed1e77-026c-485a-9d56-5aa64fc1aa9f#id> ;
+    sal:name "Copa America"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c2849b16-b4f1-4ef7-9baa-437937470d71#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c2849b16-b4f1-4ef7-9baa-437937470d71#id> .
+
+<http://www.bbc.co.uk/things/357082f4-c739-4ac1-8fc3-73bcab74437d#id> a sport:Competition ;
+    rdfs:label "Europa League Qualifying 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/6abe1bb3-ebf4-4f5d-b394-3a97199f9979#id> ;
+    sal:name "Europa League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> .
+
+<http://www.bbc.co.uk/things/3978dec3-dd27-4e63-aa48-11921b12353c#id> a sport:Competition ;
+    rdfs:label "Austrian Bundesliga 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7239efec-10f0-4b9c-b643-660b968b9b3b#id> ;
+    sal:name "Austrian T-Mobile Bundesliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> .
+
+<http://www.bbc.co.uk/things/3b1905c0-d508-4ed9-88b2-232390dc1073#id> a sport:Competition ;
+    rdfs:label "Danish Superliga 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/793d3018-09ff-4359-b2b5-0614029dabf4#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> .
+
+<http://www.bbc.co.uk/things/3c171c23-2f15-4a9d-993d-2cda62ce4e67#id> a sport:Competition ;
+    rdfs:label "Danish Superliga 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b9a6cb3e-0ee0-4c3a-8f51-ab88ea797d12#id> ;
+    sal:name "Danish Superliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> .
+
+<http://www.bbc.co.uk/things/3c72819f-e098-4347-b08a-f76beb2e3c1b#id> a sport:Competition ;
+    rdfs:label "Europa League 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2758381d-df41-4466-ac5a-c29cdcc7f4a0#id> ;
+    sal:name "Europa League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> .
+
+<http://www.bbc.co.uk/things/3cca9778-6811-4897-9fc9-4dec43402db5#id> a sport:Competition ;
+    rdfs:label "Italian Serie A 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/6e3f0e67-4c82-43b3-a4c0-7181008b45b0#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> .
+
+<http://www.bbc.co.uk/things/3e75faea-255f-4650-b399-c2524548a4b6#id> a sport:Competition ;
+    rdfs:label "Spanish La Liga 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/37003fc8-729c-438c-94e4-921863d5c959#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> .
+
+<http://www.bbc.co.uk/things/3efde981-6765-4210-959b-f9865e8091e6#id> a sport:Competition ;
+    rdfs:label "Brazilian Campeonato Série A 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/02d81032-402f-4ac2-8366-cb353d5e8f9f#id> ;
+    sal:name "Brazilian Campeonato Série A"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0350ec6a-76af-4d2b-80f5-396998ce775b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0350ec6a-76af-4d2b-80f5-396998ce775b#id> .
+
+<http://www.bbc.co.uk/things/3f36118d-4c7b-4d7b-a1ed-078afee0119a#id> a sport:Competition ;
+    rdfs:label "B Internationals 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f2225925-1ad9-4664-acf9-7e85450d1194#id> ;
+    sal:name "B International Match"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/738de2ea-5fd4-4a9e-8804-046b9f1166ba#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/738de2ea-5fd4-4a9e-8804-046b9f1166ba#id> .
+
+<http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id> a sport:Competition ;
+    rdfs:label "FIFA Women's World Cup 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7f107322-4931-44bb-8d90-4d4f5c4898ba#id> ;
+    sal:name "FIFA Women's World Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/04bedd51-db91-4bf2-85ca-e69c664811ec#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/04bedd51-db91-4bf2-85ca-e69c664811ec#id> .
+
+<http://www.bbc.co.uk/things/43a060e5-5876-47f9-969f-e910d02afd1e#id> a sport:Competition ;
+    rdfs:label "Italian Coppa Italia 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/6df39755-e6c3-41f4-832f-5b0399c8161a#id> ;
+    sal:name "Italian Coppa Italia"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0d54ddb5-a347-4245-86c6-e7cc6c82964b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0d54ddb5-a347-4245-86c6-e7cc6c82964b#id> .
+
+<http://www.bbc.co.uk/things/44f51fcf-d1d4-4cea-9d4e-8fc2a7b41037#id> a sport:Competition ;
+    rdfs:label "Swedish Allsvenskan 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/3c59446f-39bb-4aa3-9570-7523354c7da4#id> ;
+    sal:name "Swedish Allsvenskan"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> .
+
+<http://www.bbc.co.uk/things/455e23b3-5469-4a25-9a08-ccdb1f9a605f#id> a sport:Competition ;
+    rdfs:label "Italian Serie A 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4c7df15f-555a-4ff2-abe5-b0485f4d5991#id> ;
+    sal:name "Italian TIM Serie A"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> .
+
+<http://www.bbc.co.uk/things/45fddf54-8fb0-4f17-8be0-8d224b276c2e#id> a sport:Competition ;
+    rdfs:label "UEFA Champions League Qualifying 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2d2db1f1-ebac-48d2-8a66-378bbfb094b7#id> ;
+    sal:name "Champions League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> .
+
+<http://www.bbc.co.uk/things/46e93fe7-e2ec-4e04-b181-eda2f333910a#id> a sport:Competition ;
+    rdfs:label "World Cup 2014 Qualifying - African Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/be744a2e-b1e4-4f62-bca5-a27cc59a7b0f#id> ;
+    sal:name "FIFA World Cup Qualifying - African Region"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/d81d8ca9-c916-4bc1-9c9c-80ea03964562#id> ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-cup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d81d8ca9-c916-4bc1-9c9c-80ea03964562#id> .
+
+<http://www.bbc.co.uk/things/48f1a19b-be70-4856-a3fe-a8b511cb8d0e#id> a sport:Competition ;
+    rdfs:label "United States Major League Soccer 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/74679486-6315-4e4c-98e4-cef36b90e32f#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> .
+
+<http://www.bbc.co.uk/things/49941b4a-3a88-4832-9169-cde6843273f0#id> a sport:Competition ;
+    rdfs:label "German DFB Cup 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5f12f360-0653-4420-8dcc-d871f3d2c754#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ab832e84-e79c-48b3-8cd5-b0953bd8eafe#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ab832e84-e79c-48b3-8cd5-b0953bd8eafe#id> .
+
+<http://www.bbc.co.uk/things/4a64b2de-a14e-4098-98a4-b60e0bed7d31#id> a sport:Competition ;
+    rdfs:label "Europa League 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/96765f56-be9a-4d2a-aeff-fef5fc8f554d#id> ;
+    sal:name "Europa League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> .
+
+<http://www.bbc.co.uk/things/4b029b30-a22c-47b5-80c7-554da0c7099e#id> a sport:Competition ;
+    rdfs:label "UEFA Champions League 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/90982362-2640-47b5-8124-4de7a3cc08a7#id> ;
+    sal:name "Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> .
+
+<http://www.bbc.co.uk/things/4ba3f303-3e73-457a-bdd1-42b87c067720#id> a sport:Competition ;
+    rdfs:label "European Championship 2015 Under-21 Qualifying Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/831c7674-ae68-42da-a895-00b27c9a91bd#id> ;
+    sal:name "UEFA European Championship 2015 Under-21 Qualifying"@en-gb ;
+    core:preferredLabel "European Championship 2015 Under-21 Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/a703c3d9-8259-4329-93df-daa7467d0728#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/a703c3d9-8259-4329-93df-daa7467d0728#id> .
+
+<http://www.bbc.co.uk/things/4f14cc12-acf7-4ff5-82ee-c0a1d5059d27#id> a sport:Competition ;
+    rdfs:label "French Ligue 1 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/539edc77-dae3-4443-a4e0-1a7bdd37fe9f#id> ;
+    sal:name "French Ligue 1"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> .
+
+<http://www.bbc.co.uk/things/4f34d6bc-c4ee-4055-b357-2c86db1697a1#id> a sport:Competition ;
+    rdfs:label "German Bundesliga 2019/20 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/744439c4-41f0-4579-ba3a-577b4a52bcb0#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> .
+
+<http://www.bbc.co.uk/things/55d2587b-a952-42a3-8016-24ec29dc522d#id> a sport:Competition ;
+    rdfs:label "Italian Serie A 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5adafe33-4545-4d86-ad6c-4390d00d59ba#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> .
+
+<http://www.bbc.co.uk/things/583cd43e-ac5e-4920-9cb8-359acbbafe2c#id> a sport:Competition ;
+    rdfs:label "Swiss Super League 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/1757da61-9bd0-4804-8ce5-70b7a68f7a6b#id> ;
+    sal:name "Swiss Raiffeisen Super League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> .
+
+<http://www.bbc.co.uk/things/589a6cb8-b9ec-443e-86b7-9bf06b198c35#id> a sport:Competition ;
+    rdfs:label "European Championship 2013 Under-21 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/010e19d1-5a72-46fd-9584-506653c9e7ee#id> ;
+    sal:name "UEFA European Championship 2013 Under-21"@en-gb ;
+    core:preferredLabel "European Championship 2013 Under-21"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c5ff496d-f54e-4cf4-a3b8-ecb9918a87fe#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c5ff496d-f54e-4cf4-a3b8-ecb9918a87fe#id> .
+
+<http://www.bbc.co.uk/things/59418cb6-54f9-438b-97d7-d80965b2127d#id> a sport:Competition ;
+    rdfs:label "Norwegian Eliteserien 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/37dff0ff-a741-410d-9227-e7c6efacd18c#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> .
+
+<http://www.bbc.co.uk/things/59fc0359-073c-4e8c-83e9-5107d35e1172#id> a sport:Competition ;
+    rdfs:label "Portuguese Primeira Liga 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5a485554-58e6-429d-99a5-3f683413b749#id> ;
+    sal:name "Portuguese ZON Sagres Primeira Liga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> .
+
+<http://www.bbc.co.uk/things/5aad91ee-9496-4ccd-ae93-f11f3a244066#id> a sport:Competition ;
+    rdfs:label "UEFA Women's Champions League (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/42ae38ab-3437-4ab1-8811-a742066e80cd#id> ;
+    sal:name "UEFA Women's Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/9919ac56-b4de-4786-8059-c4a46a603b2b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9919ac56-b4de-4786-8059-c4a46a603b2b#id> .
+
+<http://www.bbc.co.uk/things/5d778bd5-dbc2-48a2-b144-cc1fdc8091ee#id> a sport:Competition ;
+    rdfs:label "Mexican Clausura 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f5c8947a-f1ba-4452-949c-c20172287f8c#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b77c85f4-f7cb-43bf-a5d5-0f04a0cd7378#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b77c85f4-f7cb-43bf-a5d5-0f04a0cd7378#id> .
+
+<http://www.bbc.co.uk/things/5ec628d1-e8bc-4a99-8756-904f5ed3bbbc#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Africa Cup of Nations 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-01-19"^^xsd:date ;
+    ns3:hasEnd "2016-10-18"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5f304f79-67df-4baa-a872-78990b485133#id> a sport:Competition ;
+    rdfs:label "United States Major League Soccer 2018 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/37c2723e-332e-43d2-8ad8-ac6ef045ae4c#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> .
+
+<http://www.bbc.co.uk/things/607be2c4-5e69-4ede-8c8a-25c3fcd0cc3f#id> a sport:Competition ;
+    rdfs:label "Danish Superliga 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/83b87284-82ac-4713-80f2-8035953874d0#id> ;
+    sal:name "Danish Superliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> .
+
+<http://www.bbc.co.uk/things/60e6a854-c630-49d0-9957-c0de69f0447f#id> a sport:Competition ;
+    rdfs:label "Austrian Bundesliga 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b281b6a1-6d22-4b63-95b1-a260109491de#id> ;
+    sal:name "Austrian Bundesliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> .
+
+<http://www.bbc.co.uk/things/62864be4-57d0-4556-ad1d-b6df069aa1f1#id> a sport:Competition ;
+    rdfs:label "FIFA Women's World Cup Qualifying 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5e4d1efe-20d2-4d86-99ce-019ef03d6e45#id> ;
+    sal:name "FIFA Women's World Cup Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/161a086b-0282-4657-a72c-125bedfbb4fd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/161a086b-0282-4657-a72c-125bedfbb4fd#id> .
+
+<http://www.bbc.co.uk/things/636bd6df-2d2f-41f3-a125-97260b26d3fe#id> a sport:Competition ;
+    rdfs:label "Greek Superleague 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f99ea558-740a-4f50-a697-e98d250a34bd#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/37ea9997-eeb5-457c-9f9c-d6bf78467d85#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/37ea9997-eeb5-457c-9f9c-d6bf78467d85#id> .
+
+<http://www.bbc.co.uk/things/69274ba5-bafd-4849-aafd-0fedcf3a1d6e#id> a sport:Competition ;
+    rdfs:label "Europa League Qualifying 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/10ef3677-1103-4412-ab13-5c047270721d#id> ;
+    sal:name "Europa League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> .
+
+<http://www.bbc.co.uk/things/694da1ff-9cb2-48e1-b1a9-a9bf5a2bbbe6#id> a sport:Competition ;
+    rdfs:label "Dutch Eredevisie 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/932d935a-bcbb-4e5e-952e-164642fe33bc#id> ;
+    sal:name "Dutch Eredivisie"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> .
+
+<http://www.bbc.co.uk/things/695c18dd-2222-4dfe-a184-9b2f8a465737#id> a sport:Competition ;
+    rdfs:label "FIFA Club World Cup 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ed83d4fe-bf5e-4ee7-874a-4ea2be949438#id> ;
+    sal:name "FIFA Club World Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b14d2c7f-663f-440f-8e9f-54019f9488ce#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b14d2c7f-663f-440f-8e9f-54019f9488ce#id> .
+
+<http://www.bbc.co.uk/things/6a8c5ac5-ab9a-48f6-81d8-359f11d590ff#id> a sport:Competition ;
+    rdfs:label "French Coupe de la Ligue 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/34ed3031-8ea9-4ec4-ab57-8ee1029c4bae#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/4dfebe2e-3d6a-4ecc-822d-b55f7d0ed216#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/4dfebe2e-3d6a-4ecc-822d-b55f7d0ed216#id> .
+
+<http://www.bbc.co.uk/things/6b139dd9-8cbc-4574-ba5e-b1bcd68f306e#id> a sport:Competition ;
+    rdfs:label "Russian Premier League 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7667b33b-80e0-418a-afab-a3e30e85c4d6#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/d97ad279-e97b-475c-8680-01ae478aed73#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d97ad279-e97b-475c-8680-01ae478aed73#id> .
+
+<http://www.bbc.co.uk/things/6b64c840-063d-4f91-a9d7-cf1b44742f8a#id> a sport:Competition ;
+    rdfs:label "Finnish Veikkausliiga 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/cb521b36-d230-4251-8f95-0ca19fad535a#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> .
+
+<http://www.bbc.co.uk/things/6b7a7299-741d-42d4-afd5-94765fc1c655#id> a sport:Competition ;
+    rdfs:label "Copa America 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/6d6b651c-957b-4a29-927b-481b3c5b96ca#id> ;
+    sal:name "Copa America"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c2849b16-b4f1-4ef7-9baa-437937470d71#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c2849b16-b4f1-4ef7-9baa-437937470d71#id> .
+
+<http://www.bbc.co.uk/things/6d8739ee-87c3-4ab1-a3ed-a7d5a116ed92#id> a sport:Competition ;
+    rdfs:label "Spanish Copa del Rey 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/52e88ba5-b6c3-41b5-a249-6caaa552fe81#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/d2498561-e2b0-469e-a968-0cbc46f97457#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d2498561-e2b0-469e-a968-0cbc46f97457#id> .
+
+<http://www.bbc.co.uk/things/6d97c03c-9881-4646-ac5d-7945e3746a72#id> a sport:Competition ;
+    rdfs:label "Women's International Friendlies 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/230379b8-438e-40b8-9f0c-d366afea7128#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/58c093b8-6bbf-4a84-9ad5-e927110e907b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/58c093b8-6bbf-4a84-9ad5-e927110e907b#id> .
+
+<http://www.bbc.co.uk/things/6ef6f03d-09d5-46be-88e9-f2e4dad7c03e#id> a sport:Competition ;
+    rdfs:label "UEFA Women's Champions League 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b61d0c22-3588-45b7-b946-81ad47579ad9#id> ;
+    sal:name "UEFA Women's Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/9919ac56-b4de-4786-8059-c4a46a603b2b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9919ac56-b4de-4786-8059-c4a46a603b2b#id> .
+
+<http://www.bbc.co.uk/things/6f64011f-d314-4c08-a21d-ba7cceb7664d#id> a sport:Competition ;
+    rdfs:label "United States Major League Soccer 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/fcc0184e-c33c-41c4-88a1-e10d3f0e892a#id> ;
+    sal:name "United States Major League Soccer"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> .
+
+<http://www.bbc.co.uk/things/718047d7-b664-4e77-b444-4c2473ae8736#id> a sport:Competition ;
+    rdfs:label "UEFA Women's European Championship Qualifying Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/95b86b47-208e-4e6b-b939-87d64574e987#id> ;
+    sal:name "Women's European Championship Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c2985623-1bd4-43a7-b29e-c48bc19759e8#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c2985623-1bd4-43a7-b29e-c48bc19759e8#id> .
+
+<http://www.bbc.co.uk/things/722aaea2-2dd1-4acd-ac01-0705f3bf4938#id> a sport:Competition ;
+    rdfs:label "International Friendlies (Perpetual Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f84befe3-edcb-47a4-944d-c6fca22c899b#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/36f86ee6-f326-446d-b415-c6b250e434b1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/36f86ee6-f326-446d-b415-c6b250e434b1#id> .
+
+<http://www.bbc.co.uk/things/73600414-6ef6-41ef-a35e-6c176aadf044#id> a sport:Competition ;
+    rdfs:label "Russian Premier League 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7ab443ae-376c-4634-b1ff-a69ed9da2360#id> ;
+    sal:name "Russian Premier League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/d97ad279-e97b-475c-8680-01ae478aed73#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d97ad279-e97b-475c-8680-01ae478aed73#id> .
+
+<http://www.bbc.co.uk/things/73d2bcd2-2725-4030-add1-8da9bbe038da#id> a sport:Competition ;
+    rdfs:label "World Cup 2018 Qualifying Season - CONCACAF (North and Central America) Region (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/3d5f1e82-aba8-466d-a45b-b159b93c847c#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1f29aa24-0ed7-4880-a8c5-9c28ed07f166#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1f29aa24-0ed7-4880-a8c5-9c28ed07f166#id> .
+
+<http://www.bbc.co.uk/things/7443fb12-270d-461d-8a4c-0c7544707e0e#id> a sport:Competition ;
+    rdfs:label "Under-21 Friendly 2014 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7731a610-d8f9-496e-b472-933b970f1fd9#id> ;
+    sal:name "Under-21 Friendly"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/94213dc1-8aef-4ff2-8d35-d345747ee621#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/94213dc1-8aef-4ff2-8d35-d345747ee621#id> .
+
+<http://www.bbc.co.uk/things/76abb36a-8ca4-4cf1-8728-1f4d2d72a0a4#id> a sport:Competition ;
+    rdfs:label "French Ligue 1 2018/19 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/c9dab32d-7653-4111-9ea5-7604c462f45d#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> .
+
+<http://www.bbc.co.uk/things/785bc954-1699-4b66-bb29-4f748f73cab7#id> a sport:Competition ;
+    rdfs:label "German Bundesliga 2015/16 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7152eeb0-c3fb-4ee2-a718-7c2bc4bfd347#id> ;
+    sal:name "German Bundesliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> .
+
+<http://www.bbc.co.uk/things/79ad6a8d-e5cf-4ad7-83bf-9a8ab24e30a9#id> a sport:Competition ;
+    rdfs:label "German Bundesliga 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e44b9527-e489-4602-a45a-3f1d4e2f46c9#id> ;
+    sal:name "German Bundesliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> .
+
+<http://www.bbc.co.uk/things/79b90c0a-604c-43e9-b453-294e51f60b47#id> a sport:Competition ;
+    rdfs:label "Dutch Eredivisie 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8edd0049-b7a0-45e2-b669-7008eb54dd76#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> .
+
+<http://www.bbc.co.uk/things/79db3290-c204-4e01-9b83-733814f22a39#id> a sport:Competition ;
+    rdfs:label "Men's Olympic Football 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/94c4ad30-fd74-46fa-85c5-80911795e74c#id> ;
+    sal:name "Men's Olympic Football"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0430aa56-3fdd-4e06-9389-0054bfe9f038#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0430aa56-3fdd-4e06-9389-0054bfe9f038#id> .
+
+<http://www.bbc.co.uk/things/7a8d1c5c-32a4-404f-840a-25f2333ecd86#id> a sport:Competition ;
+    rdfs:label "Norwegian Tippeligaen 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/95d7e1ca-8f4e-4575-8ba0-f7fdfe7f9850#id> ;
+    sal:name "Norwegian Tippeligaen"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> .
+
+<http://www.bbc.co.uk/things/7d14e58c-af87-4152-a6b1-d4777ec9b851#id> a sport:Competition ;
+    rdfs:label "Champions League Qualifying 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/037ef327-af04-416e-b0b6-82d7128dba57#id> ;
+    sal:name "UEFA Champions League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> .
+
+<http://www.bbc.co.uk/things/7e70f34c-6014-404f-b5e8-5dbcded44335#id> a sport:Competition ;
+    rdfs:label "Portuguese Primeira Liga 2016/17 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/deef2dd7-d2e3-4fc7-bbf5-e32330aef13d#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> .
+
+<http://www.bbc.co.uk/things/800f445b-faaa-4d19-84bd-5d9a9183bf94#id> a sport:Competition ;
+    rdfs:label "Women's International Friendlies 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/25dcadaf-3184-4c8f-a2af-5b0a306afedd#id> ;
+    sal:name "Women's International Friendlies "@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/58c093b8-6bbf-4a84-9ad5-e927110e907b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/58c093b8-6bbf-4a84-9ad5-e927110e907b#id> .
+
+<http://www.bbc.co.uk/things/81b4bb24-3e8b-499f-8a10-5fe6ae725ef0#id> a sport:Competition ;
+    rdfs:label "Norwegian Tippeligaen 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ec245ef0-d16f-47c2-8ff1-db2242a27a4b#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> .
+
+<http://www.bbc.co.uk/things/81caae66-7b74-48bb-b15d-3f1652a29162#id> a sport:Competition ;
+    rdfs:label "Belgian Pro League 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/a3bb8c39-94aa-4bf0-bf3a-241acb4e3272#id> ;
+    sal:name "Belgian Pro League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> .
+
+<http://www.bbc.co.uk/things/841e11d1-2484-4c2a-8a4e-7b7aeb43d5ff#id> a sport:Competition ;
+    rdfs:label "Champions League Qualifying 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7af6e82b-a9f6-4049-98b0-4d9cfd20425a#id> ;
+    sal:name "UEFA Champions League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> .
+
+<http://www.bbc.co.uk/things/84d7fe85-f623-4ef2-988a-49f07ea57152#id> a core:Thing,
+        sport:Competition ;
+    rdfs:label "Euro 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/db19d2cd-51e8-4217-b45f-d12971dcfa5b#id> ;
+    sal:name "UEFA European Championship 2016"@en-gb ;
+    core:disambiguationHint "European football competition"@en-gb ;
+    core:preferredLabel "Euro 2016"@en-gb ;
+    core:shortLabel "Euro 2016"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/eecba9c9-afb4-4d64-9c1f-b7e62da658bf#id> ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international>,
+        <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/eecba9c9-afb4-4d64-9c1f-b7e62da658bf#id> .
+
+<http://www.bbc.co.uk/things/86ba23f8-263f-4389-bbb6-ede8994ab093#id> a sport:Competition ;
+    rdfs:label "Champions League Qualifying 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e2653373-24a1-4287-bd28-63ecc2251991#id> ;
+    sal:name "Champions League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> .
+
+<http://www.bbc.co.uk/things/86e9b1f2-8c8f-44b7-8f7e-2672f6b6f8eb#id> a sport:Competition ;
+    rdfs:label "World Cup 2018 Qualifying Season - OFC (Oceania) Region (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b811a981-6133-43d7-b111-203e69c88503#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/6492b643-39bd-44c9-97e4-c099896844fa#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/6492b643-39bd-44c9-97e4-c099896844fa#id> .
+
+<http://www.bbc.co.uk/things/87a8c498-c1ad-4b60-a14f-dbd7e4be8bce#id> a sport:Competition ;
+    rdfs:label "UEFA European Championship 2020 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/d09c51f1-dd0e-4b92-9046-6000fd1985ef#id> ;
+    sal:name "UEFA European Championship 2020"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/eecba9c9-afb4-4d64-9c1f-b7e62da658bf#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/eecba9c9-afb4-4d64-9c1f-b7e62da658bf#id> .
+
+<http://www.bbc.co.uk/things/8839f028-d52c-4421-bb27-39b2a3640518#id> a sport:Competition ;
+    rdfs:label "Greek Superleague 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b6c08825-3034-4da4-a677-93e18a5531d9#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/37ea9997-eeb5-457c-9f9c-d6bf78467d85#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/37ea9997-eeb5-457c-9f9c-d6bf78467d85#id> .
+
+<http://www.bbc.co.uk/things/899de9af-fdb9-474e-a503-3b84110a8a73#id> a sport:Competition ;
+    rdfs:label "FIFA Women's World Cup Qualifying 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/68b55cb3-72f9-42e3-a05d-a3116fa42338#id> ;
+    sal:name "FIFA Womens World Cup Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/4184fd7a-6be8-4973-9edb-6d2d728a9ae8#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/4184fd7a-6be8-4973-9edb-6d2d728a9ae8#id> .
+
+<http://www.bbc.co.uk/things/89a015d6-d429-40db-9a6b-24113bdc9a6c#id> a sport:Competition ;
+    rdfs:label "German Bundesliga 2017/18 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b6915fa3-a470-4e2c-97ea-14501c977d25#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> .
+
+<http://www.bbc.co.uk/things/8aa4c3e1-e3e4-46f0-beb8-d33fbc458cd1#id> a sport:Competition ;
+    rdfs:label "Champions League 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/aafbea57-e81b-43b5-b555-87300014e670#id> ;
+    sal:name "Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> .
+
+<http://www.bbc.co.uk/things/8d301d58-0dbd-4e68-93ca-10f5b371ac1a#id> a sport:Competition ;
+    rdfs:label "Australian Hyundai A-League 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/dc222e9e-f36f-45fa-ab50-b9937cf2683c#id> ;
+    sal:name "Australian Hyundai A-League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/08d91596-72fc-4a55-a02c-50265cb9e09e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/08d91596-72fc-4a55-a02c-50265cb9e09e#id> .
+
+<http://www.bbc.co.uk/things/8eca801c-15fd-405b-8fdc-ec1e6589d6af#id> a sport:Competition ;
+    rdfs:label "Europa League Qualifying 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/61572782-866c-4e6d-9c06-ffb805548810#id> ;
+    sal:name "UEFA Europa League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/84e633ed-7f81-45e3-92c0-b108f32f10d6#id> .
+
+<http://www.bbc.co.uk/things/8f0dafa0-6257-4c3e-b54b-be1c6541fba3#id> a sport:Competition ;
+    rdfs:label "Swiss Super League 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/db4e7f53-b6e8-491c-b3e4-619a6dd41e71#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> .
+
+<http://www.bbc.co.uk/things/900dcba6-7e45-42e6-bc82-36faab07a4bb#id> a sport:Competition ;
+    rdfs:label "Champions League 2011/12 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e56b0712-2616-445a-bb2c-a8bfa83e6d90#id> ;
+    sal:name "UEFA Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> .
+
+<http://www.bbc.co.uk/things/90516c12-6bac-4b01-8496-0e7d5307198e#id> a sport:Competition ;
+    rdfs:label "Spanish La Liga 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/39f05185-a20a-42c3-9b89-cbdf3e02c2b5#id> ;
+    sal:name "Spanish BBVA La Liga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> .
+
+<http://www.bbc.co.uk/things/91d8e6ab-7b74-4333-ae06-e05fd72f154f#id> a sport:Competition ;
+    rdfs:label "Europa League 2011/12 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/90e3a521-011d-433c-add5-6053bba6f2d0#id> ;
+    sal:name "UEFA Europa League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> .
+
+<http://www.bbc.co.uk/things/95101c17-bd87-472a-b065-a381aeac8954#id> a sport:Competition ;
+    rdfs:label "Turkish Super Lig 2017/2018 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e26e8c20-4846-4873-9dbf-6368fb737a16#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> .
+
+<http://www.bbc.co.uk/things/97f8d290-2a5a-46d1-ad7a-94c8f6519efa#id> a sport:Competition ;
+    rdfs:label "Confederations Cup 2013/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/c46024e9-67f4-449e-b2a1-f7ceeae36f28#id> ;
+    sal:name "FIFA Confederations Cup 2013"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/7f1ad365-5ea1-48a9-b35a-18843e4fb3a9#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7f1ad365-5ea1-48a9-b35a-18843e4fb3a9#id> .
+
+<http://www.bbc.co.uk/things/9967019f-7110-4825-b535-41f8fe83ad98#id> a sport:Competition ;
+    rdfs:label "Finnish Veikkausliiga 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/fc4c53e5-2de3-498b-8606-213c997a27c5#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> .
+
+<http://www.bbc.co.uk/things/9a2db25d-b376-452f-b86f-be3432a737a3#id> a sport:Competition ;
+    rdfs:label "Europa League 2019/20 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/41039026-311f-4e30-857c-e8393f5b5b9d#id> ;
+    sal:name "Europa League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> .
+
+<http://www.bbc.co.uk/things/9d529a83-6fe8-4ff1-8771-66a6a03f0864#id> a sport:Competition ;
+    rdfs:label "UEFA Women's Champions League 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/115389e7-aaae-4ba0-95ad-8413aeca269d#id> ;
+    sal:name "UEFA Women's Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/9919ac56-b4de-4786-8059-c4a46a603b2b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9919ac56-b4de-4786-8059-c4a46a603b2b#id> .
+
+<http://www.bbc.co.uk/things/9ea12e2c-2c62-4112-81fd-b42062eb0266#id> a sport:Competition ;
+    rdfs:label "SheBelieves Cup 2015 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/6440d5e8-c369-443f-99b0-5327b536b16d#id> ;
+    sal:name "2016 SheBelieves Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/729e1500-140c-4f30-b290-8175007d9ce4#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/729e1500-140c-4f30-b290-8175007d9ce4#id> .
+
+<http://www.bbc.co.uk/things/9f3bc790-39f0-4b7f-a114-9ff779246fa9#id> a sport:Competition ;
+    rdfs:label "UEFA Women's Champions League 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/cb048c23-7aa5-440b-ac0a-b28fe09a9ef0#id> ;
+    sal:name "UEFA Women's Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/9919ac56-b4de-4786-8059-c4a46a603b2b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9919ac56-b4de-4786-8059-c4a46a603b2b#id> .
+
+<http://www.bbc.co.uk/things/9fcdea6a-7dc4-4664-9efd-ab621e26e9f3#id> a sport:Competition ;
+    rdfs:label "Portuguese Primeira Liga (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/def2c269-47e6-4915-bbbd-d8e8dc5ad3b4#id> ;
+    sal:name "Portuguese ZON Sagres Primeira Liga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> .
+
+<http://www.bbc.co.uk/things/a15ed298-ce0e-4b1d-913b-659e89868dad#id> a sport:Competition ;
+    rdfs:label "Dutch Eredivisie 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/771053e2-fd39-49f3-9b4a-86ac933f47c3#id> ;
+    sal:name "Dutch Eredivisie"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> .
+
+<http://www.bbc.co.uk/things/a1d9a959-29a6-4fc3-b175-198aba80e49b#id> a sport:Competition ;
+    rdfs:label "Brazilian Campeonato Série A 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/947968fe-7383-401e-8fc6-6ccc537737d6#id> ;
+    sal:name "Brazilian Campeonato Série A"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0350ec6a-76af-4d2b-80f5-396998ce775b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0350ec6a-76af-4d2b-80f5-396998ce775b#id> .
+
+<http://www.bbc.co.uk/things/a24af7ab-5f3b-43a4-8837-eb2d63ffbbb7#id> a sport:Competition ;
+    rdfs:label "German Bundesliga 2016/17 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/85dae73a-bcd3-4652-b50b-4a45d2cc6ea7#id> ;
+    sal:name "German Bundesliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> .
+
+<http://www.bbc.co.uk/things/a283be9e-7426-47a7-a87c-9413025c1f37#id> a sport:Competition ;
+    rdfs:label "Belgian First Division A 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/30f9fef4-cc07-4a6d-a29a-2179c3b33c6c#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> .
+
+<http://www.bbc.co.uk/things/a286064a-8616-4e17-ba56-51e0d5040a1d#id> a sport:Competition ;
+    rdfs:label "European Championship 2017 Under-21 Qualifying Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4ced301a-f104-464c-85b8-63696246bd6b#id> ;
+    sal:name "European Championship 2017 Under-21 Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/a703c3d9-8259-4329-93df-daa7467d0728#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/a703c3d9-8259-4329-93df-daa7467d0728#id> .
+
+<http://www.bbc.co.uk/things/a310d1d1-c561-43a9-bb6f-efa41b6c9c6c#id> a sport:Competition ;
+    rdfs:label "Europa League 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b52f1b6a-6ee4-4739-900b-b8fa1b3329a8#id> ;
+    sal:name "UEFA Europa League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> .
+
+<http://www.bbc.co.uk/things/a3428ddc-6982-4614-b997-f12a5919fc4d#id> a sport:Competition ;
+    rdfs:label "Norwegian Tippeligaen 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/dff28daf-edc6-4e15-ac4d-7654fb842830#id> ;
+    sal:name "Norwegian Tippeligaen"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> .
+
+<http://www.bbc.co.uk/things/a4a06c5e-3380-44dc-bf1d-4ccab1ec9670#id> a sport:Competition ;
+    rdfs:label "Austrian Bundesliga 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f6aed833-0cf1-4514-a9ab-fd6cca669472#id> ;
+    sal:name "Austrian T-Mobile Bundesliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> .
+
+<http://www.bbc.co.uk/things/a519563d-fb7d-4aff-97db-6a18e4b68bee#id> a sport:Competition ;
+    rdfs:label "European Championship 2019 Under-21 Qualifying Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/cc78fd73-ceb3-4ec7-ac24-97d741371157#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/a703c3d9-8259-4329-93df-daa7467d0728#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/a703c3d9-8259-4329-93df-daa7467d0728#id> .
+
+<http://www.bbc.co.uk/things/a7b9488d-4290-4859-8d4b-ac06aab8eeef#id> a sport:Competition ;
+    rdfs:label "Italian Serie A 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7e07de54-b357-4dd4-9169-ea3f5cc36541#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> .
+
+<http://www.bbc.co.uk/things/abed20d4-532f-40a5-acbb-e0db1bc143da#id> a sport:Competition ;
+    rdfs:label "China Cup Season 2018 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/3b1c5fdc-b591-4d85-b67f-39887d34fb10#id> ;
+    sal:name "China Cup 2018"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ed49dd50-30b0-43cd-a9b5-405a066a7e22#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ed49dd50-30b0-43cd-a9b5-405a066a7e22#id> .
+
+<http://www.bbc.co.uk/things/ae8c5de7-3e79-48a9-a3a9-80367e4078a2#id> a sport:Competition ;
+    rdfs:label "Belgian Pro League 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5a0dc4b3-bcbb-424f-9564-5aa982c10031#id> ;
+    sal:name "Belgian Jupiler Pro League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> .
+
+<http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id> a sport:Competition ;
+    rdfs:label "World Cup 2014 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7e43963c-a210-47df-8604-c420ce69e3b1#id> ;
+    sal:name "FIFA World Cup 2014"@en-gb ;
+    core:preferredLabel "World Cup 2014"@en-gb ;
+    core:shortLabel "World Cup 2014"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/de6a07ff-47ff-4551-9b71-7494a71aceac#id> ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/de6a07ff-47ff-4551-9b71-7494a71aceac#id> .
+
+<http://www.bbc.co.uk/things/af4886f8-69f1-4f59-8b73-1f027643a5a3#id> a sport:Competition ;
+    rdfs:label "Champions League Qualifying 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f3d67466-807f-4a29-ac04-143836a60824#id> ;
+    sal:name "UEFA Champions League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> .
+
+<http://www.bbc.co.uk/things/af76579b-0b74-4df0-85b7-ad291e41eadf#id> a sport:Competition ;
+    rdfs:label "French Coupe de France 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/54542eaf-ec8c-4b9c-8891-b140c6b7455b#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ad6233e8-3232-4173-982b-743a6de3d65a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ad6233e8-3232-4173-982b-743a6de3d65a#id> .
+
+<http://www.bbc.co.uk/things/afe876c6-2fcc-475a-a7f2-6184e1272a86#id> a sport:Competition ;
+    rdfs:label "Danish Superliga 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/05597f4d-91c8-41d9-8dc0-dbb0be5752a8#id> ;
+    sal:name "Danish Superliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> .
+
+<http://www.bbc.co.uk/things/b1c6e3a1-5e7a-4e90-899e-32976347f31a#id> a sport:Competition ;
+    rdfs:label "Chilean Primera Division 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/928a777f-2b54-41b2-b5e9-47761325af9c#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/7d304dc2-9e5c-426f-a2bd-90ec195c7d3a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7d304dc2-9e5c-426f-a2bd-90ec195c7d3a#id> .
+
+<http://www.bbc.co.uk/things/b31cc4c5-13ce-4058-97dd-5636e69bde0f#id> a sport:Competition ;
+    rdfs:label "UEFA Champions League Qualifying 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/92b8ebdf-c601-474f-9933-49e5f83b5d14#id> ;
+    sal:name "Champions League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> .
+
+<http://www.bbc.co.uk/things/b475f1ba-fa50-4d99-aa04-0c7ed655dbf3#id> a sport:Competition ;
+    rdfs:label "French Coupe de France 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/04a4aa3d-0e7f-466e-a683-0e3b59d8db3c#id> ;
+    sal:name "French Coupe de France"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ad6233e8-3232-4173-982b-743a6de3d65a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ad6233e8-3232-4173-982b-743a6de3d65a#id> .
+
+<http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> a sport:Competition ;
+    rdfs:label "FIFA Women's World Cup 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/18800788-b0bf-4b94-b1ed-04e0f0b7c8e0#id> ;
+    sal:name "FIFA Women's World Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/04bedd51-db91-4bf2-85ca-e69c664811ec#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/04bedd51-db91-4bf2-85ca-e69c664811ec#id> .
+
+<http://www.bbc.co.uk/things/bb0f813b-8276-4340-8858-e573188edca8#id> a sport:Competition ;
+    rdfs:label "German DFB Cup 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/66a4feb8-20d0-4f5a-b78b-c0b890fb0445#id> ;
+    sal:name "German DFB Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ab832e84-e79c-48b3-8cd5-b0953bd8eafe#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ab832e84-e79c-48b3-8cd5-b0953bd8eafe#id> .
+
+<http://www.bbc.co.uk/things/bbc0aac4-9798-4cd1-b96d-9fe0d8f83644#id> a sport:Competition ;
+    rdfs:label "German Bundesliga 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/9c03030d-e965-4e2c-bc88-6d695901764a#id> ;
+    sal:name "German Bundesliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> .
+
+<http://www.bbc.co.uk/things/bbcd6a21-6571-43bc-a5fd-6293a15ced6e#id> a sport:Competition ;
+    rdfs:label "Women's European Championship 2013 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/667b3606-fea1-438a-883e-71963b720fa9#id> ;
+    sal:name "UEFA Women's European Championship 2013"@en-gb ;
+    core:preferredLabel "Women's European Championship 2013"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/bc71c3a0-e74d-4add-ace6-50877079f0b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bc71c3a0-e74d-4add-ace6-50877079f0b3#id> .
+
+<http://www.bbc.co.uk/things/bbf2de03-c9de-4cd3-aaf5-bdfb581fc3d8#id> a sport:Competition ;
+    rdfs:label "Africa Cup of Nations 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/3ac2a93e-3a45-432a-af55-b20870bb0f27#id> ;
+    sal:name "Total Africa Cup of Nations"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> .
+
+<http://www.bbc.co.uk/things/bc2412e2-7ff8-4872-96ba-f3016c54a4df#id> a sport:Competition ;
+    rdfs:label "Europa League 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7d009262-aaab-4ce8-b7cd-7d478f8e4a21#id> ;
+    sal:name "Europa League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> .
+
+<http://www.bbc.co.uk/things/bd7d3fbf-33b9-4638-b286-240d9fc7be5d#id> a sport:Competition ;
+    rdfs:label "UEFA Champions League 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b0691559-abb0-451c-a406-bc253b2ac455#id> ;
+    sal:name "Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> .
+
+<http://www.bbc.co.uk/things/bdca61da-352b-427c-82ac-662d9d33ddca#id> a sport:Competition ;
+    rdfs:label "Swedish Allsvenskan 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/fd5a05c3-9cfb-449c-b7c2-b224f7f4f46c#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> .
+
+<http://www.bbc.co.uk/things/bdfd0374-1f9d-49b5-a71e-0d3027253e0e#id> a sport:Competition ;
+    rdfs:label "United States Major League Soccer All-Star Game 2017 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/7e2affc6-6680-4ffe-8610-527cb28f33f3#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/56d3ade5-e8be-485e-b5ad-93bf3365b21d#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/56d3ade5-e8be-485e-b5ad-93bf3365b21d#id> .
+
+<http://www.bbc.co.uk/things/befcf82a-83c3-4f3f-962a-7a442c816222#id> a sport:Competition ;
+    rdfs:label "World Cup 2014 Qualifying - European Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/26cc7770-3fbc-4920-b173-e5431a388df5#id> ;
+    sal:name "FIFA World Cup Qualifying - European Region"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2c36e6b7-796d-4518-9e02-2f90f15ee8e3#id> ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-group> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2c36e6b7-796d-4518-9e02-2f90f15ee8e3#id> .
+
+<http://www.bbc.co.uk/things/bf587110-69d2-4e79-ad91-04d0db358ecc#id> a sport:Competition ;
+    rdfs:label "German DFB Cup 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/406aafba-470b-47de-aa07-b42e46b34679#id> ;
+    sal:name "German DFB Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ab832e84-e79c-48b3-8cd5-b0953bd8eafe#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ab832e84-e79c-48b3-8cd5-b0953bd8eafe#id> .
+
+<http://www.bbc.co.uk/things/bfe189d6-0aac-4484-bc8e-ea22b55459ad#id> a sport:Competition ;
+    rdfs:label "Austrian Bundesliga 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/9da81ba0-0f9f-481a-bc0d-e91e99db190b#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> .
+
+<http://www.bbc.co.uk/things/bff23cd9-7e83-44c5-ba4b-4c402f47229d#id> a sport:Competition ;
+    rdfs:label "Spanish La Liga (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f0e92aef-1a4f-4b8d-b87b-cf8f5b94a7a5#id> ;
+    sal:name "Spanish BBVA La Liga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> .
+
+<http://www.bbc.co.uk/things/c0ecac07-1c74-4692-97a9-9194f5edf409#id> a sport:Competition ;
+    rdfs:label "Europa League 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/acb7c81a-63ce-4fe6-bea5-d222ae8b58ea#id> ;
+    sal:name "UEFA Europa League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> .
+
+<http://www.bbc.co.uk/things/c195eb03-ff92-4c33-abf8-91eca3225d73#id> a sport:Competition ;
+    rdfs:label "United States Major League Soccer 2020 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/806e9763-8ee4-4666-bebc-451f73e8c152#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> .
+
+<http://www.bbc.co.uk/things/c3748510-5db1-4047-9e6a-0bf010697c72#id> a sport:Competition ;
+    rdfs:label "World Cup 2018 Qualifying Season - UEFA (Europe) Region (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b10f21aa-8bfc-460c-9272-04d32cfcf98d#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2c36e6b7-796d-4518-9e02-2f90f15ee8e3#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2c36e6b7-796d-4518-9e02-2f90f15ee8e3#id> .
+
+<http://www.bbc.co.uk/things/c43e51cd-f42a-4e78-8fa4-8767c4f67330#id> a sport:Competition ;
+    rdfs:label "World Cup 2018 Qualifying Season - CONMEBOL (South America) Region (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/a0921ced-c746-4331-b77d-2c09fdedc827#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/55f5d9e8-aec2-4b1b-99f6-eb09111df01b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/55f5d9e8-aec2-4b1b-99f6-eb09111df01b#id> .
+
+<http://www.bbc.co.uk/things/c66643dc-e6bc-4953-ab92-bfa61c736fe8#id> a sport:Competition ;
+    rdfs:label "Belgian Pro League 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5c1a9628-a09c-4ffb-b414-f381df592fa2#id> ;
+    sal:name "Belgian Jupiler Pro League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/59e304dd-3b31-405c-9257-05c6c8dc01c9#id> .
+
+<http://www.bbc.co.uk/things/ca67894f-3d01-45b7-8743-047c7c523414#id> a sport:Competition ;
+    rdfs:label "Swiss Super League (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/71f185bd-771f-4c2f-b52a-e4bc4f7ab0c8#id> ;
+    sal:name "Swiss Raiffeisen Super League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> .
+
+<http://www.bbc.co.uk/things/cc5ea2a1-ea26-458d-aa59-fb08077395da#id> a sport:Competition ;
+    rdfs:label "UEFA Champions League 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/c6469d6f-c20a-4f43-ba74-01dc9dc03344#id> ;
+    sal:name "Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> .
+
+<http://www.bbc.co.uk/things/ce1c9216-2387-4ff2-802b-2d4a835e1bcc#id> a sport:Competition ;
+    rdfs:label "Norwegian Tippeligaen (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/69017331-a9b3-4e19-a99c-dc6ca2400bc1#id> ;
+    sal:name "Norwegian Tippeligaen"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/3b27bdaa-0097-42d3-b96e-b4b33c07d2dd#id> .
+
+<http://www.bbc.co.uk/things/ce6770f4-36aa-4249-9e8f-7a6fbfccd0ed#id> a sport:Competition ;
+    rdfs:label "Under-21 Friendly 2013 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/db32810f-cde1-4eec-8c46-7c71bc5c3fbf#id> ;
+    sal:name "Under-21 Friendly"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/94213dc1-8aef-4ff2-8d35-d345747ee621#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/94213dc1-8aef-4ff2-8d35-d345747ee621#id> .
+
+<http://www.bbc.co.uk/things/d097379c-3978-4072-97c9-e6562a5c5403#id> a sport:Competition ;
+    rdfs:label "World Cup 2018 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/890d8043-2da7-494f-85e9-41a9e77b0c39#id> ;
+    sal:name "FIFA World Cup 2018"@en-gb ;
+    core:preferredLabel "World Cup 2018"@en-gb ;
+    core:shortLabel "World Cup 2018"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/de6a07ff-47ff-4551-9b71-7494a71aceac#id> ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/de6a07ff-47ff-4551-9b71-7494a71aceac#id> .
+
+<http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id> a sport:Competition ;
+    rdfs:label "European Championship Qualifiers Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e9d2c9c5-502c-4183-906e-bfe66f99ac92#id> ;
+    sal:name "UEFA European Championship Qualifiers"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id> .
+
+<http://www.bbc.co.uk/things/d3a93a84-0afc-4359-b022-03badf627afd#id> a sport:Competition ;
+    rdfs:label "AFC Asian Cup 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0796fe34-8ecb-4d35-a5ca-4a223b525e1e#id> ;
+    sal:name "Asian Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0b50097d-b492-4358-ae83-ee2915d36f84#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0b50097d-b492-4358-ae83-ee2915d36f84#id> .
+
+<http://www.bbc.co.uk/things/d5bed4de-7f66-4334-bfcb-4116dce12cc1#id> a sport:Competition ;
+    rdfs:label "Australian A League 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/d0e65c73-4fee-4da0-b0ff-c75e39c450c5#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/08d91596-72fc-4a55-a02c-50265cb9e09e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/08d91596-72fc-4a55-a02c-50265cb9e09e#id> .
+
+<http://www.bbc.co.uk/things/d6055ed3-7feb-470c-9614-2e9df28a37a1#id> a sport:Competition ;
+    rdfs:label "Dutch Eredivisie 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4c5db579-f051-47aa-b590-42b0aac239a4#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> .
+
+<http://www.bbc.co.uk/things/d71cf394-6661-4baa-8bfb-f8b680ab998e#id> a sport:Competition ;
+    rdfs:label "Swedish Allsvenskan (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/41809761-742c-4c93-babb-51f327e497c0#id> ;
+    sal:name "Swedish Allsvenskan"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b94990b6-8525-4838-9d85-8c3e8fc16ddc#id> .
+
+<http://www.bbc.co.uk/things/d7330d22-4b27-4fc6-990b-460ba365dff9#id> a sport:Competition ;
+    rdfs:label "FIFA Club World Cup 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/79284bc9-43c5-43fc-bf96-2f5c06ad7adb#id> ;
+    sal:name "FIFA Club World Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b14d2c7f-663f-440f-8e9f-54019f9488ce#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b14d2c7f-663f-440f-8e9f-54019f9488ce#id> .
+
+<http://www.bbc.co.uk/things/d7e5aea6-0c9e-440f-89e4-a53acbab213d#id> a sport:Competition ;
+    rdfs:label "United States Major League Soccer 2016 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/653cc099-7f71-4a43-87b1-956b6c74598d#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> .
+
+<http://www.bbc.co.uk/things/dbc2f31c-5e5d-4024-b7d6-fdbb39088f72#id> a sport:Competition ;
+    rdfs:label "Italian Serie A 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/ef1fd499-2c50-4063-aad6-48399af4057f#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/dd7d8ea7-5f0e-47fc-b1ae-dd5b51ec49a6#id> .
+
+<http://www.bbc.co.uk/things/dd9d23f8-61a4-4009-a8f7-ca84ff06a1b8#id> a sport:Competition ;
+    rdfs:label "Portuguese Primeira Liga 2017/18 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/0269913b-eaee-4868-aee7-b38d3ffdc3a5#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/8f8bffd1-91c1-43ad-8dfe-76052aeebb7b#id> .
+
+<http://www.bbc.co.uk/things/e0077565-f49c-4ab8-b5bb-9b40c56236da#id> a sport:Competition ;
+    rdfs:label "Austrian Bundesliga 2017/18 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/55ca6d03-ead1-441d-98d1-7bbb73a807ab#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> .
+
+<http://www.bbc.co.uk/things/e02ad728-a9b5-4d71-9c8e-1631d8d5f383#id> a sport:Competition ;
+    rdfs:label "Euro 2012 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/6413c5bb-e672-4c20-8434-035dae657585#id> ;
+    sal:name "UEFA European Championship 2012"@en-gb ;
+    core:disambiguationHint "European football competition"@en-gb ;
+    core:preferredLabel "Euro 2012"@en-gb ;
+    core:shortLabel "Euro 2012"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/eecba9c9-afb4-4d64-9c1f-b7e62da658bf#id> ;
+    sport:competitionType <http://www.bbc.co.uk/things/competition-types/international>,
+        <http://www.bbc.co.uk/things/competition-types/international-groupcup> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/eecba9c9-afb4-4d64-9c1f-b7e62da658bf#id> .
+
+<http://www.bbc.co.uk/things/e0e085ae-4d95-4f23-990c-dfce6bdb19fe#id> a sport:Competition ;
+    rdfs:label "Spanish La Liga 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/5737b279-14a5-46a0-a182-c755b71b7235#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/992139ad-96bd-4ba9-a1ef-f9b2b8dcb445#id> .
+
+<http://www.bbc.co.uk/things/e0fed486-229e-4f75-8c18-90bf257c9c23#id> a sport:Competition ;
+    rdfs:label "International Champions Cup Season 2016 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/fc59d8e3-6731-484c-8628-4971b0cf042f#id> ;
+    sal:name "International Champions Cup 2016"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0072fcba-4f2b-42e5-9274-29fd0394eaf3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0072fcba-4f2b-42e5-9274-29fd0394eaf3#id> .
+
+<http://www.bbc.co.uk/things/e16c241d-1a4a-4011-a0ff-17275133fc8f#id> a sport:Competition ;
+    rdfs:label "Australian Hyundai A-League 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8af8d0f5-eef0-4171-a982-59af18b4df4e#id> ;
+    sal:name "Australian Hyundai A-League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/08d91596-72fc-4a55-a02c-50265cb9e09e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/08d91596-72fc-4a55-a02c-50265cb9e09e#id> .
+
+<http://www.bbc.co.uk/things/e339a9c9-a109-4b8c-ba1c-52274aeefeb7#id> a sport:Competition ;
+    rdfs:label "Europa League 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2502d59a-7f07-423b-bdcf-853a1254e142#id> ;
+    sal:name "Europa League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> .
+
+<http://www.bbc.co.uk/things/e364e93b-22b7-4de8-9d4d-94b4b874a543#id> a sport:Competition ;
+    rdfs:label "Europa League 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/50ca5717-f3ed-4814-9d82-f77e67552f00#id> ;
+    sal:name "UEFA Europa League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2afbdda7-71d4-544d-bcc6-d9ff50314b2a#id> .
+
+<http://www.bbc.co.uk/things/e3965c17-d265-41f4-bc35-dfe9adedb98f#id> a sport:Competition ;
+    rdfs:label "Copa America 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/fb08dc63-886b-4b4f-8a10-4ef5e960a92a#id> ;
+    sal:name "Copa America"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c2849b16-b4f1-4ef7-9baa-437937470d71#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c2849b16-b4f1-4ef7-9baa-437937470d71#id> .
+
+<http://www.bbc.co.uk/things/e3d5460a-f086-4889-8112-a5b36c476799#id> a sport:Competition ;
+    rdfs:label "Dutch Eredevisie 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8f955f6a-0725-4e11-a79b-fc35051c0909#id> ;
+    sal:name "Dutch Eredivisie"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/87d9c2f2-95c4-4db2-915e-e1eead8ce772#id> .
+
+<http://www.bbc.co.uk/things/e6817a69-610a-48c6-ba21-424a6e30dd76#id> a sport:Competition ;
+    rdfs:label "Champions League 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/6f02aaed-de96-4014-83e7-fad7e2153675#id> ;
+    sal:name "UEFA Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> .
+
+<http://www.bbc.co.uk/things/e6c83e29-24db-4bc5-8df0-de432ecc3493#id> a sport:Competition ;
+    rdfs:label "Champions League 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/fd5b2436-4ced-472d-91a0-6e821b7ade0c#id> ;
+    sal:name "UEFA Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> .
+
+<http://www.bbc.co.uk/things/e8ff1944-5298-4580-b321-9c660aee5f59#id> a sport:Competition ;
+    rdfs:label "Swiss Super League 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/adad840b-faf1-4123-9aba-92a757f5bea4#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> .
+
+<http://www.bbc.co.uk/things/eaa162fb-973a-4e11-813a-8d846daa3aec#id> a sport:Competition ;
+    rdfs:label "United States Major League Soccer 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/07a86328-c8e3-440a-9d10-52b26f0e16ec#id> ;
+    sal:name "United States Major League Soccer"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> .
+
+<http://www.bbc.co.uk/things/eb76808d-701e-4948-9809-99f2807f1063#id> a sport:Competition ;
+    rdfs:label "French Ligue 1 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/3c79b080-8b56-42b1-8922-3ac1e506e82e#id> ;
+    sal:name "French Ligue 1"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> .
+
+<http://www.bbc.co.uk/things/ebe9d0c8-0a38-4d55-be5a-e43f46192057#id> a sport:Competition ;
+    rdfs:label "Champions League 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e9dad30a-33eb-4f88-9d93-a67b400ee0d6#id> ;
+    sal:name "UEFA Champions League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1e5c6e40-0b48-cb44-86ae-be47f66aac8a#id> .
+
+<http://www.bbc.co.uk/things/ed1df1fb-6215-44b2-8622-4cce8faee40e#id> a sport:Competition ;
+    rdfs:label "United States Major League Soccer 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e51deabd-d98d-47f9-92a0-31b14c3ce804#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/be8b873f-c307-4a8b-b812-e8df53c9c2d1#id> .
+
+<http://www.bbc.co.uk/things/ed56cb6b-624b-4e5e-ad41-e555ba6a7eb7#id> a sport:Competition ;
+    rdfs:label "French Ligue 1 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b5b0a790-1a6d-496f-bd80-161d4a7abbb8#id> ;
+    sal:name "French Ligue 1"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f955deb8-a145-4935-9777-c7a61c61b8bc#id> .
+
+<http://www.bbc.co.uk/things/ed8def4f-871c-44e8-aad2-ff1a80eabac9#id> a sport:Competition ;
+    rdfs:label "UEFA Champions League Qualifying 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/e657631b-ed93-4566-89eb-dec74ceadd0f#id> ;
+    sal:name "Champions League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> .
+
+<http://www.bbc.co.uk/things/ede78065-2069-4089-9ad0-d289a44b854b#id> a sport:Competition ;
+    rdfs:label "Swiss Super League 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b5c6ba3c-5f96-4076-908d-4c5f862d5033#id> ;
+    sal:name "Swiss Raiffeisen Super League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ebbc8c4e-552b-4360-8ce4-32819bc8b680#id> .
+
+<http://www.bbc.co.uk/things/ee6b4ab0-db78-4154-8772-489fe8ce12ff#id> a sport:Competition ;
+    rdfs:label "Spanish Copa del Rey 2014/15 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/51837a1d-e92b-4544-b94b-11e7ed490795#id> ;
+    sal:name "Spanish Copa del Rey"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/d2498561-e2b0-469e-a968-0cbc46f97457#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d2498561-e2b0-469e-a968-0cbc46f97457#id> .
+
+<http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> a sport:Competition ;
+    rdfs:label "Women's European Championship 2017 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/4184d41b-e845-49e9-afdf-207319f94a3b#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/bc71c3a0-e74d-4add-ace6-50877079f0b3#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bc71c3a0-e74d-4add-ace6-50877079f0b3#id> .
+
+<http://www.bbc.co.uk/things/f068f3e4-6089-4d56-9128-8fa4b032cd00#id> a sport:Competition ;
+    rdfs:label "Spanish Copa del Rey 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f3056db3-8a68-42b6-9eed-bc721e8f1804#id> ;
+    sal:name "Spanish Copa del Rey"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/d2498561-e2b0-469e-a968-0cbc46f97457#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/d2498561-e2b0-469e-a968-0cbc46f97457#id> .
+
+<http://www.bbc.co.uk/things/f16c8782-6a19-46b0-a0f1-a4e6725a6008#id> a sport:Competition ;
+    rdfs:label "Champions League Qualifying 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/d9bd29e8-7ae3-44aa-bc5a-e988b5231880#id> ;
+    sal:name "Champions League Qualifying"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1de2ef49-201b-4313-998d-71211c01f541#id> .
+
+<http://www.bbc.co.uk/things/f1b2b184-ad13-46b6-bb27-03000184f628#id> a sport:Competition ;
+    rdfs:label "Argentine Primera Division 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/841cdbf1-3af8-4aac-af1d-a4ce937d1bfe#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/467fd84f-5bf7-419e-9bd3-a0963c9cebbf#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/467fd84f-5bf7-419e-9bd3-a0963c9cebbf#id> .
+
+<http://www.bbc.co.uk/things/f2184aab-2006-435b-a487-e9af4649e383#id> a sport:Competition ;
+    rdfs:label "Finnish Veikkausliiga 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/b010a3a4-5f43-4737-b41e-1574ecac02d4#id> ;
+    sal:name "Finnish Veikkausliiga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> .
+
+<http://www.bbc.co.uk/things/f2b3ac17-dbb6-4692-9f91-cffbeef915e4#id> a sport:Competition ;
+    rdfs:label "Finnish Veikkausliiga (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8c88dad2-01bf-422e-9edb-474bd82f081a#id> ;
+    sal:name "Finnish Veikkausliiga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/2450a00a-82b2-4d5e-a782-08e413866cfb#id> .
+
+<http://www.bbc.co.uk/things/f2cdff7d-09bf-44c0-a436-93774cb29b88#id> a sport:Competition ;
+    rdfs:label "Africa Cup of Nations 2013 (2012) Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/1089f31a-5ae1-45a2-9e92-f8bfe1cffa6f#id> ;
+    sal:name "Orange Africa Cup of Nations"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/92d69d93-5891-484e-b2bc-0c6172533fd0#id> .
+
+<http://www.bbc.co.uk/things/f360e630-99b5-4141-a35c-a874a4162ef7#id> a sport:Competition ;
+    rdfs:label "German Bundesliga 2018/19 (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/8c81d515-f294-48de-930e-5616c313de21#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ced5245a-2d24-4f66-b4e5-50e1add74451#id> .
+
+<http://www.bbc.co.uk/things/f7d6c83b-2d83-4bd4-b685-24678c5a8579#id> a sport:Competition ;
+    rdfs:label "UEFA Super Cup 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/67bed694-40ba-4d2b-a878-57e52f0b75f1#id> ;
+    sal:name "UEFA Super Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/888b4526-95f4-4d67-956c-21691208143d#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/888b4526-95f4-4d67-956c-21691208143d#id> .
+
+<http://www.bbc.co.uk/things/f9802074-934a-44b0-82f2-c7441fd9eccd#id> a sport:Competition ;
+    rdfs:label "Turkish Super Lig 2016/17 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/fc8f5328-4d13-4140-a961-a9abf0738412#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/4c66e613-2598-4b27-a527-288b78c33417#id> .
+
+<http://www.bbc.co.uk/things/fa0a1812-b127-40b5-acb2-0058269aeafc#id> a sport:Competition ;
+    rdfs:label "Women's International Friendlies 2015/16 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2c3f22e6-384c-4fb1-b982-6e5310812cd4#id> ;
+    sal:name "Women's International Friendlies"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/58c093b8-6bbf-4a84-9ad5-e927110e907b#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/58c093b8-6bbf-4a84-9ad5-e927110e907b#id> .
+
+<http://www.bbc.co.uk/things/fa60a7aa-fc3a-4c9f-86c9-d949e751186c#id> a sport:Competition ;
+    rdfs:label "UEFA European Championship Qualifying 2020 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f078161f-92ca-4489-878b-46f7b239c25c#id> ;
+    sal:name "UEFA European Championship Qualifying 2020"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/cff1478a-a780-44e7-8851-6990647ce15a#id> .
+
+<http://www.bbc.co.uk/things/fbde38f7-fdd5-48d3-a465-e5b0df9ce525#id> a sport:Competition ;
+    rdfs:label "CONCACAF Gold Cup 2019 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/67f1df9a-989e-4399-826f-a5141ca610da#id> ;
+    sal:name "Gold Cup"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/62cda3cf-02e3-455d-9b06-d44c146140b0#id> .
+
+<http://www.bbc.co.uk/things/fe14e0ed-cfa6-43fe-83f2-6f5100e0ad56#id> a sport:Competition ;
+    rdfs:label "Danish Superliga 2012/13 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/c0290c21-67e0-4b8f-9dac-41c2b9e62550#id> ;
+    sal:name "Danish Superliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/0f5529b2-d4bc-421f-9e7d-95245d9ca9fa#id> .
+
+<http://www.bbc.co.uk/things/fe1b433e-9cc0-49dc-98ef-09a7a27f4faf#id> a sport:Competition ;
+    rdfs:label "World Cup 2018 Qualifying Season - OFC (Oceania) / CONMEBOL (South America) Play-Off"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/1f6506af-a215-4353-9d07-f393744f77ba#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/91658eff-f985-49e8-9969-27496c4d3ad0#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/91658eff-f985-49e8-9969-27496c4d3ad0#id> .
+
+<http://www.bbc.co.uk/things/febbd64e-cb99-4eea-a5e2-4df61c3a68f3#id> a sport:Competition ;
+    rdfs:label "UEFA Nations League 2018/19 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/2e7fea5a-8383-4cac-adae-186f91bd4296#id> ;
+    sal:name "UEFA Nations League"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/89217517-99f5-4049-bc4e-c2a910300b35#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/89217517-99f5-4049-bc4e-c2a910300b35#id> .
+
+<http://www.bbc.co.uk/things/fefbf99a-2e68-4986-a373-f979393667ba#id> a sport:Competition ;
+    rdfs:label "Austrian Bundesliga 2013/14 Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/f2ebe625-3ee2-4caf-b230-f4e249db17e4#id> ;
+    sal:name "Austrian T-Mobile Bundesliga"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/bf7bc34d-aaee-4ce3-b724-23d17ae9bb8b#id> .
+
+<http://www.bbc.co.uk/things/ffe0813e-e650-4d33-a42c-19bb399918b9#id> a sport:Competition ;
+    rdfs:label "World Cup 2014 Qualifying - Asia/Oceania Play-Off Season (Competition)"@en-gb ;
+    ns1:time <http://www.bbc.co.uk/things/94d57bec-7e3e-48ff-ae30-fb64529c2d9b#id> ;
+    sal:name "FIFA World Cup Qualifying - Asia/Oceania Play-Off"@en-gb ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/17f1075a-1e6e-45a3-838a-707d586ddd10#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/17f1075a-1e6e-45a3-838a-707d586ddd10#id> .
+
+<http://www.bbc.co.uk/things/010e19d1-5a72-46fd-9584-506653c9e7ee#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA European Championship 2013 Under-21 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-06-05"^^xsd:date ;
+    ns3:hasEnd "2015-06-04"^^xsd:date .
+
+<http://www.bbc.co.uk/things/0269913b-eaee-4868-aee7-b38d3ffdc3a5#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Portuguese Primeira Liga 2017/18 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/02d81032-402f-4ac2-8366-cb353d5e8f9f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Brazilian Campeonato Série A 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-10-10"^^xsd:date ;
+    ns3:hasEnd "2016-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/037ef327-af04-416e-b0b6-82d7128dba57#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League Qualifying 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-07-03"^^xsd:date ;
+    ns3:hasEnd "2013-07-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/04a4aa3d-0e7f-466e-a683-0e3b59d8db3c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Coupe de France 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-05-25"^^xsd:date .
+
+<http://www.bbc.co.uk/things/05597f4d-91c8-41d9-8dc0-dbb0be5752a8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Danish Superliga Qualifying 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-06-13"^^xsd:date ;
+    ns3:hasEnd "2015-06-12"^^xsd:date .
+
+<http://www.bbc.co.uk/things/0796fe34-8ecb-4d35-a5ca-4a223b525e1e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "AFC Asian Cup 2019 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-01-01"^^xsd:date ;
+    ns3:hasEnd "2021-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/07a86328-c8e3-440a-9d10-52b26f0e16ec#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "United States Major League Soccer 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-03-08"^^xsd:date ;
+    ns3:hasEnd "2014-12-20"^^xsd:date .
+
+<http://www.bbc.co.uk/things/08cf5415-afa3-4dad-815e-df4e247ae5fc#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League Qualifying 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-07-01"^^xsd:date ;
+    ns3:hasEnd "2013-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/0dfee5fe-507a-4cc6-ba7d-e890804149cb#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Ligue 1 2016/17 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/106860a7-c2dd-42dc-a6eb-69fb6c98b81e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Coupe de France 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-01"^^xsd:date ;
+    ns3:hasEnd "2015-05-25"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1089f31a-5ae1-45a2-9e92-f8bfe1cffa6f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Africa Cup of Nations 2013 (2012) Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-01"^^xsd:date ;
+    ns3:hasEnd "2014-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/10ef3677-1103-4412-ab13-5c047270721d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League Qualifying 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/11427f51-53f2-4082-9503-8229d11acb2b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "FAI Cup 2017 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-02-01"^^xsd:date ;
+    ns3:hasEnd "2017-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/115389e7-aaae-4ba0-95ad-8413aeca269d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Women's Champions League 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/141e374c-69af-4134-b850-77f0678c75f9#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Belgian First Division A 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/16f2cde0-6e9c-41e2-bbd1-6062de029f75#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Finnish Veikkausliiga 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-04-13"^^xsd:date ;
+    ns3:hasEnd "2014-04-12"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1757da61-9bd0-4804-8ce5-70b7a68f7a6b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Swiss Super League 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-07-13"^^xsd:date ;
+    ns3:hasEnd "2014-07-12"^^xsd:date .
+
+<http://www.bbc.co.uk/things/18800788-b0bf-4b94-b1ed-04e0f0b7c8e0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "FIFA Women's World Cup 2019 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-01-01"^^xsd:date ;
+    ns3:hasEnd "2021-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1bed1e77-026c-485a-9d56-5aa64fc1aa9f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Copa America Centennial Cup 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/1f6506af-a215-4353-9d07-f393744f77ba#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2018 Qualifying Season - OFC (Oceania) / CONMEBOL (South America) Play-Off (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2018-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/230379b8-438e-40b8-9f0c-d366afea7128#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's International Friendlies 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-09-01"^^xsd:date ;
+    ns3:hasEnd "2017-08-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2502d59a-7f07-423b-bdcf-853a1254e142#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/25dcadaf-3184-4c8f-a2af-5b0a306afedd#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's International Friendlies 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-01"^^xsd:date ;
+    ns3:hasEnd "2015-09-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/26cc7770-3fbc-4920-b173-e5431a388df5#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2014 Qualifying - European (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-09-07"^^xsd:date ;
+    ns3:hasEnd "2013-11-20"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2758381d-df41-4466-ac5a-c29cdcc7f4a0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-06-02"^^xsd:date ;
+    ns3:hasEnd "2016-06-18"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2c3f22e6-384c-4fb1-b982-6e5310812cd4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's International Friendlies 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-09-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2c9dbef4-bca9-4dfb-a396-2296e6ddb95f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Spanish La Liga 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-06-01"^^xsd:date ;
+    ns3:hasEnd "2019-06-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2d2db1f1-ebac-48d2-8a66-378bbfb094b7#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Champions League Qualifying 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-06-01"^^xsd:date ;
+    ns3:hasEnd "2020-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2daa0be5-d65e-4f0f-b5e5-e433e8b77a21#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Turkish Super Lig 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-17"^^xsd:date ;
+    ns3:hasEnd "2013-08-16"^^xsd:date .
+
+<http://www.bbc.co.uk/things/2e7fea5a-8383-4cac-adae-186f91bd4296#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Nations League 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-08-01"^^xsd:date ;
+    ns3:hasEnd "2019-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/30f9fef4-cc07-4a6d-a29a-2179c3b33c6c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Belgian First Division A 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/34ed3031-8ea9-4ec4-ab57-8ee1029c4bae#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Coupe de la Ligue 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/37003fc8-729c-438c-94e4-921863d5c959#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Spanish La Liga 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-06-01"^^xsd:date ;
+    ns3:hasEnd "2020-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/37c2723e-332e-43d2-8ad8-ac6ef045ae4c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "United States Major League Soccer 2018 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-02-01"^^xsd:date ;
+    ns3:hasEnd "2019-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/37dff0ff-a741-410d-9227-e7c6efacd18c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Norwegian Eliteserien 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-02-01"^^xsd:date ;
+    ns3:hasEnd "2018-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/39f05185-a20a-42c3-9b89-cbdf3e02c2b5#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Spanish La Liga 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-08-17"^^xsd:date ;
+    ns3:hasEnd "2014-08-16"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3ac2a93e-3a45-432a-af55-b20870bb0f27#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Africa Cup of Nations 2019 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-08-01"^^xsd:date ;
+    ns3:hasEnd "2021-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3b1c5fdc-b591-4d85-b67f-39887d34fb10#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "China Cup Season 2018 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-03-01"^^xsd:date ;
+    ns3:hasEnd "2018-08-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3c59446f-39bb-4aa3-9570-7523354c7da4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Swedish Allsvenskan 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-03-31"^^xsd:date ;
+    ns3:hasEnd "2014-03-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3c79b080-8b56-42b1-8922-3ac1e506e82e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Ligue 1 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-09"^^xsd:date ;
+    ns3:hasEnd "2015-08-08"^^xsd:date .
+
+<http://www.bbc.co.uk/things/3d5f1e82-aba8-466d-a45b-b159b93c847c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2018 Qualifying Season - CONCACAF (North and Central America) Region (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-03-01"^^xsd:date ;
+    ns3:hasEnd "2017-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/406aafba-470b-47de-aa07-b42e46b34679#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German DFB Cup 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-01"^^xsd:date ;
+    ns3:hasEnd "2015-05-25"^^xsd:date .
+
+<http://www.bbc.co.uk/things/41039026-311f-4e30-857c-e8393f5b5b9d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Europa League 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-06-01"^^xsd:date ;
+    ns3:hasEnd "2020-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/41809761-742c-4c93-babb-51f327e497c0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Swedish Allsvenskan (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-03-30"^^xsd:date ;
+    ns3:hasEnd "2015-03-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4184d41b-e845-49e9-afdf-207319f94a3b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's European Championship 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-07-01"^^xsd:date ;
+    ns3:hasEnd "2017-08-15"^^xsd:date .
+
+<http://www.bbc.co.uk/things/42ae38ab-3437-4ab1-8811-a742066e80cd#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Women's Champions League (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-08"^^xsd:date ;
+    ns3:hasEnd "2015-08-07"^^xsd:date .
+
+<http://www.bbc.co.uk/things/46a04513-b4e5-4087-afc4-2e3c1d94fd24#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Belgian Pro League 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-07-01"^^xsd:date ;
+    ns3:hasEnd "2014-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/47c0d6fa-a519-4efa-8f91-cd853934bd5a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2018 Qualifying Season - CONCACAF (North and Central America) / AFC (Asia) Play-Off (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2017-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4a0ba7ba-0cd5-49aa-b5be-4810ad49da64#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Turkish Super Lig 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-08-17"^^xsd:date ;
+    ns3:hasEnd "2014-08-16"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4c5db579-f051-47aa-b590-42b0aac239a4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Dutch Eredivisie 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4c7df15f-555a-4ff2-abe5-b0485f4d5991#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Italian Serie A  2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-08-24"^^xsd:date ;
+    ns3:hasEnd "2014-08-23"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4ced301a-f104-464c-85b8-63696246bd6b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "European Championship 2017 Under-21 Qualifying Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-03-01"^^xsd:date ;
+    ns3:hasEnd "2016-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/4ec095d9-aa1e-4b48-8365-f291341c9595#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "B Internationals 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-01"^^xsd:date ;
+    ns3:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/50ca5717-f3ed-4814-9d82-f77e67552f00#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-06-18"^^xsd:date ;
+    ns3:hasEnd "2013-06-18"^^xsd:date .
+
+<http://www.bbc.co.uk/things/51837a1d-e92b-4544-b94b-11e7ed490795#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Spanish Copa del Rey 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-01"^^xsd:date ;
+    ns3:hasEnd "2015-05-25"^^xsd:date .
+
+<http://www.bbc.co.uk/things/518a3c96-28ac-42b8-8f0d-7f7a4a9fc199#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Spanish La Liga 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/52cc479c-ce7f-423c-84ec-3385180fab7d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "B Internationals 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-08-01"^^xsd:date ;
+    ns3:hasEnd "2014-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/52e86ac2-5407-48bc-b248-3cc911f1a5b9#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Swedish Allsvenskan 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-02-01"^^xsd:date ;
+    ns3:hasEnd "2017-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/52e88ba5-b6c3-41b5-a249-6caaa552fe81#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Spanish Copa del Rey 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/539edc77-dae3-4443-a4e0-1a7bdd37fe9f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Ligue 1 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-09"^^xsd:date ;
+    ns3:hasEnd "2013-08-08"^^xsd:date .
+
+<http://www.bbc.co.uk/things/53ad185b-de51-4772-8fce-af41903e32cd#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Greek Superleague 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-17"^^xsd:date ;
+    ns3:hasEnd "2013-08-16"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5413a48e-1a0a-40dd-ab91-50e3f16a4b3d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Italian Coppa Italia 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/54542eaf-ec8c-4b9c-8891-b140c6b7455b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Coupe de France 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/55ca6d03-ead1-441d-98d1-7bbb73a807ab#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Austrian Bundesliga 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5737b279-14a5-46a0-a182-c755b71b7235#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Spanish La Liga 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/58bc1fa1-2c61-4410-b593-ad01e913f6f8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Italian Serie A  2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-24"^^xsd:date ;
+    ns3:hasEnd "2013-08-23"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5a0dc4b3-bcbb-424f-9564-5aa982c10031#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Belgian Pro League 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-07-01"^^xsd:date ;
+    ns3:hasEnd "2015-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5a485554-58e6-429d-99a5-3f683413b749#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Portuguese Primeira Liga 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-08-18"^^xsd:date ;
+    ns3:hasEnd "2014-08-17"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5adafe33-4545-4d86-ad6c-4390d00d59ba#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Italian Serie A  2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5c1a9628-a09c-4ffb-b414-f381df592fa2#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Belgian Pro League 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-07-01"^^xsd:date ;
+    ns3:hasEnd "2013-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5c6533cb-1fad-445e-9ac0-16ffedb99a62#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Swedish Allsvenskan 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-03-31"^^xsd:date ;
+    ns3:hasEnd "2013-03-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5e4d1efe-20d2-4d86-99ce-019ef03d6e45#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "FIFA Women's World Cup Qualifying 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-04-04"^^xsd:date ;
+    ns3:hasEnd "2014-11-14"^^xsd:date .
+
+<http://www.bbc.co.uk/things/5f12f360-0653-4420-8dcc-d871f3d2c754#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German DFB Cup 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/61572782-866c-4e6d-9c06-ffb805548810#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League Qualifying 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-07-01"^^xsd:date ;
+    ns3:hasEnd "2014-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/623ee2ec-77fc-4f70-b43e-63c8390d8e9e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Danish Superliga 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/63f9517b-52ed-4bd5-b84e-f89bfa8c9777#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's Olympic Football 2016 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2019-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6413c5bb-e672-4c20-8434-035dae657585#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Euro 2012 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-04-18"^^xsd:date ;
+    ns3:hasEnd "2015-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6440d5e8-c369-443f-99b0-5327b536b16d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "2016 SheBelieves Cup (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/653cc099-7f71-4a43-87b1-956b6c74598d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "United States Major League Soccer 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-02-01"^^xsd:date ;
+    ns3:hasEnd "2017-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/65cdfaee-e3c5-4a9e-aef7-c398abd9f7ba#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Ligue 1 2019/20 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-06-01"^^xsd:date ;
+    ns3:hasEnd "2020-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/667b3606-fea1-438a-883e-71963b720fa9#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's European Championship 2013 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-09-09"^^xsd:date .
+
+<http://www.bbc.co.uk/things/66a4feb8-20d0-4f5a-b78b-c0b890fb0445#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German DFB Cup 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-05-25"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6793420c-57f0-4d9d-88c8-0829c04fc782#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Italian Coppa Italia 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-01"^^xsd:date ;
+    ns3:hasEnd "2015-05-25"^^xsd:date .
+
+<http://www.bbc.co.uk/things/67bed694-40ba-4d2b-a878-57e52f0b75f1#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Super Cup 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-08-30"^^xsd:date ;
+    ns3:hasEnd "2014-08-29"^^xsd:date .
+
+<http://www.bbc.co.uk/things/67f1df9a-989e-4399-826f-a5141ca610da#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "CONCACAF Gold Cup 2019 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-06-17"^^xsd:date ;
+    ns3:hasEnd "2021-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/68b55cb3-72f9-42e3-a05d-a3116fa42338#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "FIFA Women's World Cup Qualifying 2015 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-05-21"^^xsd:date ;
+    ns3:hasEnd "2014-11-27"^^xsd:date .
+
+<http://www.bbc.co.uk/things/69017331-a9b3-4e19-a99c-dc6ca2400bc1#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Norwegian Tippeligaen (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-03-15"^^xsd:date ;
+    ns3:hasEnd "2015-03-14"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6abe1bb3-ebf4-4f5d-b394-3a97199f9979#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League Qualifying 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-07-01"^^xsd:date ;
+    ns3:hasEnd "2016-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6d6b651c-957b-4a29-927b-481b3c5b96ca#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Copa America 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-07-31"^^xsd:date ;
+    ns3:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6df39755-e6c3-41f4-832f-5b0399c8161a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Italian Coppa Italia 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-05-25"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6e3f0e67-4c82-43b3-a4c0-7181008b45b0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Italian Serie A 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-06-01"^^xsd:date ;
+    ns3:hasEnd "2020-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/6f02aaed-de96-4014-83e7-fad7e2153675#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-06-02"^^xsd:date ;
+    ns3:hasEnd "2015-06-18"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7152eeb0-c3fb-4ee2-a718-7c2bc4bfd347#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German Bundesliga 2015/16 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/71f185bd-771f-4c2f-b52a-e4bc4f7ab0c8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Swiss Super League (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-07-13"^^xsd:date ;
+    ns3:hasEnd "2015-07-12"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7239efec-10f0-4b9c-b643-660b968b9b3b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Austrian Bundesliga 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-06-22"^^xsd:date ;
+    ns3:hasEnd "2015-06-21"^^xsd:date .
+
+<http://www.bbc.co.uk/things/730ab0df-539b-416d-b690-e65e7b939eae#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2018 Qualifying Season - CAF (Africa) Region (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-10-01"^^xsd:date ;
+    ns3:hasEnd "2017-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/744439c4-41f0-4579-ba3a-577b4a52bcb0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German Bundesliga 2019/20 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-06-01"^^xsd:date ;
+    ns3:hasEnd "2020-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/74679486-6315-4e4c-98e4-cef36b90e32f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "United States Major League Soccer 2019 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-02-01"^^xsd:date ;
+    ns3:hasEnd "2020-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7667b33b-80e0-418a-afab-a3e30e85c4d6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Russian Premier League 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/771053e2-fd39-49f3-9b4a-86ac933f47c3#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Dutch Eredivisie 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-01"^^xsd:date ;
+    ns3:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7731a610-d8f9-496e-b472-933b970f1fd9#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Under-21 Friendly 2014 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-01-01"^^xsd:date ;
+    ns3:hasEnd "2014-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/79284bc9-43c5-43fc-bf96-2f5c06ad7adb#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "FIFA Club World Cup 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-12-06"^^xsd:date ;
+    ns3:hasEnd "2013-12-02"^^xsd:date .
+
+<http://www.bbc.co.uk/things/793d3018-09ff-4359-b2b5-0614029dabf4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Danish Superliga 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7ab443ae-376c-4634-b1ff-a69ed9da2360#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Russian Premier League 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-07-10"^^xsd:date ;
+    ns3:hasEnd "2014-05-20"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7af6e82b-a9f6-4049-98b0-4d9cfd20425a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League Qualifying 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-07-02"^^xsd:date ;
+    ns3:hasEnd "2014-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7d009262-aaab-4ce8-b7cd-7d478f8e4a21#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Europa League 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-06-01"^^xsd:date ;
+    ns3:hasEnd "2019-06-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7e07de54-b357-4dd4-9169-ea3f5cc36541#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Italian Serie A  2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7e2affc6-6680-4ffe-8610-527cb28f33f3#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "United States Major League Soccer All-Star Game 2017 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-07-01"^^xsd:date ;
+    ns3:hasEnd "2018-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7e43963c-a210-47df-8604-c420ce69e3b1#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2014 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2010-07-12"^^xsd:date ;
+    ns3:hasEnd "2014-07-13"^^xsd:date .
+
+<http://www.bbc.co.uk/things/7f107322-4931-44bb-8d90-4d4f5c4898ba#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "FIFA Women's World Cup 2015 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-06-02"^^xsd:date ;
+    ns3:hasEnd "2017-07-05"^^xsd:date .
+
+<http://www.bbc.co.uk/things/806e9763-8ee4-4666-bebc-451f73e8c152#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "United States Major League Soccer 2020 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2020-02-01"^^xsd:date ;
+    ns3:hasEnd "2021-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/80b90948-c13b-407c-8342-5d1129320c9f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Super Cup (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-30"^^xsd:date ;
+    ns3:hasEnd "2015-08-29"^^xsd:date .
+
+<http://www.bbc.co.uk/things/831c7674-ae68-42da-a895-00b27c9a91bd#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "European Championship 2015 Under-21 Qualifying (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-03-22"^^xsd:date ;
+    ns3:hasEnd "2014-09-09"^^xsd:date .
+
+<http://www.bbc.co.uk/things/83b87284-82ac-4713-80f2-8035953874d0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Danish Superliga 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-06-13"^^xsd:date ;
+    ns3:hasEnd "2016-06-12"^^xsd:date .
+
+<http://www.bbc.co.uk/things/83e40758-2e67-4ca6-8a6e-8049e49468f1#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "B Internationals 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/841cdbf1-3af8-4aac-af1d-a4ce937d1bfe#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Argentine Primera Division 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/85dae73a-bcd3-4652-b50b-4a45d2cc6ea7#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German Bundesliga 2016/17 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/890d8043-2da7-494f-85e9-41a9e77b0c39#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2018 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-01-08"^^xsd:date ;
+    ns3:hasEnd "2021-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8a29db50-b9ba-4c6a-8f82-6bbd8d732818#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8af8d0f5-eef0-4171-a982-59af18b4df4e#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Australian Hyundai A-League 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-10-10"^^xsd:date ;
+    ns3:hasEnd "2016-04-19"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8c81d515-f294-48de-930e-5616c313de21#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German Bundesliga 2018/19 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-06-01"^^xsd:date ;
+    ns3:hasEnd "2019-06-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8c88dad2-01bf-422e-9edb-474bd82f081a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Finnish Veikkausliiga 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-04-13"^^xsd:date ;
+    ns3:hasEnd "2015-04-12"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8edd0049-b7a0-45e2-b669-7008eb54dd76#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Dutch Eredivisie 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8f955f6a-0725-4e11-a79b-fc35051c0909#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Dutch Eredevisie 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-08-01"^^xsd:date ;
+    ns3:hasEnd "2014-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/8fe8b42b-5e14-4e23-8388-995b9cebb635#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2018 Qualifying Season - AFC (Asia) Region (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-03-01"^^xsd:date ;
+    ns3:hasEnd "2017-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/90982362-2640-47b5-8124-4de7a3cc08a7#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Champions League 2019/20 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-06-01"^^xsd:date ;
+    ns3:hasEnd "2020-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/90e3a521-011d-433c-add5-6053bba6f2d0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League 2011/12 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-06-17"^^xsd:date ;
+    ns3:hasEnd "2011-06-17"^^xsd:date .
+
+<http://www.bbc.co.uk/things/928a777f-2b54-41b2-b5e9-47761325af9c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Chilean Primera Division 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-07-01"^^xsd:date ;
+    ns3:hasEnd "2018-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/92b8ebdf-c601-474f-9933-49e5f83b5d14#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Champions League Qualifying 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/932d935a-bcbb-4e5e-952e-164642fe33bc#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Dutch Eredevisie 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-01"^^xsd:date ;
+    ns3:hasEnd "2013-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/947968fe-7383-401e-8fc6-6ccc537737d6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Brazilian Campeonato Série A 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-10-10"^^xsd:date ;
+    ns3:hasEnd "2015-04-19"^^xsd:date .
+
+<http://www.bbc.co.uk/things/94c4ad30-fd74-46fa-85c5-80911795e74c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Men's Olympic Football 2016 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2019-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/94d57bec-7e3e-48ff-ae30-fb64529c2d9b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2014 Qualifying - Asia/Oceania Play-Off (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-05-16"^^xsd:date ;
+    ns3:hasEnd "2013-11-20"^^xsd:date .
+
+<http://www.bbc.co.uk/things/95b86b47-208e-4e6b-b939-87d64574e987#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Women's European Championship Qualifying 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-10-31"^^xsd:date ;
+    ns3:hasEnd "2016-10-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/95d7e1ca-8f4e-4575-8ba0-f7fdfe7f9850#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Norwegian Tippeligaen 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-03-15"^^xsd:date ;
+    ns3:hasEnd "2014-03-14"^^xsd:date .
+
+<http://www.bbc.co.uk/things/96765f56-be9a-4d2a-aeff-fef5fc8f554d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Europa League 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/97e5b421-fb15-4d62-b0ac-99eaefb7d174#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Africa Cup of Nations 2017 (2016) Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-08-01"^^xsd:date ;
+    ns3:hasEnd "2018-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/9c03030d-e965-4e2c-bc88-6d695901764a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German Bundesliga 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-09"^^xsd:date ;
+    ns3:hasEnd "2013-08-08"^^xsd:date .
+
+<http://www.bbc.co.uk/things/9da81ba0-0f9f-481a-bc0d-e91e99db190b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Austrian Bundesliga 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/9f7d097a-0b9c-4546-a63b-2262fb13fc4c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Colombian Primera A Finalizacion 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-07-01"^^xsd:date ;
+    ns3:hasEnd "2017-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a0921ced-c746-4331-b77d-2c09fdedc827#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2018 Qualifying Season - CONMEBOL (South America) Region (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-10-01"^^xsd:date ;
+    ns3:hasEnd "2017-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a3bb8c39-94aa-4bf0-bf3a-241acb4e3272#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Belgian Pro League 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-07-01"^^xsd:date ;
+    ns3:hasEnd "2016-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/a539951f-75bc-47ed-8470-f1c3ae58cfe7#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Dutch Eredivisie 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/aafbea57-e81b-43b5-b555-87300014e670#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-06-02"^^xsd:date ;
+    ns3:hasEnd "2016-06-18"^^xsd:date .
+
+<http://www.bbc.co.uk/things/acb7c81a-63ce-4fe6-bea5-d222ae8b58ea#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-06-19"^^xsd:date ;
+    ns3:hasEnd "2014-06-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/adad840b-faf1-4123-9aba-92a757f5bea4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Swiss Super League 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-07-01"^^xsd:date ;
+    ns3:hasEnd "2017-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b010a3a4-5f43-4737-b41e-1574ecac02d4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Finnish Veikkausliiga 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-04-13"^^xsd:date ;
+    ns3:hasEnd "2013-04-12"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b0691559-abb0-451c-a406-bc253b2ac455#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Champions League 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b10f21aa-8bfc-460c-9272-04d32cfcf98d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2018 Qualifying Season - UEFA (Europe) Region (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-09-01"^^xsd:date ;
+    ns3:hasEnd "2018-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b281b6a1-6d22-4b63-95b1-a260109491de#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Austrian Bundesliga 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-06-22"^^xsd:date ;
+    ns3:hasEnd "2016-06-21"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b3952ac1-9888-4669-bf05-3fe93bec10f6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Confederations Cup 2017/21 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2021-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b52f1b6a-6ee4-4739-900b-b8fa1b3329a8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-06-02"^^xsd:date ;
+    ns3:hasEnd "2015-06-18"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b5b0a790-1a6d-496f-bd80-161d4a7abbb8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Ligue 1 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-08-09"^^xsd:date ;
+    ns3:hasEnd "2014-08-08"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b5c6ba3c-5f96-4076-908d-4c5f862d5033#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Swiss Super League 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-07-13"^^xsd:date ;
+    ns3:hasEnd "2013-07-12"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b61d0c22-3588-45b7-b946-81ad47579ad9#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Women's Champions League 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-08"^^xsd:date ;
+    ns3:hasEnd "2013-08-07"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b639e39f-7482-4812-94d0-dead8c7adec3#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Europa League Qualifying 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-07-01"^^xsd:date ;
+    ns3:hasEnd "2015-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b6915fa3-a470-4e2c-97ea-14501c977d25#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German Bundesliga 2017/18 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b6c08825-3034-4da4-a677-93e18a5531d9#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Greek Superleague 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b794328a-8377-40c3-b6e1-4a7d69d31138#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Portuguese Primeira Liga 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-18"^^xsd:date ;
+    ns3:hasEnd "2013-08-17"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b811a981-6133-43d7-b111-203e69c88503#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2018 Qualifying Season - OFC (Oceania) Region (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2017-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b94fdcc7-c30a-4123-8875-af0c233a57f2#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Africa Cup of Nations 2015 (2014) Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/b9a6cb3e-0ee0-4c3a-8f51-ab88ea797d12#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Danish Superliga 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-06-13"^^xsd:date ;
+    ns3:hasEnd "2014-06-12"^^xsd:date .
+
+<http://www.bbc.co.uk/things/be744a2e-b1e4-4f62-bca5-a27cc59a7b0f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2014 Qualifying - African (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-05-16"^^xsd:date ;
+    ns3:hasEnd "2013-11-20"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c0290c21-67e0-4b8f-9dac-41c2b9e62550#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Danish Superliga 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-06-13"^^xsd:date ;
+    ns3:hasEnd "2013-06-12"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c46024e9-67f4-449e-b2a1-f7ceeae36f28#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Confederations Cup 2013/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-06-15"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c6469d6f-c20a-4f43-ba74-01dc9dc03344#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Champions League 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-06-01"^^xsd:date ;
+    ns3:hasEnd "2019-06-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/c9dab32d-7653-4111-9ea5-7604c462f45d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Ligue 1 2018/19 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-06-01"^^xsd:date ;
+    ns3:hasEnd "2019-06-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ca9ddb2a-3464-453a-bce2-72d1802a5c48#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Russian Premier League 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cb048c23-7aa5-440b-ac0a-b28fe09a9ef0#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Women's Champions League 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-08-08"^^xsd:date ;
+    ns3:hasEnd "2014-08-07"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cb521b36-d230-4251-8f95-0ca19fad535a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Finnish Veikkausliiga 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-02-01"^^xsd:date ;
+    ns3:hasEnd "2018-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cbca515a-d01e-4096-ae6b-ac9e382a6dc3#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Brazilian Campeonato Série A 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-02-01"^^xsd:date ;
+    ns3:hasEnd "2017-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cc54e12c-d8fb-4034-bd58-5595722fde1b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Turkish Super Lig (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-17"^^xsd:date ;
+    ns3:hasEnd "2015-08-16"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cc78fd73-ceb3-4ec7-ac24-97d741371157#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "European Championship 2019 Under-21 Qualifying (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-03-01"^^xsd:date ;
+    ns3:hasEnd "2018-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/cfa1dc4c-9438-4108-b57c-c5f2da19032b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "World Cup 2014 Qualifying - CONCACAF/South America Play-Off (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-04-26"^^xsd:date ;
+    ns3:hasEnd "2013-11-20"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d09c51f1-dd0e-4b92-9046-6000fd1985ef#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA European Championship 2020 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-12-01"^^xsd:date ;
+    ns3:hasEnd "2023-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d0e65c73-4fee-4da0-b0ff-c75e39c450c5#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Australian A League 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d19a7678-93e5-4cf0-ab61-b8c1bbda1aaa#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Africa Cup of Nations 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-01-19"^^xsd:date ;
+    ns3:hasEnd "2013-01-18"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d2f4bf6f-8fbb-4dda-8954-54d46d4eaac6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Spanish La Liga 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-17"^^xsd:date ;
+    ns3:hasEnd "2013-08-16"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d8c0353f-656d-457c-b3bf-c741279e1d46#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Gold Cup 2015 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-07-01"^^xsd:date ;
+    ns3:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/d9bd29e8-7ae3-44aa-bc5a-e988b5231880#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League Qualifying 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-07-01"^^xsd:date ;
+    ns3:hasEnd "2016-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/db19d2cd-51e8-4217-b45f-d12971dcfa5b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Euro 2016 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-12-01"^^xsd:date ;
+    ns3:hasEnd "2018-11-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/db32810f-cde1-4eec-8c46-7c71bc5c3fbf#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Under-21 Friendly 2013 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-01-01"^^xsd:date ;
+    ns3:hasEnd "2013-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/db4e7f53-b6e8-491c-b3e4-619a6dd41e71#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Swiss Super League 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-07-01"^^xsd:date ;
+    ns3:hasEnd "2018-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/dc222e9e-f36f-45fa-ab50-b9937cf2683c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Australian Hyundai A-League 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-10-10"^^xsd:date ;
+    ns3:hasEnd "2015-04-19"^^xsd:date .
+
+<http://www.bbc.co.uk/things/de1b01fe-1c53-4eed-ab7e-0f7360ee0e72#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Russian Premier League 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-07-10"^^xsd:date ;
+    ns3:hasEnd "2015-05-20"^^xsd:date .
+
+<http://www.bbc.co.uk/things/deef2dd7-d2e3-4fc7-bbf5-e32330aef13d#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Portuguese Primeira Liga 2016/17 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/def2c269-47e6-4915-bbbd-d8e8dc5ad3b4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Portuguese Primeira Liga (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-18"^^xsd:date ;
+    ns3:hasEnd "2015-08-17"^^xsd:date .
+
+<http://www.bbc.co.uk/things/dff28daf-edc6-4e15-ac4d-7654fb842830#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Norwegian Tippeligaen 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-03-15"^^xsd:date ;
+    ns3:hasEnd "2013-03-14"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e2653373-24a1-4287-bd28-63ecc2251991#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League Qualifying 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e26e8c20-4846-4873-9dbf-6368fb737a16#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Turkish Super Lig 2017/2018 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e44b9527-e489-4602-a45a-3f1d4e2f46c9#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German Bundesliga 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-08-09"^^xsd:date ;
+    ns3:hasEnd "2014-08-08"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e51deabd-d98d-47f9-92a0-31b14c3ce804#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "United States Major League Soccer 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-02-01"^^xsd:date ;
+    ns3:hasEnd "2018-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e56b0712-2616-445a-bb2c-a8bfa83e6d90#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League 2011/12 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2011-06-17"^^xsd:date ;
+    ns3:hasEnd "2012-06-17"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e657631b-ed93-4566-89eb-dec74ceadd0f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Champions League Qualifying 2018/19 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-06-01"^^xsd:date ;
+    ns3:hasEnd "2019-06-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e8e74777-9b08-4abb-9feb-f5505d5a4ba8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Japanese J1 League 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-02-01"^^xsd:date ;
+    ns3:hasEnd "2017-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e9d2c9c5-502c-4183-906e-bfe66f99ac92#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "European Championship Qualifiers (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-03-20"^^xsd:date ;
+    ns3:hasEnd "2016-07-09"^^xsd:date .
+
+<http://www.bbc.co.uk/things/e9dad30a-33eb-4f88-9d93-a67b400ee0d6#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-06-18"^^xsd:date ;
+    ns3:hasEnd "2013-06-18"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ec245ef0-d16f-47c2-8ff1-db2242a27a4b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Norwegian Tippeligaen 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-02-01"^^xsd:date ;
+    ns3:hasEnd "2017-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ecb55584-9082-4e09-8ba6-82569183ef84#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Categoria Primera A 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-02-01"^^xsd:date ;
+    ns3:hasEnd "2018-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ed83d4fe-bf5e-4ee7-874a-4ea2be949438#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "FIFA Club World Cup 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-12-03"^^xsd:date ;
+    ns3:hasEnd "2014-10-09"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ef012e05-ffe2-4f91-ba89-4fb4ab2204a8#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "German Bundesliga 2014/15 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-09"^^xsd:date ;
+    ns3:hasEnd "2015-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ef1fd499-2c50-4063-aad6-48399af4057f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Italian Serie A  2018/19 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2018-06-01"^^xsd:date ;
+    ns3:hasEnd "2019-06-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f078161f-92ca-4489-878b-46f7b239c25c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA European Championship Qualifying 2020 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-03-01"^^xsd:date ;
+    ns3:hasEnd "2020-04-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f0e92aef-1a4f-4b8d-b87b-cf8f5b94a7a5#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Spanish La Liga (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-08-17"^^xsd:date ;
+    ns3:hasEnd "2015-08-16"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f2225925-1ad9-4664-acf9-7e85450d1194#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "B Internationals 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-01"^^xsd:date ;
+    ns3:hasEnd "2013-07-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f2ebe625-3ee2-4caf-b230-f4e249db17e4#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Austrian Bundesliga 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-06-21"^^xsd:date ;
+    ns3:hasEnd "2014-06-21"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f3056db3-8a68-42b6-9eed-bc721e8f1804#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Spanish Copa del Rey 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-08-01"^^xsd:date ;
+    ns3:hasEnd "2016-05-25"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f3d67466-807f-4a29-ac04-143836a60824#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League Qualifying 2014/15 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2014-07-01"^^xsd:date ;
+    ns3:hasEnd "2015-06-30"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f5605d56-256a-40da-94c5-ca411a8f9fa3#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "French Ligue 1 2017/18 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f5c8947a-f1ba-4452-949c-c20172287f8c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Mexican Clausura 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f6aed833-0cf1-4514-a9ab-fd6cca669472#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Austrian Bundesliga 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-06-21"^^xsd:date ;
+    ns3:hasEnd "2013-06-20"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f78a9e67-0547-4c1f-8cfc-578d560cc3f9#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "UEFA Super Cup 2012/13 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2012-08-30"^^xsd:date ;
+    ns3:hasEnd "2013-08-29"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f84befe3-edcb-47a4-944d-c6fca22c899b#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "International Friendlies (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-01-01"^^xsd:date ;
+    ns3:hasEnd "2099-12-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/f99ea558-740a-4f50-a697-e98d250a34bd#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Greek Superleague 2017/18 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-06-01"^^xsd:date ;
+    ns3:hasEnd "2018-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fb08dc63-886b-4b4f-8a10-4ef5e960a92a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Copa America 2019 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-06-17"^^xsd:date ;
+    ns3:hasEnd "2020-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fc4c53e5-2de3-498b-8606-213c997a27c5#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Finnish Veikkausliiga 2016 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-02-01"^^xsd:date ;
+    ns3:hasEnd "2017-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fc59d8e3-6731-484c-8628-4971b0cf042f#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "International Champions Cup Season 2016 (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2016-08-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fc8f5328-4d13-4140-a961-a9abf0738412#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Turkish Super Lig 2016/17 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2016-06-01"^^xsd:date ;
+    ns3:hasEnd "2017-05-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fcc0184e-c33c-41c4-88a1-e10d3f0e892a#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "United States Major League Soccer 2015/16 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2015-03-08"^^xsd:date ;
+    ns3:hasEnd "2015-12-20"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fd5a05c3-9cfb-449c-b7c2-b224f7f4f46c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Swedish Allsvenskan 2017 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2017-02-01"^^xsd:date ;
+    ns3:hasEnd "2018-01-31"^^xsd:date .
+
+<http://www.bbc.co.uk/things/fd5b2436-4ced-472d-91a0-6e821b7ade0c#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Champions League 2013/14 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2013-06-19"^^xsd:date ;
+    ns3:hasEnd "2014-06-01"^^xsd:date .
+
+<http://www.bbc.co.uk/things/ff1360ee-62f5-49db-a9b2-18f1b95b12c9#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "European Championship 2019 Under-21 Season (Temporal Entity)"@en-gb ;
+    ns3:hasBeginning "2019-06-17"^^xsd:date ;
+    ns3:hasEnd "2021-05-31"^^xsd:date .
+

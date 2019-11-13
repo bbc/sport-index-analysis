@@ -1,0 +1,146 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/d58f04b0-08d7-4398-abab-0baedceea6c3#id> a provenance:Dataset ;
+    rdfs:label "Football: European and International 2016 Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/football/european-and-international-football-2016-stages-and-rounds-2.ttl" ;
+    provenance:changeReason "Adding hasStage predicate" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2014-03-21T09:49:48+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:tom.grahame@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/d349b397-159b-45d4-86c5-cfb6e9626718#id> sport:hasStage <http://www.bbc.co.uk/things/67c6da3b-e94a-4632-9c70-9bd822c8b095#id> .
+
+<http://www.bbc.co.uk/things/1305a9f0-d091-4e03-9c18-41b99e765e31#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of European Championship Qualifiers"@en-gb ;
+    sal:name "Group H"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112016S1R8> ;
+    core:preferredLabel "Group H"@en-gb ;
+    core:shortLabel "Group H"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5bdc447c-1a3a-40bb-8298-119123cbbab3#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of European Championship Qualifiers"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112016S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/5f8afc5d-7fda-4d01-85dd-d08190f70979#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of European Championship Qualifiers"@en-gb ;
+    sal:name "Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112016S1R6> ;
+    core:preferredLabel "Group F"@en-gb ;
+    core:shortLabel "Group F"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/602cbcee-8be6-497c-a0d8-ff9bccf917a1#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of European Championship Qualifiers"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112016S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/67c6da3b-e94a-4632-9c70-9bd822c8b095#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of European Championship Qualifiers"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112016S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/7c398abe-5de2-408f-afa6-7f446e5e1215#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/1305a9f0-d091-4e03-9c18-41b99e765e31#id>,
+        <http://www.bbc.co.uk/things/5bdc447c-1a3a-40bb-8298-119123cbbab3#id>,
+        <http://www.bbc.co.uk/things/5f8afc5d-7fda-4d01-85dd-d08190f70979#id>,
+        <http://www.bbc.co.uk/things/602cbcee-8be6-497c-a0d8-ff9bccf917a1#id>,
+        <http://www.bbc.co.uk/things/c09952c8-eb2f-45f7-95c0-8d9e780cad95#id>,
+        <http://www.bbc.co.uk/things/d2a87506-4433-437c-b98b-6933ea2c0cef#id>,
+        <http://www.bbc.co.uk/things/f54df164-5be0-4024-9fe9-30a4990ff706#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/9ee2f73b-992a-4efa-b990-5cb1e27359d6#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/7c398abe-5de2-408f-afa6-7f446e5e1215#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of European Championship Qualifiers"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112016S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/9ee2f73b-992a-4efa-b990-5cb1e27359d6#id> a sport:Round ;
+    rdfs:label "Round 9 of Stage 1 of European Championship Qualifiers"@en-gb ;
+    sal:name "Group I"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112016S1R9> ;
+    core:preferredLabel "Group I"@en-gb ;
+    core:shortLabel "Group I"@en-gb ;
+    sport:roundNumber 9 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/c09952c8-eb2f-45f7-95c0-8d9e780cad95#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of European Championship Qualifiers"@en-gb ;
+    sal:name "Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112016S1R5> ;
+    core:preferredLabel "Group E"@en-gb ;
+    core:shortLabel "Group E"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/d2a87506-4433-437c-b98b-6933ea2c0cef#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of European Championship Qualifiers"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112016S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/f54df164-5be0-4024-9fe9-30a4990ff706#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of European Championship Qualifiers"@en-gb ;
+    sal:name "Group G"@en-gb ;
+    cms:locator <urn:sports-data:CFBB235112016S1R7> ;
+    core:preferredLabel "Group G"@en-gb ;
+    core:shortLabel "Group G"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB235112016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112016S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112016S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112016S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112016S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112016S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112016S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112016S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB235112016S1R9> a cms:Sports-DataLocator .
+

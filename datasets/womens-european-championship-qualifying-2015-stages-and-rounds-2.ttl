@@ -1,0 +1,134 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/ffd433d9-d274-4019-9670-c6cb32f7909f#id> a provenance:Dataset ;
+    rdfs:label "Football: Women's European Championship Qualifying 2015 stages and rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/football/womens-european-championship-qualifying-2015-stages-and-rounds-2.ttl" ;
+    provenance:changeReason "SLS-763: Correct the sal prefix; Model Women's European Qualifying Groups Rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2015-09-16T09:52:57+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:dong.liu@bbc.co.uk> ;
+    provenance:version "2"^^xsd:int .
+
+<http://www.bbc.co.uk/things/718047d7-b664-4e77-b444-4c2473ae8736#id> sport:hasStage <http://www.bbc.co.uk/things/cd038cb6-ca4f-48f3-820c-d06bc6521df9#id> .
+
+<http://www.bbc.co.uk/things/15b19588-562b-4802-82ce-7f1e9a46abd3#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group 7"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5652015S1R7> ;
+    core:preferredLabel "Group 7"@en-gb ;
+    core:shortLabel "Group 7"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/18c55d2d-53d8-44dc-b1ef-41c3a9022fa4#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group 8"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5652015S1R8> ;
+    core:preferredLabel "Group 8"@en-gb ;
+    core:shortLabel "Group 8"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/3161138b-8e4c-453c-9216-1401ef5cbbac#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group 1"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5652015S1R1> ;
+    core:preferredLabel "Group 1"@en-gb ;
+    core:shortLabel "Group 1"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/3289c7c3-b37e-499c-8d31-e1bdbc6ebabf#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group 3"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5652015S1R3> ;
+    core:preferredLabel "Group 3"@en-gb ;
+    core:shortLabel "Group 3"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/3e2c657b-fdd1-4b78-9646-f49e6bc9f874#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group 4"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5652015S1R4> ;
+    core:preferredLabel "Group 4"@en-gb ;
+    core:shortLabel "Group 4"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/565684b0-983e-41b4-a3d9-24d6ba669115#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group 5"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5652015S1R5> ;
+    core:preferredLabel "Group 5"@en-gb ;
+    core:shortLabel "Group 5"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/6552b7ab-e81c-4e35-a657-93281e573658#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group 6"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5652015S1R6> ;
+    core:preferredLabel "Group 6"@en-gb ;
+    core:shortLabel "Group 6"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/cd038cb6-ca4f-48f3-820c-d06bc6521df9#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of Women's European Championship Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5652015S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/3161138b-8e4c-453c-9216-1401ef5cbbac#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/15b19588-562b-4802-82ce-7f1e9a46abd3#id>,
+        <http://www.bbc.co.uk/things/3289c7c3-b37e-499c-8d31-e1bdbc6ebabf#id>,
+        <http://www.bbc.co.uk/things/3e2c657b-fdd1-4b78-9646-f49e6bc9f874#id>,
+        <http://www.bbc.co.uk/things/565684b0-983e-41b4-a3d9-24d6ba669115#id>,
+        <http://www.bbc.co.uk/things/6552b7ab-e81c-4e35-a657-93281e573658#id>,
+        <http://www.bbc.co.uk/things/d101505a-72a6-4955-950e-2f10621952f0#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/18c55d2d-53d8-44dc-b1ef-41c3a9022fa4#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/d101505a-72a6-4955-950e-2f10621952f0#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of Women's European Championship Qualifying"@en-gb ;
+    sal:name "Group 2"@en-gb ;
+    cms:locator <urn:sports-data:CFBB5652015S1R2> ;
+    core:preferredLabel "Group 2"@en-gb ;
+    core:shortLabel "Group 2"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB5652015S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5652015S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5652015S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5652015S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5652015S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5652015S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5652015S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5652015S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB5652015S1R8> a cms:Sports-DataLocator .
+

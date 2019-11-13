@@ -1,0 +1,220 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/7d04fad4-57c5-41a1-84a3-efd12f50731e#id> a provenance:Dataset ;
+    rdfs:label "Football: FA Cup 2019/20 stages and rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/fa-cup-2019-stages-and-rounds.ttl" ;
+    provenance:changeReason "SWD-808: FA Cup 2019/20 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-06-05T10:13:59+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/ff9fd6eb-8f9f-4e01-aee5-373160c69a8b#id> sport:firstStage <http://www.bbc.co.uk/things/11d1cf07-e93d-4897-ad7a-feb6b527d0c6#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/d00b255a-e825-498a-82c0-98cbcdfbfcd5#id> .
+
+<http://www.bbc.co.uk/things/08362936-f818-4c62-b166-be1a172ee907#id> a sport:Round ;
+    rdfs:label "Round 7 of Stage 1 of FA Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12019S1R7> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/11d1cf07-e93d-4897-ad7a-feb6b527d0c6#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of FA Cup"@en-gb ;
+    sal:name "FA Cup Qualifying"@en-gb ;
+    cms:locator <urn:sports-data:CFBB668> ;
+    core:preferredLabel "FA Cup Qualifying"@en-gb ;
+    core:shortLabel "Qualifying"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/2e1d307c-237f-4a59-845e-7c02c80e7345#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/39d2e6a2-9b10-4b43-8f45-8d7e2e2e2b31#id>,
+        <http://www.bbc.co.uk/things/810f9fa0-b759-4315-be5b-2b8a63242adf#id>,
+        <http://www.bbc.co.uk/things/afeab50e-f3a0-43ea-95e8-7eba616722b5#id>,
+        <http://www.bbc.co.uk/things/ce95488d-cb74-4af8-8aa9-9ed125a86640#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/7b2ffb25-2abf-468d-ba8a-aa5508e72080#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/2e1d307c-237f-4a59-845e-7c02c80e7345#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - Extra Preliminary Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682019S1R1> ;
+    core:preferredLabel "Qualifying Extra Preliminary Round"@en-gb ;
+    core:shortLabel "Qual Extra Prelim Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/39d2e6a2-9b10-4b43-8f45-8d7e2e2e2b31#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682019S1R4> ;
+    core:preferredLabel "Qualifying Second Round"@en-gb ;
+    core:shortLabel "Qual Second Round"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/3e101d65-2be9-4d4e-b724-7260cec8b782#id> a sport:Round ;
+    rdfs:label "Round 8 of Stage 1 of FA Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12019S1R8> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 8 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/7b2ffb25-2abf-468d-ba8a-aa5508e72080#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682019S1R6> ;
+    core:preferredLabel "Qualifying Fourth Round"@en-gb ;
+    core:shortLabel "Qual Fourth Round"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/810f9fa0-b759-4315-be5b-2b8a63242adf#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - Preliminary Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682019S1R2> ;
+    core:preferredLabel "Qualifying Preliminary Round"@en-gb ;
+    core:shortLabel "Qual Prelim Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/992d0cb7-c314-4327-ab94-aa86bc362872#id> a sport:Round ;
+    rdfs:label "Round 6 of Stage 1 of FA Cup"@en-gb ;
+    sal:name "Sixth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12019S1R6> ;
+    core:preferredLabel "Sixth Round"@en-gb ;
+    core:shortLabel "Sixth Round"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/a7415aa9-b405-46e9-a419-f340eb16f3f9#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of FA Cup"@en-gb ;
+    sal:name "Second Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12019S1R2> ;
+    core:preferredLabel "Second Round"@en-gb ;
+    core:shortLabel "Second Round"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/afeab50e-f3a0-43ea-95e8-7eba616722b5#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682019S1R5> ;
+    core:preferredLabel "Qualifying Third Round"@en-gb ;
+    core:shortLabel "Qual Third Round"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/b3c4a31c-ab9d-430a-909a-eaa3a2119c09#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of FA Cup"@en-gb ;
+    sal:name "First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12019S1R1> ;
+    core:preferredLabel "First Round"@en-gb ;
+    core:shortLabel "First Round"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ce95488d-cb74-4af8-8aa9-9ed125a86640#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of FA Cup Qualifying"@en-gb ;
+    sal:name "Qualifying - First Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB6682019S1R3> ;
+    core:preferredLabel "Qualifying First Round"@en-gb ;
+    core:shortLabel "Qual First Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/d00b255a-e825-498a-82c0-98cbcdfbfcd5#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of FA Cup"@en-gb ;
+    sal:name "FA Cup Knockout Stage"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12019S1> ;
+    core:preferredLabel "FA Cup Knockout Stage"@en-gb ;
+    core:shortLabel "Knockout"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/b3c4a31c-ab9d-430a-909a-eaa3a2119c09#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/08362936-f818-4c62-b166-be1a172ee907#id>,
+        <http://www.bbc.co.uk/things/992d0cb7-c314-4327-ab94-aa86bc362872#id>,
+        <http://www.bbc.co.uk/things/a7415aa9-b405-46e9-a419-f340eb16f3f9#id>,
+        <http://www.bbc.co.uk/things/d3c734d4-10f2-43a9-92f9-8039a1fa14f8#id>,
+        <http://www.bbc.co.uk/things/ecdff57a-2552-4b13-8526-3999eaf51523#id>,
+        <http://www.bbc.co.uk/things/fcc9e57c-e7af-4591-b57f-2bfcfa1bd1f1#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/3e101d65-2be9-4d4e-b724-7260cec8b782#id> ;
+    sport:stageNumber 2 .
+
+<http://www.bbc.co.uk/things/d3c734d4-10f2-43a9-92f9-8039a1fa14f8#id> a sport:Round ;
+    rdfs:label "Round 5 of Stage 1 of FA Cup"@en-gb ;
+    sal:name "Fifth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12019S1R5> ;
+    core:preferredLabel "Fifth Round"@en-gb ;
+    core:shortLabel "Fifth Round"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/ecdff57a-2552-4b13-8526-3999eaf51523#id> a sport:Round ;
+    rdfs:label "Round 4 of Stage 1 of FA Cup"@en-gb ;
+    sal:name "Fourth Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12019S1R4> ;
+    core:preferredLabel "Fourth Round"@en-gb ;
+    core:shortLabel "Fourth Round"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<http://www.bbc.co.uk/things/fcc9e57c-e7af-4591-b57f-2bfcfa1bd1f1#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 1 of FA Cup"@en-gb ;
+    sal:name "Third Round"@en-gb ;
+    cms:locator <urn:sports-data:CFBB12019S1R3> ;
+    core:preferredLabel "Third Round"@en-gb ;
+    core:shortLabel "Third Round"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single> .
+
+<urn:sports-data:CFBB12019S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12019S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12019S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12019S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12019S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12019S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12019S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12019S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB12019S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB668> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682019S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682019S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682019S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682019S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682019S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB6682019S1R6> a cms:Sports-DataLocator .
+

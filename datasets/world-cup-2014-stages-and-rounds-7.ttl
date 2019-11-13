@@ -1,0 +1,202 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/89b8ccd5-0165-4db6-b1bf-8dea6ab5a052#id> a provenance:Dataset ;
+    rdfs:label "Football: World Cup 2014 Stages and Rounds" ;
+    provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/sport/football/world-cup-2014-stages-and-rounds-7.ttl" ;
+    provenance:changeReason "Updating round types" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2014-07-29T09:18:57+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:tom.grahame@bbc.co.uk> ;
+    provenance:version "7"^^xsd:int .
+
+<http://www.bbc.co.uk/things/af181038-2e4b-4873-936e-b5c5c9390ea0#id> sport:firstStage <http://www.bbc.co.uk/things/20f373e7-7655-417f-90cd-2a3b1bc4b864#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/e7295e41-5e4c-4979-8293-54985d5f7d70#id> .
+
+<http://www.bbc.co.uk/things/107cf8f9-a0ee-4b9a-b7cb-b5de9e2d0525#id> a sport:Round ;
+    rdfs:label "Round 4 of FIFA World Cup"@en-gb ;
+    sal:name "Group D"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S1R4> ;
+    core:preferredLabel "Group D"@en-gb ;
+    core:shortLabel "Group D"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/20f373e7-7655-417f-90cd-2a3b1bc4b864#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of FIFA World Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/87ecda62-4074-4eb6-b499-6de1a058f50a#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/107cf8f9-a0ee-4b9a-b7cb-b5de9e2d0525#id>,
+        <http://www.bbc.co.uk/things/6d88e934-3d1e-43ca-a05e-ea7d1ae44648#id>,
+        <http://www.bbc.co.uk/things/778ac018-79f4-4ede-9af1-af4a4cfac02e#id>,
+        <http://www.bbc.co.uk/things/7888fd00-787b-41eb-b7df-071bb22307f4#id>,
+        <http://www.bbc.co.uk/things/8bacf80f-92d8-4ff5-a0a8-c755afe2b5e2#id>,
+        <http://www.bbc.co.uk/things/aa424dda-eed7-4363-93b3-cee680c1ffcb#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/8cf950b3-ffc7-4e31-9e83-c9df0a13ef24#id> ;
+    sport:stageNumber "1"^^xsd:int .
+
+<http://www.bbc.co.uk/things/3b5566c4-f560-461d-b224-7c00144e8ecf#id> a sport:Round ;
+    rdfs:label "Round 3 of FIFA World Cup"@en-gb ;
+    sal:name "Semi-Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S2R3> ;
+    core:preferredLabel "Semi-Final"@en-gb ;
+    core:shortLabel "Semi-Final"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/6d88e934-3d1e-43ca-a05e-ea7d1ae44648#id> a sport:Round ;
+    rdfs:label "Round 6 of FIFA World Cup"@en-gb ;
+    sal:name "Group F"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S1R6> ;
+    core:preferredLabel "Group F"@en-gb ;
+    core:shortLabel "Group F"@en-gb ;
+    sport:roundNumber "6"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/778ac018-79f4-4ede-9af1-af4a4cfac02e#id> a sport:Round ;
+    rdfs:label "Round 3 of FIFA World Cup"@en-gb ;
+    sal:name "Group C"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S1R3> ;
+    core:preferredLabel "Group C"@en-gb ;
+    core:shortLabel "Group C"@en-gb ;
+    sport:roundNumber "3"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/7888fd00-787b-41eb-b7df-071bb22307f4#id> a sport:Round ;
+    rdfs:label "Round 5 of FIFA World Cup"@en-gb ;
+    sal:name "Group E"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S1R5> ;
+    core:preferredLabel "Group E"@en-gb ;
+    core:shortLabel "Group E"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/87ecda62-4074-4eb6-b499-6de1a058f50a#id> a sport:Round ;
+    rdfs:label "Round 1 of FIFA World Cup"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/89c2e23c-f138-4970-9750-7ad4951b4364#id> a sport:Round ;
+    rdfs:label "Round 5 of FIFA World Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S2R5> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber "5"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/8b9cc210-7998-4062-8a15-48a65f9bc9ac#id> a sport:Round ;
+    rdfs:label "Round 2 of FIFA World Cup"@en-gb ;
+    sal:name "Quarter Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S2R2> ;
+    core:preferredLabel "Quarter Final"@en-gb ;
+    core:shortLabel "Quarter Final"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/8bacf80f-92d8-4ff5-a0a8-c755afe2b5e2#id> a sport:Round ;
+    rdfs:label "Round 7 of FIFA World Cup"@en-gb ;
+    sal:name "Group G"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S1R7> ;
+    core:preferredLabel "Group G"@en-gb ;
+    core:shortLabel "Group G"@en-gb ;
+    sport:roundNumber "7"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/8cf950b3-ffc7-4e31-9e83-c9df0a13ef24#id> a sport:Round ;
+    rdfs:label "Round 8 of FIFA World Cup"@en-gb ;
+    sal:name "Group H"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S1R8> ;
+    core:preferredLabel "Group H"@en-gb ;
+    core:shortLabel "Group H"@en-gb ;
+    sport:roundNumber "8"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/a3542329-dea0-475b-8cbb-40e31ca83058#id> a sport:Round ;
+    rdfs:label "Round 1 of FIFA World Cup"@en-gb ;
+    sal:name "Round of 16"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S2R1> ;
+    core:preferredLabel "Round of 16"@en-gb ;
+    core:shortLabel "Round of 16"@en-gb ;
+    sport:roundNumber "1"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-16> .
+
+<http://www.bbc.co.uk/things/aa424dda-eed7-4363-93b3-cee680c1ffcb#id> a sport:Round ;
+    rdfs:label "Round 2 of FIFA World Cup"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber "2"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/b301c19f-2c13-43c8-8355-0d15638a21b2#id> a sport:Round ;
+    rdfs:label "Round 4 of FIFA World Cup"@en-gb ;
+    sal:name "3rd/4th Play-Offs"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S2R4> ;
+    core:preferredLabel "3rd/4th Play-Offs"@en-gb ;
+    core:shortLabel "3rd/4th Play-Offs"@en-gb ;
+    sport:roundNumber "4"^^xsd:int ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/e7295e41-5e4c-4979-8293-54985d5f7d70#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of FIFA World Cup"@en-gb ;
+    cms:locator <urn:sports-data:CFBB42013S2> ;
+    sport:firstRound <http://www.bbc.co.uk/things/a3542329-dea0-475b-8cbb-40e31ca83058#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/3b5566c4-f560-461d-b224-7c00144e8ecf#id>,
+        <http://www.bbc.co.uk/things/8b9cc210-7998-4062-8a15-48a65f9bc9ac#id>,
+        <http://www.bbc.co.uk/things/b301c19f-2c13-43c8-8355-0d15638a21b2#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/89c2e23c-f138-4970-9750-7ad4951b4364#id> ;
+    sport:stageNumber "2"^^xsd:int .
+
+<urn:sports-data:CFBB42013S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S1R7> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S1R8> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S2R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB42013S2R5> a cms:Sports-DataLocator .
+

@@ -1,0 +1,145 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix ns1: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix ns2: <http://www.bbc.co.uk/ontologies/event/> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/5bcfaba5-f1f9-4d4b-bb78-99b7cb738e4f#id> a provenance:Dataset ;
+    rdfs:label "Cricket: Perpetual Seasons by Match Type (aka 'Game Type' by original feed provider)" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/cricket/perpetual-cricket-seasons.ttl" ;
+    provenance:changeReason "SLS-4416;2: Model new Opta cricket match types" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-06-11T15:13:21+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/08d2ee81-4af7-4474-8d11-5499837433c6#id> a sport:Competition ;
+    rdfs:label "International Test Match Series (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/7dc74ce1-92f2-46e2-b8f4-e24b0b6b3ab3#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/7dc74ce1-92f2-46e2-b8f4-e24b0b6b3ab3#id> .
+
+<http://www.bbc.co.uk/things/08dbfa5e-15d2-4ddd-b60f-0fb835a60c8b#id> a sport:Competition ;
+    rdfs:label "Domestic One-Day Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/f41abb56-396e-460d-a57d-b63f7917eb7f#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/f41abb56-396e-460d-a57d-b63f7917eb7f#id> .
+
+<http://www.bbc.co.uk/things/1a2dd7a6-c164-4486-841e-9f857a654188#id> a sport:Competition ;
+    rdfs:label "International Twenty20 Series (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/9909b107-9a0f-4dc7-bc9f-2583d0aa32fa#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9909b107-9a0f-4dc7-bc9f-2583d0aa32fa#id> .
+
+<http://www.bbc.co.uk/things/1a5cbd87-07ae-4401-9437-7261e9c31392#id> a sport:Competition ;
+    rdfs:label "Women's One-Day Tour Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1c8a9858-d597-4f1d-9d2c-a2c1715f8459#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1c8a9858-d597-4f1d-9d2c-a2c1715f8459#id> .
+
+<http://www.bbc.co.uk/things/26d642f7-f07c-427a-a263-f4e042030469#id> a sport:Competition ;
+    rdfs:label "Women's Domestic One-Day Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/1ef774c3-d63c-4040-a8aa-fb7c476f868a#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/1ef774c3-d63c-4040-a8aa-fb7c476f868a#id> .
+
+<http://www.bbc.co.uk/things/29fdece4-fab4-420d-b331-1fff818e6364#id> a sport:Competition ;
+    rdfs:label "Women's International Twenty20 Series (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/35d5af9f-f296-4e4f-b5fc-9630b8485283#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/35d5af9f-f296-4e4f-b5fc-9630b8485283#id> .
+
+<http://www.bbc.co.uk/things/2ee6486f-2409-44d0-a273-c11f4d368c02#id> a sport:Competition ;
+    rdfs:label "Twenty20 Tour Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/c293c6f3-34af-4f92-8d8e-49b027256eac#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/c293c6f3-34af-4f92-8d8e-49b027256eac#id> .
+
+<http://www.bbc.co.uk/things/508fefda-bb63-4469-ace3-2195f2f45c4b#id> a sport:Competition ;
+    rdfs:label "Women's Tour Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/80c2e91a-6d12-4e84-8b7e-f6492566a2fd#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/80c2e91a-6d12-4e84-8b7e-f6492566a2fd#id> .
+
+<http://www.bbc.co.uk/things/5d68587a-b508-49a3-90b9-fc5187f27df9#id> a sport:Competition ;
+    rdfs:label "One-Day Tour Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/a53b8471-2ca0-4cd5-8f6f-e99dfad6f3dc#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/a53b8471-2ca0-4cd5-8f6f-e99dfad6f3dc#id> .
+
+<http://www.bbc.co.uk/things/79f14623-4169-466f-9c84-abcfd9fa2e5d#id> a sport:Competition ;
+    rdfs:label "Domestic Twenty20 Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/e13d4d69-40fc-44d2-8a26-29d1ecfdd64f#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e13d4d69-40fc-44d2-8a26-29d1ecfdd64f#id> .
+
+<http://www.bbc.co.uk/things/8fe48456-9f18-49e8-8d11-dd7fb2fcfaad#id> a sport:Competition ;
+    rdfs:label "Women's International Test Match Series (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/519ba4a0-ca81-49bf-a21c-d788a6641593#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/519ba4a0-ca81-49bf-a21c-d788a6641593#id> .
+
+<http://www.bbc.co.uk/things/9668d443-f546-402c-ae98-126e9353395b#id> a sport:Competition ;
+    rdfs:label "Domestic First Class Multi-Day Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/e8393614-7103-4f15-804e-9aa529478a79#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e8393614-7103-4f15-804e-9aa529478a79#id> .
+
+<http://www.bbc.co.uk/things/9caefbd0-2ffd-4c8c-9d22-259c75b83c4c#id> a sport:Competition ;
+    rdfs:label "Women's One Day International Series (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/9ffeb60c-b6b1-4b46-aaf5-2c7e3349dea4#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/9ffeb60c-b6b1-4b46-aaf5-2c7e3349dea4#id> .
+
+<http://www.bbc.co.uk/things/aea8bc76-9895-46b6-8d0b-ec0fd5a881f8#id> a sport:Competition ;
+    rdfs:label "Women's Domestic Twenty20 Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/ce883f1d-4a96-41cb-a689-e71fdba7cbc6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/ce883f1d-4a96-41cb-a689-e71fdba7cbc6#id> .
+
+<http://www.bbc.co.uk/things/b961802e-3be3-4924-afc8-a6c2e9849cc0#id> a sport:Competition ;
+    rdfs:label "One Day International Series (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/e39fcab5-c296-4cf2-9f9d-05f33ee2dae6#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e39fcab5-c296-4cf2-9f9d-05f33ee2dae6#id> .
+
+<http://www.bbc.co.uk/things/ba338880-d2d8-4139-8634-bd68cb9952f4#id> a sport:Competition ;
+    rdfs:label "Women's Twenty20 Tour Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/e2871085-ea79-44eb-bd19-a70fc45f972e#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e2871085-ea79-44eb-bd19-a70fc45f972e#id> .
+
+<http://www.bbc.co.uk/things/d8718dc4-110e-4008-a6f9-682dc7a5c6d4#id> a sport:Competition ;
+    rdfs:label "Tour Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/e3f49cc5-3bdb-4a32-852f-f5fe46a7ff92#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/e3f49cc5-3bdb-4a32-852f-f5fe46a7ff92#id> .
+
+<http://www.bbc.co.uk/things/f766c036-17b7-4cb0-88cb-427518b14b29#id> a sport:Competition ;
+    rdfs:label "Women's Domestic First Class Multi-Day Match (Perpetual Competition)" ;
+    ns1:time <http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> ;
+    ns2:recurringEvent <http://www.bbc.co.uk/things/b84368fa-d74b-425b-bb43-2f8e0a390e6d#id> ;
+    sport:recurringCompetition <http://www.bbc.co.uk/things/b84368fa-d74b-425b-bb43-2f8e0a390e6d#id> .
+
+<http://www.bbc.co.uk/things/feaeaeae-2935-4bb1-a2e2-9623132969ee#id> a <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:label "Cricket Perpetual Season (Temporal Entity)" ;
+    ns3:hasBeginning "2016-01-01"^^xsd:date ;
+    ns3:hasEnd "2099-09-30"^^xsd:date .
+

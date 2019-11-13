@@ -1,0 +1,871 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/b57fbc57-189b-45a9-b0a3-6a3c4a70c83a#id> a provenance:Dataset ;
+    rdfs:label "Football: National Women's Teams" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/national-womens-football-teams.ttl" ;
+    provenance:changeReason "Drop Women from team names" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2019-06-10T09:29:09+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Daniel.Tarff@bbc.co.uk> ;
+    provenance:version "16"^^xsd:int .
+
+<http://www.bbc.co.uk/sport/football/teams/argentina-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/australia-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/austria-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/belgium-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/brazil-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/cameroon-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/canada-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/chile-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/china-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/colombia-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/costa-rica-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/denmark-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/ecuador-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/england-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/france-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/germany-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/iceland-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/italy-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/ivory-coast-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/jamaica-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/japan-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/mexico-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/netherlands-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/new-zealand-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/nigeria-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/norway-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/portugal-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/russia-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/scotland-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/south-africa-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/south-korea-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/spain-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/sweden-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/switzerland-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/thailand-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/usa-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/things/0812c485-e35d-4f5a-a76c-0d58019a4b46#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Cameroon"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6957> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Cameroon"@en-gb ;
+    core:shortLabel "Cameroon"@en-gb ;
+    core:slug "cameroon-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/0cada216-2c69-46be-9185-b636c0d755f5#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Japan"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6232> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Japan"@en-gb ;
+    core:shortLabel "Japan"@en-gb ;
+    core:slug "japan-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/14b758d8-05e5-4390-a359-cd6686594204#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Canada"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6236> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Canada"@en-gb ;
+    core:shortLabel "Canada"@en-gb ;
+    core:slug "canada-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2b4fbd52-830f-4f0d-8d85-331a31bfd37a#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Colombia"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6240> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Colombia"@en-gb ;
+    core:shortLabel "Colombia"@en-gb ;
+    core:slug "colombia-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/2c896aa3-44f0-4a7d-b2c0-9fe3f6b8a891#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Jamaica"@en-gb ;
+    cms:locator <urn:sports-data:TFBB14729> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Jamaica"@en-gb ;
+    core:shortLabel "Jamaica"@en-gb ;
+    core:slug "jamaica-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/3e08ee97-bbba-4fcd-a1b6-1c836d284e91#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Czech Republic"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9191> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Czech Republic"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/czech-republic-women> ;
+    core:shortLabel "Czech Rep Wom"@en-gb ;
+    core:slug "czech-republic-women"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/570540a6-b794-4216-8c49-4266bd5e4048#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Netherlands"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6340> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Netherlands"@en-gb ;
+    core:shortLabel "Netherlands"@en-gb ;
+    core:slug "netherlands-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id>,
+        <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5ae1f539-df7e-4d55-84e7-0c1682d8b54b#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Switzerland"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6812> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Switzerland"@en-gb ;
+    core:shortLabel "Switzerland"@en-gb ;
+    core:slug "switzerland-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5bc3e1ce-a27e-44f4-a9a3-f2cc4d580369#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "South Africa"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6955> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "South Africa"@en-gb ;
+    core:shortLabel "South Africa"@en-gb ;
+    core:slug "south-africa-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/5d0f9de5-6f54-4772-b96d-fe015d4c694a#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Republic of Ireland"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6633> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Republic of Ireland"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/republic-of-ireland-women> ;
+    core:shortLabel "R. of Ireland Wom"@en-gb ;
+    core:slug "republic-of-ireland-women"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7149d568-d56e-4a10-b935-91c33af67b59#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Thailand"@en-gb ;
+    cms:locator <urn:sports-data:TFBB10330> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Thailand"@en-gb ;
+    core:shortLabel "Thailand"@en-gb ;
+    core:slug "thailand-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/737be194-6fc5-4e0d-ba2f-eae4024bd8fd#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Germany"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6244> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Germany"@en-gb ;
+    core:shortLabel "Germany"@en-gb ;
+    core:slug "germany-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id>,
+        <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/7d32d130-1a59-43cb-95cb-6221ddf89d98#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Scotland"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6636> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Scotland"@en-gb ;
+    core:shortLabel "Scotland"@en-gb ;
+    core:slug "scotland-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id>,
+        <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/83826611-b27a-434b-b566-42b0ed96dda8#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Nigeria"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6235> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Nigeria"@en-gb ;
+    core:shortLabel "Nigeria"@en-gb ;
+    core:slug "nigeria-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/86d322c5-9d0c-4c98-8d45-dc129b00e1b9#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Belgium"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9196> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Belgium"@en-gb ;
+    core:shortLabel "Belgium"@en-gb ;
+    core:slug "belgium-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/955aad1f-c9ab-40a5-b613-9b9c69cdcc46#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Northern Ireland"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9180> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Northern Ireland"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/northern-ireland-women> ;
+    core:shortLabel "N Ireland Wom"@en-gb ;
+    core:slug "northern-ireland-women"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/98964a23-e32e-4ac7-a087-4ecb1b65dbf4#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Sweden"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6246> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Sweden"@en-gb ;
+    core:shortLabel "Sweden"@en-gb ;
+    core:slug "sweden-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id>,
+        <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/996c02c9-0e3c-4e2f-9e34-166ac56979fe#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Norway"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6245> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Norway"@en-gb ;
+    core:shortLabel "Norway"@en-gb ;
+    core:slug "norway-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id>,
+        <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/99ebf80c-4a4b-41a3-97e2-1d2e72b795d7#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Brazil"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6239> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Brazil"@en-gb ;
+    core:shortLabel "Brazil"@en-gb ;
+    core:slug "brazil-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a3fec6ab-00fc-4b8f-bbbf-607610e67841#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Spain"@en-gb ;
+    cms:locator <urn:sports-data:TFBB7649> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Spain"@en-gb ;
+    core:shortLabel "Spain"@en-gb ;
+    core:slug "spain-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id>,
+        <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a50ceb63-923b-41a8-b602-aa755ce1ec76#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Australia"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6231> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Australia"@en-gb ;
+    core:shortLabel "Australia"@en-gb ;
+    core:slug "australia-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/a6d5a296-915d-4204-9c02-b289415f5812#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Mexico"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6237> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Mexico"@en-gb ;
+    core:shortLabel "Mexico"@en-gb ;
+    core:slug "mexico-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b0a49f17-cef8-4e08-90ae-e0a6b88c6239#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Russia"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6327> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Russia"@en-gb ;
+    core:shortLabel "Russia"@en-gb ;
+    core:slug "russia-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b0bd3c2b-d025-4bb8-828f-684329bc50fd#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Costa Rica"@en-gb ;
+    cms:locator <urn:sports-data:TFBB10620> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Costa Rica"@en-gb ;
+    core:shortLabel "Costa Rica"@en-gb ;
+    core:slug "costa-rica-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/b4f0cb7d-ccb3-4b34-afde-e6fe553e9772#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "England"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6242> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "England"@en-gb ;
+    core:shortLabel "England"@en-gb ;
+    core:slug "england-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id>,
+        <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/c8bc57f3-b1cf-494c-8559-66c033757b3d#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Bosnia and Herzegovina"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9181> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Bosnia and Herzegovina"@en-gb ;
+    core:primaryTopicOf <http://www.bbc.co.uk/sport/football/teams/bosnia-herzegovina-women> ;
+    core:shortLabel "Bos-Herze Wom"@en-gb ;
+    core:slug "bosnia-herzegovina-women"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/cb4f9e02-ca1f-4f25-92b2-24315d47e114#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Argentina"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6322> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Argentina"@en-gb ;
+    core:shortLabel "Argentina"@en-gb ;
+    core:slug "argentina-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ce446353-4f7a-4229-8768-fd041af9c352#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Wales"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6635> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Wales"@en-gb ;
+    core:shortLabel "Wales"@en-gb ;
+    core:slug "wales-women"^^xsd:string ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/d831cbf4-d930-4a3a-87b6-09ad959f6352#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Portugal"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9197> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Portugal"@en-gb ;
+    core:shortLabel "Portugal"@en-gb ;
+    core:slug "portugal-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/db402bd1-a853-4a97-9fc5-47a72e3460c4#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ivory Coast"@en-gb ;
+    cms:locator <urn:sports-data:TFBB10718> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Ivory Coast"@en-gb ;
+    core:shortLabel "Ivory Coast"@en-gb ;
+    core:slug "ivory-coast-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/dbebf4cf-e131-486f-8abe-f489f40f20b2#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "France"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6243> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "France"@en-gb ;
+    core:shortLabel "France"@en-gb ;
+    core:slug "france-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id>,
+        <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e2821ab9-57f4-4a6b-be09-3091ca53aaac#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Austria"@en-gb ;
+    cms:locator <urn:sports-data:TFBB9186> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Austria"@en-gb ;
+    core:shortLabel "Austria"@en-gb ;
+    core:slug "austria-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e2ae4ace-46fd-41e1-aa9e-f459dcfeacdf#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "South Korea"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6326> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "South Korea"@en-gb ;
+    core:shortLabel "South Korea"@en-gb ;
+    core:slug "south-korea-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e2c07955-11fd-4881-9eab-09aebff092b6#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Iceland"@en-gb ;
+    cms:locator <urn:sports-data:TFBB7648> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Iceland"@en-gb ;
+    core:shortLabel "Iceland"@en-gb ;
+    core:slug "iceland-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/e33542b2-d303-4f1b-9a59-6dc0b866994f#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Chile"@en-gb ;
+    cms:locator <urn:sports-data:TFBB12674> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Chile"@en-gb ;
+    core:shortLabel "Chile"@en-gb ;
+    core:slug "chile-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/ef6c624c-be0b-47a6-9e7c-ac4056b5c27d#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "USA"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6238> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "USA"@en-gb ;
+    core:shortLabel "USA"@en-gb ;
+    core:slug "usa-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f09070d0-b710-4ac1-a1f3-10a71a8e41f0#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Ecuador"@en-gb ;
+    cms:locator <urn:sports-data:TFBB10719> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Ecuador"@en-gb ;
+    core:shortLabel "Ecuador"@en-gb ;
+    core:slug "ecuador-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f0c83670-a27d-420e-b063-7b90f4fdce89#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "China"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6325> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "China"@en-gb ;
+    core:shortLabel "China"@en-gb ;
+    core:slug "china-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f51bc0e9-34b7-4df5-8c96-4fdae740383f#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Denmark"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6324> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Denmark"@en-gb ;
+    core:shortLabel "Denmark"@en-gb ;
+    core:slug "denmark-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/f99d66eb-dd7d-4297-a7dc-d89a4cc06851#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "Italy"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6328> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "Italy"@en-gb ;
+    core:shortLabel "Italy"@en-gb ;
+    core:slug "italy-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id>,
+        <http://www.bbc.co.uk/things/ef8a3ef2-7abb-4ae4-b193-c79dc594de23#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/things/fbb0b905-fc13-47e1-9f90-42582863dcff#id> a sal:SportTopic,
+        core:Thing,
+        sport:CompetitiveSportingOrganisation,
+        <http://www.bbc.co.uk/ontologies/tagging/TagConcept> ;
+    sal:name "New Zealand"@en-gb ;
+    cms:locator <urn:sports-data:TFBB6241> ;
+    core:disambiguationHint "Women's Football Team"@en-gb ;
+    core:preferredLabel "New Zealand"@en-gb ;
+    core:shortLabel "New Zealand"@en-gb ;
+    core:slug "new-zealand-women"^^xsd:string ;
+    sport:competesIn <http://www.bbc.co.uk/things/43131dae-304e-4bbb-baaa-82a6ed96ce81#id>,
+        <http://www.bbc.co.uk/things/b607bff6-9873-4b14-8352-7e67dbdb14b3#id> ;
+    sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> .
+
+<http://www.bbc.co.uk/sport/football/teams/bosnia-herzegovina-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/czech-republic-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/northern-ireland-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<http://www.bbc.co.uk/sport/football/teams/republic-of-ireland-women> a bbc:WebDocument ;
+    bbc:platform bbc:HighWeb ;
+    bbc:product bbc:Sport ;
+    bbc:webDocumentCategory sal:Index .
+
+<urn:sports-data:TFBB10330> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB10620> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB10718> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB10719> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB12674> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB14729> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6231> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6232> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6235> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6236> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6237> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6238> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6239> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6240> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6241> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6242> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6243> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6244> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6245> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6246> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6322> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6324> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6325> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6326> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6327> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6328> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6340> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6633> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6635> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6636> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6812> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6955> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB6957> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB7648> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB7649> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9180> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9181> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9186> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9191> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9196> a cms:Sports-DataLocator .
+
+<urn:sports-data:TFBB9197> a cms:Sports-DataLocator .
+

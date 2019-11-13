@@ -1,0 +1,288 @@
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/> .
+@prefix cms: <http://www.bbc.co.uk/ontologies/cms/> .
+@prefix core: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix curric: <http://www.bbc.co.uk/ontologies/curriculum/> .
+@prefix cwork: <http://www.bbc.co.uk/ontologies/creativework/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix klal: <http://www.bbc.co.uk/ontologies/applicationlogic-kl/> .
+@prefix olo: <http://purl.org/ontology/olo/core#> .
+@prefix onto: <http://www.ontotext.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provenance: <http://www.bbc.co.uk/ontologies/provenance/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sal: <http://www.bbc.co.uk/ontologies/applicationlogic-sport/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sport: <http://www.bbc.co.uk/ontologies/sport/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/contexts/261fca41-aeb7-4c2f-9249-d498cb0ad86d#id> a provenance:Dataset ;
+    rdfs:label "Football: European and International 2017 Stages and Rounds" ;
+    provenance:canonicalLocation "https://github.com/bbc/sport-linked-data-datasets/blob/master/football/european-and-international-football-2017-stages-and-rounds.ttl" ;
+    provenance:changeReason "SLS-3290;2: Model FAI Cup 2017 stages and rounds" ;
+    provenance:product bbc:Sport ;
+    provenance:provided "2017-06-08T12:54:12+00:00"^^xsd:dateTime ;
+    provenance:provider <mailto:Kristian.Epps@bbc.co.uk> ;
+    provenance:version "4"^^xsd:int .
+
+<http://www.bbc.co.uk/things/210578e8-133e-4cf3-a66d-c9a8608b4a29#id> sport:firstStage <http://www.bbc.co.uk/things/c28e5c09-a1a0-436e-a07d-3d6d118b34af#id> .
+
+<http://www.bbc.co.uk/things/33b170ef-75bd-4798-94d1-a325b2b25111#id> sport:firstStage <http://www.bbc.co.uk/things/6eeacd95-25ec-4429-818c-d074a5206fd7#id> ;
+    sport:lastStage <http://www.bbc.co.uk/things/a3a74b51-9933-4e1a-8a23-5c457c1e8bdf#id> .
+
+<http://www.bbc.co.uk/things/6a8c5ac5-ab9a-48f6-81d8-359f11d590ff#id> sport:firstStage <http://www.bbc.co.uk/things/473c7b28-5d33-4339-a7f7-c7cb482785ac#id> .
+
+<urn:sports-data:CFBB3622017S1R7> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/0d298d5d-c459-44ae-a1d3-44162ba6cc81#id> a sport:Round ;
+    rdfs:label "Semi Final of French Coupe de la Ligue"@en-gb ;
+    sal:name "Semi Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3622017S1R6> ;
+    core:preferredLabel "Semi Final"@en-gb ;
+    core:shortLabel "Semi Final"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/2f96ab8a-bc4f-4fc8-b991-6e44c9dd2783#id> a sport:Round ;
+    rdfs:label "Round 1 of French Coupe de la Ligue"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3622017S1R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single-elimination> .
+
+<http://www.bbc.co.uk/things/37faf35a-7648-4763-b72f-a2371c6d0e90#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 1 of FIFA Confederations Cup 2017"@en-gb ;
+    sal:name "Group B"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3302016S1R2> ;
+    core:preferredLabel "Group B"@en-gb ;
+    core:shortLabel "Group B"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/43aba574-9043-47dd-b84c-bdf40f4b23b4#id> a sport:Round ;
+    rdfs:label "Round 3 of French Coupe de la Ligue"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3622017S1R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-32> .
+
+<http://www.bbc.co.uk/things/473c7b28-5d33-4339-a7f7-c7cb482785ac#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of French Coupe de la Ligue 2017/18"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3622017S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/2f96ab8a-bc4f-4fc8-b991-6e44c9dd2783#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/0d298d5d-c459-44ae-a1d3-44162ba6cc81#id>,
+        <http://www.bbc.co.uk/things/43aba574-9043-47dd-b84c-bdf40f4b23b4#id>,
+        <http://www.bbc.co.uk/things/8e29d781-42f2-4035-b9d1-e838bcb35afc#id>,
+        <http://www.bbc.co.uk/things/e7bf2812-703d-4ba4-ad41-460d0edaea80#id>,
+        <http://www.bbc.co.uk/things/f1775464-bbf8-407b-8785-6a800d7ea978#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/af474d13-2c87-4ca2-89c2-dc400e8c23df#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/52ac7087-143a-4849-bf03-e150a572d14b#id> a sport:Round ;
+    rdfs:label "Quarter Final of FAI Cup"@en-gb ;
+    sal:name "Quarter Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4002017S1R4> ;
+    core:preferredLabel "Quarter Final"@en-gb ;
+    core:shortLabel "Quarter Final"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/58c16449-9ba2-4b48-955f-b87042851d49#id> a sport:Round ;
+    rdfs:label "Final of FAI Cup"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4002017S1R6> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 6 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/5ee80de7-22a8-44f7-bc26-e8d42f165e46#id> a sport:Round ;
+    rdfs:label "Round 2 of Stage 2 of FIFA Confederations Cup 2017"@en-gb ;
+    sal:name "Third place play-off"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3302016S2R2> ;
+    core:preferredLabel "Third place play-off"@en-gb ;
+    core:shortLabel "Third place play-off"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/play-off> .
+
+<http://www.bbc.co.uk/things/8e29d781-42f2-4035-b9d1-e838bcb35afc#id> a sport:Round ;
+    rdfs:label "Quarter Final of French Coupe de la Ligue"@en-gb ;
+    sal:name "Quarter Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3622017S1R5> ;
+    core:preferredLabel "Quarter Final"@en-gb ;
+    core:shortLabel "Quarter Final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/quarter-final> .
+
+<http://www.bbc.co.uk/things/9b0db4be-12c9-4517-a027-dbe438ae013e#id> a sport:Round ;
+    rdfs:label "Round 1 of FAI Cup"@en-gb ;
+    sal:name "Round 1"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4002017S1R1> ;
+    core:preferredLabel "Round 1"@en-gb ;
+    core:shortLabel "Round 1"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single-elimination> .
+
+<http://www.bbc.co.uk/things/aa8a6e45-b104-44bf-b44b-d9516a7b5921#id> a sport:Round ;
+    rdfs:label "Round 3 of FAI Cup"@en-gb ;
+    sal:name "Round 3"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4002017S1R3> ;
+    core:preferredLabel "Round 3"@en-gb ;
+    core:shortLabel "Round 3"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-16> .
+
+<http://www.bbc.co.uk/things/af474d13-2c87-4ca2-89c2-dc400e8c23df#id> a sport:Round ;
+    rdfs:label "Final of French Coupe de la Ligue"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3622017S1R4> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 7 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<http://www.bbc.co.uk/things/b85871da-db00-43aa-9854-90a750abcc4c#id> a sport:Round ;
+    rdfs:label "Round 2 of FAI Cup"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4002017S1R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-32> .
+
+<http://www.bbc.co.uk/things/c09d7fbd-101a-458a-bb5d-3e2d92a9213d#id> a sport:Round ;
+    rdfs:label "Semi Final of FAI Cup"@en-gb ;
+    sal:name "Semi Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4002017S1R5> ;
+    core:preferredLabel "Semi Final"@en-gb ;
+    core:shortLabel "Semi Final"@en-gb ;
+    sport:roundNumber 5 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/c28e5c09-a1a0-436e-a07d-3d6d118b34af#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 1 of FAI Cup 2017"@en-gb ;
+    cms:locator <urn:sports-data:CFBB4002017S1> ;
+    sport:firstRound <http://www.bbc.co.uk/things/9b0db4be-12c9-4517-a027-dbe438ae013e#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/52ac7087-143a-4849-bf03-e150a572d14b#id>,
+        <http://www.bbc.co.uk/things/aa8a6e45-b104-44bf-b44b-d9516a7b5921#id>,
+        <http://www.bbc.co.uk/things/b85871da-db00-43aa-9854-90a750abcc4c#id>,
+        <http://www.bbc.co.uk/things/c09d7fbd-101a-458a-bb5d-3e2d92a9213d#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/58c16449-9ba2-4b48-955f-b87042851d49#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/e7bf2812-703d-4ba4-ad41-460d0edaea80#id> a sport:Round ;
+    rdfs:label "Round 2 of French Coupe de la Ligue"@en-gb ;
+    sal:name "Round 2"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3622017S1R2> ;
+    core:preferredLabel "Round 2"@en-gb ;
+    core:shortLabel "Round 2"@en-gb ;
+    sport:roundNumber 2 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/single-elimination> .
+
+<http://www.bbc.co.uk/things/eeb4239c-8aea-48b0-bf6f-ac17fa89245b#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 1 of FIFA Confederations Cup 2017"@en-gb ;
+    sal:name "Group A"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3302016S1R1> ;
+    core:preferredLabel "Group A"@en-gb ;
+    core:shortLabel "Group A"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/group> .
+
+<http://www.bbc.co.uk/things/efce2652-8809-4b83-abe2-88ed0b4ea8d8#id> a sport:Round ;
+    rdfs:label "Round 1 of Stage 2 of FIFA Confederations Cup 2017"@en-gb ;
+    sal:name "Semi-final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3302016S2R1> ;
+    core:preferredLabel "Semi-final"@en-gb ;
+    core:shortLabel "Semi-final"@en-gb ;
+    sport:roundNumber 1 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/semi-final> .
+
+<http://www.bbc.co.uk/things/f1775464-bbf8-407b-8785-6a800d7ea978#id> a sport:Round ;
+    rdfs:label "Round 4 of French Coupe de la Ligue"@en-gb ;
+    sal:name "Round 4"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3622017S1R4> ;
+    core:preferredLabel "Round 4"@en-gb ;
+    core:shortLabel "Round 4"@en-gb ;
+    sport:roundNumber 4 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/round-of-16> .
+
+<http://www.bbc.co.uk/things/fcc2b692-4f5d-4ace-99e9-36c72284c7ea#id> a sport:Round ;
+    rdfs:label "Round 3 of Stage 2 of FIFA Confederations Cup 2017"@en-gb ;
+    sal:name "Final"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3302016S2R3> ;
+    core:preferredLabel "Final"@en-gb ;
+    core:shortLabel "Final"@en-gb ;
+    sport:roundNumber 3 ;
+    sport:roundType <http://www.bbc.co.uk/things/round-types/final> .
+
+<urn:sports-data:CFBB3302016S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3302016S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3302016S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3302016S2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3302016S2R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3302016S2R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3302016S2R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3622017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3622017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3622017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3622017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3622017S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB3622017S1R6> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4002017S1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4002017S1R1> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4002017S1R2> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4002017S1R3> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4002017S1R4> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4002017S1R5> a cms:Sports-DataLocator .
+
+<urn:sports-data:CFBB4002017S1R6> a cms:Sports-DataLocator .
+
+<http://www.bbc.co.uk/things/6eeacd95-25ec-4429-818c-d074a5206fd7#id> a sport:LeagueCompetition ;
+    rdfs:label "Stage 1 of FIFA Confederations Cup 2017"@en-gb ;
+    sal:name "FIFA Confederations Cup Group Stage"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3302016S1> ;
+    core:preferredLabel "Confederations Cup Group Stage"@en-gb ;
+    core:shortLabel "Group Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/eeb4239c-8aea-48b0-bf6f-ac17fa89245b#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/37faf35a-7648-4763-b72f-a2371c6d0e90#id> ;
+    sport:nextStage <http://www.bbc.co.uk/things/a3a74b51-9933-4e1a-8a23-5c457c1e8bdf#id> ;
+    sport:stageNumber 1 .
+
+<http://www.bbc.co.uk/things/a3a74b51-9933-4e1a-8a23-5c457c1e8bdf#id> a sport:KnockoutCompetition ;
+    rdfs:label "Stage 2 of FIFA Confederations Cup 2017"@en-gb ;
+    sal:name "FIFA Confederations Cup Knockout Stage"@en-gb ;
+    cms:locator <urn:sports-data:CFBB3302016S2> ;
+    core:preferredLabel "Confederations Cup Knockout Stage"@en-gb ;
+    core:shortLabel "Knockout Stage"@en-gb ;
+    sport:firstRound <http://www.bbc.co.uk/things/efce2652-8809-4b83-abe2-88ed0b4ea8d8#id> ;
+    sport:hasRound <http://www.bbc.co.uk/things/5ee80de7-22a8-44f7-bc26-e8d42f165e46#id> ;
+    sport:lastRound <http://www.bbc.co.uk/things/fcc2b692-4f5d-4ace-99e9-36c72284c7ea#id> ;
+    sport:prevStage <http://www.bbc.co.uk/things/6eeacd95-25ec-4429-818c-d074a5206fd7#id> ;
+    sport:stageNumber 2 .
+
+<urn:sports-data:CFBB3622017S1R4> a cms:Sports-DataLocator .
+
